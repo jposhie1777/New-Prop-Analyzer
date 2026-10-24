@@ -26,9 +26,11 @@ export function clockLabel(status: string | null | undefined, time: string | nul
   return `${status} ${time}`;
 }
 
-export interface QuarterRates {
-  averages: Record<1 | 2 | 3 | 4, number>;
-  variances: Record<1 | 2 | 3 | 4, number>;
+export interface LivePrior {
+  fullGameMean: number; // expected full-game value before tip: the pregame line, else the last-10 average
+  quarterShares: Record<1 | 2 | 3 | 4, number>; // the player's usual split of that stat by quarter, sums to 1
+  dispersion: number; // variance-to-mean ratio of the stat (points score in 2s and 3s, so > 1)
+  source: "pregame line" | "last 10";
 }
 
 export interface LiveProjectionResult {
@@ -37,7 +39,58 @@ export interface LiveProjectionResult {
   standardDeviation: number;
   minutesFactor: number;
   remainingShare: number;
+  elapsedShare: number;
+  paceWeight: number;
   adjustments: string[];
+}
+
+export const statDispersion: Record<string, number> = { pts: 2.2, reb: 1.3, ast: 1.3, fg3m: 1.4, stl: 1.1, blk: 1.2, pra: 2.0, pr: 2.0, pa: 2.0, ra: 1.4, stocks: 1.2 };
+
+export function normalizeShares(rawShares: [number, number, number, number]): Record<1 | 2 | 3 | 4, number> {
+  const total = rawShares.reduce((runningTotal, share) => runningTotal + Math.max(0, share), 0);
+  if (total <= 0) return { 1: 0.25, 2: 0.25, 3: 0.25, 4: 0.25 };
+  const blended = rawShares.map((share) => 0.7 * (Math.max(0, share) / total) + 0.3 * 0.25); // shrink noisy 10-game splits toward an even split
+  return { 1: blended[0], 2: blended[1], 3: blended[2], 4: blended[3] };
+}
+
+export function timeShares(clock: GameClock, shares: Record<1 | 2 | 3 | 4, number>): { remaining: number; elapsed: number; remainingClock: number } {
+  let remaining = 0;
+  let elapsed = 0;
+  let remainingClock = 0;
+  for (const quarter of [1, 2, 3, 4] as const) {
+    let leftInQuarter = 0;
+    if (clock.isFinished) leftInQuarter = 0;
+    else if (clock.isHalftime) leftInQuarter = quarter >= 3 ? 1 : 0;
+    else if (quarter > clock.period) leftInQuarter = 1;
+    else if (quarter === clock.period) leftInQuarter = clock.secondsLeftInPeriod / 720;
+    remaining += shares[quarter] * leftInQuarter;
+    elapsed += shares[quarter] * (1 - leftInQuarter);
+    remainingClock += leftInQuarter / 4;
+  }
+  if (clock.period > 4 && !clock.isFinished) remaining += shares[4] * (5 / 12) * (clock.secondsLeftInPeriod / 300); // overtime plays like a short fourth quarter
+  return { remaining, elapsed, remainingClock };
+}
+
+export function projectLiveStat(currentValue: number, prior: LivePrior, clock: GameClock, personalFouls: number, scoreMargin: number): LiveProjectionResult {
+  const adjustments: string[] = [];
+  const { remaining, elapsed, remainingClock } = timeShares(clock, prior.quarterShares);
+  const priorRemaining = prior.fullGameMean * remaining;
+  const paceWeight = elapsed > 0.08 ? Math.min(0.5, elapsed * 0.6) : 0; // lean on tonight's pace more as the game goes on, never more than half
+  const paceRemaining = elapsed > 0 ? (currentValue / elapsed) * remaining : priorRemaining;
+  let remainingExpected = (1 - paceWeight) * priorRemaining + paceWeight * paceRemaining;
+  if (paceWeight > 0) adjustments.push(`tonight's pace weight ${Math.round(paceWeight * 100)}%`);
+  const fouls = foulTroubleFactor(personalFouls, clock);
+  let factor = fouls.factor;
+  if (fouls.note) adjustments.push(fouls.note);
+  const secondHalfOrLater = clock.isHalftime || clock.period >= 3;
+  if (secondHalfOrLater && Math.abs(scoreMargin) >= appSettings.blowoutMargin) {
+    factor *= 0.85;
+    adjustments.push(`margin ${Math.abs(scoreMargin)}: blowout risk x0.85`);
+  }
+  factor = Math.max(0.5, factor);
+  remainingExpected *= factor;
+  const standardDeviation = Math.max(0.6, Math.sqrt(Math.max(remainingExpected, 0.3) * prior.dispersion * 1.15)); // overdispersed Poisson for what is left
+  return { projection: currentValue + remainingExpected, remainingExpected, standardDeviation, minutesFactor: factor, remainingShare: remainingClock, elapsedShare: elapsed, paceWeight, adjustments };
 }
 
 export function foulTroubleFactor(personalFouls: number, clock: GameClock): { factor: number; note: string | null } {
@@ -46,40 +99,4 @@ export function foulTroubleFactor(personalFouls: number, clock: GameClock): { fa
   if (personalFouls >= 5) return { factor: 0.65, note: `${personalFouls} fouls: minutes x0.65` };
   if (personalFouls >= troubleLine) return { factor: 0.8, note: `${personalFouls} fouls in Q${Math.min(4, quarterReached)}: minutes x0.80` };
   return { factor: 1, note: null };
-}
-
-export function projectLiveStat(currentValue: number, rates: QuarterRates, clock: GameClock, personalFouls: number, scoreMargin: number): LiveProjectionResult {
-  const adjustments: string[] = [];
-  let remainingExpected = 0;
-  let remainingVariance = 0;
-  let remainingShare = 0;
-  const quarters = [1, 2, 3, 4] as const;
-  if (!clock.isFinished) {
-    for (const quarter of quarters) {
-      let quarterShare = 0;
-      if (clock.isHalftime) quarterShare = quarter >= 3 ? 1 : 0;
-      else if (quarter > clock.period) quarterShare = 1;
-      else if (quarter === clock.period) quarterShare = clock.secondsLeftInPeriod / 720;
-      remainingExpected += rates.averages[quarter] * quarterShare;
-      remainingVariance += rates.variances[quarter] * quarterShare;
-      remainingShare += quarterShare / 4;
-    }
-    if (clock.period > 4) {
-      const overtimeShare = clock.secondsLeftInPeriod / 300;
-      remainingExpected += rates.averages[4] * (5 / 12) * overtimeShare; // overtime plays like a short fourth quarter
-      remainingVariance += rates.variances[4] * (5 / 12) * overtimeShare;
-    }
-  }
-  const fouls = foulTroubleFactor(personalFouls, clock);
-  let factor = fouls.factor;
-  if (fouls.note) adjustments.push(fouls.note);
-  const secondHalfOrLater = clock.isHalftime || clock.period >= 3;
-  if (secondHalfOrLater && Math.abs(scoreMargin) >= appSettings.blowoutMargin) {
-    factor *= 0.8;
-    adjustments.push(`margin ${Math.abs(scoreMargin)}: blowout risk x0.80`);
-  }
-  factor = Math.max(0.5, factor);
-  const adjustedRemaining = remainingExpected * factor;
-  const standardDeviation = Math.max(0.6, Math.sqrt(Math.max(remainingVariance * factor, adjustedRemaining * 0.8))); // never tighter than a Poisson-ish floor
-  return { projection: currentValue + adjustedRemaining, remainingExpected: adjustedRemaining, standardDeviation, minutesFactor: factor, remainingShare, adjustments };
 }

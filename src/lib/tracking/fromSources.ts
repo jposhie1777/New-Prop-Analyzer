@@ -14,7 +14,7 @@ function decimalOf(americanOdds: number): number {
 
 export function slipPickToTracked(pick: Omit<SlipPick, "addedAt">): NewTracked {
   const best = [...pick.offers].sort((first, second) => decimalOf(second.americanOdds) - decimalOf(first.americanOdds))[0] ?? null;
-  const sideBySelection: Record<string, TrackSide> = { spread_home: "home", spread_away: "away", moneyline_home: "home", moneyline_away: "away", total_over: "over", total_under: "under", over: "over", under: "under" };
+  const sideBySelection: Record<string, TrackSide> = { spread_home: "home", spread_away: "away", moneyline_home: "home", moneyline_away: "away", total_over: "over", total_under: "under", over: "over", under: "under", yes: "over" };
   const kind: TrackKind = pick.market === "prop" ? "prop" : pick.market;
   const mapping = pick.propType ? propMapping(pick.propType) : null;
   return {

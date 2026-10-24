@@ -12,7 +12,8 @@
     "test:watch": "vitest",
     "baseline": "tsx scripts/baseline.ts",
     "images:map": "tsx scripts/buildNbaPersonIds.ts",
-    "postinstall": "node scripts/copyDuckdbAssets.mjs"
+    "postinstall": "node scripts/copyDuckdbAssets.mjs",
+    "check:data": "tsx scripts/checkData.ts"
   },
   "dependencies": {
     "@duckdb/duckdb-wasm": "1.32.0",

@@ -44,7 +44,7 @@ export function HalftimePanel({ game, boxScore, gameOdds }: { game: BdlGame; box
       <p className="disclaimer">Informational, not guaranteed. Models miss injuries, rotations and garbage time. Bet responsibly.</p>
       {props.loading && !props.data ? <div className="skeleton" /> : null}
       {props.data && suggestions.length === 0 ? <div className="empty-state">No live props for this game right now.</div> : null}
-      <div className="grid" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(290px, 1fr))" }}>
+      <div className="card-grid">
         {suggestions.slice(0, 24).map((suggestion) => {
           const side = suggestion.evaluation.bestSide ?? "over";
           const sideOdds = side === "over" ? suggestion.bestOverOdds : suggestion.bestUnderOdds;

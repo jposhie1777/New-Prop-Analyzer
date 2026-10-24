@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { fillTemplate, resolvePropLink, resolveSelectionLink, vendorLabel } from "@/lib/odds/deeplinks";
-import { buildGamePick, buildPropPick, mostCommonLine, summarizePropMarkets } from "@/lib/client/pickBuilders";
+import { buildGamePick, buildMilestonePick, buildPropPick, mostCommonLine, summarizePropMarkets } from "@/lib/client/pickBuilders";
 import type { BdlBettingOdd, BdlGame, BdlPlayerProp } from "@/lib/bdl/types";
 import { bdlTeam } from "@/lib/nba/teams";
 
@@ -64,5 +64,26 @@ describe("pick builders", () => {
     expect(pick.offers).toHaveLength(3);
     expect(pick.offers.find((offer) => offer.vendor === "fanduel")?.eventDeeplinks).toBeNull();
     expect(mostCommonLine([1.5, 2.5, 2.5])).toBe(2.5);
+  });
+
+  it("keeps every alternate line and milestone", () => {
+    const props = [
+      { id: 1, game_id: 9, player_id: 7, vendor: "fanduel", prop_type: "points", line_value: "24.5", market: { type: "over_under", over_odds: -115, under_odds: -105 } },
+      { id: 2, game_id: 9, player_id: 7, vendor: "draftkings", prop_type: "points", line_value: "24.5", market: { type: "over_under", over_odds: -105, under_odds: -115 } },
+      { id: 3, game_id: 9, player_id: 7, vendor: "draftkings", prop_type: "points", line_value: "27.5", market: { type: "over_under", over_odds: 150, under_odds: -190 } },
+      { id: 4, game_id: 9, player_id: 7, vendor: "caesars", prop_type: "points", line_value: "30", market: { type: "milestone", odds: 300 } },
+      { id: 5, game_id: 9, player_id: 7, vendor: "betrivers", prop_type: "points", line_value: "30", market: { type: "milestone", odds: 320 } },
+    ] as BdlPlayerProp[];
+    const [summary] = summarizePropMarkets(props);
+    expect(summary.ladder.map((rung) => rung.line)).toEqual([24.5, 27.5]);
+    expect(summary.ladder[1].bestOver).toEqual({ vendor: "draftkings", odds: 150 });
+    expect(summary.milestones).toEqual([{ threshold: 30, best: { vendor: "betrivers", odds: 320 }, books: 2 }]);
+    const altPick = buildPropPick(game, 7, "Test Player", "points", "over", props, odds, "test", 0.3, 27.5)!;
+    expect(altPick.label).toBe("Test Player Over 27.5 Points");
+    expect(altPick.offers).toHaveLength(1);
+    expect(altPick.pickId).toContain("27.5");
+    const milestonePick = buildMilestonePick(game, 7, "Test Player", "points", 30, props, odds, "test")!;
+    expect(milestonePick.label).toBe("Test Player 30+ Points");
+    expect(milestonePick.offers.map((offer) => offer.lineValue)).toEqual([29.5, 29.5]);
   });
 });

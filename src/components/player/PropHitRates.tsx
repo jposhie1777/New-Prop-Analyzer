@@ -3,7 +3,8 @@
 import { AddToSlipButton } from "@/components/AddToSlipButton";
 import type { HitRateResult } from "@/lib/analytics/aggregates/playerAggregates";
 import type { PropMarketSummary } from "@/lib/client/pickBuilders";
-import { buildPropPick } from "@/lib/client/pickBuilders";
+import { buildMilestonePick, buildPropPick } from "@/lib/client/pickBuilders";
+import { formatPercent } from "@/lib/client/format";
 import type { BdlBettingOdd, BdlGame, BdlPlayerProp } from "@/lib/bdl/types";
 import { propMapping } from "@/lib/analytics/propTypes";
 import { formatAmerican } from "@/lib/math/odds";
@@ -20,7 +21,7 @@ export function PropHitRates({ game, playerId, playerName, summaries, hitRates, 
   if (summaries.length === 0) return <div className="empty-state">No player props posted for this game yet.</div>;
   const ordered = [...summaries].sort((first, second) => Object.keys(propOrder).indexOf(first.propType) - Object.keys(propOrder).indexOf(second.propType));
   return (
-    <div className="grid" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))" }}>
+    <div className="card-grid">
       {ordered.map((summary) => {
         const hitResult = hitRates.find((candidate) => candidate.propType === summary.propType && candidate.lineValue === summary.mainLine);
         const mapping = propMapping(summary.propType);
@@ -50,9 +51,65 @@ export function PropHitRates({ game, playerId, playerName, summaries, hitRates, 
               </span>
             </div>
             <div className="row">
-              <AddToSlipButton pick={buildPropPick(game, playerId, playerName, summary.propType, "over", props, gameOdds, "player page")} label="+ Over" />
-              <AddToSlipButton pick={buildPropPick(game, playerId, playerName, summary.propType, "under", props, gameOdds, "player page")} label="+ Under" />
+              <AddToSlipButton pick={buildPropPick(game, playerId, playerName, summary.propType, "over", props, gameOdds, "player page", null, summary.mainLine)} label="+ Over" />
+              <AddToSlipButton pick={buildPropPick(game, playerId, playerName, summary.propType, "under", props, gameOdds, "player page", null, summary.mainLine)} label="+ Under" />
             </div>
+            {summary.ladder.length > 1 || summary.milestones.length > 0 ? (
+              <details>
+                <summary className="expand-hint">
+                  Alt lines ({summary.ladder.length}){summary.milestones.length > 0 ? ` · ${summary.milestones.length} milestones` : ""}
+                </summary>
+                <div className="table-scroll" style={{ marginTop: 6 }}>
+                  <table className="data-table">
+                    <thead>
+                      <tr>
+                        <th>Line</th>
+                        <th>L10</th>
+                        <th>L20</th>
+                        <th>Over</th>
+                        <th>Under</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {summary.ladder.map((rung) => {
+                        const rungHits = hitRates.find((candidate) => candidate.propType === summary.propType && candidate.lineValue === rung.line);
+                        return (
+                          <tr key={rung.line} style={rung.line === summary.mainLine ? { fontWeight: 700 } : undefined}>
+                            <td>{rung.line}</td>
+                            <td>{formatPercent(rungHits?.windows.L10.hitRate ?? null, 0)}</td>
+                            <td>{formatPercent(rungHits?.windows.L20.hitRate ?? null, 0)}</td>
+                            <td>{formatAmerican(rung.bestOver?.odds)}</td>
+                            <td>{formatAmerican(rung.bestUnder?.odds)}</td>
+                            <td>
+                              <span className="row" style={{ gap: 3, justifyContent: "flex-end" }}>
+                                <AddToSlipButton pick={buildPropPick(game, playerId, playerName, summary.propType, "over", props, gameOdds, "player page", null, rung.line)} label="O" />
+                                <AddToSlipButton pick={buildPropPick(game, playerId, playerName, summary.propType, "under", props, gameOdds, "player page", null, rung.line)} label="U" />
+                              </span>
+                            </td>
+                          </tr>
+                        );
+                      })}
+                      {summary.milestones.map((milestone) => {
+                        const milestoneHits = hitRates.find((candidate) => candidate.propType === summary.propType && candidate.lineValue === milestone.threshold - 0.5);
+                        return (
+                          <tr key={`m${milestone.threshold}`}>
+                            <td>{milestone.threshold}+</td>
+                            <td>{formatPercent(milestoneHits?.windows.L10.hitRate ?? null, 0)}</td>
+                            <td>{formatPercent(milestoneHits?.windows.L20.hitRate ?? null, 0)}</td>
+                            <td>{formatAmerican(milestone.best.odds)}</td>
+                            <td className="faint">{vendorLabel(milestone.best.vendor)}</td>
+                            <td>
+                              <AddToSlipButton pick={buildMilestonePick(game, playerId, playerName, summary.propType, milestone.threshold, props, gameOdds, "player page")} label="+" />
+                            </td>
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+            ) : null}
           </div>
         );
       })}

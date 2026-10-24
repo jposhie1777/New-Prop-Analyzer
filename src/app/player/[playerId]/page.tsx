@@ -50,8 +50,9 @@ export default function PlayerPage() {
   const props = useVisiblePolling(tonightGame ? () => loadProps(tonightGame.id) : null, appSettings.slatePollIntervalMs, `props:${tonightGame?.id ?? "none"}`);
   const playerProps = (props.data ?? []).filter((prop) => prop.player_id === playerId);
   const summaries = summarizePropMarkets(playerProps);
-  const linesKey = summaries.map((summary) => `${summary.propType}:${summary.mainLine}`).join(",");
-  const hitRates = useAnalyticsQuery(summaries.length > 0 ? (handle) => playerHitRates(handle.engine, playerId, summaries.map((summary) => ({ propType: summary.propType, lineValue: summary.mainLine }))) : null, `hits:${playerId}:${linesKey}`);
+  const allLines = summaries.flatMap((summary) => [...new Set([summary.mainLine, ...summary.ladder.map((rung) => rung.line), ...summary.milestones.map((milestone) => milestone.threshold - 0.5)])].map((lineValue) => ({ propType: summary.propType, lineValue }))); // main, alternate and milestone lines
+  const linesKey = allLines.map((propLine) => `${propLine.propType}:${propLine.lineValue}`).join(",");
+  const hitRates = useAnalyticsQuery(allLines.length > 0 ? (handle) => playerHitRates(handle.engine, playerId, allLines) : null, `hits:${playerId}:${linesKey}`);
   const defense = useAnalyticsQuery(opponentId ? (handle) => defenseVsPosition(handle.engine, appSettings.currentSeason) : null, `defense:${opponentId}`);
 
   const injuredTeammates = (slate.data?.injuries ?? []).filter((injury) => teamId !== null && (injury.player.team?.id ?? injury.player.team_id) === teamId && injury.player.id !== playerId);

@@ -11,7 +11,7 @@ import { appSettings } from "@/config/appSettings";
 import { readLocalJson, writeLocalJson } from "@/lib/client/safeStorage";
 
 function offerLink(pick: SlipPick, offer: SlipOffer, settings: ReturnType<typeof useSettings>): ResolvedLink | null {
-  if (pick.kind === "prop") return resolvePropLink(offer.vendor, offer.deeplinks, pick.selectionKey as "over" | "under", settings, offer.eventDeeplinks);
+  if (pick.kind === "prop") return resolvePropLink(offer.vendor, offer.deeplinks, pick.selectionKey as "over" | "under" | "yes", settings, offer.eventDeeplinks);
   return resolveSelectionLink(offer.deeplinks, pick.selectionKey, settings, offer.eventDeeplinks);
 }
 

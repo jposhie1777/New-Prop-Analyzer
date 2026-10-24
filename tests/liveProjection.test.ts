@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
-import { clockLabel, foulTroubleFactor, parseGameClock, projectLiveStat } from "@/lib/analytics/liveProjection";
+import { clockLabel, foulTroubleFactor, normalizeShares, parseGameClock, projectLiveStat } from "@/lib/analytics/liveProjection";
 
-const flatRates = { averages: { 1: 6, 2: 6, 3: 6, 4: 6 }, variances: { 1: 4, 2: 4, 3: 4, 4: 4 } } as const;
+const flatPrior = { fullGameMean: 24, quarterShares: { 1: 0.25, 2: 0.25, 3: 0.25, 4: 0.25 }, dispersion: 2, source: "pregame line" } as const;
 
 describe("game clock", () => {
   it("parses the live feed's clock formats", () => {
@@ -20,22 +20,30 @@ describe("game clock", () => {
 });
 
 describe("live projection", () => {
-  it("adds the expected production for the time left", () => {
-    const halfway = projectLiveStat(10, flatRates, parseGameClock("Halftime", "Half", 2), 1, 4);
-    expect(halfway.projection).toBeCloseTo(22, 6);
+  it("adds the pregame expectation for the time left, blended with tonight's pace", () => {
+    const halfway = projectLiveStat(12, flatPrior, parseGameClock("Halftime", "Half", 2), 1, 4);
     expect(halfway.remainingShare).toBeCloseTo(0.5, 6);
-    const midThird = projectLiveStat(15, flatRates, parseGameClock("3rd Qtr", "6:00", 3), 1, 4);
-    expect(midThird.projection).toBeCloseTo(15 + 3 + 6, 6);
-    expect(projectLiveStat(30, flatRates, parseGameClock("Final", "Final", 4), 0, 0).projection).toBe(30);
+    expect(halfway.paceWeight).toBeCloseTo(0.3, 6);
+    expect(halfway.projection).toBeCloseTo(24, 6); // on pace and at the prior, so both agree
+    const hot = projectLiveStat(20, flatPrior, parseGameClock("Halftime", "Half", 2), 1, 4);
+    expect(hot.projection).toBeGreaterThan(20 + 12);
+    expect(hot.projection).toBeLessThan(20 + 20);
+    expect(projectLiveStat(30, flatPrior, parseGameClock("Final", "Final", 4), 0, 0).projection).toBe(30);
   });
 
   it("trims minutes for foul trouble and late blowouts", () => {
     expect(foulTroubleFactor(2, parseGameClock("1st Qtr", "4:00", 1)).factor).toBe(0.8);
     expect(foulTroubleFactor(3, parseGameClock("3rd Qtr", "4:00", 3)).factor).toBe(1);
-    const blowout = projectLiveStat(10, flatRates, parseGameClock("3rd Qtr", "12:00", 3), 0, 25);
-    expect(blowout.minutesFactor).toBeCloseTo(0.8, 6);
-    expect(blowout.projection).toBeCloseTo(10 + 12 * 0.8, 6);
-    expect(projectLiveStat(10, flatRates, parseGameClock("1st Qtr", "12:00", 1), 0, 25).minutesFactor).toBe(1);
+    const blowout = projectLiveStat(0, flatPrior, parseGameClock("3rd Qtr", "12:00", 3), 0, 25);
+    expect(blowout.minutesFactor).toBeCloseTo(0.85, 6);
+    expect(projectLiveStat(0, flatPrior, parseGameClock("1st Qtr", "12:00", 1), 0, 25).minutesFactor).toBe(1);
+  });
+
+  it("shrinks noisy quarter splits toward even", () => {
+    const shares = normalizeShares([10, 0, 0, 0]);
+    expect(shares[1]).toBeCloseTo(0.775, 6);
+    expect(shares[2] + shares[3] + shares[4] + shares[1]).toBeCloseTo(1, 9);
+    expect(normalizeShares([0, 0, 0, 0])[3]).toBe(0.25);
   });
 });
 
