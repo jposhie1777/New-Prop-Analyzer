@@ -16,6 +16,9 @@
   },
   "dependencies": {
     "@duckdb/duckdb-wasm": "1.32.0",
+    "apache-arrow": "17.0.0",
+    "hyparquet": "1.31.2",
+    "hyparquet-compressors": "1.1.1",
     "next": "15.5.28",
     "react": "19.1.10",
     "react-dom": "19.1.10"

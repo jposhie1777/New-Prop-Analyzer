@@ -147,3 +147,14 @@ export async function playerHitRates(engine: AnalyticsEngine, playerId: number, 
   if (neededScopes.length === 0) return [];
   return computeHitRates(await playerRecentSeries(engine, playerId, neededScopes, 20), propLines);
 }
+
+export async function playerPositionGroup(engine: AnalyticsEngine, playerId: number): Promise<"G" | "F" | "C"> {
+  const [groupRow] = await engine.query<{ position_group: "G" | "F" | "C" }>(`
+    WITH recent AS (
+      SELECT position_row.position_group FROM player_game_positions AS position_row
+      JOIN player_game_stats AS stat_line ON stat_line.game_id = position_row.game_id AND stat_line.player_id = position_row.player_id
+      WHERE position_row.player_id = ${sqlNumber(playerId)} ORDER BY stat_line.game_date DESC LIMIT 20
+    )
+    SELECT position_group FROM recent GROUP BY position_group ORDER BY COUNT(*) DESC LIMIT 1`); // most common recent group
+  return groupRow?.position_group ?? "F";
+}

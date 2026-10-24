@@ -1,6 +1,7 @@
 import { SeededRandom } from "./seededRandom";
 import { bdlTeam, teamReferences } from "@/lib/nba/teams";
 import { addDays, dateRange, todayEastern } from "@/lib/dates";
+import { probabilityToAmerican } from "@/lib/math/odds";
 import type {
   BdlAdvancedStatsV2,
   BdlBettingOdd,
@@ -592,6 +593,21 @@ function expectedPerMinute(profile: MockPlayerProfile, statField: keyof BdlStatL
   return ratePerMinute[statField] ?? 0;
 }
 
+function recentMockAverage(playerId: number, teamId: number, beforeDate: string, statFields: Array<keyof BdlStatLine>, firstQuarterOnly: boolean): number | null {
+  const values: number[] = [];
+  for (let dayOffset = 1; dayOffset <= 200 && values.length < 10; dayOffset++) {
+    const isoDate = addDays(beforeDate, -dayOffset);
+    const game = mockGamesForDate(isoDate).find((candidate) => candidate.home_team.id === teamId || candidate.visitor_team.id === teamId);
+    if (!game || game.status_state !== "final") continue;
+    const periodLines = mockPeriodLines(game.id).get(playerId);
+    if (!periodLines || periodLines.every((periodLine) => periodLine.minutesValue === 0)) continue;
+    const scoped = firstQuarterOnly ? periodLines.slice(0, 1) : periodLines;
+    const combined = sumPeriodLines(scoped);
+    values.push(statFields.reduce((runningTotal, statField) => runningTotal + Number(combined[statField] ?? 0), 0));
+  }
+  return values.length > 0 ? values.reduce((runningTotal, value) => runningTotal + value, 0) / values.length : null; // books set lines near recent form
+}
+
 export function mockPlayerProps(game: BdlGame, opening: boolean, playerFilter?: number, propTypeFilter?: string): BdlPlayerProp[] {
   if (!opening && game.status_state === "final") return []; // books pull props as games finish
   const props: BdlPlayerProp[] = [];
@@ -606,7 +622,8 @@ export function mockPlayerProps(game: BdlGame, opening: boolean, playerFilter?: 
         if (propTypeFilter && definition.propType !== propTypeFilter) continue;
         if (definition.firstQuarterOnly && !opening && elapsedShare > 0) continue;
         const minutesScope = definition.firstQuarterOnly ? minutes / 4 : minutes;
-        let expectedValue = definition.statFields.reduce((runningTotal, statField) => runningTotal + expectedPerMinute(profile, statField) * minutesScope, 0);
+        const formulaValue = definition.statFields.reduce((runningTotal, statField) => runningTotal + expectedPerMinute(profile, statField) * minutesScope, 0);
+        let expectedValue = recentMockAverage(profile.player.id, teamId, game.date, definition.statFields, Boolean(definition.firstQuarterOnly)) ?? formulaValue;
         if (!opening && liveLines && !definition.firstQuarterOnly) {
           const soFar = sumPeriodLines(liveLines.get(profile.player.id) ?? []);
           const actualSoFar = definition.statFields.reduce((runningTotal, statField) => runningTotal + Number(soFar[statField] ?? 0), 0);
@@ -616,8 +633,9 @@ export function mockPlayerProps(game: BdlGame, opening: boolean, playerFilter?: 
         mockPropVendors.forEach((vendor, vendorIndex) => {
           const random = new SeededRandom(`prop-${game.id}-${profile.player.id}-${definition.propType}-${vendor}-${opening ? "open" : "live"}`);
           const lineValue = Math.max(0.5, Math.floor(expectedValue + random.between(-0.8, 0.8)) + 0.5);
-          const overOdds = random.integerBetween(-135, 105);
-          const underOdds = overOdds < 0 ? -overOdds - random.integerBetween(28, 45) : -overOdds - random.integerBetween(25, 40);
+          const overChance = random.between(0.44, 0.58);
+          const overOdds = probabilityToAmerican(overChance * 1.022); // about 4.5% total vig split across both sides
+          const underOdds = probabilityToAmerican((1 - overChance) * 1.022);
           const linksProvided = vendor === "betrivers" || vendor === "caesars"; // docs: prop deeplinks come from some books only
           const prop: BdlPlayerProp = {
             id: game.id * 1000 + profile.player.id * 10 + vendorIndex,
@@ -626,7 +644,7 @@ export function mockPlayerProps(game: BdlGame, opening: boolean, playerFilter?: 
             vendor,
             prop_type: definition.propType,
             line_value: String(lineValue),
-            market: { type: "over_under", over_odds: overOdds, under_odds: underOdds === 0 ? -110 : underOdds },
+            market: { type: "over_under", over_odds: overOdds, under_odds: underOdds },
             deeplinks: linksProvided ? mockDeeplinks(vendor, game.id, ["over", "under"], true) : null,
           };
           if (opening) prop.opened_at = `${addDays(game.date, -1)}T16:00:00.000Z`;

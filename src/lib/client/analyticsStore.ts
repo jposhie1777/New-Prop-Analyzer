@@ -62,7 +62,9 @@ async function buildHandle(): Promise<AnalyticsHandle> {
   });
   publishStatus({ phase: "loading", message: "Loading data into DuckDB" });
   const summary = await loadAnalyticsTables(engine, { manifest, baselineBaseUrl: config.baselinePath, topUpPayloads });
+  for (const warning of summary.warnings) console.warn(`[pulse] ${warning}`); // visible in devtools, never blocks the page
   const coveredDates = [manifest?.lastDate ?? null, ...topUpPayloads.map((payload) => payload.date)].filter((coveredDate): coveredDate is string => Boolean(coveredDate)).sort();
+  (window as unknown as { pulseQuery?: (sqlText: string) => Promise<unknown[]> }).pulseQuery = (sqlText: string) => engine.query(sqlText); // power-user hook: run SQL from devtools
   loadVersion += 1;
   publishStatus({ phase: "ready", message: "Up to date", coveredThrough: coveredDates.at(-1) ?? null, topUpDates: topUpPayloads.length, summary });
   return { engine, config, manifest, summary, loadedForDate: today, version: loadVersion };

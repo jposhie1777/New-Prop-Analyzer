@@ -1,11 +1,12 @@
 export type QueryRow = Record<string, unknown>;
 
+import type { DataRow, TableName } from "@/lib/data/rowSchemas";
+
 export interface AnalyticsEngine {
   query<RowType = QueryRow>(sqlText: string): Promise<RowType[]>;
   execute(sqlText: string): Promise<void>;
-  registerJsonText(fileName: string, jsonText: string): Promise<void>;
-  registerRemoteFile(fileName: string, fileUrl: string): Promise<void>;
-  fileReference(fileName: string): string; // what to write inside SQL to read a registered file
+  insertParquetFile(tableName: TableName, fileUrl: string): Promise<number>; // appends a baseline Parquet file to a table
+  insertDataRows(tableName: TableName, rows: DataRow[]): Promise<number>; // appends flattened top-up rows to a table
 }
 
 export function normalizeValue(rawValue: unknown): unknown {

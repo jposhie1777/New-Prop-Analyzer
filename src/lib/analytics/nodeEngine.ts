@@ -1,13 +1,10 @@
 import { DuckDBInstance, type DuckDBConnection } from "@duckdb/node-api";
-import { mkdtempSync, writeFileSync } from "node:fs";
-import { tmpdir } from "node:os";
-import { join, resolve } from "node:path";
+import { resolve } from "node:path";
 import { normalizeRow, type AnalyticsEngine, type QueryRow } from "./engine";
+import { selectColumnsSql, type DataRow, type TableName } from "@/lib/data/rowSchemas";
+import { insertRowsStatements } from "./sqlInsert";
 
 export class NodeAnalyticsEngine implements AnalyticsEngine {
-  private readonly scratchDirectory = mkdtempSync(join(tmpdir(), "pulse-duckdb-"));
-  private readonly fileLocations = new Map<string, string>();
-
   private constructor(
     private readonly instance: DuckDBInstance,
     private readonly connection: DuckDBConnection,
@@ -28,18 +25,16 @@ export class NodeAnalyticsEngine implements AnalyticsEngine {
     await this.connection.run(sqlText);
   }
 
-  async registerJsonText(fileName: string, jsonText: string): Promise<void> {
-    const filePath = join(this.scratchDirectory, fileName);
-    writeFileSync(filePath, jsonText);
-    this.fileLocations.set(fileName, filePath);
+  async insertParquetFile(tableName: TableName, fileUrl: string): Promise<number> {
+    const filePath = (fileUrl.startsWith("http") ? fileUrl : resolve(fileUrl)).replace(/'/g, "''");
+    const [countRow] = await this.query<{ row_count: number }>(`SELECT COUNT(*) AS row_count FROM read_parquet('${filePath}')`);
+    await this.execute(`INSERT INTO ${tableName} SELECT ${selectColumnsSql(tableName)} FROM read_parquet('${filePath}')`); // native Parquet reader in Node
+    return Number(countRow?.row_count ?? 0);
   }
 
-  async registerRemoteFile(fileName: string, fileUrl: string): Promise<void> {
-    this.fileLocations.set(fileName, fileUrl.startsWith("http") ? fileUrl : resolve(fileUrl)); // local paths for scripts and tests
-  }
-
-  fileReference(fileName: string): string {
-    return (this.fileLocations.get(fileName) ?? fileName).replace(/'/g, "''");
+  async insertDataRows(tableName: TableName, rows: DataRow[]): Promise<number> {
+    for (const statement of insertRowsStatements(tableName, rows)) await this.execute(statement);
+    return rows.length;
   }
 
   close(): void {
