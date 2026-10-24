@@ -1,5 +1,6 @@
 import type { SlipPick } from "@/lib/client/betSlip";
 import type { HalftimeSuggestion } from "@/lib/analytics/halftimeSuggestions";
+import type { LivePropRow } from "@/lib/analytics/liveSuggestions";
 import type { TrackedPick, TrackKind, TrackSide } from "./tracker";
 import { propMapping } from "@/lib/analytics/propTypes";
 import { expectedValuePercent } from "@/lib/math/odds";
@@ -80,5 +81,29 @@ export function threeQuarterToTracked(gameId: number, gameDate: string, teamId: 
     propType: null,
     metric: null,
     scope: "T3",
+  };
+}
+
+export function livePropToTracked(propRow: LivePropRow, gameId: number, gameDate: string, clockText: string): NewTracked {
+  const side = propRow.evaluation.bestSide ?? "over";
+  const mapping = propMapping(propRow.propType);
+  return {
+    trackId: `live-${gameId}-${propRow.playerId}-${propRow.propType}`,
+    source: "live",
+    kind: "prop",
+    gameId,
+    gameDate,
+    label: `${propRow.playerName} ${side === "over" ? "Over" : "Under"} ${propRow.lineValue} ${propRow.label} (${clockText})`,
+    side,
+    lineValue: propRow.lineValue,
+    americanOdds: side === "over" ? propRow.bestOverOdds : propRow.bestUnderOdds,
+    vendor: side === "over" ? propRow.bestOverVendor : propRow.bestUnderVendor,
+    modelProbability: side === "over" ? propRow.evaluation.overProbability : propRow.evaluation.underProbability,
+    evPercent: propRow.evaluation.bestEvPercent,
+    playerId: propRow.playerId,
+    teamId: propRow.teamId,
+    propType: propRow.propType,
+    metric: mapping?.metric ?? null,
+    scope: mapping?.scope ?? null,
   };
 }

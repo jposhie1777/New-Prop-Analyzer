@@ -88,7 +88,7 @@ export default function RecordPage() {
       <div className="page-title">
         <div>
           <h1>Record</h1>
-          <p>Every flagged halftime pick, pregame 100-in-3 projection and bet-slip pick is logged at the price first seen, then graded from final stats once the game syncs. Stored on this device; export to keep a backup.</p>
+          <p>Every flagged halftime or live pick, pregame 100-in-3 projection and bet-slip pick is logged at the price first seen, then graded from final stats once the game syncs. Stored on this device; export to keep a backup.</p>
         </div>
         <div className="row wrap">
           <button className="button ghost" onClick={exportRecord} disabled={tracked.length === 0}>
@@ -106,6 +106,7 @@ export default function RecordPage() {
           options={[
             { value: "all", label: "All" },
             { value: "halftime", label: "Halftime" },
+            { value: "live", label: "Live" },
             { value: "100-in-3", label: "100 in 3" },
             { value: "slip", label: "Slip" },
           ]}

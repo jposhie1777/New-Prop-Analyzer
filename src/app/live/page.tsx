@@ -1,6 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { LivePropsPanel } from "@/components/live/LivePropsPanel";
+import { clockLabel } from "@/lib/analytics/liveProjection";
 import { TeamLogo } from "@/components/TeamLogo";
 import { BoxScoreTable } from "@/components/live/BoxScoreTable";
 import { HalftimePanel } from "@/components/live/HalftimePanel";
@@ -10,9 +12,7 @@ import { formatTipoff } from "@/lib/dates";
 import { groupOddsByGame } from "@/lib/odds/consensus";
 
 function clockText(status: string | null | undefined, time: string | null | undefined): string {
-  if (!status) return "";
-  if (/half/i.test(status)) return "Halftime";
-  return time && time !== status ? `${status} · ${time}` : status;
+  return clockLabel(status, time);
 }
 
 export default function LivePage() {
@@ -20,6 +20,22 @@ export default function LivePage() {
   const games = slate.data?.games ?? null;
   const live = useLiveBoxScores(games);
   const [selectedGameId, setSelectedGameId] = useState<number | null>(null);
+  useEffect(() => {
+    const requestedGame = Number(new URLSearchParams(window.location.search).get("game")); // deep link from the slate: /live?game=123
+    if (Number.isInteger(requestedGame) && requestedGame > 0) {
+      setSelectedGameId(requestedGame);
+      setScrollPending(true);
+    }
+  }, []);
+  const [scrollPending, setScrollPending] = useState(false);
+  useEffect(() => {
+    if (!scrollPending) return;
+    const target = document.getElementById("halftime-panel") ?? document.getElementById("live-props");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" }); // jump to the game you tapped on the slate
+      setScrollPending(false);
+    }
+  });
   const oddsByGame = groupOddsByGame(slate.data?.odds ?? []);
   const enriched = (games ?? []).map((game) => ({ game, boxScore: matchBoxScore(game, live.boxScores) }));
   const liveGames = enriched.filter(({ game, boxScore }) => isGameLive(boxScore ?? game));
@@ -57,7 +73,7 @@ export default function LivePage() {
                 ) : (
                   <span className="pill accent">{formatTipoff(game.datetime)}</span>
                 )}
-                {boxScore && isHalftime(boxScore) ? <span className="pill warning">Halftime mode</span> : null}
+                {boxScore && isHalftime(boxScore) ? <span className="pill warning">Halftime mode</span> : isLive ? <span className="pill accent">Props</span> : null}
               </div>
               {[
                 { team: game.visitor_team, score: boxScore?.visitor_team_score ?? game.visitor_team_score },
@@ -77,11 +93,22 @@ export default function LivePage() {
           );
         })}
       </div>
-      {halftimeGames.map(({ game, boxScore }) => (
-        <div key={game.id} style={{ marginBottom: 12 }}>
-          <HalftimePanel game={game} boxScore={boxScore!} gameOdds={oddsByGame.get(game.id) ?? []} />
+      {halftimeGames.length > 0 && !halftimeGames.some(({ game }) => game.id === selected?.game.id) ? (
+        <div className="notice" style={{ marginBottom: 12 }}>
+          At halftime: {halftimeGames.map(({ game }) => `${game.visitor_team.abbreviation} @ ${game.home_team.abbreviation}`).join(", ")}. Tap the game above for halftime suggestions.
         </div>
-      ))}
+      ) : null}
+      {selected?.boxScore && isHalftime(selected.boxScore) ? (
+        <div style={{ marginBottom: 12 }}>
+          <span id="halftime-panel" />
+          <HalftimePanel game={selected.game} boxScore={selected.boxScore} gameOdds={oddsByGame.get(selected.game.id) ?? []} />
+        </div>
+      ) : null}
+      {selected?.boxScore && isGameLive(selected.boxScore) ? (
+        <div style={{ marginBottom: 12 }}>
+          <LivePropsPanel game={selected.game} boxScore={selected.boxScore} gameOdds={oddsByGame.get(selected.game.id) ?? []} />
+        </div>
+      ) : null}
       {selected?.boxScore ? (
         <section className="card">
           <div className="card-header">
