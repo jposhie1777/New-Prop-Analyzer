@@ -7,6 +7,10 @@ import { defenseVsPosition } from "@/lib/analytics/aggregates/defenseVsPosition"
 import { usageShift } from "@/lib/analytics/aggregates/usageShift";
 import { estimateThreeQuarterShare, projectThreeQuarters, threeQuarterProfiles } from "@/lib/analytics/aggregates/threeQuarters";
 import { mockInjuries } from "@/lib/bdl/mock/mockWorld";
+import { handleMockRequest } from "@/lib/bdl/mock/mockApi";
+import { secondHalfProfiles } from "@/lib/analytics/aggregates/playerAggregates";
+import { buildHalftimeSuggestions } from "@/lib/analytics/halftimeSuggestions";
+import type { BdlBoxScore, BdlPlayerProp } from "@/lib/bdl/types";
 
 let fixture: MockAnalyticsFixture;
 const yesterday = addDays(todayEastern(), -1);
@@ -119,5 +123,25 @@ describe("100 in 3 quarters", () => {
     expect(projection.probability).toBeGreaterThan(0.05);
     expect(projection.probability).toBeLessThan(0.15);
     expect(projectThreeQuarters(null, 0.75, 9).probability).toBeNull();
+  });
+});
+
+describe("halftime suggestions", () => {
+  it("projects live props for the mock halftime game", async () => {
+    const liveBoxes = (handleMockRequest("/nba/v1/box_scores/live", {}) as { data: BdlBoxScore[] }).data;
+    const halftimeBox = liveBoxes.find((boxScore) => boxScore.status === "Halftime")!;
+    const schedule = handleMockRequest("/nba/v1/games", { "dates[]": [todayEastern()] }) as { data: Array<{ id: number; home_team: { id: number }; status: string }> };
+    const halftimeGame = schedule.data.find((game) => game.status === "Halftime")!;
+    const props = (handleMockRequest("/nba/v2/odds/player_props", { game_id: halftimeGame.id }) as { data: BdlPlayerProp[] }).data;
+    const playerIds = [...halftimeBox.home_team.players, ...halftimeBox.visitor_team.players].map((boxPlayer) => boxPlayer.player.id);
+    const profiles = await secondHalfProfiles(fixture.engine, playerIds, 10);
+    expect(profiles.size).toBeGreaterThan(5);
+    const suggestions = buildHalftimeSuggestions(halftimeBox, props, profiles, 3);
+    expect(suggestions.length).toBeGreaterThan(5);
+    const first = suggestions[0];
+    expect(first.projection.projection).toBeGreaterThanOrEqual(first.firstHalfActual);
+    expect(first.evaluation.noVigOver).toBeGreaterThan(0);
+    expect(suggestions.every((suggestion, index) => index === 0 || (suggestions[index - 1].evaluation.bestEvPercent ?? 0) >= (suggestion.evaluation.bestEvPercent ?? 0))).toBe(true);
+    expect(suggestions.every((suggestion) => suggestion.flagged === (suggestion.evaluation.bestEvPercent ?? -1) >= 3)).toBe(true);
   });
 });

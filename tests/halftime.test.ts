@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { evaluateProp, minutesFactorFor, projectHalftime } from "@/lib/analytics/halftime";
-import { impliedTeamTotals, consensusLine, median } from "@/lib/odds/consensus";
+import { impliedTeamTotals, consensusLine, median, medianAmerican } from "@/lib/odds/consensus";
 import type { BdlBettingOdd } from "@/lib/bdl/types";
 
 describe("halftime projection", () => {
@@ -34,6 +34,8 @@ describe("line consensus", () => {
     expect(median([3, 1, 2])).toBe(2);
     expect(median([1, 2, 3, 4])).toBe(2.5);
     expect(median([])).toBeNull();
+    expect(medianAmerican([-110, 110])).toBe(100); // not 0, which is not a valid price
+    expect(medianAmerican([-150, -130, -140])).toBe(-140);
     const odds = [
       { vendor: "fanduel", spread_home_value: "-5.5", total_value: "221.5", moneyline_home_odds: -220, moneyline_away_odds: 180 },
       { vendor: "draftkings", spread_home_value: "-4.5", total_value: "222.5", moneyline_home_odds: -200, moneyline_away_odds: 170 },

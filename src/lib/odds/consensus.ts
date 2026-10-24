@@ -1,10 +1,18 @@
 import type { BdlBettingOdd } from "@/lib/bdl/types";
+import { americanToImpliedProbability, probabilityToAmerican } from "@/lib/math/odds";
 
 export function median(values: number[]): number | null {
   const finiteValues = values.filter((value) => Number.isFinite(value)).sort((first, second) => first - second);
   if (finiteValues.length === 0) return null;
   const middleIndex = Math.floor(finiteValues.length / 2);
   return finiteValues.length % 2 === 1 ? finiteValues[middleIndex] : (finiteValues[middleIndex - 1] + finiteValues[middleIndex]) / 2;
+}
+
+export function medianAmerican(americanOddsList: number[]): number | null {
+  const validOdds = americanOddsList.filter((americanOdds) => Number.isFinite(americanOdds) && americanOdds !== 0);
+  const middleChance = median(validOdds.map(americanToImpliedProbability)); // American odds jump from -100 to +100, so take the median in probability space
+  if (middleChance === null || middleChance <= 0 || middleChance >= 1) return null;
+  return probabilityToAmerican(middleChance);
 }
 
 function numericValues(odds: BdlBettingOdd[], fieldName: keyof BdlBettingOdd): number[] {
@@ -23,8 +31,8 @@ export function consensusLine(odds: BdlBettingOdd[]): ConsensusLine {
   return {
     spreadHome: median(numericValues(odds, "spread_home_value")),
     total: median(numericValues(odds, "total_value")),
-    moneylineHome: median(numericValues(odds, "moneyline_home_odds")),
-    moneylineAway: median(numericValues(odds, "moneyline_away_odds")),
+    moneylineHome: medianAmerican(numericValues(odds, "moneyline_home_odds")),
+    moneylineAway: medianAmerican(numericValues(odds, "moneyline_away_odds")),
     vendorCount: new Set(odds.map((odd) => odd.vendor)).size,
   };
 }

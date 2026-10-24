@@ -1,6 +1,6 @@
 import type { BdlBettingOdd, BdlGame, BdlPlayerProp } from "@/lib/bdl/types";
 import type { SlipOffer, SlipPick } from "./betSlip";
-import { median } from "@/lib/odds/consensus";
+import { median, medianAmerican } from "@/lib/odds/consensus";
 import { propMapping } from "@/lib/analytics/propTypes";
 
 export type GameSelection = "spread_home" | "spread_away" | "moneyline_home" | "moneyline_away" | "total_over" | "total_under";
@@ -130,16 +130,16 @@ export function summarizePropMarkets(props: BdlPlayerProp[]): PropMarketSummary[
     const underList = groupProps.flatMap((prop) => (prop.market.type === "over_under" ? [{ vendor: prop.vendor, odds: prop.market.under_odds, line: Number(prop.line_value) }] : []));
     const bestOver = overList.filter((offer) => offer.line === mainLine).sort((first, second) => decimalOf(second.odds) - decimalOf(first.odds))[0] ?? null;
     const bestUnder = underList.filter((offer) => offer.line === mainLine).sort((first, second) => decimalOf(second.odds) - decimalOf(first.odds))[0] ?? null;
-    const overMedian = median(atMain.flatMap((prop) => (prop.market.type === "over_under" ? [prop.market.over_odds] : [])));
-    const underMedian = median(atMain.flatMap((prop) => (prop.market.type === "over_under" ? [prop.market.under_odds] : [])));
+    const overMedian = medianAmerican(atMain.flatMap((prop) => (prop.market.type === "over_under" ? [prop.market.over_odds] : [])));
+    const underMedian = medianAmerican(atMain.flatMap((prop) => (prop.market.type === "over_under" ? [prop.market.under_odds] : [])));
     return {
       playerId: groupProps[0].player_id,
       propType: groupProps[0].prop_type,
       mainLine,
       bestOver,
       bestUnder,
-      overOddsAtMain: overMedian === null ? null : Math.round(overMedian),
-      underOddsAtMain: underMedian === null ? null : Math.round(underMedian),
+      overOddsAtMain: overMedian,
+      underOddsAtMain: underMedian,
       vendorCount: new Set(groupProps.map((prop) => prop.vendor)).size,
     };
   });

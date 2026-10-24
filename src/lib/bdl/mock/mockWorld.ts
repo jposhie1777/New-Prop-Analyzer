@@ -593,7 +593,7 @@ function expectedPerMinute(profile: MockPlayerProfile, statField: keyof BdlStatL
   return ratePerMinute[statField] ?? 0;
 }
 
-function recentMockAverage(playerId: number, teamId: number, beforeDate: string, statFields: Array<keyof BdlStatLine>, firstQuarterOnly: boolean): number | null {
+function recentMockAverage(playerId: number, teamId: number, beforeDate: string, statFields: Array<keyof BdlStatLine>, periodScope: "full" | "first_quarter" | "second_half"): number | null {
   const values: number[] = [];
   for (let dayOffset = 1; dayOffset <= 200 && values.length < 10; dayOffset++) {
     const isoDate = addDays(beforeDate, -dayOffset);
@@ -601,7 +601,7 @@ function recentMockAverage(playerId: number, teamId: number, beforeDate: string,
     if (!game || game.status_state !== "final") continue;
     const periodLines = mockPeriodLines(game.id).get(playerId);
     if (!periodLines || periodLines.every((periodLine) => periodLine.minutesValue === 0)) continue;
-    const scoped = firstQuarterOnly ? periodLines.slice(0, 1) : periodLines;
+    const scoped = periodScope === "first_quarter" ? periodLines.slice(0, 1) : periodScope === "second_half" ? periodLines.slice(2, 4) : periodLines;
     const combined = sumPeriodLines(scoped);
     values.push(statFields.reduce((runningTotal, statField) => runningTotal + Number(combined[statField] ?? 0), 0));
   }
@@ -623,16 +623,17 @@ export function mockPlayerProps(game: BdlGame, opening: boolean, playerFilter?: 
         if (definition.firstQuarterOnly && !opening && elapsedShare > 0) continue;
         const minutesScope = definition.firstQuarterOnly ? minutes / 4 : minutes;
         const formulaValue = definition.statFields.reduce((runningTotal, statField) => runningTotal + expectedPerMinute(profile, statField) * minutesScope, 0);
-        let expectedValue = recentMockAverage(profile.player.id, teamId, game.date, definition.statFields, Boolean(definition.firstQuarterOnly)) ?? formulaValue;
+        let expectedValue = recentMockAverage(profile.player.id, teamId, game.date, definition.statFields, definition.firstQuarterOnly ? "first_quarter" : "full") ?? formulaValue;
         if (!opening && liveLines && !definition.firstQuarterOnly) {
           const soFar = sumPeriodLines(liveLines.get(profile.player.id) ?? []);
           const actualSoFar = definition.statFields.reduce((runningTotal, statField) => runningTotal + Number(soFar[statField] ?? 0), 0);
-          expectedValue = actualSoFar + expectedValue * (1 - elapsedShare);
+          const secondHalfAverage = game.status === "Halftime" ? recentMockAverage(profile.player.id, teamId, game.date, definition.statFields, "second_half") : null;
+          expectedValue = actualSoFar + (secondHalfAverage ?? expectedValue * (1 - elapsedShare)); // live books re-center on the score so far
         }
         if (expectedValue < 0.6) continue;
         mockPropVendors.forEach((vendor, vendorIndex) => {
           const random = new SeededRandom(`prop-${game.id}-${profile.player.id}-${definition.propType}-${vendor}-${opening ? "open" : "live"}`);
-          const lineValue = Math.max(0.5, Math.floor(expectedValue + random.between(-0.8, 0.8)) + 0.5);
+          const lineValue = Math.max(0.5, Math.floor(expectedValue + random.between(-0.6, 0.6)) + 0.5);
           const overChance = random.between(0.44, 0.58);
           const overOdds = probabilityToAmerican(overChance * 1.022); // about 4.5% total vig split across both sides
           const underOdds = probabilityToAmerican((1 - overChance) * 1.022);

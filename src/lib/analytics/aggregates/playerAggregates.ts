@@ -158,3 +158,38 @@ export async function playerPositionGroup(engine: AnalyticsEngine, playerId: num
     SELECT position_group FROM recent GROUP BY position_group ORDER BY COUNT(*) DESC LIMIT 1`); // most common recent group
   return groupRow?.position_group ?? "F";
 }
+
+export interface SecondHalfProfile {
+  playerId: number;
+  games: number;
+  metrics: Record<PlayerMetric, { average: number | null; standardDeviation: number | null }>;
+}
+
+export async function secondHalfProfiles(engine: AnalyticsEngine, playerIds: number[], gameLimit = 10): Promise<Map<number, SecondHalfProfile>> {
+  const profiles = new Map<number, SecondHalfProfile>();
+  if (playerIds.length === 0) return profiles;
+  const metricColumns = playerMetricColumns.flatMap((metricName) => [`AVG(COALESCE(half_line."${metricName}", 0)) AS "${metricName}__avg"`, `STDDEV_SAMP(COALESCE(half_line."${metricName}", 0)) AS "${metricName}__sd"`]);
+  const profileRows = await engine.query<Record<string, unknown>>(`
+    WITH recent AS (
+      SELECT player_id, game_id, ROW_NUMBER() OVER (PARTITION BY player_id ORDER BY game_date DESC, game_id DESC) AS recency
+      FROM player_game_stats WHERE player_id IN (${sqlNumberList(playerIds)}) AND minutes > 0
+        AND game_id IN (SELECT DISTINCT game_id FROM player_period_stats)
+    )
+    SELECT recent.player_id, COUNT(*) AS games, ${metricColumns.join(", ")}
+    FROM recent LEFT JOIN player_scope_lines AS half_line ON half_line.player_id = recent.player_id AND half_line.game_id = recent.game_id AND half_line.scope = 'H2'
+    WHERE recent.recency <= ${sqlNumber(gameLimit)}
+    GROUP BY recent.player_id`); // last N games across seasons, a benched 2nd half counts as zero
+  for (const profileRow of profileRows) {
+    const metrics = {} as SecondHalfProfile["metrics"];
+    for (const metricName of playerMetricColumns) {
+      const averageValue = profileRow[`${metricName}__avg`];
+      const deviationValue = profileRow[`${metricName}__sd`];
+      metrics[metricName] = {
+        average: typeof averageValue === "number" && Number.isFinite(averageValue) ? averageValue : null,
+        standardDeviation: typeof deviationValue === "number" && Number.isFinite(deviationValue) ? deviationValue : null,
+      };
+    }
+    profiles.set(Number(profileRow.player_id), { playerId: Number(profileRow.player_id), games: Number(profileRow.games), metrics });
+  }
+  return profiles;
+}
