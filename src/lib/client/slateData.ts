@@ -118,5 +118,5 @@ export function useLiveBoxScores(games: BdlGame[] | null): LiveState {
 }
 
 export function matchBoxScore(game: BdlGame, boxScores: BdlBoxScore[]): BdlBoxScore | null {
-  return boxScores.find((boxScore) => boxScore.home_team.team.id === game.home_team.id && boxScore.visitor_team.team.id === game.visitor_team.id && boxScore.date === game.date) ?? null; // live box scores carry no game id
+  return boxScores.find((boxScore) => boxScore.home_team?.team?.id === game.home_team.id && boxScore.visitor_team?.team?.id === game.visitor_team.id && (!boxScore.date || boxScore.date === game.date)) ?? null; // live box scores carry no game id
 }

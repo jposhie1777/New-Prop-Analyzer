@@ -55,5 +55,5 @@ export function formatTipoff(isoDateTime: string | null | undefined): string {
   if (!isoDateTime) return "TBD";
   const parsed = new Date(isoDateTime);
   if (Number.isNaN(parsed.getTime())) return "TBD";
-  return parsed.toLocaleTimeString("en-US", { timeZone: appSettings.timeZone, hour: "numeric", minute: "2-digit" }) + " ET";
+  return parsed.toLocaleTimeString("en-US", { timeZone: appSettings.timeZone, hour: "numeric", minute: "2-digit" }).replace(/\s/g, " ") + " ET"; // Node and browsers disagree on narrow no-break spaces
 }

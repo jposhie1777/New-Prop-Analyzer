@@ -12,8 +12,8 @@ export const viewport: Viewport = { width: "device-width", initialScale: 1, them
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" suppressHydrationWarning>
+      <body suppressHydrationWarning>
         <AppHeader />
         {children}
         <footer className="footer-note">Personal, non-commercial project. Data: BALLDONTLIE. Logos and headshots: NBA. Informational only, not betting advice.</footer>
