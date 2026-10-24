@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useSettings, useSlip } from "@/lib/client/hooks";
 import { bestOffer, clearSlip, copyTextFor, removePick, type SlipOffer, type SlipPick } from "@/lib/client/betSlip";
@@ -38,8 +38,12 @@ function CopyButton({ text }: { text: string }) {
 export default function SlipPage() {
   const picks = useSlip();
   const settings = useSettings();
-  const [stake, setStake] = useState<number>(() => (typeof window === "undefined" ? 10 : readLocalJson("pulse-nba-stake", 10)));
-  const [bankroll, setBankroll] = useState<number>(() => (typeof window === "undefined" ? 1000 : readLocalJson("pulse-nba-bankroll", 1000)));
+  const [stake, setStake] = useState<number>(10);
+  const [bankroll, setBankroll] = useState<number>(1000);
+  useEffect(() => {
+    setStake(readLocalJson("pulse-nba-stake", 10)); // read after mount so server and browser HTML match
+    setBankroll(readLocalJson("pulse-nba-bankroll", 1000));
+  }, []);
   const vendors = [...new Set(picks.flatMap((pick) => pick.offers.map((offer) => offer.vendor)))].sort();
   const sameGameLegs = picks.length !== new Set(picks.map((pick) => pick.gameId)).size;
 
