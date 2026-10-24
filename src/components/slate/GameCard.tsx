@@ -28,6 +28,7 @@ function Movement({ current, opening, invertGood = false }: { current: number | 
 function RestBadge({ rest }: { rest: RestInfo | undefined }) {
   if (!rest || rest.restDays === null) return null;
   if (rest.backToBack) return <span className="pill warning">B2B</span>;
+  if (rest.restDays > 30) return <span className="pill">Opener</span>; // first game since the offseason
   return <span className="pill">{rest.restDays}d rest</span>;
 }
 
