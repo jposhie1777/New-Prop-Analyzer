@@ -5,6 +5,8 @@ import { analyticsStatus, getAnalytics, subscribeAnalyticsStatus, type Analytics
 import { readSettings, subscribeSettings, type UserSettings, defaultSettings } from "./settings";
 import { readSlip, subscribeSlip, type SlipPick } from "./betSlip";
 import { recordVisibleMinute } from "./deviceUsage";
+import { readTracked, subscribeTracked } from "@/lib/tracking/trackerStore";
+import type { TrackedPick } from "@/lib/tracking/tracker";
 
 export function usePageVisible(): boolean {
   return useSyncExternalStore(
@@ -148,4 +150,21 @@ export function useVisibleMinuteCounter(): void {
     const timer = window.setInterval(recordVisibleMinute, 60_000);
     return () => window.clearInterval(timer);
   }, [visible]);
+}
+
+let cachedTrackedJson = "";
+let cachedTracked: TrackedPick[] = [];
+const emptyTracked: TrackedPick[] = [];
+function trackedSnapshot(): TrackedPick[] {
+  const current = readTracked();
+  const currentJson = JSON.stringify(current);
+  if (currentJson !== cachedTrackedJson) {
+    cachedTrackedJson = currentJson;
+    cachedTracked = current;
+  }
+  return cachedTracked;
+}
+
+export function useTracked(): TrackedPick[] {
+  return useSyncExternalStore((onChange) => subscribeTracked(onChange), trackedSnapshot, () => emptyTracked);
 }

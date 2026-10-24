@@ -13,6 +13,9 @@ import { formatNumber, formatPercent, formatSigned } from "@/lib/client/format";
 import { vendorLabel } from "@/lib/odds/deeplinks";
 import { appSettings } from "@/config/appSettings";
 import type { BdlBettingOdd, BdlBoxScore, BdlGame } from "@/lib/bdl/types";
+import { useEffect } from "react";
+import { trackPicks } from "@/lib/tracking/trackerStore";
+import { halftimeToTracked } from "@/lib/tracking/fromSources";
 
 export function HalftimePanel({ game, boxScore, gameOdds }: { game: BdlGame; boxScore: BdlBoxScore; gameOdds: BdlBettingOdd[] }) {
   const settings = useSettings();
@@ -21,6 +24,10 @@ export function HalftimePanel({ game, boxScore, gameOdds }: { game: BdlGame; box
   const profiles = useAnalyticsQuery(playerIds.length > 0 ? (handle) => secondHalfProfiles(handle.engine, playerIds, 10) : null, `h2:${game.id}:${playerIds.length}`);
   const suggestions = profiles.result ? buildHalftimeSuggestions(boxScore, props.data ?? [], profiles.result, settings.evThresholdPercent) : [];
   const flagged = suggestions.filter((suggestion) => suggestion.flagged);
+  const flaggedKey = flagged.map((suggestion) => `${suggestion.playerId}:${suggestion.propType}`).join(",");
+  useEffect(() => {
+    if (flagged.length > 0) trackPicks(flagged.map((suggestion) => halftimeToTracked(suggestion, game.id, game.date))); // flagged picks are graded later on the Record page
+  }, [flaggedKey]); // eslint-disable-line react-hooks/exhaustive-deps
   return (
     <section className="card" style={{ borderColor: "rgba(251, 191, 36, 0.35)" }}>
       <div className="card-header wrap">

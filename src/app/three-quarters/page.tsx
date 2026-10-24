@@ -11,6 +11,9 @@ import { appSettings } from "@/config/appSettings";
 import { formatNumber, formatPercent } from "@/lib/client/format";
 import { formatTipoff } from "@/lib/dates";
 import type { BdlGame } from "@/lib/bdl/types";
+import { useEffect } from "react";
+import { trackPicks } from "@/lib/tracking/trackerStore";
+import { threeQuarterToTracked } from "@/lib/tracking/fromSources";
 
 interface SheetRow {
   game: BdlGame;
@@ -95,6 +98,11 @@ export default function ThreeQuartersPage() {
   }
   rows.sort((first, second) => (second.projection.probability ?? -1) - (first.projection.probability ?? -1));
   const windows: WindowName[] = ["L5", "L10", "L20"];
+  const trackable = rows.filter((row) => row.projection.probability !== null && row.projection.projection !== null && row.game.status_state === "scheduled");
+  const trackKey = trackable.map((row) => `${row.game.id}:${row.teamId}`).join(",");
+  useEffect(() => {
+    trackPicks(trackable.map((row) => threeQuarterToTracked(row.game.id, row.game.date, row.teamId, (row.isHome ? row.game.home_team : row.game.visitor_team).abbreviation, (row.isHome ? row.game.visitor_team : row.game.home_team).abbreviation, row.projection.probability!, row.projection.projection!))); // pregame projections only
+  }, [trackKey]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <main className="page">

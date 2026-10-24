@@ -11,6 +11,7 @@ const navItems = [
   { href: "/live", label: "Live" },
   { href: "/players", label: "Players" },
   { href: "/slip", label: "Slip" },
+  { href: "/record", label: "Record" },
   { href: "/costs", label: "Costs" },
   { href: "/settings", label: "Settings" },
 ];

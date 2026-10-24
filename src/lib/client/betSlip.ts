@@ -1,5 +1,7 @@
 import type { BdlDeeplinks } from "@/lib/bdl/types";
 import { readLocalJson, writeLocalJson } from "./safeStorage";
+import { trackPicks } from "@/lib/tracking/trackerStore";
+import { slipPickToTracked } from "@/lib/tracking/fromSources";
 
 export interface SlipOffer {
   vendor: string;
@@ -13,6 +15,7 @@ export interface SlipPick {
   pickId: string;
   kind: "game" | "prop";
   gameId: number;
+  gameDate: string;
   market: "spread" | "total" | "moneyline" | "prop";
   selectionKey: string; // spread_home, total_over, over, under, ...
   label: string;
@@ -41,6 +44,7 @@ function writeSlip(picks: SlipPick[]): void {
 export function addPick(pick: Omit<SlipPick, "addedAt">): void {
   const others = readSlip().filter((existing) => existing.pickId !== pick.pickId);
   writeSlip([...others, { ...pick, addedAt: new Date().toISOString() }]);
+  trackPicks([slipPickToTracked(pick)]); // every slip pick is graded on the Record page
 }
 
 export function removePick(pickId: string): void {

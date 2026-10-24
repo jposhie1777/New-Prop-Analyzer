@@ -1,6 +1,6 @@
 import type { BdlBettingOdd, BdlGame, BdlPlayerProp } from "@/lib/bdl/types";
 import type { SlipOffer, SlipPick } from "./betSlip";
-import { median, medianAmerican } from "@/lib/odds/consensus";
+import { medianAmerican } from "@/lib/odds/consensus";
 import { propMapping } from "@/lib/analytics/propTypes";
 
 export type GameSelection = "spread_home" | "spread_away" | "moneyline_home" | "moneyline_away" | "total_over" | "total_under";
@@ -30,7 +30,8 @@ function offerFor(odd: BdlBettingOdd, selection: GameSelection): SlipOffer | nul
 export function buildGamePick(game: BdlGame, odds: BdlBettingOdd[], selection: GameSelection, source: string): Omit<SlipPick, "addedAt"> | null {
   const offers = odds.filter((odd) => odd.game_id === game.id).map((odd) => offerFor(odd, selection)).filter((offer): offer is SlipOffer => offer !== null);
   if (offers.length === 0) return null;
-  const typicalLine = median(offers.map((offer) => offer.lineValue).filter((lineValue): lineValue is number => lineValue !== null));
+  const offeredLines = offers.map((offer) => offer.lineValue).filter((lineValue): lineValue is number => lineValue !== null);
+  const typicalLine = offeredLines.length > 0 ? mostCommonLine(offeredLines) : null; // a real line, never an average like -4.75
   const home = game.home_team.abbreviation;
   const away = game.visitor_team.abbreviation;
   const labels: Record<GameSelection, { label: string; market: SlipPick["market"] }> = {
@@ -45,6 +46,7 @@ export function buildGamePick(game: BdlGame, odds: BdlBettingOdd[], selection: G
     pickId: `game-${game.id}-${selection}`,
     kind: "game",
     gameId: game.id,
+    gameDate: game.date,
     market: labels[selection].market,
     selectionKey: selection,
     label: labels[selection].label,
@@ -83,6 +85,7 @@ export function buildPropPick(
     pickId: `prop-${game.id}-${playerId}-${propType}-${side}`,
     kind: "prop",
     gameId: game.id,
+    gameDate: game.date,
     market: "prop",
     selectionKey: side,
     label: `${playerName} ${side === "over" ? "Over" : "Under"} ${mainLine} ${propLabel}`,
