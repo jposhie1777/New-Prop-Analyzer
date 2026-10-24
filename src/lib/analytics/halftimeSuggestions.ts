@@ -29,6 +29,10 @@ export interface HalftimeSuggestion {
   flagged: boolean;
 }
 
+function withinMarketGap(modelOver: number, fairOver: number | null): boolean {
+  return fairOver !== null && Math.abs(modelOver - fairOver) <= 0.2;
+}
+
 export function boxMetricValue(boxPlayer: BdlBoxScorePlayer, metric: PlayerMetric): number {
   const points = boxPlayer.pts ?? 0;
   const rebounds = boxPlayer.reb ?? 0;
@@ -88,7 +92,7 @@ export function buildHalftimeSuggestions(boxScore: BdlBoxScore, props: BdlPlayer
           bestOverVendor: summary.bestOver?.vendor ?? null,
           bestUnderOdds: summary.bestUnder?.odds ?? null,
           bestUnderVendor: summary.bestUnder?.vendor ?? null,
-          flagged: firstHalfValue <= summary.mainLine && (evaluation.bestEvPercent ?? -Infinity) >= evThresholdPercent, // a cashed line is stale, never a pick
+          flagged: firstHalfValue <= summary.mainLine && withinMarketGap(evaluation.overProbability, noVig?.noVigOver ?? evaluation.noVigOver) && (evaluation.bestEvPercent ?? -Infinity) >= evThresholdPercent, // a cashed line is stale; a huge gap to the market means missing news
         });
       }
     }

@@ -172,3 +172,10 @@ details > summary::-webkit-details-marker { display: none; }
 @media (min-width: 900px) { .desktop-only { display: block; } }
 .mobile-sync { display: block; margin-bottom: 12px; }
 @media (min-width: 900px) { .mobile-sync { display: none; } }
+.slip-fab { position: fixed; right: 16px; bottom: calc(18px + env(safe-area-inset-bottom)); z-index: 30; display: inline-flex; align-items: center; gap: 8px; padding: 11px 16px; border-radius: 999px; background: var(--accent); color: white; font-weight: 750; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45); }
+.slip-fab-count { background: white; color: var(--accent); border-radius: 999px; padding: 0 8px; font-size: 13px; font-weight: 800; }
+.prop-card { min-width: 0; max-width: 100%; }
+.prop-card .table-scroll { margin: 0; padding: 0; }
+.prop-card details { min-width: 0; }
+.card-grid { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr)); }
+html, body { overflow-x: hidden; }

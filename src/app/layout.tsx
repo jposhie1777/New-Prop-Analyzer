@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { AppHeader } from "@/components/AppHeader";
+import { SlipFab } from "@/components/SlipFab";
 
 export const metadata: Metadata = {
   title: "Pulse NBA",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body suppressHydrationWarning>
         <AppHeader />
         {children}
+        <SlipFab />
         <footer className="footer-note">Personal, non-commercial project. Data: BALLDONTLIE. Logos and headshots: NBA. Informational only, not betting advice.</footer>
       </body>
     </html>

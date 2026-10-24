@@ -651,6 +651,12 @@ export function mockPlayerProps(game: BdlGame, opening: boolean, playerFilter?: 
           if (opening) prop.opened_at = `${addDays(game.date, -1)}T16:00:00.000Z`;
           else prop.updated_at = new Date().toISOString();
           props.push(prop);
+          if (definition.propType === "points" && vendor === "draftkings") {
+            for (const [stepIndex, stepUp] of [5, 10].entries()) {
+              const threshold = Math.ceil(lineValue + stepUp);
+              props.push({ ...prop, id: prop.id * 10 + stepIndex + 1, line_value: String(threshold), market: { type: "milestone", odds: stepUp === 5 ? 240 : 600 }, deeplinks: null }); // "X+ points" milestone markets
+            }
+          }
         });
       }
     }

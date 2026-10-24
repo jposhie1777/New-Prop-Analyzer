@@ -69,8 +69,9 @@ export function buildPropPick(
   gameOdds: BdlBettingOdd[],
   source: string,
   modelProbability: number | null = null,
+  lineFilter: number | null = null,
 ): Omit<SlipPick, "addedAt"> | null {
-  const matching = props.filter((prop) => prop.player_id === playerId && prop.prop_type === propType && prop.market.type === "over_under");
+  const matching = props.filter((prop) => prop.player_id === playerId && prop.prop_type === propType && prop.market.type === "over_under" && (lineFilter === null || Number(prop.line_value) === lineFilter)); // lineFilter picks one alternate line
   const offers: SlipOffer[] = matching.flatMap((prop) => {
     if (prop.market.type !== "over_under") return [];
     const americanOdds = side === "over" ? prop.market.over_odds : prop.market.under_odds;
@@ -82,7 +83,7 @@ export function buildPropPick(
   const mainLine = mostCommonLine(offers.map((offer) => offer.lineValue ?? 0));
   const propLabel = propMapping(propType)?.label ?? propType;
   return {
-    pickId: `prop-${game.id}-${playerId}-${propType}-${side}`,
+    pickId: `prop-${game.id}-${playerId}-${propType}-${side}${lineFilter === null ? "" : `-${lineFilter}`}`,
     kind: "prop",
     gameId: game.id,
     gameDate: game.date,
@@ -113,18 +114,25 @@ export interface PropMarketSummary {
   overOddsAtMain: number | null;
   underOddsAtMain: number | null;
   vendorCount: number;
+  ladder: Array<{ line: number; bestOver: { vendor: string; odds: number } | null; bestUnder: { vendor: string; odds: number } | null; books: number }>;
+  milestones: Array<{ threshold: number; best: { vendor: string; odds: number }; books: number }>;
 }
 
 function decimalOf(americanOdds: number): number {
   return americanOdds > 0 ? 1 + americanOdds / 100 : 1 + 100 / -americanOdds;
 }
 
+function bestPrice(offers: Array<{ vendor: string; odds: number }>): { vendor: string; odds: number } | null {
+  return [...offers].filter((offer) => Number.isFinite(offer.odds) && offer.odds !== 0).sort((first, second) => decimalOf(second.odds) - decimalOf(first.odds))[0] ?? null;
+}
+
 export function summarizePropMarkets(props: BdlPlayerProp[]): PropMarketSummary[] {
   const grouped = new Map<string, BdlPlayerProp[]>();
+  const milestoneGroups = new Map<string, BdlPlayerProp[]>();
   for (const prop of props) {
-    if (prop.market.type !== "over_under") continue;
     const groupKey = `${prop.player_id}|${prop.prop_type}`;
-    grouped.set(groupKey, [...(grouped.get(groupKey) ?? []), prop]);
+    const target = prop.market.type === "over_under" ? grouped : milestoneGroups;
+    target.set(groupKey, [...(target.get(groupKey) ?? []), prop]);
   }
   return [...grouped.values()].map((groupProps) => {
     const mainLine = mostCommonLine(groupProps.map((prop) => Number(prop.line_value)));
@@ -144,6 +152,53 @@ export function summarizePropMarkets(props: BdlPlayerProp[]): PropMarketSummary[
       overOddsAtMain: overMedian,
       underOddsAtMain: underMedian,
       vendorCount: new Set(groupProps.map((prop) => prop.vendor)).size,
+      ladder: [...new Set(groupProps.map((prop) => Number(prop.line_value)))]
+        .sort((first, second) => first - second)
+        .map((line) => {
+          const atLine = groupProps.filter((prop) => Number(prop.line_value) === line);
+          return {
+            line,
+            bestOver: bestPrice(atLine.flatMap((prop) => (prop.market.type === "over_under" ? [{ vendor: prop.vendor, odds: prop.market.over_odds }] : []))),
+            bestUnder: bestPrice(atLine.flatMap((prop) => (prop.market.type === "over_under" ? [{ vendor: prop.vendor, odds: prop.market.under_odds }] : []))),
+            books: new Set(atLine.map((prop) => prop.vendor)).size,
+          };
+        }),
+      milestones: summarizeMilestones(milestoneGroups.get(`${groupProps[0].player_id}|${groupProps[0].prop_type}`) ?? []),
     };
   });
+}
+
+function summarizeMilestones(milestoneProps: BdlPlayerProp[]): PropMarketSummary["milestones"] {
+  const thresholds = [...new Set(milestoneProps.map((prop) => Number(prop.line_value)))].filter(Number.isFinite).sort((first, second) => first - second);
+  return thresholds.flatMap((threshold) => {
+    const atThreshold = milestoneProps.filter((prop) => Number(prop.line_value) === threshold);
+    const best = bestPrice(atThreshold.flatMap((prop) => (prop.market.type === "milestone" ? [{ vendor: prop.vendor, odds: prop.market.odds }] : [])));
+    return best ? [{ threshold, best, books: new Set(atThreshold.map((prop) => prop.vendor)).size }] : [];
+  }); // "X+" markets: one price, pays if the player reaches X
+}
+
+export function buildMilestonePick(game: BdlGame, playerId: number, playerName: string, propType: string, threshold: number, props: BdlPlayerProp[], gameOdds: BdlBettingOdd[], source: string, modelProbability: number | null = null): Omit<SlipPick, "addedAt"> | null {
+  const offers: SlipOffer[] = props.flatMap((prop) => {
+    if (prop.player_id !== playerId || prop.prop_type !== propType || prop.market.type !== "milestone" || Number(prop.line_value) !== threshold) return [];
+    if (!Number.isFinite(prop.market.odds) || prop.market.odds === 0) return [];
+    const vendorGameOdd = gameOdds.find((bettingOdd) => bettingOdd.game_id === game.id && bettingOdd.vendor === prop.vendor);
+    return [{ vendor: prop.vendor, americanOdds: prop.market.odds, lineValue: threshold - 0.5, deeplinks: prop.deeplinks ?? null, eventDeeplinks: vendorGameOdd?.deeplinks ?? null }]; // X+ grades like over X-0.5
+  });
+  if (offers.length === 0) return null;
+  const propLabel = propMapping(propType)?.label ?? propType;
+  return {
+    pickId: `milestone-${game.id}-${playerId}-${propType}-${threshold}`,
+    kind: "prop",
+    gameId: game.id,
+    gameDate: game.date,
+    market: "prop",
+    selectionKey: "yes",
+    label: `${playerName} ${threshold}+ ${propLabel}`,
+    detail: `${game.visitor_team.abbreviation} @ ${game.home_team.abbreviation}`,
+    propType,
+    playerId,
+    offers,
+    modelProbability,
+    source,
+  };
 }

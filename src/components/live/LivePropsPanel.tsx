@@ -7,9 +7,9 @@ import { Segmented } from "@/components/Segmented";
 import { useAnalyticsQuery, useSettings, useVisiblePolling } from "@/lib/client/hooks";
 import { loadProps } from "@/lib/client/slateData";
 import { quarterProfiles } from "@/lib/analytics/aggregates/playerAggregates";
-import { buildLivePropRows, type LivePropRow } from "@/lib/analytics/liveSuggestions";
+import { buildLivePropRows, maximumModelMarketGap, type LivePropRow } from "@/lib/analytics/liveSuggestions";
 import { clockLabel } from "@/lib/analytics/liveProjection";
-import { buildPropPick } from "@/lib/client/pickBuilders";
+import { buildMilestonePick, buildPropPick } from "@/lib/client/pickBuilders";
 import { formatAmerican } from "@/lib/math/odds";
 import { formatNumber, formatPercent, formatSigned } from "@/lib/client/format";
 import { vendorLabel } from "@/lib/odds/deeplinks";
@@ -30,9 +30,10 @@ export function LivePropsPanel({ game, boxScore, gameOdds }: { game: BdlGame; bo
   const [onlyFlagged, setOnlyFlagged] = useState(false);
   const [searchText, setSearchText] = useState("");
   const props = useVisiblePolling(() => loadProps(game.id), 60_000, `live-props:${game.id}`); // live lines refresh every 60s while visible
+  const openingProps = useVisiblePolling(() => loadProps(game.id, true), 600_000, `opening-props:${game.id}`); // pregame lines anchor the projection
   const playerIds = [...boxScore.home_team.players, ...boxScore.visitor_team.players].map((boxPlayer) => boxPlayer.player.id);
   const profiles = useAnalyticsQuery(playerIds.length > 0 ? (handle) => quarterProfiles(handle.engine, playerIds, 10) : null, `quarters:${game.id}:${playerIds.length}`);
-  const { rows, clock } = buildLivePropRows(boxScore, props.data ?? [], profiles.result ?? new Map(), settings.evThresholdPercent);
+  const { rows, clock } = buildLivePropRows(boxScore, props.data ?? [], openingProps.data ?? [], profiles.result ?? new Map(), settings.evThresholdPercent);
   const clockText = clockLabel(boxScore.status, boxScore.time);
   const flaggedRows = rows.filter((propRow) => propRow.flagged);
   const flaggedKey = flaggedRows.map((propRow) => `${propRow.playerId}:${propRow.propType}`).join(",");
@@ -62,7 +63,7 @@ export function LivePropsPanel({ game, boxScore, gameOdds }: { game: BdlGame; bo
             Live props · {game.visitor_team.abbreviation} @ {game.home_team.abbreviation} <span className="pill live" style={{ marginLeft: 6 }}><span className="live-dot" />{clockText}</span>
           </h2>
           <div className="faint small">
-            Projection = current stat + the player&apos;s last-10 per-quarter averages for the time left ({formatPercent(rows[0]?.projection.remainingShare ?? (clock.isFinished ? 0 : null), 0)} of the game), trimmed for foul trouble and second-half blowouts. Lines refresh every 60s.
+            Projection = current stat + the pregame line (last-10 average if none) for the time left ({formatPercent(rows[0]?.projection.remainingShare ?? (clock.isFinished ? 0 : null), 0)} of the game), split by the player&apos;s usual quarters and blended with tonight&apos;s pace, trimmed for fouls and blowouts. Only flags picks within 20 points of the market and anchored to a pregame line. Lines refresh every 60s.
           </div>
         </div>
         <span className="pill warning">
@@ -94,7 +95,7 @@ export function LivePropsPanel({ game, boxScore, gameOdds }: { game: BdlGame; bo
       {props.error ? <div className="notice">Live props unavailable: {props.error}</div> : null}
       {props.loading && !props.data ? <div className="skeleton" /> : null}
       {props.data && rows.length === 0 ? <div className="empty-state">No live player props posted for this game right now. Books often pull them during play and late in games.</div> : null}
-      <div className="grid" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 10 }}>
+      <div className="card-grid">
         {visibleRows.map((propRow) => {
           const side = sideOf(propRow);
           const sideOdds = side === "over" ? propRow.bestOverOdds : propRow.bestUnderOdds;
@@ -131,8 +132,9 @@ export function LivePropsPanel({ game, boxScore, gameOdds }: { game: BdlGame; bo
                 </span>
               </div>
               <div className="faint small">
-                {formatNumber(propRow.minutesPlayed, 0)} min · {propRow.personalFouls} PF{propRow.projection.adjustments.length > 0 ? ` · ${propRow.projection.adjustments.join(", ")}` : ""}
+                {formatNumber(propRow.minutesPlayed, 0)} min · {propRow.personalFouls} PF · start {formatNumber(propRow.prior.fullGameMean)} ({propRow.prior.source}){propRow.projection.adjustments.length > 0 ? ` · ${propRow.projection.adjustments.join(", ")}` : ""}
               </div>
+              {propRow.modelMarketGap !== null && propRow.modelMarketGap > maximumModelMarketGap && !alreadyOver ? <div className="small warning-text">Model is {Math.round(propRow.modelMarketGap * 100)} pts from the market: likely missing news, not flagged.</div> : null}
               <div className="row-between">
                 <span className="small">
                   Best {side}: <span className="strong">{formatAmerican(sideOdds)}</span> <span className="faint">{sideVendor ? vendorLabel(sideVendor) : ""}</span>
@@ -142,6 +144,65 @@ export function LivePropsPanel({ game, boxScore, gameOdds }: { game: BdlGame; bo
                   <AddToSlipButton pick={buildPropPick(game, propRow.playerId, propRow.playerName, propRow.propType, "under", props.data ?? [], gameOdds, "live", propRow.evaluation.underProbability)} label="+ U" />
                 </span>
               </div>
+              {propRow.ladder.length > 1 || propRow.milestones.length > 0 ? (
+                <details>
+                  <summary className="expand-hint">
+                    Alt lines ({propRow.ladder.length}){propRow.milestones.length > 0 ? ` · ${propRow.milestones.length} milestones` : ""}
+                  </summary>
+                  <div className="table-scroll" style={{ marginTop: 6 }}>
+                    <table className="data-table">
+                      <thead>
+                        <tr>
+                          <th>Line</th>
+                          <th>Over</th>
+                          <th>EV</th>
+                          <th>Under</th>
+                          <th>EV</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {propRow.ladder.map((rung) => (
+                          <tr key={rung.line} style={rung.line === propRow.lineValue ? { fontWeight: 700 } : undefined}>
+                            <td>{rung.line}</td>
+                            <td>
+                              {formatAmerican(rung.overOdds)}
+                              <span className="sub">{formatPercent(rung.overProbability, 0)}</span>
+                            </td>
+                            <td className={(rung.overEvPercent ?? 0) >= settings.evThresholdPercent ? "positive" : ""}>{rung.overEvPercent === null ? "-" : `${formatSigned(rung.overEvPercent, 0)}%`}</td>
+                            <td>
+                              {formatAmerican(rung.underOdds)}
+                              <span className="sub">{formatPercent(rung.underProbability, 0)}</span>
+                            </td>
+                            <td className={(rung.underEvPercent ?? 0) >= settings.evThresholdPercent ? "positive" : ""}>{rung.underEvPercent === null ? "-" : `${formatSigned(rung.underEvPercent, 0)}%`}</td>
+                            <td>
+                              <span className="row" style={{ gap: 3, justifyContent: "flex-end" }}>
+                                <AddToSlipButton pick={buildPropPick(game, propRow.playerId, propRow.playerName, propRow.propType, "over", props.data ?? [], gameOdds, "live", rung.overProbability, rung.line)} label="O" />
+                                <AddToSlipButton pick={buildPropPick(game, propRow.playerId, propRow.playerName, propRow.propType, "under", props.data ?? [], gameOdds, "live", rung.underProbability, rung.line)} label="U" />
+                              </span>
+                            </td>
+                          </tr>
+                        ))}
+                        {propRow.milestones.map((milestone) => (
+                          <tr key={`m${milestone.threshold}`}>
+                            <td>{milestone.threshold}+</td>
+                            <td>
+                              {formatAmerican(milestone.odds)}
+                              <span className="sub">{formatPercent(milestone.probability, 0)}</span>
+                            </td>
+                            <td className={milestone.evPercent >= settings.evThresholdPercent ? "positive" : ""}>{formatSigned(milestone.evPercent, 0)}%</td>
+                            <td className="faint">{vendorLabel(milestone.vendor)}</td>
+                            <td></td>
+                            <td>
+                              <AddToSlipButton pick={buildMilestonePick(game, propRow.playerId, propRow.playerName, propRow.propType, milestone.threshold, props.data ?? [], gameOdds, "live", milestone.probability)} label="+" />
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </details>
+              ) : null}
             </div>
           );
         })}

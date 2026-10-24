@@ -50,7 +50,7 @@ export function resolveSelectionLink(deeplinks: BdlDeeplinks | null | undefined,
   return eventHref ? { href: eventHref, kind: "event" } : null;
 }
 
-export function resolvePropLink(vendor: string, propDeeplinks: BdlDeeplinks | null | undefined, side: "over" | "under", settings: LinkSettings, gameOddDeeplinks?: BdlDeeplinks | null): ResolvedLink | null {
+export function resolvePropLink(vendor: string, propDeeplinks: BdlDeeplinks | null | undefined, side: "over" | "under" | "yes", settings: LinkSettings, gameOddDeeplinks?: BdlDeeplinks | null): ResolvedLink | null {
   if (copyOnlyPropVendors.has(vendor)) {
     const eventHref = fillTemplate(propDeeplinks?.event, settings) ?? fillTemplate(gameOddDeeplinks?.event, settings);
     return eventHref ? { href: eventHref, kind: "event" } : null;

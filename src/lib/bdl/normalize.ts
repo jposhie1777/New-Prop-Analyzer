@@ -1,4 +1,5 @@
 import type { BdlBoxScore, BdlBoxScorePlayer, BdlBoxScoreTeam, BdlTeam } from "./types";
+import { parseMinutes } from "@/lib/dates";
 
 type RawBoxSide = Partial<BdlTeam> & { team?: BdlTeam; players?: BdlBoxScorePlayer[] };
 
@@ -6,7 +7,13 @@ export function normalizeBoxSide(rawSide: RawBoxSide | null | undefined): BdlBox
   if (!rawSide) return null;
   const team: BdlTeam | null = rawSide.team ?? (typeof rawSide.id === "number" ? { id: rawSide.id, conference: rawSide.conference ?? "", division: rawSide.division ?? "", city: rawSide.city ?? "", name: rawSide.name ?? "", full_name: rawSide.full_name ?? "", abbreviation: rawSide.abbreviation ?? "" } : null); // the live API puts team fields next to players, the spec nests them under team
   if (!team) return null;
-  const players = (rawSide.players ?? []).filter((boxPlayer) => boxPlayer && boxPlayer.player && typeof boxPlayer.player.id === "number");
+  const validPlayers = (rawSide.players ?? []).filter((boxPlayer) => boxPlayer && boxPlayer.player && typeof boxPlayer.player.id === "number");
+  const byId = new Map<number, BdlBoxScorePlayer>();
+  for (const boxPlayer of validPlayers) {
+    const existing = byId.get(boxPlayer.player.id);
+    if (!existing || parseMinutes(boxPlayer.min) > parseMinutes(existing.min)) byId.set(boxPlayer.player.id, boxPlayer); // the live feed can list a player twice
+  }
+  const players = [...byId.values()];
   return { team, players };
 }
 
