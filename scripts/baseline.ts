@@ -76,7 +76,7 @@ async function writeSeasonParquet(season: number, seasonDates: string[], workDir
         if (tableName === "teams") continue;
         const rows = payload.tables[tableName] ?? [];
         if (rows.length === 0) continue;
-        writeFileSync(join(stagingDirectory, `${tableName}.ndjson`), rows.map((row) => JSON.stringify(row)).join("\n") + "\n", { flag: "a" });
+        writeFileSync(join(stagingDirectory, `${tableName}.ndjson`), rows.map((dataRow) => JSON.stringify(dataRow)).join("\n") + "\n", { flag: "a" });
         rowCounts.set(tableName, (rowCounts.get(tableName) ?? 0) + rows.length);
       }
     }

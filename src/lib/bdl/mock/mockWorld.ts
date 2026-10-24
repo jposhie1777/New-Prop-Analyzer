@@ -259,9 +259,9 @@ function teamRotation(teamId: number, isoDate: string): Array<{ profile: MockPla
   const profiles = teamProfiles(teamId);
   let freedMinutes = 0;
   const rotation = profiles.map((profile) => {
-    const out = isPlayerOut(profile.player.id, isoDate);
-    if (out) freedMinutes += profile.baseMinutes;
-    return { profile, minutes: out ? 0 : profile.baseMinutes };
+    const isOut = isPlayerOut(profile.player.id, isoDate);
+    if (isOut) freedMinutes += profile.baseMinutes;
+    return { profile, minutes: isOut ? 0 : profile.baseMinutes };
   });
   const healthyRotation = rotation.filter((entry) => entry.minutes > 0);
   const healthyTotal = healthyRotation.reduce((runningTotal, entry) => runningTotal + entry.minutes, 0);
@@ -545,7 +545,7 @@ export function mockGameOdds(game: BdlGame, opening: boolean): BdlBettingOdd[] {
     }
     const homeWinChance = 1 / (1 + Math.exp(spreadHome / 6.5));
     const toAmerican = (chance: number) => (chance >= 0.5 ? -Math.round((chance / (1 - chance)) * 100 * 1.04) : Math.round(((1 - chance) / chance) * 100 * 0.96));
-    const odd: BdlBettingOdd = {
+    const bettingOdd: BdlBettingOdd = {
       id: game.id * 10 + vendorIndex,
       game_id: game.id,
       vendor,
@@ -560,9 +560,9 @@ export function mockGameOdds(game: BdlGame, opening: boolean): BdlBettingOdd[] {
       total_under_odds: americanFromNoise(random),
       deeplinks: mockDeeplinks(vendor, game.id, ["moneyline_home", "moneyline_away", "spread_home", "spread_away", "total_over", "total_under"], true),
     };
-    if (opening) odd.opened_at = `${addDays(game.date, -1)}T15:00:00.000Z`;
-    else odd.updated_at = new Date().toISOString();
-    return odd;
+    if (opening) bettingOdd.opened_at = `${addDays(game.date, -1)}T15:00:00.000Z`;
+    else bettingOdd.updated_at = new Date().toISOString();
+    return bettingOdd;
   });
 }
 

@@ -11,7 +11,7 @@ export function formatSpread(spreadValue: number | null): string {
   return spreadValue > 0 ? `+${spreadValue}` : String(spreadValue);
 }
 
-function offerFor(odd: BdlBettingOdd, selection: GameSelection): SlipOffer | null {
+function offerFor(bettingOdd: BdlBettingOdd, selection: GameSelection): SlipOffer | null {
   const selectionFields: Record<GameSelection, { odds: keyof BdlBettingOdd; line: keyof BdlBettingOdd | null }> = {
     spread_home: { odds: "spread_home_odds", line: "spread_home_value" },
     spread_away: { odds: "spread_away_odds", line: "spread_away_value" },
@@ -21,14 +21,14 @@ function offerFor(odd: BdlBettingOdd, selection: GameSelection): SlipOffer | nul
     total_under: { odds: "total_under_odds", line: "total_value" },
   };
   const fields = selectionFields[selection];
-  const americanOdds = Number(odd[fields.odds]);
+  const americanOdds = Number(bettingOdd[fields.odds]);
   if (!Number.isFinite(americanOdds) || americanOdds === 0) return null;
-  const lineValue = fields.line ? Number(odd[fields.line]) : null;
-  return { vendor: odd.vendor, americanOdds, lineValue: lineValue !== null && Number.isFinite(lineValue) ? lineValue : null, deeplinks: odd.deeplinks ?? null, eventDeeplinks: odd.deeplinks ?? null };
+  const lineValue = fields.line ? Number(bettingOdd[fields.line]) : null;
+  return { vendor: bettingOdd.vendor, americanOdds, lineValue: lineValue !== null && Number.isFinite(lineValue) ? lineValue : null, deeplinks: bettingOdd.deeplinks ?? null, eventDeeplinks: bettingOdd.deeplinks ?? null };
 }
 
 export function buildGamePick(game: BdlGame, odds: BdlBettingOdd[], selection: GameSelection, source: string): Omit<SlipPick, "addedAt"> | null {
-  const offers = odds.filter((odd) => odd.game_id === game.id).map((odd) => offerFor(odd, selection)).filter((offer): offer is SlipOffer => offer !== null);
+  const offers = odds.filter((bettingOdd) => bettingOdd.game_id === game.id).map((bettingOdd) => offerFor(bettingOdd, selection)).filter((offer): offer is SlipOffer => offer !== null);
   if (offers.length === 0) return null;
   const offeredLines = offers.map((offer) => offer.lineValue).filter((lineValue): lineValue is number => lineValue !== null);
   const typicalLine = offeredLines.length > 0 ? mostCommonLine(offeredLines) : null; // a real line, never an average like -4.75
@@ -75,7 +75,7 @@ export function buildPropPick(
     if (prop.market.type !== "over_under") return [];
     const americanOdds = side === "over" ? prop.market.over_odds : prop.market.under_odds;
     if (!Number.isFinite(americanOdds) || americanOdds === 0) return [];
-    const vendorGameOdd = gameOdds.find((odd) => odd.game_id === game.id && odd.vendor === prop.vendor);
+    const vendorGameOdd = gameOdds.find((bettingOdd) => bettingOdd.game_id === game.id && bettingOdd.vendor === prop.vendor);
     return [{ vendor: prop.vendor, americanOdds, lineValue: Number(prop.line_value), deeplinks: prop.deeplinks ?? null, eventDeeplinks: vendorGameOdd?.deeplinks ?? null }];
   });
   if (offers.length === 0) return null;

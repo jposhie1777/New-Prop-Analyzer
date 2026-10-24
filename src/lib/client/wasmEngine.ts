@@ -28,7 +28,7 @@ function coerceValue(rawValue: unknown, columnType: DuckColumnType): unknown {
 export function rowsToArrowTable(tableName: TableName, rows: Array<Record<string, unknown>>): Table {
   const columnVectors: Record<string, Vector> = {};
   for (const [columnName, columnType] of Object.entries(tableColumns[tableName]) as Array<[string, DuckColumnType]>) {
-    columnVectors[columnName] = vectorFromArray(rows.map((row) => coerceValue(row[columnName], columnType)), arrowTypeFor(columnType)) as Vector; // typed vectors keep nulls
+    columnVectors[columnName] = vectorFromArray(rows.map((dataRow) => coerceValue(dataRow[columnName], columnType)), arrowTypeFor(columnType)) as Vector; // typed vectors keep nulls
   }
   return new Table(columnVectors);
 }

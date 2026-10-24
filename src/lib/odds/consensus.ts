@@ -16,7 +16,7 @@ export function medianAmerican(americanOddsList: number[]): number | null {
 }
 
 function numericValues(odds: BdlBettingOdd[], fieldName: keyof BdlBettingOdd): number[] {
-  return odds.map((odd) => odd[fieldName]).filter((rawValue) => rawValue !== null && rawValue !== undefined && rawValue !== "").map(Number).filter(Number.isFinite);
+  return odds.map((bettingOdd) => bettingOdd[fieldName]).filter((rawValue) => rawValue !== null && rawValue !== undefined && rawValue !== "").map(Number).filter(Number.isFinite);
 }
 
 export interface ConsensusLine {
@@ -33,7 +33,7 @@ export function consensusLine(odds: BdlBettingOdd[]): ConsensusLine {
     total: median(numericValues(odds, "total_value")),
     moneylineHome: medianAmerican(numericValues(odds, "moneyline_home_odds")),
     moneylineAway: medianAmerican(numericValues(odds, "moneyline_away_odds")),
-    vendorCount: new Set(odds.map((odd) => odd.vendor)).size,
+    vendorCount: new Set(odds.map((bettingOdd) => bettingOdd.vendor)).size,
   };
 }
 
@@ -44,6 +44,6 @@ export function impliedTeamTotals(spreadHome: number | null, total: number | nul
 
 export function groupOddsByGame(odds: BdlBettingOdd[]): Map<number, BdlBettingOdd[]> {
   const grouped = new Map<number, BdlBettingOdd[]>();
-  for (const odd of odds) grouped.set(odd.game_id, [...(grouped.get(odd.game_id) ?? []), odd]);
+  for (const bettingOdd of odds) grouped.set(bettingOdd.game_id, [...(grouped.get(bettingOdd.game_id) ?? []), bettingOdd]);
   return grouped;
 }

@@ -117,7 +117,7 @@ export function buildTeamPeriodSummaries(game: BdlGame, plays: BdlPlay[], period
     const periodMinutes = periodLengthMinutes(periodNumber);
     for (const teamId of [homeTeamId, visitorTeamId]) {
       const opponentId = teamId === homeTeamId ? visitorTeamId : homeTeamId;
-      const own = resolved.get(teamId)!;
+      const ownSide = resolved.get(teamId)!;
       const opponent = resolved.get(opponentId)!;
       summaryRows.push({
         season: game.season,
@@ -128,16 +128,16 @@ export function buildTeamPeriodSummaries(game: BdlGame, plays: BdlPlay[], period
         is_home: teamId === homeTeamId,
         period: periodNumber,
         period_minutes: periodMinutes,
-        points: own.counts.points,
+        points: ownSide.counts.points,
         opp_points: opponent.counts.points,
-        field_goal_attempts: own.counts.fieldGoalAttempts,
-        free_throw_attempts: own.counts.freeThrowAttempts,
-        offensive_rebounds: own.counts.offensiveRebounds,
-        turnovers: own.counts.turnovers,
-        possessions: Math.round(own.possessions * 100) / 100,
+        field_goal_attempts: ownSide.counts.fieldGoalAttempts,
+        free_throw_attempts: ownSide.counts.freeThrowAttempts,
+        offensive_rebounds: ownSide.counts.offensiveRebounds,
+        turnovers: ownSide.counts.turnovers,
+        possessions: Math.round(ownSide.possessions * 100) / 100,
         opp_possessions: Math.round(opponent.possessions * 100) / 100,
-        pace: Math.round(paceFor(own.possessions, opponent.possessions, periodMinutes) * 100) / 100,
-        possessions_source: own.source,
+        pace: Math.round(paceFor(ownSide.possessions, opponent.possessions, periodMinutes) * 100) / 100,
+        possessions_source: ownSide.source,
       });
     }
   }

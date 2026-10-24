@@ -144,9 +144,9 @@ export function GameCard({ game, odds, openingOdds, injuries, rest, boxScore }: 
                 </tr>
               </thead>
               <tbody>
-                {odds.map((odd) => {
+                {odds.map((bettingOdd) => {
                   const cell = (selection: GameSelection, lineText: string | null, americanOdds: number | null) => {
-                    const link = resolveSelectionLink(odd.deeplinks, selection, settings);
+                    const link = resolveSelectionLink(bettingOdd.deeplinks, selection, settings);
                     const content = (
                       <>
                         {lineText ? `${lineText} ` : ""}
@@ -162,14 +162,14 @@ export function GameCard({ game, odds, openingOdds, injuries, rest, boxScore }: 
                     );
                   };
                   return (
-                    <tr key={odd.id}>
-                      <td>{vendorLabel(odd.vendor)}</td>
-                      <td>{cell("spread_away", formatSpread(odd.spread_away_value === null ? null : Number(odd.spread_away_value)), odd.spread_away_odds)}</td>
-                      <td>{cell("spread_home", formatSpread(odd.spread_home_value === null ? null : Number(odd.spread_home_value)), odd.spread_home_odds)}</td>
-                      <td>{cell("total_over", odd.total_value, odd.total_over_odds)}</td>
-                      <td>{cell("total_under", odd.total_value, odd.total_under_odds)}</td>
-                      <td>{cell("moneyline_away", null, odd.moneyline_away_odds)}</td>
-                      <td>{cell("moneyline_home", null, odd.moneyline_home_odds)}</td>
+                    <tr key={bettingOdd.id}>
+                      <td>{vendorLabel(bettingOdd.vendor)}</td>
+                      <td>{cell("spread_away", formatSpread(bettingOdd.spread_away_value === null ? null : Number(bettingOdd.spread_away_value)), bettingOdd.spread_away_odds)}</td>
+                      <td>{cell("spread_home", formatSpread(bettingOdd.spread_home_value === null ? null : Number(bettingOdd.spread_home_value)), bettingOdd.spread_home_odds)}</td>
+                      <td>{cell("total_over", bettingOdd.total_value, bettingOdd.total_over_odds)}</td>
+                      <td>{cell("total_under", bettingOdd.total_value, bettingOdd.total_under_odds)}</td>
+                      <td>{cell("moneyline_away", null, bettingOdd.moneyline_away_odds)}</td>
+                      <td>{cell("moneyline_home", null, bettingOdd.moneyline_home_odds)}</td>
                     </tr>
                   );
                 })}
