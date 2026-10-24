@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+.env
+.env.local
+.env*.local
+.vercel/
+public/duckdb/
+public/data/mock-baseline/
+.baseline-work/
+coverage/

@@ -1,0 +1,11 @@
+{
+  "name": "Pulse NBA",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
+  "postCreateCommand": "npm install",
+  "forwardPorts": [3000],
+  "portsAttributes": { "3000": { "label": "Pulse NBA", "onAutoForward": "openPreview" } },
+  "secrets": {
+    "BDL_API_KEY": { "description": "Your BALLDONTLIE API key (server-side only)", "documentationUrl": "https://app.balldontlie.io" },
+    "BDL_TIER": { "description": "goat, trial, free or mock" }
+  }
+}
