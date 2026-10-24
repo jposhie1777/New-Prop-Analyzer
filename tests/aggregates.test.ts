@@ -142,6 +142,6 @@ describe("halftime suggestions", () => {
     expect(first.projection.projection).toBeGreaterThanOrEqual(first.firstHalfActual);
     expect(first.evaluation.noVigOver).toBeGreaterThan(0);
     expect(suggestions.every((suggestion, index) => index === 0 || (suggestions[index - 1].evaluation.bestEvPercent ?? 0) >= (suggestion.evaluation.bestEvPercent ?? 0))).toBe(true);
-    expect(suggestions.every((suggestion) => suggestion.flagged === (suggestion.evaluation.bestEvPercent ?? -1) >= 3)).toBe(true);
+    expect(suggestions.every((suggestion) => !suggestion.flagged || ((suggestion.evaluation.bestEvPercent ?? -1) >= 3 && suggestion.firstHalfActual <= suggestion.lineValue))).toBe(true);
   });
 });

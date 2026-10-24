@@ -15,7 +15,8 @@ export function isGameLive(game: Pick<BdlGame, "status" | "status_state">): bool
 
 export function isHalftime(game: Pick<BdlGame, "status" | "time" | "period">): boolean {
   const statusText = `${game.status ?? ""} ${game.time ?? ""}`.toLowerCase();
-  return statusText.includes("halftime") || (statusText.includes("half") && (game.period ?? 0) === 2);
+  if (statusText.includes("halftime") || (statusText.includes("half") && (game.period ?? 0) === 2)) return true;
+  return (game.period ?? 0) === 2 && /(^|\s|q2\s)0:00(\.0)?\b/.test(statusText) && !statusText.includes("final"); // end of the 2nd quarter before the feed says Halftime
 }
 
 export function flattenGame(game: BdlGame): DataRow {

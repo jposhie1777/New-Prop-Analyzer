@@ -12,6 +12,7 @@ import { isGameFinal, isGameLive } from "@/lib/data/flatten";
 import type { RestInfo } from "@/lib/analytics/aggregates/teamAggregates";
 import { resolveSelectionLink, vendorLabel } from "@/lib/odds/deeplinks";
 import { useSettings } from "@/lib/client/hooks";
+import { clockLabel } from "@/lib/analytics/liveProjection";
 
 function Movement({ current, opening, invertGood = false }: { current: number | null; opening: number | null; invertGood?: boolean }) {
   if (current === null || opening === null) return <span className="faint">open -</span>;
@@ -38,7 +39,7 @@ function statusLine(game: BdlGame, boxScore: BdlBoxScore | null) {
     return (
       <span className="pill live">
         <span className="live-dot" />
-        {liveSource.status === "Halftime" ? "Halftime" : `${liveSource.status ?? ""} ${liveSource.time && liveSource.time !== liveSource.status ? liveSource.time : ""}`.trim()}
+        {clockLabel(liveSource.status, liveSource.time)}
       </span>
     );
   }
@@ -103,6 +104,11 @@ export function GameCard({ game, odds, openingOdds, injuries, rest, boxScore }: 
         </div>
       </div>
       <div className="card-body" style={{ padding: "10px 14px", borderTop: "1px solid var(--border-subtle)" }}>
+        {isGameLive(boxScore ?? game) ? (
+          <Link href={`/live?game=${game.id}`} className="button primary" style={{ width: "100%", marginBottom: 10 }}>
+            Live player props →
+          </Link>
+        ) : null}
         <div className="chip-row">
           <AddToSlipButton pick={pick("spread_away")} label={`+ ${game.visitor_team.abbreviation} spread`} />
           <AddToSlipButton pick={pick("spread_home")} label={`+ ${game.home_team.abbreviation} spread`} />

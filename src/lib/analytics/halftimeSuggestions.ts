@@ -5,6 +5,7 @@ import { evaluateProp, projectHalftime, type HalftimeProjection, type PropEvalua
 import { summarizePropMarkets } from "@/lib/client/pickBuilders";
 import type { PlayerMetric } from "./views";
 import { parseMinutes } from "@/lib/dates";
+import { settleCashedOver } from "./liveSuggestions";
 
 export interface HalftimeSuggestion {
   playerId: number;
@@ -65,7 +66,8 @@ export function buildHalftimeSuggestions(boxScore: BdlBoxScore, props: BdlPlayer
           personalFouls: boxPlayer.pf ?? 0,
           scoreMargin: margin,
         });
-        const evaluation = evaluateProp(projection.projection, projection.standardDeviation, summary.mainLine, summary.bestOver?.odds ?? null, summary.bestUnder?.odds ?? null);
+        const firstHalfValue = boxMetricValue(boxPlayer, mapping.metric);
+        const evaluation = settleCashedOver(evaluateProp(projection.projection, projection.standardDeviation, summary.mainLine, summary.bestOver?.odds ?? null, summary.bestUnder?.odds ?? null), firstHalfValue, summary.mainLine, summary.bestOver?.odds ?? null, summary.bestUnder?.odds ?? null);
         const noVig = summary.overOddsAtMain !== null && summary.underOddsAtMain !== null ? evaluateProp(projection.projection, projection.standardDeviation, summary.mainLine, summary.overOddsAtMain, summary.underOddsAtMain) : null;
         suggestions.push({
           playerId: boxPlayer.player.id,
@@ -86,7 +88,7 @@ export function buildHalftimeSuggestions(boxScore: BdlBoxScore, props: BdlPlayer
           bestOverVendor: summary.bestOver?.vendor ?? null,
           bestUnderOdds: summary.bestUnder?.odds ?? null,
           bestUnderVendor: summary.bestUnder?.vendor ?? null,
-          flagged: (evaluation.bestEvPercent ?? -Infinity) >= evThresholdPercent,
+          flagged: firstHalfValue <= summary.mainLine && (evaluation.bestEvPercent ?? -Infinity) >= evThresholdPercent, // a cashed line is stale, never a pick
         });
       }
     }

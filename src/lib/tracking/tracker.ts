@@ -1,6 +1,6 @@
 import type { PlayerMetric, ScopeName } from "@/lib/analytics/views";
 
-export type TrackSource = "halftime" | "100-in-3" | "slip";
+export type TrackSource = "halftime" | "live" | "100-in-3" | "slip";
 export type TrackKind = "prop" | "spread" | "total" | "moneyline" | "team_three_quarters";
 export type TrackSide = "over" | "under" | "home" | "away";
 export type GradeStatus = "win" | "loss" | "push" | "void";

@@ -193,3 +193,40 @@ export async function secondHalfProfiles(engine: AnalyticsEngine, playerIds: num
   }
   return profiles;
 }
+
+export interface QuarterProfile {
+  playerId: number;
+  games: number;
+  quarters: Record<1 | 2 | 3 | 4, Record<PlayerMetric, { average: number; variance: number }>>;
+}
+
+export async function quarterProfiles(engine: AnalyticsEngine, playerIds: number[], gameLimit = 10): Promise<Map<number, QuarterProfile>> {
+  const profiles = new Map<number, QuarterProfile>();
+  if (playerIds.length === 0) return profiles;
+  const metricColumns = playerMetricColumns.flatMap((metricName) => [`AVG(COALESCE(quarter_line."${metricName}", 0)) AS "${metricName}__avg"`, `VAR_SAMP(COALESCE(quarter_line."${metricName}", 0)) AS "${metricName}__var"`]);
+  const profileRows = await engine.query<Record<string, unknown>>(`
+    WITH recent AS (
+      SELECT player_id, game_id, ROW_NUMBER() OVER (PARTITION BY player_id ORDER BY game_date DESC, game_id DESC) AS recency
+      FROM player_game_stats WHERE player_id IN (${sqlNumberList(playerIds)}) AND minutes > 0
+        AND game_id IN (SELECT DISTINCT game_id FROM player_period_stats)
+    ),
+    quarter_grid AS (SELECT recent.*, quarter_list.quarter FROM recent CROSS JOIN (SELECT UNNEST([1, 2, 3, 4]) AS quarter) AS quarter_list WHERE recent.recency <= ${sqlNumber(gameLimit)})
+    SELECT quarter_grid.player_id, quarter_grid.quarter, COUNT(*) AS games, ${metricColumns.join(", ")}
+    FROM quarter_grid LEFT JOIN player_scope_lines AS quarter_line
+      ON quarter_line.player_id = quarter_grid.player_id AND quarter_line.game_id = quarter_grid.game_id AND quarter_line.scope = 'Q' || CAST(quarter_grid.quarter AS VARCHAR)
+    GROUP BY quarter_grid.player_id, quarter_grid.quarter`); // last N games across seasons, a quarter on the bench counts as zero
+  for (const profileRow of profileRows) {
+    const playerId = Number(profileRow.player_id);
+    const quarter = Number(profileRow.quarter) as 1 | 2 | 3 | 4;
+    const profile = profiles.get(playerId) ?? { playerId, games: Number(profileRow.games), quarters: {} as QuarterProfile["quarters"] };
+    const metrics = {} as Record<PlayerMetric, { average: number; variance: number }>;
+    for (const metricName of playerMetricColumns) {
+      const averageValue = Number(profileRow[`${metricName}__avg`] ?? 0);
+      const varianceValue = Number(profileRow[`${metricName}__var`] ?? 0);
+      metrics[metricName] = { average: Number.isFinite(averageValue) ? averageValue : 0, variance: Number.isFinite(varianceValue) ? varianceValue : 0 };
+    }
+    profile.quarters[quarter] = metrics;
+    profiles.set(playerId, profile);
+  }
+  return profiles;
+}
