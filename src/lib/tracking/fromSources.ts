@@ -84,12 +84,12 @@ export function threeQuarterToTracked(gameId: number, gameDate: string, teamId: 
   };
 }
 
-export function livePropToTracked(propRow: LivePropRow, gameId: number, gameDate: string, clockText: string): NewTracked {
+export function livePropToTracked(propRow: LivePropRow, gameId: number, gameDate: string, clockText: string, source: "live" | "halftime" = "live"): NewTracked {
   const side = propRow.evaluation.bestSide ?? "over";
   const mapping = propMapping(propRow.propType);
   return {
-    trackId: `live-${gameId}-${propRow.playerId}-${propRow.propType}`,
-    source: "live",
+    trackId: `${source}-${gameId}-${propRow.playerId}-${propRow.propType}`,
+    source,
     kind: "prop",
     gameId,
     gameDate,

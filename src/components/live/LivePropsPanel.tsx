@@ -1,20 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Segmented } from "@/components/Segmented";
 import { PriceButton } from "@/components/PriceButton";
-import { booksKey } from "@/lib/client/bookFilter";
-import { useAnalyticsQuery, useSettings, useVisiblePolling } from "@/lib/client/hooks";
-import { loadProps } from "@/lib/client/slateData";
-import { quarterProfiles } from "@/lib/analytics/aggregates/playerAggregates";
-import { buildLivePropRows, maximumModelMarketGap, type LivePropRow } from "@/lib/analytics/liveSuggestions";
-import { clockLabel } from "@/lib/analytics/liveProjection";
+import { useSettings } from "@/lib/client/hooks";
+import type { LivePropData } from "@/lib/client/liveProps";
+import { maximumModelMarketGap, type LivePropRow } from "@/lib/analytics/liveSuggestions";
 import { buildMilestonePick, buildPropPick } from "@/lib/client/pickBuilders";
 import { formatNumber, formatPercent, formatSigned } from "@/lib/client/format";
-import { trackPicks } from "@/lib/tracking/trackerStore";
-import { livePropToTracked } from "@/lib/tracking/fromSources";
-import type { BdlBettingOdd, BdlBoxScore, BdlGame, BdlPlayerProp } from "@/lib/bdl/types";
+import type { BdlBettingOdd, BdlGame, BdlPlayerProp } from "@/lib/bdl/types";
 
 interface PlayerGroup {
   playerId: number;
@@ -35,7 +30,7 @@ function evNote(evPercent: number | null, trusted: boolean, threshold: number): 
   return { note: `${formatSigned(evPercent, 0)}% EV`, highlight: evPercent >= threshold };
 }
 
-function PropLine({ propRow, game, props, gameOdds, threshold }: { propRow: LivePropRow; game: BdlGame; props: BdlPlayerProp[]; gameOdds: BdlBettingOdd[]; threshold: number }) {
+export function PropLine({ propRow, game, props, gameOdds, threshold }: { propRow: LivePropRow; game: BdlGame; props: BdlPlayerProp[]; gameOdds: BdlBettingOdd[]; threshold: number }) {
   const trusted = isTrusted(propRow);
   const cashed = propRow.currentValue > propRow.lineValue;
   const overNote = evNote(propRow.evaluation.overEvPercent, trusted, threshold);
@@ -102,23 +97,14 @@ function PropLine({ propRow, game, props, gameOdds, threshold }: { propRow: Live
   );
 }
 
-export function LivePropsPanel({ game, boxScore, gameOdds }: { game: BdlGame; boxScore: BdlBoxScore; gameOdds: BdlBettingOdd[] }) {
+export function LivePropsPanel({ game, data, gameOdds }: { game: BdlGame; data: LivePropData; gameOdds: BdlBettingOdd[] }) {
   const settings = useSettings();
   const [marketFilter, setMarketFilter] = useState("all");
   const [valueOnly, setValueOnly] = useState(false);
   const [searchText, setSearchText] = useState("");
-  const props = useVisiblePolling(() => loadProps(game.id, false, settings.enabledBooks), 60_000, `live-props:${game.id}:${booksKey(settings.enabledBooks)}`); // live lines refresh every 60s while visible
-  const openingProps = useVisiblePolling(() => loadProps(game.id, true), 600_000, `opening-props:${game.id}`); // pregame lines from every book anchor the projection
-  const playerIds = [...boxScore.home_team.players, ...boxScore.visitor_team.players].map((boxPlayer) => boxPlayer.player.id);
-  const profiles = useAnalyticsQuery(playerIds.length > 0 ? (handle) => quarterProfiles(handle.engine, playerIds, 10) : null, `quarters:${game.id}:${playerIds.length}`);
-  const { rows } = buildLivePropRows(boxScore, props.data ?? [], openingProps.data ?? [], profiles.result ?? new Map(), settings.evThresholdPercent);
-  const clockText = clockLabel(boxScore.status, boxScore.time);
-  const flaggedRows = rows.filter((propRow) => propRow.flagged);
-  const flaggedKey = flaggedRows.map((propRow) => `${propRow.playerId}:${propRow.propType}`).join(",");
-  useEffect(() => {
-    if (flaggedRows.length > 0 && profiles.result) trackPicks(flaggedRows.map((propRow) => livePropToTracked(propRow, game.id, game.date, clockText))); // graded later on the Record page
-  }, [flaggedKey]); // eslint-disable-line react-hooks/exhaustive-deps
-
+  const { rows, props: propList } = data;
+  const flaggedRows = data.valuePicks;
+  const clockText = data.clock ? (data.clock.isHalftime ? "halftime" : `Q${Math.min(data.clock.period, 4)}`) : "";
   const markets = [...new Set(rows.map((propRow) => propRow.label))];
   const normalizedSearch = searchText.trim().toLowerCase();
   const visibleRows = rows
@@ -148,10 +134,10 @@ export function LivePropsPanel({ game, boxScore, gameOdds }: { game: BdlGame; bo
         {markets.length > 1 ? <Segmented options={[{ value: "all", label: "All" }, ...markets.map((market) => ({ value: market, label: market }))]} value={marketFilter} onChange={setMarketFilter} label="Market" /> : null}
         {rows.length > 12 ? <input className="input" placeholder="Find a player…" value={searchText} onChange={(changeEvent) => setSearchText(changeEvent.target.value)} /> : null}
       </div>
-      {props.error ? <div className="notice">Live props unavailable: {props.error}</div> : null}
-      {props.loading && !props.data ? <div className="skeleton" /> : null}
-      {props.data && rows.length === 0 ? <div className="empty-state">No live player props posted right now. Books often pull them during play.</div> : null}
-      {props.data && rows.length > 0 && orderedGroups.length === 0 ? <div className="empty-state">Nothing matches these filters.</div> : null}
+      {data.error ? <div className="notice">Live props unavailable: {data.error}</div> : null}
+      {data.loading ? <div className="skeleton" /> : null}
+      {!data.loading && rows.length === 0 ? <div className="empty-state">No live player props posted right now. Books often pull them during play.</div> : null}
+      {rows.length > 0 && orderedGroups.length === 0 ? <div className="empty-state">Nothing matches these filters.</div> : null}
       <div className="card-grid">
         {orderedGroups.map((group) => (
           <div key={group.playerId} className={`player-group${group.bestValue > -Infinity ? " has-value" : ""}`}>
@@ -164,7 +150,7 @@ export function LivePropsPanel({ game, boxScore, gameOdds }: { game: BdlGame; bo
               </span>
             </div>
             {group.rows.map((propRow) => (
-              <PropLine key={propRow.propType} propRow={propRow} game={game} props={props.data ?? []} gameOdds={gameOdds} threshold={settings.evThresholdPercent} />
+              <PropLine key={propRow.propType} propRow={propRow} game={game} props={propList} gameOdds={gameOdds} threshold={settings.evThresholdPercent} />
             ))}
           </div>
         ))}
@@ -172,7 +158,7 @@ export function LivePropsPanel({ game, boxScore, gameOdds }: { game: BdlGame; bo
       <details style={{ marginTop: 10 }}>
         <summary className="expand-hint">How projections work</summary>
         <p className="faint small">
-          Projection = current stat + the pregame line for the time left ({clockText}), split by the player&apos;s usual quarters, nudged by tonight&apos;s pace (more late in games), trimmed for foul trouble and second-half blowouts. EV shows only when the model is within {Math.round(maximumModelMarketGap * 100)} points of the de-vigged market; bigger gaps usually mean missing news. Green = at or above your {settings.evThresholdPercent}% threshold. Informational, not guaranteed.
+          Projection = current stat + the pregame line for the time left (now at {clockText}), split by the player&apos;s usual quarters, nudged by tonight&apos;s pace (more late in games), trimmed for foul trouble and second-half blowouts. EV shows only when the model is within {Math.round(maximumModelMarketGap * 100)} points of the de-vigged market; bigger gaps usually mean missing news. Green = at or above your {settings.evThresholdPercent}% threshold. Informational, not guaranteed.
         </p>
       </details>
     </div>
