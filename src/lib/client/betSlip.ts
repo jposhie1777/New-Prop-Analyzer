@@ -26,6 +26,7 @@ export interface SlipPick {
   modelProbability: number | null;
   source: string;
   addedAt: string;
+  chosenVendor?: string | null; // the book picked on the slip for this leg
 }
 
 const slipStorageKey = "pulse-nba-bet-slip";
@@ -49,6 +50,19 @@ export function addPick(pick: Omit<SlipPick, "addedAt">): void {
 
 export function removePick(pickId: string): void {
   writeSlip(readSlip().filter((existing) => existing.pickId !== pickId));
+}
+
+export function choosePickVendor(pickId: string, vendor: string): void {
+  writeSlip(readSlip().map((existing) => (existing.pickId === pickId ? { ...existing, chosenVendor: vendor } : existing)));
+}
+
+export function chooseVendorForAll(vendor: string): void {
+  writeSlip(readSlip().map((existing) => (existing.offers.some((offer) => offer.vendor === vendor) ? { ...existing, chosenVendor: vendor } : existing)));
+}
+
+export function selectedOffer(pick: SlipPick, defaultBook: string): SlipOffer | null {
+  const preferred = pick.chosenVendor ?? (defaultBook || null);
+  return (preferred ? pick.offers.find((offer) => offer.vendor === preferred) : null) ?? bestOffer(pick); // chosen book, else default book, else best price
 }
 
 export function clearSlip(): void {

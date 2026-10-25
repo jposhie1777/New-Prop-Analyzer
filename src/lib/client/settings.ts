@@ -7,6 +7,7 @@ export interface UserSettings {
   wagerAmount: number;
   pickType: string;
   enabledBooks: string[]; // empty = every book
+  defaultBook: string; // "" = best price
 }
 
 const settingsStorageKey = "pulse-nba-settings";
@@ -19,6 +20,7 @@ export function defaultSettings(): UserSettings {
     wagerAmount: appSettings.defaultWagerAmount,
     pickType: appSettings.defaultPickType,
     enabledBooks: [],
+    defaultBook: "",
   };
 }
 

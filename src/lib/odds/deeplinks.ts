@@ -1,4 +1,5 @@
 import type { BdlDeeplink, BdlDeeplinks } from "@/lib/bdl/types";
+import { sportsbookNbaPages } from "@/config/sportsbookLinks";
 
 export interface LinkSettings {
   sportsbookState: string;
@@ -8,7 +9,13 @@ export interface LinkSettings {
 
 export interface ResolvedLink {
   href: string;
-  kind: "selection" | "event";
+  kind: "selection" | "event" | "book";
+}
+
+export function bookHomeLink(vendor: string, settings: LinkSettings): ResolvedLink | null {
+  const template = sportsbookNbaPages[vendor];
+  if (!template) return null;
+  return { href: template.replace(/\{state\}/g, encodeURIComponent(settings.sportsbookState.toLowerCase())), kind: "book" }; // last resort: the book's NBA page
 }
 
 export const vendorLabels: Record<string, string> = {

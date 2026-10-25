@@ -163,14 +163,14 @@ Every route sends `s-maxage` + `stale-while-revalidate`, so Vercel's CDN answers
   - Projection = implied team total (from spread + total) × the team's share of points scored in Q1-Q3.
   - Probability from a normal approximation, ranked, with all inputs shown.
 - **Live (`/live`)**
-  - Scores, clock and cumulative box scores.
-  - **Halftime mode:** projection = 1st-half actual + the player's L10 2nd-half average, minutes trimmed for foul trouble and 20+ point margins.
-  - Compared with the de-vigged live line, with EV% shown. Picks at or above the EV threshold (default 3%, set it in Settings) are flagged. *Informational, not guaranteed.*
+  - Every game with score and clock. Live games show their **top 3 value picks** right on the card (labeled **Halftime picks** at halftime), each with a tap-to-add price.
+  - **All player props ▾** and **Box score ▾** expand under the game.
+  - Projection = current stat + the pregame line for the time left, split by the player's usual quarters, nudged by tonight's pace (more late in games), trimmed for foul trouble and second-half 20+ blowouts. Last-10 averages are used only when no pregame line exists. (This replaces the original halftime formula of 1st-half actual + L10 2nd-half average, which ran too far from the market on real data.)
+  - Compared with the de-vigged live line, with EV% shown only when the model is within 20 points of the market. Picks at or above the EV threshold (default 3%, set it in Settings) are highlighted and logged to the Record. *Informational, not guaranteed.*
 - **Slip (`/slip`)**
-  - Per-book odds, best price, parlay odds per book and best-price-per-leg.
-  - Quarter-Kelly sizing for modeled picks.
-  - Deeplinks fill `{state}` from Settings (default `nj`).
-  - FanDuel/DraftKings props link to the event page with a **Copy pick** button. No sportsbook scraping.
+  - One card per pick: player, prop and game, book chips with prices (★ = best), and a **Bet at <book>** button.
+  - The button opens BDL's bet-slip link when there is one, else the event page, else the book's NBA page (`src/config/sportsbookLinks.ts`, marked *verify*). Without a bet-slip link the pick is copied so you can paste it into the book's search.
+  - **Default sportsbook** (Settings) preselects your book; tap a chip to switch per pick. Parlay odds per book with Copy all legs; stake and quarter-Kelly sizing are under "Stake and sizing". No sportsbook scraping.
 - **Record (`/record`)**
   - Logs every flagged halftime pick, every pregame 100-in-3 projection and every slip pick at the first price seen.
   - Grades them from final stats once the game syncs: W-L, units, ROI, Brier score, calibration, and breakdowns by source, market and EV.

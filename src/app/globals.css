@@ -210,3 +210,17 @@ html, body { overflow-x: hidden; }
 .game-row-section { border-top: 1px solid var(--border-subtle); padding: 12px 14px; background: rgba(13, 19, 29, 0.6); }
 .toggle-button { display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 999px; border: 1px solid var(--border-strong); background: var(--surface-hover); font-size: 13px; font-weight: 650; cursor: pointer; }
 .toggle-button.open { background: var(--accent-soft); border-color: var(--accent); color: #c9d8ff; }
+.slip-item { padding: 14px; }
+.icon-button { border: 0; background: transparent; color: var(--text-muted); font-size: 18px; padding: 2px 6px; cursor: pointer; border-radius: 6px; }
+.icon-button:hover { color: var(--text-primary); background: var(--surface-hover); }
+.book-chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; margin: 10px 0; padding-bottom: 2px; }
+.book-chips::-webkit-scrollbar { display: none; }
+.book-chip { flex: 0 0 auto; display: inline-flex; flex-direction: column; align-items: center; min-width: 62px; padding: 6px 10px; border-radius: var(--radius-small); border: 1px solid var(--border-strong); background: var(--surface-hover); cursor: pointer; line-height: 1.15; }
+.book-chip.chosen { border-color: var(--accent); background: var(--accent-soft); box-shadow: 0 0 0 1px var(--accent) inset; }
+.book-chip-name { font-size: 11px; font-weight: 700; color: var(--text-secondary); }
+.book-chip-odds { font-size: 15px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.book-chip-line { font-size: 10.5px; color: var(--text-muted); }
+.bet-button { width: 100%; padding: 12px; font-size: 15px; }
+.top-picks { margin: 0 14px 12px; padding: 10px 12px; border-radius: var(--radius-medium); background: var(--surface-sunken); border: 1px solid var(--border-subtle); }
+.top-pick { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 7px 0; border-top: 1px solid rgba(31, 42, 59, 0.7); }
+.top-pick:first-of-type { border-top: 0; }
