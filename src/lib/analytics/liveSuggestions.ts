@@ -47,6 +47,7 @@ export interface LivePropRow {
   minutesPlayed: number;
   personalFouls: number;
   sampleGames: number;
+  secondHalfAverage: number | null; // player's Q3+Q4 average for this stat over his last 10 games
   prior: LivePrior;
   projection: LiveProjectionResult;
   evaluation: PropEvaluation;
@@ -147,6 +148,7 @@ export function buildLivePropRows(boxScore: BdlBoxScore, props: BdlPlayerProp[],
           minutesPlayed: parseMinutes(boxPlayer.min),
           personalFouls: boxPlayer.pf ?? 0,
           sampleGames: profile?.games ?? 0,
+          secondHalfAverage: profile?.quarters[3] && profile?.quarters[4] ? profile.quarters[3][mapping.metric].average + profile.quarters[4][mapping.metric].average : null,
           prior,
           projection,
           evaluation: { ...evaluation, noVigOver: fairOver, noVigUnder: fairPrices?.noVigUnder ?? evaluation.noVigUnder },
