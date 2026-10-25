@@ -14,7 +14,8 @@ import {
   mockLineups,
   mockPlayerById,
   mockPlayerProps,
-  mockPlays,
+  mockLivePlays,
+  mockShotCharts,
   mockSeasonRanges,
   mockStatsForGame,
   mockToday,
@@ -121,7 +122,12 @@ export function handleMockRequest(path: string, params: QueryParams): unknown {
     }
     case "/nba/v1/plays": {
       const game = mockGameById(Number(params.game_id));
-      return { data: game ? mockPlays(game) : [] };
+      return { data: game ? mockLivePlays(game) : [] };
+    }
+    case "/nba/v1/shot_charts": {
+      const teamIds = numberList(params, "team_ids[]");
+      const games = numberList(params, "game_ids[]").map((gameId) => mockGameById(gameId)).filter((game): game is BdlGame => Boolean(game));
+      return paginate(games.flatMap(mockShotCharts).filter((shot) => teamIds.length === 0 || teamIds.includes(shot.team_id)), params);
     }
     case "/nba/v1/player_injuries":
       return paginate(mockInjuryRows(), params);

@@ -63,6 +63,10 @@ export function useSlate(): PolledData<SlateData> {
   return useVisiblePolling(() => loadSlate(slateDate, enabledBooks), appSettings.slatePollIntervalMs, `${slateDate}:${booksKey(enabledBooks)}`); // every 10 min while visible
 }
 
+export function useLiveOdds(slateDate: string, anyLive: boolean): PolledData<BdlBettingOdd[]> {
+  return useVisiblePolling(anyLive ? async () => (await fetchApi<ListBody<BdlBettingOdd>>(`/api/odds?date=${slateDate}`)).data ?? [] : null, 60_000, `live-odds:${slateDate}:${anyLive}`); // every book, every minute while a game is live
+}
+
 export async function loadProps(gameId: number, opening = false, enabledBooks: string[] = []): Promise<BdlPlayerProp[]> {
   const body = await fetchApi<ListBody<BdlPlayerProp>>(`/api/props${opening ? "/opening" : ""}?game_id=${gameId}`);
   return booksOnly(body.data ?? [], enabledBooks);

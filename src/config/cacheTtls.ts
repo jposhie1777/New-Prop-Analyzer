@@ -13,6 +13,7 @@ export const cachePolicies = {
   liveBoxScores: { sMaxAgeSeconds: 30, staleWhileRevalidateSeconds: 30 }, // 30 s
   liveOdds: { sMaxAgeSeconds: 60, staleWhileRevalidateSeconds: 60 }, // 60 s
   liveProps: { sMaxAgeSeconds: 60, staleWhileRevalidateSeconds: 60 }, // 60 s
+  livePlays: { sMaxAgeSeconds: 60, staleWhileRevalidateSeconds: 60 }, // 60 s, play-by-play for live games
   finishedDate: { sMaxAgeSeconds: 2592000, staleWhileRevalidateSeconds: 0, immutable: true }, // 30 days, finished dates never change
   unfinishedDate: { sMaxAgeSeconds: 60, staleWhileRevalidateSeconds: 60 }, // a past date with a game not yet final
   players: { sMaxAgeSeconds: 86400, staleWhileRevalidateSeconds: 86400 }, // 1 day, player search

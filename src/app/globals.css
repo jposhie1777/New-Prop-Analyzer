@@ -203,6 +203,7 @@ body { overflow-x: clip; } /* clip, not hidden: hidden breaks the sticky header 
 .player-group-header { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 12px; cursor: pointer; list-style: none; }
 .player-group-header::-webkit-details-marker { display: none; }
 .player-group-name { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.player-signals { display: grid; gap: 2px; margin: 0 12px 6px; padding: 6px 8px; border-radius: var(--radius-small); background: var(--surface-raised); }
 .player-group-stats { display: flex; gap: 10px; font-size: 12px; margin-top: 3px; }
 .player-group-meta { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
 .player-group-meta .pill { padding: 1px 7px; font-size: 11px; }

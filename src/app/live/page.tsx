@@ -1,15 +1,17 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { LivePropsPanel } from "@/components/live/LivePropsPanel";
+import { LivePropsPanel, shootingTag } from "@/components/live/LivePropsPanel";
 import { BooksIndicator } from "@/components/BooksIndicator";
 import { TeamLogo } from "@/components/TeamLogo";
 import { BoxScoreTable } from "@/components/live/BoxScoreTable";
 import { clockLabel } from "@/lib/analytics/liveProjection";
-import { matchBoxScore, useLiveBoxScores, useSlate } from "@/lib/client/slateData";
+import { matchBoxScore, useLiveBoxScores, useLiveOdds, useSlate } from "@/lib/client/slateData";
+import { filterByBooks } from "@/lib/client/bookFilter";
+import { useSettings } from "@/lib/client/hooks";
 import { isGameFinal, isGameLive, isHalftime, isPotentialBlowout } from "@/lib/data/flatten";
 import { appSettings } from "@/config/appSettings";
-import { formatTipoff } from "@/lib/dates";
+import { formatTipoff, todayEastern } from "@/lib/dates";
 import { groupOddsByGame } from "@/lib/odds/consensus";
 import type { BdlBettingOdd, BdlBoxScore, BdlGame, BdlGameScoreDetail } from "@/lib/bdl/types";
 import { useLivePropData, type LivePropData } from "@/lib/client/liveProps";
@@ -18,6 +20,8 @@ import { buildPropPick } from "@/lib/client/pickBuilders";
 import { formatNumber, formatPercent, formatSigned } from "@/lib/client/format";
 
 type SectionName = "props" | "box";
+
+const pointsProp = new Set(["points", "threes", "points_rebounds_assists", "points_rebounds", "points_assists"]); // props where shooting luck matters
 
 const periodKeys = ["q1", "q2", "q3", "q4", "ot1", "ot2", "ot3"] as const;
 const periodHeaders = ["1", "2", "3", "4", "OT", "2OT", "3OT"];
@@ -76,7 +80,22 @@ function TopPicks({ game, data, gameOdds, atHalftime, blowout }: { game: BdlGame
   return (
     <div className="top-picks">
       <div className="section-label">{atHalftime ? "Halftime picks" : "Top live picks"}</div>
-      {blowout ? <div className="warning-text small">{appSettings.blowoutWarningMargin}+ point margin: starters may sit, so overs and spreads are riskier.</div> : null}
+      {blowout ? <div className="warning-text small">Blowout risk: starters may sit, so overs and spreads are riskier.</div> : null}
+      {data.market ? (
+        <div className="faint small">
+          Live total {data.market.liveTotal}
+          {data.market.paceFactor !== null ? (Math.abs(data.market.paceFactor - 1) < 0.02 ? " · scoring pace as expected" : ` · books expect ${data.market.paceFactor > 1 ? "+" : ""}${Math.round((data.market.paceFactor - 1) * 100)}% scoring vs. pregame`) : ""}
+          {data.market.liveSpreadHome !== null ? ` · ${game.home_team.abbreviation} ${data.market.liveSpreadHome > 0 ? "+" : ""}${data.market.liveSpreadHome}` : ""}
+        </div>
+      ) : null}
+      {data.rows
+        .filter((propRow, rowIndex, allRows) => propRow.inactiveNote && allRows.findIndex((otherRow) => otherRow.playerId === propRow.playerId) === rowIndex)
+        .slice(0, 3)
+        .map((propRow) => (
+          <div key={`out-${propRow.playerId}`} className="warning-text small">
+            ⚠ {propRow.playerName}: {propRow.inactiveNote}
+          </div>
+        ))}
       {topPicks.length === 0 ? (
         <div className="faint small">{data.rows.length === 0 ? "No props posted right now." : "No value right now. Checks again every minute."}</div>
       ) : (
@@ -99,6 +118,7 @@ function TopPicks({ game, data, gameOdds, atHalftime, blowout }: { game: BdlGame
                 <div className="top-pick-stats faint">
                   now {propRow.currentValue}
                   {propRow.restOfGame ? ` · ${propRow.restOfGame.label} avg ${formatNumber(propRow.restOfGame.value)}` : ""} · hit {formatPercent(chance, 0)}
+                  {pointsProp.has(propRow.propType) && shootingTag(propRow.shooting) ? ` · ${shootingTag(propRow.shooting)}` : ""}
                 </div>
               </div>
               <PriceButton pick={pick} sideLabel="" odds={odds} vendor={vendor} note={`${formatSigned(propRow.evaluation.bestEvPercent, 0)}% EV`} highlight compact />
@@ -110,7 +130,7 @@ function TopPicks({ game, data, gameOdds, atHalftime, blowout }: { game: BdlGame
   );
 }
 
-function GameRow({ game, boxScore, gameOdds, initialSection }: { game: BdlGame; boxScore: BdlBoxScore | null; gameOdds: BdlBettingOdd[]; initialSection: SectionName | null }) {
+function GameRow({ game, boxScore, gameOdds, liveOdds, openingOdds, initialSection }: { game: BdlGame; boxScore: BdlBoxScore | null; gameOdds: BdlBettingOdd[]; liveOdds: BdlBettingOdd[]; openingOdds: BdlBettingOdd[]; initialSection: SectionName | null }) {
   const [openSection, setOpenSection] = useState<SectionName | null>(initialSection);
   useEffect(() => {
     if (initialSection) setOpenSection(initialSection);
@@ -119,8 +139,9 @@ function GameRow({ game, boxScore, gameOdds, initialSection }: { game: BdlGame; 
   const live = isGameLive(source);
   const final = isGameFinal(source);
   const atHalftime = Boolean(boxScore && isHalftime(boxScore));
-  const blowout = isPotentialBlowout(source);
-  const liveData = useLivePropData(game, boxScore, live && Boolean(boxScore)); // loads props for live games so picks show without opening anything
+  const liveData = useLivePropData(game, boxScore, live && Boolean(boxScore), liveOdds, openingOdds); // loads props for live games so picks show without opening anything
+  const liveSpreadSize = liveData.market?.liveSpreadHome !== null && liveData.market?.liveSpreadHome !== undefined ? Math.abs(liveData.market.liveSpreadHome) : null;
+  const blowout = isPotentialBlowout(source) || (live && liveSpreadSize !== null && liveSpreadSize >= appSettings.blowoutWarningMargin); // the score now, or where books expect it to end
   const toggle = (section: SectionName) => setOpenSection((current) => (current === section ? null : section));
   const scores = [
     { team: game.visitor_team, score: boxScore?.visitor_team_score ?? game.visitor_team_score },
@@ -189,6 +210,7 @@ function GameRow({ game, boxScore, gameOdds, initialSection }: { game: BdlGame; 
 
 export default function LivePage() {
   const slate = useSlate();
+  const settings = useSettings();
   const games = slate.data?.games ?? null;
   const live = useLiveBoxScores(games);
   const [requestedGameId, setRequestedGameId] = useState<number | null>(null);
@@ -205,11 +227,14 @@ export default function LivePage() {
       setScrolledTo(requestedGameId);
     }
   });
-  const oddsByGame = groupOddsByGame(slate.data?.odds ?? []);
   const enriched = (games ?? []).map((game) => ({ game, boxScore: matchBoxScore(game, live.boxScores) }));
   const stateOrder = (entry: (typeof enriched)[number]) => (isGameLive(entry.boxScore ?? entry.game) ? 0 : isGameFinal(entry.boxScore ?? entry.game) ? 2 : 1); // live first, then upcoming, then finals
   const ordered = [...enriched].sort((first, second) => stateOrder(first) - stateOrder(second));
   const liveCount = enriched.filter(({ game, boxScore }) => isGameLive(boxScore ?? game)).length;
+  const liveOdds = useLiveOdds(slate.data?.date ?? todayEastern(), liveCount > 0);
+  const rawLiveOddsByGame = groupOddsByGame(liveOdds.data ?? []);
+  const oddsByGame = groupOddsByGame(liveOdds.data ? filterByBooks(liveOdds.data, settings.enabledBooks) : (slate.data?.odds ?? [])); // live lines every minute, only the chosen books for prices
+  const openingByGame = groupOddsByGame(slate.data?.openingOdds ?? []);
   const nextPollText = live.nextPollAt ? (live.nextPollAt - Date.now() > 120_000 ? `sleeping until ${new Date(live.nextPollAt).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })}` : "updating every 30s") : "no games left today";
 
   return (
@@ -229,7 +254,7 @@ export default function LivePage() {
       {ordered.map(({ game, boxScore }) => {
         const deepLinked = game.id === requestedGameId;
         const initialSection: SectionName | null = deepLinked && boxScore ? (isGameLive(boxScore) ? "props" : "box") : null;
-        return <GameRow key={game.id} game={game} boxScore={boxScore} gameOdds={oddsByGame.get(game.id) ?? []} initialSection={initialSection} />;
+        return <GameRow key={game.id} game={game} boxScore={boxScore} gameOdds={oddsByGame.get(game.id) ?? []} liveOdds={rawLiveOddsByGame.get(game.id) ?? []} openingOdds={openingByGame.get(game.id) ?? []} initialSection={initialSection} />;
       })}
       {games && liveCount === 0 && games.length > 0 ? <p className="faint small">No games in progress. The page sleeps until the next tip-off, and polling stops while this tab is hidden.</p> : null}
     </main>

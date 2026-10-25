@@ -174,6 +174,21 @@ export interface BdlPlay {
   participants?: number[];
 }
 
+export interface BdlShotChartRow {
+  id: number;
+  game_id: number;
+  player_id: number;
+  team_id: number;
+  season: number;
+  period: number;
+  clock: string;
+  made: boolean;
+  shot_value: number;
+  shot_type: string | null;
+  shot_distance: number | null;
+  shot_zone_basic?: string | null;
+}
+
 export interface BdlPlayerInjury {
   player: BdlPlayer;
   return_date: string | null;
