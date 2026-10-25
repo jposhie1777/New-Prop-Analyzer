@@ -23,10 +23,10 @@ describe("live projection", () => {
   it("adds the pregame expectation for the time left, blended with tonight's pace", () => {
     const halfway = projectLiveStat(12, flatPrior, parseGameClock("Halftime", "Half", 2), 1, 4);
     expect(halfway.remainingShare).toBeCloseTo(0.5, 6);
-    expect(halfway.paceWeight).toBeCloseTo(0.3, 6);
+    expect(halfway.paceWeight).toBeCloseTo(0.1125, 6);
     expect(halfway.projection).toBeCloseTo(24, 6); // on pace and at the prior, so both agree
     const hot = projectLiveStat(20, flatPrior, parseGameClock("Halftime", "Half", 2), 1, 4);
-    expect(hot.projection).toBeGreaterThan(20 + 12);
+    expect(hot.projection).toBeGreaterThan(20 + 12.5);
     expect(hot.projection).toBeLessThan(20 + 20);
     expect(projectLiveStat(30, flatPrior, parseGameClock("Final", "Final", 4), 0, 0).projection).toBe(30);
   });

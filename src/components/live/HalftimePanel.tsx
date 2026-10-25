@@ -3,16 +3,14 @@
 import { booksKey } from "@/lib/client/bookFilter";
 
 import Link from "next/link";
-import { AddToSlipButton } from "@/components/AddToSlipButton";
+import { PriceButton } from "@/components/PriceButton";
 import { useAnalyticsQuery, useSettings, useVisiblePolling } from "@/lib/client/hooks";
 import { loadProps } from "@/lib/client/slateData";
 import { secondHalfProfiles } from "@/lib/analytics/aggregates/playerAggregates";
 import { buildHalftimeSuggestions } from "@/lib/analytics/halftimeSuggestions";
 import { buildPropPick } from "@/lib/client/pickBuilders";
 import { propMapping } from "@/lib/analytics/propTypes";
-import { formatAmerican } from "@/lib/math/odds";
 import { formatNumber, formatPercent, formatSigned } from "@/lib/client/format";
-import { vendorLabel } from "@/lib/odds/deeplinks";
 import { appSettings } from "@/config/appSettings";
 import type { BdlBettingOdd, BdlBoxScore, BdlGame } from "@/lib/bdl/types";
 import { useEffect } from "react";
@@ -30,87 +28,70 @@ export function HalftimePanel({ game, boxScore, gameOdds }: { game: BdlGame; box
   useEffect(() => {
     if (flagged.length > 0) trackPicks(flagged.map((suggestion) => halftimeToTracked(suggestion, game.id, game.date))); // flagged picks are graded later on the Record page
   }, [flaggedKey]); // eslint-disable-line react-hooks/exhaustive-deps
+  const valueOnlySuggestions = suggestions.filter((suggestion) => suggestion.firstHalfActual <= suggestion.lineValue);
+  const groups = new Map<number, typeof suggestions>();
+  for (const suggestion of valueOnlySuggestions) groups.set(suggestion.playerId, [...(groups.get(suggestion.playerId) ?? []), suggestion]);
+  const orderedGroups = [...groups.values()].sort((first, second) => Math.max(...second.map((suggestion) => (suggestion.flagged ? (suggestion.evaluation.bestEvPercent ?? 0) : -999))) - Math.max(...first.map((suggestion) => (suggestion.flagged ? (suggestion.evaluation.bestEvPercent ?? 0) : -999))));
   return (
-    <section className="card" style={{ borderColor: "rgba(251, 191, 36, 0.35)" }}>
-      <div className="card-header wrap">
-        <div>
-          <h2>Halftime mode · {game.visitor_team.abbreviation} @ {game.home_team.abbreviation}</h2>
-          <div className="faint small">
-            Projection = 1st-half actual + 2nd-half average (last 10 games), minutes trimmed for foul trouble and {appSettings.blowoutMargin}+ point margins. EV compares the model to the best live price; the no-vig market price is shown for reference.
-          </div>
-        </div>
-        <span className="pill warning">
-          {flagged.length} at ≥{settings.evThresholdPercent}% EV
+    <div>
+      <div className="row-between wrap" style={{ marginBottom: 8 }}>
+        <span className="small muted">
+          {flagged.length} value pick{flagged.length === 1 ? "" : "s"} at ≥{settings.evThresholdPercent}% · tap a price to add it
         </span>
       </div>
-      <p className="disclaimer">Informational, not guaranteed. Models miss injuries, rotations and garbage time. Bet responsibly.</p>
       {props.loading && !props.data ? <div className="skeleton" /> : null}
-      {props.data && suggestions.length === 0 ? <div className="empty-state">No live props for this game right now.</div> : null}
+      {props.data && orderedGroups.length === 0 ? <div className="empty-state">No live props for this game right now.</div> : null}
       <div className="card-grid">
-        {suggestions.slice(0, 24).map((suggestion) => {
-          const side = suggestion.evaluation.bestSide ?? "over";
-          const sideOdds = side === "over" ? suggestion.bestOverOdds : suggestion.bestUnderOdds;
-          const sideVendor = side === "over" ? suggestion.bestOverVendor : suggestion.bestUnderVendor;
-          const modelChance = side === "over" ? suggestion.evaluation.overProbability : suggestion.evaluation.underProbability;
-          const fairChance = side === "over" ? suggestion.evaluation.noVigOver : suggestion.evaluation.noVigUnder;
+        {orderedGroups.map((group) => {
+          const hasValue = group.some((suggestion) => suggestion.flagged);
           return (
-            <div key={`${suggestion.playerId}-${suggestion.propType}`} className={`prop-card${suggestion.flagged ? " flag-ev" : ""}`}>
-              <div className="row-between">
-                <Link href={`/player/${suggestion.playerId}`} className="strong">
-                  {suggestion.playerName}
+            <div key={group[0].playerId} className={`player-group${hasValue ? " has-value" : ""}`}>
+              <div className="player-group-header">
+                <Link href={`/player/${group[0].playerId}`} className="strong">
+                  {group[0].playerName}
                 </Link>
-                <span className={`pill ${suggestion.flagged ? "positive" : ""}`}>EV {formatSigned(suggestion.evaluation.bestEvPercent)}%</span>
-              </div>
-              <div className="row-between">
-                <span>
-                  <span className="strong">{side === "over" ? "Over" : "Under"}</span> {suggestion.lineValue} {propMapping(suggestion.propType)?.label}
-                </span>
-                <span className="tabular">
-                  {formatAmerican(sideOdds)} <span className="faint small">{sideVendor ? vendorLabel(sideVendor) : ""}</span>
+                <span className="faint small">
+                  {formatNumber(group[0].firstHalfMinutes, 0)} min · {group[0].personalFouls} PF
                 </span>
               </div>
-              <div className="table-scroll">
-                <table className="data-table">
-                  <tbody>
-                    <tr>
-                      <td>1st half actual</td>
-                      <td>
-                        {formatNumber(suggestion.firstHalfActual, 0)} <span className="sub">{formatNumber(suggestion.firstHalfMinutes)} min</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2nd half avg L{suggestion.sampleGames}</td>
-                      <td>
-                        {formatNumber(suggestion.secondHalfAverage)} <span className="sub">{formatNumber(suggestion.secondHalfMinutesAverage)} min</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Minutes factor</td>
-                      <td title={suggestion.projection.adjustments.join("; ")}>
-                        ×{formatNumber(suggestion.projection.minutesFactor, 2)} <span className="sub">{suggestion.personalFouls} PF · margin {suggestion.margin}</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Projection</td>
-                      <td className="strong">
-                        {formatNumber(suggestion.projection.projection)} <span className="sub">σ {formatNumber(suggestion.projection.standardDeviation)}</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Model vs no-vig</td>
-                      <td>
-                        {formatPercent(modelChance, 1)} <span className="sub">vs {formatPercent(fairChance, 1)}</span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              {suggestion.projection.adjustments.length > 0 ? <div className="faint small">{suggestion.projection.adjustments.join(" · ")}</div> : null}
-              <AddToSlipButton pick={buildPropPick(game, suggestion.playerId, suggestion.playerName, suggestion.propType, side, props.data ?? [], gameOdds, "halftime", modelChance)} label={`+ ${side === "over" ? "Over" : "Under"} to slip`} />
+              {group.map((suggestion) => {
+                const fairOver = suggestion.evaluation.noVigOver;
+                const trusted = fairOver !== null && Math.abs(suggestion.evaluation.overProbability - fairOver) <= 0.2; // EV only when the model is near the market
+                const overNote = trusted && suggestion.evaluation.overEvPercent !== null ? `${formatSigned(suggestion.evaluation.overEvPercent, 0)}% EV` : null;
+                const underNote = trusted && suggestion.evaluation.underEvPercent !== null ? `${formatSigned(suggestion.evaluation.underEvPercent, 0)}% EV` : null;
+                return (
+                  <div key={suggestion.propType} className="prop-line">
+                    <div style={{ minWidth: 0 }}>
+                      <div className="prop-line-title">
+                        <span className="strong">{propMapping(suggestion.propType)?.label ?? suggestion.propType}</span>
+                        <span className="tabular">
+                          <span className="strong">{suggestion.firstHalfActual}</span>
+                          <span className="faint"> / {suggestion.lineValue}</span>
+                        </span>
+                      </div>
+                      <div className="faint small" style={{ marginTop: 4 }}>
+                        proj {formatNumber(suggestion.projection.projection)} · 2H avg {formatNumber(suggestion.secondHalfAverage)}
+                        {suggestion.projection.minutesFactor < 1 ? ` · min ×${formatNumber(suggestion.projection.minutesFactor, 2)}` : ""}
+                        {trusted ? ` · over ${formatPercent(suggestion.evaluation.overProbability, 0)} vs ${formatPercent(fairOver, 0)} fair` : " · model far from market"}
+                      </div>
+                    </div>
+                    <div className="price-pair">
+                      <PriceButton pick={buildPropPick(game, suggestion.playerId, suggestion.playerName, suggestion.propType, "over", props.data ?? [], gameOdds, "halftime", suggestion.evaluation.overProbability, suggestion.lineValue)} sideLabel={`O ${suggestion.lineValue}`} odds={suggestion.bestOverOdds} vendor={suggestion.bestOverVendor} note={overNote} highlight={trusted && (suggestion.evaluation.overEvPercent ?? -1) >= settings.evThresholdPercent} />
+                      <PriceButton pick={buildPropPick(game, suggestion.playerId, suggestion.playerName, suggestion.propType, "under", props.data ?? [], gameOdds, "halftime", suggestion.evaluation.underProbability, suggestion.lineValue)} sideLabel={`U ${suggestion.lineValue}`} odds={suggestion.bestUnderOdds} vendor={suggestion.bestUnderVendor} note={underNote} highlight={trusted && (suggestion.evaluation.underEvPercent ?? -1) >= settings.evThresholdPercent} />
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           );
         })}
       </div>
-    </section>
+      <details style={{ marginTop: 10 }}>
+        <summary className="expand-hint">How halftime picks work</summary>
+        <p className="faint small">
+          Projection = 1st-half actual + the player&apos;s 2nd-half average over his last 10 games, with minutes trimmed for foul trouble and {appSettings.blowoutMargin}+ point margins. EV compares the model with the best live price and shows only when the model is within 20 points of the de-vigged market. Informational, not guaranteed.
+        </p>
+      </details>
+    </div>
   );
 }
