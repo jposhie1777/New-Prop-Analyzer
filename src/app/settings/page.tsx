@@ -52,7 +52,19 @@ export default function SettingsPage() {
             );
           })}
         </div>
-        <p className="faint small" style={{ marginBottom: 0 }}>Pregame lines from every book still anchor live projections, so the model stays accurate even with one book selected.</p>
+        <p className="faint small">Pregame lines from every book still anchor live projections, so the model stays accurate even with one book selected.</p>
+        <label className="stack">
+          <span className="strong">Default sportsbook for the slip</span>
+          <span className="faint small">Each slip pick starts on this book (when it offers the pick). Best price picks the highest payout.</span>
+          <select className="input" value={settings.defaultBook} onChange={(changeEvent) => saveSettings({ defaultBook: changeEvent.target.value })}>
+            <option value="">Best price</option>
+            {bookOptions.map((vendor) => (
+              <option key={vendor} value={vendor}>
+                {vendorLabel(vendor)}
+              </option>
+            ))}
+          </select>
+        </label>
       </section>
       <section className="card">
         <div className="stack" style={{ gap: 14 }}>

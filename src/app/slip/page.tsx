@@ -3,36 +3,104 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useSettings, useSlip } from "@/lib/client/hooks";
-import { bestOffer, clearSlip, copyTextFor, removePick, type SlipOffer, type SlipPick } from "@/lib/client/betSlip";
-import { resolvePropLink, resolveSelectionLink, copyOnlyPropVendors, vendorLabel, type ResolvedLink } from "@/lib/odds/deeplinks";
-import { americanToDecimal, expectedValuePercent, formatAmerican, kellyFraction, parlayAmericanOdds, parlayDecimalOdds, parlayProbability, payoutFor } from "@/lib/math/odds";
+import { choosePickVendor, clearSlip, copyTextFor, removePick, selectedOffer, type SlipOffer, type SlipPick } from "@/lib/client/betSlip";
+import { bookHomeLink, resolvePropLink, resolveSelectionLink, vendorLabel, type ResolvedLink } from "@/lib/odds/deeplinks";
+import { americanToDecimal, expectedValuePercent, formatAmerican, kellyFraction, parlayAmericanOdds, parlayDecimalOdds, parlayProbability } from "@/lib/math/odds";
 import { formatNumber, formatPercent, formatSigned } from "@/lib/client/format";
 import { appSettings } from "@/config/appSettings";
 import { readLocalJson, writeLocalJson } from "@/lib/client/safeStorage";
 import { filterByBooks } from "@/lib/client/bookFilter";
 
-function offerLink(pick: SlipPick, offer: SlipOffer, settings: ReturnType<typeof useSettings>): ResolvedLink | null {
-  if (pick.kind === "prop") return resolvePropLink(offer.vendor, offer.deeplinks, pick.selectionKey as "over" | "under" | "yes", settings, offer.eventDeeplinks);
-  return resolveSelectionLink(offer.deeplinks, pick.selectionKey, settings, offer.eventDeeplinks);
+const shortBookNames: Record<string, string> = { draftkings: "DK", fanduel: "FD", betmgm: "MGM", caesars: "CZR", betrivers: "BR", espnbet: "ESPN", fanatics: "FAN", betway: "BWY", ballybet: "BALLY", betparx: "PARX", rebet: "REBET" };
+
+function shortBook(vendor: string): string {
+  return shortBookNames[vendor] ?? vendorLabel(vendor);
 }
 
-function CopyButton({ text }: { text: string }) {
+function linkFor(pick: SlipPick, offer: SlipOffer, settings: ReturnType<typeof useSettings>): ResolvedLink | null {
+  const bdlLink = pick.kind === "prop" ? resolvePropLink(offer.vendor, offer.deeplinks, pick.selectionKey as "over" | "under" | "yes", settings, offer.eventDeeplinks) : resolveSelectionLink(offer.deeplinks, pick.selectionKey, settings, offer.eventDeeplinks);
+  return bdlLink ?? bookHomeLink(offer.vendor, settings); // BDL bet link, else event page, else the book's NBA page
+}
+
+function splitLabel(pick: SlipPick): { title: string; market: string } {
+  const propMatch = pick.kind === "prop" ? pick.label.match(/^(.*?) ((?:Over|Under) [\d.]+ .*|\d+\+ .*)$/) : null;
+  if (propMatch) return { title: propMatch[1], market: propMatch[2] };
+  return { title: pick.label, market: pick.market === "moneyline" ? "Moneyline" : pick.market === "spread" ? "Spread" : "Total" };
+}
+
+async function copyText(text: string): Promise<boolean> {
+  try {
+    await navigator.clipboard.writeText(text);
+    return true;
+  } catch {
+    window.prompt("Copy this", text); // clipboard blocked: let the user copy by hand
+    return false;
+  }
+}
+
+function SlipItem({ pick, settings }: { pick: SlipPick; settings: ReturnType<typeof useSettings> }) {
   const [copied, setCopied] = useState(false);
+  const chosen = selectedOffer(pick, settings.defaultBook);
+  const offers = [...pick.offers].sort((first, second) => americanToDecimal(second.americanOdds) - americanToDecimal(first.americanOdds));
+  const bestVendor = offers[0]?.vendor;
+  const link = chosen ? linkFor(pick, chosen, settings) : null;
+  const { title, market } = splitLabel(pick);
+  const pickText = copyTextFor(pick, chosen);
   return (
-    <button
-      className={`button small ghost${copied ? " added" : ""}`}
-      onClick={async () => {
-        try {
-          await navigator.clipboard.writeText(text);
-          setCopied(true);
-          window.setTimeout(() => setCopied(false), 1500);
-        } catch {
-          window.prompt("Copy this pick", text); // clipboard blocked: let the user copy by hand
-        }
-      }}
-    >
-      {copied ? "Copied" : "Copy pick"}
-    </button>
+    <section className="card slip-item" style={{ marginTop: 0 }}>
+      <div className="row-between" style={{ alignItems: "flex-start" }}>
+        <div style={{ minWidth: 0 }}>
+          <div className="strong" style={{ fontSize: 17 }}>
+            {title}
+          </div>
+          <div className="small muted">
+            {market} · {pick.detail}
+            {pick.modelProbability !== null ? ` · model ${formatPercent(pick.modelProbability, 0)}` : ""}
+          </div>
+        </div>
+        <button className="icon-button" onClick={() => removePick(pick.pickId)} aria-label="Remove pick">
+          ✕
+        </button>
+      </div>
+      <div className="book-chips">
+        {offers.map((offer) => {
+          const isChosen = offer.vendor === chosen?.vendor;
+          return (
+            <button key={offer.vendor} className={`book-chip${isChosen ? " chosen" : ""}`} onClick={() => choosePickVendor(pick.pickId, offer.vendor)} aria-pressed={isChosen}>
+              <span className="book-chip-name">
+                {shortBook(offer.vendor)}
+                {offer.vendor === bestVendor && offers.length > 1 ? " ★" : ""}
+              </span>
+              <span className="book-chip-odds">{formatAmerican(offer.americanOdds)}</span>
+              {pick.kind === "prop" && offer.lineValue !== null ? <span className="book-chip-line">{offer.lineValue}</span> : null}
+            </button>
+          );
+        })}
+      </div>
+      {chosen ? (
+        link ? (
+          <a
+            className="button primary bet-button"
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => {
+              if (link.kind !== "selection") copyText(pickText).then(setCopied); // no bet-slip link: copy the pick so it can be pasted into the book's search
+            }}
+          >
+            Bet at {vendorLabel(chosen.vendor)} {formatAmerican(chosen.americanOdds)} ↗
+          </a>
+        ) : (
+          <button className="button bet-button" onClick={() => copyText(pickText).then(setCopied)}>
+            Copy pick for {vendorLabel(chosen.vendor)}
+          </button>
+        )
+      ) : null}
+      <div className="faint small" style={{ marginTop: 6 }}>
+        {copied ? "Pick copied. Paste it into the book's search." : link?.kind === "selection" ? "Opens the bet in the book's slip." : link?.kind === "event" ? "Opens the game in the book; the pick is copied for you." : link?.kind === "book" ? "Opens the book's NBA page; the pick is copied for you." : ""}
+        {pick.modelProbability !== null && chosen ? ` EV at this price ${formatSigned(expectedValuePercent(pick.modelProbability, chosen.americanOdds), 1)}%.` : ""}
+      </div>
+    </section>
   );
 }
 
@@ -45,197 +113,123 @@ export default function SlipPage() {
   });
   const [stake, setStake] = useState<number>(10);
   const [bankroll, setBankroll] = useState<number>(1000);
+  const [parlayCopied, setParlayCopied] = useState(false);
   useEffect(() => {
     setStake(readLocalJson("pulse-nba-stake", 10)); // read after mount so server and browser HTML match
     setBankroll(readLocalJson("pulse-nba-bankroll", 1000));
   }, []);
-  const vendors = [...new Set(picks.flatMap((pick) => pick.offers.map((offer) => offer.vendor)))].sort();
-  const sameGameLegs = picks.length !== new Set(picks.map((pick) => pick.gameId)).size;
 
-  const bookParlays = vendors.map((vendor) => {
-    const legOffers = picks.map((pick) => pick.offers.find((offer) => offer.vendor === vendor) ?? null);
-    const complete = picks.length > 1 && legOffers.every((offer) => offer !== null);
-    return { vendor, complete, americanOdds: complete ? parlayAmericanOdds(legOffers.map((offer) => offer!.americanOdds)) : null, decimalOdds: complete ? parlayDecimalOdds(legOffers.map((offer) => offer!.americanOdds)) : null };
-  });
-  const bestLegs = picks.map((pick) => bestOffer(pick));
-  const bestDecimal = picks.length > 1 && bestLegs.every(Boolean) ? parlayDecimalOdds(bestLegs.map((offer) => offer!.americanOdds)) : null;
+  const vendors = [...new Set(picks.flatMap((pick) => pick.offers.map((offer) => offer.vendor)))];
+  const parlayBooks = vendors
+    .map((vendor) => {
+      const legs = picks.map((pick) => pick.offers.find((offer) => offer.vendor === vendor) ?? null);
+      return legs.every(Boolean) ? { vendor, americanOdds: parlayAmericanOdds(legs.map((offer) => offer!.americanOdds)), decimalOdds: parlayDecimalOdds(legs.map((offer) => offer!.americanOdds)) } : null;
+    })
+    .filter((entry): entry is { vendor: string; americanOdds: number; decimalOdds: number } => entry !== null)
+    .sort((first, second) => second.decimalOdds - first.decimalOdds);
+  const [parlayVendor, setParlayVendor] = useState<string | null>(null);
+  const activeParlay = parlayBooks.find((entry) => entry.vendor === parlayVendor) ?? parlayBooks.find((entry) => entry.vendor === settings.defaultBook) ?? parlayBooks[0] ?? null;
+  const sameGameLegs = picks.length !== new Set(picks.map((pick) => pick.gameId)).size;
   const allModeled = picks.length > 1 && picks.every((pick) => pick.modelProbability !== null);
   const modelParlayChance = allModeled ? parlayProbability(picks.map((pick) => pick.modelProbability!)) : null;
+  const parlayText = picks.map((pick) => copyTextFor(pick, selectedOffer(pick, settings.defaultBook))).join("\n");
+  const parlayLink = activeParlay ? bookHomeLink(activeParlay.vendor, settings) : null;
 
   return (
     <main className="page">
       <div className="page-title">
         <div>
           <h1>Bet slip</h1>
-          <p>Saved on this device. Prices are the latest seen when the pick was added; check the book before betting.</p>
+          <p>Pick a book on each leg, then tap Bet. Prices are from when you added the pick.</p>
         </div>
         {picks.length > 0 ? (
           <button className="button ghost" onClick={clearSlip}>
-            Clear slip
+            Clear
           </button>
         ) : null}
       </div>
       {picks.length === 0 ? (
         <div className="card empty-state">
-          Your slip is empty. Add picks from the <Link href="/" className="expand-hint">slate</Link>, a player page, or halftime mode on <Link href="/live" className="expand-hint">Live</Link>.
+          Your slip is empty. Tap any price on the <Link href="/" className="expand-hint">slate</Link>, a player page or <Link href="/live" className="expand-hint">Live</Link>.
         </div>
       ) : null}
-      <div className="stack" style={{ gap: 12 }}>
-        {picks.map((pick) => {
-          const best = bestOffer(pick);
-          const kellyStake = pick.modelProbability !== null && best ? kellyFraction(pick.modelProbability, best.americanOdds, appSettings.kellyFraction) * bankroll : null;
-          return (
-            <section key={pick.pickId} className="card" style={{ marginTop: 0 }}>
-              <div className="card-header wrap">
-                <div>
-                  <h3>{pick.label}</h3>
-                  <div className="faint small">
-                    {pick.detail} · from {pick.source}
-                    {pick.modelProbability !== null ? ` · model ${formatPercent(pick.modelProbability, 1)}` : ""}
-                  </div>
-                </div>
-                <div className="row">
-                  <CopyButton text={copyTextFor(pick, best)} />
-                  <button className="button small ghost" onClick={() => removePick(pick.pickId)}>
-                    Remove
-                  </button>
-                </div>
-              </div>
-              <div className="table-scroll">
-                <table className="data-table">
-                  <thead>
-                    <tr>
-                      <th>Book</th>
-                      <th>Line</th>
-                      <th>Odds</th>
-                      {pick.modelProbability !== null ? <th>EV</th> : null}
-                      <th>Bet</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {[...pick.offers]
-                      .sort((first, second) => americanToDecimal(second.americanOdds) - americanToDecimal(first.americanOdds))
-                      .map((offer) => {
-                        const link = offerLink(pick, offer, settings);
-                        const copyOnly = pick.kind === "prop" && copyOnlyPropVendors.has(offer.vendor);
-                        return (
-                          <tr key={offer.vendor}>
-                            <td>
-                              {vendorLabel(offer.vendor)} {offer === best ? <span className="pill positive">best</span> : null}
-                            </td>
-                            <td>{offer.lineValue ?? "-"}</td>
-                            <td className="strong">{formatAmerican(offer.americanOdds)}</td>
-                            {pick.modelProbability !== null ? <td className={expectedValuePercent(pick.modelProbability, offer.americanOdds) >= 0 ? "positive" : "negative"}>{formatSigned(expectedValuePercent(pick.modelProbability, offer.americanOdds))}%</td> : null}
-                            <td>
-                              <span className="row" style={{ justifyContent: "flex-end" }}>
-                                {link ? (
-                                  <a className="button small" href={link.href} target="_blank" rel="noopener noreferrer">
-                                    {link.kind === "selection" ? "Bet ↗" : "Event ↗"}
-                                  </a>
-                                ) : (
-                                  <span className="faint small">no link</span>
-                                )}
-                                {copyOnly ? <CopyButton text={copyTextFor(pick, offer)} /> : null}
-                              </span>
-                            </td>
-                          </tr>
-                        );
-                      })}
-                  </tbody>
-                </table>
-              </div>
-              {kellyStake !== null ? (
-                <div className="faint small" style={{ marginTop: 8 }}>
-                  Quarter Kelly at best price: {kellyStake > 0 ? `$${formatNumber(kellyStake, 2)} of $${bankroll}` : "no edge, skip"}
-                </div>
-              ) : null}
-            </section>
-          );
-        })}
+      <div className="stack" style={{ gap: 10 }}>
+        {picks.map((pick) => (
+          <SlipItem key={pick.pickId} pick={pick} settings={settings} />
+        ))}
       </div>
 
       {picks.length > 1 ? (
         <section className="card" style={{ marginTop: 12 }}>
-          <div className="card-header wrap">
-            <h2>Parlay ({picks.length} legs)</h2>
-            <div className="row">
-              <label className="small muted">
-                Stake ${" "}
-                <input
-                  className="input"
-                  style={{ width: 90, display: "inline-block", padding: "6px 8px" }}
-                  type="number"
-                  min={1}
-                  value={stake}
-                  onChange={(changeEvent) => {
-                    const nextStake = Math.max(0, Number(changeEvent.target.value));
-                    setStake(nextStake);
-                    writeLocalJson("pulse-nba-stake", nextStake);
+          <div className="row-between">
+            <h2 style={{ margin: 0, fontSize: 16 }}>Parlay · {picks.length} legs</h2>
+            {activeParlay ? (
+              <span className="strong tabular" style={{ fontSize: 20 }}>
+                {formatAmerican(activeParlay.americanOdds)}
+              </span>
+            ) : null}
+          </div>
+          {parlayBooks.length > 0 ? (
+            <>
+              <div className="book-chips">
+                {parlayBooks.map((entry) => (
+                  <button key={entry.vendor} className={`book-chip${entry.vendor === activeParlay?.vendor ? " chosen" : ""}`} onClick={() => setParlayVendor(entry.vendor)}>
+                    <span className="book-chip-name">{shortBook(entry.vendor)}</span>
+                    <span className="book-chip-odds">{formatAmerican(entry.americanOdds)}</span>
+                  </button>
+                ))}
+              </div>
+              <div className="small muted" style={{ margin: "6px 0 10px" }}>
+                ${stake} wins ${formatNumber(stake * (activeParlay ? activeParlay.decimalOdds - 1 : 0), 2)}
+                {modelParlayChance !== null ? ` · model ${formatPercent(modelParlayChance, 1)}` : ""}
+                {sameGameLegs ? " · same-game legs: books price these differently" : ""}
+              </div>
+              <div className="row" style={{ gap: 8 }}>
+                <button
+                  className={`button${parlayCopied ? " added" : ""}`}
+                  onClick={async () => {
+                    setParlayCopied(await copyText(parlayText));
+                    window.setTimeout(() => setParlayCopied(false), 1800);
                   }}
-                />
+                >
+                  {parlayCopied ? "Copied" : "Copy all legs"}
+                </button>
+                {parlayLink && activeParlay ? (
+                  <a className="button primary" href={parlayLink.href} target="_blank" rel="noopener noreferrer" onClick={() => copyText(parlayText)}>
+                    Open {vendorLabel(activeParlay.vendor)} ↗
+                  </a>
+                ) : null}
+              </div>
+            </>
+          ) : (
+            <p className="small muted">No single book has every leg. Remove a leg or show more books in Settings.</p>
+          )}
+          <details style={{ marginTop: 10 }}>
+            <summary className="expand-hint">Stake and sizing</summary>
+            <div className="row wrap" style={{ marginTop: 8, gap: 10 }}>
+              <label className="small muted">
+                Stake $
+                <input className="input" style={{ width: 90, display: "inline-block", padding: "6px 8px", marginLeft: 6 }} type="number" min={1} value={stake} onChange={(changeEvent) => { const nextStake = Math.max(0, Number(changeEvent.target.value)); setStake(nextStake); writeLocalJson("pulse-nba-stake", nextStake); }} />
               </label>
               <label className="small muted">
-                Bankroll ${" "}
-                <input
-                  className="input"
-                  style={{ width: 100, display: "inline-block", padding: "6px 8px" }}
-                  type="number"
-                  min={0}
-                  value={bankroll}
-                  onChange={(changeEvent) => {
-                    const nextBankroll = Math.max(0, Number(changeEvent.target.value));
-                    setBankroll(nextBankroll);
-                    writeLocalJson("pulse-nba-bankroll", nextBankroll);
-                  }}
-                />
+                Bankroll $
+                <input className="input" style={{ width: 100, display: "inline-block", padding: "6px 8px", marginLeft: 6 }} type="number" min={0} value={bankroll} onChange={(changeEvent) => { const nextBankroll = Math.max(0, Number(changeEvent.target.value)); setBankroll(nextBankroll); writeLocalJson("pulse-nba-bankroll", nextBankroll); }} />
               </label>
             </div>
-          </div>
-          {sameGameLegs ? <div className="notice" style={{ marginBottom: 10 }}>Some legs are from the same game. Books price same-game parlays differently (correlation), so these numbers are only a guide.</div> : null}
-          <div className="table-scroll">
-            <table className="data-table">
-              <thead>
-                <tr>
-                  <th>Book</th>
-                  <th>Parlay odds</th>
-                  <th>Decimal</th>
-                  <th>Payout on ${stake}</th>
-                </tr>
-              </thead>
-              <tbody>
-                {bookParlays.map((bookParlay) => (
-                  <tr key={bookParlay.vendor}>
-                    <td>{vendorLabel(bookParlay.vendor)}</td>
-                    <td className="strong">{bookParlay.complete ? formatAmerican(bookParlay.americanOdds) : <span className="faint">missing legs</span>}</td>
-                    <td>{bookParlay.decimalOdds ? formatNumber(bookParlay.decimalOdds, 2) : "-"}</td>
-                    <td>{bookParlay.decimalOdds ? `$${formatNumber(stake * bookParlay.decimalOdds, 2)}` : "-"}</td>
-                  </tr>
-                ))}
-                {bestDecimal ? (
-                  <tr>
-                    <td className="strong">Best price per leg</td>
-                    <td className="strong">{formatAmerican(parlayAmericanOdds(bestLegs.map((offer) => offer!.americanOdds)))}</td>
-                    <td>{formatNumber(bestDecimal, 2)}</td>
-                    <td>${formatNumber(stake * bestDecimal, 2)}</td>
-                  </tr>
-                ) : null}
-              </tbody>
-            </table>
-          </div>
-          {modelParlayChance !== null && bestDecimal ? (
-            <p className="small muted" style={{ marginBottom: 0 }}>
-              Model parlay chance {formatPercent(modelParlayChance, 1)} (legs assumed independent) · EV at best prices {formatSigned((modelParlayChance * bestDecimal - 1) * 100)}% · quarter Kelly ${formatNumber(kellyFraction(modelParlayChance, parlayAmericanOdds(bestLegs.map((offer) => offer!.americanOdds)), appSettings.kellyFraction) * bankroll, 2)}
-            </p>
-          ) : (
-            <p className="faint small" style={{ marginBottom: 0 }}>
-              Win on ${stake} at best prices: ${bestDecimal ? formatNumber(payoutFor(stake, parlayAmericanOdds(bestLegs.map((offer) => offer!.americanOdds))) - stake, 2) : "-"}. Add halftime picks to see model probability and Kelly sizing.
-            </p>
-          )}
+            <ul className="small muted" style={{ paddingLeft: 18 }}>
+              {picks.map((pick) => {
+                const chosen = selectedOffer(pick, settings.defaultBook);
+                const kellyStake = pick.modelProbability !== null && chosen ? kellyFraction(pick.modelProbability, chosen.americanOdds, appSettings.kellyFraction) * bankroll : null;
+                return (
+                  <li key={pick.pickId}>
+                    {pick.label}: {kellyStake === null ? "no model" : kellyStake > 0 ? `quarter Kelly $${formatNumber(kellyStake, 2)}` : "no edge"}
+                  </li>
+                );
+              })}
+            </ul>
+          </details>
         </section>
       ) : null}
-      <p className="faint small" style={{ marginTop: 12 }}>
-        Links use BALLDONTLIE deeplinks with your state ({settings.sportsbookState.toUpperCase()}). FanDuel and DraftKings props open the event page; use Copy pick to find the line. No sportsbook pages are scraped.
-      </p>
     </main>
   );
 }
