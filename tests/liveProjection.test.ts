@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { clockLabel, foulTroubleFactor, normalizeShares, parseGameClock, projectLiveStat } from "@/lib/analytics/liveProjection";
+import { clockLabel, foulTroubleFactor, normalizeShares, parseGameClock, projectLiveStat, restOfGameAverage } from "@/lib/analytics/liveProjection";
 
 const flatPrior = { fullGameMean: 24, quarterShares: { 1: 0.25, 2: 0.25, 3: 0.25, 4: 0.25 }, dispersion: 2, source: "pregame line" } as const;
 
@@ -77,8 +77,8 @@ import { bdlTeam } from "@/lib/nba/teams";
 import type { BdlBoxScore, BdlPlayerProp } from "@/lib/bdl/types";
 import type { QuarterProfile } from "@/lib/analytics/aggregates/playerAggregates";
 
-describe("second-half average on live rows", () => {
-  it("sums the player's Q3 and Q4 averages for the prop's stat", () => {
+describe("rest-of-game average on live rows", () => {
+  it("sums the player's Q3 and Q4 averages at halftime", () => {
     const boxPlayer = { min: "18:00", pts: 12, reb: 3, ast: 2, pf: 1, fg3m: 1, stl: 0, blk: 0, player: { id: 77, first_name: "Test", last_name: "Player", position: "G" } };
     const boxScore = { date: "2026-10-25", status: "Halftime", time: "Half", period: 2, home_team_score: 50, visitor_team_score: 48, home_team: { team: bdlTeam(2), players: [boxPlayer] }, visitor_team: { team: bdlTeam(20), players: [] } } as unknown as BdlBoxScore;
     const props = [{ id: 1, game_id: 9, player_id: 77, vendor: "fanduel", prop_type: "points", line_value: "24.5", market: { type: "over_under", over_odds: -110, under_odds: -110 } }] as BdlPlayerProp[];
@@ -86,7 +86,27 @@ describe("second-half average on live rows", () => {
     const profile = { playerId: 77, games: 10, quarters: { 1: quarterStat(6), 2: quarterStat(5), 3: quarterStat(6.5), 4: quarterStat(4.5) } } as QuarterProfile;
     const { rows, clock } = buildLivePropRows(boxScore, props, [], new Map([[77, profile]]), 3);
     expect(clock.isHalftime).toBe(true);
-    expect(rows[0].secondHalfAverage).toBeCloseTo(11, 9);
+    expect(rows[0].restOfGame?.value).toBeCloseTo(11, 9);
+    expect(rows[0].restOfGame?.label).toBe("2H");
     expect(rows[0].sampleGames).toBe(10);
+  });
+});
+
+describe("restOfGameAverage", () => {
+  const quarters: [number, number, number, number] = [6, 5, 6.5, 4.5];
+  it("covers Q2 to Q4 at the end of the first", () => {
+    expect(restOfGameAverage(quarters, { period: 1, secondsLeftInPeriod: 0, isHalftime: false, isFinished: false })).toEqual({ value: 16, label: "Q2–4" });
+  });
+  it("adds the unplayed part of the current quarter", () => {
+    const result = restOfGameAverage(quarters, { period: 1, secondsLeftInPeriod: 360, isHalftime: false, isFinished: false });
+    expect(result?.value).toBeCloseTo(19, 9);
+    expect(result?.label).toBe("Q2–4");
+  });
+  it("names the current quarter early in it", () => {
+    expect(restOfGameAverage(quarters, { period: 3, secondsLeftInPeriod: 720, isHalftime: false, isFinished: false })?.label).toBe("2H");
+  });
+  it("returns nothing in overtime or after the final", () => {
+    expect(restOfGameAverage(quarters, { period: 5, secondsLeftInPeriod: 200, isHalftime: false, isFinished: false })).toBeNull();
+    expect(restOfGameAverage(quarters, { period: 4, secondsLeftInPeriod: 0, isHalftime: false, isFinished: false })).toBeNull();
   });
 });

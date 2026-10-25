@@ -7,7 +7,8 @@ import { TeamLogo } from "@/components/TeamLogo";
 import { BoxScoreTable } from "@/components/live/BoxScoreTable";
 import { clockLabel } from "@/lib/analytics/liveProjection";
 import { matchBoxScore, useLiveBoxScores, useSlate } from "@/lib/client/slateData";
-import { isGameFinal, isGameLive, isHalftime } from "@/lib/data/flatten";
+import { isGameFinal, isGameLive, isHalftime, isPotentialBlowout } from "@/lib/data/flatten";
+import { appSettings } from "@/config/appSettings";
 import { formatTipoff } from "@/lib/dates";
 import { groupOddsByGame } from "@/lib/odds/consensus";
 import type { BdlBettingOdd, BdlBoxScore, BdlGame, BdlGameScoreDetail } from "@/lib/bdl/types";
@@ -29,11 +30,13 @@ function periodScore(side: "home" | "visitor", periodKey: (typeof periodKeys)[nu
 }
 
 function QuarterScores({ game, boxScore }: { game: BdlGame; boxScore: BdlBoxScore | null }) {
+  const source = boxScore ?? game;
+  const currentPeriod = isGameFinal(source) ? Math.max(4, source.period ?? 4) : Math.max(1, source.period ?? 1); // the API sends 0 for quarters not played yet
   const sides = [
     { side: "visitor" as const, team: game.visitor_team },
     { side: "home" as const, team: game.home_team },
   ];
-  const shownPeriods = periodKeys.map((periodKey, periodIndex) => ({ periodKey, periodIndex })).filter(({ periodKey, periodIndex }) => periodIndex < 4 || sides.some(({ side }) => periodScore(side, periodKey, boxScore, game) !== null)); // overtime columns only when played
+  const shownPeriods = periodKeys.map((periodKey, periodIndex) => ({ periodKey, periodIndex })).filter(({ periodIndex }) => periodIndex < Math.max(4, currentPeriod)); // overtime columns only when played
   if (!sides.some(({ side }) => periodScore(side, "q1", boxScore, game) !== null)) return null;
   return (
     <table className="quarter-scores tabular small">
@@ -57,7 +60,7 @@ function QuarterScores({ game, boxScore }: { game: BdlGame; boxScore: BdlBoxScor
                 {inBonus ? <span className="pill"> bonus</span> : null}
               </td>
               {shownPeriods.map(({ periodKey, periodIndex }) => (
-                <td key={periodIndex}>{periodScore(side, periodKey, boxScore, game) ?? "–"}</td>
+                <td key={periodIndex}>{periodIndex < currentPeriod ? (periodScore(side, periodKey, boxScore, game) ?? "–") : "–"}</td>
               ))}
             </tr>
           );
@@ -67,32 +70,38 @@ function QuarterScores({ game, boxScore }: { game: BdlGame; boxScore: BdlBoxScor
   );
 }
 
-function TopPicks({ game, data, gameOdds, atHalftime }: { game: BdlGame; data: LivePropData; gameOdds: BdlBettingOdd[]; atHalftime: boolean }) {
+function TopPicks({ game, data, gameOdds, atHalftime, blowout }: { game: BdlGame; data: LivePropData; gameOdds: BdlBettingOdd[]; atHalftime: boolean; blowout: boolean }) {
   if (data.loading) return null;
-  const topPicks = data.valuePicks.slice(0, 3);
+  const topPicks = data.valuePicks.slice(0, 5);
   return (
     <div className="top-picks">
-      <div className="section-label" style={{ marginBottom: 6 }}>
-        {atHalftime ? "Halftime picks" : "Top live picks"}
-      </div>
+      <div className="section-label">{atHalftime ? "Halftime picks" : "Top live picks"}</div>
+      {blowout ? <div className="warning-text small">{appSettings.blowoutWarningMargin}+ point margin: starters may sit, so overs and spreads are riskier.</div> : null}
       {topPicks.length === 0 ? (
-        <div className="faint small">{data.rows.length === 0 ? "No props posted right now." : "No value right now: the model agrees with the market. Checks again every minute."}</div>
+        <div className="faint small">{data.rows.length === 0 ? "No props posted right now." : "No value right now. Checks again every minute."}</div>
       ) : (
         topPicks.map((propRow) => {
           const side = propRow.evaluation.bestSide ?? "over";
           const odds = side === "over" ? propRow.bestOverOdds : propRow.bestUnderOdds;
           const vendor = side === "over" ? propRow.bestOverVendor : propRow.bestUnderVendor;
           const chance = side === "over" ? propRow.evaluation.overProbability : propRow.evaluation.underProbability;
+          const pick = buildPropPick(game, propRow.playerId, propRow.playerName, propRow.propType, side, data.props, gameOdds, atHalftime ? "halftime" : "live", chance, propRow.lineValue);
           return (
             <div key={`${propRow.playerId}-${propRow.propType}`} className="top-pick">
-              <div style={{ minWidth: 0 }}>
-                <div className="strong">{propRow.playerName}</div>
-                <div className="small muted">
-                  {side === "over" ? "Over" : "Under"} {propRow.lineValue} {propRow.label} · {atHalftime ? "1H" : "now"} {propRow.currentValue}
-                  {propRow.secondHalfAverage !== null ? ` · 2H avg ${formatNumber(propRow.secondHalfAverage)} (L${propRow.sampleGames})` : " · 2H avg n/a"} · model {formatPercent(chance, 0)}
+              <div className="top-pick-text">
+                <div className="top-pick-title">
+                  <span className="strong">{propRow.playerName}</span>{" "}
+                  <span className={side === "over" ? "positive" : "negative"}>
+                    {side === "over" ? "O" : "U"} {propRow.lineValue}
+                  </span>{" "}
+                  <span className="muted">{propRow.label}</span>
+                </div>
+                <div className="top-pick-stats faint">
+                  now {propRow.currentValue}
+                  {propRow.restOfGame ? ` · ${propRow.restOfGame.label} avg ${formatNumber(propRow.restOfGame.value)}` : ""} · hit {formatPercent(chance, 0)}
                 </div>
               </div>
-              <PriceButton pick={buildPropPick(game, propRow.playerId, propRow.playerName, propRow.propType, side, data.props, gameOdds, atHalftime ? "halftime" : "live", chance, propRow.lineValue)} sideLabel={`${side === "over" ? "O" : "U"} ${propRow.lineValue}`} odds={odds} vendor={vendor} note={`${formatSigned(propRow.evaluation.bestEvPercent, 0)}% EV`} highlight />
+              <PriceButton pick={pick} sideLabel="" odds={odds} vendor={vendor} note={`${formatSigned(propRow.evaluation.bestEvPercent, 0)}% EV`} highlight compact />
             </div>
           );
         })
@@ -110,6 +119,7 @@ function GameRow({ game, boxScore, gameOdds, initialSection }: { game: BdlGame; 
   const live = isGameLive(source);
   const final = isGameFinal(source);
   const atHalftime = Boolean(boxScore && isHalftime(boxScore));
+  const blowout = isPotentialBlowout(source);
   const liveData = useLivePropData(game, boxScore, live && Boolean(boxScore)); // loads props for live games so picks show without opening anything
   const toggle = (section: SectionName) => setOpenSection((current) => (current === section ? null : section));
   const scores = [
@@ -121,9 +131,12 @@ function GameRow({ game, boxScore, gameOdds, initialSection }: { game: BdlGame; 
       <div className="game-row-header">
         <div className="row-between small" style={{ marginBottom: 6 }}>
           {live ? (
-            <span className="pill live">
-              <span className="live-dot" />
-              {clockLabel(source.status, source.time)}
+            <span className="row">
+              <span className="pill live">
+                <span className="live-dot" />
+                {clockLabel(source.status, source.time)}
+              </span>
+              {blowout ? <span className="pill warning">Potential blowout</span> : null}
             </span>
           ) : final ? (
             <span className="pill">Final</span>
@@ -144,7 +157,7 @@ function GameRow({ game, boxScore, gameOdds, initialSection }: { game: BdlGame; 
         ))}
         {live || final ? <QuarterScores game={game} boxScore={boxScore} /> : null}
       </div>
-      {live && boxScore ? <TopPicks game={game} data={liveData} gameOdds={gameOdds} atHalftime={atHalftime} /> : null}
+      {live && boxScore ? <TopPicks game={game} data={liveData} gameOdds={gameOdds} atHalftime={atHalftime} blowout={blowout} /> : null}
       {boxScore && (live || final) ? (
         <div className="game-row-actions">
           {live ? (

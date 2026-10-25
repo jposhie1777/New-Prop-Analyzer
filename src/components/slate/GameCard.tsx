@@ -2,27 +2,50 @@
 
 import Link from "next/link";
 import { TeamLogo } from "@/components/TeamLogo";
-import { AddToSlipButton } from "@/components/AddToSlipButton";
 import type { BdlBettingOdd, BdlBoxScore, BdlGame, BdlPlayerInjury } from "@/lib/bdl/types";
-import { consensusLine } from "@/lib/odds/consensus";
-import { buildGamePick, formatSpread, type GameSelection } from "@/lib/client/pickBuilders";
+import { consensusLine, medianAmerican } from "@/lib/odds/consensus";
+import { buildGamePick, formatSpread, mostCommonLine, type GameSelection } from "@/lib/client/pickBuilders";
+import { addPick, removePick, type SlipPick } from "@/lib/client/betSlip";
 import { formatAmerican } from "@/lib/math/odds";
 import { formatTipoff } from "@/lib/dates";
-import { isGameFinal, isGameLive } from "@/lib/data/flatten";
+import { isGameFinal, isGameLive, isPotentialBlowout } from "@/lib/data/flatten";
 import type { RestInfo } from "@/lib/analytics/aggregates/teamAggregates";
 import { resolveSelectionLink, vendorLabel } from "@/lib/odds/deeplinks";
-import { useSettings } from "@/lib/client/hooks";
+import { useSettings, useSlip } from "@/lib/client/hooks";
 import { clockLabel } from "@/lib/analytics/liveProjection";
 
-function Movement({ current, opening, invertGood = false }: { current: number | null; opening: number | null; invertGood?: boolean }) {
-  if (current === null || opening === null) return <span className="faint">open -</span>;
+function Movement({ current, opening, invertGood = false, label = "", format = (value: number) => String(value) }: { current: number | null; opening: number | null; invertGood?: boolean; label?: string; format?: (value: number) => string }) {
+  if (current === null || opening === null) return <span>-</span>;
   const delta = Math.round((current - opening) * 10) / 10;
-  if (delta === 0) return <span className="faint">open {opening} · no move</span>;
+  if (delta === 0) return <span>{label}{format(opening)}</span>;
   const goodDirection = invertGood ? delta < 0 : delta > 0;
   return (
     <span className={goodDirection ? "positive" : "negative"}>
-      open {opening} {delta > 0 ? "▲" : "▼"} {Math.abs(delta)}
+      {label}
+      {format(opening)} {delta > 0 ? "▲" : "▼"}
+      {Math.abs(delta)}
     </span>
+  );
+}
+
+function MarketCell({ pick, lineText }: { pick: Omit<SlipPick, "addedAt"> | null; lineText: ((line: number) => string) | null }) {
+  const slip = useSlip();
+  if (!pick) return <span className="market-cell disabled">-</span>;
+  const offeredLines = pick.offers.map((offer) => offer.lineValue).filter((lineValue): lineValue is number => lineValue !== null);
+  const typicalLine = offeredLines.length > 0 ? mostCommonLine(offeredLines) : null;
+  const pricesAtLine = pick.offers.filter((offer) => typicalLine === null || offer.lineValue === typicalLine).map((offer) => offer.americanOdds);
+  const typicalOdds = medianAmerican(pricesAtLine); // what most books charge at the most common line
+  const inSlip = slip.some((existing) => existing.pickId === pick.pickId);
+  return (
+    <button
+      className={`market-cell${inSlip ? " selected" : ""}`}
+      onClick={() => (inSlip ? removePick(pick.pickId) : addPick(pick))}
+      aria-pressed={inSlip}
+      title={inSlip ? "Tap to remove from slip" : "Add to slip"}
+    >
+      {lineText && typicalLine !== null ? <span className="market-line">{lineText(typicalLine)}</span> : null}
+      <span className="market-odds">{formatAmerican(typicalOdds)}</span>
+    </button>
   );
 }
 
@@ -51,15 +74,19 @@ export function GameCard({ game, odds, openingOdds, injuries, rest, boxScore }: 
   const settings = useSettings();
   const current = consensusLine(odds);
   const opening = consensusLine(openingOdds);
-  const live = isGameLive(boxScore ?? game) || isGameFinal(boxScore ?? game);
+  const showScores = isGameLive(boxScore ?? game) || isGameFinal(boxScore ?? game);
   const homeScore = boxScore?.home_team_score ?? game.home_team_score;
   const visitorScore = boxScore?.visitor_team_score ?? game.visitor_team_score;
   const pick = (selection: GameSelection) => buildGamePick(game, odds, selection, "slate");
   const teamInjuries = (teamId: number) => injuries.filter((injury) => injury.player.team?.id === teamId || injury.player.team_id === teamId);
+  const injuredCount = teamInjuries(game.visitor_team.id).length + teamInjuries(game.home_team.id).length;
   return (
     <article className="card game-card">
       <div className="game-card-top">
-        {statusLine(game, boxScore)}
+        <span className="row">
+          {statusLine(game, boxScore)}
+          {isPotentialBlowout(boxScore ?? game) ? <span className="pill warning">Potential blowout</span> : null}
+        </span>
         <span className="row">
           <RestBadge rest={rest?.get(game.visitor_team.id)} />
           <span className="faint">vs</span>
@@ -74,33 +101,35 @@ export function GameCard({ game, odds, openingOdds, injuries, rest, boxScore }: 
               <span className="team-name">{team.full_name}</span>
               {teamIndex === 1 ? <span className="faint small">home</span> : null}
             </div>
-            <div className="team-score">{live ? (teamIndex === 0 ? visitorScore : homeScore) : ""}</div>
+            <div className="team-score">{showScores ? (teamIndex === 0 ? visitorScore : homeScore) : ""}</div>
           </div>
         ))}
       </div>
-      <div className="odds-strip">
-        <div className="odds-cell">
-          <div className="section-label">Spread</div>
-          <div className="odds-main">
-            {game.home_team.abbreviation} {formatSpread(current.spreadHome)}
-          </div>
-          <div className="odds-move">
-            <Movement current={current.spreadHome} opening={opening.spreadHome} invertGood />
-          </div>
+      <div className="market-grid">
+        <div className="market-grid-head">
+          <span />
+          <span>Spread</span>
+          <span>Total</span>
+          <span>Money</span>
         </div>
-        <div className="odds-cell">
-          <div className="section-label">Total</div>
-          <div className="odds-main">{current.total ?? "-"}</div>
-          <div className="odds-move">
-            <Movement current={current.total} opening={opening.total} />
+        {[
+          { team: game.visitor_team, spread: "spread_away", total: "total_over", moneyline: "moneyline_away", totalPrefix: "O" },
+          { team: game.home_team, spread: "spread_home", total: "total_under", moneyline: "moneyline_home", totalPrefix: "U" },
+        ].map((row) => (
+          <div key={row.team.id} className="market-grid-row">
+            <span className="market-team">{row.team.abbreviation}</span>
+            <MarketCell pick={pick(row.spread as GameSelection)} lineText={(line) => formatSpread(line)} />
+            <MarketCell pick={pick(row.total as GameSelection)} lineText={(line) => `${row.totalPrefix} ${line}`} />
+            <MarketCell pick={pick(row.moneyline as GameSelection)} lineText={null} />
           </div>
-        </div>
-        <div className="odds-cell">
-          <div className="section-label">Moneyline</div>
-          <div className="odds-main">
-            {formatAmerican(current.moneylineAway)} / {formatAmerican(current.moneylineHome)}
-          </div>
-          <div className="odds-move faint">{current.vendorCount} {current.vendorCount === 1 ? "book" : "books"}</div>
+        ))}
+        <div className="market-grid-foot faint">
+          <span>
+            Open <Movement current={current.spreadHome} opening={opening.spreadHome} invertGood label={`${game.home_team.abbreviation} `} format={formatSpread} /> · <Movement current={current.total} opening={opening.total} />
+          </span>
+          <span>
+            {current.vendorCount} {current.vendorCount === 1 ? "book" : "books"}
+          </span>
         </div>
       </div>
       <div className="card-body" style={{ padding: "10px 14px", borderTop: "1px solid var(--border-subtle)" }}>
@@ -109,31 +138,37 @@ export function GameCard({ game, odds, openingOdds, injuries, rest, boxScore }: 
             Live player props →
           </Link>
         ) : null}
-        <div className="chip-row">
-          <AddToSlipButton pick={pick("spread_away")} label={`+ ${game.visitor_team.abbreviation} spread`} />
-          <AddToSlipButton pick={pick("spread_home")} label={`+ ${game.home_team.abbreviation} spread`} />
-          <AddToSlipButton pick={pick("total_over")} label="+ Over" />
-          <AddToSlipButton pick={pick("total_under")} label="+ Under" />
-          <AddToSlipButton pick={pick("moneyline_away")} label={`+ ${game.visitor_team.abbreviation} ML`} />
-          <AddToSlipButton pick={pick("moneyline_home")} label={`+ ${game.home_team.abbreviation} ML`} />
-        </div>
-        {[game.visitor_team, game.home_team].some((team) => teamInjuries(team.id).length > 0) ? (
-          <div className="stack" style={{ marginTop: 10 }}>
-            {[game.visitor_team, game.home_team].map((team) => {
-              const listed = teamInjuries(team.id);
-              if (listed.length === 0) return null;
-              return (
-                <div key={team.id} className="row wrap small">
-                  <span className="strong">{team.abbreviation}</span>
-                  {listed.map((injury) => (
-                    <Link key={injury.player.id} href={`/player/${injury.player.id}`} className={`pill ${/out/i.test(injury.status) ? "negative" : "warning"}`} title={injury.description ?? ""}>
-                      {injury.player.first_name.charAt(0)}. {injury.player.last_name} · {injury.status}
-                    </Link>
-                  ))}
-                </div>
-              );
-            })}
-          </div>
+        {injuredCount > 0 ? (
+          <details className="injury-details">
+            <summary className="expand-hint">
+              Injuries ·{" "}
+              {[game.visitor_team, game.home_team]
+                .map((team) => ({ team, listed: teamInjuries(team.id) }))
+                .filter(({ listed }) => listed.length > 0)
+                .map(({ team, listed }) => {
+                  const outCount = listed.filter((injury) => /out/i.test(injury.status)).length;
+                  const otherCount = listed.length - outCount; // questionable, doubtful, day-to-day
+                  return `${team.abbreviation} ${[outCount > 0 ? `${outCount} out` : "", otherCount > 0 ? `${otherCount} GTD` : ""].filter(Boolean).join(", ")}`;
+                })
+                .join(" · ")}
+            </summary>
+            <div className="stack" style={{ marginTop: 8 }}>
+              {[game.visitor_team, game.home_team].map((team) => {
+                const listed = teamInjuries(team.id);
+                if (listed.length === 0) return null;
+                return (
+                  <div key={team.id} className="row wrap small">
+                    <span className="strong">{team.abbreviation}</span>
+                    {listed.map((injury) => (
+                      <Link key={injury.player.id} href={`/player/${injury.player.id}`} className={`pill ${/out/i.test(injury.status) ? "negative" : "warning"}`} title={injury.description ?? ""}>
+                        {injury.player.first_name.charAt(0)}. {injury.player.last_name} · {injury.status}
+                      </Link>
+                    ))}
+                  </div>
+                );
+              })}
+            </div>
+          </details>
         ) : null}
         <details style={{ marginTop: 10 }}>
           <summary className="expand-hint">Lines by book</summary>

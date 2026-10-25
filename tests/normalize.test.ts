@@ -1,3 +1,4 @@
+import { isPotentialBlowout } from "@/lib/data/flatten";
 import { describe, expect, it } from "vitest";
 import { normalizeBoxScores } from "@/lib/bdl/normalize";
 import { bdlTeam } from "@/lib/nba/teams";
@@ -18,5 +19,17 @@ describe("live box score normalization", () => {
     ]);
     expect(normalized).toHaveLength(1);
     expect(normalized[0].home_team.players).toHaveLength(1);
+  });
+});
+
+describe("isPotentialBlowout", () => {
+  const liveGame = (homeScore: number, visitorScore: number, statusState: "in_progress" | "final") => ({ status: "3rd Qtr", status_state: statusState, home_team_score: homeScore, visitor_team_score: visitorScore });
+  it("flags live games with a 15+ point margin", () => {
+    expect(isPotentialBlowout(liveGame(80, 65, "in_progress"))).toBe(true);
+    expect(isPotentialBlowout(liveGame(65, 80, "in_progress"))).toBe(true);
+    expect(isPotentialBlowout(liveGame(80, 66, "in_progress"))).toBe(false);
+  });
+  it("ignores finished games", () => {
+    expect(isPotentialBlowout(liveGame(120, 90, "final"))).toBe(false);
   });
 });

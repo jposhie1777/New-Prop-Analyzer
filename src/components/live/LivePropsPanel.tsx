@@ -54,7 +54,7 @@ export function PropLine({ propRow, game, props, gameOdds, threshold }: { propRo
         </div>
         <div className="faint small" style={{ marginTop: 4 }}>
           proj {formatNumber(propRow.projection.projection)}
-          {propRow.secondHalfAverage !== null ? ` · 2H avg ${formatNumber(propRow.secondHalfAverage)} (L${propRow.sampleGames})` : ""}
+          {propRow.restOfGame ? ` · ${propRow.restOfGame.label} avg ${formatNumber(propRow.restOfGame.value)} (L${propRow.sampleGames})` : ""}
           {cashed ? "" : trusted ? ` · over ${formatPercent(propRow.evaluation.overProbability, 0)} vs ${formatPercent(fairOver, 0)} fair` : propRow.prior.source !== "pregame line" ? " · no pregame line" : " · model far from market"}
         </div>
       </div>

@@ -18,6 +18,17 @@ export function parseGameClock(status: string | null | undefined, time: string |
   return { period: periodNumber, secondsLeftInPeriod, isHalftime: false, isFinished: false };
 }
 
+export function restOfGameAverage(quarterAverages: [number, number, number, number] | null, clock: GameClock): { value: number; label: string } | null {
+  if (!quarterAverages || clock.isFinished || clock.period > 4) return null; // overtime has no quarter history
+  const secondsLeft = clock.isHalftime ? 0 : clock.secondsLeftInPeriod;
+  let value = (secondsLeft / 720) * quarterAverages[clock.period - 1]; // only the part of this quarter still to play
+  for (let quarter = clock.period + 1; quarter <= 4; quarter += 1) value += quarterAverages[quarter - 1];
+  const labelStart = secondsLeft <= 360 ? clock.period + 1 : clock.period; // past the midpoint, name the quarters still to come
+  const label = labelStart > 4 ? "rest of Q4" : labelStart === 4 ? "Q4" : labelStart === 3 ? "2H" : `Q${labelStart}–4`;
+  if (labelStart > 4 && secondsLeft === 0) return null;
+  return { value, label };
+}
+
 export function clockLabel(status: string | null | undefined, time: string | null | undefined): string {
   if (!status) return time ?? "";
   if (/half/i.test(status)) return "Halftime";

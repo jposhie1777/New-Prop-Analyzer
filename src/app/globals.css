@@ -129,15 +129,22 @@ table.data-table { width: 100%; border-collapse: collapse; font-size: 13px; }
 
 .game-card { padding: 0; overflow: hidden; }
 .game-card-top { display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; border-bottom: 1px solid var(--border-subtle); font-size: 12.5px; color: var(--text-secondary); }
-.game-matchup { display: grid; grid-template-columns: 1fr auto; gap: 8px; padding: 12px 14px; }
 .team-line { display: flex; align-items: center; gap: 10px; min-width: 0; }
 .team-line .team-name { font-weight: 700; font-size: 15px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .team-score { font-size: 22px; font-weight: 800; font-variant-numeric: tabular-nums; text-align: right; }
-.odds-strip { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--border-subtle); }
-.odds-cell { padding: 9px 12px; border-right: 1px solid var(--border-subtle); }
-.odds-cell:last-child { border-right: 0; }
-.odds-cell .odds-main { font-weight: 700; font-variant-numeric: tabular-nums; }
-.odds-cell .odds-move { font-size: 11.5px; }
+.game-matchup { display: grid; grid-template-columns: 1fr auto; gap: 8px; padding: 12px 14px; }
+.market-grid { border-top: 1px solid var(--border-subtle); padding: 10px 14px 8px; display: grid; gap: 6px; }
+.market-grid-head, .market-grid-row { display: grid; grid-template-columns: 44px repeat(3, minmax(0, 1fr)); gap: 6px; align-items: center; }
+.market-grid-head span { text-align: center; font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+.market-team { font-weight: 700; font-size: 13px; color: var(--text-secondary); }
+.market-cell { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 46px; padding: 4px 2px; border-radius: var(--radius-small); border: 1px solid var(--border-subtle); background: var(--surface-sunken); color: var(--text-primary); cursor: pointer; line-height: 1.15; font-variant-numeric: tabular-nums; transition: border-color 0.15s, background 0.15s; }
+.market-cell:hover { border-color: var(--accent); }
+.market-cell.selected { background: var(--accent-soft); border-color: var(--accent); }
+.market-cell.disabled { color: var(--text-muted); cursor: default; }
+.market-cell .market-line { font-size: 12px; color: var(--text-secondary); font-weight: 600; white-space: nowrap; }
+.market-cell .market-odds { font-size: 14.5px; font-weight: 800; white-space: nowrap; }
+.market-grid-foot { display: flex; justify-content: space-between; gap: 8px; font-size: 11.5px; padding-top: 2px; }
+.injury-details summary { font-size: 13px; }
 .chip-row { display: flex; gap: 6px; flex-wrap: wrap; }
 .hit-chip { display: inline-flex; flex-direction: column; align-items: center; min-width: 52px; padding: 5px 8px; border-radius: var(--radius-small); background: var(--surface-sunken); border: 1px solid var(--border-subtle); font-size: 11px; color: var(--text-muted); }
 .hit-chip strong { font-size: 14px; color: var(--text-primary); font-variant-numeric: tabular-nums; }
@@ -178,7 +185,7 @@ details > summary::-webkit-details-marker { display: none; }
 .prop-card .table-scroll { margin: 0; padding: 0; }
 .prop-card details { min-width: 0; }
 .card-grid { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr)); }
-html, body { overflow-x: hidden; }
+body { overflow-x: clip; } /* clip, not hidden: hidden breaks the sticky header on iOS */
 .price-button { display: inline-flex; flex-direction: column; align-items: center; justify-content: center; min-width: 74px; padding: 6px 8px; border-radius: var(--radius-small); border: 1px solid var(--border-strong); background: var(--surface-hover); color: var(--text-primary); cursor: pointer; line-height: 1.15; transition: border-color 0.15s, background 0.15s; }
 .price-button:hover { border-color: var(--accent); }
 .price-button .price-side { font-size: 11px; color: var(--text-secondary); font-weight: 650; white-space: nowrap; }
@@ -221,9 +228,14 @@ html, body { overflow-x: hidden; }
 .book-chip-odds { font-size: 15px; font-weight: 800; font-variant-numeric: tabular-nums; }
 .book-chip-line { font-size: 10.5px; color: var(--text-muted); }
 .bet-button { width: 100%; padding: 12px; font-size: 15px; }
-.top-picks { margin: 0 14px 12px; padding: 10px 12px; border-radius: var(--radius-medium); background: var(--surface-sunken); border: 1px solid var(--border-subtle); }
-.top-pick { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 7px 0; border-top: 1px solid rgba(31, 42, 59, 0.7); }
-.top-pick:first-of-type { border-top: 0; }
+.top-picks { margin: 0 14px 12px; padding: 8px 10px 4px; border-radius: var(--radius-medium); background: var(--surface-sunken); border: 1px solid var(--border-subtle); }
+.top-picks .section-label { margin-bottom: 2px; }
+.top-pick { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; align-items: center; padding: 6px 0; border-top: 1px solid rgba(31, 42, 59, 0.7); }
+.top-picks .section-label + .top-pick { border-top: 0; }
+.top-pick-title { font-size: 13.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.top-pick-stats { font-size: 11.5px; margin-top: 1px; }
+.price-button.compact { min-width: 64px; padding: 4px 6px; }
+.price-button.compact .price-odds { font-size: 14px; }
 .quarter-scores { width: 100%; margin-top: 8px; border-collapse: collapse; }
 .quarter-scores th, .quarter-scores td { padding: 2px 4px; text-align: center; font-weight: 400; }
 .quarter-scores th { color: var(--text-muted); }
