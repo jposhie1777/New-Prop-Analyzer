@@ -40,7 +40,7 @@ function TopPicks({ game, data, gameOdds, atHalftime }: { game: BdlGame; data: L
                 <div className="strong">{propRow.playerName}</div>
                 <div className="small muted">
                   {side === "over" ? "Over" : "Under"} {propRow.lineValue} {propRow.label} · {atHalftime ? "1H" : "now"} {propRow.currentValue}
-                  {atHalftime && propRow.secondHalfAverage !== null ? ` · 2H avg ${formatNumber(propRow.secondHalfAverage)} (L${propRow.sampleGames})` : ""} · model {formatPercent(chance, 0)}
+                  {propRow.secondHalfAverage !== null ? ` · 2H avg ${formatNumber(propRow.secondHalfAverage)} (L${propRow.sampleGames})` : " · 2H avg n/a"} · model {formatPercent(chance, 0)}
                 </div>
               </div>
               <PriceButton pick={buildPropPick(game, propRow.playerId, propRow.playerName, propRow.propType, side, data.props, gameOdds, atHalftime ? "halftime" : "live", chance, propRow.lineValue)} sideLabel={`${side === "over" ? "O" : "U"} ${propRow.lineValue}`} odds={odds} vendor={vendor} note={`${formatSigned(propRow.evaluation.bestEvPercent, 0)}% EV`} highlight />

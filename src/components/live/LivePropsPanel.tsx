@@ -30,7 +30,7 @@ function evNote(evPercent: number | null, trusted: boolean, threshold: number): 
   return { note: `${formatSigned(evPercent, 0)}% EV`, highlight: evPercent >= threshold };
 }
 
-export function PropLine({ propRow, game, props, gameOdds, threshold, atHalftime }: { propRow: LivePropRow; game: BdlGame; props: BdlPlayerProp[]; gameOdds: BdlBettingOdd[]; threshold: number; atHalftime: boolean }) {
+export function PropLine({ propRow, game, props, gameOdds, threshold }: { propRow: LivePropRow; game: BdlGame; props: BdlPlayerProp[]; gameOdds: BdlBettingOdd[]; threshold: number }) {
   const trusted = isTrusted(propRow);
   const cashed = propRow.currentValue > propRow.lineValue;
   const overNote = evNote(propRow.evaluation.overEvPercent, trusted, threshold);
@@ -54,7 +54,7 @@ export function PropLine({ propRow, game, props, gameOdds, threshold, atHalftime
         </div>
         <div className="faint small" style={{ marginTop: 4 }}>
           proj {formatNumber(propRow.projection.projection)}
-          {atHalftime && propRow.secondHalfAverage !== null ? ` · 2H avg ${formatNumber(propRow.secondHalfAverage)} (L${propRow.sampleGames})` : ""}
+          {propRow.secondHalfAverage !== null ? ` · 2H avg ${formatNumber(propRow.secondHalfAverage)} (L${propRow.sampleGames})` : ""}
           {cashed ? "" : trusted ? ` · over ${formatPercent(propRow.evaluation.overProbability, 0)} vs ${formatPercent(fairOver, 0)} fair` : propRow.prior.source !== "pregame line" ? " · no pregame line" : " · model far from market"}
         </div>
       </div>
@@ -151,7 +151,7 @@ export function LivePropsPanel({ game, data, gameOdds }: { game: BdlGame; data: 
               </span>
             </div>
             {group.rows.map((propRow) => (
-              <PropLine key={propRow.propType} propRow={propRow} game={game} props={propList} gameOdds={gameOdds} threshold={settings.evThresholdPercent} atHalftime={Boolean(data.clock?.isHalftime)} />
+              <PropLine key={propRow.propType} propRow={propRow} game={game} props={propList} gameOdds={gameOdds} threshold={settings.evThresholdPercent} />
             ))}
           </div>
         ))}
