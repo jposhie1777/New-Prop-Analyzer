@@ -119,13 +119,13 @@ export function LivePropsPanel({ game, data, gameOdds }: { game: BdlGame; data: 
     if (propRow.flagged) group.bestValue = Math.max(group.bestValue, propRow.evaluation.bestEvPercent ?? -Infinity);
     groups.set(propRow.playerId, group);
   }
-  const orderedGroups = [...groups.values()].sort((first, second) => second.bestValue - first.bestValue || second.minutesPlayed - first.minutesPlayed); // value first, then starters
+  const orderedGroups = [...groups.values()].sort((first, second) => second.minutesPlayed - first.minutesPlayed); // most minutes tonight first
 
   return (
     <div id="live-props" style={{ scrollMarginTop: 70 }}>
       <div className="row-between wrap" style={{ marginBottom: 8 }}>
         <span className="small muted">
-          {orderedGroups.length} players · {flaggedRows.length} value pick{flaggedRows.length === 1 ? "" : "s"} · tap a price to add it
+          {orderedGroups.length} players · {flaggedRows.length} value pick{flaggedRows.length === 1 ? "" : "s"} · tap a player to see props
         </span>
         <button className={`toggle-button${valueOnly ? " open" : ""}`} onClick={() => setValueOnly((previous) => !previous)}>
           {valueOnly ? "✓ Value only" : "Value only"}
@@ -141,19 +141,26 @@ export function LivePropsPanel({ game, data, gameOdds }: { game: BdlGame; data: 
       {rows.length > 0 && orderedGroups.length === 0 ? <div className="empty-state">Nothing matches these filters.</div> : null}
       <div className="card-grid">
         {orderedGroups.map((group) => (
-          <div key={group.playerId} className={`player-group${group.bestValue > -Infinity ? " has-value" : ""}`}>
-            <div className="player-group-header">
-              <Link href={`/player/${group.playerId}`} className="strong">
-                {group.playerName} <span className="faint small">{group.teamAbbreviation}</span>
-              </Link>
-              <span className="faint small">
-                {formatNumber(group.minutesPlayed, 0)} min · {group.personalFouls} PF
+          <details key={group.playerId} className={`player-group${group.bestValue > -Infinity ? " has-value" : ""}`} open={normalizedSearch !== "" || undefined}>
+            <summary className="player-group-header">
+              <span className="player-group-name">
+                <span className="strong">{group.playerName}</span> <span className="faint small">{group.teamAbbreviation}</span>
+                <span className="player-group-stats faint">
+                  {formatNumber(group.minutesPlayed, 0)} min · {group.personalFouls} PF · {group.rows.length} prop{group.rows.length === 1 ? "" : "s"}
+                </span>
               </span>
-            </div>
+              <span className="player-group-meta small">
+                {group.bestValue > -Infinity ? <span className="pill positive">{formatSigned(group.bestValue, 0)}% EV</span> : null}
+                <span className="player-group-chevron">▾</span>
+              </span>
+            </summary>
             {group.rows.map((propRow) => (
               <PropLine key={propRow.propType} propRow={propRow} game={game} props={propList} gameOdds={gameOdds} threshold={settings.evThresholdPercent} />
             ))}
-          </div>
+            <Link href={`/player/${group.playerId}`} className="expand-hint" style={{ display: "inline-block", marginTop: 8 }}>
+              Player page →
+            </Link>
+          </details>
         ))}
       </div>
       <details style={{ marginTop: 10 }}>
