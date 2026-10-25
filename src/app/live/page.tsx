@@ -14,7 +14,7 @@ import type { BdlBettingOdd, BdlBoxScore, BdlGame } from "@/lib/bdl/types";
 import { useLivePropData, type LivePropData } from "@/lib/client/liveProps";
 import { PriceButton } from "@/components/PriceButton";
 import { buildPropPick } from "@/lib/client/pickBuilders";
-import { formatPercent, formatSigned } from "@/lib/client/format";
+import { formatNumber, formatPercent, formatSigned } from "@/lib/client/format";
 
 type SectionName = "props" | "box";
 
@@ -39,7 +39,8 @@ function TopPicks({ game, data, gameOdds, atHalftime }: { game: BdlGame; data: L
               <div style={{ minWidth: 0 }}>
                 <div className="strong">{propRow.playerName}</div>
                 <div className="small muted">
-                  {side === "over" ? "Over" : "Under"} {propRow.lineValue} {propRow.label} · now {propRow.currentValue} · model {formatPercent(chance, 0)}
+                  {side === "over" ? "Over" : "Under"} {propRow.lineValue} {propRow.label} · {atHalftime ? "1H" : "now"} {propRow.currentValue}
+                  {atHalftime && propRow.secondHalfAverage !== null ? ` · 2H avg ${formatNumber(propRow.secondHalfAverage)} (L${propRow.sampleGames})` : ""} · model {formatPercent(chance, 0)}
                 </div>
               </div>
               <PriceButton pick={buildPropPick(game, propRow.playerId, propRow.playerName, propRow.propType, side, data.props, gameOdds, atHalftime ? "halftime" : "live", chance, propRow.lineValue)} sideLabel={`${side === "over" ? "O" : "U"} ${propRow.lineValue}`} odds={odds} vendor={vendor} note={`${formatSigned(propRow.evaluation.bestEvPercent, 0)}% EV`} highlight />

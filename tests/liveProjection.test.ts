@@ -71,3 +71,22 @@ describe("cashed overs", () => {
     expect(settleCashedOver(open, 3, 5.5, -110, -110)).toBe(open);
   });
 });
+
+import { buildLivePropRows } from "@/lib/analytics/liveSuggestions";
+import { bdlTeam } from "@/lib/nba/teams";
+import type { BdlBoxScore, BdlPlayerProp } from "@/lib/bdl/types";
+import type { QuarterProfile } from "@/lib/analytics/aggregates/playerAggregates";
+
+describe("second-half average on live rows", () => {
+  it("sums the player's Q3 and Q4 averages for the prop's stat", () => {
+    const boxPlayer = { min: "18:00", pts: 12, reb: 3, ast: 2, pf: 1, fg3m: 1, stl: 0, blk: 0, player: { id: 77, first_name: "Test", last_name: "Player", position: "G" } };
+    const boxScore = { date: "2026-10-25", status: "Halftime", time: "Half", period: 2, home_team_score: 50, visitor_team_score: 48, home_team: { team: bdlTeam(2), players: [boxPlayer] }, visitor_team: { team: bdlTeam(20), players: [] } } as unknown as BdlBoxScore;
+    const props = [{ id: 1, game_id: 9, player_id: 77, vendor: "fanduel", prop_type: "points", line_value: "24.5", market: { type: "over_under", over_odds: -110, under_odds: -110 } }] as BdlPlayerProp[];
+    const quarterStat = (points: number) => ({ pts: { average: points, variance: 4 } }) as unknown as QuarterProfile["quarters"][1];
+    const profile = { playerId: 77, games: 10, quarters: { 1: quarterStat(6), 2: quarterStat(5), 3: quarterStat(6.5), 4: quarterStat(4.5) } } as QuarterProfile;
+    const { rows, clock } = buildLivePropRows(boxScore, props, [], new Map([[77, profile]]), 3);
+    expect(clock.isHalftime).toBe(true);
+    expect(rows[0].secondHalfAverage).toBeCloseTo(11, 9);
+    expect(rows[0].sampleGames).toBe(10);
+  });
+});
