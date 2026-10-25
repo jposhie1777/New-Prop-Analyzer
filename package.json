@@ -13,7 +13,8 @@
     "baseline": "tsx scripts/baseline.ts",
     "images:map": "tsx scripts/buildNbaPersonIds.ts",
     "postinstall": "node scripts/copyDuckdbAssets.mjs",
-    "check:data": "tsx scripts/checkData.ts"
+    "check:data": "tsx scripts/checkData.ts",
+    "check:links": "tsx scripts/checkLinks.ts"
   },
   "dependencies": {
     "@duckdb/duckdb-wasm": "1.32.0",
