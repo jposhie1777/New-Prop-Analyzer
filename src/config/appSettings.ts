@@ -11,5 +11,6 @@ export const appSettings = {
   hundredThroughThreeTarget: 100, // the 100-in-3-quarters threshold
   defaultTeamThreeQuarterSd: 9, // fallback standard deviation of Q1-Q3 points when history is thin
   blowoutMargin: 20, // halftime margin treated as a blowout
+  blowoutWarningMargin: 15, // live margin that shows the potential blowout warning
   kellyFraction: 0.25, // fractional Kelly
 };

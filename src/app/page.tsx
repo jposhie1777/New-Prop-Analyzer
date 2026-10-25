@@ -8,6 +8,7 @@ import { matchBoxScore, useLiveBoxScores, useSlate } from "@/lib/client/slateDat
 import { groupOddsByGame } from "@/lib/odds/consensus";
 import { teamRest } from "@/lib/analytics/aggregates/teamAggregates";
 import { todayEastern } from "@/lib/dates";
+import { isGameFinal } from "@/lib/data/flatten";
 
 export default function SlatePage() {
   const slate = useSlate();
@@ -54,7 +55,9 @@ export default function SlatePage() {
       ) : null}
       {games && games.length === 0 ? <div className="card empty-state">No games today. Enjoy the night off.</div> : null}
       <div className="grid-two">
-        {(games ?? []).map((game) => (
+        {[...(games ?? [])]
+          .sort((first, second) => Number(isGameFinal(matchBoxScore(first, live.boxScores) ?? first)) - Number(isGameFinal(matchBoxScore(second, live.boxScores) ?? second))) // finished games sink to the bottom, the rest keep tip-off order
+          .map((game) => (
           <GameCard
             key={game.id}
             game={game}

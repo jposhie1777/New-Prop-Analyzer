@@ -3,7 +3,7 @@ import type { QuarterProfile } from "./aggregates/playerAggregates";
 import { propMapping } from "./propTypes";
 import { evaluateProp, type PropEvaluation } from "./halftime";
 import { boxMetricValue } from "./halftimeSuggestions";
-import { normalizeShares, parseGameClock, projectLiveStat, statDispersion, type GameClock, type LivePrior, type LiveProjectionResult } from "./liveProjection";
+import { normalizeShares, parseGameClock, restOfGameAverage, projectLiveStat, statDispersion, type GameClock, type LivePrior, type LiveProjectionResult } from "./liveProjection";
 import { summarizePropMarkets, type PropMarketSummary } from "@/lib/client/pickBuilders";
 import { expectedValuePercent } from "@/lib/math/odds";
 import { probabilityAtLeast } from "@/lib/math/probability";
@@ -47,7 +47,7 @@ export interface LivePropRow {
   minutesPlayed: number;
   personalFouls: number;
   sampleGames: number;
-  secondHalfAverage: number | null; // player's Q3+Q4 average for this stat over his last 10 games
+  restOfGame: { value: number; label: string } | null; // the player's last-10 average for the quarters still to play
   prior: LivePrior;
   projection: LiveProjectionResult;
   evaluation: PropEvaluation;
@@ -148,7 +148,7 @@ export function buildLivePropRows(boxScore: BdlBoxScore, props: BdlPlayerProp[],
           minutesPlayed: parseMinutes(boxPlayer.min),
           personalFouls: boxPlayer.pf ?? 0,
           sampleGames: profile?.games ?? 0,
-          secondHalfAverage: profile?.quarters[3] && profile?.quarters[4] ? profile.quarters[3][mapping.metric].average + profile.quarters[4][mapping.metric].average : null,
+          restOfGame: restOfGameAverage(profile && [1, 2, 3, 4].every((quarter) => profile.quarters[quarter as 1 | 2 | 3 | 4]) ? ([1, 2, 3, 4].map((quarter) => profile.quarters[quarter as 1 | 2 | 3 | 4][mapping.metric].average) as [number, number, number, number]) : null, clock),
           prior,
           projection,
           evaluation: { ...evaluation, noVigOver: fairOver, noVigUnder: fairPrices?.noVigUnder ?? evaluation.noVigUnder },

@@ -5,7 +5,7 @@ import { useSlip } from "@/lib/client/hooks";
 import { formatAmerican } from "@/lib/math/odds";
 import { vendorLabel } from "@/lib/odds/deeplinks";
 
-export function PriceButton({ pick, sideLabel, odds, vendor, note, highlight = false }: { pick: Omit<SlipPick, "addedAt"> | null; sideLabel: string; odds: number | null; vendor: string | null; note?: string | null; highlight?: boolean }) {
+export function PriceButton({ pick, sideLabel, odds, vendor, note, highlight = false, compact = false }: { pick: Omit<SlipPick, "addedAt"> | null; sideLabel: string; odds: number | null; vendor: string | null; note?: string | null; highlight?: boolean; compact?: boolean }) {
   const slip = useSlip();
   if (!pick || odds === null) {
     return (
@@ -18,7 +18,7 @@ export function PriceButton({ pick, sideLabel, odds, vendor, note, highlight = f
   const inSlip = slip.some((existing) => existing.pickId === pick.pickId);
   return (
     <button
-      className={`price-button${inSlip ? " selected" : ""}${highlight ? " value" : ""}`}
+      className={`price-button${inSlip ? " selected" : ""}${highlight ? " value" : ""}${compact ? " compact" : ""}`}
       onClick={(clickEvent) => {
         clickEvent.preventDefault();
         clickEvent.stopPropagation();
@@ -28,10 +28,12 @@ export function PriceButton({ pick, sideLabel, odds, vendor, note, highlight = f
       title={inSlip ? "Tap to remove from slip" : `Add to slip${vendor ? ` (best: ${vendorLabel(vendor)})` : ""}`}
       aria-pressed={inSlip}
     >
-      <span className="price-side">
-        {inSlip ? "✓ " : ""}
-        {sideLabel}
-      </span>
+      {sideLabel || inSlip ? (
+        <span className="price-side">
+          {inSlip ? "✓ " : ""}
+          {sideLabel}
+        </span>
+      ) : null}
       <span className="price-odds">{formatAmerican(odds)}</span>
       {note ? <span className="price-note">{note}</span> : null}
     </button>

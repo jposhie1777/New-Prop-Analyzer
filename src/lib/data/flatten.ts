@@ -1,10 +1,15 @@
 import type { BdlAdvancedStatsV2, BdlGame, BdlLineup, BdlPlayer, BdlStats, BdlTeam } from "@/lib/bdl/types";
 import { advancedMetricFields, countingStatFields, percentStatFields, type DataRow } from "./rowSchemas";
 import { parseMinutes } from "@/lib/dates";
+import { appSettings } from "@/config/appSettings";
 
 export function isGameFinal(game: Pick<BdlGame, "status" | "status_state">): boolean {
   if (game.status_state) return game.status_state === "final";
   return (game.status ?? "").toLowerCase().startsWith("final"); // older responses without status_state
+}
+
+export function isPotentialBlowout(game: Pick<BdlGame, "status" | "status_state" | "home_team_score" | "visitor_team_score">): boolean {
+  return isGameLive(game) && Math.abs(game.home_team_score - game.visitor_team_score) >= appSettings.blowoutWarningMargin; // starters may sit, so props and spreads get risky
 }
 
 export function isGameLive(game: Pick<BdlGame, "status" | "status_state">): boolean {
