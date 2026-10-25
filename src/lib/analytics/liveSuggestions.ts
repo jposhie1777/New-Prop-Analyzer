@@ -46,6 +46,7 @@ export interface LivePropRow {
   needed: number;
   minutesPlayed: number;
   personalFouls: number;
+  boxLine: { points: number; rebounds: number; assists: number; threesMade: number }; // the player's stats so far tonight
   sampleGames: number;
   restOfGame: { value: number; label: string } | null; // the player's last-10 average for the quarters still to play
   prior: LivePrior;
@@ -147,6 +148,7 @@ export function buildLivePropRows(boxScore: BdlBoxScore, props: BdlPlayerProp[],
           needed: Math.max(0, Math.floor(summary.mainLine) + 1 - currentValue),
           minutesPlayed: parseMinutes(boxPlayer.min),
           personalFouls: boxPlayer.pf ?? 0,
+          boxLine: { points: boxPlayer.pts ?? 0, rebounds: boxPlayer.reb ?? 0, assists: boxPlayer.ast ?? 0, threesMade: boxPlayer.fg3m ?? 0 },
           sampleGames: profile?.games ?? 0,
           restOfGame: restOfGameAverage(profile && [1, 2, 3, 4].every((quarter) => profile.quarters[quarter as 1 | 2 | 3 | 4]) ? ([1, 2, 3, 4].map((quarter) => profile.quarters[quarter as 1 | 2 | 3 | 4][mapping.metric].average) as [number, number, number, number]) : null, clock),
           prior,

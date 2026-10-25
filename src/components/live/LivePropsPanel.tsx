@@ -17,6 +17,7 @@ interface PlayerGroup {
   teamAbbreviation: string;
   minutesPlayed: number;
   personalFouls: number;
+  boxLine: LivePropRow["boxLine"];
   rows: LivePropRow[];
   bestValue: number;
 }
@@ -114,7 +115,7 @@ export function LivePropsPanel({ game, data, gameOdds }: { game: BdlGame; data: 
     .filter((propRow) => !normalizedSearch || propRow.playerName.toLowerCase().includes(normalizedSearch));
   const groups = new Map<number, PlayerGroup>();
   for (const propRow of visibleRows) {
-    const group = groups.get(propRow.playerId) ?? { playerId: propRow.playerId, playerName: propRow.playerName, teamAbbreviation: propRow.teamAbbreviation, minutesPlayed: propRow.minutesPlayed, personalFouls: propRow.personalFouls, rows: [], bestValue: -Infinity };
+    const group = groups.get(propRow.playerId) ?? { playerId: propRow.playerId, playerName: propRow.playerName, teamAbbreviation: propRow.teamAbbreviation, minutesPlayed: propRow.minutesPlayed, personalFouls: propRow.personalFouls, boxLine: propRow.boxLine, rows: [], bestValue: -Infinity };
     group.rows.push(propRow);
     if (propRow.flagged) group.bestValue = Math.max(group.bestValue, propRow.evaluation.bestEvPercent ?? -Infinity);
     groups.set(propRow.playerId, group);
@@ -145,14 +146,22 @@ export function LivePropsPanel({ game, data, gameOdds }: { game: BdlGame; data: 
             <summary className="player-group-header">
               <span className="player-group-name">
                 <span className="strong">{group.playerName}</span> <span className="faint small">{group.teamAbbreviation}</span>
-                <span className="player-group-stats faint">
-                  {formatNumber(group.minutesPlayed, 0)} min · {group.personalFouls} PF · {group.rows.length} prop{group.rows.length === 1 ? "" : "s"}
+                <span className="player-group-stats tabular">
+                  {[
+                    [formatNumber(group.minutesPlayed, 0), "min"],
+                    [group.boxLine.points, "pts"],
+                    [group.boxLine.rebounds, "reb"],
+                    [group.boxLine.assists, "ast"],
+                    [group.boxLine.threesMade, "3pm"],
+                    [group.personalFouls, "pf"],
+                  ].map(([statValue, statLabel]) => (
+                    <span key={statLabel} className={statLabel === "pf" && group.personalFouls >= 4 ? "negative" : undefined}>
+                      <span className="strong">{statValue}</span> <span className="faint">{statLabel}</span>
+                    </span>
+                  ))}
                 </span>
               </span>
-              <span className="player-group-meta small">
-                {group.bestValue > -Infinity ? <span className="pill positive">{formatSigned(group.bestValue, 0)}% EV</span> : null}
-                <span className="player-group-chevron">▾</span>
-              </span>
+              <span className="player-group-chevron">▾</span>
             </summary>
             {group.rows.map((propRow) => (
               <PropLine key={propRow.propType} propRow={propRow} game={game} props={propList} gameOdds={gameOdds} threshold={settings.evThresholdPercent} />
