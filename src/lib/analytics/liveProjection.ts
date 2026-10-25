@@ -75,7 +75,7 @@ export function projectLiveStat(currentValue: number, prior: LivePrior, clock: G
   const adjustments: string[] = [];
   const { remaining, elapsed, remainingClock } = timeShares(clock, prior.quarterShares);
   const priorRemaining = prior.fullGameMean * remaining;
-  const paceWeight = elapsed > 0.08 ? Math.min(0.5, elapsed * 0.6) : 0; // lean on tonight's pace more as the game goes on, never more than half
+  const paceWeight = Math.min(0.35, 0.45 * elapsed * elapsed); // early minutes are noise: ~1% at 20% of the game, ~11% at the half, at most 35%
   const paceRemaining = elapsed > 0 ? (currentValue / elapsed) * remaining : priorRemaining;
   let remainingExpected = (1 - paceWeight) * priorRemaining + paceWeight * paceRemaining;
   if (paceWeight > 0) adjustments.push(`tonight's pace weight ${Math.round(paceWeight * 100)}%`);
