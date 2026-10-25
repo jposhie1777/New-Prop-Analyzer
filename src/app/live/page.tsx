@@ -10,13 +10,62 @@ import { matchBoxScore, useLiveBoxScores, useSlate } from "@/lib/client/slateDat
 import { isGameFinal, isGameLive, isHalftime } from "@/lib/data/flatten";
 import { formatTipoff } from "@/lib/dates";
 import { groupOddsByGame } from "@/lib/odds/consensus";
-import type { BdlBettingOdd, BdlBoxScore, BdlGame } from "@/lib/bdl/types";
+import type { BdlBettingOdd, BdlBoxScore, BdlGame, BdlGameScoreDetail } from "@/lib/bdl/types";
 import { useLivePropData, type LivePropData } from "@/lib/client/liveProps";
 import { PriceButton } from "@/components/PriceButton";
 import { buildPropPick } from "@/lib/client/pickBuilders";
 import { formatNumber, formatPercent, formatSigned } from "@/lib/client/format";
 
 type SectionName = "props" | "box";
+
+const periodKeys = ["q1", "q2", "q3", "q4", "ot1", "ot2", "ot3"] as const;
+const periodHeaders = ["1", "2", "3", "4", "OT", "2OT", "3OT"];
+
+function periodScore(side: "home" | "visitor", periodKey: (typeof periodKeys)[number], fresh: BdlGameScoreDetail | null, fallback: BdlGameScoreDetail): number | null {
+  const fieldName = `${side}_${periodKey}` as keyof BdlGameScoreDetail;
+  const freshValue = fresh?.[fieldName];
+  const value = typeof freshValue === "number" ? freshValue : fallback[fieldName]; // box score polls every 30s, the slate every 10 min
+  return typeof value === "number" ? value : null;
+}
+
+function QuarterScores({ game, boxScore }: { game: BdlGame; boxScore: BdlBoxScore | null }) {
+  const sides = [
+    { side: "visitor" as const, team: game.visitor_team },
+    { side: "home" as const, team: game.home_team },
+  ];
+  const shownPeriods = periodKeys.map((periodKey, periodIndex) => ({ periodKey, periodIndex })).filter(({ periodKey, periodIndex }) => periodIndex < 4 || sides.some(({ side }) => periodScore(side, periodKey, boxScore, game) !== null)); // overtime columns only when played
+  if (!sides.some(({ side }) => periodScore(side, "q1", boxScore, game) !== null)) return null;
+  return (
+    <table className="quarter-scores tabular small">
+      <thead>
+        <tr>
+          <th />
+          {shownPeriods.map(({ periodIndex }) => (
+            <th key={periodIndex}>{periodHeaders[periodIndex]}</th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {sides.map(({ side, team }) => {
+          const inBonus = boxScore?.[`${side}_in_bonus`] === true; // bonus and timeouts only from the fresh box score
+          const timeoutsLeft = boxScore?.[`${side}_timeouts_remaining`];
+          return (
+            <tr key={side}>
+              <td className="muted">
+                {team.abbreviation}
+                {typeof timeoutsLeft === "number" ? <span className="faint"> · {timeoutsLeft} TO</span> : null}
+                {inBonus ? <span className="pill"> bonus</span> : null}
+              </td>
+              {shownPeriods.map(({ periodKey, periodIndex }) => (
+                <td key={periodIndex}>{periodScore(side, periodKey, boxScore, game) ?? "–"}</td>
+              ))}
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  );
+}
 
 function TopPicks({ game, data, gameOdds, atHalftime }: { game: BdlGame; data: LivePropData; gameOdds: BdlBettingOdd[]; atHalftime: boolean }) {
   if (data.loading) return null;
@@ -93,6 +142,7 @@ function GameRow({ game, boxScore, gameOdds, initialSection }: { game: BdlGame; 
             </span>
           </div>
         ))}
+        {live || final ? <QuarterScores game={game} boxScore={boxScore} /> : null}
       </div>
       {live && boxScore ? <TopPicks game={game} data={liveData} gameOdds={gameOdds} atHalftime={atHalftime} /> : null}
       {boxScore && (live || final) ? (

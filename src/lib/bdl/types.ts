@@ -53,7 +53,28 @@ export interface BdlPlayer {
   team_id?: number;
 }
 
-export interface BdlGame {
+export interface BdlGameScoreDetail {
+  home_q1?: number | null;
+  home_q2?: number | null;
+  home_q3?: number | null;
+  home_q4?: number | null;
+  home_ot1?: number | null;
+  home_ot2?: number | null;
+  home_ot3?: number | null;
+  home_timeouts_remaining?: number | null;
+  home_in_bonus?: boolean | null;
+  visitor_q1?: number | null;
+  visitor_q2?: number | null;
+  visitor_q3?: number | null;
+  visitor_q4?: number | null;
+  visitor_ot1?: number | null;
+  visitor_ot2?: number | null;
+  visitor_ot3?: number | null;
+  visitor_timeouts_remaining?: number | null;
+  visitor_in_bonus?: boolean | null;
+}
+
+export interface BdlGame extends BdlGameScoreDetail {
   id: number;
   date: string;
   season: number;
@@ -110,7 +131,7 @@ export interface BdlBoxScoreTeam {
   players: BdlBoxScorePlayer[];
 }
 
-export interface BdlBoxScore {
+export interface BdlBoxScore extends BdlGameScoreDetail {
   date: string;
   season: number;
   status: string;

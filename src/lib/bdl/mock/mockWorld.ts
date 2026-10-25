@@ -219,13 +219,29 @@ function applyGameState(game: BdlGame, isoDate: string, today: string): void {
   const scoreLines = mockPeriodLines(game.id);
   let homeScore = 0;
   let visitorScore = 0;
+  const homeQuarters = [0, 0, 0, 0];
+  const visitorQuarters = [0, 0, 0, 0];
   for (const [playerId, periodLines] of scoreLines) {
     const pointsTotal = periodLines.reduce((runningTotal, periodLine) => runningTotal + (periodLine.pts ?? 0), 0);
+    const quarterTotals = Math.floor(playerId / 100) === game.home_team.id ? homeQuarters : visitorQuarters;
+    periodLines.slice(0, 4).forEach((periodLine, periodIndex) => (quarterTotals[periodIndex] += periodLine.pts ?? 0));
     if (Math.floor(playerId / 100) === game.home_team.id) homeScore += pointsTotal;
     else visitorScore += pointsTotal;
   }
   game.home_team_score = homeScore;
   game.visitor_team_score = visitorScore;
+  const playedQuarters = game.status_state === "final" ? 4 : game.status === "Halftime" ? 2 : Math.max(0, (game.period ?? 1) - 1); // only finished quarters, like the API
+  const quarterFields = ["q1", "q2", "q3", "q4"] as const;
+  quarterFields.forEach((quarterField, quarterIndex) => {
+    game[`home_${quarterField}`] = quarterIndex < playedQuarters ? homeQuarters[quarterIndex] : null;
+    game[`visitor_${quarterField}`] = quarterIndex < playedQuarters ? visitorQuarters[quarterIndex] : null;
+  });
+  if (game.status_state === "in_progress") {
+    game.home_timeouts_remaining = 3;
+    game.visitor_timeouts_remaining = 2;
+    game.home_in_bonus = gameIndex === 0;
+    game.visitor_in_bonus = false;
+  }
 }
 
 export function mockGameById(gameId: number): BdlGame | undefined {
@@ -395,6 +411,18 @@ export function mockBoxScore(game: BdlGame): BdlBoxScore {
     postseason: game.postseason,
     home_team_score: game.home_team_score,
     visitor_team_score: game.visitor_team_score,
+    home_q1: game.home_q1,
+    home_q2: game.home_q2,
+    home_q3: game.home_q3,
+    home_q4: game.home_q4,
+    visitor_q1: game.visitor_q1,
+    visitor_q2: game.visitor_q2,
+    visitor_q3: game.visitor_q3,
+    visitor_q4: game.visitor_q4,
+    home_timeouts_remaining: game.home_timeouts_remaining,
+    visitor_timeouts_remaining: game.visitor_timeouts_remaining,
+    home_in_bonus: game.home_in_bonus,
+    visitor_in_bonus: game.visitor_in_bonus,
     home_team: sideFor(game.home_team.id),
     visitor_team: sideFor(game.visitor_team.id),
   };

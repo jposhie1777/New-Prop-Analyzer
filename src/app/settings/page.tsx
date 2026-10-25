@@ -52,6 +52,7 @@ export default function SettingsPage() {
             );
           })}
         </div>
+        <p className="faint small">⚡ One-tap player props: only BetMGM, BetRivers and Caesars send prop bet-slip links. FanDuel and DraftKings open the game page with the pick copied.</p>
         <p className="faint small">Pregame lines from every book still anchor live projections, so the model stays accurate even with one book selected.</p>
         <label className="stack">
           <span className="strong">Default sportsbook for the slip</span>

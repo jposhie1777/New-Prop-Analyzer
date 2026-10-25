@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useSettings, useSlip } from "@/lib/client/hooks";
 import { choosePickVendor, clearSlip, copyTextFor, removePick, selectedOffer, type SlipOffer, type SlipPick } from "@/lib/client/betSlip";
-import { bookHomeLink, resolvePropLink, resolveSelectionLink, vendorLabel, type ResolvedLink } from "@/lib/odds/deeplinks";
+import { bookHomeLink, copyOnlyPropVendors, resolvePropLink, resolveSelectionLink, vendorLabel, type ResolvedLink } from "@/lib/odds/deeplinks";
 import { americanToDecimal, expectedValuePercent, formatAmerican, kellyFraction, parlayAmericanOdds, parlayDecimalOdds, parlayProbability } from "@/lib/math/odds";
 import { formatNumber, formatPercent, formatSigned } from "@/lib/client/format";
 import { appSettings } from "@/config/appSettings";
@@ -65,11 +65,13 @@ function SlipItem({ pick, settings }: { pick: SlipPick; settings: ReturnType<typ
       <div className="book-chips">
         {offers.map((offer) => {
           const isChosen = offer.vendor === chosen?.vendor;
+          const oneTap = linkFor(pick, offer, settings)?.kind === "selection"; // opens the bet straight in the book's slip
           return (
             <button key={offer.vendor} className={`book-chip${isChosen ? " chosen" : ""}`} onClick={() => choosePickVendor(pick.pickId, offer.vendor)} aria-pressed={isChosen}>
               <span className="book-chip-name">
                 {shortBook(offer.vendor)}
                 {offer.vendor === bestVendor && offers.length > 1 ? " ★" : ""}
+                {oneTap ? " ⚡" : ""}
               </span>
               <span className="book-chip-odds">{formatAmerican(offer.americanOdds)}</span>
               {pick.kind === "prop" && offer.lineValue !== null ? <span className="book-chip-line">{offer.lineValue}</span> : null}
@@ -97,7 +99,7 @@ function SlipItem({ pick, settings }: { pick: SlipPick; settings: ReturnType<typ
         )
       ) : null}
       <div className="faint small" style={{ marginTop: 6 }}>
-        {copied ? "Pick copied. Paste it into the book's search." : link?.kind === "selection" ? "Opens the bet in the book's slip." : link?.kind === "event" ? "Opens the game in the book; the pick is copied for you." : link?.kind === "book" ? "Opens the book's NBA page; the pick is copied for you." : ""}
+        {copied ? "Pick copied. Paste it into the book's search." : link?.kind === "selection" ? "Opens the bet in the book's slip." : link?.kind === "event" ? (pick.kind === "prop" && copyOnlyPropVendors.has(chosen?.vendor ?? "") ? `${vendorLabel(chosen?.vendor ?? "")} has no prop deeplinks, so this opens the game and copies the pick. ⚡ books open the bet itself.` : "Opens the game in the book; the pick is copied for you.") : link?.kind === "book" ? "Opens the book's NBA page; the pick is copied for you." : ""}
         {pick.modelProbability !== null && chosen ? ` EV at this price ${formatSigned(expectedValuePercent(pick.modelProbability, chosen.americanOdds), 1)}%.` : ""}
       </div>
     </section>

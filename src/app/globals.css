@@ -224,3 +224,8 @@ html, body { overflow-x: hidden; }
 .top-picks { margin: 0 14px 12px; padding: 10px 12px; border-radius: var(--radius-medium); background: var(--surface-sunken); border: 1px solid var(--border-subtle); }
 .top-pick { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 7px 0; border-top: 1px solid rgba(31, 42, 59, 0.7); }
 .top-pick:first-of-type { border-top: 0; }
+.quarter-scores { width: 100%; margin-top: 8px; border-collapse: collapse; }
+.quarter-scores th, .quarter-scores td { padding: 2px 4px; text-align: center; font-weight: 400; }
+.quarter-scores th { color: var(--text-muted); }
+.quarter-scores td:first-child, .quarter-scores th:first-child { text-align: left; }
+.quarter-scores .pill { margin-left: 6px; padding: 0 6px; font-size: 10px; }
