@@ -1,5 +1,7 @@
 "use client";
 
+import { booksKey } from "@/lib/client/bookFilter";
+
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AddToSlipButton } from "@/components/AddToSlipButton";
@@ -29,7 +31,7 @@ export function LivePropsPanel({ game, boxScore, gameOdds }: { game: BdlGame; bo
   const [sortMode, setSortMode] = useState<SortMode>("ev");
   const [onlyFlagged, setOnlyFlagged] = useState(false);
   const [searchText, setSearchText] = useState("");
-  const props = useVisiblePolling(() => loadProps(game.id), 60_000, `live-props:${game.id}`); // live lines refresh every 60s while visible
+  const props = useVisiblePolling(() => loadProps(game.id, false, settings.enabledBooks), 60_000, `live-props:${game.id}:${booksKey(settings.enabledBooks)}`); // live lines refresh every 60s while visible
   const openingProps = useVisiblePolling(() => loadProps(game.id, true), 600_000, `opening-props:${game.id}`); // pregame lines anchor the projection
   const playerIds = [...boxScore.home_team.players, ...boxScore.visitor_team.players].map((boxPlayer) => boxPlayer.player.id);
   const profiles = useAnalyticsQuery(playerIds.length > 0 ? (handle) => quarterProfiles(handle.engine, playerIds, 10) : null, `quarters:${game.id}:${playerIds.length}`);

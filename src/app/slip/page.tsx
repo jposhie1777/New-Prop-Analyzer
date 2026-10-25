@@ -9,6 +9,7 @@ import { americanToDecimal, expectedValuePercent, formatAmerican, kellyFraction,
 import { formatNumber, formatPercent, formatSigned } from "@/lib/client/format";
 import { appSettings } from "@/config/appSettings";
 import { readLocalJson, writeLocalJson } from "@/lib/client/safeStorage";
+import { filterByBooks } from "@/lib/client/bookFilter";
 
 function offerLink(pick: SlipPick, offer: SlipOffer, settings: ReturnType<typeof useSettings>): ResolvedLink | null {
   if (pick.kind === "prop") return resolvePropLink(offer.vendor, offer.deeplinks, pick.selectionKey as "over" | "under" | "yes", settings, offer.eventDeeplinks);
@@ -36,8 +37,12 @@ function CopyButton({ text }: { text: string }) {
 }
 
 export default function SlipPage() {
-  const picks = useSlip();
+  const savedPicks = useSlip();
   const settings = useSettings();
+  const picks = savedPicks.map((pick) => {
+    const myBookOffers = filterByBooks(pick.offers, settings.enabledBooks);
+    return myBookOffers.length > 0 ? { ...pick, offers: myBookOffers } : pick; // keep every book if none of yours has this pick
+  });
   const [stake, setStake] = useState<number>(10);
   const [bankroll, setBankroll] = useState<number>(1000);
   useEffect(() => {

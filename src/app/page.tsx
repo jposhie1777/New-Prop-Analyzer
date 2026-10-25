@@ -2,6 +2,7 @@
 
 import { GameCard } from "@/components/slate/GameCard";
 import { SyncStatus } from "@/components/SyncStatus";
+import { BooksIndicator } from "@/components/BooksIndicator";
 import { useAnalyticsQuery } from "@/lib/client/hooks";
 import { matchBoxScore, useLiveBoxScores, useSlate } from "@/lib/client/slateData";
 import { groupOddsByGame } from "@/lib/odds/consensus";
@@ -21,8 +22,11 @@ export default function SlatePage() {
 
   return (
     <main className="page">
-      <div className="mobile-sync">
-        <SyncStatus />
+      <div className="row wrap" style={{ marginBottom: 12 }}>
+        <span className="mobile-sync" style={{ marginBottom: 0 }}>
+          <SyncStatus />
+        </span>
+        <BooksIndicator />
       </div>
       <div className="page-title">
         <div>

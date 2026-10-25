@@ -1,6 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { availableBooks } from "@/lib/client/bookFilter";
+import { vendorLabel } from "@/lib/odds/deeplinks";
 import { useSettings } from "@/lib/client/hooks";
 import { saveSettings, defaultSettings } from "@/lib/client/settings";
 import { deleteFinalsDatabase } from "@/lib/client/idbStore";
@@ -11,6 +13,12 @@ const stateCodes = ["az", "co", "ct", "dc", "ia", "il", "in", "ks", "ky", "la", 
 export default function SettingsPage() {
   const settings = useSettings();
   const [message, setMessage] = useState<string | null>(null);
+  const [bookOptions, setBookOptions] = useState<string[]>([]);
+  useEffect(() => setBookOptions(availableBooks()), []); // known books plus any BDL has returned on this device
+  const toggleBook = (vendor: string) => {
+    const current = settings.enabledBooks;
+    saveSettings({ enabledBooks: current.includes(vendor) ? current.filter((enabled) => enabled !== vendor) : [...current, vendor] });
+  };
   return (
     <main className="page">
       <div className="page-title">
@@ -19,6 +27,33 @@ export default function SettingsPage() {
           <p>Stored on this device only.</p>
         </div>
       </div>
+      <section className="card">
+        <div className="card-header wrap">
+          <div>
+            <h2>My sportsbooks</h2>
+            <div className="faint small">Lines, props, best prices, EV, parlays and consensus lines use only these books. None selected = all books.</div>
+          </div>
+          {settings.enabledBooks.length > 0 ? (
+            <button className="button small ghost" onClick={() => saveSettings({ enabledBooks: [] })}>
+              Show all books
+            </button>
+          ) : (
+            <span className="pill">All books</span>
+          )}
+        </div>
+        <div className="chip-row">
+          {bookOptions.map((vendor) => {
+            const enabled = settings.enabledBooks.includes(vendor);
+            return (
+              <button key={vendor} className={`button small${enabled ? " added" : " ghost"}`} onClick={() => toggleBook(vendor)} aria-pressed={enabled}>
+                {enabled ? "✓ " : ""}
+                {vendorLabel(vendor)}
+              </button>
+            );
+          })}
+        </div>
+        <p className="faint small" style={{ marginBottom: 0 }}>Pregame lines from every book still anchor live projections, so the model stays accurate even with one book selected.</p>
+      </section>
       <section className="card">
         <div className="stack" style={{ gap: 14 }}>
           <label className="stack">

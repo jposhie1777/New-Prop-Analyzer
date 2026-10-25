@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { LivePropsPanel } from "@/components/live/LivePropsPanel";
+import { BooksIndicator } from "@/components/BooksIndicator";
 import { clockLabel } from "@/lib/analytics/liveProjection";
 import { TeamLogo } from "@/components/TeamLogo";
 import { BoxScoreTable } from "@/components/live/BoxScoreTable";
@@ -53,6 +54,9 @@ export default function LivePage() {
             {live.lastUpdated ? ` · updated ${new Date(live.lastUpdated).toLocaleTimeString([], { hour: "numeric", minute: "2-digit", second: "2-digit" })}` : ""}
           </p>
         </div>
+      </div>
+      <div style={{ marginBottom: 12 }}>
+        <BooksIndicator />
       </div>
       {live.error ? <div className="notice">Live feed error: {live.error}</div> : null}
       <div className="grid" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(230px, 1fr))", marginBottom: 12 }}>

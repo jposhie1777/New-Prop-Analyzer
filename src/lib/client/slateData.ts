@@ -7,6 +7,8 @@ import type { BdlBettingOdd, BdlBoxScore, BdlGame, BdlPlayerInjury, BdlPlayerPro
 import { appSettings } from "@/config/appSettings";
 import { todayEastern } from "@/lib/dates";
 import { isGameLive } from "@/lib/data/flatten";
+import { booksKey, filterByBooks, rememberSeenBooks } from "./bookFilter";
+import { useSettings } from "./hooks";
 
 export interface SlateData {
   date: string;
@@ -23,7 +25,7 @@ interface ListBody<ItemType> {
   reason?: string;
 }
 
-export async function loadSlate(slateDate: string): Promise<SlateData> {
+export async function loadSlate(slateDate: string, enabledBooks: string[] = []): Promise<SlateData> {
   const [scheduleResult, oddsResult, openingResult, injuryResult] = await Promise.allSettled([
     fetchApi<{ games: BdlGame[] }>(`/api/schedule?date=${slateDate}`),
     fetchApi<ListBody<BdlBettingOdd>>(`/api/odds?date=${slateDate}`),
@@ -43,21 +45,27 @@ export async function loadSlate(slateDate: string): Promise<SlateData> {
   return {
     date: slateDate,
     games: [...scheduleResult.value.games].sort((first, second) => (first.datetime ?? "").localeCompare(second.datetime ?? "")),
-    odds: listOrEmpty(oddsResult, "Live odds"),
-    openingOdds: listOrEmpty(openingResult, "Opening odds"),
+    odds: booksOnly(listOrEmpty(oddsResult, "Live odds"), enabledBooks),
+    openingOdds: booksOnly(listOrEmpty(openingResult, "Opening odds"), enabledBooks),
     injuries: listOrEmpty(injuryResult, "Injuries"),
     notices,
   };
 }
 
-export function useSlate(): PolledData<SlateData> {
-  const slateDate = todayEastern();
-  return useVisiblePolling(() => loadSlate(slateDate), appSettings.slatePollIntervalMs, slateDate); // every 10 min while visible
+function booksOnly<ItemType extends { vendor: string }>(items: ItemType[], enabledBooks: string[]): ItemType[] {
+  rememberSeenBooks([...new Set(items.map((item) => item.vendor))]);
+  return filterByBooks(items, enabledBooks); // only the sportsbooks chosen in Settings
 }
 
-export async function loadProps(gameId: number, opening = false): Promise<BdlPlayerProp[]> {
+export function useSlate(): PolledData<SlateData> {
+  const slateDate = todayEastern();
+  const { enabledBooks } = useSettings();
+  return useVisiblePolling(() => loadSlate(slateDate, enabledBooks), appSettings.slatePollIntervalMs, `${slateDate}:${booksKey(enabledBooks)}`); // every 10 min while visible
+}
+
+export async function loadProps(gameId: number, opening = false, enabledBooks: string[] = []): Promise<BdlPlayerProp[]> {
   const body = await fetchApi<ListBody<BdlPlayerProp>>(`/api/props${opening ? "/opening" : ""}?game_id=${gameId}`);
-  return body.data ?? [];
+  return booksOnly(body.data ?? [], enabledBooks);
 }
 
 export function nextLiveDelay(games: BdlGame[], boxScores: BdlBoxScore[], nowMs = Date.now()): number | null {

@@ -6,6 +6,7 @@ export interface UserSettings {
   evThresholdPercent: number;
   wagerAmount: number;
   pickType: string;
+  enabledBooks: string[]; // empty = every book
 }
 
 const settingsStorageKey = "pulse-nba-settings";
@@ -17,6 +18,7 @@ export function defaultSettings(): UserSettings {
     evThresholdPercent: appSettings.defaultEvThresholdPercent,
     wagerAmount: appSettings.defaultWagerAmount,
     pickType: appSettings.defaultPickType,
+    enabledBooks: [],
   };
 }
 
@@ -27,6 +29,7 @@ export function readSettings(): UserSettings {
 export function saveSettings(update: Partial<UserSettings>): UserSettings {
   const nextSettings = { ...readSettings(), ...update };
   nextSettings.sportsbookState = nextSettings.sportsbookState.trim().toLowerCase().slice(0, 2) || appSettings.defaultSportsbookState;
+  nextSettings.enabledBooks = Array.isArray(nextSettings.enabledBooks) ? nextSettings.enabledBooks.filter((vendor) => typeof vendor === "string") : [];
   writeLocalJson(settingsStorageKey, nextSettings);
   for (const listener of settingsListeners) listener(nextSettings);
   return nextSettings;
