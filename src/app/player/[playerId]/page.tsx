@@ -1,5 +1,7 @@
 "use client";
 
+import { booksKey } from "@/lib/client/bookFilter";
+
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { PlayerHeadshot } from "@/components/PlayerHeadshot";
@@ -9,7 +11,7 @@ import { GameLogCard } from "@/components/player/GameLogCard";
 import { PropHitRates } from "@/components/player/PropHitRates";
 import { MatchupCard } from "@/components/player/MatchupCard";
 import { UsageShiftCard } from "@/components/player/UsageShiftCard";
-import { useAnalyticsQuery, useVisiblePolling } from "@/lib/client/hooks";
+import { useAnalyticsQuery, useSettings, useVisiblePolling } from "@/lib/client/hooks";
 import { loadProps, useSlate } from "@/lib/client/slateData";
 import { findPlayer, playerGameLog, playerHitRates, playerPositionGroup, playerWindowAggregates, type PlayerGameLogRow } from "@/lib/analytics/aggregates/playerAggregates";
 import { defenseVsPosition } from "@/lib/analytics/aggregates/defenseVsPosition";
@@ -27,6 +29,7 @@ export default function PlayerPage() {
   const params = useParams<{ playerId: string }>();
   const playerId = Number(params.playerId);
   const slate = useSlate();
+  const settings = useSettings();
 
   const profile = useAnalyticsQuery(async (handle) => {
     const fromDuck = await findPlayer(handle.engine, playerId);
@@ -47,7 +50,7 @@ export default function PlayerPage() {
   const tonightGame = slate.data?.games.find((game) => teamId !== null && (game.home_team.id === teamId || game.visitor_team.id === teamId)) ?? null;
   const opponentId = tonightGame ? (tonightGame.home_team.id === teamId ? tonightGame.visitor_team.id : tonightGame.home_team.id) : null;
 
-  const props = useVisiblePolling(tonightGame ? () => loadProps(tonightGame.id) : null, appSettings.slatePollIntervalMs, `props:${tonightGame?.id ?? "none"}`);
+  const props = useVisiblePolling(tonightGame ? () => loadProps(tonightGame.id, false, settings.enabledBooks) : null, appSettings.slatePollIntervalMs, `props:${tonightGame?.id ?? "none"}:${booksKey(settings.enabledBooks)}`);
   const playerProps = (props.data ?? []).filter((prop) => prop.player_id === playerId);
   const summaries = summarizePropMarkets(playerProps);
   const allLines = summaries.flatMap((summary) => [...new Set([summary.mainLine, ...summary.ladder.map((rung) => rung.line), ...summary.milestones.map((milestone) => milestone.threshold - 0.5)])].map((lineValue) => ({ propType: summary.propType, lineValue }))); // main, alternate and milestone lines

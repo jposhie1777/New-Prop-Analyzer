@@ -1,5 +1,7 @@
 "use client";
 
+import { booksKey } from "@/lib/client/bookFilter";
+
 import Link from "next/link";
 import { AddToSlipButton } from "@/components/AddToSlipButton";
 import { useAnalyticsQuery, useSettings, useVisiblePolling } from "@/lib/client/hooks";
@@ -19,7 +21,7 @@ import { halftimeToTracked } from "@/lib/tracking/fromSources";
 
 export function HalftimePanel({ game, boxScore, gameOdds }: { game: BdlGame; boxScore: BdlBoxScore; gameOdds: BdlBettingOdd[] }) {
   const settings = useSettings();
-  const props = useVisiblePolling(() => loadProps(game.id), 60_000, `halftime-props:${game.id}`); // live lines, 60s like the CDN cache
+  const props = useVisiblePolling(() => loadProps(game.id, false, settings.enabledBooks), 60_000, `halftime-props:${game.id}:${booksKey(settings.enabledBooks)}`); // live lines, 60s like the CDN cache
   const playerIds = [...boxScore.home_team.players, ...boxScore.visitor_team.players].map((boxPlayer) => boxPlayer.player.id);
   const profiles = useAnalyticsQuery(playerIds.length > 0 ? (handle) => secondHalfProfiles(handle.engine, playerIds, 10) : null, `h2:${game.id}:${playerIds.length}`);
   const suggestions = profiles.result ? buildHalftimeSuggestions(boxScore, props.data ?? [], profiles.result, settings.evThresholdPercent) : [];

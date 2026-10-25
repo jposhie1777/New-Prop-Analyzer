@@ -100,7 +100,7 @@ export function GameCard({ game, odds, openingOdds, injuries, rest, boxScore }: 
           <div className="odds-main">
             {formatAmerican(current.moneylineAway)} / {formatAmerican(current.moneylineHome)}
           </div>
-          <div className="odds-move faint">{current.vendorCount} books</div>
+          <div className="odds-move faint">{current.vendorCount} {current.vendorCount === 1 ? "book" : "books"}</div>
         </div>
       </div>
       <div className="card-body" style={{ padding: "10px 14px", borderTop: "1px solid var(--border-subtle)" }}>
