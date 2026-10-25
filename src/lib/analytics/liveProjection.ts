@@ -82,21 +82,40 @@ export function timeShares(clock: GameClock, shares: Record<1 | 2 | 3 | 4, numbe
   return { remaining, elapsed, remainingClock };
 }
 
-export function projectLiveStat(currentValue: number, prior: LivePrior, clock: GameClock, personalFouls: number, scoreMargin: number): LiveProjectionResult {
+export interface LiveSignals {
+  paceBasis?: number; // shot-quality value of tonight's output, used instead of the raw stat for tonight's pace
+  volumeFactor?: number; // tonight's shot volume vs. his usual
+  marketPaceFactor?: number | null; // live total's expected scoring for the time left vs. the pregame total
+  expectedFinalMargin?: number | null; // live spread from this player's side
+}
+
+export function projectLiveStat(currentValue: number, prior: LivePrior, clock: GameClock, personalFouls: number, scoreMargin: number, signals: LiveSignals = {}): LiveProjectionResult {
   const adjustments: string[] = [];
   const { remaining, elapsed, remainingClock } = timeShares(clock, prior.quarterShares);
   const priorRemaining = prior.fullGameMean * remaining;
   const paceWeight = Math.min(0.35, 0.45 * elapsed * elapsed); // early minutes are noise: ~1% at 20% of the game, ~11% at the half, at most 35%
-  const paceRemaining = elapsed > 0 ? (currentValue / elapsed) * remaining : priorRemaining;
+  const paceBasis = signals.paceBasis ?? currentValue;
+  if (signals.paceBasis !== undefined && Math.abs(signals.paceBasis - currentValue) >= 1) adjustments.push(`shot quality: pace uses ${Math.round(signals.paceBasis * 10) / 10} instead of ${currentValue}`);
+  const paceRemaining = elapsed > 0 ? (paceBasis / elapsed) * remaining : priorRemaining;
   let remainingExpected = (1 - paceWeight) * priorRemaining + paceWeight * paceRemaining;
   if (paceWeight > 0) adjustments.push(`tonight's pace weight ${Math.round(paceWeight * 100)}%`);
   const fouls = foulTroubleFactor(personalFouls, clock);
   let factor = fouls.factor;
   if (fouls.note) adjustments.push(fouls.note);
+  if (signals.volumeFactor !== undefined && Math.abs(signals.volumeFactor - 1) >= 0.02) {
+    factor *= signals.volumeFactor;
+    adjustments.push(`shot volume x${signals.volumeFactor.toFixed(2)}`);
+  }
+  if (signals.marketPaceFactor !== undefined && signals.marketPaceFactor !== null && Math.abs(signals.marketPaceFactor - 1) >= 0.02) {
+    const marketFactor = 1 + 0.5 * (signals.marketPaceFactor - 1); // half weight: books price game pace, not this player
+    factor *= marketFactor;
+    adjustments.push(`live total pace x${marketFactor.toFixed(2)}`);
+  }
   const secondHalfOrLater = clock.isHalftime || clock.period >= 3;
-  if (secondHalfOrLater && Math.abs(scoreMargin) >= appSettings.blowoutMargin) {
+  const liveSpreadBlowout = signals.expectedFinalMargin !== undefined && signals.expectedFinalMargin !== null && Math.abs(signals.expectedFinalMargin) >= appSettings.blowoutWarningMargin;
+  if (secondHalfOrLater && (Math.abs(scoreMargin) >= appSettings.blowoutMargin || liveSpreadBlowout)) {
     factor *= 0.85;
-    adjustments.push(`margin ${Math.abs(scoreMargin)}: blowout risk x0.85`);
+    adjustments.push(liveSpreadBlowout ? `live spread ${Math.abs(Math.round(signals.expectedFinalMargin!))}: blowout risk x0.85` : `margin ${Math.abs(scoreMargin)}: blowout risk x0.85`);
   }
   factor = Math.max(0.5, factor);
   remainingExpected *= factor;

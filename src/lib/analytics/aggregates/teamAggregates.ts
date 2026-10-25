@@ -66,3 +66,16 @@ export async function teamRest(engine: AnalyticsEngine, teamIds: number[], gameD
   }
   return restByTeam;
 }
+
+export async function recentTeamGameIds(engine: AnalyticsEngine, teamIds: number[], gameLimit = 10): Promise<Map<number, number[]>> {
+  const recentByTeam = new Map<number, number[]>();
+  if (teamIds.length === 0) return recentByTeam;
+  const gameRows = await engine.query<{ team_id: number; game_id: number }>(`
+    SELECT team_id, game_id FROM (
+      SELECT team_id, game_id, ROW_NUMBER() OVER (PARTITION BY team_id ORDER BY game_date DESC, game_id DESC) AS recency
+      FROM (SELECT DISTINCT team_id, game_id, game_date FROM player_game_stats WHERE team_id IN (${sqlNumberList(teamIds)}))
+    ) WHERE recency <= ${sqlNumber(gameLimit)}
+    ORDER BY team_id, game_id`); // finished games only: the local database holds finals
+  for (const gameRow of gameRows) recentByTeam.set(Number(gameRow.team_id), [...(recentByTeam.get(Number(gameRow.team_id)) ?? []), Number(gameRow.game_id)]);
+  return recentByTeam;
+}

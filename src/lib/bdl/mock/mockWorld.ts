@@ -13,6 +13,7 @@ import type {
   BdlPlayer,
   BdlPlayerInjury,
   BdlPlayerProp,
+  BdlShotChartRow,
   BdlStatLine,
   BdlStats,
   CompetitionStatusState,
@@ -589,7 +590,7 @@ export function mockGameOdds(game: BdlGame, opening: boolean): BdlBettingOdd[] {
       deeplinks: mockDeeplinks(vendor, game.id, ["moneyline_home", "moneyline_away", "spread_home", "spread_away", "total_over", "total_under"], true),
     };
     if (opening) bettingOdd.opened_at = `${addDays(game.date, -1)}T15:00:00.000Z`;
-    else bettingOdd.updated_at = new Date().toISOString();
+    else bettingOdd.updated_at = new Date(game.status_state === "in_progress" ? Math.max(Date.now(), Date.parse(game.datetime ?? "") + 3_600_000) : Date.now()).toISOString(); // mock live games pretend tip-off has passed
     return bettingOdd;
   });
 }
@@ -703,4 +704,100 @@ export function mockInjuryRows(): BdlPlayerInjury[] {
 
 export function mockGamesInRange(startDate: string, endDate: string): BdlGame[] {
   return dateRange(startDate, endDate).flatMap((isoDate) => mockGamesForDate(isoDate));
+}
+
+function mockShotDistance(random: SeededRandom, isThree: boolean): number {
+  if (isThree) return random.integerBetween(23, 27);
+  const zoneRoll = random.next();
+  if (zoneRoll < 0.45) return random.integerBetween(0, 3); // rim
+  if (zoneRoll < 0.7) return random.integerBetween(4, 9);
+  if (zoneRoll < 0.88) return random.integerBetween(10, 16);
+  return random.integerBetween(17, 22);
+}
+
+interface MockShotEvent {
+  playerId: number;
+  period: number;
+  value: 2 | 3;
+  made: boolean;
+  distance: number;
+}
+
+function mockShotEvents(game: BdlGame, random: SeededRandom): MockShotEvent[] {
+  const events: MockShotEvent[] = [];
+  for (const [playerId, periodLines] of mockPeriodLines(game.id)) {
+    periodLines.forEach((periodLine, periodIndex) => {
+      const threeAttempts = periodLine.fg3a ?? 0;
+      const twoAttempts = (periodLine.fga ?? 0) - threeAttempts;
+      const twoMakes = (periodLine.fgm ?? 0) - (periodLine.fg3m ?? 0);
+      for (let shotIndex = 0; shotIndex < threeAttempts; shotIndex++) events.push({ playerId, period: periodIndex + 1, value: 3, made: shotIndex < (periodLine.fg3m ?? 0), distance: mockShotDistance(random, true) });
+      for (let shotIndex = 0; shotIndex < twoAttempts; shotIndex++) events.push({ playerId, period: periodIndex + 1, value: 2, made: shotIndex < twoMakes, distance: mockShotDistance(random, false) });
+    });
+  }
+  return events;
+}
+
+export function mockShotCharts(game: BdlGame): BdlShotChartRow[] {
+  if (game.status_state !== "final") return []; // shot charts only exist after the final
+  const random = new SeededRandom(`shots-${game.id}`);
+  return mockShotEvents(game, random).map((shotEvent, shotIndex) => ({
+    id: game.id * 1000 + shotIndex,
+    game_id: game.id,
+    player_id: shotEvent.playerId,
+    team_id: Math.floor(shotEvent.playerId / 100),
+    season: game.season,
+    period: shotEvent.period,
+    clock: "6:00",
+    made: shotEvent.made,
+    shot_value: shotEvent.value,
+    shot_type: shotEvent.distance <= 3 ? "Layup" : "Jump Shot",
+    shot_distance: shotEvent.distance,
+    shot_zone_basic: shotEvent.value === 3 ? "Above the Break 3" : shotEvent.distance <= 3 ? "Restricted Area" : "Mid-Range",
+  }));
+}
+
+export function mockLivePlays(game: BdlGame): BdlPlay[] {
+  if (game.status_state !== "in_progress") return mockPlays(game);
+  const random = new SeededRandom(`live-plays-${game.id}`);
+  const nameFor = (playerId: number) => {
+    const player = mockPlayerById(playerId);
+    return player ? `${player.first_name} ${player.last_name}` : "Unknown";
+  };
+  const periodLines = mockPeriodLines(game.id);
+  const benchedId = game.id % 100 === 0 ? [...periodLines.keys()].find((playerId) => Math.floor(playerId / 100) === game.home_team.id && (periodLines.get(playerId)?.[0]?.minutesValue ?? 0) > 6) ?? null : null; // one home starter in the first live game checks out early and never returns
+  const events: Array<{ period: number; secondsLeft: number; text: string; type: string; shooting: boolean; scoring: boolean; value: number; playerId: number }> = [];
+  for (const shotEvent of mockShotEvents(game, random)) {
+    if (shotEvent.playerId === benchedId && shotEvent.period > 1) continue;
+    const verb = shotEvent.made ? "makes" : "misses";
+    const shotName = shotEvent.value === 3 ? `${shotEvent.distance}-foot three point jumper` : shotEvent.distance <= 3 ? "driving layup" : `${shotEvent.distance}-foot jumper`;
+    events.push({ period: shotEvent.period, secondsLeft: random.integerBetween(30, 700), text: `${nameFor(shotEvent.playerId)} ${verb} ${shotName}`, type: shotEvent.value === 3 ? "Jump Shot" : "Jump Shot", shooting: true, scoring: shotEvent.made, value: shotEvent.made ? shotEvent.value : 0, playerId: shotEvent.playerId });
+  }
+  for (const [playerId, lines] of periodLines) {
+    lines.forEach((periodLine, periodIndex) => {
+      if (playerId === benchedId && periodIndex > 0) return;
+      for (let foulIndex = 0; foulIndex < (periodLine.pf ?? 0); foulIndex++) events.push({ period: periodIndex + 1, secondsLeft: random.integerBetween(30, 700), text: `${nameFor(playerId)} personal foul`, type: "Personal Foul", shooting: false, scoring: false, value: 0, playerId });
+      if (periodLine.minutesValue > 0) events.push({ period: periodIndex + 1, secondsLeft: random.integerBetween(20, 60), text: `${nameFor(playerId)} defensive rebound`, type: "Defensive Rebound", shooting: false, scoring: false, value: 0, playerId }); // late in each period he played
+    });
+  }
+  if (benchedId !== null) {
+    const substituteId = [...periodLines.keys()].find((playerId) => Math.floor(playerId / 100) === game.home_team.id && playerId !== benchedId && (periodLines.get(playerId)?.[0]?.minutesValue ?? 0) < 6) ?? benchedId;
+    events.push({ period: 1, secondsLeft: 245, text: `${nameFor(substituteId)} enters the game for ${nameFor(benchedId)}`, type: "Substitution", shooting: false, scoring: false, value: 0, playerId: substituteId });
+  }
+  events.sort((first, second) => first.period - second.period || second.secondsLeft - first.secondsLeft);
+  return events.map((event, eventIndex) => ({
+    game_id: game.id,
+    order: eventIndex + 1,
+    type: event.type,
+    text: event.text,
+    home_score: 0,
+    away_score: 0,
+    period: event.period,
+    period_display: `Q${event.period}`,
+    clock: `${Math.floor(event.secondsLeft / 60)}:${String(event.secondsLeft % 60).padStart(2, "0")}`,
+    scoring_play: event.scoring,
+    shooting_play: event.shooting,
+    score_value: event.value,
+    team: bdlTeam(Math.floor(event.playerId / 100)),
+    participants: [event.playerId],
+  }));
 }

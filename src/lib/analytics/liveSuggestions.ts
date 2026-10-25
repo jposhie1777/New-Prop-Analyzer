@@ -9,6 +9,16 @@ import { expectedValuePercent } from "@/lib/math/odds";
 import { probabilityAtLeast } from "@/lib/math/probability";
 import { parseMinutes } from "@/lib/dates";
 import type { PlayerMetric } from "./views";
+import { inactivityNote, shootingCheck, volumeFactors, type MarketRead, type PlayerActivity, type ShootingCheck, type ShotProfile } from "./liveSignals";
+import type { LiveSignals } from "./liveProjection";
+
+export interface LiveGameContext {
+  activity: Map<number, PlayerActivity> | null; // from live play-by-play
+  shotProfiles: Map<number, ShotProfile> | null; // from recent shot charts
+  market: MarketRead | null; // from live game lines
+}
+
+const pointMetrics = new Set(["pts", "pra", "pr", "pa"]);
 
 export const maximumModelMarketGap = 0.2; // bigger disagreements usually mean the model is missing news, not an edge
 
@@ -47,6 +57,9 @@ export interface LivePropRow {
   minutesPlayed: number;
   personalFouls: number;
   boxLine: { points: number; rebounds: number; assists: number; threesMade: number }; // the player's stats so far tonight
+  shooting: ShootingCheck | null; // points scored vs. what his shots were worth
+  inactiveNote: string | null; // set when play-by-play suggests he left the game
+  foulTimes: string[];
   sampleGames: number;
   restOfGame: { value: number; label: string } | null; // the player's last-10 average for the quarters still to play
   prior: LivePrior;
@@ -114,7 +127,14 @@ export function dedupeBoxPlayers<PlayerType extends { player: { id: number }; mi
   return [...byId.values()];
 }
 
-export function buildLivePropRows(boxScore: BdlBoxScore, props: BdlPlayerProp[], openingProps: BdlPlayerProp[], profiles: Map<number, QuarterProfile>, evThresholdPercent: number): { rows: LivePropRow[]; clock: GameClock } {
+export function signalsForMetric(metric: PlayerMetric, currentValue: number, shooting: ShootingCheck | null, volume: { scoring: number; threes: number } | null): LiveSignals {
+  if (metric === "fg3m") return { paceBasis: shooting ? shooting.threesExpected : undefined, volumeFactor: volume?.threes };
+  if (!pointMetrics.has(metric)) return {};
+  const scoringVolume = volume ? (metric === "pts" ? volume.scoring : 1 + 0.5 * (volume.scoring - 1)) : undefined; // combos are only partly points
+  return { paceBasis: shooting ? Math.max(0, currentValue - shooting.luck) : undefined, volumeFactor: scoringVolume };
+}
+
+export function buildLivePropRows(boxScore: BdlBoxScore, props: BdlPlayerProp[], openingProps: BdlPlayerProp[], profiles: Map<number, QuarterProfile>, evThresholdPercent: number, context: LiveGameContext = { activity: null, shotProfiles: null, market: null }): { rows: LivePropRow[]; clock: GameClock } {
   const clock = parseGameClock(boxScore.status, boxScore.time, boxScore.period);
   const margin = boxScore.home_team_score - boxScore.visitor_team_score;
   const summaries = summarizePropMarkets(props);
@@ -124,12 +144,17 @@ export function buildLivePropRows(boxScore: BdlBoxScore, props: BdlPlayerProp[],
     const sideMargin = side === boxScore.home_team ? margin : -margin;
     for (const boxPlayer of dedupeBoxPlayers(side.players)) {
       const profile = profiles.get(boxPlayer.player.id);
+      const minutesPlayed = parseMinutes(boxPlayer.min);
+      const shooting = shootingCheck(boxPlayer, context.activity?.get(boxPlayer.player.id)?.shots, context.shotProfiles?.get(boxPlayer.player.id), profile);
+      const volume = volumeFactors(boxPlayer, minutesPlayed, profile);
+      const inactiveNote = inactivityNote(context.activity?.get(boxPlayer.player.id), clock, minutesPlayed);
+      const expectedFinalMargin = context.market?.expectedFinalMarginHome === null || context.market?.expectedFinalMarginHome === undefined ? null : side === boxScore.home_team ? context.market.expectedFinalMarginHome : -context.market.expectedFinalMarginHome;
       for (const summary of summaries.filter((candidate) => candidate.playerId === boxPlayer.player.id)) {
         const mapping = propMapping(summary.propType);
         if (!mapping || mapping.scope !== "FG") continue; // quarter props settle too fast to project here
         const currentValue = boxMetricValue(boxPlayer, mapping.metric);
         const prior = buildPrior(mapping.metric, summary.propType, boxPlayer.player.id, profile, openingSummaries);
-        const projection = projectLiveStat(currentValue, prior, clock, boxPlayer.pf ?? 0, sideMargin);
+        const projection = projectLiveStat(currentValue, prior, clock, boxPlayer.pf ?? 0, sideMargin, { ...signalsForMetric(mapping.metric, currentValue, shooting, volume), marketPaceFactor: context.market?.paceFactor ?? null, expectedFinalMargin });
         const evaluation = settleCashedOver(evaluateProp(projection.projection, projection.standardDeviation, summary.mainLine, summary.bestOver?.odds ?? null, summary.bestUnder?.odds ?? null), currentValue, summary.mainLine, summary.bestOver?.odds ?? null, summary.bestUnder?.odds ?? null);
         const fairPrices = summary.overOddsAtMain !== null && summary.underOddsAtMain !== null ? evaluateProp(projection.projection, projection.standardDeviation, summary.mainLine, summary.overOddsAtMain, summary.underOddsAtMain) : null;
         const fairOver = fairPrices?.noVigOver ?? evaluation.noVigOver;
@@ -146,9 +171,12 @@ export function buildLivePropRows(boxScore: BdlBoxScore, props: BdlPlayerProp[],
           lineValue: summary.mainLine,
           currentValue,
           needed: Math.max(0, Math.floor(summary.mainLine) + 1 - currentValue),
-          minutesPlayed: parseMinutes(boxPlayer.min),
+          minutesPlayed,
           personalFouls: boxPlayer.pf ?? 0,
           boxLine: { points: boxPlayer.pts ?? 0, rebounds: boxPlayer.reb ?? 0, assists: boxPlayer.ast ?? 0, threesMade: boxPlayer.fg3m ?? 0 },
+          shooting,
+          inactiveNote,
+          foulTimes: context.activity?.get(boxPlayer.player.id)?.foulTimes ?? [],
           sampleGames: profile?.games ?? 0,
           restOfGame: restOfGameAverage(profile && [1, 2, 3, 4].every((quarter) => profile.quarters[quarter as 1 | 2 | 3 | 4]) ? ([1, 2, 3, 4].map((quarter) => profile.quarters[quarter as 1 | 2 | 3 | 4][mapping.metric].average) as [number, number, number, number]) : null, clock),
           prior,
@@ -162,7 +190,7 @@ export function buildLivePropRows(boxScore: BdlBoxScore, props: BdlPlayerProp[],
           vendorCount: summary.vendorCount,
           ladder,
           milestones,
-          flagged: !cashed && prior.source === "pregame line" && modelMarketGap !== null && modelMarketGap <= maximumModelMarketGap && (evaluation.bestEvPercent ?? -Infinity) >= evThresholdPercent, // only flag modest, explainable disagreements
+          flagged: !cashed && !inactiveNote && prior.source === "pregame line" && modelMarketGap !== null && modelMarketGap <= maximumModelMarketGap && (evaluation.bestEvPercent ?? -Infinity) >= evThresholdPercent, // only flag modest, explainable disagreements
         });
       }
     }

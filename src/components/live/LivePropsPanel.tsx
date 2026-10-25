@@ -18,12 +18,15 @@ interface PlayerGroup {
   minutesPlayed: number;
   personalFouls: number;
   boxLine: LivePropRow["boxLine"];
+  shooting: LivePropRow["shooting"];
+  inactiveNote: string | null;
+  foulTimes: string[];
   rows: LivePropRow[];
   bestValue: number;
 }
 
 function isTrusted(propRow: LivePropRow): boolean {
-  return propRow.currentValue <= propRow.lineValue && propRow.prior.source === "pregame line" && propRow.modelMarketGap !== null && propRow.modelMarketGap <= maximumModelMarketGap; // EV is only meaningful when the model is near the market
+  return !propRow.inactiveNote && propRow.currentValue <= propRow.lineValue && propRow.prior.source === "pregame line" && propRow.modelMarketGap !== null && propRow.modelMarketGap <= maximumModelMarketGap; // EV is only meaningful when the model is near the market
 }
 
 function evNote(evPercent: number | null, trusted: boolean, threshold: number): { note: string | null; highlight: boolean } {
@@ -56,7 +59,7 @@ export function PropLine({ propRow, game, props, gameOdds, threshold }: { propRo
         <div className="faint small" style={{ marginTop: 4 }}>
           proj {formatNumber(propRow.projection.projection)}
           {propRow.restOfGame ? ` · ${propRow.restOfGame.label} avg ${formatNumber(propRow.restOfGame.value)} (L${propRow.sampleGames})` : ""}
-          {cashed ? "" : trusted ? ` · over ${formatPercent(propRow.evaluation.overProbability, 0)} vs ${formatPercent(fairOver, 0)} fair` : propRow.prior.source !== "pregame line" ? " · no pregame line" : " · model far from market"}
+          {cashed ? "" : trusted ? ` · over ${formatPercent(propRow.evaluation.overProbability, 0)} vs ${formatPercent(fairOver, 0)} fair` : propRow.inactiveNote ? " · may be out" : propRow.prior.source !== "pregame line" ? " · no pregame line" : " · model far from market"}
         </div>
       </div>
       {cashed ? (
@@ -99,6 +102,29 @@ export function PropLine({ propRow, game, props, gameOdds, threshold }: { propRo
   );
 }
 
+export function shootingTag(shooting: LivePropRow["shooting"]): string | null {
+  if (!shooting || Math.abs(shooting.luck) < 3) return null;
+  return shooting.luck < 0 ? "cold shooting" : "hot shooting"; // cold shooters tend to bounce back, hot ones to cool off
+}
+
+function PlayerSignals({ group }: { group: PlayerGroup }) {
+  const tag = shootingTag(group.shooting);
+  if (!group.inactiveNote && !group.shooting && group.foulTimes.length === 0) return null;
+  return (
+    <div className="player-signals small">
+      {group.inactiveNote ? <div className="warning-text">⚠ {group.inactiveNote}. No picks for him until he&apos;s back.</div> : null}
+      {group.shooting ? (
+        <div className="muted">
+          {group.shooting.actualPoints} pts on shots worth {formatNumber(group.shooting.expectedPoints)}
+          {tag ? <span className="strong"> · {tag}</span> : null}
+          <span className="faint"> ({group.shooting.source})</span>
+        </div>
+      ) : null}
+      {group.foulTimes.length > 0 ? <div className="faint">Fouls: {group.foulTimes.join(" · ")}</div> : null}
+    </div>
+  );
+}
+
 export function LivePropsPanel({ game, data, gameOdds }: { game: BdlGame; data: LivePropData; gameOdds: BdlBettingOdd[] }) {
   const settings = useSettings();
   const [marketFilter, setMarketFilter] = useState("all");
@@ -115,7 +141,7 @@ export function LivePropsPanel({ game, data, gameOdds }: { game: BdlGame; data: 
     .filter((propRow) => !normalizedSearch || propRow.playerName.toLowerCase().includes(normalizedSearch));
   const groups = new Map<number, PlayerGroup>();
   for (const propRow of visibleRows) {
-    const group = groups.get(propRow.playerId) ?? { playerId: propRow.playerId, playerName: propRow.playerName, teamAbbreviation: propRow.teamAbbreviation, minutesPlayed: propRow.minutesPlayed, personalFouls: propRow.personalFouls, boxLine: propRow.boxLine, rows: [], bestValue: -Infinity };
+    const group = groups.get(propRow.playerId) ?? { playerId: propRow.playerId, playerName: propRow.playerName, teamAbbreviation: propRow.teamAbbreviation, minutesPlayed: propRow.minutesPlayed, personalFouls: propRow.personalFouls, boxLine: propRow.boxLine, shooting: propRow.shooting, inactiveNote: propRow.inactiveNote, foulTimes: propRow.foulTimes, rows: [], bestValue: -Infinity };
     group.rows.push(propRow);
     if (propRow.flagged) group.bestValue = Math.max(group.bestValue, propRow.evaluation.bestEvPercent ?? -Infinity);
     groups.set(propRow.playerId, group);
@@ -161,8 +187,12 @@ export function LivePropsPanel({ game, data, gameOdds }: { game: BdlGame; data: 
                   ))}
                 </span>
               </span>
-              <span className="player-group-chevron">▾</span>
+              <span className="player-group-meta small">
+                {group.inactiveNote ? <span className="pill warning">May be out</span> : null}
+                <span className="player-group-chevron">▾</span>
+              </span>
             </summary>
+            <PlayerSignals group={group} />
             {group.rows.map((propRow) => (
               <PropLine key={propRow.propType} propRow={propRow} game={game} props={propList} gameOdds={gameOdds} threshold={settings.evThresholdPercent} />
             ))}
@@ -175,7 +205,7 @@ export function LivePropsPanel({ game, data, gameOdds }: { game: BdlGame; data: 
       <details style={{ marginTop: 10 }}>
         <summary className="expand-hint">How projections work</summary>
         <p className="faint small">
-          Projection = current stat + the pregame line for the time left (now at {clockText}), split by the player&apos;s usual quarters, nudged by tonight&apos;s pace (more late in games), trimmed for foul trouble and second-half blowouts. EV shows only when the model is within {Math.round(maximumModelMarketGap * 100)} points of the de-vigged market; bigger gaps usually mean missing news. Green = at or above your {settings.evThresholdPercent}% threshold. Informational, not guaranteed.
+          Projection = current stat + the pregame line for the time left (now at {clockText}), split by the player&apos;s usual quarters, nudged by tonight&apos;s pace (more late in games). Tonight&apos;s pace uses what his shots were worth, not lucky or unlucky makes; shot values come from his recent shot charts by distance. More or fewer shots than usual scale scoring props. The live total adjusts for game pace, and foul trouble or a blowout (score or live spread) trims minutes. Players with no plays for a long stretch are never flagged. EV shows only when the model is within {Math.round(maximumModelMarketGap * 100)} points of the de-vigged market; bigger gaps usually mean missing news. Green = at or above your {settings.evThresholdPercent}% threshold. Informational, not guaranteed.
         </p>
       </details>
     </div>
