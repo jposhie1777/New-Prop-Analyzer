@@ -40,7 +40,7 @@ The key is read only from server-side environment variables. It is never logged,
 
 1. Open GitHub → **Settings → Codespaces → Secrets → New secret**.
 2. Add `BDL_API_KEY` with your key and give it access to this repository.
-3. Add `BDL_TIER` with the value `goat` (or `trial` / `free`).
+3. Add `BDL_TIER` with the value `goat` (or `allstar` / `trial` / `free`).
 4. Open or rebuild the Codespace. The dev container (`.devcontainer/devcontainer.json`) also prompts for both secrets and runs `npm install`.
 5. Check them with `echo $BDL_TIER` and `test -n "$BDL_API_KEY" && echo key set`.
 
@@ -111,6 +111,8 @@ On page load the browser:
 Dates the baseline later covers are pruned automatically. If IndexedDB is unavailable or corrupt, the app rebuilds it (Settings → *Rebuild local game data* forces this). A small pill in the header shows *syncing* / *up to date*.
 
 ## Trial vs. GOAT
+
+ALL-STAR (`BDL_TIER=allstar`) runs at 60 req/min with the Trial / Free feature set below.
 
 | | GOAT (`BDL_TIER=goat`) | Trial / Free (`trial` / `free`) |
 | --- | --- | --- |

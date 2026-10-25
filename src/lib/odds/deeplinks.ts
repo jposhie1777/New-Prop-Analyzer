@@ -30,6 +30,9 @@ export const vendorLabels: Record<string, string> = {
   rebet: "Rebet",
   espnbet: "ESPN BET",
   fanatics: "Fanatics",
+  bet365: "bet365",
+  kalshi: "Kalshi",
+  polymarket: "Polymarket",
 };
 
 export const copyOnlyPropVendors = new Set(["fanduel", "draftkings"]); // no prop deeplinks from BDL: link the event and copy the pick
