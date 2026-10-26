@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { LivePropsPanel, shootingTag } from "@/components/live/LivePropsPanel";
+import { LivePropsPanel, shootingProps, shootingTag } from "@/components/live/LivePropsPanel";
 import { BooksIndicator } from "@/components/BooksIndicator";
 import { TeamLogo } from "@/components/TeamLogo";
 import { BoxScoreTable } from "@/components/live/BoxScoreTable";
@@ -21,7 +21,6 @@ import { formatNumber, formatPercent, formatSigned } from "@/lib/client/format";
 
 type SectionName = "props" | "box";
 
-const pointsProp = new Set(["points", "threes", "points_rebounds_assists", "points_rebounds", "points_assists"]); // props where shooting luck matters
 
 const periodKeys = ["q1", "q2", "q3", "q4", "ot1", "ot2", "ot3"] as const;
 const periodHeaders = ["1", "2", "3", "4", "OT", "2OT", "3OT"];
@@ -118,7 +117,7 @@ function TopPicks({ game, data, gameOdds, atHalftime, blowout }: { game: BdlGame
                 <div className="top-pick-stats faint">
                   now {propRow.currentValue}
                   {propRow.restOfGame ? ` · ${propRow.restOfGame.label} avg ${formatNumber(propRow.restOfGame.value)}` : ""} · hit {formatPercent(chance, 0)}
-                  {pointsProp.has(propRow.propType) && shootingTag(propRow.shooting) ? ` · ${shootingTag(propRow.shooting)}` : ""}
+                  {shootingProps.has(propRow.propType) && shootingTag(propRow.shooting) ? ` · ${shootingTag(propRow.shooting)}` : ""}
                 </div>
               </div>
               <PriceButton pick={pick} sideLabel="" odds={odds} vendor={vendor} note={`${formatSigned(propRow.evaluation.bestEvPercent, 0)}% EV`} highlight compact />
