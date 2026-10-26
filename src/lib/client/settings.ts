@@ -8,6 +8,7 @@ export interface UserSettings {
   pickType: string;
   enabledBooks: string[]; // empty = every book
   defaultBook: string; // "" = best price
+  liveLayout: "grid" | "rows"; // how All player props is drawn on the Live tab
 }
 
 const settingsStorageKey = "pulse-nba-settings";
@@ -21,6 +22,7 @@ export function defaultSettings(): UserSettings {
     pickType: appSettings.defaultPickType,
     enabledBooks: [],
     defaultBook: "",
+    liveLayout: "grid",
   };
 }
 
@@ -31,6 +33,7 @@ export function readSettings(): UserSettings {
 export function saveSettings(update: Partial<UserSettings>): UserSettings {
   const nextSettings = { ...readSettings(), ...update };
   nextSettings.sportsbookState = nextSettings.sportsbookState.trim().toLowerCase().slice(0, 2) || appSettings.defaultSportsbookState;
+  nextSettings.liveLayout = nextSettings.liveLayout === "rows" ? "rows" : "grid";
   nextSettings.enabledBooks = Array.isArray(nextSettings.enabledBooks) ? nextSettings.enabledBooks.filter((vendor) => typeof vendor === "string") : [];
   writeLocalJson(settingsStorageKey, nextSettings);
   for (const listener of settingsListeners) listener(nextSettings);

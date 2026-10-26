@@ -284,3 +284,27 @@ body { overflow-x: clip; } /* clip, not hidden: hidden breaks the sticky header 
 .sheet-prices .price-button { width: 100%; min-height: 64px; }
 .sheet-prices .price-button .price-odds { font-size: 19px; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.live-rows { border: 1px solid var(--border-subtle); border-radius: var(--radius-medium); overflow: hidden; }
+.live-row { border-top: 1px solid var(--border-subtle); }
+.live-row:first-child { border-top: 0; }
+.live-row.open { background: var(--surface-sunken); }
+.live-row.inactive .live-row-main { opacity: 0.65; }
+.live-row-main { width: 100%; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: "photo name chip" "photo stats stats"; column-gap: 10px; row-gap: 2px; align-items: center; padding: 10px 12px; background: none; border: 0; color: inherit; text-align: left; cursor: pointer; font: inherit; }
+.live-row-main .headshot, .live-row-main .headshot-fallback { grid-area: photo; width: 40px; height: 40px; font-size: 13px; }
+.live-row-main .live-row-chip, .live-row-main .pill { grid-area: chip; }
+.live-row-name { grid-area: name; min-width: 0; font-size: 15px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.live-row-stats { grid-area: stats; min-width: 0; font-size: 12px; color: var(--text-secondary); font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.live-row-chip { display: flex; flex-direction: column; align-items: center; min-width: 66px; padding: 4px 8px; border-radius: 10px; border: 1px solid var(--border-strong); line-height: 1.2; }
+.live-row-chip span { font-size: 11px; font-weight: 700; color: var(--text-secondary); white-space: nowrap; }
+.live-row-chip strong { font-size: 14px; font-variant-numeric: tabular-nums; }
+.live-row-chip.value { border-color: rgba(52, 211, 153, 0.6); background: var(--positive-soft); }
+.live-row-panel { padding: 0 12px 12px; display: grid; gap: 8px; }
+.market-table { border: 1px solid var(--border-subtle); border-radius: var(--radius-medium); overflow: hidden; background: var(--surface-raised); }
+.market-table-row { display: grid; grid-template-columns: minmax(0, 1fr) 56px 66px 66px; gap: 6px; align-items: center; padding: 5px 8px; border-top: 1px solid var(--border-subtle); }
+.market-table-row:first-child { border-top: 0; }
+.market-table-head { font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+.market-table-head span:not(:first-child) { text-align: center; }
+.market-name { display: flex; flex-direction: column; min-width: 0; background: none; border: 0; padding: 4px 0; text-align: left; color: var(--text-primary); font: inherit; font-size: 14px; font-weight: 650; cursor: pointer; white-space: nowrap; }
+.market-name-lines { font-size: 11px; font-weight: 600; color: var(--accent); }
+.market-now { text-align: center; font-size: 12.5px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.market-table-row .price-button { width: 100%; min-width: 0; }

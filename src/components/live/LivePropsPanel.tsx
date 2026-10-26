@@ -9,6 +9,8 @@ import type { LivePropData } from "@/lib/client/liveProps";
 import { maximumModelMarketGap, type LivePropRow } from "@/lib/analytics/liveSuggestions";
 import { buildMilestonePick, buildPropPick } from "@/lib/client/pickBuilders";
 import { formatNumber, formatPercent, formatSigned } from "@/lib/client/format";
+import { formatAmerican } from "@/lib/math/odds";
+import { PlayerHeadshot } from "@/components/PlayerHeadshot";
 import type { BdlBettingOdd, BdlGame, BdlPlayerProp } from "@/lib/bdl/types";
 
 const columnSets = {
@@ -197,6 +199,99 @@ function PropSheet({ propRow, game, props, gameOdds, threshold, onClose }: { pro
   );
 }
 
+const rowMarketOrder = ["points", "rebounds", "assists", "threes", "points_rebounds_assists", "points_rebounds", "points_assists", "rebounds_assists"];
+const chipLabels: Record<string, string> = { points: "PTS", rebounds: "REB", assists: "AST", threes: "3PM", points_rebounds_assists: "PRA", points_rebounds: "P+R", points_assists: "P+A", rebounds_assists: "R+A" };
+
+function bestValueRow(playerLine: PlayerLine): LivePropRow | null {
+  return [...playerLine.propsByType.values()].filter((propRow) => propRow.flagged).sort((first, second) => (second.evaluation.bestEvPercent ?? 0) - (first.evaluation.bestEvPercent ?? 0))[0] ?? null;
+}
+
+function PlayerRow({ playerLine, game, props, gameOdds, threshold, onOpenMarket }: { playerLine: PlayerLine; game: BdlGame; props: BdlPlayerProp[]; gameOdds: BdlBettingOdd[]; threshold: number; onOpenMarket: (propRow: LivePropRow) => void }) {
+  const [open, setOpen] = useState(false);
+  const anyRow = [...playerLine.propsByType.values()][0];
+  const best = bestValueRow(playerLine);
+  const bestSide = best?.evaluation.bestSide ?? "over";
+  const [firstName, ...restOfName] = playerLine.playerName.split(" ");
+  const markets = rowMarketOrder.map((propType) => playerLine.propsByType.get(propType)).filter((propRow): propRow is LivePropRow => Boolean(propRow));
+  const tag = shootingTag(anyRow.shooting);
+  return (
+    <div className={`live-row${open ? " open" : ""}${playerLine.inactiveNote ? " inactive" : ""}`}>
+      <button className="live-row-main" onClick={() => setOpen((previous) => !previous)} aria-expanded={open}>
+        <PlayerHeadshot playerId={playerLine.playerId} firstName={firstName} lastName={restOfName.join(" ")} />
+        <span className="live-row-name">
+          {playerLine.playerName} <span className="faint small">{playerLine.teamAbbreviation}</span>
+        </span>
+        <span className="live-row-stats">
+            {formatNumber(playerLine.minutesPlayed, 0)} min · {anyRow.boxLine.points} pts · {anyRow.boxLine.rebounds} reb · {anyRow.boxLine.assists} ast · {anyRow.boxLine.threesMade} 3pm
+            {playerLine.personalFouls >= 3 ? <span className="negative"> · {playerLine.personalFouls} pf</span> : null}
+        </span>
+        {playerLine.inactiveNote ? (
+          <span className="pill warning">May be out</span>
+        ) : best ? (
+          <span className="live-row-chip value">
+            <span>
+              {bestSide === "over" ? "O" : "U"} {best.lineValue} {chipLabels[best.propType] ?? best.label}
+            </span>
+            <strong>{formatAmerican(bestSide === "over" ? best.bestOverOdds : best.bestUnderOdds)}</strong>
+          </span>
+        ) : (
+          <span className="live-row-chip">
+            <span>{markets.length} props</span>
+            <strong className="faint">no edge</strong>
+          </span>
+        )}
+      </button>
+      {open ? (
+        <div className="live-row-panel">
+          {playerLine.inactiveNote ? <div className="warning-text small">⚠ {playerLine.inactiveNote}. No picks for him until he&apos;s back.</div> : null}
+          <div className="market-table" role="table" aria-label={`${playerLine.playerName} markets`}>
+            <div className="market-table-row market-table-head" role="row">
+              <span role="columnheader">Market</span>
+              <span role="columnheader">Now</span>
+              <span role="columnheader">Over</span>
+              <span role="columnheader">Under</span>
+            </div>
+            {markets.map((propRow) => {
+              const trusted = isTrusted(propRow);
+              const cashed = propRow.currentValue > propRow.lineValue;
+              const lineCount = lineStops(propRow).length;
+              const evNote = (evPercent: number | null) => (trusted && evPercent !== null ? `${formatSigned(evPercent, 0)}% EV` : null);
+              return (
+                <div key={propRow.propType} className="market-table-row" role="row">
+                  <button className="market-name" onClick={() => onOpenMarket(propRow)} role="cell">
+                    <span>{propRow.label}</span>
+                    <span className="market-name-lines">{lineCount > 1 ? `${lineCount} lines ›` : "details ›"}</span>
+                  </button>
+                  <span className={`market-now${cashed ? " positive" : ""}`} role="cell">
+                    <strong>{propRow.currentValue}</strong>
+                    <span className="faint">/{propRow.lineValue}</span>
+                  </span>
+                  <span role="cell">
+                    <PriceButton pick={buildPropPick(game, propRow.playerId, propRow.playerName, propRow.propType, "over", props, gameOdds, "live", propRow.evaluation.overProbability, propRow.lineValue)} sideLabel="" odds={cashed ? null : propRow.bestOverOdds} vendor={propRow.bestOverVendor} note={evNote(propRow.evaluation.overEvPercent)} highlight={trusted && (propRow.evaluation.overEvPercent ?? -Infinity) >= threshold} compact />
+                  </span>
+                  <span role="cell">
+                    <PriceButton pick={buildPropPick(game, propRow.playerId, propRow.playerName, propRow.propType, "under", props, gameOdds, "live", propRow.evaluation.underProbability, propRow.lineValue)} sideLabel="" odds={cashed ? null : propRow.bestUnderOdds} vendor={propRow.bestUnderVendor} note={evNote(propRow.evaluation.underEvPercent)} highlight={trusted && (propRow.evaluation.underEvPercent ?? -Infinity) >= threshold} compact />
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+          <div className="faint small">
+            {anyRow.shooting ? `${anyRow.shooting.actualPoints} pts on shots worth ${formatNumber(anyRow.shooting.expectedPoints)}${tag ? ` · ${tag}` : ""}` : ""}
+            {anyRow.foulTimes.length > 0 ? `${anyRow.shooting ? " · " : ""}Fouls: ${anyRow.foulTimes.join(", ")}` : ""}
+          </div>
+          <div className="row-between small">
+            <span className="faint">Tap a market for alt lines.</span>
+            <Link href={`/player/${playerLine.playerId}`} className="expand-hint">
+              Player page →
+            </Link>
+          </div>
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
 export function LivePropsPanel({ game, data, gameOdds }: { game: BdlGame; data: LivePropData; gameOdds: BdlBettingOdd[] }) {
   const settings = useSettings();
   const [columnSet, setColumnSet] = useState<ColumnSetName>("core");
@@ -204,6 +299,7 @@ export function LivePropsPanel({ game, data, gameOdds }: { game: BdlGame; data: 
   const [openCell, setOpenCell] = useState<{ playerId: number; propType: string } | null>(null);
   const { rows, props: propList } = data;
   const columns = columnSets[columnSet];
+  const rowsLayout = settings.liveLayout === "rows";
   const players = new Map<number, PlayerLine>();
   for (const propRow of rows) {
     const playerLine = players.get(propRow.playerId) ?? { playerId: propRow.playerId, playerName: propRow.playerName, shortName: shortPlayerName(propRow.playerName), teamAbbreviation: propRow.teamAbbreviation, minutesPlayed: propRow.minutesPlayed, personalFouls: propRow.personalFouls, inactiveNote: propRow.inactiveNote, propsByType: new Map(), hasValue: false };
@@ -211,22 +307,26 @@ export function LivePropsPanel({ game, data, gameOdds }: { game: BdlGame; data: 
     if (propRow.flagged) playerLine.hasValue = true;
     players.set(propRow.playerId, playerLine);
   }
-  const orderedPlayers = [...players.values()].filter((playerLine) => !valueOnly || playerLine.hasValue).filter((playerLine) => columns.some((column) => playerLine.propsByType.has(column.propType))).sort((first, second) => second.minutesPlayed - first.minutesPlayed); // most minutes tonight first
+  const orderedPlayers = [...players.values()].filter((playerLine) => !valueOnly || playerLine.hasValue).filter((playerLine) => rowsLayout || columns.some((column) => playerLine.propsByType.has(column.propType))).sort((first, second) => second.minutesPlayed - first.minutesPlayed); // most minutes tonight first
   const openRow = openCell ? (rows.find((propRow) => propRow.playerId === openCell.playerId && propRow.propType === openCell.propType) ?? null) : null;
   const clockText = data.clock ? (data.clock.isHalftime ? "halftime" : `Q${Math.min(data.clock.period, 4)}`) : "";
 
   return (
     <div id="live-props" style={{ scrollMarginTop: 70 }}>
       <div className="row-between wrap" style={{ marginBottom: 8, gap: 8 }}>
-        <Segmented
-          options={[
-            { value: "core", label: "Pts · Reb · Ast · 3PM" },
-            { value: "combos", label: "Combos" },
-          ]}
-          value={columnSet}
-          onChange={(nextSet) => setColumnSet(nextSet as ColumnSetName)}
-          label="Columns"
-        />
+        {rowsLayout ? (
+          <span className="small muted">{orderedPlayers.length} players · tap a player</span>
+        ) : (
+          <Segmented
+            options={[
+              { value: "core", label: "Pts · Reb · Ast · 3PM" },
+              { value: "combos", label: "Combos" },
+            ]}
+            value={columnSet}
+            onChange={(nextSet) => setColumnSet(nextSet as ColumnSetName)}
+            label="Columns"
+          />
+        )}
         <button className={`toggle-button${valueOnly ? " open" : ""}`} onClick={() => setValueOnly((previous) => !previous)}>
           {valueOnly ? "✓ Value" : "Value"} {data.valuePicks.length}
         </button>
@@ -235,7 +335,14 @@ export function LivePropsPanel({ game, data, gameOdds }: { game: BdlGame; data: 
       {data.loading ? <div className="skeleton" /> : null}
       {!data.loading && rows.length === 0 ? <div className="empty-state">No live player props posted right now. Books often pull them during play.</div> : null}
       {rows.length > 0 && orderedPlayers.length === 0 ? <div className="empty-state">Nothing matches.</div> : null}
-      {orderedPlayers.length > 0 ? (
+      {rowsLayout && orderedPlayers.length > 0 ? (
+        <div className="live-rows">
+          {orderedPlayers.map((playerLine) => (
+            <PlayerRow key={playerLine.playerId} playerLine={playerLine} game={game} props={propList} gameOdds={gameOdds} threshold={settings.evThresholdPercent} onOpenMarket={(propRow) => setOpenCell({ playerId: propRow.playerId, propType: propRow.propType })} />
+          ))}
+        </div>
+      ) : null}
+      {!rowsLayout && orderedPlayers.length > 0 ? (
         <div className="prop-grid" role="table" aria-label="Live player props, now and line">
           <div className="prop-grid-row prop-grid-head" role="row">
             <span role="columnheader">Player</span>
@@ -277,7 +384,7 @@ export function LivePropsPanel({ game, data, gameOdds }: { game: BdlGame; data: 
         </div>
       ) : null}
       <div className="faint small" style={{ marginTop: 8 }}>
-        Big number = now, small = line. Green = value pick. Tap a cell for prices and alt lines.
+        {rowsLayout ? "Green = value pick. Layout can be switched in Settings." : "Big number = now, small = line. Green = value pick. Tap a cell for prices and alt lines."}
       </div>
       <details style={{ marginTop: 6 }}>
         <summary className="expand-hint">How projections work</summary>
