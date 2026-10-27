@@ -108,6 +108,7 @@ export default function RecordPage() {
             { value: "halftime", label: "Halftime" },
             { value: "live", label: "Live" },
             { value: "100-in-3", label: "100 in 3" },
+            { value: "lines", label: "Lines" },
             { value: "slip", label: "Slip" },
           ]}
           value={sourceFilter}
