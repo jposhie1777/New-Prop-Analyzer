@@ -11,6 +11,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "baseline": "tsx scripts/baseline.ts",
+    "baseline:shots": "tsx scripts/backfillShotZones.ts",
     "images:map": "tsx scripts/buildNbaPersonIds.ts",
     "postinstall": "node scripts/copyDuckdbAssets.mjs",
     "check:data": "tsx scripts/checkData.ts",

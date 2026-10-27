@@ -1,5 +1,6 @@
 import type { BdlClient } from "@/lib/bdl/bdlClient";
-import type { BdlAdvancedStatsV2, BdlGame, BdlLineup, BdlPlay, BdlStats } from "@/lib/bdl/types";
+import type { BdlAdvancedStatsV2, BdlGame, BdlLineup, BdlPlay, BdlShotChartRow, BdlStats } from "@/lib/bdl/types";
+import { aggregateShotZones } from "@/lib/data/shotZones";
 import { emptyFinalsTables, type DataRow, type FinalsPayload } from "@/lib/data/rowSchemas";
 import { flattenAdvanced, flattenGame, flattenLineup, flattenPlayer, flattenStat, isGameFinal } from "@/lib/data/flatten";
 import { buildTeamPeriodSummaries } from "@/lib/data/teamSummaries";
@@ -64,6 +65,13 @@ export async function buildFinalsPayload(client: BdlClient, isoDate: string): Pr
       );
     } catch (caughtError) {
       warnings.push(`advanced stats unavailable: ${caughtError instanceof Error ? caughtError.message : "error"}`);
+    }
+    try {
+      const shotChunks = await mapWithConcurrency(chunk([...finalGameIds], 10), 3, (gameIdChunk) => client.getAllPages<BdlShotChartRow>("/nba/v1/shot_charts", { "game_ids[]": gameIdChunk }));
+      const shotContexts = new Map(finalGames.map((game) => [game.id, { season: game.season, gameDate: isoDate, homeTeamId: game.home_team.id, visitorTeamId: game.visitor_team.id }]));
+      tables.shot_zones = aggregateShotZones(shotChunks.flat(), shotContexts); // raw shots are summarized by zone and never stored
+    } catch (caughtError) {
+      warnings.push(`shot charts unavailable: ${caughtError instanceof Error ? caughtError.message : "error"}`);
     }
     try {
       const lineupChunks = await mapWithConcurrency(chunk([...finalGameIds], 25), 3, (gameIdChunk) => client.getAllPages<BdlLineup>("/nba/v1/lineups", { game_ids: gameIdChunk }));

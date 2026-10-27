@@ -740,20 +740,28 @@ function mockShotEvents(game: BdlGame, random: SeededRandom): MockShotEvent[] {
 export function mockShotCharts(game: BdlGame): BdlShotChartRow[] {
   if (game.status_state !== "final") return []; // shot charts only exist after the final
   const random = new SeededRandom(`shots-${game.id}`);
-  return mockShotEvents(game, random).map((shotEvent, shotIndex) => ({
-    id: game.id * 1000 + shotIndex,
-    game_id: game.id,
-    player_id: shotEvent.playerId,
-    team_id: Math.floor(shotEvent.playerId / 100),
-    season: game.season,
-    period: shotEvent.period,
-    clock: "6:00",
-    made: shotEvent.made,
-    shot_value: shotEvent.value,
-    shot_type: shotEvent.distance <= 3 ? "Layup" : "Jump Shot",
-    shot_distance: shotEvent.distance,
-    shot_zone_basic: shotEvent.value === 3 ? "Above the Break 3" : shotEvent.distance <= 3 ? "Restricted Area" : "Mid-Range",
-  }));
+  const areaNames = { left: "Left Side(L)", leftCenter: "Left Side Center(LC)", center: "Center(C)", rightCenter: "Right Side Center(RC)", right: "Right Side(R)" };
+  return mockShotEvents(game, random).map((shotEvent, shotIndex) => {
+    const sideRoll = random.next() * (1 + (shotEvent.playerId % 7) / 10); // each player leans a little to one side
+    const corner = shotEvent.value === 3 && random.next() < 0.22;
+    const area = corner ? (sideRoll < 0.6 ? areaNames.left : areaNames.right) : sideRoll < 0.3 ? areaNames.left : sideRoll < 0.55 ? areaNames.leftCenter : sideRoll < 0.8 ? areaNames.center : sideRoll < 1.05 ? areaNames.rightCenter : areaNames.right;
+    const zoneBasic = shotEvent.value === 3 ? (corner ? (area === areaNames.left ? "Left Corner 3" : "Right Corner 3") : "Above the Break 3") : shotEvent.distance <= 3 ? "Restricted Area" : shotEvent.distance <= 9 ? "In The Paint (Non-RA)" : "Mid-Range";
+    return {
+      id: game.id * 1000 + shotIndex,
+      game_id: game.id,
+      player_id: shotEvent.playerId,
+      team_id: Math.floor(shotEvent.playerId / 100),
+      season: game.season,
+      period: shotEvent.period,
+      clock: "6:00",
+      made: shotEvent.made,
+      shot_value: shotEvent.value,
+      shot_type: shotEvent.distance <= 3 ? "Layup" : "Jump Shot",
+      shot_distance: corner ? 22 : shotEvent.distance,
+      shot_zone_basic: zoneBasic,
+      shot_zone_area: zoneBasic === "Restricted Area" || zoneBasic.startsWith("In The Paint") ? areaNames.center : area,
+    };
+  });
 }
 
 export function mockLivePlays(game: BdlGame): BdlPlay[] {

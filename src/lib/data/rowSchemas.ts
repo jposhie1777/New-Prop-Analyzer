@@ -109,6 +109,17 @@ export const tableColumns = {
     pace: "DOUBLE",
     possessions_source: "VARCHAR",
   },
+  shot_zones: {
+    season: "INTEGER",
+    game_date: "VARCHAR",
+    game_id: "INTEGER",
+    player_id: "INTEGER",
+    team_id: "INTEGER",
+    opponent_team_id: "INTEGER",
+    zone: "VARCHAR",
+    attempts: "INTEGER",
+    makes: "INTEGER",
+  },
 } satisfies Record<string, Record<string, DuckColumnType>>;
 
 export type TableName = keyof typeof tableColumns;
@@ -141,5 +152,5 @@ export function selectColumnsSql(tableName: TableName): string {
 }
 
 export function emptyFinalsTables(): FinalsTables {
-  return { games: [], players: [], player_game_stats: [], player_period_stats: [], advanced_stats: [], lineups: [], team_period_summaries: [] };
+  return { games: [], players: [], player_game_stats: [], player_period_stats: [], advanced_stats: [], lineups: [], team_period_summaries: [], shot_zones: [] };
 }

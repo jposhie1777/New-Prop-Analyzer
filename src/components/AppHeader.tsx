@@ -10,6 +10,7 @@ const navItems = [
   { href: "/three-quarters", label: "100 in 3" },
   { href: "/live", label: "Live" },
   { href: "/players", label: "Players" },
+  { href: "/shots", label: "Shots" },
   { href: "/slip", label: "Slip" },
   { href: "/record", label: "Record" },
   { href: "/costs", label: "Costs" },
