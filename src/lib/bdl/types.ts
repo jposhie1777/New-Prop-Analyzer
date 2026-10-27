@@ -187,6 +187,10 @@ export interface BdlShotChartRow {
   shot_type: string | null;
   shot_distance: number | null;
   shot_zone_basic?: string | null;
+  shot_zone_area?: string | null;
+  shot_zone_range?: string | null;
+  coordinate_x?: number | null;
+  coordinate_y?: number | null;
 }
 
 export interface BdlPlayerInjury {

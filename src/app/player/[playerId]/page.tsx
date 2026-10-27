@@ -81,6 +81,9 @@ export default function PlayerPage() {
             <span>{player?.position || "-"}</span>
             {player?.jersey_number ? <span>· #{player.jersey_number}</span> : null}
             {positionGroup.result ? <span className="pill">plays {positionGroup.result}</span> : null}
+            <Link href={`/shots?player=${playerId}`} className="pill accent">
+              Shot map →
+            </Link>
           </div>
           {tonightGame ? (
             <div className="row" style={{ marginTop: 8 }}>

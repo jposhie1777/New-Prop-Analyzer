@@ -28,9 +28,9 @@ export default function PlayersPage() {
       setSearching(true);
       try {
         let found: SearchResult[] = handle ? await searchPlayers(handle.engine, trimmed) : [];
-        if (found.length === 0 && trimmed.length >= 3) {
+        if (found.length === 0 && (trimmed.length >= 3 || !handle)) {
           const body = await fetchApi<{ data: BdlPlayer[] }>(`/api/players?search=${encodeURIComponent(trimmed)}`); // fall back to BDL for players with no games yet
-          found = body.data.map((player) => ({ player_id: player.id, first_name: player.first_name, last_name: player.last_name, position: player.position, team_id: player.team?.id ?? null, jersey_number: player.jersey_number, games: 0 }));
+          found = (body.data ?? []).map((player) => ({ player_id: player.id, first_name: player.first_name, last_name: player.last_name, position: player.position, team_id: player.team?.id ?? null, jersey_number: player.jersey_number, games: 0 }));
         }
         if (!cancelled) setResults(found);
       } finally {
@@ -53,6 +53,7 @@ export default function PlayersPage() {
       </div>
       <input className="input" placeholder={status.phase === "ready" ? "Search players…" : "Search players (data still syncing)…"} value={searchText} onChange={(changeEvent) => setSearchText(changeEvent.target.value)} autoFocus />
       <div className="stack" style={{ marginTop: 12 }}>
+        {!handle ? <div className="faint small">Loading your local stats ({status.message}). Search still works meanwhile.</div> : null}
         {searching ? <div className="faint small">Searching…</div> : null}
         {results.map((result) => (
           <Link key={result.player_id} href={`/player/${result.player_id}`} className="card row" style={{ marginTop: 0 }}>
@@ -62,7 +63,7 @@ export default function PlayersPage() {
                 {result.first_name} {result.last_name}
               </div>
               <div className="faint small">
-                {result.position || "-"} · {result.games} games logged
+                {result.position || "-"} · {handle ? `${Number(result.games)} games logged` : "from BALLDONTLIE"}
               </div>
             </div>
             {result.team_id ? <TeamLogo teamId={result.team_id} /> : null}

@@ -11,6 +11,8 @@ interface SeasonDatesResponse {
   dates: Array<{ date: string; games: number; final: number }>;
 }
 
+export const finalsPayloadVersion = 2; // bump when the finals payload gains a table
+
 export interface TopUpProgress {
   totalDates: number;
   completedDates: number;
@@ -49,7 +51,10 @@ export async function runTopUp(config: AppConfig, manifest: BaselineManifest | n
   if (manifest?.lastDate) await deleteFinalsThrough(manifest.lastDate); // the baseline already has these dates
   const storedPayloads = new Map((await readAllFinals()).map((payload) => [payload.date, payload]));
   const plannedDates = await planTopUpDates(config, manifest, today);
-  const missingDates = plannedDates.filter((plannedDate) => !storedPayloads.get(plannedDate)?.complete);
+  const missingDates = plannedDates.filter((plannedDate) => {
+    const stored = storedPayloads.get(plannedDate);
+    return !stored?.complete || stored.tables.shot_zones === undefined; // payloads saved before shot zones existed are fetched again
+  });
   let completedCount = 0;
   onProgress({ totalDates: missingDates.length, completedDates: 0, currentDate: missingDates[0] ?? null });
   let nextIndex = 0;
@@ -57,7 +62,7 @@ export async function runTopUp(config: AppConfig, manifest: BaselineManifest | n
     while (nextIndex < missingDates.length) {
       const targetDate = missingDates[nextIndex++];
       try {
-        const payload = await fetchApi<FinalsPayload>(`/api/finals?date=${targetDate}`);
+        const payload = await fetchApi<FinalsPayload>(`/api/finals?date=${targetDate}&v=${finalsPayloadVersion}`); // the version is part of the CDN cache key, so old cached payloads are skipped
         storedPayloads.set(targetDate, payload);
         await saveFinals(payload);
       } catch {
