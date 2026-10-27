@@ -1,3 +1,4 @@
+import type { LineEdge } from "@/lib/analytics/gameModel";
 import type { SlipPick } from "@/lib/client/betSlip";
 import type { HalftimeSuggestion } from "@/lib/analytics/halftimeSuggestions";
 import type { LivePropRow } from "@/lib/analytics/liveSuggestions";
@@ -105,5 +106,28 @@ export function livePropToTracked(propRow: LivePropRow, gameId: number, gameDate
     propType: propRow.propType,
     metric: mapping?.metric ?? null,
     scope: mapping?.scope ?? null,
+  };
+}
+
+export function lineEdgeToTracked(edge: LineEdge, gameId: number, gameDate: string): NewTracked {
+  const sideBySelection: Record<LineEdge["selection"], TrackSide> = { spread_home: "home", spread_away: "away", moneyline_home: "home", moneyline_away: "away", total_over: "over", total_under: "under" };
+  return {
+    trackId: `lines-${gameId}-${edge.selection}`, // the first flagged price of the day is the one graded
+    source: "lines",
+    kind: edge.market,
+    gameId,
+    gameDate,
+    label: edge.sideLabel,
+    side: sideBySelection[edge.selection],
+    lineValue: edge.line,
+    americanOdds: edge.americanOdds,
+    vendor: edge.vendor,
+    modelProbability: edge.modelProbability,
+    evPercent: edge.evPercent,
+    playerId: null,
+    teamId: null,
+    propType: null,
+    metric: null,
+    scope: null,
   };
 }

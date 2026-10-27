@@ -354,3 +354,14 @@ body { overflow-x: clip; } /* clip, not hidden: hidden breaks the sticky header 
 .spot-row.bad .spot-edge { color: var(--negative); }
 .spot-text { display: grid; gap: 2px; min-width: 0; }
 .sheet-stats div span:last-child:not(:first-child) { font-size: 11px; }
+.line-card { display: grid; gap: 12px; margin-top: 0; }
+.line-card > * { min-width: 0; }
+.line-score { display: grid; gap: 6px; }
+.line-score-points { font-size: 20px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.line-edges { display: grid; gap: 6px; }
+.line-edge-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 8px 10px; border-radius: var(--radius-medium); background: var(--surface-sunken); border: 1px solid var(--border-subtle); }
+.line-edge-row.flagged { border-color: rgba(52, 211, 153, 0.5); }
+.line-edge-market { display: grid; gap: 1px; min-width: 0; }
+.line-edge-pick { display: grid; justify-items: end; gap: 3px; }
+.line-edge-pick .price-button { min-width: 112px; }
+.factor-list { margin: 8px 0; padding-left: 18px; display: grid; gap: 3px; color: var(--text-secondary); }

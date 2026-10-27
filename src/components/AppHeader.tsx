@@ -7,6 +7,7 @@ import { useSlip, useVisibleMinuteCounter } from "@/lib/client/hooks";
 
 const navItems = [
   { href: "/", label: "Slate" },
+  { href: "/lines", label: "Lines" },
   { href: "/three-quarters", label: "100 in 3" },
   { href: "/live", label: "Live" },
   { href: "/players", label: "Players" },
