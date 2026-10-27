@@ -1,5 +1,5 @@
 import type { AnalyticsEngine } from "@/lib/analytics/engine";
-import { sqlNumber, sqlNumberList } from "@/lib/analytics/engine";
+import { sqlNumber, sqlNumberList, sqlString } from "@/lib/analytics/engine";
 
 export interface RatingSample {
   games: number;
@@ -66,11 +66,11 @@ export function blendRating(current: RatingSample | null, previous: RatingSample
   return { blended: { offense: mix("offense"), defense: mix("defense"), pace: mix("pace") }, currentWeight };
 }
 
-export async function teamRatings(engine: AnalyticsEngine, currentSeason: number): Promise<LeagueRatings> {
+export async function teamRatings(engine: AnalyticsEngine, currentSeason: number, beforeDate: string | null = null): Promise<LeagueRatings> {
   const sampleRows = await engine.query<SampleRow>(`
     WITH full_games AS (
       SELECT *, ROW_NUMBER() OVER (PARTITION BY team_id, season ORDER BY game_date DESC, game_id DESC) AS recency
-      FROM team_scope_lines WHERE scope = 'FG' AND season IN (${sqlNumberList([currentSeason, currentSeason - 1])})
+      FROM team_scope_lines WHERE scope = 'FG' AND season IN (${sqlNumberList([currentSeason, currentSeason - 1])}) ${beforeDate ? `AND game_date < ${sqlString(beforeDate)}` : ""}
     ),
     buckets AS (
       SELECT team_id, CASE WHEN season = ${sqlNumber(currentSeason)} THEN 'current' ELSE 'previous' END AS bucket, points, opp_points, possessions, opp_possessions, minutes FROM full_games

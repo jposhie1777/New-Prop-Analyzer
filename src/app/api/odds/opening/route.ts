@@ -3,6 +3,7 @@ import { badRequest, runCachedRoute } from "@/lib/server/routeHelpers";
 import { BdlRequestError, getServerBdlClient, type QueryParams } from "@/lib/bdl/bdlClient";
 import type { BdlBettingOdd, BdlGame } from "@/lib/bdl/types";
 import { isIsoDate, todayEastern } from "@/lib/dates";
+import { cachePolicies } from "@/config/cacheTtls";
 
 export const dynamic = "force-dynamic";
 
@@ -27,7 +28,7 @@ export async function GET(request: NextRequest) {
         const params = await attempts[attemptIndex]();
         const odds = await client.getAllPages<BdlBettingOdd>("/nba/v2/odds/opening", params);
         workingParamStyle.set("opening", attemptIndex);
-        return { body: { date: requestedDate, data: odds } };
+        return { body: { date: requestedDate, data: odds }, policy: requestedDate < todayEastern() && odds.length > 0 ? cachePolicies.finishedDate : undefined }; // a past day's opening lines never change
       } catch (caughtError) {
         lastError = caughtError;
         if (!(caughtError instanceof BdlRequestError) || caughtError.status !== 400) throw caughtError; // only a 400 means "try another param style"

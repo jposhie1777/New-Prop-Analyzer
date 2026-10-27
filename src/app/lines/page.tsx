@@ -1,36 +1,19 @@
 "use client";
 
-import { useEffect } from "react";
 import { TeamLogo } from "@/components/TeamLogo";
 import { PriceButton } from "@/components/PriceButton";
 import { BooksIndicator } from "@/components/BooksIndicator";
-import { useAnalyticsQuery, useSettings } from "@/lib/client/hooks";
+import { useSettings } from "@/lib/client/hooks";
 import { useSlate } from "@/lib/client/slateData";
+import { useLineAnalyses, type GameAnalysis } from "@/lib/client/lineModel";
 import { groupOddsByGame } from "@/lib/odds/consensus";
-import { injuredScorers, teamRatings, type LeagueRatings, type TeamRating } from "@/lib/analytics/aggregates/teamRatings";
-import { teamRest, type RestInfo } from "@/lib/analytics/aggregates/teamAggregates";
-import { evaluateGameLines, homeCourtPoints, injuryReplacementShare, injuryWeight, projectGame, type GameProjection, type InjuryImpact, type LineEdge } from "@/lib/analytics/gameModel";
+import type { LeagueRatings, TeamRating } from "@/lib/analytics/aggregates/teamRatings";
+import { homeCourtPoints, injuryReplacementShare, type LineEdge } from "@/lib/analytics/gameModel";
 import { buildGamePick } from "@/lib/client/pickBuilders";
-import { trackPicks } from "@/lib/tracking/trackerStore";
-import { lineEdgeToTracked } from "@/lib/tracking/fromSources";
-import { isGameFinal, isGameLive } from "@/lib/data/flatten";
-import { formatTipoff, todayEastern } from "@/lib/dates";
+import { formatTipoff } from "@/lib/dates";
 import { formatNumber, formatPercent, formatSigned } from "@/lib/client/format";
-import { appSettings } from "@/config/appSettings";
-import type { BdlBettingOdd, BdlGame, BdlPlayerInjury } from "@/lib/bdl/types";
+import type { BdlBettingOdd, BdlGame } from "@/lib/bdl/types";
 
-const injuryMinimumMinutes = 15; // bench players barely move a team total
-
-interface GameAnalysis {
-  game: BdlGame;
-  projection: GameProjection;
-  edges: LineEdge[];
-  home: TeamRating;
-  away: TeamRating;
-  homeRest: RestInfo | undefined;
-  awayRest: RestInfo | undefined;
-  bestEv: number;
-}
 
 const marketTitles: Record<LineEdge["market"], string> = { spread: "Spread", total: "Total", moneyline: "Moneyline" };
 
@@ -142,53 +125,12 @@ function GameEdgeCard({ analysis, league, odds }: { analysis: GameAnalysis; leag
   );
 }
 
-function injuriesFor(teamId: number, injuries: BdlPlayerInjury[], scorers: Map<number, { teamId: number; pointsPerGame: number; minutesPerGame: number; playedRecently: boolean }> | null): InjuryImpact[] {
-  if (!scorers) return [];
-  return injuries.flatMap((injury) => {
-    const scorer = scorers.get(injury.player.id);
-    const weight = injuryWeight(injury.status);
-    if (!scorer || scorer.teamId !== teamId || weight === 0 || !scorer.playedRecently || scorer.minutesPerGame < injuryMinimumMinutes) return []; // long absences are already in the team numbers
-    return [{ playerName: `${injury.player.first_name.charAt(0)}. ${injury.player.last_name}`, status: injury.status, pointsLost: scorer.pointsPerGame * weight * (1 - injuryReplacementShare) }];
-  });
-}
-
 export default function LinesPage() {
   const settings = useSettings();
   const slate = useSlate();
-  const today = todayEastern();
-  const games = (slate.data?.games ?? []).filter((game) => !isGameFinal(game) && !isGameLive(game)); // the model is pregame only
-  const startedCount = (slate.data?.games ?? []).length - games.length;
-  const teamIds = games.flatMap((game) => [game.home_team.id, game.visitor_team.id]);
-  const injuredIds = (slate.data?.injuries ?? []).map((injury) => injury.player.id);
-  const ratings = useAnalyticsQuery((handle) => teamRatings(handle.engine, appSettings.currentSeason), `ratings:${today}`);
-  const rest = useAnalyticsQuery(teamIds.length > 0 ? (handle) => teamRest(handle.engine, teamIds, today) : null, `lines-rest:${today}:${teamIds.join(",")}`);
-  const scorers = useAnalyticsQuery(injuredIds.length > 0 ? (handle) => injuredScorers(handle.engine, injuredIds, appSettings.currentSeason) : null, `lines-injuries:${injuredIds.join(",")}`);
+  const { analyses, ratings, ratingsLoading, gamesAhead, startedCount } = useLineAnalyses(slate); // also saves the daily model record
   const oddsByGame = groupOddsByGame(slate.data?.odds ?? []);
-
-  const analyses: GameAnalysis[] = [];
-  if (ratings.result) {
-    for (const game of games) {
-      const home = ratings.result.teams.get(game.home_team.id);
-      const away = ratings.result.teams.get(game.visitor_team.id);
-      if (!home || !away) continue;
-      const homeRest = rest.result?.get(game.home_team.id);
-      const awayRest = rest.result?.get(game.visitor_team.id);
-      const projection = projectGame(home, away, ratings.result, {
-        homeRest,
-        awayRest,
-        homeInjuries: injuriesFor(game.home_team.id, slate.data?.injuries ?? [], scorers.result),
-        awayInjuries: injuriesFor(game.visitor_team.id, slate.data?.injuries ?? [], scorers.result),
-      });
-      const edges = evaluateGameLines(projection, oddsByGame.get(game.id) ?? [], game.home_team.abbreviation, game.visitor_team.abbreviation, settings.evThresholdPercent);
-      analyses.push({ game, projection, edges, home, away, homeRest, awayRest, bestEv: Math.max(-Infinity, ...edges.filter((edge) => edge.flagged).map((edge) => edge.evPercent)) });
-    }
-  }
-  analyses.sort((first, second) => second.bestEv - first.bestEv || (first.game.datetime ?? "").localeCompare(second.game.datetime ?? ""));
-  const flaggedEdges = analyses.flatMap((analysis) => analysis.edges.filter((edge) => edge.flagged).map((edge) => ({ edge, game: analysis.game })));
-  const flaggedKey = flaggedEdges.map(({ edge, game }) => `${game.id}:${edge.selection}`).join(",");
-  useEffect(() => {
-    if (flaggedEdges.length > 0) trackPicks(flaggedEdges.map(({ edge, game }) => lineEdgeToTracked(edge, game.id, game.date))); // graded on the Record page
-  }, [flaggedKey]); // eslint-disable-line react-hooks/exhaustive-deps
+  const flaggedEdges = analyses.flatMap((analysis) => analysis.edges.filter((edge) => edge.flagged));
 
   return (
     <main className="page">
@@ -202,12 +144,12 @@ export default function LinesPage() {
         <BooksIndicator />
       </div>
       {slate.error ? <div className="notice">Could not load the slate: {slate.error}</div> : null}
-      {ratings.loading && !ratings.result ? <div className="skeleton" style={{ minHeight: 200 }} /> : null}
-      {slate.data && games.length === 0 ? <div className="card empty-state">No games left to tip off today.</div> : null}
+      {ratingsLoading && !ratings ? <div className="skeleton" style={{ minHeight: 200 }} /> : null}
+      {slate.data && gamesAhead === 0 ? <div className="card empty-state">No games left to tip off today.</div> : null}
       {startedCount > 0 ? <p className="faint small">{startedCount} game(s) already started or finished are hidden: this model is for pregame lines. Use Live for in-game props.</p> : null}
       <div className="grid-two">
-        {ratings.result
-          ? analyses.map((analysis) => <GameEdgeCard key={analysis.game.id} analysis={analysis} league={ratings.result!} odds={oddsByGame.get(analysis.game.id) ?? []} />)
+        {ratings
+          ? analyses.map((analysis) => <GameEdgeCard key={analysis.game.id} analysis={analysis} league={ratings} odds={oddsByGame.get(analysis.game.id) ?? []} />)
           : null}
       </div>
       <details className="card" style={{ marginTop: 12 }}>

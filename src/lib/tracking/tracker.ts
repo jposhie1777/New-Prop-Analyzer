@@ -1,6 +1,6 @@
 import type { PlayerMetric, ScopeName } from "@/lib/analytics/views";
 
-export type TrackSource = "halftime" | "live" | "100-in-3" | "slip" | "lines";
+export type TrackSource = "halftime" | "live" | "100-in-3" | "slip" | "lines" | "model";
 export type TrackKind = "prop" | "spread" | "total" | "moneyline" | "team_three_quarters";
 export type TrackSide = "over" | "under" | "home" | "away";
 export type GradeStatus = "win" | "loss" | "push" | "void";
@@ -25,6 +25,9 @@ export interface TrackedPick {
   metric: PlayerMetric | null;
   scope: ScopeName | null;
   result: { status: GradeStatus; actual: number | null; gradedAt: string } | null;
+  projectedValue?: number | null; // model's projected total, or projected home margin for spreads and moneylines
+  marketValue?: number | null; // consensus home spread, total or no-vig home win chance when the pick was saved
+  tags?: string[]; // the situation, for the strengths and weaknesses breakdown
 }
 
 export interface GradeInputs {

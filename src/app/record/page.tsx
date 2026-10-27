@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { Segmented } from "@/components/Segmented";
+import { LinesModelRecord } from "@/components/record/LinesModelRecord";
 import { useAnalytics, useTracked } from "@/lib/client/hooks";
 import { gradePendingPicks } from "@/lib/tracking/grader";
 import { removeTracked, replaceTracked, saveGrades } from "@/lib/tracking/trackerStore";
@@ -53,9 +54,10 @@ export default function RecordPage() {
     };
   }, [handle, tracked.length]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const filtered = useMemo(() => (sourceFilter === "all" ? tracked : tracked.filter((pick) => pick.source === sourceFilter)), [tracked, sourceFilter]);
+  const ownPicks = useMemo(() => tracked.filter((pick) => pick.source !== "model"), [tracked]); // the Lines model's every-game record has its own section
+  const filtered = useMemo(() => (sourceFilter === "all" ? ownPicks : ownPicks.filter((pick) => pick.source === sourceFilter)), [ownPicks, sourceFilter]);
   const summary = summarizeRecord(filtered);
-  const bySource = groupBy(tracked, (pick) => pick.source);
+  const bySource = groupBy(ownPicks, (pick) => pick.source);
   const byMarket = groupBy(filtered, (pick) => (pick.kind === "prop" ? (propMapping(pick.propType ?? "")?.label ?? pick.propType ?? "prop") : pick.kind === "team_three_quarters" ? "100 in 3" : pick.kind));
   const byEv = groupBy(filtered.filter((pick) => pick.americanOdds !== null), (pick) => evBucket(pick.evPercent));
   const calibration = calibrationBuckets(filtered);
@@ -241,6 +243,7 @@ export default function RecordPage() {
           </div>
         </section>
       </div>
+      <LinesModelRecord tracked={tracked} handle={handle} />
       <section className="card" style={{ marginTop: 12 }}>
         <div className="card-header">
           <h2>Picks</h2>

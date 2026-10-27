@@ -365,3 +365,9 @@ body { overflow-x: clip; } /* clip, not hidden: hidden breaks the sticky header 
 .line-edge-pick { display: grid; justify-items: end; gap: 3px; }
 .line-edge-pick .price-button { min-width: 112px; }
 .factor-list { margin: 8px 0; padding-left: 18px; display: grid; gap: 3px; color: var(--text-secondary); }
+.record-cell { display: inline-flex; align-items: baseline; gap: 4px; white-space: nowrap; }
+.record-units { font-size: 12px; font-weight: 700; }
+.record-table td, .record-table th { text-align: left; }
+.verdicts { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); margin-top: 12px; }
+.verdict-list { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 4px; font-size: 13px; }
+.backtest-box { display: grid; gap: 8px; justify-items: start; margin-top: 14px; padding: 10px 12px; border-radius: var(--radius-medium); background: var(--surface-sunken); border: 1px solid var(--border-subtle); }
