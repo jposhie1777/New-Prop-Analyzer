@@ -230,3 +230,9 @@ export async function quarterProfiles(engine: AnalyticsEngine, playerIds: number
   }
   return profiles;
 }
+
+export async function latestPlayerTeams(engine: AnalyticsEngine, playerIds: number[]): Promise<Map<number, number>> {
+  if (playerIds.length === 0) return new Map();
+  const teamRows = await engine.query<{ player_id: number; team_id: number }>(`SELECT player_id, arg_max(team_id, game_date) AS team_id FROM player_game_stats WHERE player_id IN (${sqlNumberList(playerIds)}) GROUP BY player_id`); // his most recent team
+  return new Map(teamRows.map((teamRow) => [Number(teamRow.player_id), Number(teamRow.team_id)]));
+}

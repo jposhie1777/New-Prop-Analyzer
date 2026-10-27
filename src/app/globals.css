@@ -228,7 +228,31 @@ body { overflow-x: clip; } /* clip, not hidden: hidden breaks the sticky header 
 .game-row-section { border-top: 1px solid var(--border-subtle); padding: 12px 14px; background: rgba(13, 19, 29, 0.6); }
 .toggle-button { display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 999px; border: 1px solid var(--border-strong); background: var(--surface-hover); font-size: 13px; font-weight: 650; cursor: pointer; }
 .toggle-button.open { background: var(--accent-soft); border-color: var(--accent); color: #c9d8ff; }
-.slip-item { padding: 14px; }
+.slip-list { padding: 0; overflow: hidden; }
+.slip-row { border-top: 1px solid var(--border-subtle); }
+.slip-row:first-child { border-top: 0; }
+.slip-row.open { background: var(--surface-sunken); }
+.slip-row-main { width: 100%; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 12px 14px; background: none; border: 0; text-align: left; cursor: pointer; }
+.slip-avatar { position: relative; width: 48px; height: 48px; flex-shrink: 0; }
+.slip-avatar .headshot, .slip-avatar .headshot-fallback, .slip-avatar > .team-logo, .slip-avatar > .logo-fallback { width: 48px; height: 48px; }
+.slip-avatar .headshot { border: 2px solid var(--border-strong); }
+.slip-avatar-badge { position: absolute; right: -4px; bottom: -4px; width: 22px; height: 22px; border-radius: 50%; background: var(--surface-raised); border: 2px solid var(--surface-raised); display: grid; place-items: center; overflow: hidden; }
+.slip-avatar-badge .team-logo, .slip-avatar-badge .logo-fallback { width: 18px; height: 18px; font-size: 7px; border-radius: 50%; }
+.slip-row-text { display: grid; gap: 1px; min-width: 0; }
+.slip-row-name { font-weight: 700; font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.slip-row-selection { font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums; color: var(--text-primary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.slip-side { font-weight: 800; margin-right: 5px; }
+.slip-side.over { color: var(--positive); }
+.slip-side.under { color: var(--negative); }
+.slip-row-detail { font-size: 12px; color: var(--text-muted); }
+.slip-row-price { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+.slip-row-odds { font-size: 19px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.slip-book-pill { font-size: 11px; font-weight: 800; padding: 2px 7px; border-radius: 6px; background: var(--accent-soft); color: #c9d8ff; }
+.slip-row-panel { padding: 0 14px 12px; display: grid; gap: 8px; }
+.slip-row-panel .book-chips { margin: 0; }
+.slip-row-actions { display: grid; grid-template-columns: 1fr auto; gap: 8px; }
+.slip-row-actions .bet-button { width: 100%; }
+.slip-remove { padding: 10px 14px; }
 .icon-button { border: 0; background: transparent; color: var(--text-muted); font-size: 18px; padding: 2px 6px; cursor: pointer; border-radius: 6px; }
 .icon-button:hover { color: var(--text-primary); background: var(--surface-hover); }
 .book-chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; margin: 10px 0; padding-bottom: 2px; }

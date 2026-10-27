@@ -2,7 +2,11 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { useSettings, useSlip } from "@/lib/client/hooks";
+import { useAnalyticsQuery, useSettings, useSlip } from "@/lib/client/hooks";
+import { PlayerHeadshot } from "@/components/PlayerHeadshot";
+import { TeamLogo } from "@/components/TeamLogo";
+import { teamByAbbreviation } from "@/lib/nba/teams";
+import { latestPlayerTeams } from "@/lib/analytics/aggregates/playerAggregates";
 import { choosePickVendor, clearSlip, copyTextFor, removePick, selectedOffer, type SlipOffer, type SlipPick } from "@/lib/client/betSlip";
 import { bookHomeLink, copyOnlyPropVendors, resolvePropLink, resolveSelectionLink, vendorLabel, type ResolvedLink } from "@/lib/odds/deeplinks";
 import { americanToDecimal, expectedValuePercent, formatAmerican, kellyFraction, parlayAmericanOdds, parlayDecimalOdds, parlayProbability } from "@/lib/math/odds";
@@ -38,71 +42,119 @@ async function copyText(text: string): Promise<boolean> {
   }
 }
 
-function SlipItem({ pick, settings }: { pick: SlipPick; settings: ReturnType<typeof useSettings> }) {
+function parseSelection(pick: SlipPick): { title: string; sideLetter: string | null; lineText: string; market: string } {
+  const { title, market } = splitLabel(pick);
+  const overUnder = market.match(/^(Over|Under) ([\d.]+) (.*)$/);
+  if (overUnder) return { title, sideLetter: overUnder[1] === "Over" ? "O" : "U", lineText: overUnder[2], market: overUnder[3] };
+  const milestone = market.match(/^(\d+\+) (.*)$/);
+  if (milestone) return { title, sideLetter: null, lineText: milestone[1], market: milestone[2] };
+  const gameTotal = pick.label.match(/(Over|Under) ([\d.]+)$/);
+  if (pick.market === "total" && gameTotal) return { title: pick.detail, sideLetter: gameTotal[1] === "Over" ? "O" : "U", lineText: gameTotal[2], market: "Total" };
+  if (pick.market === "spread") return { title: pick.label.split(" ")[0], sideLetter: null, lineText: pick.label.split(" ").slice(1).join(" "), market: "Spread" };
+  return { title: pick.label.replace(/ ML$/, ""), sideLetter: null, lineText: "", market: "Moneyline" };
+}
+
+function pickTeamId(pick: SlipPick, playerTeams: Map<number, number> | null): number | null {
+  if (pick.playerId !== null) return playerTeams?.get(pick.playerId) ?? null;
+  if (pick.market === "total") return null; // a total backs neither team
+  const [awayAbbreviation, homeAbbreviation] = pick.detail.split(" @ ");
+  const homeSide = /_home$|over/.test(pick.selectionKey);
+  return teamByAbbreviation(homeSide ? homeAbbreviation : awayAbbreviation)?.id ?? null; // game picks show the team they back
+}
+
+function SlipItem({ pick, settings, teamId }: { pick: SlipPick; settings: ReturnType<typeof useSettings>; teamId: number | null }) {
+  const [open, setOpen] = useState(false);
   const [copied, setCopied] = useState(false);
   const chosen = selectedOffer(pick, settings.defaultBook);
   const offers = [...pick.offers].sort((first, second) => americanToDecimal(second.americanOdds) - americanToDecimal(first.americanOdds));
   const bestVendor = offers[0]?.vendor;
   const link = chosen ? linkFor(pick, chosen, settings) : null;
-  const { title, market } = splitLabel(pick);
+  const selection = parseSelection(pick);
   const pickText = copyTextFor(pick, chosen);
+  const [firstName, ...restOfName] = selection.title.split(" ");
+  const chosenOneTap = link?.kind === "selection";
   return (
-    <section className="card slip-item" style={{ marginTop: 0 }}>
-      <div className="row-between" style={{ alignItems: "flex-start" }}>
-        <div style={{ minWidth: 0 }}>
-          <div className="strong" style={{ fontSize: 17 }}>
-            {title}
-          </div>
-          <div className="small muted">
-            {market} · {pick.detail}
+    <div className={`slip-row${open ? " open" : ""}`}>
+      <button className="slip-row-main" onClick={() => setOpen((previous) => !previous)} aria-expanded={open}>
+        <span className="slip-avatar">
+          {pick.playerId !== null ? <PlayerHeadshot playerId={pick.playerId} firstName={firstName} lastName={restOfName.join(" ")} /> : teamId !== null ? <TeamLogo teamId={teamId} large /> : <span className="headshot-fallback">{pick.market.slice(0, 2).toUpperCase()}</span>}
+          {pick.playerId !== null && teamId !== null ? (
+            <span className="slip-avatar-badge">
+              <TeamLogo teamId={teamId} />
+            </span>
+          ) : null}
+        </span>
+        <span className="slip-row-text">
+          <span className="slip-row-name">{selection.title}</span>
+          <span className="slip-row-selection">
+            {selection.sideLetter ? <span className={selection.sideLetter === "O" ? "slip-side over" : "slip-side under"}>{selection.sideLetter}</span> : null}
+            {selection.lineText ? <span>{selection.lineText}</span> : null} {selection.market}
+          </span>
+          <span className="slip-row-detail">
+            {pick.detail}
             {pick.modelProbability !== null ? ` · model ${formatPercent(pick.modelProbability, 0)}` : ""}
+          </span>
+        </span>
+        <span className="slip-row-price">
+          <span className="slip-row-odds">{chosen ? formatAmerican(chosen.americanOdds) : "-"}</span>
+          {chosen ? (
+            <span className="slip-book-pill">
+              {shortBook(chosen.vendor)}
+              {chosenOneTap ? " ⚡" : ""}
+            </span>
+          ) : null}
+        </span>
+      </button>
+      {open ? (
+        <div className="slip-row-panel">
+          <div className="book-chips">
+            {offers.map((offer) => {
+              const isChosen = offer.vendor === chosen?.vendor;
+              const oneTap = linkFor(pick, offer, settings)?.kind === "selection"; // opens the bet straight in the book's slip
+              return (
+                <button key={offer.vendor} className={`book-chip${isChosen ? " chosen" : ""}`} onClick={() => choosePickVendor(pick.pickId, offer.vendor)} aria-pressed={isChosen}>
+                  <span className="book-chip-name">
+                    {shortBook(offer.vendor)}
+                    {offer.vendor === bestVendor && offers.length > 1 ? " ★" : ""}
+                    {oneTap ? " ⚡" : ""}
+                  </span>
+                  <span className="book-chip-odds">{formatAmerican(offer.americanOdds)}</span>
+                  {pick.kind === "prop" && offer.lineValue !== null ? <span className="book-chip-line">{offer.lineValue}</span> : null}
+                </button>
+              );
+            })}
+          </div>
+          <div className="slip-row-actions">
+            {chosen ? (
+              link ? (
+                <a
+                  className="button primary bet-button"
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => {
+                    if (link.kind !== "selection") copyText(pickText).then(setCopied); // no bet-slip link: copy the pick so it can be pasted into the book's search
+                  }}
+                >
+                  Bet at {vendorLabel(chosen.vendor)} {formatAmerican(chosen.americanOdds)} ↗
+                </a>
+              ) : (
+                <button className="button bet-button" onClick={() => copyText(pickText).then(setCopied)}>
+                  Copy pick for {vendorLabel(chosen.vendor)}
+                </button>
+              )
+            ) : null}
+            <button className="button ghost slip-remove" onClick={() => removePick(pick.pickId)} aria-label="Remove pick">
+              Remove
+            </button>
+          </div>
+          <div className="faint small">
+            {copied ? "Pick copied. Paste it into the book's search." : link?.kind === "selection" ? "Opens the bet in the book's slip." : link?.kind === "event" ? (pick.kind === "prop" && copyOnlyPropVendors.has(chosen?.vendor ?? "") ? `${vendorLabel(chosen?.vendor ?? "")} has no prop deeplinks, so this opens the game and copies the pick. ⚡ books open the bet itself.` : "Opens the game in the book; the pick is copied for you.") : link?.kind === "book" ? "Opens the book's NBA page; the pick is copied for you." : ""}
+            {pick.modelProbability !== null && chosen ? ` EV at this price ${formatSigned(expectedValuePercent(pick.modelProbability, chosen.americanOdds), 1)}%.` : ""}
           </div>
         </div>
-        <button className="icon-button" onClick={() => removePick(pick.pickId)} aria-label="Remove pick">
-          ✕
-        </button>
-      </div>
-      <div className="book-chips">
-        {offers.map((offer) => {
-          const isChosen = offer.vendor === chosen?.vendor;
-          const oneTap = linkFor(pick, offer, settings)?.kind === "selection"; // opens the bet straight in the book's slip
-          return (
-            <button key={offer.vendor} className={`book-chip${isChosen ? " chosen" : ""}`} onClick={() => choosePickVendor(pick.pickId, offer.vendor)} aria-pressed={isChosen}>
-              <span className="book-chip-name">
-                {shortBook(offer.vendor)}
-                {offer.vendor === bestVendor && offers.length > 1 ? " ★" : ""}
-                {oneTap ? " ⚡" : ""}
-              </span>
-              <span className="book-chip-odds">{formatAmerican(offer.americanOdds)}</span>
-              {pick.kind === "prop" && offer.lineValue !== null ? <span className="book-chip-line">{offer.lineValue}</span> : null}
-            </button>
-          );
-        })}
-      </div>
-      {chosen ? (
-        link ? (
-          <a
-            className="button primary bet-button"
-            href={link.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => {
-              if (link.kind !== "selection") copyText(pickText).then(setCopied); // no bet-slip link: copy the pick so it can be pasted into the book's search
-            }}
-          >
-            Bet at {vendorLabel(chosen.vendor)} {formatAmerican(chosen.americanOdds)} ↗
-          </a>
-        ) : (
-          <button className="button bet-button" onClick={() => copyText(pickText).then(setCopied)}>
-            Copy pick for {vendorLabel(chosen.vendor)}
-          </button>
-        )
       ) : null}
-      <div className="faint small" style={{ marginTop: 6 }}>
-        {copied ? "Pick copied. Paste it into the book's search." : link?.kind === "selection" ? "Opens the bet in the book's slip." : link?.kind === "event" ? (pick.kind === "prop" && copyOnlyPropVendors.has(chosen?.vendor ?? "") ? `${vendorLabel(chosen?.vendor ?? "")} has no prop deeplinks, so this opens the game and copies the pick. ⚡ books open the bet itself.` : "Opens the game in the book; the pick is copied for you.") : link?.kind === "book" ? "Opens the book's NBA page; the pick is copied for you." : ""}
-        {pick.modelProbability !== null && chosen ? ` EV at this price ${formatSigned(expectedValuePercent(pick.modelProbability, chosen.americanOdds), 1)}%.` : ""}
-      </div>
-    </section>
+    </div>
   );
 }
 
@@ -113,6 +165,8 @@ export default function SlipPage() {
     const myBookOffers = filterByBooks(pick.offers, settings.enabledBooks);
     return myBookOffers.length > 0 ? { ...pick, offers: myBookOffers } : pick; // keep every book if none of yours has this pick
   });
+  const slipPlayerIds = [...new Set(picks.map((pick) => pick.playerId).filter((playerId): playerId is number => playerId !== null))];
+  const playerTeams = useAnalyticsQuery(slipPlayerIds.length > 0 ? (handle) => latestPlayerTeams(handle.engine, slipPlayerIds) : null, `slip-teams:${slipPlayerIds.join(",")}`);
   const [stake, setStake] = useState<number>(10);
   const [bankroll, setBankroll] = useState<number>(1000);
   const [parlayCopied, setParlayCopied] = useState(false);
@@ -142,7 +196,7 @@ export default function SlipPage() {
       <div className="page-title">
         <div>
           <h1>Bet slip</h1>
-          <p>Pick a book on each leg, then tap Bet. Prices are from when you added the pick.</p>
+          <p>Tap a pick to choose a book and bet. Prices are from when you added it.</p>
         </div>
         {picks.length > 0 ? (
           <button className="button ghost" onClick={clearSlip}>
@@ -155,11 +209,13 @@ export default function SlipPage() {
           Your slip is empty. Tap any price on the <Link href="/" className="expand-hint">slate</Link>, a player page or <Link href="/live" className="expand-hint">Live</Link>.
         </div>
       ) : null}
-      <div className="stack" style={{ gap: 10 }}>
-        {picks.map((pick) => (
-          <SlipItem key={pick.pickId} pick={pick} settings={settings} />
-        ))}
-      </div>
+      {picks.length > 0 ? (
+        <div className="card slip-list">
+          {picks.map((pick) => (
+            <SlipItem key={pick.pickId} pick={pick} settings={settings} teamId={pickTeamId(pick, playerTeams.result)} />
+          ))}
+        </div>
+      ) : null}
 
       {picks.length > 1 ? (
         <section className="card" style={{ marginTop: 12 }}>
