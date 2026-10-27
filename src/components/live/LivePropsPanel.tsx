@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Segmented } from "@/components/Segmented";
 import { PriceButton } from "@/components/PriceButton";
 import { useSettings } from "@/lib/client/hooks";
@@ -9,97 +9,60 @@ import type { LivePropData } from "@/lib/client/liveProps";
 import { maximumModelMarketGap, type LivePropRow } from "@/lib/analytics/liveSuggestions";
 import { buildMilestonePick, buildPropPick } from "@/lib/client/pickBuilders";
 import { formatNumber, formatPercent, formatSigned } from "@/lib/client/format";
+import { formatAmerican } from "@/lib/math/odds";
+import { PlayerHeadshot } from "@/components/PlayerHeadshot";
 import type { BdlBettingOdd, BdlGame, BdlPlayerProp } from "@/lib/bdl/types";
 
-interface PlayerGroup {
+const columnSets = {
+  core: [
+    { propType: "points", header: "Pts" },
+    { propType: "rebounds", header: "Reb" },
+    { propType: "assists", header: "Ast" },
+    { propType: "threes", header: "3PM" },
+  ],
+  combos: [
+    { propType: "points_rebounds_assists", header: "PRA" },
+    { propType: "points_rebounds", header: "P+R" },
+    { propType: "points_assists", header: "P+A" },
+    { propType: "rebounds_assists", header: "R+A" },
+  ],
+};
+
+type ColumnSetName = keyof typeof columnSets;
+
+export const shootingProps = new Set(["points", "threes", "points_rebounds_assists", "points_rebounds", "points_assists"]); // props where shooting luck matters
+
+interface PlayerLine {
   playerId: number;
   playerName: string;
+  shortName: string;
   teamAbbreviation: string;
   minutesPlayed: number;
   personalFouls: number;
-  boxLine: LivePropRow["boxLine"];
-  shooting: LivePropRow["shooting"];
   inactiveNote: string | null;
-  foulTimes: string[];
-  rows: LivePropRow[];
-  bestValue: number;
+  propsByType: Map<string, LivePropRow>;
+  hasValue: boolean;
+}
+
+interface LineStop {
+  key: string;
+  label: string;
+  line: number;
+  kind: "line" | "milestone";
+  overOdds: number | null;
+  overVendor: string | null;
+  underOdds: number | null;
+  underVendor: string | null;
+  overProbability: number;
+  underProbability: number;
+  overEvPercent: number | null;
+  underEvPercent: number | null;
+  books: number;
+  isMain: boolean;
 }
 
 function isTrusted(propRow: LivePropRow): boolean {
   return !propRow.inactiveNote && propRow.currentValue <= propRow.lineValue && propRow.prior.source === "pregame line" && propRow.modelMarketGap !== null && propRow.modelMarketGap <= maximumModelMarketGap; // EV is only meaningful when the model is near the market
-}
-
-function evNote(evPercent: number | null, trusted: boolean, threshold: number): { note: string | null; highlight: boolean } {
-  if (!trusted || evPercent === null) return { note: null, highlight: false };
-  return { note: `${formatSigned(evPercent, 0)}% EV`, highlight: evPercent >= threshold };
-}
-
-export function PropLine({ propRow, game, props, gameOdds, threshold }: { propRow: LivePropRow; game: BdlGame; props: BdlPlayerProp[]; gameOdds: BdlBettingOdd[]; threshold: number }) {
-  const trusted = isTrusted(propRow);
-  const cashed = propRow.currentValue > propRow.lineValue;
-  const overNote = evNote(propRow.evaluation.overEvPercent, trusted, threshold);
-  const underNote = evNote(propRow.evaluation.underEvPercent, trusted, threshold);
-  const progress = Math.min(1, propRow.lineValue > 0 ? propRow.currentValue / propRow.lineValue : 0);
-  const fairOver = propRow.evaluation.noVigOver;
-  const extraLines = propRow.ladder.filter((rung) => rung.line !== propRow.lineValue);
-  return (
-    <div className="prop-line">
-      <div style={{ minWidth: 0 }}>
-        <div className="prop-line-title">
-          <span className="strong">{propRow.label}</span>
-          <span className="tabular">
-            <span className="strong">{propRow.currentValue}</span>
-            <span className="faint"> / {propRow.lineValue}</span>
-          </span>
-          {cashed ? <span className="pill positive">cashed</span> : null}
-        </div>
-        <div className="prop-progress">
-          <span style={{ width: `${Math.round(progress * 100)}%`, background: cashed ? "var(--positive)" : undefined }} />
-        </div>
-        <div className="faint small" style={{ marginTop: 4 }}>
-          proj {formatNumber(propRow.projection.projection)}
-          {propRow.restOfGame ? ` · ${propRow.restOfGame.label} avg ${formatNumber(propRow.restOfGame.value)} (L${propRow.sampleGames})` : ""}
-          {cashed ? "" : trusted ? ` · over ${formatPercent(propRow.evaluation.overProbability, 0)} vs ${formatPercent(fairOver, 0)} fair` : propRow.inactiveNote ? " · may be out" : propRow.prior.source !== "pregame line" ? " · no pregame line" : " · model far from market"}
-        </div>
-      </div>
-      {cashed ? (
-        <span className="faint small">line is stale</span>
-      ) : (
-        <div className="price-pair">
-          <PriceButton pick={buildPropPick(game, propRow.playerId, propRow.playerName, propRow.propType, "over", props, gameOdds, "live", propRow.evaluation.overProbability, propRow.lineValue)} sideLabel={`O ${propRow.lineValue}`} odds={propRow.bestOverOdds} vendor={propRow.bestOverVendor} note={overNote.note} highlight={overNote.highlight} />
-          <PriceButton pick={buildPropPick(game, propRow.playerId, propRow.playerName, propRow.propType, "under", props, gameOdds, "live", propRow.evaluation.underProbability, propRow.lineValue)} sideLabel={`U ${propRow.lineValue}`} odds={propRow.bestUnderOdds} vendor={propRow.bestUnderVendor} note={underNote.note} highlight={underNote.highlight} />
-        </div>
-      )}
-      {!cashed && (extraLines.length > 0 || propRow.milestones.length > 0) ? (
-        <details className="more-lines">
-          <summary>
-            More lines ({extraLines.length + propRow.milestones.length}) ▾
-          </summary>
-          {extraLines.map((rung) => (
-            <div key={rung.line} className="ladder-row">
-              <span className="tabular strong">{rung.line}</span>
-              <PriceButton pick={buildPropPick(game, propRow.playerId, propRow.playerName, propRow.propType, "over", props, gameOdds, "live", rung.overProbability, rung.line)} sideLabel={`O ${rung.line}`} odds={rung.overOdds} vendor={rung.overVendor} note={trusted ? `${formatPercent(rung.overProbability, 0)} model` : null} />
-              <PriceButton pick={buildPropPick(game, propRow.playerId, propRow.playerName, propRow.propType, "under", props, gameOdds, "live", rung.underProbability, rung.line)} sideLabel={`U ${rung.line}`} odds={rung.underOdds} vendor={rung.underVendor} note={trusted ? `${formatPercent(rung.underProbability, 0)} model` : null} />
-            </div>
-          ))}
-          {propRow.milestones.length > 0 ? (
-            <div className="milestone-grid">
-              {propRow.milestones.map((milestone) => (
-                <PriceButton
-                  key={milestone.threshold}
-                  pick={buildMilestonePick(game, propRow.playerId, propRow.playerName, propRow.propType, milestone.threshold, props, gameOdds, "live", milestone.probability)}
-                  sideLabel={`${milestone.threshold}+`}
-                  odds={milestone.odds}
-                  vendor={milestone.vendor}
-                  note={trusted ? `${formatPercent(milestone.probability, 0)} model` : null}
-                />
-              ))}
-            </div>
-          ) : null}
-        </details>
-      ) : null}
-    </div>
-  );
 }
 
 export function shootingTag(shooting: LivePropRow["shooting"]): string | null {
@@ -107,107 +70,329 @@ export function shootingTag(shooting: LivePropRow["shooting"]): string | null {
   return shooting.luck < 0 ? "cold shooting" : "hot shooting"; // cold shooters tend to bounce back, hot ones to cool off
 }
 
-function PlayerSignals({ group }: { group: PlayerGroup }) {
-  const tag = shootingTag(group.shooting);
-  if (!group.inactiveNote && !group.shooting && group.foulTimes.length === 0) return null;
+function shortPlayerName(fullName: string): string {
+  const [firstName, ...rest] = fullName.split(" ");
+  return rest.length > 0 ? `${firstName.charAt(0)}. ${rest.join(" ")}` : fullName;
+}
+
+export function lineStops(propRow: LivePropRow): LineStop[] {
+  const ladderStops: LineStop[] = propRow.ladder.map((rung) => ({
+    key: `line-${rung.line}`,
+    label: String(rung.line),
+    line: rung.line,
+    kind: "line",
+    overOdds: rung.overOdds,
+    overVendor: rung.overVendor,
+    underOdds: rung.underOdds,
+    underVendor: rung.underVendor,
+    overProbability: rung.overProbability,
+    underProbability: rung.underProbability,
+    overEvPercent: rung.overEvPercent,
+    underEvPercent: rung.underEvPercent,
+    books: rung.books,
+    isMain: rung.line === propRow.lineValue,
+  }));
+  const ladderLines = new Set(ladderStops.map((stop) => stop.line));
+  const milestoneStops: LineStop[] = propRow.milestones
+    .filter((milestone) => !ladderLines.has(milestone.threshold - 0.5)) // "25+" is the same bet as over 24.5
+    .map((milestone) => ({
+      key: `milestone-${milestone.threshold}`,
+      label: `${milestone.threshold}+`,
+      line: milestone.threshold - 0.5,
+      kind: "milestone",
+      overOdds: milestone.odds,
+      overVendor: milestone.vendor,
+      underOdds: null,
+      underVendor: null,
+      overProbability: milestone.probability,
+      underProbability: 1 - milestone.probability,
+      overEvPercent: milestone.evPercent,
+      underEvPercent: null,
+      books: milestone.books,
+      isMain: false,
+    }));
+  return [...ladderStops, ...milestoneStops].sort((first, second) => first.line - second.line);
+}
+
+function PropSheet({ propRow, game, props, gameOdds, threshold, onClose }: { propRow: LivePropRow; game: BdlGame; props: BdlPlayerProp[]; gameOdds: BdlBettingOdd[]; threshold: number; onClose: () => void }) {
+  const stops = lineStops(propRow);
+  const mainIndex = Math.max(0, stops.findIndex((stop) => stop.isMain));
+  const [selectedIndex, setSelectedIndex] = useState(mainIndex);
+  useEffect(() => setSelectedIndex(mainIndex), [propRow.playerId, propRow.propType]); // eslint-disable-line react-hooks/exhaustive-deps
+  const stop = stops[Math.min(selectedIndex, stops.length - 1)];
+  const trusted = isTrusted(propRow);
+  const cashed = stop ? propRow.currentValue > stop.line : false;
+  const evNote = (evPercent: number | null) => (trusted && evPercent !== null ? `${formatSigned(evPercent, 0)}% EV` : null);
+  const overPick = !stop ? null : stop.kind === "milestone" ? buildMilestonePick(game, propRow.playerId, propRow.playerName, propRow.propType, stop.line + 0.5, props, gameOdds, "live", stop.overProbability) : buildPropPick(game, propRow.playerId, propRow.playerName, propRow.propType, "over", props, gameOdds, "live", stop.overProbability, stop.line);
+  const underPick = !stop || stop.kind === "milestone" ? null : buildPropPick(game, propRow.playerId, propRow.playerName, propRow.propType, "under", props, gameOdds, "live", stop.underProbability, stop.line);
+  const tag = shootingTag(propRow.shooting);
   return (
-    <div className="player-signals small">
-      {group.inactiveNote ? <div className="warning-text">⚠ {group.inactiveNote}. No picks for him until he&apos;s back.</div> : null}
-      {group.shooting ? (
-        <div className="muted">
-          {group.shooting.actualPoints} pts on shots worth {formatNumber(group.shooting.expectedPoints)}
-          {tag ? <span className="strong"> · {tag}</span> : null}
-          <span className="faint"> ({group.shooting.source})</span>
+    <div className="prop-sheet-backdrop" onClick={onClose}>
+      <section className="prop-sheet" role="dialog" aria-label={`${propRow.playerName} ${propRow.label}`} onClick={(clickEvent) => clickEvent.stopPropagation()}>
+        <span className="prop-sheet-handle" aria-hidden="true" />
+        <div className="row-between" style={{ alignItems: "baseline" }}>
+          <span className="prop-sheet-title">
+            {propRow.playerName} · {propRow.label}
+          </span>
+          <button className="icon-button" onClick={onClose} aria-label="Close">
+            ✕
+          </button>
+        </div>
+        <div className="small muted">
+          {propRow.currentValue} now · proj {formatNumber(propRow.projection.projection)}
+          {tag && shootingProps.has(propRow.propType) ? ` · ${tag}` : ""}
+        </div>
+        {propRow.inactiveNote ? <div className="warning-text small">⚠ {propRow.inactiveNote}</div> : null}
+        {stop ? (
+          <>
+            <div className="line-picker">
+              <div className="row-between" style={{ alignItems: "baseline" }}>
+                <span className="section-label">Line</span>
+                <span className="line-picker-value">
+                  {stop.label} <span className="faint small">{stop.isMain ? "main" : stop.kind === "milestone" ? "milestone" : "alt"}</span>
+                </span>
+              </div>
+              {stops.length > 1 ? (
+                <label>
+                  <span className="visually-hidden">Choose a line</span>
+                  <input className="line-slider" type="range" min={0} max={stops.length - 1} step={1} value={selectedIndex} onChange={(changeEvent) => setSelectedIndex(Number(changeEvent.target.value))} />
+                </label>
+              ) : null}
+              <div className="line-ticks">
+                {stops.map((tickStop, tickIndex) => (
+                  <button key={tickStop.key} className={`line-tick${tickIndex === selectedIndex ? " selected" : ""}${tickStop.isMain ? " main" : ""}`} onClick={() => setSelectedIndex(tickIndex)}>
+                    {tickStop.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+            <div className="sheet-stats">
+              <div>
+                <span>Over hits</span>
+                <strong>{cashed ? "cashed" : formatPercent(stop.overProbability, 0)}</strong>
+              </div>
+              <div>
+                <span>{propRow.restOfGame ? `${propRow.restOfGame.label} avg` : "Rest avg"}</span>
+                <strong>{propRow.restOfGame ? formatNumber(propRow.restOfGame.value) : "–"}</strong>
+              </div>
+              <div>
+                <span>Books</span>
+                <strong>{stop.books}</strong>
+              </div>
+            </div>
+            <div className="sheet-prices">
+              <PriceButton pick={overPick} sideLabel={stop.kind === "milestone" ? `${stop.label}` : `Over ${stop.label}`} odds={stop.overOdds} vendor={stop.overVendor} note={evNote(stop.overEvPercent)} highlight={trusted && (stop.overEvPercent ?? -Infinity) >= threshold} />
+              <PriceButton pick={underPick} sideLabel={stop.kind === "milestone" ? "No under" : `Under ${stop.label}`} odds={stop.underOdds} vendor={stop.underVendor} note={evNote(stop.underEvPercent)} highlight={trusted && (stop.underEvPercent ?? -Infinity) >= threshold} />
+            </div>
+          </>
+        ) : null}
+        <div className="faint small">
+          {propRow.shooting ? `${propRow.shooting.actualPoints} pts on shots worth ${formatNumber(propRow.shooting.expectedPoints)}` : ""}
+          {propRow.foulTimes.length > 0 ? `${propRow.shooting ? " · " : ""}Fouls: ${propRow.foulTimes.join(", ")}` : ""}
+          {!trusted && !propRow.inactiveNote && !cashed ? `${propRow.shooting || propRow.foulTimes.length > 0 ? " · " : ""}${propRow.prior.source !== "pregame line" ? "no pregame line, EV hidden" : "model far from market, EV hidden"}` : ""}
+        </div>
+        <Link href={`/player/${propRow.playerId}`} className="expand-hint">
+          Player page →
+        </Link>
+      </section>
+    </div>
+  );
+}
+
+const rowMarketOrder = ["points", "rebounds", "assists", "threes", "points_rebounds_assists", "points_rebounds", "points_assists", "rebounds_assists"];
+const chipLabels: Record<string, string> = { points: "PTS", rebounds: "REB", assists: "AST", threes: "3PM", points_rebounds_assists: "PRA", points_rebounds: "P+R", points_assists: "P+A", rebounds_assists: "R+A" };
+
+function bestValueRow(playerLine: PlayerLine): LivePropRow | null {
+  return [...playerLine.propsByType.values()].filter((propRow) => propRow.flagged).sort((first, second) => (second.evaluation.bestEvPercent ?? 0) - (first.evaluation.bestEvPercent ?? 0))[0] ?? null;
+}
+
+function PlayerRow({ playerLine, game, props, gameOdds, threshold, onOpenMarket }: { playerLine: PlayerLine; game: BdlGame; props: BdlPlayerProp[]; gameOdds: BdlBettingOdd[]; threshold: number; onOpenMarket: (propRow: LivePropRow) => void }) {
+  const [open, setOpen] = useState(false);
+  const anyRow = [...playerLine.propsByType.values()][0];
+  const best = bestValueRow(playerLine);
+  const bestSide = best?.evaluation.bestSide ?? "over";
+  const [firstName, ...restOfName] = playerLine.playerName.split(" ");
+  const markets = rowMarketOrder.map((propType) => playerLine.propsByType.get(propType)).filter((propRow): propRow is LivePropRow => Boolean(propRow));
+  const tag = shootingTag(anyRow.shooting);
+  return (
+    <div className={`live-row${open ? " open" : ""}${playerLine.inactiveNote ? " inactive" : ""}`}>
+      <button className="live-row-main" onClick={() => setOpen((previous) => !previous)} aria-expanded={open}>
+        <PlayerHeadshot playerId={playerLine.playerId} firstName={firstName} lastName={restOfName.join(" ")} />
+        <span className="live-row-name">
+          {playerLine.playerName} <span className="faint small">{playerLine.teamAbbreviation}</span>
+        </span>
+        <span className="live-row-stats">
+            {formatNumber(playerLine.minutesPlayed, 0)} min · {anyRow.boxLine.points} pts · {anyRow.boxLine.rebounds} reb · {anyRow.boxLine.assists} ast · {anyRow.boxLine.threesMade} 3pm
+            {playerLine.personalFouls >= 3 ? <span className="negative"> · {playerLine.personalFouls} pf</span> : null}
+        </span>
+        {playerLine.inactiveNote ? (
+          <span className="pill warning">May be out</span>
+        ) : best ? (
+          <span className="live-row-chip value">
+            <span>
+              {bestSide === "over" ? "O" : "U"} {best.lineValue} {chipLabels[best.propType] ?? best.label}
+            </span>
+            <strong>{formatAmerican(bestSide === "over" ? best.bestOverOdds : best.bestUnderOdds)}</strong>
+          </span>
+        ) : (
+          <span className="live-row-chip">
+            <span>{markets.length} props</span>
+            <strong className="faint">no edge</strong>
+          </span>
+        )}
+      </button>
+      {open ? (
+        <div className="live-row-panel">
+          {playerLine.inactiveNote ? <div className="warning-text small">⚠ {playerLine.inactiveNote}. No picks for him until he&apos;s back.</div> : null}
+          <div className="market-table" role="table" aria-label={`${playerLine.playerName} markets`}>
+            <div className="market-table-row market-table-head" role="row">
+              <span role="columnheader">Market</span>
+              <span role="columnheader">Now</span>
+              <span role="columnheader">Over</span>
+              <span role="columnheader">Under</span>
+            </div>
+            {markets.map((propRow) => {
+              const trusted = isTrusted(propRow);
+              const cashed = propRow.currentValue > propRow.lineValue;
+              const lineCount = lineStops(propRow).length;
+              const evNote = (evPercent: number | null) => (trusted && evPercent !== null ? `${formatSigned(evPercent, 0)}% EV` : null);
+              return (
+                <div key={propRow.propType} className="market-table-row" role="row">
+                  <button className="market-name" onClick={() => onOpenMarket(propRow)} role="cell">
+                    <span>{propRow.label}</span>
+                    <span className="market-name-lines">{lineCount > 1 ? `${lineCount} lines ›` : "details ›"}</span>
+                  </button>
+                  <span className={`market-now${cashed ? " positive" : ""}`} role="cell">
+                    <strong>{propRow.currentValue}</strong>
+                    <span className="faint">/{propRow.lineValue}</span>
+                  </span>
+                  <span role="cell">
+                    <PriceButton pick={buildPropPick(game, propRow.playerId, propRow.playerName, propRow.propType, "over", props, gameOdds, "live", propRow.evaluation.overProbability, propRow.lineValue)} sideLabel="" odds={cashed ? null : propRow.bestOverOdds} vendor={propRow.bestOverVendor} note={evNote(propRow.evaluation.overEvPercent)} highlight={trusted && (propRow.evaluation.overEvPercent ?? -Infinity) >= threshold} compact />
+                  </span>
+                  <span role="cell">
+                    <PriceButton pick={buildPropPick(game, propRow.playerId, propRow.playerName, propRow.propType, "under", props, gameOdds, "live", propRow.evaluation.underProbability, propRow.lineValue)} sideLabel="" odds={cashed ? null : propRow.bestUnderOdds} vendor={propRow.bestUnderVendor} note={evNote(propRow.evaluation.underEvPercent)} highlight={trusted && (propRow.evaluation.underEvPercent ?? -Infinity) >= threshold} compact />
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+          <div className="faint small">
+            {anyRow.shooting ? `${anyRow.shooting.actualPoints} pts on shots worth ${formatNumber(anyRow.shooting.expectedPoints)}${tag ? ` · ${tag}` : ""}` : ""}
+            {anyRow.foulTimes.length > 0 ? `${anyRow.shooting ? " · " : ""}Fouls: ${anyRow.foulTimes.join(", ")}` : ""}
+          </div>
+          <div className="row-between small">
+            <span className="faint">Tap a market for alt lines.</span>
+            <Link href={`/player/${playerLine.playerId}`} className="expand-hint">
+              Player page →
+            </Link>
+          </div>
         </div>
       ) : null}
-      {group.foulTimes.length > 0 ? <div className="faint">Fouls: {group.foulTimes.join(" · ")}</div> : null}
     </div>
   );
 }
 
 export function LivePropsPanel({ game, data, gameOdds }: { game: BdlGame; data: LivePropData; gameOdds: BdlBettingOdd[] }) {
   const settings = useSettings();
-  const [marketFilter, setMarketFilter] = useState("all");
+  const [columnSet, setColumnSet] = useState<ColumnSetName>("core");
   const [valueOnly, setValueOnly] = useState(false);
-  const [searchText, setSearchText] = useState("");
+  const [openCell, setOpenCell] = useState<{ playerId: number; propType: string } | null>(null);
   const { rows, props: propList } = data;
-  const flaggedRows = data.valuePicks;
-  const clockText = data.clock ? (data.clock.isHalftime ? "halftime" : `Q${Math.min(data.clock.period, 4)}`) : "";
-  const markets = [...new Set(rows.map((propRow) => propRow.label))];
-  const normalizedSearch = searchText.trim().toLowerCase();
-  const visibleRows = rows
-    .filter((propRow) => marketFilter === "all" || propRow.label === marketFilter)
-    .filter((propRow) => !valueOnly || propRow.flagged)
-    .filter((propRow) => !normalizedSearch || propRow.playerName.toLowerCase().includes(normalizedSearch));
-  const groups = new Map<number, PlayerGroup>();
-  for (const propRow of visibleRows) {
-    const group = groups.get(propRow.playerId) ?? { playerId: propRow.playerId, playerName: propRow.playerName, teamAbbreviation: propRow.teamAbbreviation, minutesPlayed: propRow.minutesPlayed, personalFouls: propRow.personalFouls, boxLine: propRow.boxLine, shooting: propRow.shooting, inactiveNote: propRow.inactiveNote, foulTimes: propRow.foulTimes, rows: [], bestValue: -Infinity };
-    group.rows.push(propRow);
-    if (propRow.flagged) group.bestValue = Math.max(group.bestValue, propRow.evaluation.bestEvPercent ?? -Infinity);
-    groups.set(propRow.playerId, group);
+  const columns = columnSets[columnSet];
+  const rowsLayout = settings.liveLayout === "rows";
+  const players = new Map<number, PlayerLine>();
+  for (const propRow of rows) {
+    const playerLine = players.get(propRow.playerId) ?? { playerId: propRow.playerId, playerName: propRow.playerName, shortName: shortPlayerName(propRow.playerName), teamAbbreviation: propRow.teamAbbreviation, minutesPlayed: propRow.minutesPlayed, personalFouls: propRow.personalFouls, inactiveNote: propRow.inactiveNote, propsByType: new Map(), hasValue: false };
+    playerLine.propsByType.set(propRow.propType, propRow);
+    if (propRow.flagged) playerLine.hasValue = true;
+    players.set(propRow.playerId, playerLine);
   }
-  const orderedGroups = [...groups.values()].sort((first, second) => second.minutesPlayed - first.minutesPlayed); // most minutes tonight first
+  const orderedPlayers = [...players.values()].filter((playerLine) => !valueOnly || playerLine.hasValue).filter((playerLine) => rowsLayout || columns.some((column) => playerLine.propsByType.has(column.propType))).sort((first, second) => second.minutesPlayed - first.minutesPlayed); // most minutes tonight first
+  const openRow = openCell ? (rows.find((propRow) => propRow.playerId === openCell.playerId && propRow.propType === openCell.propType) ?? null) : null;
+  const clockText = data.clock ? (data.clock.isHalftime ? "halftime" : `Q${Math.min(data.clock.period, 4)}`) : "";
 
   return (
     <div id="live-props" style={{ scrollMarginTop: 70 }}>
-      <div className="row-between wrap" style={{ marginBottom: 8 }}>
-        <span className="small muted">
-          {orderedGroups.length} players · {flaggedRows.length} value pick{flaggedRows.length === 1 ? "" : "s"} · tap a player to see props
-        </span>
+      <div className="row-between wrap" style={{ marginBottom: 8, gap: 8 }}>
+        {rowsLayout ? (
+          <span className="small muted">{orderedPlayers.length} players · tap a player</span>
+        ) : (
+          <Segmented
+            options={[
+              { value: "core", label: "Pts · Reb · Ast · 3PM" },
+              { value: "combos", label: "Combos" },
+            ]}
+            value={columnSet}
+            onChange={(nextSet) => setColumnSet(nextSet as ColumnSetName)}
+            label="Columns"
+          />
+        )}
         <button className={`toggle-button${valueOnly ? " open" : ""}`} onClick={() => setValueOnly((previous) => !previous)}>
-          {valueOnly ? "✓ Value only" : "Value only"}
+          {valueOnly ? "✓ Value" : "Value"} {data.valuePicks.length}
         </button>
-      </div>
-      <div className="stack" style={{ gap: 8, marginBottom: 10 }}>
-        {markets.length > 1 ? <Segmented options={[{ value: "all", label: "All" }, ...markets.map((market) => ({ value: market, label: market }))]} value={marketFilter} onChange={setMarketFilter} label="Market" /> : null}
-        {rows.length > 12 ? <input className="input" placeholder="Find a player…" value={searchText} onChange={(changeEvent) => setSearchText(changeEvent.target.value)} /> : null}
       </div>
       {data.error ? <div className="notice">Live props unavailable: {data.error}</div> : null}
       {data.loading ? <div className="skeleton" /> : null}
       {!data.loading && rows.length === 0 ? <div className="empty-state">No live player props posted right now. Books often pull them during play.</div> : null}
-      {rows.length > 0 && orderedGroups.length === 0 ? <div className="empty-state">Nothing matches these filters.</div> : null}
-      <div className="card-grid">
-        {orderedGroups.map((group) => (
-          <details key={group.playerId} className={`player-group${group.bestValue > -Infinity ? " has-value" : ""}`} open={normalizedSearch !== "" || undefined}>
-            <summary className="player-group-header">
-              <span className="player-group-name">
-                <span className="strong">{group.playerName}</span> <span className="faint small">{group.teamAbbreviation}</span>
-                <span className="player-group-stats tabular">
-                  {[
-                    [formatNumber(group.minutesPlayed, 0), "min"],
-                    [group.boxLine.points, "pts"],
-                    [group.boxLine.rebounds, "reb"],
-                    [group.boxLine.assists, "ast"],
-                    [group.boxLine.threesMade, "3pm"],
-                    [group.personalFouls, "pf"],
-                  ].map(([statValue, statLabel]) => (
-                    <span key={statLabel} className={statLabel === "pf" && group.personalFouls >= 4 ? "negative" : undefined}>
-                      <span className="strong">{statValue}</span> <span className="faint">{statLabel}</span>
-                    </span>
-                  ))}
+      {rows.length > 0 && orderedPlayers.length === 0 ? <div className="empty-state">Nothing matches.</div> : null}
+      {rowsLayout && orderedPlayers.length > 0 ? (
+        <div className="live-rows">
+          {orderedPlayers.map((playerLine) => (
+            <PlayerRow key={playerLine.playerId} playerLine={playerLine} game={game} props={propList} gameOdds={gameOdds} threshold={settings.evThresholdPercent} onOpenMarket={(propRow) => setOpenCell({ playerId: propRow.playerId, propType: propRow.propType })} />
+          ))}
+        </div>
+      ) : null}
+      {!rowsLayout && orderedPlayers.length > 0 ? (
+        <div className="prop-grid" role="table" aria-label="Live player props, now and line">
+          <div className="prop-grid-row prop-grid-head" role="row">
+            <span role="columnheader">Player</span>
+            {columns.map((column) => (
+              <span key={column.propType} role="columnheader">
+                {column.header}
+              </span>
+            ))}
+          </div>
+          {orderedPlayers.map((playerLine) => (
+            <div key={playerLine.playerId} className={`prop-grid-row${playerLine.inactiveNote ? " inactive" : ""}`} role="row">
+              <span className="prop-grid-player" role="rowheader">
+                <span className="prop-grid-name">{playerLine.shortName}</span>
+                <span className="prop-grid-meta">
+                  {playerLine.teamAbbreviation} · {playerLine.inactiveNote ? <span className="warning-text strong">OUT?</span> : `${formatNumber(playerLine.minutesPlayed, 0)}m`}
+                  {playerLine.personalFouls >= 3 ? <span className="negative"> · {playerLine.personalFouls}pf</span> : null}
                 </span>
               </span>
-              <span className="player-group-meta small">
-                {group.inactiveNote ? <span className="pill warning">May be out</span> : null}
-                <span className="player-group-chevron">▾</span>
-              </span>
-            </summary>
-            <PlayerSignals group={group} />
-            {group.rows.map((propRow) => (
-              <PropLine key={propRow.propType} propRow={propRow} game={game} props={propList} gameOdds={gameOdds} threshold={settings.evThresholdPercent} />
-            ))}
-            <Link href={`/player/${group.playerId}`} className="expand-hint" style={{ display: "inline-block", marginTop: 8 }}>
-              Player page →
-            </Link>
-          </details>
-        ))}
+              {columns.map((column) => {
+                const propRow = playerLine.propsByType.get(column.propType);
+                if (!propRow) {
+                  return (
+                    <span key={column.propType} className="prop-cell empty" role="cell" aria-label="No line">
+                      –
+                    </span>
+                  );
+                }
+                const selected = openCell?.playerId === propRow.playerId && openCell.propType === propRow.propType;
+                const cashed = propRow.currentValue > propRow.lineValue;
+                return (
+                  <button key={column.propType} role="cell" className={`prop-cell${propRow.flagged ? " value" : ""}${selected ? " selected" : ""}${cashed ? " cashed" : ""}`} onClick={() => setOpenCell({ playerId: propRow.playerId, propType: propRow.propType })} aria-label={`${playerLine.playerName} ${propRow.label}: ${propRow.currentValue} now, line ${propRow.lineValue}`}>
+                    <span className="prop-cell-now">{propRow.currentValue}</span>
+                    <span className="prop-cell-line">{propRow.lineValue}</span>
+                  </button>
+                );
+              })}
+            </div>
+          ))}
+        </div>
+      ) : null}
+      <div className="faint small" style={{ marginTop: 8 }}>
+        {rowsLayout ? "Green = value pick. Layout can be switched in Settings." : "Big number = now, small = line. Green = value pick. Tap a cell for prices and alt lines."}
       </div>
-      <details style={{ marginTop: 10 }}>
+      <details style={{ marginTop: 6 }}>
         <summary className="expand-hint">How projections work</summary>
         <p className="faint small">
-          Projection = current stat + the pregame line for the time left (now at {clockText}), split by the player&apos;s usual quarters, nudged by tonight&apos;s pace (more late in games). Tonight&apos;s pace uses what his shots were worth, not lucky or unlucky makes; shot values come from his recent shot charts by distance. More or fewer shots than usual scale scoring props. The live total adjusts for game pace, and foul trouble or a blowout (score or live spread) trims minutes. Players with no plays for a long stretch are never flagged. EV shows only when the model is within {Math.round(maximumModelMarketGap * 100)} points of the de-vigged market; bigger gaps usually mean missing news. Green = at or above your {settings.evThresholdPercent}% threshold. Informational, not guaranteed.
+          Projection = current stat + the pregame line for the time left (now at {clockText}), split by the player&apos;s usual quarters, nudged by tonight&apos;s pace (more late in games). Tonight&apos;s pace uses what his shots were worth, not lucky or unlucky makes; shot values come from his recent shot charts by distance. More or fewer shots than usual scale scoring props. The live total adjusts for game pace, and foul trouble or a blowout (score or live spread) trims minutes. EV shows only when the model is within {Math.round(maximumModelMarketGap * 100)} points of the de-vigged market. Players with no plays for a long stretch are never flagged.
         </p>
       </details>
+      {openRow ? <PropSheet propRow={openRow} game={game} props={propList} gameOdds={gameOdds} threshold={settings.evThresholdPercent} onClose={() => setOpenCell(null)} /> : null}
     </div>
   );
 }
