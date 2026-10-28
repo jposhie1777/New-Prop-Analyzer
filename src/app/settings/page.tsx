@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { availableBooks } from "@/lib/client/bookFilter";
 import { Segmented } from "@/components/Segmented";
@@ -26,9 +27,49 @@ export default function SettingsPage() {
       <div className="page-title">
         <div>
           <h1>Settings</h1>
-          <p>Stored on this device only.</p>
+          <p>Saved on this device only.</p>
         </div>
       </div>
+      <section className="card flush settings-list">
+        <div className="setting-row">
+          <div>
+            <span className="strong">Appearance</span>
+            <p>System follows your phone or computer.</p>
+          </div>
+          <Segmented
+            options={[
+              { value: "light", label: "Light" },
+              { value: "dark", label: "Dark" },
+              { value: "system", label: "System" },
+            ]}
+            value={settings.appearance}
+            onChange={(nextAppearance) => saveSettings({ appearance: nextAppearance })}
+            label="Appearance"
+          />
+        </div>
+        <div className="setting-row">
+          <div>
+            <span className="strong">Live player props layout</span>
+            <p>Grid shows a stat table; Rows shows one line per player that opens his markets.</p>
+          </div>
+          <Segmented
+            options={[
+              { value: "grid", label: "Grid" },
+              { value: "rows", label: "Rows" },
+            ]}
+            value={settings.liveLayout}
+            onChange={(nextLayout) => saveSettings({ liveLayout: nextLayout === "rows" ? "rows" : "grid" })}
+            label="Live props layout"
+          />
+        </div>
+        <Link href="/costs" className="setting-row">
+          <div>
+            <span className="strong">Costs</span>
+            <p>BALLDONTLIE calls, Vercel usage and storage on this device.</p>
+          </div>
+          <span className="expand-hint">Details →</span>
+        </Link>
+      </section>
       <section className="card">
         <div className="card-header wrap">
           <div>
@@ -68,21 +109,6 @@ export default function SettingsPage() {
             ))}
           </select>
         </label>
-      </section>
-      <section className="card">
-        <div className="stack" style={{ gap: 8 }}>
-          <span className="strong">Live player props layout</span>
-          <span className="faint small">Grid: a stat table, tap a cell for prices. Rows: one line per player, tap to open his markets. Both use the line slider for alt lines.</span>
-          <Segmented
-            options={[
-              { value: "grid", label: "Grid" },
-              { value: "rows", label: "Rows" },
-            ]}
-            value={settings.liveLayout}
-            onChange={(nextLayout) => saveSettings({ liveLayout: nextLayout === "rows" ? "rows" : "grid" })}
-            label="Live props layout"
-          />
-        </div>
       </section>
       <section className="card">
         <div className="stack" style={{ gap: 14 }}>
