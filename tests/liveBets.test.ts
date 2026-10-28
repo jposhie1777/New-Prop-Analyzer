@@ -3,7 +3,7 @@ import { bdlTeam } from "@/lib/nba/teams";
 import type { BdlBoxScore } from "@/lib/bdl/types";
 import type { LivePropRow } from "@/lib/analytics/liveSuggestions";
 import type { GameClock } from "@/lib/analytics/liveProjection";
-import { bestBetTag, clockLabelFor, combineLivePicks, gradeLiveBet, pickFromRow, summarizeLiveBets, type LiveBetPick } from "@/lib/live/liveBets";
+import { bestBetTag, checkpointFor, clockLabelFor, combineLivePicks, gradeLiveBet, pickFromRow, selectCheckpointPicks, summarizeLiveBets, type LiveBetPick } from "@/lib/live/liveBets";
 
 function boxScoreWith(points: number, minutes: string): BdlBoxScore {
   const boxPlayer = { min: minutes, pts: points, reb: 3, ast: 2, pf: 1, fg3m: 1, stl: 0, blk: 0, player: { id: 77, first_name: "Test", last_name: "Player", position: "G" } };
@@ -83,5 +83,26 @@ describe("clockLabelFor", () => {
   it("names halftime and overtime", () => {
     expect(clockLabelFor({ period: 2, secondsLeftInPeriod: 0, isHalftime: true, isFinished: false })).toBe("Halftime");
     expect(clockLabelFor({ period: 5, secondsLeftInPeriod: 125, isHalftime: false, isFinished: false })).toBe("OT1 2:05");
+  });
+});
+
+describe("checkpoint picks", () => {
+  const base = pickFromRow(rowWith(0.6, 100), boxScoreWith(14, "24:00"), 9, "2026-10-25", thirdQuarter, "now") as LiveBetPick;
+  const candidate = (playerId: number, propType: string, evPercent: number): LiveBetPick => ({ ...base, playerId, propType, pickId: `9-${playerId}-${propType}`, evPercent });
+  it("finds the breaks, including just after one was missed", () => {
+    expect(checkpointFor({ period: 1, secondsLeftInPeriod: 0, isHalftime: false, isFinished: false })).toBe("end-q1");
+    expect(checkpointFor({ period: 2, secondsLeftInPeriod: 700, isHalftime: false, isFinished: false })).toBe("end-q1");
+    expect(checkpointFor({ period: 2, secondsLeftInPeriod: 0, isHalftime: true, isFinished: false })).toBe("halftime");
+    expect(checkpointFor({ period: 4, secondsLeftInPeriod: 715, isHalftime: false, isFinished: false })).toBe("end-q3");
+    expect(checkpointFor({ period: 2, secondsLeftInPeriod: 300, isHalftime: false, isFinished: false })).toBeNull();
+    expect(checkpointFor({ period: 4, secondsLeftInPeriod: 0, isHalftime: false, isFinished: false })).toBeNull();
+  });
+  it("takes the top plays, one per player, never repeating a player and market", () => {
+    const candidates = [candidate(1, "points", 12), candidate(1, "assists", 15), candidate(2, "points", 9), candidate(3, "points", 4), candidate(4, "rebounds", 20)];
+    const chosen = selectCheckpointPicks(candidates, "halftime", new Set(["9-4-rebounds"]), 2);
+    expect(chosen.map((pick) => pick.pickId)).toEqual(["9-1-assists", "9-2-points"]);
+    expect(chosen[0].checkpoint).toBe("halftime");
+    expect(chosen[0].clockLabel).toBe("Halftime");
+    expect(chosen[0].tags).toContain("Halftime");
   });
 });

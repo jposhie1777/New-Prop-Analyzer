@@ -18,7 +18,7 @@ import { quarterProfiles, type QuarterProfile } from "../src/lib/analytics/aggre
 import { buildLivePropRows } from "../src/lib/analytics/liveSuggestions";
 import { parseGameClock, timeShares } from "../src/lib/analytics/liveProjection";
 import { parseLivePlays, readLiveMarket } from "../src/lib/analytics/liveSignals";
-import { currentStat, gradeLiveBet, liveBetMinimumEvPercent, pickFromRow, type LiveBetPick, type LiveNight } from "../src/lib/live/liveBets";
+import { checkpointFor, checkpointLabels, currentStat, gradeLiveBet, liveBetMinimumEvPercent, pickFromRow, selectCheckpointPicks, type LiveBetPick, type LiveNight } from "../src/lib/live/liveBets";
 import { loadEnvironmentFiles } from "./loadEnvironment";
 
 interface TrackerOptions {
@@ -234,29 +234,11 @@ async function main(): Promise<void> {
       const nowIso = new Date().toISOString();
       const scheduleNow = await client.getAllPages<BdlGame>("/nba/v1/games", { "dates[]": [today] });
       const liveBoxes = normalizeBoxScores((await client.get<{ data: unknown }>("/nba/v1/box_scores/live", {})).data);
-      const liveOdds = await client.getAllPages<BdlBettingOdd>("/nba/v2/odds", { "dates[]": [today] });
-      openingOdds ??= await client.getAllPages<BdlBettingOdd>("/nba/v2/odds/opening", { "dates[]": [today] }).catch(() => []);
       for (const game of scheduleNow) {
         const boxScore = boxScoreForGame(game, liveBoxes);
         const summary = night.games.find((entry) => entry.gameId === game.id);
         if (summary) Object.assign(summary, { status: boxScore?.status ?? game.status ?? "", homeScore: boxScore?.home_team_score ?? game.home_team_score, visitorScore: boxScore?.visitor_team_score ?? game.visitor_team_score });
         if (!boxScore || !isGameLive(boxScore)) continue;
-        if (!openingProps.has(game.id)) openingProps.set(game.id, (await client.get<{ data: BdlPlayerProp[] }>("/nba/v2/odds/player_props/opening", { game_id: game.id }).catch(() => ({ data: [] }))).data ?? []);
-        const boxPlayers = [...boxScore.home_team.players, ...boxScore.visitor_team.players];
-        if (!profilesByGame.has(game.id)) profilesByGame.set(game.id, await quarterProfiles(engine, boxPlayers.map((boxPlayer) => boxPlayer.player.id), 10));
-        const props = (await client.get<{ data: BdlPlayerProp[] }>("/nba/v2/odds/player_props", { game_id: game.id })).data ?? [];
-        const plays = (await client.get<{ data: BdlPlay[] }>("/nba/v1/plays", { game_id: game.id }).catch(() => ({ data: [] as BdlPlay[] }))).data ?? [];
-        const activity = plays.length > 0 ? parseLivePlays(plays, boxPlayers.map((boxPlayer) => ({ id: boxPlayer.player.id, name: `${boxPlayer.player.first_name} ${boxPlayer.player.last_name}` }))) : null;
-        const clock = parseGameClock(boxScore.status, boxScore.time, boxScore.period);
-        const market = readLiveMarket(liveOdds.filter((bettingOdd) => bettingOdd.game_id === game.id), openingOdds.filter((bettingOdd) => bettingOdd.game_id === game.id), boxScore.home_team_score + boxScore.visitor_team_score, timeShares(clock, { 1: 0.25, 2: 0.25, 3: 0.25, 4: 0.25 }).remainingClock, game.datetime);
-        const { rows } = buildLivePropRows(boxScore, props, openingProps.get(game.id) ?? [], profilesByGame.get(game.id)!, liveBetMinimumEvPercent, { activity, shotProfiles: null, market });
-        for (const row of rows) {
-          const pick = pickFromRow(row, boxScore, game.id, today, clock, nowIso);
-          if (!pick || night.picks.some((existing) => existing.pickId === pick.pickId)) continue; // the first flag for a player and market is the one recorded
-          night.picks.push(pick);
-          changedSinceCommit = true;
-          log(`pick: ${pick.playerName} ${pick.side} ${pick.line} ${pick.label} ${pick.americanOdds} (${pick.vendor}) ${pick.evPercent.toFixed(1)}% EV at ${pick.clockLabel}`);
-        }
         for (const pick of night.picks.filter((candidate) => candidate.gameId === game.id && !candidate.result)) {
           const latest = currentStat(boxScore, pick);
           if (latest !== null && latest !== pick.latestValue) {
@@ -264,6 +246,28 @@ async function main(): Promise<void> {
             changedSinceCommit = true;
           }
         }
+        const clock = parseGameClock(boxScore.status, boxScore.time, boxScore.period);
+        const checkpoint = checkpointFor(clock);
+        const taken = (night.checkpointsTaken ??= {})[String(game.id)] ?? [];
+        if (!checkpoint || taken.includes(checkpoint)) continue; // props are only read at the breaks, which also saves calls
+        openingOdds ??= await client.getAllPages<BdlBettingOdd>("/nba/v2/odds/opening", { "dates[]": [today] }).catch(() => []);
+        if (!openingProps.has(game.id)) openingProps.set(game.id, (await client.get<{ data: BdlPlayerProp[] }>("/nba/v2/odds/player_props/opening", { game_id: game.id }).catch(() => ({ data: [] }))).data ?? []);
+        const boxPlayers = [...boxScore.home_team.players, ...boxScore.visitor_team.players];
+        if (!profilesByGame.has(game.id)) profilesByGame.set(game.id, await quarterProfiles(engine, boxPlayers.map((boxPlayer) => boxPlayer.player.id), 10));
+        const liveOdds = await client.getAllPages<BdlBettingOdd>("/nba/v2/odds", { "dates[]": [today] });
+        const props = (await client.get<{ data: BdlPlayerProp[] }>("/nba/v2/odds/player_props", { game_id: game.id })).data ?? [];
+        if (props.length === 0) continue; // books can pull props during a break: try again next check while it is still the break
+        const plays = (await client.get<{ data: BdlPlay[] }>("/nba/v1/plays", { game_id: game.id }).catch(() => ({ data: [] as BdlPlay[] }))).data ?? [];
+        const activity = plays.length > 0 ? parseLivePlays(plays, boxPlayers.map((boxPlayer) => ({ id: boxPlayer.player.id, name: `${boxPlayer.player.first_name} ${boxPlayer.player.last_name}` }))) : null;
+        const market = readLiveMarket(liveOdds.filter((bettingOdd) => bettingOdd.game_id === game.id), openingOdds.filter((bettingOdd) => bettingOdd.game_id === game.id), boxScore.home_team_score + boxScore.visitor_team_score, timeShares(clock, { 1: 0.25, 2: 0.25, 3: 0.25, 4: 0.25 }).remainingClock, game.datetime);
+        const { rows } = buildLivePropRows(boxScore, props, openingProps.get(game.id) ?? [], profilesByGame.get(game.id)!, liveBetMinimumEvPercent, { activity, shotProfiles: null, market });
+        const candidates = rows.map((row) => pickFromRow(row, boxScore, game.id, today, clock, nowIso)).filter((pick): pick is LiveBetPick => pick !== null);
+        const chosen = selectCheckpointPicks(candidates, checkpoint, new Set(night.picks.map((pick) => pick.pickId)));
+        night.picks.push(...chosen);
+        night.checkpointsTaken[String(game.id)] = [...taken, checkpoint];
+        changedSinceCommit = true;
+        log(`${matchupOf(game)} ${checkpointLabels[checkpoint]}: ${chosen.length} picks from ${candidates.length} edges`);
+        for (const pick of chosen) log(`  ${pick.playerName} ${pick.side} ${pick.line} ${pick.label} ${pick.americanOdds} (${pick.vendor}) ${pick.evPercent.toFixed(1)}% EV`);
       }
       const newlyFinal = new Set(scheduleNow.filter((game) => isGameFinal(game) && !gradedGames.has(game.id)).map((game) => game.id));
       if (newlyFinal.size > 0 && (await gradeNight(client, night, newlyFinal))) changedSinceCommit = true;
