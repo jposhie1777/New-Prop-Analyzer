@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { SyncSettingRow } from "@/components/SyncSettingRow";
 import { useEffect, useState } from "react";
 import { availableBooks } from "@/lib/client/bookFilter";
 import { Segmented } from "@/components/Segmented";
@@ -62,6 +63,7 @@ export default function SettingsPage() {
             label="Live props layout"
           />
         </div>
+        <SyncSettingRow />
         <Link href="/costs" className="setting-row">
           <div>
             <span className="strong">Costs</span>

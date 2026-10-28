@@ -65,6 +65,10 @@ export function selectedOffer(pick: SlipPick, defaultBook: string): SlipOffer | 
   return (preferred ? pick.offers.find((offer) => offer.vendor === preferred) : null) ?? bestOffer(pick); // chosen book, else default book, else best price
 }
 
+export function replaceSlip(picks: SlipPick[]): void {
+  writeSlip(picks.filter((pick) => pick && typeof pick.pickId === "string" && Array.isArray(pick.offers))); // a slip saved on another device
+}
+
 export function clearSlip(): void {
   writeSlip([]);
 }

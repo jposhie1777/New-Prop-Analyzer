@@ -1,8 +1,9 @@
 "use client";
 
+import { useSnapshotOrQuery } from "./siteSnapshot";
 import { useEffect, useMemo } from "react";
 import { booksKey } from "./bookFilter";
-import { useAnalyticsQuery, useSettings, useVisiblePolling } from "./hooks";
+import { useSettings, useVisiblePolling } from "./hooks";
 import { loadProps } from "./slateData";
 import { quarterProfiles } from "@/lib/analytics/aggregates/playerAggregates";
 import { buildLivePropRows, type LivePropRow } from "@/lib/analytics/liveSuggestions";
@@ -41,10 +42,10 @@ export function useLivePropData(game: BdlGame, boxScore: BdlBoxScore | null, act
   const props = useVisiblePolling(active ? () => loadProps(game.id, false, settings.enabledBooks) : null, 60_000, `live-props:${game.id}:${booksKey(settings.enabledBooks)}:${active}`); // live lines, 60s like the CDN cache
   const openingProps = useVisiblePolling(active ? () => loadProps(game.id, true) : null, 600_000, `opening-props:${game.id}:${active}`); // pregame lines from every book anchor the projection
   const playerIds = boxScore ? [...boxScore.home_team.players, ...boxScore.visitor_team.players].map((boxPlayer) => boxPlayer.player.id) : [];
-  const profiles = useAnalyticsQuery(active && playerIds.length > 0 ? (handle) => quarterProfiles(handle.engine, playerIds, 10) : null, `quarters:${game.id}:${playerIds.length}`);
+  const profiles = useSnapshotOrQuery((snapshot) => snapshot.quarterProfiles, active && playerIds.length > 0 ? (handle) => quarterProfiles(handle.engine, playerIds, 10) : null, `quarters:${game.id}:${playerIds.length}`);
   const plays = useVisiblePolling(active ? async () => (await fetchApi<ListResponse<BdlPlay>>(`/api/plays?game_id=${game.id}`)).data ?? [] : null, 60_000, `plays:${game.id}:${active}`); // who is on the floor, fouls, shot locations
   const teamIds = [game.home_team.id, game.visitor_team.id];
-  const recentGames = useAnalyticsQuery(active ? (handle) => recentTeamGameIds(handle.engine, teamIds, 10) : null, `recent-games:${game.id}:${active}`);
+  const recentGames = useSnapshotOrQuery((snapshot) => snapshot.recentTeamGameIds, active ? (handle) => recentTeamGameIds(handle.engine, teamIds, 10) : null, `recent-games:${game.id}:${active}`);
   const recentKey = recentGames.result ? [...recentGames.result].map(([teamId, gameIds]) => `${teamId}:${gameIds.join(".")}`).join("|") : "";
   const shotCharts = useVisiblePolling(active && recentGames.result ? () => loadShotCharts(recentGames.result!) : null, null, `shot-charts:${recentKey}`); // finished games, fetched once
   const shotProfiles = useMemo(() => (shotCharts.data ? buildShotProfiles(shotCharts.data) : null), [shotCharts.data]);

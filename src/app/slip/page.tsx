@@ -14,6 +14,7 @@ import { formatNumber, formatPercent, formatSigned } from "@/lib/client/format";
 import { appSettings } from "@/config/appSettings";
 import { readLocalJson, writeLocalJson } from "@/lib/client/safeStorage";
 import { filterByBooks } from "@/lib/client/bookFilter";
+import { GamblyCard } from "@/components/slip/GamblyCard";
 
 const shortBookNames: Record<string, string> = { draftkings: "DK", fanduel: "FD", betmgm: "MGM", caesars: "CZR", betrivers: "BR", espnbet: "ESPN", fanatics: "FAN", betway: "BWY", ballybet: "BALLY", betparx: "PARX", rebet: "REBET" };
 
@@ -216,6 +217,8 @@ export default function SlipPage() {
           ))}
         </div>
       ) : null}
+
+      {picks.length > 0 ? <GamblyCard picks={picks} parlayVendor={activeParlay?.vendor ?? null} defaultBook={settings.defaultBook} copyText={copyText} /> : null}
 
       {picks.length > 1 ? (
         <section className="card" style={{ marginTop: 12 }}>

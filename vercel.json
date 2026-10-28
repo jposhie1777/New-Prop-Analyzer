@@ -1,7 +1,8 @@
 {
   "git": {
     "deploymentEnabled": {
-      "live-data": false
+      "live-data": false,
+      "site-data": false
     }
   }
 }
