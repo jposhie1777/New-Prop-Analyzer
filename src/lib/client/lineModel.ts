@@ -1,14 +1,16 @@
 "use client";
 
-import { useEffect } from "react";
-import { useAnalyticsQuery, useSettings, type PolledData } from "./hooks";
+import { useEffect, useState, useSyncExternalStore } from "react";
+import { useAnalytics, useAnalyticsQuery, useSettings, type PolledData } from "./hooks";
 import { fetchApi } from "./apiClient";
 import type { SlateData } from "./slateData";
 import { groupOddsByGame } from "@/lib/odds/consensus";
 import { injuredScorers, teamRatings, type InjuredScorer, type LeagueRatings, type TeamRating } from "@/lib/analytics/aggregates/teamRatings";
 import { teamRest, type RestInfo } from "@/lib/analytics/aggregates/teamAggregates";
-import { evaluateGameLines, injuryReplacementShare, injuryWeight, projectGame, type GameProjection, type InjuryImpact, type LineEdge } from "@/lib/analytics/gameModel";
-import { trackPicks, upsertPicks } from "@/lib/tracking/trackerStore";
+import { evaluateGameLines, injuryReplacementShare, injuryWeight, marketConsensus, projectGame, type GameProjection, type InjuryImpact, type LineEdge } from "@/lib/analytics/gameModel";
+import { applyLearning, learnParameters, type LearnedLine, type LearnedParameters, type LineSample } from "@/lib/analytics/lineLearning";
+import { trackPicks } from "@/lib/tracking/trackerStore";
+import { addLinePicks, ensureLineStoreLoaded, linePicksSnapshot, readLineSamples, saveLineSamples, subscribeLineStore, upsertLinePicks } from "./lineStore";
 import { lineEdgeToTracked, modelLineToTracked } from "@/lib/tracking/fromSources";
 import type { TrackedPick } from "@/lib/tracking/tracker";
 import type { AnalyticsEngine } from "@/lib/analytics/engine";
@@ -23,8 +25,10 @@ const injuryMinimumMinutes = 15; // bench players barely move a team total
 
 export interface GameAnalysis {
   game: BdlGame;
-  projection: GameProjection;
-  edges: LineEdge[];
+  projection: GameProjection; // the original model
+  learned: LearnedLine; // after bias, market trust and outcome spread learned from past games
+  edges: LineEdge[]; // learned edges: what the page shows and flags
+  originalEdges: LineEdge[];
   home: TeamRating;
   away: TeamRating;
   homeRest: RestInfo | undefined;
@@ -78,17 +82,51 @@ export function modelTags(edge: LineEdge, projection: GameProjection, leaguePace
   return tags;
 }
 
-export function modelPicksFor(analysis: Pick<GameAnalysis, "projection" | "edges" | "homeRest" | "awayRest">, gameId: number, gameDate: string, leaguePace: number, backtest: boolean): NewTracked[] {
-  const backToBack = Boolean(analysis.homeRest?.backToBack || analysis.awayRest?.backToBack);
+export function modelPicksFor(projection: GameProjection, edges: LineEdge[], projected: { margin: number; total: number }, rest: { homeRest: RestInfo | undefined; awayRest: RestInfo | undefined }, gameId: number, gameDate: string, leaguePace: number, backtest: boolean, version: "model" | "learned"): NewTracked[] {
+  const backToBack = Boolean(rest.homeRest?.backToBack || rest.awayRest?.backToBack);
   return (["spread", "total", "moneyline"] as const).flatMap((market) => {
-    const best = analysis.edges.filter((edge) => edge.market === market).sort((first, second) => second.evPercent - first.evPercent)[0]; // the model's side is the one it likes more at the best price
+    const best = edges.filter((edge) => edge.market === market).sort((first, second) => second.evPercent - first.evPercent)[0]; // the model's side is the one it likes more at the best price
     if (!best) return [];
-    const projectedValue = market === "total" ? analysis.projection.total : analysis.projection.margin;
-    return [modelLineToTracked(best, projectedValue, modelTags(best, analysis.projection, leaguePace, { backToBack, backtest }), gameId, gameDate)];
+    const projectedValue = market === "total" ? projected.total : projected.margin;
+    return [modelLineToTracked(best, projectedValue, modelTags(best, projection, leaguePace, { backToBack, backtest }), gameId, gameDate, version)];
   });
 }
 
-export function useLineAnalyses(slate: PolledData<SlateData>): { analyses: GameAnalysis[]; ratings: LeagueRatings | null; ratingsLoading: boolean; gamesAhead: number; startedCount: number } {
+function learnedForOdds(projection: GameProjection, odds: BdlBettingOdd[], parameters: LearnedParameters): LearnedLine {
+  const consensus = marketConsensus(odds);
+  return applyLearning(projection, { margin: consensus.spreadHome === null ? null : -consensus.spreadHome, total: consensus.total }, parameters);
+}
+
+export function useLinePicks(): TrackedPick[] {
+  return useSyncExternalStore(subscribeLineStore, linePicksSnapshot, linePicksSnapshot);
+}
+
+let historySyncStarted = false; // once per visit is enough: it only fills finished days
+
+export function useLearnedParameters(): { parameters: LearnedParameters; samples: LineSample[] } {
+  const { handle } = useAnalytics();
+  const settings = useSettings();
+  const [samples, setSamples] = useState<LineSample[]>([]);
+  useEffect(() => {
+    let cancelled = false;
+    readLineSamples().then((stored) => !cancelled && setSamples(stored));
+    if (handle && !historySyncStarted) {
+      historySyncStarted = true;
+      syncLineHistory(handle.engine, appSettings.currentSeason, settings.evThresholdPercent, () => undefined)
+        .then(() => readLineSamples())
+        .then((stored) => !cancelled && setSamples(stored))
+        .catch(() => {
+          historySyncStarted = false; // try again on the next visit
+        });
+    }
+    return () => {
+      cancelled = true;
+    };
+  }, [handle]); // eslint-disable-line react-hooks/exhaustive-deps
+  return { parameters: learnParameters(samples), samples };
+}
+
+export function useLineAnalyses(slate: PolledData<SlateData>): { analyses: GameAnalysis[]; ratings: LeagueRatings | null; ratingsLoading: boolean; gamesAhead: number; startedCount: number; parameters: LearnedParameters } {
   const settings = useSettings();
   const today = todayEastern();
   const games = (slate.data?.games ?? []).filter((game) => !isGameFinal(game) && !isGameLive(game)); // the model is pregame only
@@ -98,6 +136,7 @@ export function useLineAnalyses(slate: PolledData<SlateData>): { analyses: GameA
   const ratings = useAnalyticsQuery((handle) => teamRatings(handle.engine, appSettings.currentSeason), `ratings:${today}`);
   const rest = useAnalyticsQuery(teamIds.length > 0 ? (handle) => teamRest(handle.engine, teamIds, today) : null, `lines-rest:${today}:${teamIds.join(",")}`);
   const scorers = useAnalyticsQuery(injuredIds.length > 0 ? (handle) => injuredScorers(handle.engine, injuredIds, appSettings.currentSeason) : null, `lines-injuries:${injuredIds.join(",")}`);
+  const { parameters } = useLearnedParameters();
   const oddsByGame = groupOddsByGame(slate.data?.odds ?? []);
   const analyses: GameAnalysis[] = [];
   if (ratings.result) {
@@ -107,21 +146,29 @@ export function useLineAnalyses(slate: PolledData<SlateData>): { analyses: GameA
       if (!home || !away) continue;
       const homeRest = rest.result?.get(game.home_team.id);
       const awayRest = rest.result?.get(game.visitor_team.id);
+      const gameOdds = oddsByGame.get(game.id) ?? [];
       const projection = projectGame(home, away, ratings.result, { homeRest, awayRest, homeInjuries: injuriesFor(game.home_team.id, injuries, scorers.result), awayInjuries: injuriesFor(game.visitor_team.id, injuries, scorers.result) });
-      const edges = evaluateGameLines(projection, oddsByGame.get(game.id) ?? [], game.home_team.abbreviation, game.visitor_team.abbreviation, settings.evThresholdPercent);
-      analyses.push({ game, projection, edges, home, away, homeRest, awayRest, bestEv: Math.max(-Infinity, ...edges.filter((edge) => edge.flagged).map((edge) => edge.evPercent)) });
+      const learned = learnedForOdds(projection, gameOdds, parameters);
+      const originalEdges = evaluateGameLines(projection, gameOdds, game.home_team.abbreviation, game.visitor_team.abbreviation, settings.evThresholdPercent);
+      const edges = evaluateGameLines(learned, gameOdds, game.home_team.abbreviation, game.visitor_team.abbreviation, settings.evThresholdPercent, { margin: learned.marginDeviation, total: learned.totalDeviation });
+      analyses.push({ game, projection, learned, edges, originalEdges, home, away, homeRest, awayRest, bestEv: Math.max(-Infinity, ...edges.filter((edge) => edge.flagged).map((edge) => edge.evPercent)) });
     }
   }
   analyses.sort((first, second) => second.bestEv - first.bestEv || (first.game.datetime ?? "").localeCompare(second.game.datetime ?? ""));
   const ready = Boolean(ratings.result) && (teamIds.length === 0 || Boolean(rest.result)) && (injuredIds.length === 0 || Boolean(scorers.result)); // wait for every input so a snapshot is never half-built
-  const snapshotKey = ready ? analyses.map((analysis) => `${analysis.game.id}:${analysis.edges.map((edge) => `${edge.selection}${edge.line}${edge.americanOdds}`).join("")}:${analysis.projection.margin.toFixed(1)}`).join("|") : "";
+  const snapshotKey = ready ? `${parameters.sampleCount}|` + analyses.map((analysis) => `${analysis.game.id}:${analysis.edges.map((edge) => `${edge.selection}${edge.line}${edge.americanOdds}`).join("")}:${analysis.projection.margin.toFixed(1)}`).join("|") : "";
   useEffect(() => {
     if (!snapshotKey || !ratings.result) return;
     const leaguePace = ratings.result.pace;
     trackPicks(analyses.flatMap((analysis) => analysis.edges.filter((edge) => edge.flagged).map((edge) => lineEdgeToTracked(edge, analysis.game.id, analysis.game.date)))); // flagged edges keep their first price
-    upsertPicks(analyses.flatMap((analysis) => modelPicksFor(analysis, analysis.game.id, analysis.game.date, leaguePace, false))); // the model record keeps the last line before tip-off
+    void upsertLinePicks(
+      analyses.flatMap((analysis) => [
+        ...modelPicksFor(analysis.projection, analysis.originalEdges, analysis.projection, analysis, analysis.game.id, analysis.game.date, leaguePace, false, "model"),
+        ...modelPicksFor(analysis.projection, analysis.edges, analysis.learned, analysis, analysis.game.id, analysis.game.date, leaguePace, false, "learned"),
+      ]),
+    ); // both versions keep the last line seen before tip-off
   }, [snapshotKey]); // eslint-disable-line react-hooks/exhaustive-deps
-  return { analyses, ratings: ratings.result, ratingsLoading: ratings.loading, gamesAhead: games.length, startedCount: (slate.data?.games ?? []).length - games.length };
+  return { analyses, ratings: ratings.result, ratingsLoading: ratings.loading, gamesAhead: games.length, startedCount: (slate.data?.games ?? []).length - games.length, parameters };
 }
 
 export interface BacktestProgress {
@@ -130,17 +177,21 @@ export interface BacktestProgress {
   picks: number;
 }
 
-export async function backtestSeason(engine: AnalyticsEngine, season: number, evThresholdPercent: number, knownTrackIds: Set<string>, onProgress: (progress: BacktestProgress) => void): Promise<NewTracked[]> {
+export async function syncLineHistory(engine: AnalyticsEngine, season: number, evThresholdPercent: number, onProgress: (progress: BacktestProgress) => void): Promise<number> {
+  await ensureLineStoreLoaded();
   const today = todayEastern();
-  const gameRows = await engine.query<{ game_id: number; game_date: string; home_team_id: number; visitor_team_id: number }>(
-    `SELECT game_id, game_date, home_team_id, visitor_team_id FROM games WHERE season = ${sqlNumber(season)} AND game_date < ${sqlString(today)} AND postseason IS NOT TRUE ORDER BY game_date, game_id`,
+  const gameRows = await engine.query<{ game_id: number; game_date: string; home_team_id: number; visitor_team_id: number; home_score: number | null; visitor_score: number | null }>(
+    `SELECT game_id, game_date, home_team_id, visitor_team_id, home_score, visitor_score FROM games WHERE season = ${sqlNumber(season)} AND game_date < ${sqlString(today)} AND postseason IS NOT TRUE ORDER BY game_date, game_id`,
   );
-  const pendingRows = gameRows.filter((gameRow) => !["spread", "total", "moneyline"].every((market) => knownTrackIds.has(`model-${gameRow.game_id}-${market}`)));
-  const dates = [...new Set(pendingRows.map((gameRow) => String(gameRow.game_date)))];
-  const picks: NewTracked[] = [];
-  onProgress({ totalDates: dates.length, completedDates: 0, picks: 0 });
-  for (const [dateIndex, gameDate] of dates.entries()) {
-    const dayRows = pendingRows.filter((gameRow) => String(gameRow.game_date) === gameDate);
+  const samples = await readLineSamples();
+  const sampledIds = new Set(samples.map((sample) => sample.gameId));
+  const pickIds = new Set(linePicksSnapshot().map((pick) => pick.trackId));
+  const isDone = (gameId: number) => sampledIds.has(gameId) && ["model", "learned"].every((version) => ["spread", "total", "moneyline"].every((market) => pickIds.has(`${version}-${gameId}-${market}`)));
+  const pendingDates = [...new Set(gameRows.filter((gameRow) => !isDone(Number(gameRow.game_id))).map((gameRow) => String(gameRow.game_date)))];
+  let added = 0;
+  onProgress({ totalDates: pendingDates.length, completedDates: 0, picks: 0 });
+  for (const [dateIndex, gameDate] of pendingDates.entries()) {
+    const dayRows = gameRows.filter((gameRow) => String(gameRow.game_date) === gameDate);
     const ratings = await teamRatings(engine, season, gameDate); // only games before that day
     const rest = await teamRest(engine, dayRows.flatMap((gameRow) => [Number(gameRow.home_team_id), Number(gameRow.visitor_team_id)]), gameDate);
     let odds: BdlBettingOdd[] = [];
@@ -150,20 +201,47 @@ export async function backtestSeason(engine: AnalyticsEngine, season: number, ev
       odds = [];
     }
     const oddsByGame = groupOddsByGame(odds);
+    const parameters = learnParameters(samples, gameDate); // walk forward: learn only from earlier days
+    const daySamples: LineSample[] = [];
+    const dayPicks: NewTracked[] = [];
     for (const gameRow of dayRows) {
+      const gameId = Number(gameRow.game_id);
       const homeId = Number(gameRow.home_team_id);
       const awayId = Number(gameRow.visitor_team_id);
       const home = ratings.teams.get(homeId);
       const away = ratings.teams.get(awayId);
-      const gameOdds = oddsByGame.get(Number(gameRow.game_id)) ?? [];
-      if (!home || !away || gameOdds.length === 0) continue;
+      if (!home || !away || gameRow.home_score === null || gameRow.visitor_score === null) continue;
       const homeRest = rest.get(homeId);
       const awayRest = rest.get(awayId);
       const projection = projectGame(home, away, ratings, { homeRest, awayRest, homeInjuries: [], awayInjuries: [] }); // past injury reports are not stored
-      const edges = evaluateGameLines(projection, gameOdds, teamById(homeId)?.abbreviation ?? "HOME", teamById(awayId)?.abbreviation ?? "AWAY", evThresholdPercent);
-      picks.push(...modelPicksFor({ projection, edges, homeRest, awayRest }, Number(gameRow.game_id), gameDate, ratings.pace, true).filter((pick) => !knownTrackIds.has(pick.trackId)));
+      const gameOdds = oddsByGame.get(gameId) ?? [];
+      const consensus = marketConsensus(gameOdds);
+      daySamples.push({
+        gameId,
+        gameDate,
+        season,
+        modelMargin: projection.margin,
+        modelTotal: projection.total,
+        marketMargin: consensus.spreadHome === null ? null : -consensus.spreadHome,
+        marketTotal: consensus.total,
+        actualMargin: Number(gameRow.home_score) - Number(gameRow.visitor_score),
+        actualTotal: Number(gameRow.home_score) + Number(gameRow.visitor_score),
+      });
+      if (gameOdds.length === 0) continue;
+      const homeAbbreviation = teamById(homeId)?.abbreviation ?? "HOME";
+      const awayAbbreviation = teamById(awayId)?.abbreviation ?? "AWAY";
+      const learned = applyLearning(projection, { margin: consensus.spreadHome === null ? null : -consensus.spreadHome, total: consensus.total }, parameters);
+      const originalEdges = evaluateGameLines(projection, gameOdds, homeAbbreviation, awayAbbreviation, evThresholdPercent);
+      const learnedEdges = evaluateGameLines(learned, gameOdds, homeAbbreviation, awayAbbreviation, evThresholdPercent, { margin: learned.marginDeviation, total: learned.totalDeviation });
+      dayPicks.push(...modelPicksFor(projection, originalEdges, projection, { homeRest, awayRest }, gameId, gameDate, ratings.pace, true, "model"));
+      dayPicks.push(...modelPicksFor(projection, learnedEdges, learned, { homeRest, awayRest }, gameId, gameDate, ratings.pace, true, "learned"));
     }
-    onProgress({ totalDates: dates.length, completedDates: dateIndex + 1, picks: picks.length });
+    const freshSamples = daySamples.filter((sample) => !sampledIds.has(sample.gameId));
+    samples.push(...freshSamples); // added after the whole day, so same-day games never learn from each other
+    freshSamples.forEach((sample) => sampledIds.add(sample.gameId));
+    await saveLineSamples(freshSamples);
+    added += await addLinePicks(dayPicks); // picks saved live before tip-off are never replaced
+    onProgress({ totalDates: pendingDates.length, completedDates: dateIndex + 1, picks: added });
   }
-  return picks;
+  return added;
 }

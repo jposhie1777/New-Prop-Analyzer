@@ -54,7 +54,7 @@ export default function RecordPage() {
     };
   }, [handle, tracked.length]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const ownPicks = useMemo(() => tracked.filter((pick) => pick.source !== "model"), [tracked]); // the Lines model's every-game record has its own section
+  const ownPicks = useMemo(() => tracked.filter((pick) => pick.source !== "model" && pick.source !== "learned"), [tracked]); // the Lines model's every-game record has its own section
   const filtered = useMemo(() => (sourceFilter === "all" ? ownPicks : ownPicks.filter((pick) => pick.source === sourceFilter)), [ownPicks, sourceFilter]);
   const summary = summarizeRecord(filtered);
   const bySource = groupBy(ownPicks, (pick) => pick.source);
@@ -243,7 +243,7 @@ export default function RecordPage() {
           </div>
         </section>
       </div>
-      <LinesModelRecord tracked={tracked} handle={handle} />
+      <LinesModelRecord handle={handle} />
       <section className="card" style={{ marginTop: 12 }}>
         <div className="card-header">
           <h2>Picks</h2>
