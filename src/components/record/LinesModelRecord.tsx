@@ -5,10 +5,10 @@ import { Segmented } from "@/components/Segmented";
 import { useSettings } from "@/lib/client/hooks";
 import { summarizeRecord, type RecordSummary, type TrackedPick } from "@/lib/tracking/tracker";
 import { dailyRecords, inRecordWindow, minimumGradedForVerdict, modelMarketLabels, modelMarkets, projectionAccuracy, recordWindowLabels, strengthsAndWeaknesses, tagRecords, type ModelMarket, type RecordWindow, type Verdict } from "@/lib/tracking/modelRecord";
-import { syncLineHistory, useLearnedParameters, useLinePicks, type BacktestProgress } from "@/lib/client/lineModel";
+import { historyOptions, syncLineHistory, useLearnedParameters, useLinePicks, type BacktestProgress } from "@/lib/client/lineModel";
 import { saveLinePickGrades } from "@/lib/client/lineStore";
 import { gradePendingPicks } from "@/lib/tracking/grader";
-import type { LearnedParameters } from "@/lib/analytics/lineLearning";
+import { learningPriors, type LearnedParameters } from "@/lib/analytics/lineLearning";
 import type { AnalyticsHandle } from "@/lib/client/analyticsStore";
 import { formatNumber, formatPercent, formatSigned } from "@/lib/client/format";
 import { appSettings } from "@/config/appSettings";
@@ -47,7 +47,7 @@ function VerdictLine({ verdict }: { verdict: Verdict }) {
 }
 
 function LearningStatus({ parameters }: { parameters: LearnedParameters }) {
-  if (parameters.sampleCount === 0) return <p className="faint small">No finished games learned from yet. The learned model starts out leaning 35% on the model and 65% on the market.</p>;
+  if (parameters.sampleCount === 0) return <p className="faint small">No finished games learned from yet. The learned model starts out leaning {Math.round(learningPriors.trust * 100)}% on the model and {100 - Math.round(learningPriors.trust * 100)}% on the market.</p>;
   return (
     <div className="learning-status">
       <div>
@@ -118,7 +118,7 @@ export function LinesModelRecord({ handle }: { handle: AnalyticsHandle | null })
     if (!handle) return;
     setBacktestMessage(null);
     try {
-      const added = await syncLineHistory(handle.engine, season, settings.evThresholdPercent, setProgress);
+      const added = await syncLineHistory(handle.engine, season, historyOptions(settings), setProgress);
       setBacktestMessage(added > 0 ? `Added ${added} backtest picks (both versions). They are graded below and tagged "Backtest".` : "Up to date: every finished game this season is already in the record.");
     } catch (caughtError) {
       setBacktestMessage(`Backtest failed: ${caughtError instanceof Error ? caughtError.message : String(caughtError)}`);

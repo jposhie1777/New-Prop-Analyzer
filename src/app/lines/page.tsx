@@ -8,8 +8,8 @@ import { useSlate } from "@/lib/client/slateData";
 import { useLineAnalyses, type GameAnalysis } from "@/lib/client/lineModel";
 import { groupOddsByGame } from "@/lib/odds/consensus";
 import type { LeagueRatings, TeamRating } from "@/lib/analytics/aggregates/teamRatings";
-import { homeCourtPoints, injuryReplacementShare, type LineEdge } from "@/lib/analytics/gameModel";
-import type { LearnedParameters } from "@/lib/analytics/lineLearning";
+import { homeCourtPoints, implausibleEvPercent, injuryReplacementShare, marginDeviation, totalDeviation, type LineEdge } from "@/lib/analytics/gameModel";
+import { learningPriors, type LearnedParameters } from "@/lib/analytics/lineLearning";
 import { buildGamePick } from "@/lib/client/pickBuilders";
 import { formatTipoff } from "@/lib/dates";
 import { formatNumber, formatPercent, formatSigned } from "@/lib/client/format";
@@ -51,8 +51,8 @@ function EdgeRow({ edge, game, odds }: { edge: LineEdge; game: BdlGame; odds: Bd
         <span className="faint small">Market {edge.marketText}</span>
       </div>
       <div className="line-edge-pick">
-        <PriceButton pick={pick} sideLabel={edge.sideLabel} odds={edge.americanOdds} vendor={edge.vendor} note={`${formatSigned(edge.evPercent, 1)}% EV · ${formatPercent(edge.modelProbability, 0)}`} highlight={edge.flagged} />
-        {edge.tooFar ? <span className="warning-text small">Far from market: check news</span> : null}
+        <PriceButton pick={pick} sideLabel={edge.sideLabel} odds={edge.americanOdds} vendor={edge.vendor} note={edge.evPercent >= implausibleEvPercent ? "EV hidden" : `${formatSigned(edge.evPercent, 1)}% EV · ${formatPercent(edge.modelProbability, 0)}`} highlight={edge.flagged} />
+        {edge.tooFar ? <span className="warning-text small">{edge.evPercent >= implausibleEvPercent ? "Too good to be true: check news" : "Far from market: check news"}</span> : null}
       </div>
     </div>
   );
@@ -148,7 +148,7 @@ export default function LinesPage() {
         <div>
           <h1>Lines</h1>
           <p>
-            Model spreads, totals and moneylines vs. the books. {flaggedEdges.length} edge{flaggedEdges.length === 1 ? "" : "s"} at {settings.evThresholdPercent}%+ EV.
+            Learned model spreads, totals and moneylines vs. the books. {flaggedEdges.length} edge{flaggedEdges.length === 1 ? "" : "s"} at {settings.evThresholdPercent}%+ EV.
           </p>
         </div>
         <BooksIndicator />
@@ -165,7 +165,7 @@ export default function LinesPage() {
       <details className="card" style={{ marginTop: 12 }}>
         <summary className="expand-hint">How the model works</summary>
         <p className="faint small">
-          Pace = home pace × away pace ÷ league pace. Each side scores pace × (its offense × the other defense ÷ league average) per 100 possessions. Then: home court +{homeCourtPoints}, a back-to-back costs 1.5 points of margin (and a little total), a rest edge of 2+ days adds 0.5, and each recent regular listed out, doubtful or questionable costs part of his scoring (teammates absorb about {Math.round(injuryReplacementShare * 100)}%). Learning: after each finished game the model compares itself with the opening line and the final score. It removes steady biases, learns how much of its disagreement with the market turned out right (that share is its trust; the rest comes from the market), and learns how widely results land around its line, which sets the cover and win chances. It only learns from earlier days, and small samples lean on the starting values (35% trust, 12.5 and 17 point spreads). EV uses each book&apos;s own line and price; green is at or above your threshold. When the model is more than 6 points (spread), 10 points (total) or 15% (moneyline) from the market it usually means news it has not seen, so those are never flagged. Markets are sharp: treat edges as leads, not locks.
+          Pace = home pace × away pace ÷ league pace. Each side scores pace × (its offense × the other defense ÷ league average) per 100 possessions. Then: home court +{homeCourtPoints}, a back-to-back costs 1.5 points of margin (and a little total), a rest edge of 2+ days adds 0.5, and each recent regular listed out, doubtful or questionable costs part of his scoring (teammates absorb about {Math.round(injuryReplacementShare * 100)}%). Learning: after each finished game the model compares itself with the opening line and the final score. It removes steady biases, learns how much of its disagreement with the market turned out right (that share is its trust; the rest comes from the market), and learns how widely results land around its line, which sets the cover and win chances. It only learns from earlier days, and small samples lean on the starting values ({Math.round(learningPriors.trust * 100)}% trust, {marginDeviation} and {totalDeviation} point spreads). EV uses each book&apos;s own line and price; green is at or above your threshold. When the model is more than 6 points (spread), 10 points (total) or 15% (moneyline) from the market it usually means news it has not seen, so those are never flagged; neither is any edge of {implausibleEvPercent}%+ EV, which is almost always missing news or a stale line. Markets are sharp: treat edges as leads, not locks.
         </p>
       </details>
     </main>

@@ -1,5 +1,5 @@
 import type { AnalyticsEngine } from "@/lib/analytics/engine";
-import { sqlNumberList } from "@/lib/analytics/engine";
+import { sqlNumberList, sqlString } from "@/lib/analytics/engine";
 import { readWindowSummary, windowFilter, windowNames, windowedAggregateColumns, type MetricSummary, type WindowName } from "./windows";
 import { probabilityAtLeast } from "@/lib/math/probability";
 import { appSettings } from "@/config/appSettings";
@@ -16,7 +16,7 @@ export interface ThreeQuarterSeasonProfile {
   fullGamePoints: number;
 }
 
-export async function threeQuarterProfiles(engine: AnalyticsEngine, teamIds: number[], seasons: number[]): Promise<ThreeQuarterSeasonProfile[]> {
+export async function threeQuarterProfiles(engine: AnalyticsEngine, teamIds: number[], seasons: number[], beforeDate: string | null = null): Promise<ThreeQuarterSeasonProfile[]> {
   if (teamIds.length === 0) return [];
   const target = appSettings.hundredThroughThreeTarget;
   const hundredColumns = windowNames.flatMap((windowName) => [
@@ -26,7 +26,7 @@ export async function threeQuarterProfiles(engine: AnalyticsEngine, teamIds: num
   const profileRows = await engine.query<Record<string, unknown>>(`
     WITH three_quarters AS (
       SELECT season, game_date, game_id, team_id, points, opp_points FROM team_scope_lines
-      WHERE scope = 'T3' AND team_id IN (${sqlNumberList(teamIds)}) AND season IN (${sqlNumberList(seasons)})
+      WHERE scope = 'T3' AND team_id IN (${sqlNumberList(teamIds)}) AND season IN (${sqlNumberList(seasons)}) ${beforeDate ? `AND game_date < ${sqlString(beforeDate)}` : ""}
     ),
     full_games AS (
       SELECT game_id, team_id, points AS full_points, (possessions + opp_possessions) / 2 * 48 / NULLIF(minutes, 0) AS pace_value FROM team_scope_lines WHERE scope = 'FG'
@@ -89,4 +89,65 @@ export function projectThreeQuarters(impliedTeamTotal: number | null, threeQuart
   if (impliedTeamTotal === null || threeQuarterShare === null) return { projection: null, probability: null, standardDeviation };
   const projection = impliedTeamTotal * threeQuarterShare;
   return { projection, probability: probabilityAtLeast(target, projection, standardDeviation), standardDeviation }; // P(points >= 100) with continuity correction
+}
+
+export const recentRatePriorGames = 10; // L20 rates this early in a season are 1-of-4 style samples, so they lean on last season
+
+export function hundredRate(current: ThreeQuarterSeasonProfile | undefined, previous: ThreeQuarterSeasonProfile | undefined, side: "scored" | "allowed", baseRate: number): number {
+  const hitsOf = (profile: ThreeQuarterSeasonProfile | undefined, windowName: WindowName) => (side === "scored" ? profile?.scoredHundred[windowName] : profile?.allowedHundred[windowName]) ?? 0;
+  const gamesOf = (profile: ThreeQuarterSeasonProfile | undefined, windowName: WindowName) => (side === "scored" ? profile?.scored[windowName]?.games : profile?.allowed[windowName]?.games) ?? 0;
+  const previousGames = gamesOf(previous, "SEASON");
+  const priorRate = previousGames > 0 ? (hitsOf(previous, "SEASON") + recentRatePriorGames * baseRate) / (previousGames + recentRatePriorGames) : baseRate; // last season, itself shrunk toward the base
+  const recentGames = current === previous ? 0 : gamesOf(current, "L20");
+  return (hitsOf(current, "L20") * (recentGames > 0 ? 1 : 0) + recentRatePriorGames * priorRate) / (recentGames + recentRatePriorGames);
+}
+
+export function rateThreeQuarterChance(probability: number, teamScoredRate: number, opponentAllowedRate: number): number {
+  return 0.6 * probability + 0.2 * teamScoredRate + 0.2 * opponentAllowedRate; // the line-based projection leads, recent 100+ history on both sides confirms it
+}
+
+export function selectThreeQuarterRecommendations<RowType extends { rating: number | null }>(rows: RowType[], minimumRating: number, maximumPicks: number): Set<RowType> {
+  return new Set(
+    rows
+      .filter((row) => row.rating !== null && row.rating >= minimumRating)
+      .sort((first, second) => (second.rating ?? 0) - (first.rating ?? 0))
+      .slice(0, maximumPicks),
+  );
+}
+
+export interface TeamThreeQuarterRating {
+  share: ShareEstimate;
+  projection: ThreeQuarterProjection;
+  teamProfile: ThreeQuarterSeasonProfile | undefined;
+  opponentProfile: ThreeQuarterSeasonProfile | undefined;
+  profileSeason: number;
+  teamScoredRate: number;
+  opponentAllowedRate: number;
+  rating: number | null; // before learning
+}
+
+function pickSeasonProfile(profiles: ThreeQuarterSeasonProfile[], teamId: number, currentSeason: number): { current: ThreeQuarterSeasonProfile | undefined; previous: ThreeQuarterSeasonProfile | undefined; shown: ThreeQuarterSeasonProfile | undefined; season: number } {
+  const current = profiles.find((profile) => profile.teamId === teamId && profile.season === currentSeason);
+  const previous = profiles.find((profile) => profile.teamId === teamId && profile.season === currentSeason - 1);
+  if (current && current.scored.SEASON.games > 0) return { current, previous, shown: current, season: currentSeason };
+  return { current, previous, shown: previous, season: currentSeason - 1 }; // no games yet this season
+}
+
+export function rateTeamForGame(profiles: ThreeQuarterSeasonProfile[], teamId: number, opponentId: number, impliedTeamTotal: number | null, currentSeason: number): TeamThreeQuarterRating {
+  const team = pickSeasonProfile(profiles, teamId, currentSeason);
+  const opponent = pickSeasonProfile(profiles, opponentId, currentSeason);
+  const share = estimateThreeQuarterShare(team.current, team.previous);
+  const projection = projectThreeQuarters(impliedTeamTotal, share.share, pickDeviation(team.current, team.previous));
+  const teamScoredRate = hundredRate(team.current, team.previous, "scored", appSettings.hundredThroughThreeBaseRate);
+  const opponentAllowedRate = hundredRate(opponent.current, opponent.previous, "allowed", appSettings.hundredThroughThreeBaseRate);
+  return {
+    share,
+    projection,
+    teamProfile: team.shown,
+    opponentProfile: opponent.shown,
+    profileSeason: team.season,
+    teamScoredRate,
+    opponentAllowedRate,
+    rating: projection.probability === null ? null : rateThreeQuarterChance(projection.probability, teamScoredRate, opponentAllowedRate),
+  };
 }

@@ -6,6 +6,7 @@ import { Segmented } from "@/components/Segmented";
 import { vendorLabel } from "@/lib/odds/deeplinks";
 import { useSettings } from "@/lib/client/hooks";
 import { saveSettings, defaultSettings } from "@/lib/client/settings";
+import { appSettings } from "@/config/appSettings";
 import { deleteFinalsDatabase } from "@/lib/client/idbStore";
 import { resetDeviceUsage } from "@/lib/client/deviceUsage";
 
@@ -100,6 +101,15 @@ export default function SettingsPage() {
             <span className="strong">Halftime EV threshold (%)</span>
             <span className="faint small">Halftime picks at or above this expected value are flagged.</span>
             <input className="input" type="number" step={0.5} min={0} value={settings.evThresholdPercent} onChange={(changeEvent) => saveSettings({ evThresholdPercent: Math.max(0, Number(changeEvent.target.value)) })} />
+          </label>
+          <label className="stack">
+            <span className="strong">100 in 3: minimum learned chance (%)</span>
+            <span className="faint small">Teams rated at or above this are recommended and graded on the Record page. The league-wide rate is about {Math.round(appSettings.hundredThroughThreeBaseRate * 100)}%.</span>
+            <input className="input" type="number" step={1} min={1} max={90} value={settings.threeQuarterMinimumPercent} onChange={(changeEvent) => saveSettings({ threeQuarterMinimumPercent: Math.min(90, Math.max(1, Number(changeEvent.target.value))) })} />
+          </label>
+          <label className="stack">
+            <span className="strong">100 in 3: most picks per day</span>
+            <input className="input" type="number" step={1} min={1} max={10} value={settings.threeQuarterMaxPicks} onChange={(changeEvent) => saveSettings({ threeQuarterMaxPicks: Math.min(10, Math.max(1, Math.round(Number(changeEvent.target.value)))) })} />
           </label>
           <label className="stack">
             <span className="strong">Default wager for coupon links ($)</span>

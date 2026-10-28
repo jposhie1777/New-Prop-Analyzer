@@ -10,8 +10,12 @@ import { teamRest, type RestInfo } from "@/lib/analytics/aggregates/teamAggregat
 import { evaluateGameLines, injuryReplacementShare, injuryWeight, marketConsensus, projectGame, type GameProjection, type InjuryImpact, type LineEdge } from "@/lib/analytics/gameModel";
 import { applyLearning, learnParameters, type LearnedLine, type LearnedParameters, type LineSample } from "@/lib/analytics/lineLearning";
 import { trackPicks } from "@/lib/tracking/trackerStore";
-import { addLinePicks, ensureLineStoreLoaded, linePicksSnapshot, readLineSamples, saveLineSamples, subscribeLineStore, upsertLinePicks } from "./lineStore";
-import { lineEdgeToTracked, modelLineToTracked } from "@/lib/tracking/fromSources";
+import { addLinePicks, ensureLineStoreLoaded, linePicksSnapshot, readLineSamples, readThreeQuarterSamples, saveLineSamples, saveThreeQuarterSamples, subscribeLineStore, upsertLinePicks } from "./lineStore";
+import { rateTeamForGame, selectThreeQuarterRecommendations, threeQuarterProfiles } from "@/lib/analytics/aggregates/threeQuarters";
+import { calibrateRating, learnThreeQuarterCalibration, type ThreeQuarterCalibration, type ThreeQuarterSample } from "@/lib/analytics/threeQuarterLearning";
+import { consensusLine, impliedTeamTotals } from "@/lib/odds/consensus";
+import { readTracked } from "@/lib/tracking/trackerStore";
+import { lineEdgeToTracked, modelLineToTracked, threeQuarterToTracked } from "@/lib/tracking/fromSources";
 import type { TrackedPick } from "@/lib/tracking/tracker";
 import type { AnalyticsEngine } from "@/lib/analytics/engine";
 import { sqlNumber, sqlString } from "@/lib/analytics/engine";
@@ -103,6 +107,22 @@ export function useLinePicks(): TrackedPick[] {
 
 let historySyncStarted = false; // once per visit is enough: it only fills finished days
 
+export function useThreeQuarterCalibration(): ThreeQuarterCalibration {
+  const [samples, setSamples] = useState<ThreeQuarterSample[]>([]);
+  useLearnedParameters(); // starts the history sync if it has not run this visit
+  useEffect(() => {
+    let cancelled = false;
+    const refresh = () => readThreeQuarterSamples().then((stored) => !cancelled && setSamples(stored));
+    void refresh();
+    const unsubscribe = subscribeLineStore(() => void refresh()); // picks up new days once the sync saves them
+    return () => {
+      cancelled = true;
+      unsubscribe();
+    };
+  }, []);
+  return learnThreeQuarterCalibration(samples);
+}
+
 export function useLearnedParameters(): { parameters: LearnedParameters; samples: LineSample[] } {
   const { handle } = useAnalytics();
   const settings = useSettings();
@@ -112,7 +132,7 @@ export function useLearnedParameters(): { parameters: LearnedParameters; samples
     readLineSamples().then((stored) => !cancelled && setSamples(stored));
     if (handle && !historySyncStarted) {
       historySyncStarted = true;
-      syncLineHistory(handle.engine, appSettings.currentSeason, settings.evThresholdPercent, () => undefined)
+      syncLineHistory(handle.engine, appSettings.currentSeason, historyOptions(settings), () => undefined)
         .then(() => readLineSamples())
         .then((stored) => !cancelled && setSamples(stored))
         .catch(() => {
@@ -177,7 +197,48 @@ export interface BacktestProgress {
   picks: number;
 }
 
-export async function syncLineHistory(engine: AnalyticsEngine, season: number, evThresholdPercent: number, onProgress: (progress: BacktestProgress) => void): Promise<number> {
+export interface HistoryOptions {
+  evThresholdPercent: number;
+  threeQuarterMinimumPercent: number;
+  threeQuarterMaxPicks: number;
+}
+
+export function historyOptions(settings: { evThresholdPercent: number; threeQuarterMinimumPercent: number; threeQuarterMaxPicks: number }): HistoryOptions {
+  return { evThresholdPercent: settings.evThresholdPercent, threeQuarterMinimumPercent: settings.threeQuarterMinimumPercent, threeQuarterMaxPicks: settings.threeQuarterMaxPicks };
+}
+
+async function replayThreeQuarters(engine: AnalyticsEngine, season: number, gameDate: string, dayRows: Array<{ game_id: number; home_team_id: number; visitor_team_id: number }>, oddsByGame: Map<number, BdlBettingOdd[]>, threeQuarterSamples: ThreeQuarterSample[], options: HistoryOptions): Promise<ThreeQuarterSample[]> {
+  const teamIds = dayRows.flatMap((gameRow) => [Number(gameRow.home_team_id), Number(gameRow.visitor_team_id)]);
+  const profiles = await threeQuarterProfiles(engine, teamIds, [season, season - 1], gameDate); // only games before that day
+  const actualRows = await engine.query<{ game_id: number; team_id: number; points: number }>(`SELECT game_id, team_id, points FROM team_scope_lines WHERE scope = 'T3' AND game_id IN (${dayRows.map((gameRow) => sqlNumber(gameRow.game_id)).join(", ")})`);
+  const actualByKey = new Map(actualRows.map((actualRow) => [`${actualRow.game_id}-${actualRow.team_id}`, Number(actualRow.points)]));
+  const calibration = learnThreeQuarterCalibration(threeQuarterSamples, gameDate); // walk forward: earlier days only
+  const daySamples: ThreeQuarterSample[] = [];
+  const candidates: Array<{ gameId: number; teamId: number; opponentId: number; chance: number; projection: number }> = [];
+  for (const gameRow of dayRows) {
+    const gameId = Number(gameRow.game_id);
+    const consensus = consensusLine(oddsByGame.get(gameId) ?? []);
+    const implied = impliedTeamTotals(consensus.spreadHome, consensus.total);
+    for (const isHome of [true, false]) {
+      const teamId = Number(isHome ? gameRow.home_team_id : gameRow.visitor_team_id);
+      const opponentId = Number(isHome ? gameRow.visitor_team_id : gameRow.home_team_id);
+      const rated = rateTeamForGame(profiles, teamId, opponentId, isHome ? implied.home : implied.away, season);
+      const actual = actualByKey.get(`${gameId}-${teamId}`);
+      if (rated.rating === null || rated.projection.probability === null || rated.projection.projection === null || actual === undefined) continue;
+      daySamples.push({ sampleKey: `${gameId}-${teamId}`, gameId, teamId, gameDate, season, rating: rated.rating, lineChance: rated.projection.probability, hit: actual >= appSettings.hundredThroughThreeTarget });
+      candidates.push({ gameId, teamId, opponentId, chance: calibrateRating(rated.rating, calibration), projection: rated.projection.projection });
+    }
+  }
+  const alreadyRecorded = readTracked().some((pick) => pick.source === "100-in-3" && pick.gameDate === gameDate); // a day seen live keeps its live picks
+  if (!alreadyRecorded) {
+    const chosen = selectThreeQuarterRecommendations(candidates.map((candidate) => ({ ...candidate, rating: candidate.chance })), options.threeQuarterMinimumPercent / 100, options.threeQuarterMaxPicks);
+    trackPicks([...chosen].map((candidate) => ({ ...threeQuarterToTracked(candidate.gameId, gameDate, candidate.teamId, teamById(candidate.teamId)?.abbreviation ?? "", teamById(candidate.opponentId)?.abbreviation ?? "", candidate.chance, candidate.projection), tags: ["Backtest"] })));
+  }
+  return daySamples;
+}
+
+export async function syncLineHistory(engine: AnalyticsEngine, season: number, options: HistoryOptions, onProgress: (progress: BacktestProgress) => void): Promise<number> {
+  const { evThresholdPercent } = options;
   await ensureLineStoreLoaded();
   const today = todayEastern();
   const gameRows = await engine.query<{ game_id: number; game_date: string; home_team_id: number; visitor_team_id: number; home_score: number | null; visitor_score: number | null }>(
@@ -186,7 +247,9 @@ export async function syncLineHistory(engine: AnalyticsEngine, season: number, e
   const samples = await readLineSamples();
   const sampledIds = new Set(samples.map((sample) => sample.gameId));
   const pickIds = new Set(linePicksSnapshot().map((pick) => pick.trackId));
-  const isDone = (gameId: number) => sampledIds.has(gameId) && ["model", "learned"].every((version) => ["spread", "total", "moneyline"].every((market) => pickIds.has(`${version}-${gameId}-${market}`)));
+  const threeQuarterSamples = await readThreeQuarterSamples();
+  const threeQuarterGames = new Set(threeQuarterSamples.map((sample) => sample.gameId));
+  const isDone = (gameId: number) => sampledIds.has(gameId) && threeQuarterGames.has(gameId) && ["model", "learned"].every((version) => ["spread", "total", "moneyline"].every((market) => pickIds.has(`${version}-${gameId}-${market}`)));
   const pendingDates = [...new Set(gameRows.filter((gameRow) => !isDone(Number(gameRow.game_id))).map((gameRow) => String(gameRow.game_date)))];
   let added = 0;
   onProgress({ totalDates: pendingDates.length, completedDates: 0, picks: 0 });
@@ -236,6 +299,10 @@ export async function syncLineHistory(engine: AnalyticsEngine, season: number, e
       dayPicks.push(...modelPicksFor(projection, originalEdges, projection, { homeRest, awayRest }, gameId, gameDate, ratings.pace, true, "model"));
       dayPicks.push(...modelPicksFor(projection, learnedEdges, learned, { homeRest, awayRest }, gameId, gameDate, ratings.pace, true, "learned"));
     }
+    const freshThreeQuarters = (await replayThreeQuarters(engine, season, gameDate, dayRows, oddsByGame, threeQuarterSamples, options)).filter((sample) => !threeQuarterGames.has(sample.gameId));
+    threeQuarterSamples.push(...freshThreeQuarters); // after the whole day, like the line history
+    freshThreeQuarters.forEach((sample) => threeQuarterGames.add(sample.gameId));
+    await saveThreeQuarterSamples(freshThreeQuarters);
     const freshSamples = daySamples.filter((sample) => !sampledIds.has(sample.gameId));
     samples.push(...freshSamples); // added after the whole day, so same-day games never learn from each other
     freshSamples.forEach((sample) => sampledIds.add(sample.gameId));

@@ -9,13 +9,14 @@ import type { GameSelection } from "@/lib/client/pickBuilders";
 export const homeCourtPoints = 2; // recent NBA home edge in final margin
 export const backToBackPoints = 1.5; // margin cost of playing the second night of a back-to-back
 export const restEdgePoints = 0.5;
-export const marginDeviation = 12.5; // spread of final margins around the expectation
-export const totalDeviation = 17; // spread of final totals around the expectation
+export const marginDeviation = 13; // spread of final margins around a good line
+export const totalDeviation = 18.5; // spread of final totals around a good line; NBA totals miss by about 15 points on average
 export const injuryReplacementShare = 0.75; // teammates make up about 75% of a missing scorer's points, so a 25-point scorer is worth about 6
 export const injuryCapPoints = 8;
 const tooFarSpread = 6; // gaps this big usually mean news the model has not seen
 const tooFarTotal = 10;
 const tooFarWinChance = 0.15;
+export const implausibleEvPercent = 15; // NBA side and total edges are rarely above a few percent; bigger ones are missing news or a stale line
 
 export interface InjuryImpact {
   playerName: string;
@@ -223,8 +224,8 @@ export function evaluateGameLines(projection: Pick<GameProjection, "margin" | "t
         fairText: fairTexts[market],
         marketText: marketTexts[market],
         marketValue: market === "spread" ? consensusSpreadHome : market === "total" ? consensusTotal : homeNoVig,
-        tooFar: tooFar[market],
-        flagged: !tooFar[market] && evPercent >= evThresholdPercent,
+        tooFar: tooFar[market] || evPercent >= implausibleEvPercent,
+        flagged: !tooFar[market] && evPercent < implausibleEvPercent && evPercent >= evThresholdPercent,
       };
     }
     if (best) edges.push(best);
