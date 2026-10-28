@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Segmented } from "@/components/Segmented";
 import { useVisiblePolling } from "@/lib/client/hooks";
 import { formatNumber, formatPercent, formatSigned } from "@/lib/client/format";
-import { bestBetRule, bestBetTag, liveBetMinimumEvPercent, chanceBucketLabel, evBucketLabel, groupLiveBets, summarizeLiveBets, type LiveBetPick, type LiveNight, type LiveRecordSummary } from "@/lib/live/liveBets";
+import { bestBetRule, bestBetTag, checkpointLabels, picksPerCheckpoint, chanceBucketLabel, evBucketLabel, groupLiveBets, summarizeLiveBets, type LiveBetPick, type LiveNight, type LiveRecordSummary } from "@/lib/live/liveBets";
 
 interface LiveBetsResponse {
   status: { date: string; state: LiveNight["state"]; updatedAt: string; picks: number; liveGames: number; note: string | null } | null;
@@ -21,7 +21,7 @@ const recordGroupings: Array<{ title: string; keyOf: (pick: LiveBetPick) => stri
   { title: "Side", keyOf: (pick) => (pick.side === "over" ? "Over" : "Under") },
   { title: "EV", keyOf: (pick) => evBucketLabel(pick.evPercent) },
   { title: "Chance", keyOf: (pick) => chanceBucketLabel(pick.modelProbability) },
-  { title: "When found", keyOf: (pick) => pick.tags.find((tag) => tag === "Halftime" || tag.startsWith("Found in")) ?? "Unknown" },
+  { title: "Checkpoint", keyOf: (pick) => (pick.checkpoint ? checkpointLabels[pick.checkpoint] : "Unknown") },
   { title: "Situation", keyOf: (pick) => pick.tags.filter((tag) => ["Blowout risk", "Foul trouble", "Cold shooter", "Hot shooter", "Already 60%+ of line", "Under 60% of line"].includes(tag)) },
   { title: "Night", keyOf: (pick) => pick.gameDate },
 ];
@@ -80,7 +80,7 @@ function PickRow({ pick }: { pick: LiveBetPick }) {
     <li className="live-prop">
       <div className="live-prop-title">
         <span className="strong">{pick.playerName}</span> {pick.side === "over" ? "o" : "u"}
-        {pick.line} <span className="muted">{pick.label}</span> <span className="faint small">· found {pick.clockLabel}</span>
+        {pick.line} <span className="muted">{pick.label}</span> <span className="faint small">· {pick.clockLabel}</span>
       </div>
       {status ? (
         <span className={`pill ${resultClass}`}>{status === "void" ? "Void" : `${status.toUpperCase()} · ${pick.result?.actual}`}</span>
@@ -109,7 +109,7 @@ export default function LiveBetsPage() {
   const activeGrouping = recordGroupings.find((grouping) => grouping.title === groupingTitle) ?? recordGroupings[0];
   const response = liveBets.data;
   const tonightDate = response?.status?.date ?? null;
-  const allPicks = response?.picks ?? [];
+  const allPicks = (response?.picks ?? []).filter((pick) => pick.checkpoint); // picks saved before checkpoints are left out of the record
   const tonightPicks = allPicks.filter((pick) => pick.gameDate === tonightDate);
   const rankedTonight = [...tonightPicks].sort((first, second) => Number(Boolean(first.result)) - Number(Boolean(second.result)) || Number(second.tags.includes(bestBetTag)) - Number(first.tags.includes(bestBetTag)) || second.evPercent - first.evPercent); // open best bets first
   const bestCount = tonightPicks.filter((pick) => pick.tags.includes(bestBetTag)).length;
@@ -125,7 +125,7 @@ export default function LiveBetsPage() {
         <div>
           <h1>Live Bets</h1>
           <p>
-            Recorded on GitHub during games, page open or not · {liveBetMinimumEvPercent}%+ edges, best bets {bestBetRule.minimumEvPercent}%+ EV and {Math.round(bestBetRule.minimumModelProbability * 100)}%+ chance
+            Recorded on GitHub during games, page open or not · the top {picksPerCheckpoint} plays per game at the end of Q1, halftime and the end of Q3 · best bets {bestBetRule.minimumEvPercent}%+ EV and {Math.round(bestBetRule.minimumModelProbability * 100)}%+ chance
           </p>
         </div>
         <div className="row wrap">
@@ -149,7 +149,7 @@ export default function LiveBetsPage() {
         <div className="live-top-head" style={{ paddingBottom: 8 }}>
           <h3>Best bets tonight</h3>
           <span className="faint small">
-            {bestCount} best · {tonightPicks.length} edges
+            {bestCount} best · {tonightPicks.length} picks
           </span>
         </div>
         {topTonight.length === 0 ? <p className="live-top-note faint small" style={{ marginTop: 0 }}>None yet. They show up here within a few minutes of being found.</p> : null}
@@ -166,7 +166,7 @@ export default function LiveBetsPage() {
         {otherTonight.length > 0 ? (
           <div className="game-row-actions">
             <button className="foot-tab" onClick={() => setShowAllTonight((shown) => !shown)} aria-expanded={showAllTonight}>
-              {showAllTonight ? "Hide" : "Show"} {otherTonight.length} smaller edges
+              {showAllTonight ? "Hide" : "Show"} {otherTonight.length} more picks
             </button>
           </div>
         ) : null}
@@ -205,7 +205,7 @@ export default function LiveBetsPage() {
           <div className="kpi-label">Nights tracked</div>
         </div>
       </div>
-      <p className="faint small">If the win rate keeps landing near what the model said, the edges are real. Each player and market counts once per game, at the first price flagged.</p>
+      <p className="faint small">If the win rate keeps landing near what the model said, the edges are real. Each pick is graded at the price seen at its break; a player and market is picked at most once per game.</p>
       {graded.length === 0 ? <p className="faint small">Nothing graded yet.</p> : (
         <>
           <Segmented label="Break down by" options={recordGroupings.map((grouping) => ({ value: grouping.title, label: grouping.title }))} value={groupingTitle} onChange={setGroupingTitle} />
