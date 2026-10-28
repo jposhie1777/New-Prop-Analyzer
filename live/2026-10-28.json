@@ -1,0 +1,94 @@
+{
+ "date": "2026-10-28",
+ "updatedAt": "2026-10-28T20:37:18.708Z",
+ "state": "waiting",
+ "games": [
+  {
+   "gameId": 21717975,
+   "matchup": "MIA @ ATL",
+   "status": "2026-10-28T23:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21717976,
+   "matchup": "WAS @ CLE",
+   "status": "2026-10-28T23:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21717977,
+   "matchup": "CHA @ DET",
+   "status": "2026-10-28T23:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21717978,
+   "matchup": "PHI @ IND",
+   "status": "2026-10-28T23:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21717979,
+   "matchup": "ORL @ TOR",
+   "status": "2026-10-28T23:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21717980,
+   "matchup": "NYK @ CHI",
+   "status": "2026-10-29T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21717981,
+   "matchup": "HOU @ MIL",
+   "status": "2026-10-29T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21717982,
+   "matchup": "GSW @ MIN",
+   "status": "2026-10-29T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21717983,
+   "matchup": "DEN @ NOP",
+   "status": "2026-10-29T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21717984,
+   "matchup": "SAS @ UTA",
+   "status": "2026-10-29T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21717985,
+   "matchup": "OKC @ DAL",
+   "status": "2026-10-29T01:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21717986,
+   "matchup": "LAL @ LAC",
+   "status": "2026-10-29T02:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  }
+ ],
+ "picks": [],
+ "calls": 1,
+ "note": "First tip-off 2026-10-28T23:00:00.000Z"
+}
