@@ -2,7 +2,8 @@
 
 import { TeamLogo } from "@/components/TeamLogo";
 import { SyncStatus } from "@/components/SyncStatus";
-import { useAnalyticsQuery, useSettings } from "@/lib/client/hooks";
+import { useSettings } from "@/lib/client/hooks";
+import { useSnapshotOrQuery } from "@/lib/client/siteSnapshot";
 import { useSlate } from "@/lib/client/slateData";
 import { consensusLine, groupOddsByGame, impliedTeamTotals } from "@/lib/odds/consensus";
 import { rateTeamForGame, selectThreeQuarterRecommendations, threeQuarterProfiles, type TeamThreeQuarterRating } from "@/lib/analytics/aggregates/threeQuarters";
@@ -60,7 +61,7 @@ export default function ThreeQuartersPage() {
   const [openRow, setOpenRow] = useState<string | null>(null);
   const games = slate.data?.games ?? [];
   const teamIds = games.flatMap((game) => [game.home_team.id, game.visitor_team.id]);
-  const profiles = useAnalyticsQuery(teamIds.length > 0 ? (handle) => threeQuarterProfiles(handle.engine, teamIds, [appSettings.currentSeason, appSettings.lastSeason]) : null, teamIds.join(","));
+  const profiles = useSnapshotOrQuery((snapshot) => snapshot.threeQuarterProfiles, teamIds.length > 0 ? (handle) => threeQuarterProfiles(handle.engine, teamIds, [appSettings.currentSeason, appSettings.lastSeason]) : null, teamIds.join(","));
   const calibration = useThreeQuarterCalibration();
   const oddsByGame = groupOddsByGame(slate.data?.odds ?? []);
   const openingByGame = groupOddsByGame(slate.data?.openingOdds ?? []);

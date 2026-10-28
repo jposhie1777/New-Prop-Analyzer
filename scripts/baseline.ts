@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync, readFileSync, readdirSync, renameSync, rmSync, statSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, renameSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { BdlClient } from "../src/lib/bdl/bdlClient";
 import type { BdlGame, BdlTeam } from "../src/lib/bdl/types";
@@ -6,10 +6,10 @@ import { resolveTier, tierRequestsPerMinute } from "../src/config/tiers";
 import { appSettings } from "../src/config/appSettings";
 import { addDays, isIsoDate, seasonForDate, todayEastern } from "../src/lib/dates";
 import { buildFinalsPayload } from "../src/lib/server/finalsBuilder";
-import { isGameFinal, flattenTeam } from "../src/lib/data/flatten";
-import { jsonColumnsSpec, selectColumnsSql, tableNames, type FinalsPayload, type TableName } from "../src/lib/data/rowSchemas";
-import type { BaselineManifest, BaselineSeasonEntry } from "../src/lib/data/manifest";
-import { NodeAnalyticsEngine } from "../src/lib/analytics/nodeEngine";
+import { isGameFinal } from "../src/lib/data/flatten";
+import type { FinalsPayload } from "../src/lib/data/rowSchemas";
+import type { BaselineManifest } from "../src/lib/data/manifest";
+import { writeSeasonParquet } from "./parquetWriter";
 import { loadEnvironmentFiles } from "./loadEnvironment";
 
 interface Checkpoint {
@@ -57,52 +57,6 @@ async function listFinishedDates(client: BdlClient, season: number, throughDate:
   const finishedDates = new Set<string>();
   for (const game of games) if (isGameFinal(game) && game.date <= throughDate) finishedDates.add(game.date);
   return [...finishedDates].sort();
-}
-
-async function writeSeasonParquet(season: number, seasonDates: string[], workDirectory: string, outputDirectory: string, teams: BdlTeam[]): Promise<BaselineSeasonEntry> {
-  const seasonDirectory = join(outputDirectory, String(season));
-  mkdirSync(seasonDirectory, { recursive: true });
-  const engine = await NodeAnalyticsEngine.create();
-  const entry: BaselineSeasonEntry = { season, firstDate: seasonDates[0] ?? null, lastDate: seasonDates.at(-1) ?? null, dateCount: seasonDates.length, tables: {} };
-  try {
-    const stagingDirectory = join(workDirectory, "staging", String(season));
-    rmSync(stagingDirectory, { recursive: true, force: true });
-    mkdirSync(stagingDirectory, { recursive: true });
-    const rowCounts = new Map<TableName, number>();
-    for (const tableName of tableNames) writeFileSync(join(stagingDirectory, `${tableName}.ndjson`), "");
-    for (const isoDate of seasonDates) {
-      const payload = JSON.parse(readFileSync(join(workDirectory, "dates", `${isoDate}.json`), "utf8")) as FinalsPayload;
-      for (const tableName of tableNames) {
-        if (tableName === "teams") continue;
-        const rows = payload.tables[tableName] ?? [];
-        if (rows.length === 0) continue;
-        writeFileSync(join(stagingDirectory, `${tableName}.ndjson`), rows.map((dataRow) => JSON.stringify(dataRow)).join("\n") + "\n", { flag: "a" });
-        rowCounts.set(tableName, (rowCounts.get(tableName) ?? 0) + rows.length);
-      }
-    }
-    writeFileSync(join(stagingDirectory, "teams.ndjson"), teams.map((team) => JSON.stringify(flattenTeam(team))).join("\n") + "\n");
-    rowCounts.set("teams", teams.length);
-    for (const tableName of tableNames) {
-      const rowCount = rowCounts.get(tableName) ?? 0;
-      const parquetPath = join(seasonDirectory, `${tableName}.parquet`);
-      if (rowCount === 0) {
-        rmSync(parquetPath, { force: true });
-        continue;
-      }
-      const stagingPath = resolve(join(stagingDirectory, `${tableName}.ndjson`)).replace(/'/g, "''");
-      const dedupeClause = tableName === "players" ? " QUALIFY ROW_NUMBER() OVER (PARTITION BY player_id ORDER BY last_seen_date DESC) = 1" : "";
-      await engine.execute(
-        `COPY (SELECT ${selectColumnsSql(tableName)} FROM read_json('${stagingPath}', format = 'newline_delimited', columns = ${jsonColumnsSpec(tableName)})${dedupeClause})
-         TO '${resolve(parquetPath).replace(/'/g, "''")}' (FORMAT parquet, COMPRESSION zstd, ROW_GROUP_SIZE 100000)`,
-      );
-      const [countRow] = await engine.query<{ row_count: number }>(`SELECT COUNT(*) AS row_count FROM read_parquet('${resolve(parquetPath).replace(/'/g, "''")}')`);
-      entry.tables[tableName] = { file: `${season}/${tableName}.parquet`, rows: Number(countRow.row_count), bytes: statSync(parquetPath).size };
-    }
-    rmSync(stagingDirectory, { recursive: true, force: true });
-  } finally {
-    engine.close();
-  }
-  return entry;
 }
 
 async function main(): Promise<void> {
@@ -159,7 +113,7 @@ async function main(): Promise<void> {
   const manifest: BaselineManifest = { version: 1, generatedAt: new Date().toISOString(), tier, lastDate: null, totalBytes: 0, seasons: {} };
   for (const [season, seasonDates] of datesBySeason) {
     const availableDates = seasonDates.filter((isoDate) => existsSync(join(workDirectory, "dates", `${isoDate}.json`)));
-    const seasonEntry = await writeSeasonParquet(season, availableDates, workDirectory, outputDirectory, teams);
+    const seasonEntry = await writeSeasonParquet({ season, dates: availableDates, readPayload: (isoDate) => JSON.parse(readFileSync(join(workDirectory, "dates", `${isoDate}.json`), "utf8")) as FinalsPayload, stagingRoot: workDirectory, outputDirectory, teams, hashedNames: false });
     manifest.seasons[String(season)] = seasonEntry;
     const seasonBytes = Object.values(seasonEntry.tables).reduce((runningTotal, tableFile) => runningTotal + (tableFile?.bytes ?? 0), 0);
     manifest.totalBytes += seasonBytes;

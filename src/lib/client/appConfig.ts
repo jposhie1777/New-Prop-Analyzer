@@ -7,6 +7,7 @@ export interface AppConfig {
   goatEndpoints: boolean;
   keyConfigured: boolean;
   baselinePath: string;
+  siteDataBase: string | null; // the nightly stats copy and snapshot (site-data branch), null when there is none
   defaults: { state: string; evThresholdPercent: number };
   currentSeason: number;
   lastSeason: number;

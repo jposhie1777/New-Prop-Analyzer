@@ -4,6 +4,7 @@ import "./globals.css";
 import { AppHeader } from "@/components/AppHeader";
 import { SlipFab } from "@/components/SlipFab";
 import { ThemeSync } from "@/components/ThemeSync";
+import { CloudSync } from "@/components/CloudSync";
 import { settingsStorageKey } from "@/lib/client/settings";
 
 const figtree = Figtree({ subsets: ["latin"], variable: "--font-figtree", display: "swap" });
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body suppressHydrationWarning>
         <ThemeSync />
+        <CloudSync />
         <div className="app-shell">
           <AppHeader />
           <div className="app-main">

@@ -1,0 +1,58 @@
+name: Nightly site data
+
+on:
+  schedule:
+    - cron: "23 10 * * *" # 6:23 AM Eastern, after every game is final
+  workflow_dispatch: {}
+
+concurrency:
+  group: site-data
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Get yesterday's data
+        run: |
+          if git ls-remote --exit-code --heads origin site-data > /dev/null; then
+            git clone --depth 1 --branch site-data "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" site-data
+            rm -rf site-data/.git
+          else
+            mkdir site-data
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build stats files and snapshot
+        run: npx tsx scripts/refreshSiteData.ts --out site-data
+        env:
+          BDL_API_KEY: ${{ secrets.BDL_API_KEY }}
+          BDL_TIER: goat
+
+      - name: Publish as a single commit
+        run: |
+          cd site-data
+          printf '{\n  "git": { "deploymentEnabled": false },\n  "ignoreCommand": "exit 0"\n}\n' > vercel.json
+          printf '# Site data\n\nRebuilt every morning by the Nightly site data workflow. History is replaced each run; never merge this branch.\n' > README.md
+          git init -b site-data
+          git config user.name "pulse-site-data"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Site data $(date -u +%Y-%m-%d) [skip ci]"
+          git push --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" site-data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
