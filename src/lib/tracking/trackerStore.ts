@@ -2,7 +2,8 @@ import { readLocalJson, writeLocalJson } from "@/lib/client/safeStorage";
 import type { TrackedPick } from "./tracker";
 
 const trackerStorageKey = "pulse-nba-tracked-picks";
-const maximumTracked = 4000; // keeps localStorage well under its quota
+const maximumModelPicks = 4000; // a full season of the Lines model record (3 picks per game)
+const maximumOtherPicks = 2500; // your own halftime, live, 100-in-3 and slip picks; both caps keep localStorage near 3 MB
 const trackerListeners = new Set<(picks: TrackedPick[]) => void>();
 
 export function readTracked(): TrackedPick[] {
@@ -11,7 +12,11 @@ export function readTracked(): TrackedPick[] {
 }
 
 function writeTracked(picks: TrackedPick[]): void {
-  const trimmed = picks.length > maximumTracked ? picks.slice(picks.length - maximumTracked) : picks;
+  const modelPicks = picks.filter((pick) => pick.source === "model");
+  const otherPicks = picks.filter((pick) => pick.source !== "model");
+  const keptModel = new Set(modelPicks.slice(Math.max(0, modelPicks.length - maximumModelPicks))); // each group drops its own oldest, so the model record never pushes out your picks
+  const keptOther = new Set(otherPicks.slice(Math.max(0, otherPicks.length - maximumOtherPicks)));
+  const trimmed = picks.filter((pick) => keptModel.has(pick) || keptOther.has(pick));
   writeLocalJson(trackerStorageKey, trimmed);
   for (const listener of trackerListeners) listener(trimmed);
 }
@@ -23,6 +28,25 @@ export function trackPicks(newPicks: Array<Omit<TrackedPick, "createdAt" | "resu
   const additions = newPicks.filter((pick) => !knownIds.has(pick.trackId)).map((pick) => ({ ...pick, createdAt: new Date().toISOString(), result: null })); // first sighting wins: the price you could have bet
   if (additions.length > 0) writeTracked([...existing, ...additions]);
   return additions.length;
+}
+
+export function upsertPicks(latestPicks: Array<Omit<TrackedPick, "createdAt" | "result">>): number {
+  if (latestPicks.length === 0) return 0;
+  const existing = readTracked();
+  const existingById = new Map(existing.map((pick) => [pick.trackId, pick]));
+  let changes = 0;
+  const merged = existing.map((pick) => {
+    const latest = latestPicks.find((candidate) => candidate.trackId === pick.trackId);
+    if (!latest || pick.result) return pick; // graded picks never change
+    const changed = latest.lineValue !== pick.lineValue || latest.americanOdds !== pick.americanOdds || latest.side !== pick.side || latest.projectedValue !== pick.projectedValue;
+    if (!changed) return pick;
+    changes += 1;
+    return { ...pick, ...latest, createdAt: new Date().toISOString() }; // keeps the last line seen before tip-off
+  });
+  const additions = latestPicks.filter((pick) => !existingById.has(pick.trackId)).map((pick) => ({ ...pick, createdAt: new Date().toISOString(), result: null }));
+  changes += additions.length;
+  if (changes > 0) writeTracked([...merged, ...additions]);
+  return changes;
 }
 
 export function saveGrades(gradedPicks: TrackedPick[]): void {

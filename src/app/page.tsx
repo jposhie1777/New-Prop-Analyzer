@@ -5,6 +5,7 @@ import { SyncStatus } from "@/components/SyncStatus";
 import { BooksIndicator } from "@/components/BooksIndicator";
 import { useAnalyticsQuery } from "@/lib/client/hooks";
 import { matchBoxScore, useLiveBoxScores, useSlate } from "@/lib/client/slateData";
+import { useLineAnalyses } from "@/lib/client/lineModel";
 import { groupOddsByGame } from "@/lib/odds/consensus";
 import { teamRest } from "@/lib/analytics/aggregates/teamAggregates";
 import { todayEastern } from "@/lib/dates";
@@ -12,6 +13,7 @@ import { isGameFinal } from "@/lib/data/flatten";
 
 export default function SlatePage() {
   const slate = useSlate();
+  useLineAnalyses(slate); // saves the Lines model's daily record whenever the slate is open
   const games = slate.data?.games ?? null;
   const live = useLiveBoxScores(games);
   const teamIds = (games ?? []).flatMap((game) => [game.home_team.id, game.visitor_team.id]);

@@ -131,3 +131,7 @@ export function lineEdgeToTracked(edge: LineEdge, gameId: number, gameDate: stri
     scope: null,
   };
 }
+
+export function modelLineToTracked(edge: LineEdge, projectedValue: number, tags: string[], gameId: number, gameDate: string): NewTracked {
+  return { ...lineEdgeToTracked(edge, gameId, gameDate), trackId: `model-${gameId}-${edge.market}`, source: "model", projectedValue, marketValue: edge.marketValue, tags }; // one model side per market per game
+}

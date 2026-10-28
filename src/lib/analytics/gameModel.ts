@@ -58,6 +58,7 @@ export interface LineEdge {
   evPercent: number;
   fairText: string; // the model's own line
   marketText: string; // the consensus line
+  marketValue: number | null; // consensus home spread, total, or no-vig home win chance
   tooFar: boolean;
   flagged: boolean;
 }
@@ -202,6 +203,7 @@ export function evaluateGameLines(projection: GameProjection, odds: BdlBettingOd
         evPercent,
         fairText: fairTexts[market],
         marketText: marketTexts[market],
+        marketValue: market === "spread" ? consensusSpreadHome : market === "total" ? consensusTotal : homeNoVig,
         tooFar: tooFar[market],
         flagged: !tooFar[market] && evPercent >= evThresholdPercent,
       };
