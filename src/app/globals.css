@@ -637,3 +637,16 @@ a.setting-row:hover { background: var(--surface-sunken); }
   .spots-chips { grid-column: 2 / -1; grid-row: 2; }
   .spot-detail { grid-template-columns: minmax(0, 1fr); padding: 2px 10px 12px; }
 }
+
+/* my bets */
+.bet-card { margin-top: 0; }
+.bet-card-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 12px 14px; border-bottom: 1px solid var(--border-subtle); flex-wrap: wrap; }
+.bet-leg { display: grid; gap: 4px; padding: 10px 14px; border-top: 1px solid var(--border-subtle); }
+.bet-card-head + .bet-leg { border-top: 0; }
+.bet-leg-top { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+.bet-leg-label { min-width: 0; overflow-wrap: anywhere; }
+.bet-leg-top > .small { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.bet-leg .meter { height: 5px; }
+.pick-group-head { padding: 8px 14px 4px; font-size: 12px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-muted); border-top: 1px solid var(--border-subtle); }
+.night-select { width: auto; padding: 6px 10px; font-size: 13px; }
+.meter.under > span { background: var(--warning); } /* an under fills toward losing */

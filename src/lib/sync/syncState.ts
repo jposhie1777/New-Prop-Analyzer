@@ -6,14 +6,15 @@ export interface SyncSection<ValueType> {
 export interface SyncState {
   slip: SyncSection<unknown[]> | null;
   settings: SyncSection<Record<string, unknown>> | null;
+  placed?: SyncSection<unknown[]> | null; // bets tracked in My bets
 }
 
 export type SyncSectionName = keyof SyncState;
 
-export const syncSectionNames: SyncSectionName[] = ["slip", "settings"];
+export const syncSectionNames: SyncSectionName[] = ["slip", "settings", "placed"];
 
 export function emptySyncState(): SyncState {
-  return { slip: null, settings: null };
+  return { slip: null, settings: null, placed: null };
 }
 
 export function mergeSyncState(stored: SyncState, incoming: Partial<SyncState>): SyncState {

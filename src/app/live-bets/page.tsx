@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Segmented } from "@/components/Segmented";
 import { useVisiblePolling } from "@/lib/client/hooks";
 import { formatNumber, formatPercent, formatSigned } from "@/lib/client/format";
-import { bestBetRule, bestBetTag, checkpointLabels, picksPerCheckpoint, chanceBucketLabel, evBucketLabel, groupLiveBets, summarizeLiveBets, type LiveBetPick, type LiveNight, type LiveRecordSummary } from "@/lib/live/liveBets";
+import { bestBetRule, bestBetTag, checkpointLabels, picksPerCheckpoint, type Checkpoint, chanceBucketLabel, evBucketLabel, groupLiveBets, summarizeLiveBets, type LiveBetPick, type LiveNight, type LiveRecordSummary } from "@/lib/live/liveBets";
 
 interface LiveBetsResponse {
   status: { date: string; state: LiveNight["state"]; updatedAt: string; picks: number; liveGames: number; note: string | null } | null;
@@ -13,8 +13,6 @@ interface LiveBetsResponse {
 }
 
 type RecordScope = "best" | "all";
-
-const shownBestBets = 5; // the rest sit behind a button
 
 const recordGroupings: Array<{ title: string; keyOf: (pick: LiveBetPick) => string | string[] }> = [
   { title: "Market", keyOf: (pick) => pick.label },
@@ -90,7 +88,7 @@ function PickRow({ pick }: { pick: LiveBetPick }) {
         </span>
       )}
       <div className="live-prop-why">
-        <div className={`meter${status === "loss" ? " lost" : ""}`}>
+        <div className={`meter${status === "loss" ? " lost" : !status && pick.side === "under" ? " under" : ""}`}>
           <span style={{ width: `${progress * 100}%` }} />
         </div>
         <span className="faint small tabular">
@@ -104,17 +102,19 @@ function PickRow({ pick }: { pick: LiveBetPick }) {
 export default function LiveBetsPage() {
   const liveBets = useVisiblePolling(loadLiveBets, 60_000, "live-bets");
   const [recordScope, setRecordScope] = useState<RecordScope>("best");
-  const [showAllTonight, setShowAllTonight] = useState(false);
+  const [checkpointFilter, setCheckpointFilter] = useState<"all" | Checkpoint>("all");
+  const [chosenDate, setChosenDate] = useState<string | null>(null);
   const [groupingTitle, setGroupingTitle] = useState(recordGroupings[0].title);
   const activeGrouping = recordGroupings.find((grouping) => grouping.title === groupingTitle) ?? recordGroupings[0];
   const response = liveBets.data;
   const tonightDate = response?.status?.date ?? null;
   const allPicks = (response?.picks ?? []).filter((pick) => pick.checkpoint); // picks saved before checkpoints are left out of the record
-  const tonightPicks = allPicks.filter((pick) => pick.gameDate === tonightDate);
-  const rankedTonight = [...tonightPicks].sort((first, second) => Number(Boolean(first.result)) - Number(Boolean(second.result)) || Number(second.tags.includes(bestBetTag)) - Number(first.tags.includes(bestBetTag)) || second.evPercent - first.evPercent); // open best bets first
-  const bestCount = tonightPicks.filter((pick) => pick.tags.includes(bestBetTag)).length;
-  const topTonight = rankedTonight.filter((pick) => pick.tags.includes(bestBetTag)).slice(0, shownBestBets);
-  const otherTonight = rankedTonight.filter((pick) => !topTonight.includes(pick));
+  const nightDates = [...new Set([...(tonightDate ? [tonightDate] : []), ...allPicks.map((pick) => pick.gameDate)])].sort().reverse();
+  const shownDate = chosenDate ?? nightDates[0] ?? null;
+  const nightPicks = allPicks
+    .filter((pick) => pick.gameDate === shownDate && (checkpointFilter === "all" || pick.checkpoint === checkpointFilter))
+    .sort((first, second) => (checkpointFilter === "all" ? Number(second.tags.includes(bestBetTag)) - Number(first.tags.includes(bestBetTag)) : 0) || second.evPercent - first.evPercent); // best bets first, then by edge
+  const gamesWithPicks = new Set(nightPicks.map((pick) => pick.gameId)).size;
   const scopedPicks = recordScope === "best" ? allPicks.filter((pick) => pick.tags.includes(bestBetTag)) : allPicks;
   const graded = scopedPicks.filter((pick) => pick.result);
   const overall = summarizeLiveBets(scopedPicks);
@@ -145,31 +145,59 @@ export default function LiveBetsPage() {
         </div>
       ) : null}
 
+      <div className="section-head" style={{ marginTop: 0 }}>
+        <h2>Picks</h2>
+        <div className="row wrap">
+          {nightDates.length > 1 ? (
+            <select className="input night-select" value={shownDate ?? ""} onChange={(changeEvent) => setChosenDate(changeEvent.target.value)} aria-label="Night">
+              {nightDates.map((nightDate) => (
+                <option key={nightDate} value={nightDate}>
+                  {nightDate === tonightDate ? "Tonight" : new Date(`${nightDate}T12:00:00`).toLocaleDateString([], { weekday: "short", month: "short", day: "numeric" })}
+                </option>
+              ))}
+            </select>
+          ) : null}
+          <Segmented
+            label="Checkpoint"
+            options={[
+              { value: "all", label: "All" },
+              { value: "end-q1", label: "End Q1" },
+              { value: "halftime", label: "Half" },
+              { value: "end-q3", label: "End Q3" },
+            ]}
+            value={checkpointFilter}
+            onChange={setCheckpointFilter}
+          />
+        </div>
+      </div>
       <section className="card flush">
         <div className="live-top-head" style={{ paddingBottom: 8 }}>
-          <h3>Best bets tonight</h3>
+          <h3>{checkpointFilter === "all" ? "Best bets first" : checkpointLabels[checkpointFilter]}</h3>
           <span className="faint small">
-            {bestCount} best · {tonightPicks.length} picks
+            {nightPicks.length} picks · {nightPicks.filter((pick) => pick.tags.includes(bestBetTag)).length} best · {gamesWithPicks} games
           </span>
         </div>
-        {topTonight.length === 0 ? <p className="live-top-note faint small" style={{ marginTop: 0 }}>None yet. They show up here within a few minutes of being found.</p> : null}
-        <ul className="live-bet-list">
-          {topTonight.map((pick) => (
-            <PickRow key={pick.pickId} pick={pick} />
-          ))}
-          {showAllTonight
-            ? otherTonight.map((pick) => (
-                <PickRow key={pick.pickId} pick={pick} />
-              ))
-            : null}
-        </ul>
-        {otherTonight.length > 0 ? (
-          <div className="game-row-actions">
-            <button className="foot-tab" onClick={() => setShowAllTonight((shown) => !shown)} aria-expanded={showAllTonight}>
-              {showAllTonight ? "Hide" : "Show"} {otherTonight.length} more picks
-            </button>
-          </div>
-        ) : null}
+        {nightPicks.length === 0 ? <p className="live-top-note faint small" style={{ marginTop: 0 }}>{checkpointFilter === "all" ? "No picks yet. They are saved at the end of Q1, halftime and the end of Q3 of each game." : `No ${checkpointLabels[checkpointFilter]} picks yet.`}</p> : null}
+        {checkpointFilter === "all" ? (
+          <ul className="live-bet-list">
+            {nightPicks.map((pick) => (
+              <PickRow key={pick.pickId} pick={pick} />
+            ))}
+          </ul>
+        ) : (
+          [...new Set(nightPicks.map((pick) => pick.matchup))].map((matchup) => (
+            <div key={matchup}>
+              <div className="pick-group-head">{matchup}</div>
+              <ul className="live-bet-list">
+                {nightPicks
+                  .filter((pick) => pick.matchup === matchup)
+                  .map((pick) => (
+                    <PickRow key={pick.pickId} pick={pick} />
+                  ))}
+              </ul>
+            </div>
+          ))
+        )}
       </section>
 
       <div className="section-head">
