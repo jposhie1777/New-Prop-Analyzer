@@ -604,3 +604,12 @@ a.setting-row:hover { background: var(--surface-sunken); }
 /* gambly */
 .gambly-card { margin-top: 12px; }
 .gambly-preview { margin: 0 0 10px; padding: 10px 12px; border-radius: var(--radius-medium); background: var(--surface-sunken); font-family: var(--font-mono); font-size: 12.5px; white-space: pre-wrap; overflow-wrap: anywhere; color: var(--text-primary); }
+
+/* the model's suggested play on the slate */
+.slate-cell { position: relative; }
+.slate-cell.suggested { background: var(--positive-soft); color: var(--positive); }
+.slate-cell.suggested .slate-cell-line, .slate-cell.suggested .slate-cell-odds { color: var(--positive); font-weight: 700; }
+.slate-cell.suggested::after, .model-dot { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--positive); }
+.slate-cell.suggested::after { position: absolute; top: 4px; right: 4px; }
+.slate-cell.suggested.selected { background: var(--accent-soft); }
+.model-dot { display: inline-block; vertical-align: middle; margin-right: 2px; }
