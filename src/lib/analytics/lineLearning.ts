@@ -32,9 +32,9 @@ export interface LearnedLine {
 }
 
 export const learningPriors = {
-  trust: 0.35, // before any evidence, lean on the market
+  trust: 0.15, // before any evidence, lean on the market: last season the raw model missed totals by 16.3 and margins by 11.4 on average, worse than closing lines
   trustPriorGames: 150, // the evidence needs about this many games to outweigh the prior
-  biasPriorGames: 100,
+  biasPriorGames: 50, // a steady miss is easy to measure, so it is corrected sooner
   deviationPriorGames: 150,
   windowGames: 900, // learn from the most recent games only, so old habits fade
 };

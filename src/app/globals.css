@@ -376,3 +376,4 @@ body { overflow-x: clip; } /* clip, not hidden: hidden breaks the sticky header 
 .learning-status div { display: grid; gap: 1px; padding: 8px 10px; border-radius: var(--radius-small); background: var(--surface-sunken); }
 .learning-status span { font-size: 11px; color: var(--text-muted); }
 .learning-status strong { font-size: 16px; font-variant-numeric: tabular-nums; }
+.recommended-card { border-color: rgba(52, 211, 153, 0.5); }

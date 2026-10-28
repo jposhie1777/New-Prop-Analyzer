@@ -2,38 +2,29 @@
 
 import { TeamLogo } from "@/components/TeamLogo";
 import { SyncStatus } from "@/components/SyncStatus";
-import { useAnalyticsQuery } from "@/lib/client/hooks";
+import { useAnalyticsQuery, useSettings } from "@/lib/client/hooks";
 import { useSlate } from "@/lib/client/slateData";
 import { consensusLine, groupOddsByGame, impliedTeamTotals } from "@/lib/odds/consensus";
-import { estimateThreeQuarterShare, pickDeviation, projectThreeQuarters, threeQuarterProfiles, type ThreeQuarterSeasonProfile } from "@/lib/analytics/aggregates/threeQuarters";
+import { rateTeamForGame, selectThreeQuarterRecommendations, threeQuarterProfiles, type TeamThreeQuarterRating } from "@/lib/analytics/aggregates/threeQuarters";
+import { calibrateRating } from "@/lib/analytics/threeQuarterLearning";
+import { useThreeQuarterCalibration } from "@/lib/client/lineModel";
 import type { WindowName } from "@/lib/analytics/aggregates/windows";
 import { appSettings } from "@/config/appSettings";
 import { formatNumber, formatPercent } from "@/lib/client/format";
 import { formatTipoff } from "@/lib/dates";
 import type { BdlGame } from "@/lib/bdl/types";
 import { useEffect } from "react";
-import { trackPicks } from "@/lib/tracking/trackerStore";
+import { pruneThreeQuarterPicks, readTracked, trackPicks } from "@/lib/tracking/trackerStore";
 import { threeQuarterToTracked } from "@/lib/tracking/fromSources";
 
-interface SheetRow {
+interface SheetRow extends TeamThreeQuarterRating {
   game: BdlGame;
   teamId: number;
   opponentId: number;
   isHome: boolean;
   impliedTotal: number | null;
   lineSource: string;
-  share: ReturnType<typeof estimateThreeQuarterShare>;
-  projection: ReturnType<typeof projectThreeQuarters>;
-  teamProfile: ThreeQuarterSeasonProfile | undefined;
-  opponentProfile: ThreeQuarterSeasonProfile | undefined;
-  profileSeason: number;
-}
-
-function pickProfile(profiles: ThreeQuarterSeasonProfile[], teamId: number): { profile: ThreeQuarterSeasonProfile | undefined; previous: ThreeQuarterSeasonProfile | undefined; season: number } {
-  const current = profiles.find((profile) => profile.teamId === teamId && profile.season === appSettings.currentSeason);
-  const previous = profiles.find((profile) => profile.teamId === teamId && profile.season === appSettings.lastSeason);
-  if (current && current.scored.SEASON.games > 0) return { profile: current, previous, season: appSettings.currentSeason };
-  return { profile: previous, previous, season: appSettings.lastSeason }; // no games yet this season
+  rawRating: number | null; // before learning
 }
 
 function windowCell(summary: { average: number | null; games: number } | undefined) {
@@ -58,10 +49,12 @@ function rateCell(hits: number | undefined, games: number | undefined) {
 }
 
 export default function ThreeQuartersPage() {
+  const settings = useSettings();
   const slate = useSlate();
   const games = slate.data?.games ?? [];
   const teamIds = games.flatMap((game) => [game.home_team.id, game.visitor_team.id]);
   const profiles = useAnalyticsQuery(teamIds.length > 0 ? (handle) => threeQuarterProfiles(handle.engine, teamIds, [appSettings.currentSeason, appSettings.lastSeason]) : null, teamIds.join(","));
+  const calibration = useThreeQuarterCalibration();
   const oddsByGame = groupOddsByGame(slate.data?.odds ?? []);
   const openingByGame = groupOddsByGame(slate.data?.openingOdds ?? []);
 
@@ -74,34 +67,34 @@ export default function ThreeQuartersPage() {
     for (const isHome of [false, true]) {
       const teamId = isHome ? game.home_team.id : game.visitor_team.id;
       const opponentId = isHome ? game.visitor_team.id : game.home_team.id;
-      const allProfiles = profiles.result ?? [];
-      const teamPick = pickProfile(allProfiles, teamId);
-      const opponentPick = pickProfile(allProfiles, opponentId);
-      const current = allProfiles.find((profile) => profile.teamId === teamId && profile.season === appSettings.currentSeason);
-      const share = estimateThreeQuarterShare(current, teamPick.previous);
-      const deviation = pickDeviation(current, teamPick.previous);
-      const impliedTotal = isHome ? implied.home : implied.away;
+      const rated = rateTeamForGame(profiles.result ?? [], teamId, opponentId, isHome ? implied.home : implied.away, appSettings.currentSeason);
       rows.push({
         game,
         teamId,
         opponentId,
         isHome,
-        impliedTotal,
+        impliedTotal: isHome ? implied.home : implied.away,
         lineSource: useLine === liveLine ? "current" : "opening",
-        share,
-        projection: projectThreeQuarters(impliedTotal, share.share, deviation),
-        teamProfile: teamPick.profile,
-        opponentProfile: opponentPick.profile,
-        profileSeason: teamPick.season,
+        ...rated,
+        rawRating: rated.rating,
+        rating: rated.rating === null ? null : calibrateRating(rated.rating, calibration), // learned from this season's finished games
       });
     }
   }
-  rows.sort((first, second) => (second.projection.probability ?? -1) - (first.projection.probability ?? -1));
+  rows.sort((first, second) => (second.rating ?? -1) - (first.rating ?? -1));
   const windows: WindowName[] = ["L5", "L10", "L20"];
-  const trackable = rows.filter((sheetRow) => sheetRow.projection.probability !== null && sheetRow.projection.projection !== null && sheetRow.game.status_state === "scheduled");
+  const minimumRating = settings.threeQuarterMinimumPercent / 100;
+  const recommended = selectThreeQuarterRecommendations(rows, minimumRating, settings.threeQuarterMaxPicks);
+  const trackable = rows.filter((sheetRow) => recommended.has(sheetRow) && sheetRow.projection.projection !== null && sheetRow.game.status_state === "scheduled");
   const trackKey = trackable.map((sheetRow) => `${sheetRow.game.id}:${sheetRow.teamId}`).join(",");
   useEffect(() => {
-    trackPicks(trackable.map((sheetRow) => threeQuarterToTracked(sheetRow.game.id, sheetRow.game.date, sheetRow.teamId, (sheetRow.isHome ? sheetRow.game.home_team : sheetRow.game.visitor_team).abbreviation, (sheetRow.isHome ? sheetRow.game.visitor_team : sheetRow.game.home_team).abbreviation, sheetRow.projection.probability!, sheetRow.projection.projection!))); // pregame projections only
+    pruneThreeQuarterPicks((minimumRating - 0.4 * appSettings.hundredThroughThreeBaseRate) / 0.6, settings.threeQuarterMaxPicks); // once: older records held every team, scored by raw chance
+    const trackIdOf = (sheetRow: SheetRow) => `t3-${sheetRow.game.id}-${sheetRow.teamId}`;
+    const trackedToday = readTracked().filter((pick) => pick.source === "100-in-3" && pick.gameDate === slate.data?.date);
+    const trackedIds = new Set(trackedToday.map((pick) => pick.trackId));
+    const room = Math.max(0, settings.threeQuarterMaxPicks - trackedToday.length); // the first recommendations of the day are the ones graded
+    const fresh = trackable.filter((sheetRow) => !trackedIds.has(trackIdOf(sheetRow))).slice(0, room);
+    trackPicks(fresh.map((sheetRow) => threeQuarterToTracked(sheetRow.game.id, sheetRow.game.date, sheetRow.teamId, (sheetRow.isHome ? sheetRow.game.home_team : sheetRow.game.visitor_team).abbreviation, (sheetRow.isHome ? sheetRow.game.visitor_team : sheetRow.game.home_team).abbreviation, sheetRow.rating!, sheetRow.projection.projection!))); // recommendations only, pregame
   }, [trackKey]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
@@ -112,18 +105,32 @@ export default function ThreeQuartersPage() {
       <div className="page-title">
         <div>
           <h1>100 in 3 Quarters</h1>
-          <p>Projection = implied team total (spread + total) × the team&apos;s share of points scored in Q1-Q3. Probability uses a normal approximation.</p>
+          <p>
+            Learned chance = the rating below, corrected by how ratings have actually played out this season. Rating = 60% line-based chance (implied team total × the team&apos;s Q1-Q3 share) + 20% how often the team has scored 100+ through three lately + 20% how often the opponent has allowed it. Recommended: learned chance {settings.threeQuarterMinimumPercent}%+, best {settings.threeQuarterMaxPicks} per day; only these are graded on the Record page. League-wide, about {Math.round(appSettings.hundredThroughThreeBaseRate * 100)}% of teams get there.
+          </p>
         </div>
       </div>
+      <section className="card" style={{ marginTop: 0, marginBottom: 10 }}>
+        <div className="row-between wrap" style={{ gap: 8 }}>
+          <span className="strong">What it has learned</span>
+          <span className="faint small">{calibration.sampleCount} team-games this season</span>
+        </div>
+        <p className="faint small" style={{ margin: "6px 0 0" }}>
+          {calibration.sampleCount === 0
+            ? "No finished games yet: ratings are used as they are."
+            : `Teams rated ${formatPercent(calibration.averageRating, 0)} on average hit 100 through three ${formatPercent(calibration.hitRate, 0)} of the time. A 30% rating now means ${formatPercent(calibrateRating(0.3, calibration), 0)} and a 20% rating means ${formatPercent(calibrateRating(0.2, calibration), 0)}. It learns only from earlier days and moves slowly until it has a few hundred games.`}
+        </p>
+      </section>
       {games.length === 0 && !slate.loading ? <div className="card empty-state">No games today.</div> : null}
       {profiles.loading && games.length > 0 ? <div className="skeleton" /> : null}
       <div className="stack" style={{ gap: 10 }}>
         {rows.map((sheetRow, rowIndex) => {
           const teamName = sheetRow.isHome ? sheetRow.game.home_team : sheetRow.game.visitor_team;
           const opponentName = sheetRow.isHome ? sheetRow.game.visitor_team : sheetRow.game.home_team;
-          const probability = sheetRow.projection.probability;
+          const probability = sheetRow.rating;
+          const isRecommended = recommended.has(sheetRow);
           return (
-            <details key={`${sheetRow.game.id}-${sheetRow.teamId}`} className="card" style={{ marginTop: 0 }}>
+            <details key={`${sheetRow.game.id}-${sheetRow.teamId}`} className={`card${isRecommended ? " recommended-card" : ""}`} style={{ marginTop: 0 }}>
               <summary>
                 <div className="row-between">
                   <div className="row" style={{ minWidth: 0 }}>
@@ -135,7 +142,10 @@ export default function ThreeQuartersPage() {
                       <div className="strong">
                         {teamName.abbreviation} <span className="faint">{sheetRow.isHome ? "vs" : "@"}</span> {opponentName.abbreviation}
                       </div>
-                      <div className="faint small">{formatTipoff(sheetRow.game.datetime)}</div>
+                      <div className="faint small">
+                        {formatTipoff(sheetRow.game.datetime)}
+                        {isRecommended ? <span className="pill positive" style={{ marginLeft: 6 }}>Recommended</span> : null}
+                      </div>
                     </div>
                   </div>
                   <div className="row" style={{ gap: 14 }}>
@@ -144,8 +154,8 @@ export default function ThreeQuartersPage() {
                       <div className="faint small">proj thru 3</div>
                     </div>
                     <div style={{ textAlign: "right", minWidth: 64 }}>
-                      <div className={`strong tabular ${probability !== null && probability >= 0.5 ? "positive" : ""}`}>{formatPercent(probability, 1)}</div>
-                      <div className="faint small">P(100+)</div>
+                      <div className={`strong tabular ${isRecommended ? "positive" : ""}`}>{formatPercent(probability, 1)}</div>
+                      <div className="faint small">chance</div>
                     </div>
                   </div>
                 </div>
@@ -153,6 +163,8 @@ export default function ThreeQuartersPage() {
                   <span style={{ width: `${Math.round((probability ?? 0) * 100)}%` }} />
                 </div>
                 <div className="row wrap small" style={{ marginTop: 8, gap: 6 }}>
+                  <span className="pill">line chance {formatPercent(sheetRow.projection.probability, 0)}</span>
+                  <span className="pill">rating {formatPercent(sheetRow.rawRating, 0)} → learned {formatPercent(sheetRow.rating, 0)}</span>
                   <span className="pill">implied {formatNumber(sheetRow.impliedTotal)}</span>
                   <span className="pill">Q1-Q3 share {formatPercent(sheetRow.share.share, 1)}</span>
                   <span className="pill">σ {formatNumber(sheetRow.projection.standardDeviation)}</span>

@@ -28,7 +28,7 @@ describe("learnParameters", () => {
   });
 
   it("leans on the market when the model's disagreements are noise", () => {
-    const samples = Array.from({ length: 600 }, (_, index) => sample(index, { modelMargin: noise(index, 4), marketMargin: 0, actualMargin: noise(index * 5 + 1, 4) }));
+    const samples = Array.from({ length: 600 }, (_, index) => sample(index, { modelMargin: index % 2 === 0 ? 4 : -4, marketMargin: 0, actualMargin: index % 4 < 2 ? 4 : -4 })); // the model's leans and the results are uncorrelated by construction
     expect(learnParameters(samples).marginTrust).toBeLessThan(learningPriors.trust);
   });
 
