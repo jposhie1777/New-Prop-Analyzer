@@ -48,15 +48,15 @@ export default function PlayersPage() {
       <div className="page-title">
         <div>
           <h1>Players</h1>
-          <p>Search any player for game logs, quarter splits, hit rates and matchups.</p>
+          <p>Game logs, quarter splits, hit rates and matchups for any player.</p>
         </div>
       </div>
       <input className="input" placeholder={status.phase === "ready" ? "Search players…" : "Search players (data still syncing)…"} value={searchText} onChange={(changeEvent) => setSearchText(changeEvent.target.value)} autoFocus />
-      <div className="stack" style={{ marginTop: 12 }}>
+      <div className="stack" style={{ marginTop: 12, gap: 0 }}>
         {!handle ? <div className="faint small">Loading your local stats ({status.message}). Search still works meanwhile.</div> : null}
         {searching ? <div className="faint small">Searching…</div> : null}
         {results.map((result) => (
-          <Link key={result.player_id} href={`/player/${result.player_id}`} className="card row" style={{ marginTop: 0 }}>
+          <Link key={result.player_id} href={`/player/${result.player_id}`} className="player-result">
             <PlayerHeadshot playerId={result.player_id} firstName={result.first_name} lastName={result.last_name} />
             <div style={{ flex: 1 }}>
               <div className="strong">

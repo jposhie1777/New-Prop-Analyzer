@@ -10,9 +10,9 @@ A personal NBA betting analytics web app built on the [BALLDONTLIE](https://www.
 
 ## The $0 rule
 
-Nothing runs unless the page is open:
+Nothing runs unless the page is open, except the free GitHub Actions live bets tracker (below):
 
-- **No background work:** no cron, GitHub Actions, database, GCP or paid services.
+- **No paid background work:** no cron service, database, GCP or paid services. The one background job is a free GitHub Actions run on game nights.
 - **Server:** thin API routes on Vercel Hobby that proxy BDL, hiding your key, with aggressive CDN caching.
 - **Polling:**
   - Live box scores refresh every 30 s, only while a game is in progress **and** the tab is visible.
@@ -178,6 +178,17 @@ All TTLs live in `src/config/cacheTtls.ts`:
 | Player search | 1 day |
 
 Every route sends `s-maxage` + `stale-while-revalidate`, so Vercel's CDN answers repeats without running a function.
+
+## Live bets tracker (GitHub Actions)
+
+The Live Bets page is filled by `.github/workflows/live-tracker.yml`, which runs on GitHub (free for a public repo) so no page has to stay open.
+
+1. Add the key once: GitHub repo → Settings → Secrets and variables → Actions → New repository secret, name `BDL_API_KEY`.
+2. It starts on its own at 12:30, 6:30 and 9:30 PM Eastern (GitHub can start scheduled runs 5-15 min late). It waits for the first tip-off, checks every live game each minute, grades picks at the final, and stops when the night is done. To start it by hand: Actions tab → Live bets tracker → Run workflow.
+3. Results go to the `live-data` branch (never merge it; Vercel ignores it via `vercel.json`). The site reads them from raw.githubusercontent.com, which can lag up to about 5 minutes. The branch is public like the rest of the repo.
+4. GitHub pauses scheduled workflows after 60 days with no repo activity; re-enable it from the Actions tab.
+
+Local test: `BDL_TIER=mock npm run live:track -- --once --data-dir live-data`, then `LIVE_DATA_DIR=live-data npm run dev`.
 
 ## Pages
 

@@ -9,11 +9,11 @@ export interface ZoneDisplay {
 }
 
 const toneFills: Record<ZoneDisplay["tone"], string> = {
-  good: "rgba(52, 211, 153, 0.55)",
-  neutral: "rgba(251, 191, 36, 0.45)",
-  bad: "rgba(248, 113, 113, 0.55)",
-  empty: "rgba(102, 117, 140, 0.18)",
-  volume: "rgba(91, 140, 255, 1)",
+  good: "var(--court-good)", // theme colors live in globals.css
+  neutral: "var(--court-neutral)",
+  bad: "var(--court-bad)",
+  empty: "var(--court-empty)",
+  volume: "var(--accent)",
 };
 
 const basketX = 250;
@@ -47,7 +47,7 @@ export function ShotCourt({ zones, selectedZone, onSelect, title }: { zones: Par
     return {
       fill,
       fillOpacity: opacity,
-      stroke: selectedZone === zone ? "#e8edf5" : "rgba(10, 14, 21, 0.9)",
+      stroke: selectedZone === zone ? "var(--text-primary)" : "var(--court-gap)",
       strokeWidth: selectedZone === zone ? 4 : 2,
       onClick: () => onSelect(zone),
       style: { cursor: "pointer" },
@@ -66,7 +66,7 @@ export function ShotCourt({ zones, selectedZone, onSelect, title }: { zones: Par
           <path d={insideArcPath} />
         </clipPath>
       </defs>
-      <rect x="0" y="0" width="500" height="345" fill="#0d131d" />
+      <rect x="0" y="0" width="500" height="345" fill="var(--court-empty)" />
       <rect x="0" y="0" width="170" height="345" {...zoneProps("above3_left")} />
       <rect x="170" y="0" width="160" height="345" {...zoneProps("above3_center")} />
       <rect x="330" y="0" width="170" height="345" {...zoneProps("above3_right")} />
@@ -79,7 +79,7 @@ export function ShotCourt({ zones, selectedZone, onSelect, title }: { zones: Par
       <rect x="470" y="0" width="30" height="142" {...zoneProps("corner3_right")} />
       <rect x="170" y="0" width="160" height="190" {...zoneProps("paint")} />
       <path d={restrictedPath} {...zoneProps("rim")} />
-      <g fill="none" stroke="rgba(232, 237, 245, 0.55)" strokeWidth="2.5" pointerEvents="none">
+      <g fill="none" stroke="var(--court-line)" strokeWidth="2.5" pointerEvents="none">
         <path d="M30 0 L30 142 A237.5 237.5 0 0 0 470 142 L470 0" />
         <rect x="170" y="0" width="160" height="190" />
         <path d="M190 190 A60 60 0 0 0 310 190" />
@@ -94,8 +94,8 @@ export function ShotCourt({ zones, selectedZone, onSelect, title }: { zones: Par
         const pillWidth = Math.max(44, display.label.length * 11 + 16);
         return (
           <g key={zone} pointerEvents="none">
-            <rect x={labelX - pillWidth / 2} y={labelY - 15} width={pillWidth} height="30" rx="9" fill="rgba(10, 14, 21, 0.86)" stroke={selectedZone === zone ? "#e8edf5" : "rgba(232, 237, 245, 0.25)"} />
-            <text x={labelX} y={labelY + 6} textAnchor="middle" fontSize="18" fontWeight="700" fill="#e8edf5" fontFamily="Inter, system-ui, sans-serif">
+            <rect x={labelX - pillWidth / 2} y={labelY - 15} width={pillWidth} height="30" rx="9" fill="var(--surface-raised)" fillOpacity={0.92} stroke={selectedZone === zone ? "var(--text-primary)" : "var(--border-strong)"} />
+            <text x={labelX} y={labelY + 6} textAnchor="middle" fontSize="18" fontWeight="700" fill="var(--text-primary)" fontFamily="var(--font-sans)">
               {display.label}
             </text>
           </g>

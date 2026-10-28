@@ -1,0 +1,55 @@
+name: Live bets tracker
+
+on:
+  schedule:
+    - cron: "30 16 * * *" # 12:30 ET, covers early tips
+    - cron: "30 22 * * *" # 18:30 ET, the main slate
+    - cron: "30 1 * * *" # 21:30 ET, west coast games
+  workflow_dispatch: {}
+
+concurrency:
+  group: live-tracker
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Check out the data branch
+        run: |
+          git config --global user.name "pulse-live-tracker"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin live-data > /dev/null; then
+            git clone --depth 1 --branch live-data "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" live-data
+          else
+            mkdir live-data
+            cd live-data
+            git init -b live-data
+            git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+            printf '{\n  "git": { "deploymentEnabled": false },\n  "ignoreCommand": "exit 0"\n}\n' > vercel.json
+            printf '# Live bets data\n\nWritten by the Live bets tracker workflow. Do not merge this branch.\n' > README.md
+            git add -A
+            git commit -m "Start the live bets data branch [skip ci]"
+            git push origin live-data
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Track live bets
+        run: npx tsx scripts/liveTracker.ts --data-dir live-data --git
+        env:
+          BDL_API_KEY: ${{ secrets.BDL_API_KEY }}
+          BDL_TIER: goat

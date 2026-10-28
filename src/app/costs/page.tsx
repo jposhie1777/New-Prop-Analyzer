@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useAnalytics, useVisiblePolling } from "@/lib/client/hooks";
 import { fetchApi } from "@/lib/client/apiClient";
@@ -87,7 +88,10 @@ export default function CostsPage() {
     <main className="page">
       <div className="page-title">
         <div>
-          <h1>Cost analyzer</h1>
+          <Link href="/settings" className="expand-hint">
+            ← Settings
+          </Link>
+          <h1>Costs</h1>
           <p>Nothing runs unless this page is open. Server counters are per instance and approximate; device counters are exact for this browser.</p>
         </div>
       </div>
