@@ -605,11 +605,15 @@ a.setting-row:hover { background: var(--surface-sunken); }
 .gambly-card { margin-top: 12px; }
 .gambly-preview { margin: 0 0 10px; padding: 10px 12px; border-radius: var(--radius-medium); background: var(--surface-sunken); font-family: var(--font-mono); font-size: 12.5px; white-space: pre-wrap; overflow-wrap: anywhere; color: var(--text-primary); }
 
-/* the model's suggested play on the slate */
+/* the model's side in each market, and its best play */
 .slate-cell { position: relative; }
-.slate-cell.suggested { background: var(--positive-soft); color: var(--positive); }
-.slate-cell.suggested .slate-cell-line, .slate-cell.suggested .slate-cell-odds { color: var(--positive); font-weight: 700; }
-.slate-cell.suggested::after, .model-dot { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--positive); }
-.slate-cell.suggested::after { position: absolute; top: 4px; right: 4px; }
-.slate-cell.suggested.selected { background: var(--accent-soft); }
+.slate-cell.lean::after, .model-dot { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--positive); }
+.slate-cell.lean::after { position: absolute; top: 4px; right: 4px; }
+.slate-cell.lean .slate-cell-line, .slate-cell.lean .slate-cell-odds { color: var(--positive); }
+.slate-cell.best { background: var(--positive); border-color: var(--positive); box-shadow: 0 1px 4px var(--positive-line); }
+.slate-cell.best .slate-cell-line, .slate-cell.best .slate-cell-odds { color: var(--on-accent); font-weight: 800; }
+.slate-cell.best::after { content: "★"; position: absolute; top: -7px; right: -5px; width: 16px; height: 16px; border-radius: 50%; background: var(--surface-raised); color: var(--positive); border: 1px solid var(--positive); font-size: 9px; line-height: 14px; text-align: center; font-family: var(--font-sans); }
+.slate-cell.best.selected { box-shadow: 0 0 0 2px var(--accent); }
+.slate-cell.lean.selected { background: var(--accent-soft); }
 .model-dot { display: inline-block; vertical-align: middle; margin-right: 2px; }
+.model-best { display: inline-block; width: 12px; height: 9px; border-radius: 3px; background: var(--positive); vertical-align: middle; margin-right: 2px; }

@@ -19,7 +19,10 @@ export default function SlatePage() {
   const { analyses } = useLineAnalyses(slate); // also saves the Lines model's daily record whenever the slate is open
   const [edgesOnly, setEdgesOnly] = useState(false);
   const bestEdgeByGame = new Map<number, LineEdge>();
+  const leansByGame = new Map<number, LineEdge[]>();
   for (const analysis of analyses) {
+    const leans = (["spread", "total", "moneyline"] as const).map((market) => analysis.edges.filter((edge) => edge.market === market).sort((first, second) => second.evPercent - first.evPercent)[0]).filter((edge): edge is LineEdge => Boolean(edge)); // the side the model prefers in each market
+    leansByGame.set(analysis.game.id, leans);
     const best = analysis.edges.filter((edge) => edge.flagged && edge.evPercent < implausibleEvPercent).sort((first, second) => second.evPercent - first.evPercent)[0];
     if (best) bestEdgeByGame.set(analysis.game.id, best);
   }
@@ -44,7 +47,7 @@ export default function SlatePage() {
         <div>
           <h1>{dateLabel}</h1>
           <p>
-            {games?.length ?? 0} games · lines refresh every 10 min · tap a price to add it to the slip · <span className="model-dot" aria-hidden /> model&apos;s pick
+            {games?.length ?? 0} games · lines refresh every 10 min · tap a price to add it to the slip · <span className="model-dot" aria-hidden /> model&apos;s side · <span className="model-best" aria-hidden /> best play
           </p>
         </div>
         <div className="row wrap">
@@ -86,6 +89,7 @@ export default function SlatePage() {
               rest={rest.result}
               boxScore={matchBoxScore(game, live.boxScores)}
               modelEdge={bestEdgeByGame.get(game.id) ?? null}
+              modelLeans={leansByGame.get(game.id) ?? []}
             />
           ))}
         </div>
