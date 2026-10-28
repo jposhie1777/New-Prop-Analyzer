@@ -44,7 +44,7 @@ export default function SlatePage() {
         <div>
           <h1>{dateLabel}</h1>
           <p>
-            {games?.length ?? 0} games · lines refresh every 10 min · tap a price to add it to the slip
+            {games?.length ?? 0} games · lines refresh every 10 min · tap a price to add it to the slip · <span className="model-dot" aria-hidden /> model&apos;s pick
           </p>
         </div>
         <div className="row wrap">

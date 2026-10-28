@@ -31,7 +31,7 @@ function Movement({ current, opening, invertGood = false, label = "", format = (
   );
 }
 
-function MarketCell({ pick, lineText }: { pick: Omit<SlipPick, "addedAt"> | null; lineText: ((line: number) => string) | null }) {
+function MarketCell({ pick, lineText, suggested = false }: { pick: Omit<SlipPick, "addedAt"> | null; lineText: ((line: number) => string) | null; suggested?: boolean }) {
   const slip = useSlip();
   if (!pick) return <span className="slate-cell disabled">-</span>;
   const offeredLines = pick.offers.map((offer) => offer.lineValue).filter((lineValue): lineValue is number => lineValue !== null);
@@ -41,14 +41,14 @@ function MarketCell({ pick, lineText }: { pick: Omit<SlipPick, "addedAt"> | null
   const inSlip = slip.some((existing) => existing.pickId === pick.pickId);
   return (
     <button
-      className={`slate-cell${inSlip ? " selected" : ""}`}
+      className={`slate-cell${inSlip ? " selected" : ""}${suggested ? " suggested" : ""}`}
       onClick={(clickEvent) => {
         clickEvent.stopPropagation(); // adding a price never opens or closes the row
         if (inSlip) removePick(pick.pickId);
         else addPick(pick);
       }}
       aria-pressed={inSlip}
-      title={inSlip ? "Tap to remove from slip" : "Add to slip"}
+      title={`${suggested ? "The model's pick. " : ""}${inSlip ? "Tap to remove from slip" : "Add to slip"}`}
     >
       {lineText && typicalLine !== null ? <span className="slate-cell-line">{lineText(typicalLine)}</span> : null}
       <span className="slate-cell-odds">{formatAmerican(typicalOdds)}</span>
@@ -116,9 +116,9 @@ export function GameRow({ game, odds, openingOdds, injuries, rest, boxScore, mod
   const teamInjuries = (teamId: number) => injuries.filter((injury) => injury.player.team?.id === teamId || injury.player.team_id === teamId);
   const injuryText = injurySummary([game.visitor_team, game.home_team], teamInjuries);
   const marketColumns = [
-    { label: "Spread", visitor: pick("spread_away"), home: pick("spread_home"), visitorText: (line: number) => formatSpread(line), homeText: (line: number) => formatSpread(line) },
-    { label: "Total", visitor: pick("total_over"), home: pick("total_under"), visitorText: (line: number) => `o${line}`, homeText: (line: number) => `u${line}` },
-    { label: "Money", visitor: pick("moneyline_away"), home: pick("moneyline_home"), visitorText: null, homeText: null },
+    { label: "Spread", visitorSelection: "spread_away", homeSelection: "spread_home", visitor: pick("spread_away"), home: pick("spread_home"), visitorText: (line: number) => formatSpread(line), homeText: (line: number) => formatSpread(line) },
+    { label: "Total", visitorSelection: "total_over", homeSelection: "total_under", visitor: pick("total_over"), home: pick("total_under"), visitorText: (line: number) => `o${line}`, homeText: (line: number) => `u${line}` },
+    { label: "Money", visitorSelection: "moneyline_away", homeSelection: "moneyline_home", visitor: pick("moneyline_away"), home: pick("moneyline_home"), visitorText: null, homeText: null },
   ];
   return (
     <div className={`slate-game${open ? " open" : ""}`}>
@@ -138,8 +138,8 @@ export function GameRow({ game, odds, openingOdds, injuries, rest, boxScore, mod
           {marketColumns.map((column) => (
             <div key={column.label} className="slate-market">
               <span className="slate-market-label">{column.label}</span>
-              <MarketCell pick={column.visitor} lineText={column.visitorText} />
-              <MarketCell pick={column.home} lineText={column.homeText} />
+              <MarketCell pick={column.visitor} lineText={column.visitorText} suggested={modelEdge?.selection === column.visitorSelection} />
+              <MarketCell pick={column.home} lineText={column.homeText} suggested={modelEdge?.selection === column.homeSelection} />
             </div>
           ))}
         </div>
