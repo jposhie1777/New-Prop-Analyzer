@@ -103,21 +103,42 @@ export function projectGame(home: TeamRating, away: TeamRating, league: Pick<Lea
   return { pace, homePoints: (total + margin) / 2, awayPoints: (total - margin) / 2, margin, total, homeWinProbability: normalCdf(margin / marginDeviation), factors };
 }
 
-export function selectionProbability(projection: Pick<GameProjection, "margin" | "total">, selection: GameSelection, line: number | null): number | null {
+export interface OutcomeSpread {
+  margin: number; // standard deviation of the final margin around the fair line
+  total: number;
+}
+
+export const defaultOutcomeSpread: OutcomeSpread = { margin: marginDeviation, total: totalDeviation };
+
+export function selectionProbability(projection: Pick<GameProjection, "margin" | "total">, selection: GameSelection, line: number | null, spread: OutcomeSpread = defaultOutcomeSpread): number | null {
   switch (selection) {
     case "spread_home":
-      return line === null ? null : 1 - normalCdf(-line, projection.margin, marginDeviation); // home covers when margin + line > 0
+      return line === null ? null : 1 - normalCdf(-line, projection.margin, spread.margin); // home covers when margin + line > 0
     case "spread_away":
-      return line === null ? null : normalCdf(line, projection.margin, marginDeviation); // away covers when margin < line
+      return line === null ? null : normalCdf(line, projection.margin, spread.margin); // away covers when margin < line
     case "total_over":
-      return line === null ? null : 1 - normalCdf(line, projection.total, totalDeviation);
+      return line === null ? null : 1 - normalCdf(line, projection.total, spread.total);
     case "total_under":
-      return line === null ? null : normalCdf(line, projection.total, totalDeviation);
+      return line === null ? null : normalCdf(line, projection.total, spread.total);
     case "moneyline_home":
-      return normalCdf(projection.margin / marginDeviation);
+      return normalCdf(projection.margin / spread.margin);
     case "moneyline_away":
-      return 1 - normalCdf(projection.margin / marginDeviation);
+      return 1 - normalCdf(projection.margin / spread.margin);
   }
+}
+
+export interface MarketConsensus {
+  spreadHome: number | null;
+  total: number | null;
+  homeNoVig: number | null;
+}
+
+export function marketConsensus(odds: BdlBettingOdd[]): MarketConsensus {
+  return {
+    spreadHome: median(odds.map((bettingOdd) => Number(bettingOdd.spread_home_value)).filter((value) => Number.isFinite(value) && isRealSpread(value))),
+    total: median(odds.map((bettingOdd) => Number(bettingOdd.total_value)).filter((value) => Number.isFinite(value) && value > 100)),
+    homeNoVig: median(odds.filter((bettingOdd) => bettingOdd.moneyline_home_odds && bettingOdd.moneyline_away_odds).map((bettingOdd) => noVigTwoWay(bettingOdd.moneyline_home_odds!, bettingOdd.moneyline_away_odds!))),
+  };
 }
 
 interface SelectionQuote {
@@ -153,10 +174,8 @@ function signed(value: number, digits = 1): string {
   return `${rounded > 0 ? "+" : ""}${rounded}`;
 }
 
-export function evaluateGameLines(projection: GameProjection, odds: BdlBettingOdd[], homeAbbreviation: string, awayAbbreviation: string, evThresholdPercent: number): LineEdge[] {
-  const consensusSpreadHome = median(odds.map((bettingOdd) => Number(bettingOdd.spread_home_value)).filter((value) => Number.isFinite(value) && isRealSpread(value)));
-  const consensusTotal = median(odds.map((bettingOdd) => Number(bettingOdd.total_value)).filter((value) => Number.isFinite(value) && value > 100));
-  const homeNoVig = median(odds.filter((bettingOdd) => bettingOdd.moneyline_home_odds && bettingOdd.moneyline_away_odds).map((bettingOdd) => noVigTwoWay(bettingOdd.moneyline_home_odds!, bettingOdd.moneyline_away_odds!)));
+export function evaluateGameLines(projection: Pick<GameProjection, "margin" | "total" | "homeWinProbability">, odds: BdlBettingOdd[], homeAbbreviation: string, awayAbbreviation: string, evThresholdPercent: number, spread: OutcomeSpread = defaultOutcomeSpread): LineEdge[] {
+  const { spreadHome: consensusSpreadHome, total: consensusTotal, homeNoVig } = marketConsensus(odds);
   const marketTexts = {
     spread: consensusSpreadHome === null ? "–" : `${homeAbbreviation} ${signed(consensusSpreadHome)}`,
     total: consensusTotal === null ? "–" : String(consensusTotal),
@@ -187,7 +206,7 @@ export function evaluateGameLines(projection: GameProjection, odds: BdlBettingOd
       const quote = quoteFor(bettingOdd, selection);
       if (quote.odds === null || quote.odds === 0 || !Number.isFinite(quote.odds)) continue;
       if (market !== "moneyline" && quote.line === null) continue;
-      const modelProbability = selectionProbability(projection, selection, quote.line);
+      const modelProbability = selectionProbability(projection, selection, quote.line, spread);
       if (modelProbability === null) continue;
       const evPercent = expectedValuePercent(modelProbability, quote.odds);
       if (best && evPercent <= best.evPercent) continue;

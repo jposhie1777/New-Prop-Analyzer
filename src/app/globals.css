@@ -371,3 +371,8 @@ body { overflow-x: clip; } /* clip, not hidden: hidden breaks the sticky header 
 .verdicts { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); margin-top: 12px; }
 .verdict-list { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 4px; font-size: 13px; }
 .backtest-box { display: grid; gap: 8px; justify-items: start; margin-top: 14px; padding: 10px 12px; border-radius: var(--radius-medium); background: var(--surface-sunken); border: 1px solid var(--border-subtle); }
+.record-subhead { margin: 14px 0 6px; font-size: 15px; }
+.learning-status { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px; }
+.learning-status div { display: grid; gap: 1px; padding: 8px 10px; border-radius: var(--radius-small); background: var(--surface-sunken); }
+.learning-status span { font-size: 11px; color: var(--text-muted); }
+.learning-status strong { font-size: 16px; font-variant-numeric: tabular-nums; }
