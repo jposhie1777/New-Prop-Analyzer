@@ -19,7 +19,7 @@ export function SyncSettingRow() {
     <div className="setting-row">
       <div>
         <span className="strong">Sync across devices</span>
-        <p>{status === "off" ? "Needs a SYNC_GITHUB_TOKEN in Vercel (see the README). Until then, the slip and sportsbooks stay on this device." : "Your slip and sportsbook settings follow you between your computer and phone."}</p>
+        <p>{status === "off" ? "Needs a SYNC_GITHUB_TOKEN in Vercel (see the README). Until then, the slip, my bets and sportsbooks stay on this device." : "Your slip, my bets and sportsbook settings follow you between your computer and phone."}</p>
       </div>
       <span className="row" style={{ gap: 8 }}>
         <span className={`pill${status === "synced" ? " positive" : status === "error" ? " negative" : ""}`}>{label}</span>
