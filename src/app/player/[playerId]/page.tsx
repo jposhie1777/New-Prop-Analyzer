@@ -3,6 +3,7 @@
 import { booksKey } from "@/lib/client/bookFilter";
 
 import Link from "next/link";
+import { StatStrip } from "@/components/player/StatStrip";
 import { useParams } from "next/navigation";
 import { PlayerHeadshot } from "@/components/PlayerHeadshot";
 import { TeamLogo } from "@/components/TeamLogo";
@@ -70,7 +71,10 @@ export default function PlayerPage() {
 
   return (
     <main className="page">
-      <section className="card row" style={{ gap: 14, marginBottom: 12 }}>
+      <p className="faint small" style={{ margin: "0 0 12px" }}>
+        <Link href="/players">← Players</Link>
+      </p>
+      <section className="player-header">
         {player ? <PlayerHeadshot playerId={playerId} firstName={player.first_name} lastName={player.last_name} large /> : <span className="headshot-fallback large">…</span>}
         <div style={{ flex: 1, minWidth: 0 }}>
           <h1 style={{ margin: 0, fontSize: 24, letterSpacing: "-0.02em" }}>{player ? playerName : profile.loading ? "Loading…" : "Player not found"}</h1>
@@ -98,6 +102,8 @@ export default function PlayerPage() {
           )}
         </div>
       </section>
+
+      <StatStrip table={windows.result} seasons={seasons} />
 
       {tonightGame && player ? (
         <section className="card">

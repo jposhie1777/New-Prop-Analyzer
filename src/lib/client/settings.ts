@@ -11,9 +11,12 @@ export interface UserSettings {
   liveLayout: "grid" | "rows"; // how All player props is drawn on the Live tab
   threeQuarterMinimumPercent: number; // rating needed for a 100-in-3 recommendation
   threeQuarterMaxPicks: number;
+  appearance: Appearance;
 }
 
-const settingsStorageKey = "pulse-nba-settings";
+export type Appearance = "light" | "dark" | "system";
+
+export const settingsStorageKey = "pulse-nba-settings"; // also read by the theme script in the layout, before React loads
 const settingsListeners = new Set<(settings: UserSettings) => void>();
 
 export function defaultSettings(): UserSettings {
@@ -27,6 +30,7 @@ export function defaultSettings(): UserSettings {
     liveLayout: "grid",
     threeQuarterMinimumPercent: appSettings.defaultThreeQuarterMinimumPercent,
     threeQuarterMaxPicks: appSettings.defaultThreeQuarterMaxPicks,
+    appearance: "light",
   };
 }
 
@@ -38,6 +42,7 @@ export function saveSettings(update: Partial<UserSettings>): UserSettings {
   const nextSettings = { ...readSettings(), ...update };
   nextSettings.sportsbookState = nextSettings.sportsbookState.trim().toLowerCase().slice(0, 2) || appSettings.defaultSportsbookState;
   nextSettings.liveLayout = nextSettings.liveLayout === "rows" ? "rows" : "grid";
+  nextSettings.appearance = nextSettings.appearance === "dark" || nextSettings.appearance === "system" ? nextSettings.appearance : "light";
   nextSettings.enabledBooks = Array.isArray(nextSettings.enabledBooks) ? nextSettings.enabledBooks.filter((vendor) => typeof vendor === "string") : [];
   writeLocalJson(settingsStorageKey, nextSettings);
   for (const listener of settingsListeners) listener(nextSettings);

@@ -77,26 +77,27 @@ function TopPicks({ game, data, gameOdds, atHalftime, blowout }: { game: BdlGame
   if (data.loading) return null;
   const topPicks = data.valuePicks.slice(0, 5);
   return (
-    <div className="top-picks">
-      <div className="section-label">{atHalftime ? "Halftime picks" : "Top live picks"}</div>
-      {blowout ? <div className="warning-text small">Blowout risk: starters may sit, so overs and spreads are riskier.</div> : null}
-      {data.market ? (
-        <div className="faint small">
-          Live total {data.market.liveTotal}
-          {data.market.paceFactor !== null ? (Math.abs(data.market.paceFactor - 1) < 0.02 ? " · scoring pace as expected" : ` · books expect ${data.market.paceFactor > 1 ? "+" : ""}${Math.round((data.market.paceFactor - 1) * 100)}% scoring vs. pregame`) : ""}
-          {data.market.liveSpreadHome !== null ? ` · ${game.home_team.abbreviation} ${data.market.liveSpreadHome > 0 ? "+" : ""}${data.market.liveSpreadHome}` : ""}
-        </div>
-      ) : null}
+    <div className="live-top">
+      <div className="live-top-head">
+        <h3>{atHalftime ? "Halftime picks" : "Top live props"}</h3>
+        {data.market ? (
+          <span className="faint small">
+            Live total {data.market.liveTotal}
+            {data.market.paceFactor !== null ? (Math.abs(data.market.paceFactor - 1) < 0.02 ? " · pace as expected" : ` · ${data.market.paceFactor > 1 ? "+" : ""}${Math.round((data.market.paceFactor - 1) * 100)}% scoring vs. pregame`) : ""}
+            {data.market.liveSpreadHome !== null ? ` · ${game.home_team.abbreviation} ${data.market.liveSpreadHome > 0 ? "+" : ""}${data.market.liveSpreadHome}` : ""}
+          </span>
+        ) : null}
+      </div>
       {data.rows
         .filter((propRow, rowIndex, allRows) => propRow.inactiveNote && allRows.findIndex((otherRow) => otherRow.playerId === propRow.playerId) === rowIndex)
         .slice(0, 3)
         .map((propRow) => (
-          <div key={`out-${propRow.playerId}`} className="warning-text small">
+          <div key={`out-${propRow.playerId}`} className="live-top-note warning-text small">
             ⚠ {propRow.playerName}: {propRow.inactiveNote}
           </div>
         ))}
       {topPicks.length === 0 ? (
-        <div className="faint small">{data.rows.length === 0 ? "No props posted right now." : "No value right now. Checks again every minute."}</div>
+        <div className="live-top-note faint small">{data.rows.length === 0 ? "No props posted right now." : "No value right now. Checks again every minute."}</div>
       ) : (
         topPicks.map((propRow) => {
           const side = propRow.evaluation.bestSide ?? "over";
@@ -104,23 +105,31 @@ function TopPicks({ game, data, gameOdds, atHalftime, blowout }: { game: BdlGame
           const vendor = side === "over" ? propRow.bestOverVendor : propRow.bestUnderVendor;
           const chance = side === "over" ? propRow.evaluation.overProbability : propRow.evaluation.underProbability;
           const pick = buildPropPick(game, propRow.playerId, propRow.playerName, propRow.propType, side, data.props, gameOdds, atHalftime ? "halftime" : "live", chance, propRow.lineValue);
+          const progress = Math.min(1, propRow.currentValue / Math.max(propRow.lineValue, 0.5));
+          const shooting = shootingProps.has(propRow.propType) ? shootingTag(propRow.shooting) : null;
           return (
-            <div key={`${propRow.playerId}-${propRow.propType}`} className="top-pick">
-              <div className="top-pick-text">
-                <div className="top-pick-title">
-                  <span className="strong">{propRow.playerName}</span>{" "}
-                  <span className={side === "over" ? "positive" : "negative"}>
-                    {side === "over" ? "O" : "U"} {propRow.lineValue}
-                  </span>{" "}
-                  <span className="muted">{propRow.label}</span>
-                </div>
-                <div className="top-pick-stats faint">
-                  now {propRow.currentValue}
-                  {propRow.restOfGame ? ` · ${propRow.restOfGame.label} avg ${formatNumber(propRow.restOfGame.value)}` : ""} · hit {formatPercent(chance, 0)}
-                  {shootingProps.has(propRow.propType) && shootingTag(propRow.shooting) ? ` · ${shootingTag(propRow.shooting)}` : ""}
-                </div>
+            <div key={`${propRow.playerId}-${propRow.propType}`} className="live-prop">
+              <div className="live-prop-title">
+                <span className="strong">{propRow.playerName}</span> {side === "over" ? "o" : "u"}
+                {propRow.lineValue} <span className="muted">{propRow.label}</span>
               </div>
-              <PriceButton pick={pick} sideLabel="" odds={odds} vendor={vendor} note={`${formatSigned(propRow.evaluation.bestEvPercent, 0)}% EV`} highlight compact />
+              <PriceButton pick={pick} sideLabel="" odds={odds} vendor={vendor} note={`${formatSigned(propRow.evaluation.bestEvPercent, 0)}% EV · ${formatPercent(chance, 0)}`} highlight compact />
+              <div className="live-prop-why">
+                <div className="meter">
+                  <span style={{ width: `${progress * 100}%` }} />
+                </div>
+                <span className="faint small tabular">
+                  {propRow.currentValue} of {propRow.lineValue}
+                </span>
+                {propRow.restOfGame ? (
+                  <span className="pill">
+                    {propRow.restOfGame.label} avg {formatNumber(propRow.restOfGame.value)}
+                  </span>
+                ) : null}
+                {shooting ? <span className="pill">{shooting}</span> : null}
+                {blowout && side === "over" ? <span className="pill warning">Blowout risk</span> : null}
+                {propRow.personalFouls >= 4 ? <span className="pill warning">{propRow.personalFouls} fouls</span> : null}
+              </div>
             </div>
           );
         })
@@ -149,7 +158,7 @@ function GameRow({ game, boxScore, gameOdds, liveOdds, openingOdds, initialSecti
   return (
     <article id={`game-${game.id}`} className="card game-row" style={{ scrollMarginTop: 64 }}>
       <div className="game-row-header">
-        <div className="row-between small" style={{ marginBottom: 6 }}>
+        <div className="row-between small" style={{ marginBottom: 8 }}>
           {live ? (
             <span className="row">
               <span className="pill live">
@@ -161,16 +170,16 @@ function GameRow({ game, boxScore, gameOdds, liveOdds, openingOdds, initialSecti
           ) : final ? (
             <span className="pill">Final</span>
           ) : (
-            <span className="pill accent">{formatTipoff(game.datetime)}</span>
+            <span className="faint">{formatTipoff(game.datetime)}</span>
           )}
         </div>
         {scores.map(({ team, score }) => (
-          <div key={team.id} className="row-between" style={{ marginTop: 4 }}>
+          <div key={team.id} className="vcard-team" style={{ marginTop: 6 }}>
             <span className="row">
               <TeamLogo teamId={team.id} />
               <span className="strong">{team.full_name}</span>
             </span>
-            <span className="team-score" style={{ fontSize: 20 }}>
+            <span className="vcard-score">
               {live || final ? score : ""}
             </span>
           </div>
@@ -181,11 +190,11 @@ function GameRow({ game, boxScore, gameOdds, liveOdds, openingOdds, initialSecti
       {boxScore && (live || final) ? (
         <div className="game-row-actions">
           {live ? (
-            <button className={`toggle-button${openSection === "props" ? " open" : ""}`} onClick={() => toggle("props")}>
-              All player props{liveData.rows.length > 0 ? ` (${new Set(liveData.rows.map((propRow) => propRow.playerId)).size})` : ""} {openSection === "props" ? "▴" : "▾"}
+            <button className={`foot-tab${openSection === "props" ? " open" : ""}`} onClick={() => toggle("props")} aria-expanded={openSection === "props"}>
+              Players{liveData.rows.length > 0 ? ` (${new Set(liveData.rows.map((propRow) => propRow.playerId)).size})` : ""} {openSection === "props" ? "▴" : "▾"}
             </button>
           ) : null}
-          <button className={`toggle-button${openSection === "box" ? " open" : ""}`} onClick={() => toggle("box")}>
+          <button className={`foot-tab${openSection === "box" ? " open" : ""}`} onClick={() => toggle("box")} aria-expanded={openSection === "box"}>
             Box score {openSection === "box" ? "▴" : "▾"}
           </button>
         </div>

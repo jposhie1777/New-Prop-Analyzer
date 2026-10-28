@@ -6,7 +6,8 @@ import { LinesModelRecord } from "@/components/record/LinesModelRecord";
 import { useAnalytics, useTracked } from "@/lib/client/hooks";
 import { gradePendingPicks } from "@/lib/tracking/grader";
 import { removeTracked, replaceTracked, saveGrades } from "@/lib/tracking/trackerStore";
-import { calibrationBuckets, evBucket, groupBy, summarizeRecord, type TrackSource, type TrackedPick } from "@/lib/tracking/tracker";
+import { calibrationBuckets, evBucket, groupBy, profitUnits, summarizeRecord, type TrackSource, type TrackedPick } from "@/lib/tracking/tracker";
+import { UnitsChart } from "@/components/record/UnitsChart";
 import { formatAmerican } from "@/lib/math/odds";
 import { formatNumber, formatPercent, formatSigned } from "@/lib/client/format";
 import { todayEastern } from "@/lib/dates";
@@ -14,12 +15,15 @@ import { propMapping } from "@/lib/analytics/propTypes";
 import { vendorLabel } from "@/lib/odds/deeplinks";
 
 type SourceFilter = "all" | TrackSource;
+type BreakdownName = "source" | "market" | "ev" | "calibration";
+
+const sourceLabels: Record<string, string> = { halftime: "Halftime", live: "Live", "100-in-3": "100 in 3", lines: "Lines", slip: "Slip" };
 
 function SummaryRow({ label, picks }: { label: string; picks: TrackedPick[] }) {
   const summary = summarizeRecord(picks);
   return (
     <tr>
-      <td>{label}</td>
+      <td className="strong">{sourceLabels[label] ?? label}</td>
       <td>
         {summary.wins}-{summary.losses}
         {summary.pushes > 0 ? `-${summary.pushes}` : ""}
@@ -37,6 +41,7 @@ export default function RecordPage() {
   const { handle } = useAnalytics();
   const [sourceFilter, setSourceFilter] = useState<SourceFilter>("all");
   const [gradeMessage, setGradeMessage] = useState<string | null>(null);
+  const [breakdown, setBreakdown] = useState<BreakdownName>("source");
 
   useEffect(() => {
     if (!handle) return;
@@ -61,6 +66,10 @@ export default function RecordPage() {
   const byMarket = groupBy(filtered, (pick) => (pick.kind === "prop" ? (propMapping(pick.propType ?? "")?.label ?? pick.propType ?? "prop") : pick.kind === "team_three_quarters" ? "100 in 3" : pick.kind));
   const byEv = groupBy(filtered.filter((pick) => pick.americanOdds !== null), (pick) => evBucket(pick.evPercent));
   const calibration = calibrationBuckets(filtered);
+  const decidedInOrder = filtered.filter((pick) => pick.result && (pick.result.status === "win" || pick.result.status === "loss")).sort((first, second) => first.gameDate.localeCompare(second.gameDate) || first.createdAt.localeCompare(second.createdAt));
+  const runningUnits: number[] = [];
+  for (const pick of decidedInOrder) runningUnits.push((runningUnits[runningUnits.length - 1] ?? 0) + profitUnits(pick.result!.status, pick.americanOdds));
+  const breakdownRows = breakdown === "source" ? [...bySource.entries()] : breakdown === "market" ? [...byMarket.entries()] : [...byEv.entries()];
   const recent = [...filtered].sort((first, second) => second.createdAt.localeCompare(first.createdAt)).slice(0, 150);
 
   const exportRecord = () => {
@@ -90,27 +99,25 @@ export default function RecordPage() {
       <div className="page-title">
         <div>
           <h1>Record</h1>
-          <p>Every flagged halftime or live pick, pregame 100-in-3 projection and bet-slip pick is logged at the price first seen, then graded from final stats once the game syncs. Stored on this device; export to keep a backup.</p>
+          <p>
+            Logged at the first price seen, graded from final stats · stored on this device ·{" "}
+            <button className="link-button" onClick={exportRecord} disabled={tracked.length === 0}>
+              Export
+            </button>{" "}
+            ·{" "}
+            <label className="link-button">
+              Import
+              <input type="file" accept="application/json" hidden onChange={(changeEvent) => changeEvent.target.files?.[0] && importRecord(changeEvent.target.files[0])} />
+            </label>
+          </p>
         </div>
-        <div className="row wrap">
-          <button className="button ghost" onClick={exportRecord} disabled={tracked.length === 0}>
-            Export
-          </button>
-          <label className="button ghost">
-            Import
-            <input type="file" accept="application/json" hidden onChange={(changeEvent) => changeEvent.target.files?.[0] && importRecord(changeEvent.target.files[0])} />
-          </label>
-        </div>
-      </div>
-      {gradeMessage ? <div className="notice info" style={{ marginBottom: 12 }}>{gradeMessage}</div> : null}
-      <div style={{ marginBottom: 12 }}>
         <Segmented
           options={[
             { value: "all", label: "All" },
-            { value: "halftime", label: "Halftime" },
-            { value: "live", label: "Live" },
-            { value: "100-in-3", label: "100 in 3" },
             { value: "lines", label: "Lines" },
+            { value: "100-in-3", label: "100 in 3" },
+            { value: "live", label: "Live" },
+            { value: "halftime", label: "Halftime" },
             { value: "slip", label: "Slip" },
           ]}
           value={sourceFilter}
@@ -118,60 +125,52 @@ export default function RecordPage() {
           label="Source"
         />
       </div>
-      <section className="card">
-        <div className="kpi-grid">
-          <div className="kpi">
-            <div className="kpi-value">
-              {summary.wins}-{summary.losses}
-              {summary.pushes > 0 ? `-${summary.pushes}` : ""}
-            </div>
-            <div className="kpi-label">W-L{summary.pushes > 0 ? "-P" : ""} · {summary.pending} pending</div>
+      {gradeMessage ? <div className="notice info" style={{ marginBottom: 12 }}>{gradeMessage}</div> : null}
+      <div className="kpi-grid">
+        <div className="kpi">
+          <div className="kpi-value">
+            {summary.wins}-{summary.losses}
+            {summary.pushes > 0 ? `-${summary.pushes}` : ""}
           </div>
-          <div className="kpi">
-            <div className="kpi-value">{formatPercent(summary.winRate, 1)}</div>
-            <div className="kpi-label">Hit rate · model avg {formatPercent(summary.averageModelProbability, 1)}</div>
-          </div>
-          <div className="kpi">
-            <div className={`kpi-value ${summary.unitsProfit >= 0 ? "positive" : "negative"}`}>{formatSigned(summary.unitsProfit, 2)}u</div>
-            <div className="kpi-label">Profit at logged prices · ROI {summary.roiPercent === null ? "-" : `${formatSigned(summary.roiPercent)}%`}</div>
-          </div>
-          <div className="kpi">
-            <div className="kpi-value">{formatNumber(summary.brierScore, 3)}</div>
-            <div className="kpi-label">Brier score (lower is better, 0.25 = coin flip)</div>
-          </div>
+          <div className="kpi-label">{summary.pending} pending</div>
         </div>
+        <div className="kpi">
+          <div className="kpi-value">{formatPercent(summary.winRate, 1)}</div>
+          <div className="kpi-label">Hit rate · model {formatPercent(summary.averageModelProbability, 1)}</div>
+        </div>
+        <div className="kpi">
+          <div className={`kpi-value ${summary.unitsProfit >= 0 ? "positive" : "negative"}`}>{formatSigned(summary.unitsProfit, 2)}u</div>
+          <div className="kpi-label">ROI {summary.roiPercent === null ? "-" : `${formatSigned(summary.roiPercent)}%`}</div>
+        </div>
+        <div className="kpi">
+          <div className="kpi-value">{formatNumber(summary.brierScore, 3)}</div>
+          <div className="kpi-label">Brier · 0.25 = coin flip</div>
+        </div>
+      </div>
+      <section className="card" style={{ marginTop: 12 }}>
+        <div className="card-header">
+          <h2>Units over time</h2>
+          <span className="faint small">{runningUnits.length} graded picks</span>
+        </div>
+        <UnitsChart runningUnits={runningUnits} />
       </section>
-      <div className="grid-two" style={{ marginTop: 12 }}>
-        <section className="card" style={{ marginTop: 0 }}>
-          <div className="card-header">
-            <h2>By source</h2>
-          </div>
-          <div className="table-scroll">
-            <table className="data-table">
-              <thead>
-                <tr>
-                  <th>Source</th>
-                  <th>W-L</th>
-                  <th>Hit</th>
-                  <th>Units</th>
-                  <th>ROI</th>
-                  <th>Pending</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[...bySource.entries()].map(([source, picks]) => (
-                  <SummaryRow key={source} label={source} picks={picks} />
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
-        <section className="card" style={{ marginTop: 0 }}>
-          <div className="card-header">
-            <h2>Calibration</h2>
-            <span className="faint small">model chance vs how often it hit</span>
-          </div>
-          <div className="table-scroll">
+      <div className="section-head">
+        <Segmented
+          options={[
+            { value: "source", label: "Source" },
+            { value: "market", label: "Market" },
+            { value: "ev", label: "EV at pick" },
+            { value: "calibration", label: "Calibration" },
+          ]}
+          value={breakdown}
+          onChange={setBreakdown}
+          label="Break down by"
+        />
+        {breakdown === "calibration" ? <span className="faint small">model chance vs. how often it hit</span> : null}
+      </div>
+      <section className="card flush">
+        <div className="table-scroll" style={{ margin: 0, padding: 0 }}>
+          {breakdown === "calibration" ? (
             <table className="data-table">
               <thead>
                 <tr>
@@ -184,7 +183,7 @@ export default function RecordPage() {
               <tbody>
                 {calibration.map((bucket) => (
                   <tr key={bucket.label}>
-                    <td>{bucket.label}</td>
+                    <td className="strong">{bucket.label}</td>
                     <td>{bucket.picks}</td>
                     <td>{formatPercent(bucket.predicted, 1)}</td>
                     <td className={bucket.actual !== null && bucket.predicted !== null ? (bucket.actual >= bucket.predicted ? "positive" : "negative") : ""}>{formatPercent(bucket.actual, 1)}</td>
@@ -192,17 +191,11 @@ export default function RecordPage() {
                 ))}
               </tbody>
             </table>
-          </div>
-        </section>
-        <section className="card" style={{ marginTop: 0 }}>
-          <div className="card-header">
-            <h2>By market</h2>
-          </div>
-          <div className="table-scroll">
+          ) : (
             <table className="data-table">
               <thead>
                 <tr>
-                  <th>Market</th>
+                  <th>{breakdown === "source" ? "Source" : breakdown === "market" ? "Market" : "EV bucket"}</th>
                   <th>W-L</th>
                   <th>Hit</th>
                   <th>Units</th>
@@ -211,48 +204,31 @@ export default function RecordPage() {
                 </tr>
               </thead>
               <tbody>
-                {[...byMarket.entries()].map(([market, picks]) => (
-                  <SummaryRow key={market} label={market} picks={picks} />
+                {breakdownRows.map(([groupLabel, picks]) => (
+                  <SummaryRow key={groupLabel} label={groupLabel} picks={picks} />
                 ))}
+                {breakdownRows.length === 0 ? (
+                  <tr>
+                    <td colSpan={6} className="faint">
+                      Nothing tracked yet
+                    </td>
+                  </tr>
+                ) : null}
               </tbody>
             </table>
-          </div>
-        </section>
-        <section className="card" style={{ marginTop: 0 }}>
-          <div className="card-header">
-            <h2>By EV at pick time</h2>
-          </div>
-          <div className="table-scroll">
-            <table className="data-table">
-              <thead>
-                <tr>
-                  <th>EV bucket</th>
-                  <th>W-L</th>
-                  <th>Hit</th>
-                  <th>Units</th>
-                  <th>ROI</th>
-                  <th>Pending</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[...byEv.entries()].map(([bucket, picks]) => (
-                  <SummaryRow key={bucket} label={bucket} picks={picks} />
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
-      </div>
+          )}
+        </div>
+      </section>
       <LinesModelRecord handle={handle} />
-      <section className="card" style={{ marginTop: 12 }}>
-        <div className="card-header">
+      <section className="card flush" style={{ marginTop: 12 }}>
+        <div className="card-header" style={{ padding: "14px 14px 0" }}>
           <h2>Picks</h2>
           <span className="faint small">latest {recent.length}</span>
         </div>
         {recent.length === 0 ? (
           <div className="empty-state">Nothing tracked yet. Flagged halftime picks, 100-in-3 projections and anything you add to the slip will show up here.</div>
         ) : (
-          <div className="table-scroll">
+          <div className="table-scroll" style={{ margin: 0, padding: 0 }}>
             <table className="data-table">
               <thead>
                 <tr>
@@ -272,7 +248,7 @@ export default function RecordPage() {
                   <tr key={pick.trackId}>
                     <td>{pick.label}</td>
                     <td className="tabular">{pick.gameDate.slice(5)}</td>
-                    <td>{pick.source}</td>
+                    <td>{sourceLabels[pick.source] ?? pick.source}</td>
                     <td>
                       {formatAmerican(pick.americanOdds)} <span className="sub">{pick.vendor ? vendorLabel(pick.vendor) : ""}</span>
                     </td>

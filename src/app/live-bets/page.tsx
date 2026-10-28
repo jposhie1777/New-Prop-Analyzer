@@ -19,8 +19,8 @@ const shownBestBets = 5; // the rest sit behind a button
 const recordGroupings: Array<{ title: string; keyOf: (pick: LiveBetPick) => string | string[] }> = [
   { title: "Market", keyOf: (pick) => pick.label },
   { title: "Side", keyOf: (pick) => (pick.side === "over" ? "Over" : "Under") },
-  { title: "Claimed EV", keyOf: (pick) => evBucketLabel(pick.evPercent) },
-  { title: "Model chance", keyOf: (pick) => chanceBucketLabel(pick.modelProbability) },
+  { title: "EV", keyOf: (pick) => evBucketLabel(pick.evPercent) },
+  { title: "Chance", keyOf: (pick) => chanceBucketLabel(pick.modelProbability) },
   { title: "When found", keyOf: (pick) => pick.tags.find((tag) => tag === "Halftime" || tag.startsWith("Found in")) ?? "Unknown" },
   { title: "Situation", keyOf: (pick) => pick.tags.filter((tag) => ["Blowout risk", "Foul trouble", "Cold shooter", "Hot shooter", "Already 60%+ of line", "Under 60% of line"].includes(tag)) },
   { title: "Night", keyOf: (pick) => pick.gameDate },
@@ -74,34 +74,27 @@ function trackerPill(response: LiveBetsResponse | null) {
 
 function PickRow({ pick }: { pick: LiveBetPick }) {
   const progress = Math.min(1, pick.latestValue / Math.max(pick.line, 0.5));
-  const resultClass = pick.result?.status === "win" ? "positive" : pick.result?.status === "loss" ? "negative" : "";
+  const status = pick.result?.status ?? null;
+  const resultClass = status === "win" ? "positive" : status === "loss" ? "negative" : "";
   return (
-    <li className="live-bet-row">
-      <div className="row-between" style={{ gap: 8 }}>
-        <div style={{ minWidth: 0 }}>
-          <div className="strong live-bet-name">
-            {pick.playerName} {pick.side === "over" ? "o" : "u"}
-            {pick.line} {pick.label}
-          </div>
-          <div className="faint small">
-            {pick.teamAbbreviation} · {pick.matchup} · found {pick.clockLabel} with {pick.valueAtPick}
-          </div>
-        </div>
-        <div className="live-bet-numbers">
-          <div className="strong">
-            {americanLabel(pick.americanOdds)} <span className="faint small">{pick.vendor}</span>
-          </div>
-          <div className="small">
-            <span className="positive">{formatNumber(pick.evPercent, 1)}% EV</span> <span className="faint">· {formatPercent(pick.modelProbability, 0)}</span>
-          </div>
-        </div>
+    <li className="live-prop">
+      <div className="live-prop-title">
+        <span className="strong">{pick.playerName}</span> {pick.side === "over" ? "o" : "u"}
+        {pick.line} <span className="muted">{pick.label}</span> <span className="faint small">· found {pick.clockLabel}</span>
       </div>
-      <div className="row-between small" style={{ gap: 8, marginTop: 6 }}>
-        <div className="meter" style={{ flex: 1 }}>
+      {status ? (
+        <span className={`pill ${resultClass}`}>{status === "void" ? "Void" : `${status.toUpperCase()} · ${pick.result?.actual}`}</span>
+      ) : (
+        <span className="pill positive">
+          {americanLabel(pick.americanOdds)} · {formatNumber(pick.evPercent, 1)}%
+        </span>
+      )}
+      <div className="live-prop-why">
+        <div className={`meter${status === "loss" ? " lost" : ""}`}>
           <span style={{ width: `${progress * 100}%` }} />
         </div>
-        <span className="live-bet-numbers">
-          {pick.result ? <span className={`pill ${resultClass}`}>{pick.result.status === "void" ? "Void" : `${pick.result.status.toUpperCase()} · ${pick.result.actual}`}</span> : `${pick.latestValue} of ${pick.line}`}
+        <span className="faint small tabular">
+          {status ? `final ${pick.result?.actual ?? "-"}` : `${pick.latestValue} of ${pick.line}`} · {pick.vendor} · {formatPercent(pick.modelProbability, 0)} · {pick.matchup}
         </span>
       </div>
     </li>
@@ -112,6 +105,8 @@ export default function LiveBetsPage() {
   const liveBets = useVisiblePolling(loadLiveBets, 60_000, "live-bets");
   const [recordScope, setRecordScope] = useState<RecordScope>("best");
   const [showAllTonight, setShowAllTonight] = useState(false);
+  const [groupingTitle, setGroupingTitle] = useState(recordGroupings[0].title);
+  const activeGrouping = recordGroupings.find((grouping) => grouping.title === groupingTitle) ?? recordGroupings[0];
   const response = liveBets.data;
   const tonightDate = response?.status?.date ?? null;
   const allPicks = response?.picks ?? [];
@@ -130,122 +125,118 @@ export default function LiveBetsPage() {
         <div>
           <h1>Live Bets</h1>
           <p>
-            Runs on GitHub during games, page open or not. Every minute it records the first {liveBetMinimumEvPercent}%+ edge per player and market, then grades it at the final. Best bets: {bestBetRule.minimumEvPercent}%+ EV and {Math.round(bestBetRule.minimumModelProbability * 100)}%+ model chance. Live prices move fast; check the price before betting.
+            Recorded on GitHub during games, page open or not · {liveBetMinimumEvPercent}%+ edges, best bets {bestBetRule.minimumEvPercent}%+ EV and {Math.round(bestBetRule.minimumModelProbability * 100)}%+ chance
           </p>
         </div>
-      </div>
-
-      <section className="card" style={{ marginTop: 0 }}>
-        <div className="row-between wrap" style={{ gap: 8 }}>
+        <div className="row wrap">
           {trackerPill(response)}
-          <span className="faint small">{response?.status ? `Updated ${minutesAgoLabel(response.status.updatedAt)} · ${response.status.date}` : liveBets.loading ? "Loading…" : ""}</span>
+          <span className="faint small">{response?.status ? `updated ${minutesAgoLabel(response.status.updatedAt)}` : liveBets.loading ? "Loading…" : ""}</span>
         </div>
-        {response?.status?.note ? <p className="faint small" style={{ margin: "8px 0 0" }}>{response.status.note}</p> : null}
-        {liveBets.error ? <p className="notice" style={{ marginTop: 8 }}>{liveBets.error}</p> : null}
-        {response?.night && response.night.games.length > 0 ? (
-          <div className="chip-row" style={{ marginTop: 10 }}>
-            {response.night.games.map((game) => (
-              <span key={game.gameId} className="pill">
-                {game.matchup} {game.homeScore + game.visitorScore > 0 ? `${game.visitorScore}-${game.homeScore}` : ""} <span className="faint">{/^\d{4}-/.test(game.status) ? "Scheduled" : game.status}</span>
-              </span>
-            ))}
-          </div>
-        ) : null}
-      </section>
+      </div>
+      {response?.status?.note ? <p className="faint small" style={{ marginTop: 0 }}>{response.status.note}</p> : null}
+      {liveBets.error ? <p className="notice">{liveBets.error}</p> : null}
+      {response?.night && response.night.games.length > 0 ? (
+        <div className="chip-row" style={{ marginBottom: 12 }}>
+          {response.night.games.map((game) => (
+            <span key={game.gameId} className="pill">
+              {game.matchup} {game.homeScore + game.visitorScore > 0 ? `${game.visitorScore}-${game.homeScore}` : ""} <span className="faint">{/^\d{4}-/.test(game.status) ? "Scheduled" : game.status}</span>
+            </span>
+          ))}
+        </div>
+      ) : null}
 
-      <section className="card">
-        <div className="card-header">
-          <h2>Best bets tonight</h2>
-          <span className="faint small">{bestCount} best bets · {tonightPicks.length} edges</span>
+      <section className="card flush">
+        <div className="live-top-head" style={{ paddingBottom: 8 }}>
+          <h3>Best bets tonight</h3>
+          <span className="faint small">
+            {bestCount} best · {tonightPicks.length} edges
+          </span>
         </div>
-        {topTonight.length === 0 ? <p className="faint small">None yet. They show up here within a few minutes of being found.</p> : null}
+        {topTonight.length === 0 ? <p className="live-top-note faint small" style={{ marginTop: 0 }}>None yet. They show up here within a few minutes of being found.</p> : null}
         <ul className="live-bet-list">
           {topTonight.map((pick) => (
             <PickRow key={pick.pickId} pick={pick} />
           ))}
+          {showAllTonight
+            ? otherTonight.map((pick) => (
+                <PickRow key={pick.pickId} pick={pick} />
+              ))
+            : null}
         </ul>
         {otherTonight.length > 0 ? (
-          <>
-            <button className="button" style={{ marginTop: 10 }} onClick={() => setShowAllTonight((shown) => !shown)}>
-              {showAllTonight ? "Hide" : "Show"} {otherTonight.length} more
+          <div className="game-row-actions">
+            <button className="foot-tab" onClick={() => setShowAllTonight((shown) => !shown)} aria-expanded={showAllTonight}>
+              {showAllTonight ? "Hide" : "Show"} {otherTonight.length} smaller edges
             </button>
-            {showAllTonight ? (
-              <ul className="live-bet-list" style={{ marginTop: 10 }}>
-                {otherTonight.map((pick) => (
-                  <PickRow key={pick.pickId} pick={pick} />
-                ))}
-              </ul>
-            ) : null}
-          </>
+          </div>
         ) : null}
       </section>
 
-      <section className="card">
-        <div className="card-header wrap">
-          <h2>Record</h2>
-          <Segmented
-            label="Record scope"
-            options={[
-              { value: "best", label: "Best bets" },
-              { value: "all", label: "All picks" },
-            ]}
-            value={recordScope}
-            onChange={setRecordScope}
-          />
+      <div className="section-head">
+        <h2>Record</h2>
+        <Segmented
+          label="Record scope"
+          options={[
+            { value: "best", label: "Best bets" },
+            { value: "all", label: "All picks" },
+          ]}
+          value={recordScope}
+          onChange={setRecordScope}
+        />
+      </div>
+      <div className="kpi-grid">
+        <div className="kpi">
+          <div className="kpi-value">
+            {overall.wins}-{overall.losses}
+            {overall.pushes > 0 ? `-${overall.pushes}` : ""}
+          </div>
+          <div className="kpi-label">{overall.pending} pending</div>
         </div>
-        <div className="kpi-grid">
-          <div className="kpi">
-            <div className="kpi-value">
-              {overall.wins}-{overall.losses}
-              {overall.pushes > 0 ? `-${overall.pushes}` : ""}
-            </div>
-            <div className="kpi-label">Record ({overall.pending} pending)</div>
-          </div>
-          <div className="kpi">
-            <div className="kpi-value">{formatPercent(overall.winRate, 1)}</div>
-            <div className="kpi-label">Win rate (model said {formatPercent(overall.averageModel, 1)})</div>
-          </div>
-          <div className="kpi">
-            <div className={`kpi-value ${overall.units >= 0 ? "positive" : "negative"}`}>{formatSigned(overall.units, 1)}u</div>
-            <div className="kpi-label">Units, 1 per pick</div>
-          </div>
-          <div className="kpi">
-            <div className="kpi-value">{formatSigned(overall.roiPercent, 1)}%</div>
-            <div className="kpi-label">ROI</div>
-          </div>
+        <div className="kpi">
+          <div className="kpi-value">{formatPercent(overall.winRate, 1)}</div>
+          <div className="kpi-label">Win rate · model {formatPercent(overall.averageModel, 1)}</div>
         </div>
-        <p className="faint small">If the win rate keeps landing near what the model said, the edges are real. Each player and market counts once per game, at the first price flagged.</p>
-        {graded.length === 0 ? <p className="faint small">Nothing graded yet.</p> : null}
-        {graded.length > 0
-          ? recordGroupings.map((grouping) => {
-              const groups = groupLiveBets(scopedPicks, grouping.keyOf).sort((first, second) => (grouping.title === "Night" ? second.key.localeCompare(first.key) : second.summary.picks - first.summary.picks));
-              return (
-                <div key={grouping.title} className="table-scroll" style={{ marginTop: 10 }}>
-                  <table className="data-table record-table">
-                    <thead>
-                      <tr>
-                        <th>{grouping.title}</th>
-                        <th>Record</th>
-                        <th>Model</th>
+        <div className="kpi">
+          <div className={`kpi-value ${overall.units >= 0 ? "positive" : "negative"}`}>{formatSigned(overall.units, 1)}u</div>
+          <div className="kpi-label">ROI {formatSigned(overall.roiPercent, 1)}%</div>
+        </div>
+        <div className="kpi">
+          <div className="kpi-value">{new Set(allPicks.map((pick) => pick.gameDate)).size}</div>
+          <div className="kpi-label">Nights tracked</div>
+        </div>
+      </div>
+      <p className="faint small">If the win rate keeps landing near what the model said, the edges are real. Each player and market counts once per game, at the first price flagged.</p>
+      {graded.length === 0 ? <p className="faint small">Nothing graded yet.</p> : (
+        <>
+          <Segmented label="Break down by" options={recordGroupings.map((grouping) => ({ value: grouping.title, label: grouping.title }))} value={groupingTitle} onChange={setGroupingTitle} />
+          <div className="card flush" style={{ marginTop: 10 }}>
+            <div className="table-scroll" style={{ margin: 0, padding: 0 }}>
+              <table className="data-table record-table">
+                <thead>
+                  <tr>
+                    <th>{activeGrouping.title}</th>
+                    <th>Record</th>
+                    <th>Model</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {groupLiveBets(scopedPicks, activeGrouping.keyOf)
+                    .sort((first, second) => (activeGrouping.title === "Night" ? second.key.localeCompare(first.key) : second.summary.picks - first.summary.picks))
+                    .map((group) => (
+                      <tr key={group.key}>
+                        <td className="strong">{group.key}</td>
+                        <td>
+                          <SummaryCell summary={group.summary} />
+                        </td>
+                        <td className="faint">{formatPercent(group.summary.averageModel, 0)}</td>
                       </tr>
-                    </thead>
-                    <tbody>
-                      {groups.map((group) => (
-                        <tr key={group.key}>
-                          <td className="strong">{group.key}</td>
-                          <td>
-                            <SummaryCell summary={group.summary} />
-                          </td>
-                          <td className="faint">{formatPercent(group.summary.averageModel, 0)}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              );
-            })
-          : null}
-      </section>
+                    ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </>
+      )}
     </main>
   );
 }
