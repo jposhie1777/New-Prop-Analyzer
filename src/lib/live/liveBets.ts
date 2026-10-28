@@ -13,6 +13,12 @@ export const bestBetTag = "Best bet";
 
 export type LiveBetStatus = "win" | "loss" | "push" | "void";
 
+export type Checkpoint = "end-q1" | "halftime" | "end-q3";
+
+export const checkpointLabels: Record<Checkpoint, string> = { "end-q1": "End of Q1", halftime: "Halftime", "end-q3": "End of Q3" };
+
+export const picksPerCheckpoint = 5; // the best plays on the board at each break, one per player
+
 export interface LiveBetPick {
   pickId: string; // one per game, player and market
   gameDate: string;
@@ -37,6 +43,7 @@ export interface LiveBetPick {
   projection: number;
   latestValue: number;
   tags: string[];
+  checkpoint?: Checkpoint; // missing on picks from before checkpoints
   result: { status: LiveBetStatus; actual: number | null; gradedAt: string } | null;
 }
 
@@ -48,6 +55,7 @@ export interface LiveNight {
   picks: LiveBetPick[];
   calls: number; // BALLDONTLIE requests this run
   note: string | null;
+  checkpointsTaken?: Record<string, Checkpoint[]>; // by game id
 }
 
 export function clockLabelFor(clock: GameClock): string {
@@ -56,6 +64,30 @@ export function clockLabelFor(clock: GameClock): string {
   const minutes = Math.floor(clock.secondsLeftInPeriod / 60);
   const seconds = String(Math.floor(clock.secondsLeftInPeriod % 60)).padStart(2, "0");
   return `${clock.period <= 4 ? `Q${clock.period}` : `OT${clock.period - 4}`} ${minutes}:${seconds}`;
+}
+
+export function checkpointFor(clock: GameClock): Checkpoint | null {
+  if (clock.isFinished) return null;
+  if (clock.isHalftime) return "halftime";
+  const atBreak = clock.secondsLeftInPeriod <= 5; // the quarter just ended
+  const justStarted = clock.secondsLeftInPeriod >= 660; // first minute of the next quarter, in case the break was missed between checks
+  if ((clock.period === 1 && atBreak) || (clock.period === 2 && justStarted)) return "end-q1";
+  if ((clock.period === 2 && atBreak) || (clock.period === 3 && justStarted)) return "halftime";
+  if ((clock.period === 3 && atBreak) || (clock.period === 4 && justStarted)) return "end-q3";
+  return null;
+}
+
+export function selectCheckpointPicks(candidates: LiveBetPick[], checkpoint: Checkpoint, takenPickIds: Set<string>, limit = picksPerCheckpoint): LiveBetPick[] {
+  const bestByPlayer = new Map<number, LiveBetPick>();
+  for (const candidate of candidates) {
+    if (takenPickIds.has(candidate.pickId)) continue; // a player and market is only picked once per game
+    const current = bestByPlayer.get(candidate.playerId);
+    if (!current || candidate.evPercent > current.evPercent) bestByPlayer.set(candidate.playerId, candidate);
+  }
+  return [...bestByPlayer.values()]
+    .sort((first, second) => second.evPercent - first.evPercent)
+    .slice(0, limit)
+    .map((pick) => ({ ...pick, checkpoint, clockLabel: checkpointLabels[checkpoint], tags: [...pick.tags.filter((tag) => !tag.startsWith("Found in") && tag !== "Halftime"), checkpointLabels[checkpoint]] }));
 }
 
 export function pickTags(row: LivePropRow, clock: GameClock, side: "over" | "under", scoreMargin: number): string[] {

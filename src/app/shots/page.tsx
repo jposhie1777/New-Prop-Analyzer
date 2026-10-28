@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ShotCourt, type ZoneDisplay } from "@/components/shots/ShotCourt";
+import { ShootingSpots } from "@/components/shots/ShootingSpots";
+import { appSettings } from "@/config/appSettings";
 import { Segmented } from "@/components/Segmented";
 import { PlayerHeadshot } from "@/components/PlayerHeadshot";
 import { TeamLogo } from "@/components/TeamLogo";
@@ -121,8 +123,8 @@ export default function ShotsPage() {
     <main className="page">
       <div className="page-title">
         <div>
-          <h1>Shot map</h1>
-          <p>Where a player scores, where tonight&apos;s defense leaks, and where they overlap.</p>
+          <h1>Shots</h1>
+          <p>Who has the shooting matchup tonight, and any player&apos;s shot map against any defense.</p>
         </div>
       </div>
       {noShotData ? (
@@ -130,6 +132,23 @@ export default function ShotsPage() {
       ) : null}
       {!handle ? <div className="faint small">Loading your local stats ({status.message})…</div> : null}
 
+      {!noShotData ? (
+        <ShootingSpots
+          season={seasons.result ? (seasons.result.includes(appSettings.currentSeason) ? appSettings.currentSeason : (seasons.result[0] ?? null)) : null}
+          onOpenMap={(nextPlayerId, nextOpponentId) => {
+            choosePlayer(nextPlayerId);
+            setChosenOpponent(nextOpponentId);
+            document.getElementById("shot-map")?.scrollIntoView({ behavior: "smooth", block: "start" });
+          }}
+        />
+      ) : null}
+
+      <div className="section-head" id="shot-map" style={{ scrollMarginTop: 70 }}>
+        <div>
+          <h2>Shot map</h2>
+          <div className="faint small">One player against one defense, zone by zone.</div>
+        </div>
+      </div>
       <section className="card">
         <div className="shot-picker">
           {profile.result ? (
