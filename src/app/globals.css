@@ -377,3 +377,8 @@ body { overflow-x: clip; } /* clip, not hidden: hidden breaks the sticky header 
 .learning-status span { font-size: 11px; color: var(--text-muted); }
 .learning-status strong { font-size: 16px; font-variant-numeric: tabular-nums; }
 .recommended-card { border-color: rgba(52, 211, 153, 0.5); }
+
+.live-bet-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.live-bet-row { padding: 10px 12px; border-radius: var(--radius-medium); background: var(--surface-sunken); border: 1px solid var(--border-subtle); }
+.live-bet-name { overflow-wrap: anywhere; }
+.live-bet-numbers { text-align: right; flex-shrink: 0; font-variant-numeric: tabular-nums; }

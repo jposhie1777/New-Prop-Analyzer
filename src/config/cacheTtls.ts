@@ -18,6 +18,7 @@ export const cachePolicies = {
   unfinishedDate: { sMaxAgeSeconds: 60, staleWhileRevalidateSeconds: 60 }, // a past date with a game not yet final
   players: { sMaxAgeSeconds: 86400, staleWhileRevalidateSeconds: 86400 }, // 1 day, player search
   appConfig: { sMaxAgeSeconds: 300, staleWhileRevalidateSeconds: 600 }, // 5 min
+  liveBets: { sMaxAgeSeconds: 60, staleWhileRevalidateSeconds: 120 }, // 60 s, the tracker writes about every 3 min
 } satisfies Record<string, CachePolicy>;
 
 export type CachePolicyName = keyof typeof cachePolicies;
