@@ -1,13 +1,13 @@
 {
  "date": "2026-10-28",
- "updatedAt": "2026-10-28T23:34:19.495Z",
+ "updatedAt": "2026-10-28T23:38:21.756Z",
  "state": "running",
  "games": [
   {
    "gameId": 21717975,
    "matchup": "MIA @ ATL",
-   "status": "1st Qtr",
-   "homeScore": 25,
+   "status": "2nd Qtr",
+   "homeScore": 28,
    "visitorScore": 34
   },
   {
@@ -15,7 +15,7 @@
    "matchup": "WAS @ CLE",
    "status": "1st Qtr",
    "homeScore": 32,
-   "visitorScore": 30
+   "visitorScore": 35
   },
   {
    "gameId": 21717977,
@@ -28,7 +28,7 @@
    "gameId": 21717978,
    "matchup": "PHI @ IND",
    "status": "1st Qtr",
-   "homeScore": 17,
+   "homeScore": 19,
    "visitorScore": 22
   },
   {
@@ -205,7 +205,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 0.4981682975626348,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Over",
     "Steals",
@@ -455,7 +455,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 0.49946733775235674,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Under",
     "Steals",
@@ -2172,7 +2172,7 @@
    "scoreMargin": 1,
    "valueAtPick": 0,
    "projection": 20.398682800748887,
-   "latestValue": 2,
+   "latestValue": 5,
    "tags": [
     "Under",
     "Points",
@@ -2422,7 +2422,7 @@
    "scoreMargin": 1,
    "valueAtPick": 0,
    "projection": 5.45353157517711,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Under",
     "Rebounds",
@@ -4013,7 +4013,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 4.438146194950492,
-   "latestValue": 1,
+   "latestValue": 0,
    "tags": [
     "Over",
     "Rebounds",
@@ -5111,7 +5111,7 @@
    "scoreMargin": 4,
    "valueAtPick": 1,
    "projection": 24.107799063531456,
-   "latestValue": 3,
+   "latestValue": 6,
    "tags": [
     "Over",
     "Pts+Reb",
@@ -5142,7 +5142,7 @@
    "scoreMargin": 4,
    "valueAtPick": 2,
    "projection": 33.94369657793263,
-   "latestValue": 6,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -5205,7 +5205,7 @@
    "scoreMargin": 4,
    "valueAtPick": 2,
    "projection": 12.186865906127343,
-   "latestValue": 9,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Over",
@@ -5237,7 +5237,7 @@
    "scoreMargin": 4,
    "valueAtPick": 2,
    "projection": 18.009839150040907,
-   "latestValue": 10,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -5269,7 +5269,7 @@
    "scoreMargin": 4,
    "valueAtPick": 2,
    "projection": 19.977756307053657,
-   "latestValue": 11,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -5551,7 +5551,7 @@
    "scoreMargin": 3,
    "valueAtPick": 0,
    "projection": 15.914053128367629,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Under",
     "Pts+Reb",
@@ -6674,7 +6674,7 @@
    "scoreMargin": 7,
    "valueAtPick": 0,
    "projection": 19.560590819850823,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Under",
     "PRA",
@@ -7298,7 +7298,7 @@
    "scoreMargin": 0,
    "valueAtPick": 1,
    "projection": 11.31799896925659,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -7985,7 +7985,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 28.95621214636991,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -8017,7 +8017,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 32.8938679986264,
-   "latestValue": 9,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -8923,7 +8923,7 @@
    "scoreMargin": 3,
    "valueAtPick": 1,
    "projection": 30.059589828497383,
-   "latestValue": 5,
+   "latestValue": 8,
    "tags": [
     "Under",
     "Pts+Ast",
@@ -8954,7 +8954,7 @@
    "scoreMargin": 3,
    "valueAtPick": 0,
    "projection": 6.971908557186147,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Under",
     "Reb+Ast",
@@ -9421,7 +9421,7 @@
    "scoreMargin": 0,
    "valueAtPick": 1,
    "projection": 7.327682974672564,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -9829,7 +9829,7 @@
    "scoreMargin": 8,
    "valueAtPick": 0,
    "projection": 2.2942098487783267,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Under",
     "Rebounds",
@@ -9860,7 +9860,7 @@
    "scoreMargin": 8,
    "valueAtPick": 0,
    "projection": 8.985599174462221,
-   "latestValue": 2,
+   "latestValue": 1,
    "tags": [
     "Under",
     "Pts+Reb",
@@ -10080,7 +10080,7 @@
    "scoreMargin": 0,
    "valueAtPick": 3,
    "projection": 29.529981863565336,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -10112,7 +10112,7 @@
    "scoreMargin": 0,
    "valueAtPick": 3,
    "projection": 34.372598298564284,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -10207,7 +10207,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 25.595184735935703,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -10239,7 +10239,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 26.574165457177312,
-   "latestValue": 7,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -10866,7 +10866,7 @@
    "scoreMargin": 9,
    "valueAtPick": 0,
    "projection": 4.996659225180705,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Under",
     "Reb+Ast",
@@ -12032,8 +12032,40 @@
     "Under 60% of line"
    ],
    "result": null
+  },
+  {
+   "pickId": "21717975-1028036986-threes",
+   "gameDate": "2026-10-28",
+   "gameId": 21717975,
+   "matchup": "MIA @ ATL",
+   "playerId": 1028036986,
+   "playerName": "Pelle Larsson",
+   "teamAbbreviation": "MIA",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 0.5,
+   "americanOdds": 105,
+   "vendor": "betmgm",
+   "modelProbability": 0.5635960042136383,
+   "evPercent": 15.537180863795852,
+   "foundAt": "2026-10-28T23:36:18.388Z",
+   "clockLabel": "Q2 12:00",
+   "period": 2,
+   "scoreMargin": 9,
+   "valueAtPick": 0,
+   "projection": 0.3755196132330247,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Found in Q2",
+    "Under 60% of line"
+   ],
+   "result": null
   }
  ],
- "calls": 541,
+ "calls": 590,
  "note": null
 }
