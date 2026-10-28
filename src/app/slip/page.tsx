@@ -15,6 +15,9 @@ import { appSettings } from "@/config/appSettings";
 import { readLocalJson, writeLocalJson } from "@/lib/client/safeStorage";
 import { filterByBooks } from "@/lib/client/bookFilter";
 import { GamblyCard } from "@/components/slip/GamblyCard";
+import { MyBets, usePlacedBets } from "@/components/slip/MyBets";
+import { placeBets } from "@/lib/client/placedBets";
+import { Segmented } from "@/components/Segmented";
 
 const shortBookNames: Record<string, string> = { draftkings: "DK", fanduel: "FD", betmgm: "MGM", caesars: "CZR", betrivers: "BR", espnbet: "ESPN", fanatics: "FAN", betway: "BWY", ballybet: "BALLY", betparx: "PARX", rebet: "REBET" };
 
@@ -134,13 +137,20 @@ function SlipItem({ pick, settings, teamId }: { pick: SlipPick; settings: Return
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => {
+                    placeBets([pick], "single", "book", settings.defaultBook); // shows up in My bets
                     if (link.kind !== "selection") copyText(pickText).then(setCopied); // no bet-slip link: copy the pick so it can be pasted into the book's search
                   }}
                 >
                   Bet at {vendorLabel(chosen.vendor)} {formatAmerican(chosen.americanOdds)} ↗
                 </a>
               ) : (
-                <button className="button bet-button" onClick={() => copyText(pickText).then(setCopied)}>
+                <button
+                  className="button bet-button"
+                  onClick={() => {
+                    placeBets([pick], "single", "copy", settings.defaultBook);
+                    copyText(pickText).then(setCopied);
+                  }}
+                >
                   Copy pick for {vendorLabel(chosen.vendor)}
                 </button>
               )
@@ -171,6 +181,24 @@ export default function SlipPage() {
   const [stake, setStake] = useState<number>(10);
   const [bankroll, setBankroll] = useState<number>(1000);
   const [parlayCopied, setParlayCopied] = useState(false);
+  const placedBets = usePlacedBets();
+  const [chosenView, setChosenView] = useState<"slip" | "bets" | null>(null);
+  const [savedNotice, setSavedNotice] = useState(false);
+  const placedCount = placedBets.length;
+  const [seenCount, setSeenCount] = useState<number | null>(null);
+  useEffect(() => {
+    if (new URLSearchParams(window.location.search).get("view") === "bets") setChosenView("bets"); // deep link: /slip?view=bets
+  }, []);
+  useEffect(() => {
+    if (seenCount !== null && placedCount > seenCount) {
+      setSavedNotice(true);
+      const timer = window.setTimeout(() => setSavedNotice(false), 4000);
+      setSeenCount(placedCount);
+      return () => window.clearTimeout(timer);
+    }
+    setSeenCount(placedCount);
+  }, [placedCount]); // eslint-disable-line react-hooks/exhaustive-deps
+  const view = chosenView ?? (picks.length === 0 && placedCount > 0 ? "bets" : "slip");
   useEffect(() => {
     setStake(readLocalJson("pulse-nba-stake", 10)); // read after mount so server and browser HTML match
     setBankroll(readLocalJson("pulse-nba-bankroll", 1000));
@@ -196,21 +224,41 @@ export default function SlipPage() {
     <main className="page">
       <div className="page-title">
         <div>
-          <h1>Bet slip</h1>
-          <p>Tap a pick to choose a book and bet. Prices are from when you added it.</p>
+          <h1>{view === "slip" ? "Bet slip" : "My bets"}</h1>
+          <p>{view === "slip" ? "Tap a pick to choose a book and bet. Bets you copy, open at a book or send to GamblyBot are tracked in My bets." : "Live progress on the bets you placed from the slip, on every device."}</p>
         </div>
-        {picks.length > 0 ? (
-          <button className="button ghost" onClick={clearSlip}>
-            Clear
-          </button>
-        ) : null}
+        <div className="row wrap">
+          <Segmented
+            label="Slip or my bets"
+            options={[
+              { value: "slip", label: `Slip (${picks.length})` },
+              { value: "bets", label: `My bets (${placedCount})` },
+            ]}
+            value={view}
+            onChange={setChosenView}
+          />
+          {view === "slip" && picks.length > 0 ? (
+            <button className="button ghost" onClick={clearSlip}>
+              Clear
+            </button>
+          ) : null}
+        </div>
       </div>
-      {picks.length === 0 ? (
+      {savedNotice && view === "slip" ? (
+        <div className="notice info" style={{ marginBottom: 12 }}>
+          Saved to My bets.{" "}
+          <button className="link-button" onClick={() => setChosenView("bets")}>
+            View progress
+          </button>
+        </div>
+      ) : null}
+      {view === "bets" ? <MyBets /> : null}
+      {view === "slip" && picks.length === 0 ? (
         <div className="card empty-state">
           Your slip is empty. Tap any price on the <Link href="/" className="expand-hint">slate</Link>, a player page or <Link href="/live" className="expand-hint">Live</Link>.
         </div>
       ) : null}
-      {picks.length > 0 ? (
+      {view === "slip" && picks.length > 0 ? (
         <div className="card slip-list">
           {picks.map((pick) => (
             <SlipItem key={pick.pickId} pick={pick} settings={settings} teamId={pickTeamId(pick, playerTeams.result)} />
@@ -218,9 +266,9 @@ export default function SlipPage() {
         </div>
       ) : null}
 
-      {picks.length > 0 ? <GamblyCard picks={picks} parlayVendor={activeParlay?.vendor ?? null} defaultBook={settings.defaultBook} copyText={copyText} /> : null}
+      {view === "slip" && picks.length > 0 ? <GamblyCard picks={picks} parlayVendor={activeParlay?.vendor ?? null} defaultBook={settings.defaultBook} copyText={copyText} /> : null}
 
-      {picks.length > 1 ? (
+      {view === "slip" && picks.length > 1 ? (
         <section className="card" style={{ marginTop: 12 }}>
           <div className="row-between">
             <h2 style={{ margin: 0, fontSize: 16 }}>Parlay · {picks.length} legs</h2>
@@ -249,6 +297,7 @@ export default function SlipPage() {
                 <button
                   className={`button${parlayCopied ? " added" : ""}`}
                   onClick={async () => {
+                    placeBets(picks, "parlay", "copy", settings.defaultBook, activeParlay?.vendor ?? null);
                     setParlayCopied(await copyText(parlayText));
                     window.setTimeout(() => setParlayCopied(false), 1800);
                   }}
@@ -256,10 +305,22 @@ export default function SlipPage() {
                   {parlayCopied ? "Copied" : "Copy all legs"}
                 </button>
                 {parlayLink && activeParlay ? (
-                  <a className="button primary" href={parlayLink.href} target="_blank" rel="noopener noreferrer" onClick={() => copyText(parlayText)}>
+                  <a
+                    className="button primary"
+                    href={parlayLink.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => {
+                      placeBets(picks, "parlay", "book", settings.defaultBook, activeParlay.vendor);
+                      copyText(parlayText);
+                    }}
+                  >
                     Open {vendorLabel(activeParlay.vendor)} ↗
                   </a>
                 ) : null}
+                <button className="button ghost" onClick={() => placeBets(picks, "parlay", "manual", settings.defaultBook, activeParlay?.vendor ?? null)}>
+                  Track only
+                </button>
               </div>
             </>
           ) : (

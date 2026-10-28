@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Segmented } from "@/components/Segmented";
 import { copyTextFor, selectedOffer, type SlipPick } from "@/lib/client/betSlip";
 import { vendorLabel } from "@/lib/odds/deeplinks";
+import { placeBets } from "@/lib/client/placedBets";
 
 const gamblyPhoneDisplay = "(305) 857-2288"; // GamblyBot's texting number, from gambly.com
 const gamblyPhoneDigits = "+13058572288";
@@ -24,6 +25,7 @@ export function GamblyCard({ picks, parlayVendor, defaultBook, copyText }: { pic
   const message = gamblyMessage(picks, mode, bookVendor, defaultBook);
   const smsLink = `sms:${gamblyPhoneDigits}?&body=${encodeURIComponent(message)}`; // the ?& form opens a prefilled text on both iPhone and Android
   const markCopied = async () => {
+    placeBets(picks, picks.length > 1 && mode === "parlay" ? "parlay" : "single", "gambly", defaultBook, bookVendor); // tracked in My bets
     setCopied(await copyText(message));
     window.setTimeout(() => setCopied(false), 2500);
   };

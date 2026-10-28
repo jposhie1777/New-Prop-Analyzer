@@ -3,6 +3,7 @@
 import { readSlip, replaceSlip, subscribeSlip, type SlipPick } from "./betSlip";
 import { readSettings, saveSettings, subscribeSettings, type UserSettings } from "./settings";
 import { readLocalJson, writeLocalJson } from "./safeStorage";
+import { readPlacedBets, replacePlacedBets, subscribePlacedBets, type PlacedBet } from "./placedBets";
 import type { SyncSectionName, SyncState } from "@/lib/sync/syncState";
 
 export type CloudSyncStatus = "off" | "syncing" | "synced" | "error";
@@ -51,6 +52,7 @@ function localSections(): Partial<SyncState> {
   return {
     slip: stamps.slip ? { value: readSlip(), updatedAt: stamps.slip } : null,
     settings: stamps.settings ? { value: syncedSettings(readSettings()), updatedAt: stamps.settings } : null,
+    placed: stamps.placed ? { value: readPlacedBets(), updatedAt: stamps.placed } : null,
   };
 }
 
@@ -61,6 +63,10 @@ function applyRemote(state: SyncState): void {
     if (state.slip && (!stamps.slip || state.slip.updatedAt > stamps.slip)) {
       replaceSlip(state.slip.value as SlipPick[]);
       stamp("slip", state.slip.updatedAt);
+    }
+    if (state.placed && (!stamps.placed || state.placed.updatedAt > stamps.placed)) {
+      replacePlacedBets(state.placed.value as PlacedBet[]);
+      stamp("placed", state.placed.updatedAt);
     }
     if (state.settings && (!stamps.settings || state.settings.updatedAt > stamps.settings)) {
       const allowed = Object.fromEntries(Object.entries(state.settings.value).filter(([settingKey]) => syncedSettingKeys.includes(settingKey as keyof UserSettings)));
@@ -74,7 +80,11 @@ function applyRemote(state: SyncState): void {
 
 function needsPush(state: SyncState): boolean {
   const stamps = readStamps();
-  return (Boolean(stamps.slip) && (!state.slip || stamps.slip! > state.slip.updatedAt)) || (Boolean(stamps.settings) && (!state.settings || stamps.settings! > state.settings.updatedAt));
+  return (["slip", "settings", "placed"] as const).some((sectionName) => {
+    const localStamp = stamps[sectionName];
+    const remote = state[sectionName];
+    return Boolean(localStamp) && (!remote || localStamp! > remote.updatedAt);
+  });
 }
 
 async function push(): Promise<void> {
@@ -104,6 +114,7 @@ export async function pullCloudSync(): Promise<void> {
     const firstRunStamp = new Date().toISOString();
     if (!body.state.slip && !stamps.slip && readSlip().length > 0) stamp("slip", firstRunStamp); // the first device to sync uploads what it already has
     if (!body.state.settings && !stamps.settings) stamp("settings", firstRunStamp);
+    if (!body.state.placed && !stamps.placed && readPlacedBets().length > 0) stamp("placed", firstRunStamp);
     if (needsPush(body.state)) await push(); // this device has changes the cloud has not seen
     else setStatus("synced");
   } catch {
@@ -126,6 +137,7 @@ export function startCloudSync(): () => void {
   started = true;
   let lastSettingsText = JSON.stringify(syncedSettings(readSettings()));
   const stopSlip = subscribeSlip(() => schedulePush("slip"));
+  const stopPlaced = subscribePlacedBets(() => schedulePush("placed"));
   const stopSettings = subscribeSettings((settings) => {
     const settingsText = JSON.stringify(syncedSettings(settings));
     if (settingsText === lastSettingsText) return; // only changes to synced settings count
@@ -141,6 +153,7 @@ export function startCloudSync(): () => void {
   return () => {
     started = false;
     stopSlip();
+    stopPlaced();
     stopSettings();
     document.removeEventListener("visibilitychange", onVisible);
     window.removeEventListener("focus", onVisible);
