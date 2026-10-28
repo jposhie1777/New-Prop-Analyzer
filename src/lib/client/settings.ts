@@ -9,6 +9,8 @@ export interface UserSettings {
   enabledBooks: string[]; // empty = every book
   defaultBook: string; // "" = best price
   liveLayout: "grid" | "rows"; // how All player props is drawn on the Live tab
+  threeQuarterMinimumPercent: number; // rating needed for a 100-in-3 recommendation
+  threeQuarterMaxPicks: number;
 }
 
 const settingsStorageKey = "pulse-nba-settings";
@@ -23,6 +25,8 @@ export function defaultSettings(): UserSettings {
     enabledBooks: [],
     defaultBook: "",
     liveLayout: "grid",
+    threeQuarterMinimumPercent: appSettings.defaultThreeQuarterMinimumPercent,
+    threeQuarterMaxPicks: appSettings.defaultThreeQuarterMaxPicks,
   };
 }
 

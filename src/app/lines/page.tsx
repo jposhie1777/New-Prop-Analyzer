@@ -8,7 +8,8 @@ import { useSlate } from "@/lib/client/slateData";
 import { useLineAnalyses, type GameAnalysis } from "@/lib/client/lineModel";
 import { groupOddsByGame } from "@/lib/odds/consensus";
 import type { LeagueRatings, TeamRating } from "@/lib/analytics/aggregates/teamRatings";
-import { homeCourtPoints, injuryReplacementShare, type LineEdge } from "@/lib/analytics/gameModel";
+import { homeCourtPoints, implausibleEvPercent, injuryReplacementShare, marginDeviation, totalDeviation, type LineEdge } from "@/lib/analytics/gameModel";
+import { learningPriors, type LearnedParameters } from "@/lib/analytics/lineLearning";
 import { buildGamePick } from "@/lib/client/pickBuilders";
 import { formatTipoff } from "@/lib/dates";
 import { formatNumber, formatPercent, formatSigned } from "@/lib/client/format";
@@ -50,15 +51,17 @@ function EdgeRow({ edge, game, odds }: { edge: LineEdge; game: BdlGame; odds: Bd
         <span className="faint small">Market {edge.marketText}</span>
       </div>
       <div className="line-edge-pick">
-        <PriceButton pick={pick} sideLabel={edge.sideLabel} odds={edge.americanOdds} vendor={edge.vendor} note={`${formatSigned(edge.evPercent, 1)}% EV · ${formatPercent(edge.modelProbability, 0)}`} highlight={edge.flagged} />
-        {edge.tooFar ? <span className="warning-text small">Far from market: check news</span> : null}
+        <PriceButton pick={pick} sideLabel={edge.sideLabel} odds={edge.americanOdds} vendor={edge.vendor} note={edge.evPercent >= implausibleEvPercent ? "EV hidden" : `${formatSigned(edge.evPercent, 1)}% EV · ${formatPercent(edge.modelProbability, 0)}`} highlight={edge.flagged} />
+        {edge.tooFar ? <span className="warning-text small">{edge.evPercent >= implausibleEvPercent ? "Too good to be true: check news" : "Far from market: check news"}</span> : null}
       </div>
     </div>
   );
 }
 
-function GameEdgeCard({ analysis, league, odds }: { analysis: GameAnalysis; league: LeagueRatings; odds: BdlBettingOdd[] }) {
-  const { game, projection, edges, home, away, homeRest, awayRest } = analysis;
+function GameEdgeCard({ analysis, league, odds, parameters }: { analysis: GameAnalysis; league: LeagueRatings; odds: BdlBettingOdd[]; parameters: LearnedParameters }) {
+  const { game, projection, learned, edges, home, away, homeRest, awayRest } = analysis;
+  const learnedHomePoints = (learned.total + learned.margin) / 2;
+  const learnedAwayPoints = (learned.total - learned.margin) / 2;
   const bestByMarket = (["spread", "total", "moneyline"] as const).map((market) => edges.filter((edge) => edge.market === market).sort((first, second) => second.evPercent - first.evPercent)[0]).filter((edge): edge is LineEdge => Boolean(edge));
   return (
     <article className="card line-card">
@@ -71,8 +74,8 @@ function GameEdgeCard({ analysis, league, odds }: { analysis: GameAnalysis; leag
       </div>
       <div className="line-score">
         {[
-          { team: game.visitor_team, points: projection.awayPoints },
-          { team: game.home_team, points: projection.homePoints },
+          { team: game.visitor_team, points: learnedAwayPoints },
+          { team: game.home_team, points: learnedHomePoints },
         ].map(({ team, points }) => (
           <div key={team.id} className="row-between">
             <span className="row">
@@ -82,7 +85,7 @@ function GameEdgeCard({ analysis, league, odds }: { analysis: GameAnalysis; leag
             <span className="line-score-points">{formatNumber(points, 1)}</span>
           </div>
         ))}
-        <div className="faint small">Projected score · pace {formatNumber(projection.pace, 1)} (league {formatNumber(league.pace, 1)})</div>
+        <div className="faint small">Projected score (learned) · pace {formatNumber(projection.pace, 1)} (league {formatNumber(league.pace, 1)})</div>
       </div>
       <div className="line-edges">
         {bestByMarket.map((edge) => (
@@ -92,6 +95,13 @@ function GameEdgeCard({ analysis, league, odds }: { analysis: GameAnalysis; leag
       </div>
       <details>
         <summary className="expand-hint">Why the model says this</summary>
+        <p className="small" style={{ margin: "8px 0 0" }}>
+          Original model: {game.home_team.abbreviation} {formatSigned(-projection.margin, 1)}, total {formatNumber(projection.total, 1)} ({formatNumber(projection.awayPoints, 1)}-{formatNumber(projection.homePoints, 1)}).
+        </p>
+        <p className="faint small" style={{ margin: "4px 0 0" }}>
+          {parameters.sampleCount > 0 ? `Learned from ${parameters.sampleCount} finished games: ` : "No finished games learned from yet: "}
+          bias {formatSigned(parameters.marginBias, 1)} margin / {formatSigned(parameters.totalBias, 1)} total, then {Math.round(parameters.marginTrust * 100)}% model and {100 - Math.round(parameters.marginTrust * 100)}% market on the spread, {Math.round(parameters.totalTrust * 100)}% model on the total.
+        </p>
         <ul className="factor-list small">
           {projection.factors.map((factor) => (
             <li key={factor.label}>
@@ -128,7 +138,7 @@ function GameEdgeCard({ analysis, league, odds }: { analysis: GameAnalysis; leag
 export default function LinesPage() {
   const settings = useSettings();
   const slate = useSlate();
-  const { analyses, ratings, ratingsLoading, gamesAhead, startedCount } = useLineAnalyses(slate); // also saves the daily model record
+  const { analyses, ratings, ratingsLoading, gamesAhead, startedCount, parameters } = useLineAnalyses(slate); // also saves the daily model record
   const oddsByGame = groupOddsByGame(slate.data?.odds ?? []);
   const flaggedEdges = analyses.flatMap((analysis) => analysis.edges.filter((edge) => edge.flagged));
 
@@ -138,7 +148,7 @@ export default function LinesPage() {
         <div>
           <h1>Lines</h1>
           <p>
-            Model spreads, totals and moneylines vs. the books. {flaggedEdges.length} edge{flaggedEdges.length === 1 ? "" : "s"} at {settings.evThresholdPercent}%+ EV.
+            Learned model spreads, totals and moneylines vs. the books. {flaggedEdges.length} edge{flaggedEdges.length === 1 ? "" : "s"} at {settings.evThresholdPercent}%+ EV.
           </p>
         </div>
         <BooksIndicator />
@@ -149,13 +159,13 @@ export default function LinesPage() {
       {startedCount > 0 ? <p className="faint small">{startedCount} game(s) already started or finished are hidden: this model is for pregame lines. Use Live for in-game props.</p> : null}
       <div className="grid-two">
         {ratings
-          ? analyses.map((analysis) => <GameEdgeCard key={analysis.game.id} analysis={analysis} league={ratings} odds={oddsByGame.get(analysis.game.id) ?? []} />)
+          ? analyses.map((analysis) => <GameEdgeCard key={analysis.game.id} analysis={analysis} league={ratings} odds={oddsByGame.get(analysis.game.id) ?? []} parameters={parameters} />)
           : null}
       </div>
       <details className="card" style={{ marginTop: 12 }}>
         <summary className="expand-hint">How the model works</summary>
         <p className="faint small">
-          Pace = home pace × away pace ÷ league pace. Each side scores pace × (its offense × the other defense ÷ league average) per 100 possessions. Then: home court +{homeCourtPoints}, a back-to-back costs 1.5 points of margin (and a little total), a rest edge of 2+ days adds 0.5, and each recent regular listed out, doubtful or questionable costs part of his scoring (teammates absorb about {Math.round(injuryReplacementShare * 100)}%). Win and cover chances use a normal spread of 12.5 points on the margin and 17 on the total. EV uses each book&apos;s own line and price; green is at or above your threshold. When the model is more than 6 points (spread), 10 points (total) or 15% (moneyline) from the market it usually means news it has not seen, so those are never flagged. Markets are sharp: treat edges as leads, not locks.
+          Pace = home pace × away pace ÷ league pace. Each side scores pace × (its offense × the other defense ÷ league average) per 100 possessions. Then: home court +{homeCourtPoints}, a back-to-back costs 1.5 points of margin (and a little total), a rest edge of 2+ days adds 0.5, and each recent regular listed out, doubtful or questionable costs part of his scoring (teammates absorb about {Math.round(injuryReplacementShare * 100)}%). Learning: after each finished game the model compares itself with the opening line and the final score. It removes steady biases, learns how much of its disagreement with the market turned out right (that share is its trust; the rest comes from the market), and learns how widely results land around its line, which sets the cover and win chances. It only learns from earlier days, and small samples lean on the starting values ({Math.round(learningPriors.trust * 100)}% trust, {marginDeviation} and {totalDeviation} point spreads). EV uses each book&apos;s own line and price; green is at or above your threshold. When the model is more than 6 points (spread), 10 points (total) or 15% (moneyline) from the market it usually means news it has not seen, so those are never flagged; neither is any edge of {implausibleEvPercent}%+ EV, which is almost always missing news or a stale line. Markets are sharp: treat edges as leads, not locks.
         </p>
       </details>
     </main>

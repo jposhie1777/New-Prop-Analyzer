@@ -68,3 +68,24 @@ export function subscribeTracked(listener: (picks: TrackedPick[]) => void): () =
   trackerListeners.add(listener);
   return () => trackerListeners.delete(listener);
 }
+
+const threeQuarterPruneKey = "pulse-nba-t3-recommendations-only";
+
+export function pruneThreeQuarterPicks(minimumProbability: number, maximumPerDay: number): number {
+  if (readLocalJson<number>(threeQuarterPruneKey, 0) === 1) return 0; // once: the record used to hold every team
+  const existing = readTracked();
+  const keptIds = new Set<string>();
+  const byDay = new Map<string, TrackedPick[]>();
+  for (const pick of existing.filter((candidate) => candidate.source === "100-in-3")) byDay.set(pick.gameDate, [...(byDay.get(pick.gameDate) ?? []), pick]);
+  for (const dayPicks of byDay.values()) {
+    dayPicks
+      .filter((pick) => (pick.modelProbability ?? 0) >= minimumProbability)
+      .sort((first, second) => (second.modelProbability ?? 0) - (first.modelProbability ?? 0))
+      .slice(0, maximumPerDay)
+      .forEach((pick) => keptIds.add(pick.trackId));
+  }
+  const removal = existing.filter((pick) => pick.source === "100-in-3" && !keptIds.has(pick.trackId)).map((pick) => pick.trackId);
+  removeTracked(removal);
+  writeLocalJson(threeQuarterPruneKey, 1);
+  return removal.length;
+}

@@ -1,12 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Segmented } from "@/components/Segmented";
 import { useSettings } from "@/lib/client/hooks";
 import { summarizeRecord, type RecordSummary, type TrackedPick } from "@/lib/tracking/tracker";
 import { dailyRecords, inRecordWindow, minimumGradedForVerdict, modelMarketLabels, modelMarkets, projectionAccuracy, recordWindowLabels, strengthsAndWeaknesses, tagRecords, type ModelMarket, type RecordWindow, type Verdict } from "@/lib/tracking/modelRecord";
-import { backtestSeason, type BacktestProgress } from "@/lib/client/lineModel";
-import { trackPicks } from "@/lib/tracking/trackerStore";
+import { historyOptions, syncLineHistory, useLearnedParameters, useLinePicks, type BacktestProgress } from "@/lib/client/lineModel";
+import { saveLinePickGrades } from "@/lib/client/lineStore";
+import { gradePendingPicks } from "@/lib/tracking/grader";
+import { learningPriors, type LearnedParameters } from "@/lib/analytics/lineLearning";
 import type { AnalyticsHandle } from "@/lib/client/analyticsStore";
 import { formatNumber, formatPercent, formatSigned } from "@/lib/client/format";
 import { appSettings } from "@/config/appSettings";
@@ -44,8 +46,45 @@ function VerdictLine({ verdict }: { verdict: Verdict }) {
   );
 }
 
-export function LinesModelRecord({ tracked, handle }: { tracked: TrackedPick[]; handle: AnalyticsHandle | null }) {
+function LearningStatus({ parameters }: { parameters: LearnedParameters }) {
+  if (parameters.sampleCount === 0) return <p className="faint small">No finished games learned from yet. The learned model starts out leaning {Math.round(learningPriors.trust * 100)}% on the model and {100 - Math.round(learningPriors.trust * 100)}% on the market.</p>;
+  return (
+    <div className="learning-status">
+      <div>
+        <span>Trust in model</span>
+        <strong>
+          {Math.round(parameters.marginTrust * 100)}% / {Math.round(parameters.totalTrust * 100)}%
+        </strong>
+        <span>spreads / totals (rest from the market)</span>
+      </div>
+      <div>
+        <span>Bias fixed</span>
+        <strong>
+          {formatSigned(parameters.marginBias, 1)} / {formatSigned(parameters.totalBias, 1)}
+        </strong>
+        <span>pts added to margin / total</span>
+      </div>
+      <div>
+        <span>Outcome spread</span>
+        <strong>
+          {formatNumber(parameters.marginDeviation, 1)} / {formatNumber(parameters.totalDeviation, 1)}
+        </strong>
+        <span>pts, margin / total</span>
+      </div>
+      <div>
+        <span>Learned from</span>
+        <strong>{parameters.sampleCount}</strong>
+        <span>finished games</span>
+      </div>
+    </div>
+  );
+}
+
+export function LinesModelRecord({ handle }: { handle: AnalyticsHandle | null }) {
   const settings = useSettings();
+  const tracked = useLinePicks();
+  const { parameters } = useLearnedParameters();
+  const [version, setVersion] = useState<"learned" | "model">("learned");
   const [includeBacktest, setIncludeBacktest] = useState<"all" | "live">("all");
   const [breakdownMarket, setBreakdownMarket] = useState<ModelMarket>("spread");
   const [breakdownWindow, setBreakdownWindow] = useState<RecordWindow>("season");
@@ -53,21 +92,34 @@ export function LinesModelRecord({ tracked, handle }: { tracked: TrackedPick[]; 
   const [backtestMessage, setBacktestMessage] = useState<string | null>(null);
   const today = todayEastern();
   const season = appSettings.currentSeason;
-  const modelPicks = tracked.filter((pick) => pick.source === "model" && (includeBacktest === "all" || !(pick.tags ?? []).includes("Backtest")));
+  useEffect(() => {
+    if (!handle) return;
+    let cancelled = false;
+    gradePendingPicks(handle.engine, tracked, today).then(
+      (graded) => {
+        if (!cancelled) void saveLinePickGrades(graded);
+      },
+      () => undefined,
+    ); // final scores grade both versions
+    return () => {
+      cancelled = true;
+    };
+  }, [handle, tracked.length]); // eslint-disable-line react-hooks/exhaustive-deps
+  const isShown = (pick: TrackedPick) => includeBacktest === "all" || !(pick.tags ?? []).includes("Backtest");
+  const modelPicks = tracked.filter((pick) => pick.source === version && isShown(pick));
   const seasonPicks = modelPicks.filter((pick) => inRecordWindow(pick, "season", today, season));
   const verdicts = strengthsAndWeaknesses(seasonPicks);
   const breakdownPicks = modelPicks.filter((pick) => pick.kind === breakdownMarket && inRecordWindow(pick, breakdownWindow, today, season));
   const days = dailyRecords(modelPicks.filter((pick) => pick.gameDate < today), 14);
-  const liveCount = tracked.filter((pick) => pick.source === "model" && !(pick.tags ?? []).includes("Backtest")).length;
+  const liveCount = tracked.filter((pick) => pick.source === "learned" && !(pick.tags ?? []).includes("Backtest")).length;
+  const versionSeason = (source: "model" | "learned", market: ModelMarket) => summarizeRecord(tracked.filter((pick) => pick.source === source && pick.kind === market && isShown(pick) && inRecordWindow(pick, "season", today, season)));
 
   const runBacktest = async () => {
     if (!handle) return;
     setBacktestMessage(null);
     try {
-      const knownIds = new Set(tracked.map((pick) => pick.trackId));
-      const picks = await backtestSeason(handle.engine, season, settings.evThresholdPercent, knownIds, setProgress);
-      const added = trackPicks(picks);
-      setBacktestMessage(added > 0 ? `Backtested ${added} model picks. They are graded below and tagged "Backtest".` : "Nothing new to backtest: every finished game this season is already in the record.");
+      const added = await syncLineHistory(handle.engine, season, historyOptions(settings), setProgress);
+      setBacktestMessage(added > 0 ? `Added ${added} backtest picks (both versions). They are graded below and tagged "Backtest".` : "Up to date: every finished game this season is already in the record.");
     } catch (caughtError) {
       setBacktestMessage(`Backtest failed: ${caughtError instanceof Error ? caughtError.message : String(caughtError)}`);
     } finally {
@@ -80,18 +132,60 @@ export function LinesModelRecord({ tracked, handle }: { tracked: TrackedPick[]; 
       <div className="card-header wrap">
         <div>
           <h2>Lines model</h2>
-          <div className="faint small">The model&apos;s side in every game, one pick per market, at the last line seen before tip-off. 1 unit flat.</div>
+          <div className="faint small">The model&apos;s side in every game, one pick per market, at the last line seen before tip-off. 1 unit flat. Finished days fill in by themselves.</div>
         </div>
-        <Segmented
-          options={[
-            { value: "all", label: "Live + backtest" },
-            { value: "live", label: "Live only" },
-          ]}
-          value={includeBacktest}
-          onChange={setIncludeBacktest}
-          label="Include backtest"
-        />
+        <div className="row wrap" style={{ gap: 6 }}>
+          <Segmented
+            options={[
+              { value: "learned", label: "Learned" },
+              { value: "model", label: "Original" },
+            ]}
+            value={version}
+            onChange={setVersion}
+            label="Model version"
+          />
+          <Segmented
+            options={[
+              { value: "all", label: "Live + backtest" },
+              { value: "live", label: "Live only" },
+            ]}
+            value={includeBacktest}
+            onChange={setIncludeBacktest}
+            label="Include backtest"
+          />
+        </div>
       </div>
+
+      <h3 className="record-subhead">What it has learned</h3>
+      <LearningStatus parameters={parameters} />
+
+      <div className="table-scroll" style={{ marginTop: 10 }}>
+        <table className="data-table record-table">
+          <thead>
+            <tr>
+              <th>Season</th>
+              <th>Learned</th>
+              <th>Original</th>
+            </tr>
+          </thead>
+          <tbody>
+            {modelMarkets.map((market) => (
+              <tr key={market}>
+                <td className="strong">{modelMarketLabels[market]}</td>
+                <td>
+                  <RecordCell summary={versionSeason("learned", market)} />
+                </td>
+                <td>
+                  <RecordCell summary={versionSeason("model", market)} />
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p className="faint small">Same games, two versions. If Learned keeps beating Original, the learning is working.</p>
+
+      <h3 className="record-subhead">{version === "learned" ? "Learned" : "Original"} model by category</h3>
 
       <div className="table-scroll">
         <table className="data-table record-table">
@@ -259,10 +353,10 @@ export function LinesModelRecord({ tracked, handle }: { tracked: TrackedPick[]; 
 
       <div className="backtest-box">
         <div className="small">
-          <span className="strong">Backtest this season.</span> Runs the model on every finished game using only data from before that day, against that day&apos;s opening lines (no past injury reports). {liveCount} live pick{liveCount === 1 ? "" : "s"} so far.
+          <span className="strong">Backtest this season.</span> Every finished game is replayed with only data from before that day, against that day&apos;s opening lines (no past injury reports); the learned version only learns from earlier days. This runs by itself when you open the app; the button just shows progress. {liveCount} live pick{liveCount === 1 ? "" : "s"} so far.
         </div>
         <button className="button" onClick={runBacktest} disabled={!handle || progress !== null}>
-          {progress ? `Backtesting ${progress.completedDates}/${progress.totalDates} days…` : "Run backtest"}
+          {progress ? `Backtesting ${progress.completedDates}/${progress.totalDates} days…` : "Fill in now"}
         </button>
         {backtestMessage ? <div className="faint small">{backtestMessage}</div> : null}
       </div>
