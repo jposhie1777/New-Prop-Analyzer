@@ -11,3 +11,4 @@ public/duckdb/
 public/data/mock-baseline/
 .baseline-work/
 coverage/
+live-data/
