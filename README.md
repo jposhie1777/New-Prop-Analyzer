@@ -54,8 +54,9 @@ For a quick local test you can instead put them in `.env.local`, which is git-ig
 | --- | --- | --- |
 | `BDL_API_KEY` | your key (mark it **Sensitive**) | Production (and Preview if you use it) |
 | `BDL_TIER` | `goat` | same |
+| `SITE_PASSWORD` | a password you choose (mark it **Sensitive**) | same |
 
-Redeploy after changing them.
+Redeploy after changing them. Without `SITE_PASSWORD` the site is open to anyone who finds the URL.
 
 ## Running the baseline (optional, recommended)
 
@@ -126,12 +127,41 @@ Endpoints your tier can't use come back as an empty list with an explanation, so
 
 ## Deploying to Vercel Hobby
 
-1. Push this repo to GitHub.
-2. In Vercel: **Add New → Project**, import the repo, and keep the defaults (Next.js, `npm run build`).
-3. Add `BDL_API_KEY` and `BDL_TIER` (see above), then deploy.
-4. `postinstall` copies the DuckDB-WASM files into `public/duckdb/`, so the browser never loads code from a third-party CDN.
+### One-time setup
 
-To roll the baseline forward later, run `npm run baseline` in the Codespace, commit and push. Vercel redeploys.
+1. **Create the `production` branch.** It is the live site; `main` keeps getting new work.
+   On GitHub: **Code → branch menu (`main`) → type `production` → Create branch production from main**.
+2. **Sign in** at [vercel.com](https://vercel.com) with GitHub and choose the free **Hobby** plan.
+3. **Add New → Project**, then import `jposhie1777/New-Prop-Analyzer`.
+   If it is not listed, use **Adjust GitHub App Permissions** to give Vercel access to the repo.
+4. Keep the detected defaults (Framework: Next.js, Build: `npm run build`).
+5. Open **Environment Variables** and add these for all environments:
+   - `BDL_API_KEY`
+   - `BDL_TIER` = `goat`
+   - `SITE_PASSWORD`
+6. Click **Deploy**. The first build takes 2–3 minutes.
+7. **Make `production` the live branch:** **Project → Settings → Environments → Production → Branch Tracking**, change `main` to `production`, then save.
+8. **Load the live site:** **Deployments → Create Deployment**, choose `production`, then deploy.
+9. **Open the site** at `https://<project>.vercel.app` and sign in with `SITE_PASSWORD`.
+   On iPhone: **Share → Add to Home Screen**.
+
+`postinstall` copies the DuckDB-WASM files into `public/duckdb/`, so the browser never loads code from a third-party CDN.
+
+### Releasing new features slowly
+
+- **Everyday work** stays as it is: pull requests into `main`, tried in the Codespace.
+- **Previews:** every push to `main` (and every PR) also gets a **Preview** deployment with its own URL. It is in the PR's Vercel comment and in **Deployments**.
+  - Previews are behind Vercel's own login, so only you can open them.
+  - Use one to test a change on your phone with real data before releasing it.
+- **To release:** on GitHub, open **Pull requests → New**, set base `production` and compare `main`, review the list of changes, then **Merge**. The live site updates in about 2 minutes.
+- **To undo a release:** **Vercel → Deployments**, open the previous production deployment, then **⋯ → Promote** (instant rollback).
+
+### Keeping the data fresh
+
+- **Daily:** nothing to do. Each new day's finals are fetched through `/api/finals` and cached by the CDN, the first time the site is opened after the games end.
+- **Now and then:** run `npm run baseline` (and `npm run baseline:shots` once) in the Codespace, commit `public/data/baseline`, and release it like any other change. A bigger baseline means fewer top-up requests on a fresh device.
+
+Picks, the slip, the record and settings live in each browser's storage. The Codespace URL and the Vercel URL each keep their own.
 
 ### Caching
 
