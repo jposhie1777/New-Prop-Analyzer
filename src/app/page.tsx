@@ -6,7 +6,7 @@ import { Segmented } from "@/components/Segmented";
 import { implausibleEvPercent, type LineEdge } from "@/lib/analytics/gameModel";
 import { SyncStatus } from "@/components/SyncStatus";
 import { BooksIndicator } from "@/components/BooksIndicator";
-import { useAnalyticsQuery } from "@/lib/client/hooks";
+import { useSnapshotOrQuery } from "@/lib/client/siteSnapshot";
 import { matchBoxScore, useLiveBoxScores, useSlate } from "@/lib/client/slateData";
 import { useLineAnalyses } from "@/lib/client/lineModel";
 import { groupOddsByGame } from "@/lib/odds/consensus";
@@ -27,7 +27,7 @@ export default function SlatePage() {
   const live = useLiveBoxScores(games);
   const teamIds = (games ?? []).flatMap((game) => [game.home_team.id, game.visitor_team.id]);
   const today = todayEastern();
-  const rest = useAnalyticsQuery(teamIds.length > 0 ? (handle) => teamRest(handle.engine, teamIds, today) : null, `${today}:${teamIds.join(",")}`);
+  const rest = useSnapshotOrQuery((snapshot) => snapshot.teamRest, teamIds.length > 0 ? (handle) => teamRest(handle.engine, teamIds, today) : null, `${today}:${teamIds.join(",")}`);
   const oddsByGame = groupOddsByGame(slate.data?.odds ?? []);
   const openingByGame = groupOddsByGame(slate.data?.openingOdds ?? []);
   const dateLabel = new Date(`${today}T12:00:00`).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });

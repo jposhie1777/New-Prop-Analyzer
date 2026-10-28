@@ -600,3 +600,7 @@ a.setting-row:hover { background: var(--surface-sunken); }
 .player-result:last-of-type { border-radius: 0 0 var(--radius-large) var(--radius-large); }
 .player-result:only-of-type { border-radius: var(--radius-large); }
 .player-result:hover { background: var(--surface-sunken); }
+
+/* gambly */
+.gambly-card { margin-top: 12px; }
+.gambly-preview { margin: 0 0 10px; padding: 10px 12px; border-radius: var(--radius-medium); background: var(--surface-sunken); font-family: var(--font-mono); font-size: 12.5px; white-space: pre-wrap; overflow-wrap: anywhere; color: var(--text-primary); }

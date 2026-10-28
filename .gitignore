@@ -12,3 +12,6 @@ public/data/mock-baseline/
 .baseline-work/
 coverage/
 live-data/
+.site-data-work/
+site-data/
+public/site-data-test/

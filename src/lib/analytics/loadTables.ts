@@ -9,6 +9,7 @@ export interface LoadSources {
   manifest: BaselineManifest | null;
   baselineBaseUrl: string; // folder that holds {season}/{table}.parquet
   topUpPayloads: FinalsPayload[];
+  deferredTables?: TableName[]; // created empty and filled later by loadDeferredTable, so the first load stays fast
 }
 
 export interface LoadSummary {
@@ -30,7 +31,7 @@ export async function loadAnalyticsTables(engine: AnalyticsEngine, sources: Load
 
   for (const seasonEntry of Object.values(sources.manifest?.seasons ?? {})) {
     for (const [tableName, tableFile] of Object.entries(seasonEntry.tables) as Array<[TableName, { file: string; rows: number }]>) {
-      if (tableName === "teams" || !tableFile || tableFile.rows === 0) continue;
+      if (tableName === "teams" || !tableFile || tableFile.rows === 0 || sources.deferredTables?.includes(tableName)) continue;
       try {
         await engine.insertParquetFile(tableName, `${sources.baselineBaseUrl}/${tableFile.file}`);
         baselineRows += tableFile.rows;
@@ -41,7 +42,7 @@ export async function loadAnalyticsTables(engine: AnalyticsEngine, sources: Load
   }
 
   for (const tableName of tableNames) {
-    if (tableName === "teams") continue;
+    if (tableName === "teams" || sources.deferredTables?.includes(tableName)) continue;
     const rows = sources.topUpPayloads.flatMap((payload) => payload.tables[tableName] ?? []);
     topUpRows += await engine.insertDataRows(tableName, rows);
   }
@@ -54,4 +55,15 @@ export async function loadAnalyticsTables(engine: AnalyticsEngine, sources: Load
     tableRowCounts[tableName] = Number(countRow?.row_count ?? 0);
   }
   return { baselineRows, topUpRows, tableRowCounts, warnings };
+}
+
+export async function loadDeferredTable(engine: AnalyticsEngine, sources: LoadSources, tableName: TableName): Promise<number> {
+  let loadedRows = 0;
+  for (const seasonEntry of Object.values(sources.manifest?.seasons ?? {})) {
+    const tableFile = seasonEntry.tables[tableName];
+    if (!tableFile || tableFile.rows === 0) continue;
+    loadedRows += await engine.insertParquetFile(tableName, `${sources.baselineBaseUrl}/${tableFile.file}`);
+  }
+  loadedRows += await engine.insertDataRows(tableName, sources.topUpPayloads.flatMap((payload) => payload.tables[tableName as Exclude<TableName, "teams">] ?? []));
+  return loadedRows;
 }

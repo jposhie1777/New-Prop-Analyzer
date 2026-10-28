@@ -1,7 +1,8 @@
 "use client";
 
+import { useSnapshotOrQuery } from "./siteSnapshot";
 import { useEffect, useState, useSyncExternalStore } from "react";
-import { useAnalytics, useAnalyticsQuery, useSettings, type PolledData } from "./hooks";
+import { useAnalytics, useSettings, type PolledData } from "./hooks";
 import { fetchApi } from "./apiClient";
 import type { SlateData } from "./slateData";
 import { groupOddsByGame } from "@/lib/odds/consensus";
@@ -153,9 +154,9 @@ export function useLineAnalyses(slate: PolledData<SlateData>): { analyses: GameA
   const teamIds = games.flatMap((game) => [game.home_team.id, game.visitor_team.id]);
   const injuries = slate.data?.injuries ?? [];
   const injuredIds = injuries.map((injury) => injury.player.id);
-  const ratings = useAnalyticsQuery((handle) => teamRatings(handle.engine, appSettings.currentSeason), `ratings:${today}`);
-  const rest = useAnalyticsQuery(teamIds.length > 0 ? (handle) => teamRest(handle.engine, teamIds, today) : null, `lines-rest:${today}:${teamIds.join(",")}`);
-  const scorers = useAnalyticsQuery(injuredIds.length > 0 ? (handle) => injuredScorers(handle.engine, injuredIds, appSettings.currentSeason) : null, `lines-injuries:${injuredIds.join(",")}`);
+  const ratings = useSnapshotOrQuery((snapshot) => snapshot.teamRatings, (handle) => teamRatings(handle.engine, appSettings.currentSeason), `ratings:${today}`);
+  const rest = useSnapshotOrQuery((snapshot) => snapshot.teamRest, teamIds.length > 0 ? (handle) => teamRest(handle.engine, teamIds, today) : null, `lines-rest:${today}:${teamIds.join(",")}`);
+  const scorers = useSnapshotOrQuery((snapshot) => snapshot.injuredScorers, injuredIds.length > 0 ? (handle) => injuredScorers(handle.engine, injuredIds, appSettings.currentSeason) : null, `lines-injuries:${injuredIds.join(",")}`);
   const { parameters } = useLearnedParameters();
   const oddsByGame = groupOddsByGame(slate.data?.odds ?? []);
   const analyses: GameAnalysis[] = [];

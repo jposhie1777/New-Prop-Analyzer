@@ -61,7 +61,7 @@ export default function PlayerPage() {
 
   const injuredTeammates = (slate.data?.injuries ?? []).filter((injury) => teamId !== null && (injury.player.team?.id ?? injury.player.team_id) === teamId && injury.player.id !== playerId);
   const teammateKey = injuredTeammates.map((injury) => injury.player.id).join(",");
-  const shifts = useAnalyticsQuery(injuredTeammates.length > 0 ? (handle) => usageShift(handle.engine, playerId, injuredTeammates.map((injury) => injury.player.id), seasons) : null, `usage:${playerId}:${teammateKey}`);
+  const shifts = useAnalyticsQuery(injuredTeammates.length > 0 ? (handle) => handle.ensureTable("advanced_stats").then(() => usageShift(handle.engine, playerId, injuredTeammates.map((injury) => injury.player.id), seasons)) : null, `usage:${playerId}:${teammateKey}`);
 
   const player = profile.result;
   const team = teamId ? teamById(teamId) : undefined;

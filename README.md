@@ -190,6 +190,28 @@ The Live Bets page is filled by `.github/workflows/live-tracker.yml`, which runs
 
 Local test: `BDL_TIER=mock npm run live:track -- --once --data-dir live-data`, then `LIVE_DATA_DIR=live-data npm run dev`.
 
+## Nightly site data (faster loads)
+
+`.github/workflows/site-data.yml` runs every morning at about 6:23 AM Eastern, after every game is final. It runs `scripts/refreshSiteData.ts`, which does three things:
+
+- rebuilds this season's stats files through last night;
+- copies last season's files from `public/data/baseline`;
+- writes `snapshot.json`, which holds the team ratings, rest days, injured-scorer averages, 100-in-3 profiles and live quarter profiles worked out ahead of time.
+
+Everything is force-pushed as one commit to the `site-data` branch, so its history never grows. Never merge that branch.
+
+The site reads these files from raw.githubusercontent.com. Slate, Lines, 100 in 3 and Live use the snapshot right away, and the in-browser database keeps loading in the background. If the snapshot is not from today, or the branch is missing, everything falls back to the old path. The workflow uses the same `BDL_API_KEY` secret as the live tracker. To run it now: Actions tab → Nightly site data → Run workflow.
+
+## Sync across devices (slip and sportsbooks)
+
+The slip and these settings follow you between devices: your sportsbooks, default book, state, EV threshold, wager and 100-in-3 settings. Appearance and layout stay per device. The data is stored in a secret GitHub gist that only your server can read.
+
+1. On GitHub, go to Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token.
+2. Under Account permissions, set **Gists** to Read and write. Nothing else is needed.
+3. In Vercel, go to Project → Settings → Environment Variables and add `SYNC_GITHUB_TOKEN` with that token, then redeploy.
+
+The first device to sync uploads what it already has. After that, the newest change wins: saves happen about a second after a change, and other devices pull when you switch back to the tab. Sync only runs when `SITE_PASSWORD` is set. Settings → Sync across devices shows the status.
+
 ## Pages
 
 - **Slate (`/`)**
