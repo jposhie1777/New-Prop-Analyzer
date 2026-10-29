@@ -1,6 +1,6 @@
 {
  "date": "2026-10-28",
- "updatedAt": "2026-10-29T03:57:32.812Z",
+ "updatedAt": "2026-10-29T04:01:32.881Z",
  "state": "running",
  "games": [
   {
@@ -77,14 +77,14 @@
    "gameId": 21717985,
    "matchup": "OKC @ DAL",
    "status": "4th Qtr",
-   "homeScore": 113,
+   "homeScore": 120,
    "visitorScore": 93
   },
   {
    "gameId": 21717986,
    "matchup": "LAL @ LAC",
-   "status": "2nd Qtr",
-   "homeScore": 38,
+   "status": "3rd Qtr",
+   "homeScore": 43,
    "visitorScore": 56
   }
  ],
@@ -22486,7 +22486,7 @@
    "scoreMargin": -3,
    "valueAtPick": 3,
    "projection": 14.886121145625651,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -22684,7 +22684,7 @@
    "scoreMargin": 6,
    "valueAtPick": 1,
    "projection": 1.4892662319101557,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Under",
     "3PM",
@@ -23003,7 +23003,7 @@
    "scoreMargin": 3,
    "valueAtPick": 2,
    "projection": 4.734251111591684,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -23135,7 +23135,7 @@
    "scoreMargin": 13,
    "valueAtPick": 0,
    "projection": 0.30639151937025494,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Over",
     "Assists",
@@ -23167,7 +23167,7 @@
    "scoreMargin": -13,
    "valueAtPick": 1,
    "projection": 2.1816715138280056,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -23384,7 +23384,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 589,
+ "calls": 597,
  "note": null,
  "checkpointsTaken": {
   "21717975": [
