@@ -1,6 +1,6 @@
 {
  "date": "2026-10-28",
- "updatedAt": "2026-10-29T04:30:34.214Z",
+ "updatedAt": "2026-10-29T04:34:34.216Z",
  "state": "running",
  "games": [
   {
@@ -83,9 +83,9 @@
   {
    "gameId": 21717986,
    "matchup": "LAL @ LAC",
-   "status": "3rd Qtr",
-   "homeScore": 63,
-   "visitorScore": 84
+   "status": "4th Qtr",
+   "homeScore": 66,
+   "visitorScore": 85
   }
  ],
  "picks": [
@@ -23328,7 +23328,7 @@
    "scoreMargin": 18,
    "valueAtPick": 6,
    "projection": 12.753924647828335,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -23442,9 +23442,144 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717986-666581-points",
+   "gameDate": "2026-10-28",
+   "gameId": 21717986,
+   "matchup": "LAL @ LAC",
+   "playerId": 666581,
+   "playerName": "Darius Garland",
+   "teamAbbreviation": "LAC",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 19.5,
+   "americanOdds": -117,
+   "vendor": "caesars",
+   "modelProbability": 0.647553740071415,
+   "evPercent": 20.101847517518845,
+   "foundAt": "2026-10-29T04:31:33.673Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -19,
+   "valueAtPick": 14,
+   "projection": 18.257088810029238,
+   "latestValue": 14,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717986-17553995-rebounds",
+   "gameDate": "2026-10-28",
+   "gameId": 21717986,
+   "matchup": "LAL @ LAC",
+   "playerId": 17553995,
+   "playerName": "Austin Reaves",
+   "teamAbbreviation": "LAL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": -170,
+   "vendor": "caesars",
+   "modelProbability": 0.6785942470927155,
+   "evPercent": 7.776733361784238,
+   "foundAt": "2026-10-29T04:31:33.673Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 19,
+   "valueAtPick": 4,
+   "projection": 4.947911656307177,
+   "latestValue": 4,
+   "tags": [
+    "Under",
+    "Rebounds",
+    "Blowout risk",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717986-38017705-rebounds",
+   "gameDate": "2026-10-28",
+   "gameId": 21717986,
+   "matchup": "LAL @ LAC",
+   "playerId": 38017705,
+   "playerName": "Walker Kessler",
+   "teamAbbreviation": "LAL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": -137,
+   "vendor": "caesars",
+   "modelProbability": 0.6107756726150406,
+   "evPercent": 5.659733145813606,
+   "foundAt": "2026-10-29T04:31:33.673Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 19,
+   "valueAtPick": 5,
+   "projection": 7.01205162936526,
+   "latestValue": 5,
+   "tags": [
+    "Under",
+    "Rebounds",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717986-17896059-rebounds",
+   "gameDate": "2026-10-28",
+   "gameId": 21717986,
+   "matchup": "LAL @ LAC",
+   "playerId": 17896059,
+   "playerName": "Sandro Mamukelashvili",
+   "teamAbbreviation": "LAL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": -130,
+   "vendor": "caesars",
+   "modelProbability": 0.5915936139755231,
+   "evPercent": 4.666562472592539,
+   "foundAt": "2026-10-29T04:31:33.673Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 19,
+   "valueAtPick": 6,
+   "projection": 6.744365057207187,
+   "latestValue": 6,
+   "tags": [
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 656,
+ "calls": 668,
  "note": null,
  "checkpointsTaken": {
   "21717975": [
@@ -23504,7 +23639,8 @@
   ],
   "21717986": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ]
  }
 }
