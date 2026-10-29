@@ -1,6 +1,6 @@
 {
  "date": "2026-10-28",
- "updatedAt": "2026-10-29T02:08:28.190Z",
+ "updatedAt": "2026-10-29T02:12:29.101Z",
  "state": "running",
  "games": [
   {
@@ -42,29 +42,29 @@
    "gameId": 21717980,
    "matchup": "NYK @ CHI",
    "status": "4th Qtr",
-   "homeScore": 99,
-   "visitorScore": 98
+   "homeScore": 109,
+   "visitorScore": 107
   },
   {
    "gameId": 21717981,
    "matchup": "HOU @ MIL",
    "status": "4th Qtr",
-   "homeScore": 82,
-   "visitorScore": 102
+   "homeScore": 84,
+   "visitorScore": 104
   },
   {
    "gameId": 21717982,
    "matchup": "GSW @ MIN",
    "status": "4th Qtr",
-   "homeScore": 81,
-   "visitorScore": 95
+   "homeScore": 87,
+   "visitorScore": 99
   },
   {
    "gameId": 21717983,
    "matchup": "DEN @ NOP",
    "status": "4th Qtr",
-   "homeScore": 83,
-   "visitorScore": 93
+   "homeScore": 87,
+   "visitorScore": 96
   },
   {
    "gameId": 21717984,
@@ -77,8 +77,8 @@
    "gameId": 21717985,
    "matchup": "OKC @ DAL",
    "status": "1st Qtr",
-   "homeScore": 25,
-   "visitorScore": 28
+   "homeScore": 33,
+   "visitorScore": 30
   },
   {
    "gameId": 21717986,
@@ -18708,7 +18708,7 @@
    "scoreMargin": -19,
    "valueAtPick": 6,
    "projection": 24.29791333952495,
-   "latestValue": 27,
+   "latestValue": 30,
    "tags": [
     "Best bet",
     "Over",
@@ -19006,7 +19006,7 @@
    "scoreMargin": 1,
    "valueAtPick": 11,
    "projection": 37.61655093794741,
-   "latestValue": 28,
+   "latestValue": 31,
    "tags": [
     "Best bet",
     "Over",
@@ -19137,7 +19137,7 @@
    "scoreMargin": 7,
    "valueAtPick": 3,
    "projection": 5.779169589597773,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -19236,7 +19236,7 @@
    "scoreMargin": -7,
    "valueAtPick": 1,
    "projection": 5.458437235260524,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -20322,7 +20322,7 @@
    "scoreMargin": 12,
    "valueAtPick": 2,
    "projection": 8.79569063220557,
-   "latestValue": 6,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -20639,7 +20639,7 @@
    "scoreMargin": -4,
    "valueAtPick": 11,
    "projection": 17.58734387085152,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -20673,7 +20673,7 @@
    "scoreMargin": 4,
    "valueAtPick": 5,
    "projection": 10.779782506690996,
-   "latestValue": 8,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Over",
@@ -20811,7 +20811,7 @@
    "scoreMargin": 16,
    "valueAtPick": 6,
    "projection": 9.949069101085577,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -21339,7 +21339,7 @@
    "scoreMargin": 6,
    "valueAtPick": 6,
    "projection": 8.82367081260168,
-   "latestValue": 6,
+   "latestValue": 9,
    "tags": [
     "Over",
     "Points",
@@ -21778,7 +21778,7 @@
    "scoreMargin": -12,
    "valueAtPick": 0,
    "projection": 0.2578365933942201,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Over",
     "3PM",
@@ -22083,9 +22083,175 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717985-480-threes",
+   "gameDate": "2026-10-28",
+   "gameId": 21717985,
+   "matchup": "OKC @ DAL",
+   "playerId": 480,
+   "playerName": "Kenrich Williams",
+   "teamAbbreviation": "OKC",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": -130,
+   "vendor": "draftkings",
+   "modelProbability": 0.7038063280728387,
+   "evPercent": 24.519581120579147,
+   "foundAt": "2026-10-29T02:12:27.854Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -3,
+   "valueAtPick": 1,
+   "projection": 2.263634411597883,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21717985-228-points_rebounds_assists",
+   "gameDate": "2026-10-28",
+   "gameId": 21717985,
+   "matchup": "OKC @ DAL",
+   "playerId": 228,
+   "playerName": "Kyrie Irving",
+   "teamAbbreviation": "DAL",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 34.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.6739459660950966,
+   "evPercent": 24.50866153282294,
+   "foundAt": "2026-10-29T02:12:27.854Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 3,
+   "valueAtPick": 12,
+   "projection": 31.4821310160327,
+   "latestValue": 12,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21717985-38017706-points",
+   "gameDate": "2026-10-28",
+   "gameId": 21717985,
+   "matchup": "OKC @ DAL",
+   "playerId": 38017706,
+   "playerName": "Jaylin Williams",
+   "teamAbbreviation": "OKC",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": 100,
+   "vendor": "draftkings",
+   "modelProbability": 0.6108496309233029,
+   "evPercent": 22.169926184660582,
+   "foundAt": "2026-10-29T02:12:27.854Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -3,
+   "valueAtPick": 0,
+   "projection": 4.545288140817124,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21717985-1091351965-points_rebounds_assists",
+   "gameDate": "2026-10-28",
+   "gameId": 21717985,
+   "matchup": "OKC @ DAL",
+   "playerId": 1091351965,
+   "playerName": "Aday Mara",
+   "teamAbbreviation": "OKC",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 16.5,
+   "americanOdds": -104,
+   "vendor": "fanduel",
+   "modelProbability": 0.621211624301435,
+   "evPercent": 21.85304938220456,
+   "foundAt": "2026-10-29T02:12:27.854Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -3,
+   "valueAtPick": 3,
+   "projection": 14.886121145625651,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21717985-175-rebounds_assists",
+   "gameDate": "2026-10-28",
+   "gameId": 21717985,
+   "matchup": "OKC @ DAL",
+   "playerId": 175,
+   "playerName": "Shai Gilgeous-Alexander",
+   "teamAbbreviation": "OKC",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 9.5,
+   "americanOdds": 108,
+   "vendor": "fanduel",
+   "modelProbability": 0.5828636724314364,
+   "evPercent": 21.235643865738773,
+   "foundAt": "2026-10-29T02:12:27.854Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -3,
+   "valueAtPick": 2,
+   "projection": 8.807347375087867,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 340,
+ "calls": 353,
  "note": null,
  "checkpointsTaken": {
   "21717975": [
@@ -22136,6 +22302,9 @@
   "21717984": [
    "end-q1",
    "halftime"
+  ],
+  "21717985": [
+   "end-q1"
   ]
  }
 }
