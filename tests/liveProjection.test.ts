@@ -110,3 +110,12 @@ describe("restOfGameAverage", () => {
     expect(restOfGameAverage(quarters, { period: 4, secondsLeftInPeriod: 0, isHalftime: false, isFinished: false })).toBeNull();
   });
 });
+
+describe("clock in the last minute", () => {
+  it("reads seconds-only clocks instead of assuming a full quarter", () => {
+    expect(parseGameClock("2nd Qtr", "45.2", 2).secondsLeftInPeriod).toBe(45);
+    expect(parseGameClock("1st Qtr", "Q1 8.9", 1).secondsLeftInPeriod).toBe(8);
+    expect(parseGameClock("3rd Qtr", "5:42", 3).secondsLeftInPeriod).toBe(342);
+    expect(parseGameClock("3rd Qtr", "Q3", 3).secondsLeftInPeriod).toBe(720);
+  });
+});

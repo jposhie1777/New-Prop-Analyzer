@@ -245,7 +245,9 @@ async function main(): Promise<void> {
         const clock = parseGameClock(boxScore.status, boxScore.time, boxScore.period);
         const checkpoint = checkpointFor(clock);
         const taken = (night.checkpointsTaken ??= {})[String(game.id)] ?? [];
-        if (!checkpoint || taken.includes(checkpoint)) continue; // props are only read at the breaks, which also saves calls
+        const checkpointOrder = ["end-q1", "halftime", "end-q3"];
+        const laterTaken = checkpoint ? taken.some((takenCheckpoint) => checkpointOrder.indexOf(takenCheckpoint) > checkpointOrder.indexOf(checkpoint)) : false;
+        if (!checkpoint || taken.includes(checkpoint) || laterTaken) continue; // props are only read at the breaks, which also saves calls
         openingOdds ??= await client.getAllPages<BdlBettingOdd>("/nba/v2/odds/opening", { "dates[]": [today] }).catch(() => []);
         if (!openingProps.has(game.id)) openingProps.set(game.id, (await client.get<{ data: BdlPlayerProp[] }>("/nba/v2/odds/player_props/opening", { game_id: game.id }).catch(() => ({ data: [] }))).data ?? []);
         const boxPlayers = [...boxScore.home_team.players, ...boxScore.visitor_team.players];
