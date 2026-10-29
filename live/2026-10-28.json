@@ -1,6 +1,6 @@
 {
  "date": "2026-10-28",
- "updatedAt": "2026-10-29T04:17:33.500Z",
+ "updatedAt": "2026-10-29T04:22:33.764Z",
  "state": "running",
  "games": [
   {
@@ -84,7 +84,7 @@
    "gameId": 21717986,
    "matchup": "LAL @ LAC",
    "status": "3rd Qtr",
-   "homeScore": 55,
+   "homeScore": 57,
    "visitorScore": 70
   }
  ],
@@ -22944,7 +22944,7 @@
    "scoreMargin": -3,
    "valueAtPick": 2,
    "projection": 11.091594359367583,
-   "latestValue": 7,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -23444,7 +23444,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 630,
+ "calls": 640,
  "note": null,
  "checkpointsTaken": {
   "21717975": [
