@@ -1,6 +1,6 @@
 {
  "date": "2026-10-28",
- "updatedAt": "2026-10-29T01:57:27.989Z",
+ "updatedAt": "2026-10-29T02:00:34.244Z",
  "state": "running",
  "games": [
   {
@@ -35,14 +35,14 @@
    "gameId": 21717979,
    "matchup": "ORL @ TOR",
    "status": "4th Qtr",
-   "homeScore": 125,
-   "visitorScore": 96
+   "homeScore": 129,
+   "visitorScore": 99
   },
   {
    "gameId": 21717980,
    "matchup": "NYK @ CHI",
    "status": "3rd Qtr",
-   "homeScore": 94,
+   "homeScore": 96,
    "visitorScore": 90
   },
   {
@@ -56,29 +56,29 @@
    "gameId": 21717982,
    "matchup": "GSW @ MIN",
    "status": "3rd Qtr",
-   "homeScore": 79,
+   "homeScore": 81,
    "visitorScore": 91
   },
   {
    "gameId": 21717983,
    "matchup": "DEN @ NOP",
    "status": "4th Qtr",
-   "homeScore": 74,
-   "visitorScore": 81
+   "homeScore": 79,
+   "visitorScore": 85
   },
   {
    "gameId": 21717984,
    "matchup": "SAS @ UTA",
    "status": "2nd Qtr",
    "homeScore": 46,
-   "visitorScore": 38
+   "visitorScore": 41
   },
   {
    "gameId": 21717985,
    "matchup": "OKC @ DAL",
    "status": "1st Qtr",
-   "homeScore": 13,
-   "visitorScore": 13
+   "homeScore": 16,
+   "visitorScore": 16
   },
   {
    "gameId": 21717986,
@@ -20265,7 +20265,7 @@
    "scoreMargin": 4,
    "valueAtPick": 5,
    "projection": 10.779782506690996,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -20943,7 +20943,7 @@
    "scoreMargin": 6,
    "valueAtPick": 16,
    "projection": 20.794133221123275,
-   "latestValue": 16,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Under",
@@ -21009,7 +21009,7 @@
    "scoreMargin": -26,
    "valueAtPick": 5,
    "projection": 6.035616996159455,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -21158,9 +21158,178 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717980-18-threes",
+   "gameDate": "2026-10-28",
+   "gameId": 21717980,
+   "matchup": "NYK @ CHI",
+   "playerId": 18,
+   "playerName": "OG Anunoby",
+   "teamAbbreviation": "NYK",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 105,
+   "vendor": "draftkings",
+   "modelProbability": 0.6059575162556433,
+   "evPercent": 24.221290832406872,
+   "foundAt": "2026-10-29T02:00:27.314Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -6,
+   "valueAtPick": 2,
+   "projection": 2.806248558797706,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Foul trouble",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717980-73-points",
+   "gameDate": "2026-10-28",
+   "gameId": 21717980,
+   "matchup": "NYK @ CHI",
+   "playerId": 73,
+   "playerName": "Jalen Brunson",
+   "teamAbbreviation": "NYK",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 32.5,
+   "americanOdds": 100,
+   "vendor": "draftkings",
+   "modelProbability": 0.61860576984964,
+   "evPercent": 23.721153969928,
+   "foundAt": "2026-10-29T02:00:27.314Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -6,
+   "valueAtPick": 24,
+   "projection": 31.210850366402262,
+   "latestValue": 24,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717980-1091343852-points",
+   "gameDate": "2026-10-28",
+   "gameId": 21717980,
+   "matchup": "NYK @ CHI",
+   "playerId": 1091343852,
+   "playerName": "Caleb Wilson",
+   "teamAbbreviation": "CHI",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 16.5,
+   "americanOdds": 104,
+   "vendor": "fanduel",
+   "modelProbability": 0.6010137219929232,
+   "evPercent": 22.606799286556335,
+   "foundAt": "2026-10-29T02:00:27.314Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 6,
+   "valueAtPick": 12,
+   "projection": 17.450545102229917,
+   "latestValue": 12,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717980-380-rebounds_assists",
+   "gameDate": "2026-10-28",
+   "gameId": 21717980,
+   "matchup": "NYK @ CHI",
+   "playerId": 380,
+   "playerName": "Norman Powell",
+   "teamAbbreviation": "CHI",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": -158,
+   "vendor": "fanduel",
+   "modelProbability": 0.7464598876665163,
+   "evPercent": 21.890285454405834,
+   "foundAt": "2026-10-29T02:00:27.314Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 6,
+   "valueAtPick": 3,
+   "projection": 3.7641702,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717980-17896065-threes",
+   "gameDate": "2026-10-28",
+   "gameId": 21717980,
+   "matchup": "NYK @ CHI",
+   "playerId": 17896065,
+   "playerName": "Josh Giddey",
+   "teamAbbreviation": "CHI",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": 280,
+   "vendor": "draftkings",
+   "modelProbability": 0.3191055611593867,
+   "evPercent": 21.260113240566938,
+   "foundAt": "2026-10-29T02:00:27.314Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 6,
+   "valueAtPick": 0,
+   "projection": 0.17321844407400452,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "3PM",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 305,
+ "calls": 315,
  "note": null,
  "checkpointsTaken": {
   "21717975": [
@@ -21190,7 +21359,8 @@
   ],
   "21717980": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21717981": [
    "end-q1",
