@@ -1,6 +1,6 @@
 {
  "date": "2026-10-28",
- "updatedAt": "2026-10-29T03:40:31.814Z",
+ "updatedAt": "2026-10-29T03:44:32.514Z",
  "state": "running",
  "games": [
   {
@@ -77,15 +77,15 @@
    "gameId": 21717985,
    "matchup": "OKC @ DAL",
    "status": "4th Qtr",
-   "homeScore": 98,
-   "visitorScore": 83
+   "homeScore": 104,
+   "visitorScore": 87
   },
   {
    "gameId": 21717986,
    "matchup": "LAL @ LAC",
    "status": "2nd Qtr",
-   "homeScore": 36,
-   "visitorScore": 54
+   "homeScore": 38,
+   "visitorScore": 56
   }
  ],
  "picks": [
@@ -22651,7 +22651,7 @@
    "scoreMargin": 6,
    "valueAtPick": 5,
    "projection": 8.46302755693532,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -23036,7 +23036,7 @@
    "scoreMargin": 3,
    "valueAtPick": 4,
    "projection": 16.399797807577208,
-   "latestValue": 10,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -23200,7 +23200,7 @@
    "scoreMargin": -13,
    "valueAtPick": 2,
    "projection": 2.7567164210820145,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Under",
     "Assists",
@@ -23210,9 +23210,181 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717986-17896035-points",
+   "gameDate": "2026-10-28",
+   "gameId": 21717986,
+   "matchup": "LAL @ LAC",
+   "playerId": 17896035,
+   "playerName": "Isaiah Jackson",
+   "teamAbbreviation": "LAC",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": 100,
+   "vendor": "fanduel",
+   "modelProbability": 0.6241189294020948,
+   "evPercent": 24.82378588041896,
+   "foundAt": "2026-10-29T03:44:31.666Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -18,
+   "valueAtPick": 2,
+   "projection": 6.576318329148726,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Foul trouble",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717986-17895858-points",
+   "gameDate": "2026-10-28",
+   "gameId": 21717986,
+   "matchup": "LAL @ LAC",
+   "playerId": 17895858,
+   "playerName": "Quentin Grimes",
+   "teamAbbreviation": "LAL",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 11.5,
+   "americanOdds": 100,
+   "vendor": "fanduel",
+   "modelProbability": 0.6191854509234387,
+   "evPercent": 23.83709018468774,
+   "foundAt": "2026-10-29T03:44:31.666Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 18,
+   "valueAtPick": 6,
+   "projection": 12.753924647828335,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717986-283-threes",
+   "gameDate": "2026-10-28",
+   "gameId": 21717986,
+   "matchup": "LAL @ LAC",
+   "playerId": 283,
+   "playerName": "Brook Lopez",
+   "teamAbbreviation": "LAC",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": 106,
+   "vendor": "fanduel",
+   "modelProbability": 0.5813245859088623,
+   "evPercent": 19.752864697225636,
+   "foundAt": "2026-10-29T03:44:31.666Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -18,
+   "valueAtPick": 0,
+   "projection": 0.721205624599092,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717986-38017705-assists",
+   "gameDate": "2026-10-28",
+   "gameId": 21717986,
+   "matchup": "LAL @ LAC",
+   "playerId": 38017705,
+   "playerName": "Walker Kessler",
+   "teamAbbreviation": "LAL",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 110,
+   "vendor": "draftkings",
+   "modelProbability": 0.5663523722135484,
+   "evPercent": 18.93399816484518,
+   "foundAt": "2026-10-29T03:44:31.666Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 18,
+   "valueAtPick": 1,
+   "projection": 1.6668377273147374,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717986-17553995-points",
+   "gameDate": "2026-10-28",
+   "gameId": 21717986,
+   "matchup": "LAL @ LAC",
+   "playerId": 17553995,
+   "playerName": "Austin Reaves",
+   "teamAbbreviation": "LAL",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 28.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6262046108201158,
+   "evPercent": 18.531587048093346,
+   "foundAt": "2026-10-29T03:44:31.666Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 18,
+   "valueAtPick": 16,
+   "projection": 30.445526574834272,
+   "latestValue": 16,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 551,
+ "calls": 563,
  "note": null,
  "checkpointsTaken": {
   "21717975": [
@@ -23271,7 +23443,8 @@
    "end-q3"
   ],
   "21717986": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
