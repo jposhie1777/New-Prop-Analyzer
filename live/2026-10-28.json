@@ -1,6 +1,6 @@
 {
  "date": "2026-10-28",
- "updatedAt": "2026-10-29T04:01:32.881Z",
+ "updatedAt": "2026-10-29T04:05:33.079Z",
  "state": "running",
  "games": [
   {
@@ -78,14 +78,14 @@
    "matchup": "OKC @ DAL",
    "status": "4th Qtr",
    "homeScore": 120,
-   "visitorScore": 93
+   "visitorScore": 96
   },
   {
    "gameId": 21717986,
    "matchup": "LAL @ LAC",
    "status": "3rd Qtr",
-   "homeScore": 43,
-   "visitorScore": 56
+   "homeScore": 49,
+   "visitorScore": 58
   }
  ],
  "picks": [
@@ -22486,7 +22486,7 @@
    "scoreMargin": -3,
    "valueAtPick": 3,
    "projection": 14.886121145625651,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -23167,7 +23167,7 @@
    "scoreMargin": -13,
    "valueAtPick": 1,
    "projection": 2.1816715138280056,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -23384,7 +23384,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 597,
+ "calls": 605,
  "note": null,
  "checkpointsTaken": {
   "21717975": [
