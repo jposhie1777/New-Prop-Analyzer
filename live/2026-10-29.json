@@ -1,0 +1,31 @@
+{
+ "date": "2026-10-29",
+ "updatedAt": "2026-10-29T22:37:33.883Z",
+ "state": "waiting",
+ "games": [
+  {
+   "gameId": 21717987,
+   "matchup": "CLE @ ATL",
+   "status": "2026-10-30T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21717988,
+   "matchup": "SAC @ NOP",
+   "status": "2026-10-30T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21717989,
+   "matchup": "MEM @ POR",
+   "status": "2026-10-30T02:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  }
+ ],
+ "picks": [],
+ "calls": 1,
+ "note": "First tip-off 2026-10-30T00:00:00.000Z"
+}
