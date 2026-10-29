@@ -1,6 +1,6 @@
 {
  "date": "2026-10-28",
- "updatedAt": "2026-10-29T03:24:31.580Z",
+ "updatedAt": "2026-10-29T03:28:31.464Z",
  "state": "running",
  "games": [
   {
@@ -69,7 +69,7 @@
   {
    "gameId": 21717984,
    "matchup": "SAS @ UTA",
-   "status": "4th Qtr",
+   "status": "OT1",
    "homeScore": 105,
    "visitorScore": 105
   },
@@ -77,8 +77,8 @@
    "gameId": 21717985,
    "matchup": "OKC @ DAL",
    "status": "3rd Qtr",
-   "homeScore": 80,
-   "visitorScore": 71
+   "homeScore": 84,
+   "visitorScore": 73
   },
   {
    "gameId": 21717986,
@@ -22446,7 +22446,7 @@
    "scoreMargin": -3,
    "valueAtPick": 3,
    "projection": 14.886121145625651,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -22479,7 +22479,7 @@
    "scoreMargin": -3,
    "valueAtPick": 2,
    "projection": 8.807347375087867,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -22988,7 +22988,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 514,
+ "calls": 522,
  "note": null,
  "checkpointsTaken": {
   "21717975": [
