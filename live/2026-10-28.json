@@ -1,6 +1,6 @@
 {
  "date": "2026-10-28",
- "updatedAt": "2026-10-29T01:49:27.447Z",
+ "updatedAt": "2026-10-29T01:53:27.477Z",
  "state": "running",
  "games": [
   {
@@ -35,34 +35,34 @@
    "gameId": 21717979,
    "matchup": "ORL @ TOR",
    "status": "4th Qtr",
-   "homeScore": 117,
-   "visitorScore": 91
+   "homeScore": 122,
+   "visitorScore": 93
   },
   {
    "gameId": 21717980,
    "matchup": "NYK @ CHI",
    "status": "3rd Qtr",
-   "homeScore": 89,
-   "visitorScore": 77
+   "homeScore": 92,
+   "visitorScore": 84
   },
   {
    "gameId": 21717981,
    "matchup": "HOU @ MIL",
    "status": "3rd Qtr",
-   "homeScore": 64,
-   "visitorScore": 91
+   "homeScore": 69,
+   "visitorScore": 93
   },
   {
    "gameId": 21717982,
    "matchup": "GSW @ MIN",
    "status": "3rd Qtr",
-   "homeScore": 60,
-   "visitorScore": 80
+   "homeScore": 68,
+   "visitorScore": 84
   },
   {
    "gameId": 21717983,
    "matchup": "DEN @ NOP",
-   "status": "3rd Qtr",
+   "status": "4th Qtr",
    "homeScore": 73,
    "visitorScore": 79
   },
@@ -70,15 +70,15 @@
    "gameId": 21717984,
    "matchup": "SAS @ UTA",
    "status": "2nd Qtr",
-   "homeScore": 36,
-   "visitorScore": 28
+   "homeScore": 44,
+   "visitorScore": 35
   },
   {
    "gameId": 21717985,
    "matchup": "OKC @ DAL",
    "status": "1st Qtr",
-   "homeScore": 2,
-   "visitorScore": 2
+   "homeScore": 10,
+   "visitorScore": 11
   },
   {
    "gameId": 21717986,
@@ -11363,7 +11363,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 17.709265583481216,
-   "latestValue": 18,
+   "latestValue": 19,
    "tags": [
     "Under",
     "Pts+Reb",
@@ -12208,7 +12208,7 @@
    "scoreMargin": -1,
    "valueAtPick": 0,
    "projection": 4.975947306131323,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Under",
     "Rebounds",
@@ -18280,7 +18280,7 @@
    "scoreMargin": 1,
    "valueAtPick": 2,
    "projection": 7.882949354090806,
-   "latestValue": 8,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -18379,7 +18379,7 @@
    "scoreMargin": 7,
    "valueAtPick": 2,
    "projection": 8.371012219445523,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -18446,7 +18446,7 @@
    "scoreMargin": -7,
    "valueAtPick": 2,
    "projection": 15.196741720454066,
-   "latestValue": 19,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -19276,7 +19276,7 @@
    "scoreMargin": 22,
    "valueAtPick": 3,
    "projection": 7.9675056366694,
-   "latestValue": 5,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -19981,7 +19981,7 @@
    "scoreMargin": 16,
    "valueAtPick": 18,
    "projection": 31.57021286573626,
-   "latestValue": 21,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Over",
@@ -20289,7 +20289,7 @@
    "scoreMargin": 10,
    "valueAtPick": 3,
    "projection": 17.28744270293393,
-   "latestValue": 3,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -20355,7 +20355,7 @@
    "scoreMargin": -10,
    "valueAtPick": 5,
    "projection": 20.599156142212937,
-   "latestValue": 5,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -20366,9 +20366,173 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21717983-334-threes",
+   "gameDate": "2026-10-28",
+   "gameId": 21717983,
+   "matchup": "DEN @ NOP",
+   "playerId": 334,
+   "playerName": "Dejounte Murray",
+   "teamAbbreviation": "NOP",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": 280,
+   "vendor": "draftkings",
+   "modelProbability": 0.32739130905448,
+   "evPercent": 24.408697440702397,
+   "foundAt": "2026-10-29T01:50:26.922Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -6,
+   "valueAtPick": 0,
+   "projection": 0.18925400586095786,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "3PM",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717983-1057267077-points",
+   "gameDate": "2026-10-28",
+   "gameId": 21717983,
+   "matchup": "DEN @ NOP",
+   "playerId": 1057267077,
+   "playerName": "Jeremiah Fears",
+   "teamAbbreviation": "NOP",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 13.5,
+   "americanOdds": -110,
+   "vendor": "draftkings",
+   "modelProbability": 0.6479684611688388,
+   "evPercent": 23.70306985950559,
+   "foundAt": "2026-10-29T01:50:26.922Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -6,
+   "valueAtPick": 11,
+   "projection": 14.65507754436435,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717983-38017709-points",
+   "gameDate": "2026-10-28",
+   "gameId": 21717983,
+   "matchup": "DEN @ NOP",
+   "playerId": 38017709,
+   "playerName": "Christian Braun",
+   "teamAbbreviation": "DEN",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 8.5,
+   "americanOdds": 115,
+   "vendor": "betmgm",
+   "modelProbability": 0.5481932552115241,
+   "evPercent": 17.861549870477678,
+   "foundAt": "2026-10-29T01:50:26.922Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 6,
+   "valueAtPick": 6,
+   "projection": 8.82367081260168,
+   "latestValue": 6,
+   "tags": [
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717983-335-points",
+   "gameDate": "2026-10-28",
+   "gameId": 21717983,
+   "matchup": "DEN @ NOP",
+   "playerId": 335,
+   "playerName": "Jamal Murray",
+   "teamAbbreviation": "DEN",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 21.5,
+   "americanOdds": 100,
+   "vendor": "betmgm",
+   "modelProbability": 0.5803067634026888,
+   "evPercent": 16.061352680537766,
+   "foundAt": "2026-10-29T01:50:26.922Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 6,
+   "valueAtPick": 16,
+   "projection": 20.794133221123275,
+   "latestValue": 16,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717983-177-points",
+   "gameDate": "2026-10-28",
+   "gameId": 21717983,
+   "matchup": "DEN @ NOP",
+   "playerId": 177,
+   "playerName": "Aaron Gordon",
+   "teamAbbreviation": "DEN",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 15.5,
+   "americanOdds": -105,
+   "vendor": "betmgm",
+   "modelProbability": 0.587958148222926,
+   "evPercent": 14.791828938761743,
+   "foundAt": "2026-10-29T01:50:26.922Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 6,
+   "valueAtPick": 12,
+   "projection": 16.22695096706238,
+   "latestValue": 12,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 280,
+ "calls": 292,
  "note": null,
  "checkpointsTaken": {
   "21717975": [
@@ -20410,7 +20574,8 @@
   ],
   "21717983": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21717984": [
    "end-q1"
