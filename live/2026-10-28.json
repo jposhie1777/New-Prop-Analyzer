@@ -1,6 +1,6 @@
 {
  "date": "2026-10-28",
- "updatedAt": "2026-10-29T02:44:29.728Z",
+ "updatedAt": "2026-10-29T02:48:29.764Z",
  "state": "running",
  "games": [
   {
@@ -55,7 +55,7 @@
   {
    "gameId": 21717982,
    "matchup": "GSW @ MIN",
-   "status": "4th Qtr",
+   "status": "Final",
    "homeScore": 114,
    "visitorScore": 119
   },
@@ -70,22 +70,22 @@
    "gameId": 21717984,
    "matchup": "SAS @ UTA",
    "status": "3rd Qtr",
-   "homeScore": 78,
-   "visitorScore": 74
+   "homeScore": 81,
+   "visitorScore": 76
   },
   {
    "gameId": 21717985,
    "matchup": "OKC @ DAL",
    "status": "2nd Qtr",
-   "homeScore": 63,
-   "visitorScore": 58
+   "homeScore": 65,
+   "visitorScore": 59
   },
   {
    "gameId": 21717986,
    "matchup": "LAL @ LAC",
    "status": "1st Qtr",
-   "homeScore": 2,
-   "visitorScore": 3
+   "homeScore": 5,
+   "visitorScore": 10
   }
  ],
  "picks": [
@@ -19206,7 +19206,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 8,
+    "gradedAt": "2026-10-29T02:45:29.940Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -19238,7 +19242,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 2,
+    "gradedAt": "2026-10-29T02:45:29.940Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -19271,7 +19279,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 11,
+    "gradedAt": "2026-10-29T02:45:29.940Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -19305,7 +19317,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 4,
+    "gradedAt": "2026-10-29T02:45:29.940Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -19338,7 +19354,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 25,
+    "gradedAt": "2026-10-29T02:45:29.940Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -20870,7 +20890,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 17,
+    "gradedAt": "2026-10-29T02:45:29.940Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -20906,7 +20930,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 8,
+    "gradedAt": "2026-10-29T02:45:29.940Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -20940,7 +20968,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 14,
+    "gradedAt": "2026-10-29T02:45:29.940Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -20975,7 +21007,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 34,
+    "gradedAt": "2026-10-29T02:45:29.940Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -21009,7 +21045,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 1,
+    "gradedAt": "2026-10-29T02:45:29.940Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -21965,7 +22005,11 @@
     "Under 60% of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 1,
+    "gradedAt": "2026-10-29T02:45:29.940Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -21998,7 +22042,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 1,
+    "gradedAt": "2026-10-29T02:45:29.940Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -22030,7 +22078,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 6,
+    "gradedAt": "2026-10-29T02:45:29.940Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -22063,7 +22115,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 15,
+    "gradedAt": "2026-10-29T02:45:29.940Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -22095,7 +22151,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 3,
+    "gradedAt": "2026-10-29T02:45:29.940Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -22429,9 +22489,173 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21717985-1028027372-points_rebounds_assists",
+   "gameDate": "2026-10-28",
+   "gameId": 21717985,
+   "matchup": "OKC @ DAL",
+   "playerId": 1028027372,
+   "playerName": "Jared McCain",
+   "teamAbbreviation": "OKC",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 27.5,
+   "americanOdds": 110,
+   "vendor": "fanduel",
+   "modelProbability": 0.5928380350231375,
+   "evPercent": 24.495987354858872,
+   "foundAt": "2026-10-29T02:47:29.418Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -6,
+   "valueAtPick": 16,
+   "projection": 28.77292500277418,
+   "latestValue": 16,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717985-1057262088-rebounds",
+   "gameDate": "2026-10-28",
+   "gameId": 21717985,
+   "matchup": "OKC @ DAL",
+   "playerId": 1057262088,
+   "playerName": "Cooper Flagg",
+   "teamAbbreviation": "DAL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": 110,
+   "vendor": "betmgm",
+   "modelProbability": 0.5828704122638642,
+   "evPercent": 22.402786575411483,
+   "foundAt": "2026-10-29T02:47:29.418Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 6,
+   "valueAtPick": 4,
+   "projection": 7.052975152575922,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717985-1028037477-rebounds",
+   "gameDate": "2026-10-28",
+   "gameId": 21717985,
+   "matchup": "OKC @ DAL",
+   "playerId": 1028037477,
+   "playerName": "Ajay Mitchell",
+   "teamAbbreviation": "OKC",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": -150,
+   "vendor": "caesars",
+   "modelProbability": 0.7343891469212014,
+   "evPercent": 22.398191153533563,
+   "foundAt": "2026-10-29T02:47:29.418Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -6,
+   "valueAtPick": 3,
+   "projection": 4.54759431072933,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717985-666577-rebounds",
+   "gameDate": "2026-10-28",
+   "gameId": 21717985,
+   "matchup": "OKC @ DAL",
+   "playerId": 666577,
+   "playerName": "Daniel Gafford",
+   "teamAbbreviation": "DAL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 7.5,
+   "americanOdds": -120,
+   "vendor": "fanduel",
+   "modelProbability": 0.6639411008695519,
+   "evPercent": 21.722535159417866,
+   "foundAt": "2026-10-29T02:47:29.418Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 6,
+   "valueAtPick": 5,
+   "projection": 8.46302755693532,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717985-38017697-threes",
+   "gameDate": "2026-10-28",
+   "gameId": 21717985,
+   "matchup": "OKC @ DAL",
+   "playerId": 38017697,
+   "playerName": "Max Christie",
+   "teamAbbreviation": "DAL",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": 140,
+   "vendor": "fanduel",
+   "modelProbability": 0.5048246806206667,
+   "evPercent": 21.157923348959983,
+   "foundAt": "2026-10-29T02:47:29.418Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 6,
+   "valueAtPick": 1,
+   "projection": 1.4892662319101557,
+   "latestValue": 1,
+   "tags": [
+    "Under",
+    "3PM",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 420,
+ "calls": 433,
  "note": null,
  "checkpointsTaken": {
   "21717975": [
@@ -22484,7 +22708,8 @@
    "halftime"
   ],
   "21717985": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
