@@ -1,6 +1,6 @@
 {
  "date": "2026-10-28",
- "updatedAt": "2026-10-29T01:53:27.477Z",
+ "updatedAt": "2026-10-29T01:57:27.989Z",
  "state": "running",
  "games": [
   {
@@ -27,58 +27,58 @@
   {
    "gameId": 21717978,
    "matchup": "PHI @ IND",
-   "status": "4th Qtr",
-   "homeScore": 107,
-   "visitorScore": 112
+   "status": "Final",
+   "homeScore": 109,
+   "visitorScore": 114
   },
   {
    "gameId": 21717979,
    "matchup": "ORL @ TOR",
    "status": "4th Qtr",
-   "homeScore": 122,
-   "visitorScore": 93
+   "homeScore": 125,
+   "visitorScore": 96
   },
   {
    "gameId": 21717980,
    "matchup": "NYK @ CHI",
    "status": "3rd Qtr",
-   "homeScore": 92,
-   "visitorScore": 84
+   "homeScore": 94,
+   "visitorScore": 90
   },
   {
    "gameId": 21717981,
    "matchup": "HOU @ MIL",
-   "status": "3rd Qtr",
+   "status": "4th Qtr",
    "homeScore": 69,
-   "visitorScore": 93
+   "visitorScore": 95
   },
   {
    "gameId": 21717982,
    "matchup": "GSW @ MIN",
    "status": "3rd Qtr",
-   "homeScore": 68,
-   "visitorScore": 84
+   "homeScore": 79,
+   "visitorScore": 91
   },
   {
    "gameId": 21717983,
    "matchup": "DEN @ NOP",
    "status": "4th Qtr",
-   "homeScore": 73,
-   "visitorScore": 79
+   "homeScore": 74,
+   "visitorScore": 81
   },
   {
    "gameId": 21717984,
    "matchup": "SAS @ UTA",
    "status": "2nd Qtr",
-   "homeScore": 44,
-   "visitorScore": 35
+   "homeScore": 46,
+   "visitorScore": 38
   },
   {
    "gameId": 21717985,
    "matchup": "OKC @ DAL",
    "status": "1st Qtr",
-   "homeScore": 10,
-   "visitorScore": 11
+   "homeScore": 13,
+   "visitorScore": 13
   },
   {
    "gameId": 21717986,
@@ -7875,7 +7875,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 28,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-237-rebounds_assists",
@@ -7906,7 +7910,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 15,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-237-steals",
@@ -7937,7 +7945,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 1,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-145-assists",
@@ -7968,7 +7980,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 2,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-145-points",
@@ -7999,7 +8015,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 21,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-145-rebounds",
@@ -8030,7 +8050,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 11,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-145-points_rebounds_assists",
@@ -8061,7 +8085,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 34,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-145-points_rebounds",
@@ -8092,7 +8120,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 32,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-145-steals",
@@ -8123,7 +8155,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 0,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-70-assists",
@@ -8154,7 +8190,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 2,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-70-rebounds_assists",
@@ -8186,7 +8226,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 12,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-70-blocks",
@@ -8217,7 +8261,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 1,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-419-points_assists",
@@ -8248,7 +8296,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 21,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-666940-rebounds",
@@ -8279,7 +8331,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 1,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-666940-threes",
@@ -8310,7 +8366,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 0,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-3547254-assists",
@@ -8341,7 +8401,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 4,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-3547254-points",
@@ -8365,14 +8429,18 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 23.116339001410644,
-   "latestValue": 25,
+   "latestValue": 27,
    "tags": [
     "Under",
     "Points",
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 27,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-3547254-rebounds",
@@ -8404,7 +8472,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 5,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-3547254-threes",
@@ -8435,7 +8507,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 3,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-3547254-points_rebounds_assists",
@@ -8459,14 +8535,18 @@
    "scoreMargin": 0,
    "valueAtPick": 1,
    "projection": 33.918134497803266,
-   "latestValue": 34,
+   "latestValue": 36,
    "tags": [
     "Over",
     "PRA",
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 36,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-3547254-rebounds_assists",
@@ -8497,7 +8577,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 9,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-1057261935-threes",
@@ -8528,7 +8612,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 1,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-1057261935-assists",
@@ -8559,7 +8647,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 2,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-1057261935-blocks",
@@ -8590,7 +8682,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 0,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-360-rebounds",
@@ -8622,7 +8718,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 3,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-360-points",
@@ -8646,14 +8746,18 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 10.24310257318272,
-   "latestValue": 13,
+   "latestValue": 15,
    "tags": [
     "Under",
     "Points",
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 15,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-360-assists",
@@ -8684,7 +8788,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 1,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-360-points_rebounds_assists",
@@ -8708,14 +8816,18 @@
    "scoreMargin": 0,
    "valueAtPick": 1,
    "projection": 17.11808631560066,
-   "latestValue": 17,
+   "latestValue": 19,
    "tags": [
     "Over",
     "PRA",
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 19,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-360-points_rebounds",
@@ -8739,14 +8851,18 @@
    "scoreMargin": 0,
    "valueAtPick": 1,
    "projection": 15.155529040657017,
-   "latestValue": 16,
+   "latestValue": 18,
    "tags": [
     "Over",
     "Pts+Reb",
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 18,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-416-assists",
@@ -8778,7 +8894,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 3,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-416-rebounds",
@@ -8810,7 +8930,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 11,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-416-threes",
@@ -8841,7 +8965,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 0,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-416-points_rebounds",
@@ -8873,7 +9001,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 37,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-416-points_rebounds_assists",
@@ -8905,7 +9037,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 40,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-416-rebounds_assists",
@@ -8937,7 +9073,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 14,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-38017507-threes",
@@ -8968,7 +9108,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 1,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-38017507-points_rebounds",
@@ -9000,7 +9144,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 21,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-38017507-rebounds",
@@ -9031,7 +9179,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 3,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-38017507-steals",
@@ -9062,7 +9214,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 0,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-38017507-points_assists",
@@ -9094,7 +9250,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 32,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-3547243-threes",
@@ -9125,7 +9285,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 1,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-3547250-rebounds",
@@ -9156,7 +9320,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 2,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-3547250-threes",
@@ -9187,7 +9355,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 3,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-17896103-points",
@@ -9219,7 +9391,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 3,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-17896103-rebounds",
@@ -9250,7 +9426,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 6,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-17896103-threes",
@@ -9281,7 +9461,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 1,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-17896103-blocks",
@@ -9312,7 +9496,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 0,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-56677832-points",
@@ -9343,7 +9531,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 7,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-56677832-rebounds",
@@ -9375,7 +9567,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 8,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-56677832-threes",
@@ -9406,7 +9602,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 1,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-56677832-points_rebounds_assists",
@@ -9437,7 +9637,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 16,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-56677832-rebounds_assists",
@@ -9468,7 +9672,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 9,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717975-377-points_rebounds",
@@ -10272,7 +10480,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 13,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-237-threes",
@@ -10303,7 +10515,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 2,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-145-threes",
@@ -10334,7 +10550,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 0,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-145-points_assists",
@@ -10365,7 +10585,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 23,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-70-rebounds",
@@ -10397,7 +10621,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 10,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-1057261935-points",
@@ -10428,7 +10656,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 8,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-360-rebounds_assists",
@@ -10459,7 +10691,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 4,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-38017507-rebounds_assists",
@@ -10491,7 +10727,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 17,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717975-443-threes",
@@ -11052,7 +11292,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 18,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-70-points",
@@ -11084,7 +11328,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 20,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-70-points_rebounds",
@@ -11116,7 +11364,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 30,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-70-points_rebounds_assists",
@@ -11148,7 +11400,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 32,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-70-points_assists",
@@ -11180,7 +11436,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 22,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-419-threes",
@@ -11211,7 +11471,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 6,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-416-points",
@@ -11243,7 +11507,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 26,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-416-points_assists",
@@ -11275,7 +11543,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 29,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-38017507-assists",
@@ -11307,7 +11579,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 14,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-38017507-points_rebounds_assists",
@@ -11339,7 +11615,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 35,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-3547243-points_rebounds",
@@ -11370,7 +11650,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 19,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-56677832-points_rebounds",
@@ -11401,7 +11685,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 15,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717975-4-rebounds_assists",
@@ -11609,7 +11897,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 5,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-1057261935-points_rebounds",
@@ -11640,7 +11932,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 15,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-1057261935-points_rebounds_assists",
@@ -11671,7 +11967,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 17,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-360-threes",
@@ -11702,7 +12002,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 1,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-38017507-points",
@@ -11733,7 +12037,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 18,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-3547243-points",
@@ -11764,7 +12072,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 13,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-3547250-points_rebounds",
@@ -11795,7 +12107,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 20,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-56677832-points_assists",
@@ -11826,7 +12142,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 8,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717976-1091340077-threes",
@@ -11965,7 +12285,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 10,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-237-points_assists",
@@ -11997,7 +12321,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 23,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-419-points_rebounds",
@@ -12028,7 +12356,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 23,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-419-points_rebounds_assists",
@@ -12059,7 +12391,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 24,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-666940-points",
@@ -12090,7 +12426,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 0,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-3547254-points_rebounds",
@@ -12114,14 +12454,18 @@
    "scoreMargin": 1,
    "valueAtPick": 3,
    "projection": 28.49139972649202,
-   "latestValue": 30,
+   "latestValue": 32,
    "tags": [
     "Over",
     "Pts+Reb",
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 32,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-3547254-points_assists",
@@ -12145,7 +12489,7 @@
    "scoreMargin": 1,
    "valueAtPick": 3,
    "projection": 30.346796136868804,
-   "latestValue": 29,
+   "latestValue": 31,
    "tags": [
     "Best bet",
     "Over",
@@ -12153,7 +12497,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 31,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-1057261935-rebounds",
@@ -12184,7 +12532,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 7,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-3547243-rebounds",
@@ -12215,7 +12567,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 6,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-3547250-points",
@@ -12246,7 +12602,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 18,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717976-3547299-points_rebounds_assists",
@@ -12312,7 +12672,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 13,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-70-threes",
@@ -12343,7 +12707,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 1,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-419-points",
@@ -12374,7 +12742,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 20,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717975-3547244-points_rebounds",
@@ -12510,7 +12882,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 9,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-17896103-points_rebounds",
@@ -12542,7 +12918,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "loss",
+    "actual": 9,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717976-117-points_assists",
@@ -12608,7 +12988,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 1,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-666940-points_rebounds",
@@ -12639,7 +13023,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 1,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717976-38017721-points_rebounds",
@@ -13061,7 +13449,11 @@
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 10,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717978-360-points_assists",
@@ -13085,14 +13477,18 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 10.385599124485209,
-   "latestValue": 14,
+   "latestValue": 16,
    "tags": [
     "Over",
     "Pts+Ast",
     "Found in Q1",
     "Under 60% of line"
    ],
-   "result": null
+   "result": {
+    "status": "win",
+    "actual": 16,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   }
   },
   {
    "pickId": "21717976-17896076-blocks",
@@ -17491,7 +17887,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 1,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -17525,7 +17925,11 @@
     "Already 60%+ of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 17,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -17559,7 +17963,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 2,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -17592,7 +18000,11 @@
     "Already 60%+ of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 5,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -17625,7 +18037,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 1,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -17658,7 +18074,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 1,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -17692,7 +18112,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 35,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -17725,7 +18149,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 17,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -17758,7 +18186,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 7,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -17791,7 +18223,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 1,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -17986,7 +18422,7 @@
    "scoreMargin": 2,
    "valueAtPick": 15,
    "projection": 41.50142100863627,
-   "latestValue": 28,
+   "latestValue": 30,
    "tags": [
     "Best bet",
     "Over",
@@ -18247,7 +18683,7 @@
    "scoreMargin": 1,
    "valueAtPick": 13,
    "projection": 42.82342274496189,
-   "latestValue": 29,
+   "latestValue": 30,
    "tags": [
     "Best bet",
     "Over",
@@ -18280,7 +18716,7 @@
    "scoreMargin": 1,
    "valueAtPick": 2,
    "projection": 7.882949354090806,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -18379,7 +18815,7 @@
    "scoreMargin": 7,
    "valueAtPick": 2,
    "projection": 8.371012219445523,
-   "latestValue": 7,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -19552,7 +19988,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 10,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -19585,7 +20025,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 3,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -19618,7 +20062,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 32,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -19652,7 +20100,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 3,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -19685,7 +20137,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 29,
+    "gradedAt": "2026-10-29T01:57:27.988Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -19809,7 +20265,7 @@
    "scoreMargin": 4,
    "valueAtPick": 5,
    "projection": 10.779782506690996,
-   "latestValue": 5,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -19981,7 +20437,7 @@
    "scoreMargin": 16,
    "valueAtPick": 18,
    "projection": 31.57021286573626,
-   "latestValue": 23,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Over",
@@ -20223,7 +20679,7 @@
    "scoreMargin": -10,
    "valueAtPick": 4,
    "projection": 23.87843876965181,
-   "latestValue": 9,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -20289,7 +20745,7 @@
    "scoreMargin": 10,
    "valueAtPick": 3,
    "projection": 17.28744270293393,
-   "latestValue": 5,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -20530,9 +20986,181 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717981-1057272939-assists",
+   "gameDate": "2026-10-28",
+   "gameId": 21717981,
+   "matchup": "HOU @ MIL",
+   "playerId": 1057272939,
+   "playerName": "Kasparas Jakučionis",
+   "teamAbbreviation": "MIL",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 6.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.6455047795146036,
+   "evPercent": 19.2542728255793,
+   "foundAt": "2026-10-29T01:55:27.119Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -26,
+   "valueAtPick": 5,
+   "projection": 6.035616996159455,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Blowout risk",
+    "Foul trouble",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717981-140-threes",
+   "gameDate": "2026-10-28",
+   "gameId": 21717981,
+   "matchup": "HOU @ MIL",
+   "playerId": 140,
+   "playerName": "Kevin Durant",
+   "teamAbbreviation": "HOU",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 140,
+   "vendor": "betmgm",
+   "modelProbability": 0.49477356351113144,
+   "evPercent": 18.745655242671532,
+   "foundAt": "2026-10-29T01:55:27.119Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 26,
+   "valueAtPick": 2,
+   "projection": 2.4883828719709533,
+   "latestValue": 2,
+   "tags": [
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717981-56677825-rebounds",
+   "gameDate": "2026-10-28",
+   "gameId": 21717981,
+   "matchup": "HOU @ MIL",
+   "playerId": 56677825,
+   "playerName": "Amen Thompson",
+   "teamAbbreviation": "HOU",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": 120,
+   "vendor": "betmgm",
+   "modelProbability": 0.5256494118922461,
+   "evPercent": 15.642870616294147,
+   "foundAt": "2026-10-29T01:55:27.119Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 26,
+   "valueAtPick": 4,
+   "projection": 5.406698878119192,
+   "latestValue": 4,
+   "tags": [
+    "Under",
+    "Rebounds",
+    "Blowout risk",
+    "Foul trouble",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717981-56677785-assists",
+   "gameDate": "2026-10-28",
+   "gameId": 21717981,
+   "matchup": "HOU @ MIL",
+   "playerId": 56677785,
+   "playerName": "Jaime Jaquez Jr.",
+   "teamAbbreviation": "MIL",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": -130,
+   "vendor": "betmgm",
+   "modelProbability": 0.6305545614657708,
+   "evPercent": 11.559653182405594,
+   "foundAt": "2026-10-29T01:55:27.119Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -26,
+   "valueAtPick": 2,
+   "projection": 2.8829628450520834,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717981-666633-assists",
+   "gameDate": "2026-10-28",
+   "gameId": 21717981,
+   "matchup": "HOU @ MIL",
+   "playerId": 666633,
+   "playerName": "Tyler Herro",
+   "teamAbbreviation": "MIL",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 0.5,
+   "americanOdds": 120,
+   "vendor": "betmgm",
+   "modelProbability": 0.5010172526524841,
+   "evPercent": 10.223795583546513,
+   "foundAt": "2026-10-29T01:55:27.119Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -26,
+   "valueAtPick": 0,
+   "projection": 0.4978002946715765,
+   "latestValue": 0,
+   "tags": [
+    "Under",
+    "Assists",
+    "Blowout risk",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 292,
+ "calls": 305,
  "note": null,
  "checkpointsTaken": {
   "21717975": [
@@ -20566,7 +21194,8 @@
   ],
   "21717981": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21717982": [
    "end-q1",
