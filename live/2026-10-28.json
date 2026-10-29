@@ -1,6 +1,6 @@
 {
  "date": "2026-10-28",
- "updatedAt": "2026-10-29T02:52:30.030Z",
+ "updatedAt": "2026-10-29T02:56:30.397Z",
  "state": "running",
  "games": [
   {
@@ -69,9 +69,9 @@
   {
    "gameId": 21717984,
    "matchup": "SAS @ UTA",
-   "status": "3rd Qtr",
+   "status": "4th Qtr",
    "homeScore": 85,
-   "visitorScore": 82
+   "visitorScore": 85
   },
   {
    "gameId": 21717985,
@@ -84,8 +84,8 @@
    "gameId": 21717986,
    "matchup": "LAL @ LAC",
    "status": "1st Qtr",
-   "homeScore": 7,
-   "visitorScore": 11
+   "homeScore": 14,
+   "visitorScore": 14
   }
  ],
  "picks": [
@@ -22213,7 +22213,7 @@
    "scoreMargin": -4,
    "valueAtPick": 11,
    "projection": 24.268033061160985,
-   "latestValue": 22,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Under",
@@ -22653,9 +22653,177 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717984-666626-rebounds_assists",
+   "gameDate": "2026-10-28",
+   "gameId": 21717984,
+   "matchup": "SAS @ UTA",
+   "playerId": 666626,
+   "playerName": "Jaxson Hayes",
+   "teamAbbreviation": "UTA",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 10.5,
+   "americanOdds": -136,
+   "vendor": "fanduel",
+   "modelProbability": 0.7101956996355971,
+   "evPercent": 23.23984199558893,
+   "foundAt": "2026-10-29T02:53:29.703Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 0,
+   "valueAtPick": 8,
+   "projection": 9.6085357825625,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717984-1091342427-points_rebounds_assists",
+   "gameDate": "2026-10-28",
+   "gameId": 21717984,
+   "matchup": "SAS @ UTA",
+   "playerId": 1091342427,
+   "playerName": "Darryn Peterson",
+   "teamAbbreviation": "UTA",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 26.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.641405653300729,
+   "evPercent": 20.40421912838246,
+   "foundAt": "2026-10-29T02:53:29.703Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 0,
+   "valueAtPick": 21,
+   "projection": 27.94798581550783,
+   "latestValue": 21,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717984-56677822-rebounds_assists",
+   "gameDate": "2026-10-28",
+   "gameId": 21717984,
+   "matchup": "SAS @ UTA",
+   "playerId": 56677822,
+   "playerName": "Victor Wembanyama",
+   "teamAbbreviation": "SAS",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 15.5,
+   "americanOdds": -152,
+   "vendor": "fanduel",
+   "modelProbability": 0.7221420842193726,
+   "evPercent": 19.72355606794862,
+   "foundAt": "2026-10-29T02:53:29.703Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 0,
+   "valueAtPick": 11,
+   "projection": 14.169073335537874,
+   "latestValue": 12,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Foul trouble",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717984-1057262518-assists",
+   "gameDate": "2026-10-28",
+   "gameId": 21717984,
+   "matchup": "SAS @ UTA",
+   "playerId": 1057262518,
+   "playerName": "Dylan Harper",
+   "teamAbbreviation": "SAS",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": 174,
+   "vendor": "fanduel",
+   "modelProbability": 0.4339297137465162,
+   "evPercent": 18.896741566545437,
+   "foundAt": "2026-10-29T02:53:29.703Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 0,
+   "valueAtPick": 5,
+   "projection": 5.666019955255957,
+   "latestValue": 5,
+   "tags": [
+    "Under",
+    "Assists",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717984-161-rebounds_assists",
+   "gameDate": "2026-10-28",
+   "gameId": 21717984,
+   "matchup": "SAS @ UTA",
+   "playerId": 161,
+   "playerName": "De'Aaron Fox",
+   "teamAbbreviation": "SAS",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 8.5,
+   "americanOdds": 104,
+   "vendor": "fanduel",
+   "modelProbability": 0.5813974327855851,
+   "evPercent": 18.605076288259358,
+   "foundAt": "2026-10-29T02:53:29.703Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 0,
+   "valueAtPick": 6,
+   "projection": 8.120364965561755,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 441,
+ "calls": 453,
  "note": null,
  "checkpointsTaken": {
   "21717975": [
@@ -22705,7 +22873,8 @@
   ],
   "21717984": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21717985": [
    "end-q1",
