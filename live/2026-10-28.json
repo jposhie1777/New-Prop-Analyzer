@@ -1,6 +1,6 @@
 {
  "date": "2026-10-28",
- "updatedAt": "2026-10-29T03:36:31.957Z",
+ "updatedAt": "2026-10-29T03:40:31.814Z",
  "state": "running",
  "games": [
   {
@@ -69,7 +69,7 @@
   {
    "gameId": 21717984,
    "matchup": "SAS @ UTA",
-   "status": "OT1",
+   "status": "Final",
    "homeScore": 111,
    "visitorScore": 117
   },
@@ -77,15 +77,15 @@
    "gameId": 21717985,
    "matchup": "OKC @ DAL",
    "status": "4th Qtr",
-   "homeScore": 94,
-   "visitorScore": 81
+   "homeScore": 98,
+   "visitorScore": 83
   },
   {
    "gameId": 21717986,
    "matchup": "LAL @ LAC",
    "status": "2nd Qtr",
-   "homeScore": 35,
-   "visitorScore": 50
+   "homeScore": 36,
+   "visitorScore": 54
   }
  ],
  "picks": [
@@ -21275,7 +21275,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 21,
+    "gradedAt": "2026-10-29T03:37:31.827Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -21308,7 +21312,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 23,
+    "gradedAt": "2026-10-29T03:37:31.827Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -21341,7 +21349,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 25,
+    "gradedAt": "2026-10-29T03:37:31.827Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -21374,7 +21386,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 6,
+    "gradedAt": "2026-10-29T03:37:31.827Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -21408,7 +21424,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 21,
+    "gradedAt": "2026-10-29T03:37:31.827Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -22188,7 +22208,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 1,
+    "gradedAt": "2026-10-29T03:37:31.827Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -22221,7 +22245,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 28,
+    "gradedAt": "2026-10-29T03:37:31.827Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -22254,7 +22282,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 7,
+    "gradedAt": "2026-10-29T03:37:31.827Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -22288,7 +22320,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 5,
+    "gradedAt": "2026-10-29T03:37:31.827Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -22321,7 +22357,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 6,
+    "gradedAt": "2026-10-29T03:37:31.827Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -22379,7 +22419,7 @@
    "scoreMargin": 3,
    "valueAtPick": 12,
    "projection": 31.4821310160327,
-   "latestValue": 19,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Under",
@@ -22578,7 +22618,7 @@
    "scoreMargin": -6,
    "valueAtPick": 3,
    "projection": 4.54759431072933,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -22684,7 +22724,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 15,
+    "gradedAt": "2026-10-29T03:37:31.827Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -22717,7 +22761,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 26,
+    "gradedAt": "2026-10-29T03:37:31.827Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -22752,7 +22800,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 19,
+    "gradedAt": "2026-10-29T03:37:31.827Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -22785,7 +22837,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 8,
+    "gradedAt": "2026-10-29T03:37:31.827Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -22819,7 +22875,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 7,
+    "gradedAt": "2026-10-29T03:37:31.827Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -23152,7 +23212,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 542,
+ "calls": 551,
  "note": null,
  "checkpointsTaken": {
   "21717975": [
