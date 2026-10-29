@@ -1,6 +1,6 @@
 {
  "date": "2026-10-28",
- "updatedAt": "2026-10-29T01:03:18.740Z",
+ "updatedAt": "2026-10-29T01:06:25.686Z",
  "state": "running",
  "games": [
   {
@@ -8,63 +8,63 @@
    "matchup": "MIA @ ATL",
    "status": "4th Qtr",
    "homeScore": 107,
-   "visitorScore": 112
+   "visitorScore": 116
   },
   {
    "gameId": 21717976,
    "matchup": "WAS @ CLE",
    "status": "4th Qtr",
    "homeScore": 102,
-   "visitorScore": 97
+   "visitorScore": 99
   },
   {
    "gameId": 21717977,
    "matchup": "CHA @ DET",
    "status": "4th Qtr",
-   "homeScore": 76,
+   "homeScore": 80,
    "visitorScore": 70
   },
   {
    "gameId": 21717978,
    "matchup": "PHI @ IND",
    "status": "3rd Qtr",
-   "homeScore": 82,
-   "visitorScore": 74
+   "homeScore": 84,
+   "visitorScore": 75
   },
   {
    "gameId": 21717979,
    "matchup": "ORL @ TOR",
    "status": "3rd Qtr",
-   "homeScore": 72,
+   "homeScore": 77,
    "visitorScore": 53
   },
   {
    "gameId": 21717980,
    "matchup": "NYK @ CHI",
    "status": "2nd Qtr",
-   "homeScore": 47,
-   "visitorScore": 47
+   "homeScore": 49,
+   "visitorScore": 53
   },
   {
    "gameId": 21717981,
    "matchup": "HOU @ MIL",
    "status": "2nd Qtr",
    "homeScore": 33,
-   "visitorScore": 49
+   "visitorScore": 54
   },
   {
    "gameId": 21717982,
    "matchup": "GSW @ MIN",
    "status": "2nd Qtr",
-   "homeScore": 43,
+   "homeScore": 45,
    "visitorScore": 57
   },
   {
    "gameId": 21717983,
    "matchup": "DEN @ NOP",
    "status": "2nd Qtr",
-   "homeScore": 39,
-   "visitorScore": 53
+   "homeScore": 44,
+   "visitorScore": 57
   },
   {
    "gameId": 21717984,
@@ -579,7 +579,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 6.491362034898054,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Under",
     "Assists",
@@ -641,7 +641,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 13.480952612822175,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Under",
     "Pts+Reb",
@@ -672,7 +672,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 20.47151000735436,
-   "latestValue": 16,
+   "latestValue": 19,
    "tags": [
     "Under",
     "PRA",
@@ -734,7 +734,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 8.488486138886017,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -797,7 +797,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 13.480268097954712,
-   "latestValue": 16,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Under",
@@ -1764,7 +1764,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 10.388471394562092,
-   "latestValue": 11,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -1890,7 +1890,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 11.35923001245731,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Under",
     "Reb+Ast",
@@ -1921,7 +1921,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 24.21612888394343,
-   "latestValue": 13,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -1953,7 +1953,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 20.2874476737143,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -2922,7 +2922,7 @@
    "scoreMargin": -1,
    "valueAtPick": 0,
    "projection": 9.437040061777099,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Under",
     "Reb+Ast",
@@ -4293,7 +4293,7 @@
    "scoreMargin": 0,
    "valueAtPick": 1,
    "projection": 6.39419471422227,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -4356,7 +4356,7 @@
    "scoreMargin": 0,
    "valueAtPick": 1,
    "projection": 16.204250213132845,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Over",
     "Pts+Reb",
@@ -4387,7 +4387,7 @@
    "scoreMargin": 0,
    "valueAtPick": 1,
    "projection": 10.299689050454601,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -5080,7 +5080,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 6.270484835299987,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Under",
     "Rebounds",
@@ -5174,7 +5174,7 @@
    "scoreMargin": 4,
    "valueAtPick": 0,
    "projection": 5.385103663076861,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Under",
     "Points",
@@ -5364,7 +5364,7 @@
    "scoreMargin": -4,
    "valueAtPick": 0,
    "projection": 4.39291349670936,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Under",
     "Rebounds",
@@ -5395,7 +5395,7 @@
    "scoreMargin": -4,
    "valueAtPick": 0,
    "projection": 34.72623474613506,
-   "latestValue": 25,
+   "latestValue": 26,
    "tags": [
     "Under",
     "PRA",
@@ -5832,7 +5832,7 @@
    "scoreMargin": -3,
    "valueAtPick": 0,
    "projection": 22.61931892479052,
-   "latestValue": 20,
+   "latestValue": 24,
    "tags": [
     "Under",
     "Points",
@@ -5863,7 +5863,7 @@
    "scoreMargin": -3,
    "valueAtPick": 0,
    "projection": 28.327967458673523,
-   "latestValue": 24,
+   "latestValue": 28,
    "tags": [
     "Under",
     "Pts+Reb",
@@ -5894,7 +5894,7 @@
    "scoreMargin": -3,
    "valueAtPick": 0,
    "projection": 31.23384366704757,
-   "latestValue": 27,
+   "latestValue": 31,
    "tags": [
     "Under",
     "Pts+Ast",
@@ -6394,7 +6394,7 @@
    "scoreMargin": -3,
    "valueAtPick": 0,
    "projection": 29.23311680989597,
-   "latestValue": 18,
+   "latestValue": 19,
    "tags": [
     "Under",
     "Pts+Reb",
@@ -6926,7 +6926,7 @@
    "scoreMargin": -7,
    "valueAtPick": 0,
    "projection": 36.42084608582544,
-   "latestValue": 31,
+   "latestValue": 35,
    "tags": [
     "Under",
     "PRA",
@@ -7985,7 +7985,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 28.95621214636991,
-   "latestValue": 27,
+   "latestValue": 29,
    "tags": [
     "Best bet",
     "Under",
@@ -8017,7 +8017,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 32.8938679986264,
-   "latestValue": 29,
+   "latestValue": 31,
    "tags": [
     "Best bet",
     "Under",
@@ -8206,7 +8206,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 20.987022333037388,
-   "latestValue": 23,
+   "latestValue": 24,
    "tags": [
     "Best bet",
     "Under",
@@ -8487,7 +8487,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 4.411527390839974,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -8550,7 +8550,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 17.087802659507624,
-   "latestValue": 10,
+   "latestValue": 11,
    "tags": [
     "Under",
     "PRA",
@@ -8581,7 +8581,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 7.344613326934396,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Under",
     "Reb+Ast",
@@ -8644,7 +8644,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 10.732803342373533,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Under",
     "Points",
@@ -8675,7 +8675,7 @@
    "scoreMargin": 0,
    "valueAtPick": 1,
    "projection": 18.29238839965616,
-   "latestValue": 16,
+   "latestValue": 19,
    "tags": [
     "Over",
     "Pts+Ast",
@@ -9515,7 +9515,7 @@
    "scoreMargin": 0,
    "valueAtPick": 1,
    "projection": 10.216609284385216,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -9922,7 +9922,7 @@
    "scoreMargin": -8,
    "valueAtPick": 3,
    "projection": 20.84820260380969,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -10048,7 +10048,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 22.78024120169223,
-   "latestValue": 17,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Over",
@@ -10080,7 +10080,7 @@
    "scoreMargin": 0,
    "valueAtPick": 3,
    "projection": 29.529981863565336,
-   "latestValue": 24,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Over",
@@ -10112,7 +10112,7 @@
    "scoreMargin": 0,
    "valueAtPick": 3,
    "projection": 34.372598298564284,
-   "latestValue": 26,
+   "latestValue": 27,
    "tags": [
     "Best bet",
     "Over",
@@ -10144,7 +10144,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 26.659177232570613,
-   "latestValue": 19,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -10207,7 +10207,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 25.595184735935703,
-   "latestValue": 16,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Over",
@@ -10239,7 +10239,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 26.574165457177312,
-   "latestValue": 18,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Under",
@@ -10271,7 +10271,7 @@
    "scoreMargin": 0,
    "valueAtPick": 1,
    "projection": 7.2053851727221785,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -10303,7 +10303,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 24.335644678629468,
-   "latestValue": 26,
+   "latestValue": 27,
    "tags": [
     "Best bet",
     "Under",
@@ -10366,7 +10366,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 14.701993756314096,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Under",
     "Pts+Reb",
@@ -13118,7 +13118,7 @@
    "scoreMargin": -2,
    "valueAtPick": 0,
    "projection": 5.404332054974251,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Under",
     "Assists",
@@ -13181,7 +13181,7 @@
    "scoreMargin": -2,
    "valueAtPick": 0,
    "projection": 3.395439174219948,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Under",
     "Rebounds",
@@ -13212,7 +13212,7 @@
    "scoreMargin": -2,
    "valueAtPick": 0,
    "projection": 19.94066221271636,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Under",
     "Pts+Reb",
@@ -13305,7 +13305,7 @@
    "scoreMargin": -2,
    "valueAtPick": 0,
    "projection": 27.906302142482968,
-   "latestValue": 15,
+   "latestValue": 21,
    "tags": [
     "Under",
     "Pts+Reb",
@@ -13647,7 +13647,7 @@
    "scoreMargin": 1,
    "valueAtPick": 3,
    "projection": 29.27641753165078,
-   "latestValue": 14,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -13679,7 +13679,7 @@
    "scoreMargin": 1,
    "valueAtPick": 3,
    "projection": 25.493554871612606,
-   "latestValue": 13,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -13711,7 +13711,7 @@
    "scoreMargin": 1,
    "valueAtPick": 1,
    "projection": 8.228516902029513,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -13743,7 +13743,7 @@
    "scoreMargin": 1,
    "valueAtPick": 2,
    "projection": 36.1109020690128,
-   "latestValue": 17,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Over",
@@ -13837,7 +13837,7 @@
    "scoreMargin": -1,
    "valueAtPick": 0,
    "projection": 4.291489688558737,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Under",
     "Rebounds",
@@ -13868,7 +13868,7 @@
    "scoreMargin": -1,
    "valueAtPick": 0,
    "projection": 23.427966628609315,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Under",
     "Pts+Reb",
@@ -13899,7 +13899,7 @@
    "scoreMargin": -1,
    "valueAtPick": 0,
    "projection": 27.215699522146956,
-   "latestValue": 16,
+   "latestValue": 17,
    "tags": [
     "Under",
     "PRA",
@@ -14057,7 +14057,7 @@
    "scoreMargin": 1,
    "valueAtPick": 1,
    "projection": 10.009955172717556,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -14089,7 +14089,7 @@
    "scoreMargin": 1,
    "valueAtPick": 2,
    "projection": 22.416178200749805,
-   "latestValue": 10,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -14121,7 +14121,7 @@
    "scoreMargin": 1,
    "valueAtPick": 2,
    "projection": 14.753716447671106,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -14465,7 +14465,7 @@
    "scoreMargin": 3,
    "valueAtPick": 5,
    "projection": 29.790417621424616,
-   "latestValue": 12,
+   "latestValue": 17,
    "tags": [
     "Over",
     "Pts+Ast",
@@ -14936,7 +14936,7 @@
    "scoreMargin": 4,
    "valueAtPick": 0,
    "projection": 7.610433988720344,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Over",
     "Reb+Ast",
@@ -15259,7 +15259,7 @@
    "scoreMargin": 13,
    "valueAtPick": 6,
    "projection": 13.450205217216839,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -15492,7 +15492,7 @@
    "scoreMargin": -12,
    "valueAtPick": 2,
    "projection": 8.102774519286157,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -15820,7 +15820,7 @@
    "scoreMargin": 7,
    "valueAtPick": 1,
    "projection": 3.111130849729938,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -15986,7 +15986,7 @@
    "scoreMargin": -7,
    "valueAtPick": 4,
    "projection": 7.776041757591241,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Over",
     "Rebounds",
@@ -16248,7 +16248,7 @@
    "scoreMargin": -10,
    "valueAtPick": 10,
    "projection": 16.741697459948053,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -16415,7 +16415,7 @@
    "scoreMargin": -10,
    "valueAtPick": 16,
    "projection": 26.913071140952,
-   "latestValue": 26,
+   "latestValue": 27,
    "tags": [
     "Best bet",
     "Under",
@@ -16616,7 +16616,7 @@
    "scoreMargin": -19,
    "valueAtPick": 6,
    "projection": 24.29791333952495,
-   "latestValue": 13,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Over",
@@ -16784,7 +16784,7 @@
    "scoreMargin": 2,
    "valueAtPick": 3,
    "projection": 21.084264041949265,
-   "latestValue": 7,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -16914,7 +16914,7 @@
    "scoreMargin": 1,
    "valueAtPick": 11,
    "projection": 37.61655093794741,
-   "latestValue": 15,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -16979,7 +16979,7 @@
    "scoreMargin": 1,
    "valueAtPick": 13,
    "projection": 42.82342274496189,
-   "latestValue": 13,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -17144,7 +17144,7 @@
    "scoreMargin": -7,
    "valueAtPick": 1,
    "projection": 5.458437235260524,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Over",
@@ -17211,7 +17211,7 @@
    "scoreMargin": 16,
    "valueAtPick": 4,
    "projection": 7.9206840075422456,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -17383,7 +17383,7 @@
    "scoreMargin": 12,
    "valueAtPick": 6,
    "projection": 8.881818383269142,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -17859,7 +17859,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 152,
+ "calls": 160,
  "note": null,
  "checkpointsTaken": {
   "21717975": [
