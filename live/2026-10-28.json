@@ -1,6 +1,6 @@
 {
  "date": "2026-10-28",
- "updatedAt": "2026-10-29T03:44:32.514Z",
+ "updatedAt": "2026-10-29T03:48:32.139Z",
  "state": "running",
  "games": [
   {
@@ -77,8 +77,8 @@
    "gameId": 21717985,
    "matchup": "OKC @ DAL",
    "status": "4th Qtr",
-   "homeScore": 104,
-   "visitorScore": 87
+   "homeScore": 105,
+   "visitorScore": 89
   },
   {
    "gameId": 21717986,
@@ -22651,7 +22651,7 @@
    "scoreMargin": 6,
    "valueAtPick": 5,
    "projection": 8.46302755693532,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -23102,7 +23102,7 @@
    "scoreMargin": 13,
    "valueAtPick": 5,
    "projection": 6.1341803354551825,
-   "latestValue": 5,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -23384,7 +23384,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 563,
+ "calls": 571,
  "note": null,
  "checkpointsTaken": {
   "21717975": [
