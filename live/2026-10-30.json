@@ -1,0 +1,80 @@
+{
+ "date": "2026-10-30",
+ "updatedAt": "2026-10-30T22:36:41.835Z",
+ "state": "waiting",
+ "games": [
+  {
+   "gameId": 21717990,
+   "matchup": "CHA @ WAS",
+   "status": "2026-10-30T23:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21717992,
+   "matchup": "CHI @ BOS",
+   "status": "2026-10-30T23:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21717993,
+   "matchup": "DET @ BKN",
+   "status": "2026-10-30T23:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21717994,
+   "matchup": "NYK @ PHI",
+   "status": "2026-10-30T23:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21717995,
+   "matchup": "ORL @ TOR",
+   "status": "2026-10-30T23:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21717996,
+   "matchup": "IND @ MIA",
+   "status": "2026-10-31T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21717997,
+   "matchup": "HOU @ DAL",
+   "status": "2026-10-31T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21717998,
+   "matchup": "LAC @ MIN",
+   "status": "2026-10-31T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21717999,
+   "matchup": "LAL @ GSW",
+   "status": "2026-10-31T02:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718000,
+   "matchup": "DEN @ PHX",
+   "status": "2026-10-31T02:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  }
+ ],
+ "picks": [],
+ "calls": 1,
+ "note": "First tip-off 2026-10-30T23:00:00.000Z"
+}
