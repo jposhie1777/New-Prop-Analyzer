@@ -2,9 +2,9 @@ name: NCAAB odds
 
 on:
   schedule:
-    - cron: "5 14 * * *" # 10:05 AM Eastern, the opening look
-    - cron: "35 19 * * *" # 3:35 PM Eastern
-    - cron: "35 22 * * *" # 6:35 PM Eastern, before the evening tips
+    - cron: "5 12 * * *" # 7:05 AM EST / 8:05 AM EDT, the opening look
+    - cron: "35 19 * * *" # 2:35 PM EST / 3:35 PM EDT
+    - cron: "35 22 * * *" # 5:35 PM EST / 6:35 PM EDT, before the evening tips
   workflow_dispatch: {}
 
 concurrency:
