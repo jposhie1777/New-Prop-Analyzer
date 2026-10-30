@@ -650,3 +650,32 @@ a.setting-row:hover { background: var(--surface-sunken); }
 .pick-group-head { padding: 8px 14px 4px; font-size: 12px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-muted); border-top: 1px solid var(--border-subtle); }
 .night-select { width: auto; padding: 6px 10px; font-size: 13px; }
 .meter.under > span { background: var(--warning); } /* an under fills toward losing */
+
+/* confidence */
+.confidence-badge { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; padding: 3px 8px; border-radius: var(--radius-small); white-space: nowrap; font-variant-numeric: tabular-nums; background: var(--surface-sunken); color: var(--text-secondary); }
+.confidence-badge.very-high, .confidence-badge.high { background: var(--positive-soft); color: var(--positive); }
+.confidence-badge.very-high { box-shadow: 0 0 0 1px var(--positive-line) inset; }
+.confidence-badge.medium { background: var(--accent-soft); color: var(--accent-text); }
+.confidence-badge.very-low { color: var(--text-muted); }
+.confidence-bar { width: 28px; height: 5px; border-radius: 999px; background: currentColor; opacity: 0.9; position: relative; overflow: hidden; }
+.confidence-bar::before { content: ""; position: absolute; inset: 0; background: var(--surface-raised); opacity: 0.6; }
+.confidence-bar i { position: absolute; inset: 0 auto 0 0; background: currentColor; border-radius: 999px; }
+.confidence-mini { justify-self: start; font-size: 10.5px; font-weight: 800; padding: 0 5px; border-radius: 5px; background: var(--surface-sunken); color: var(--text-secondary); }
+.confidence-mini.very-high, .confidence-mini.high { background: var(--positive-soft); color: var(--positive); }
+.confidence-mini.medium { background: var(--accent-soft); color: var(--accent-text); }
+.confidence-breakdown { display: grid; gap: 8px; margin-bottom: 10px; }
+.confidence-part { display: grid; grid-template-columns: 110px minmax(60px, 1fr) 44px; gap: 2px 10px; align-items: center; }
+.confidence-part .meter { height: 6px; }
+.confidence-note { grid-column: 1 / -1; }
+.lines-toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 12px; }
+.lines-sort { display: flex; align-items: center; gap: 6px; }
+.lines-sort .input { width: auto; padding: 5px 8px; font-size: 13px; }
+.plays-list { --ledger-columns: 118px minmax(150px, 1.5fr) minmax(110px, 1fr) 64px 60px 92px 14px; }
+.plays-list .price-button { min-width: 80px; }
+.plays-name, .plays-meta { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.show-narrow { display: none; }
+@media (max-width: 640px) {
+  .plays-list { --ledger-columns: auto minmax(0, 1fr) auto auto 10px; }
+  .show-narrow { display: inline; }
+  .confidence-part { grid-template-columns: 96px minmax(40px, 1fr) 40px; }
+}

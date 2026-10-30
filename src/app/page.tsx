@@ -4,11 +4,12 @@ import { useState } from "react";
 import { GameRow, SlateHeader } from "@/components/slate/GameRow";
 import { Segmented } from "@/components/Segmented";
 import { implausibleEvPercent, type LineEdge } from "@/lib/analytics/gameModel";
+import type { ConfidenceRating } from "@/lib/analytics/confidence";
 import { SyncStatus } from "@/components/SyncStatus";
 import { BooksIndicator } from "@/components/BooksIndicator";
 import { useSnapshotOrQuery } from "@/lib/client/siteSnapshot";
 import { matchBoxScore, useLiveBoxScores, useSlate } from "@/lib/client/slateData";
-import { useLineAnalyses } from "@/lib/client/lineModel";
+import { confidenceOf, useLineAnalyses } from "@/lib/client/lineModel";
 import { groupOddsByGame } from "@/lib/odds/consensus";
 import { teamRest } from "@/lib/analytics/aggregates/teamAggregates";
 import { todayEastern } from "@/lib/dates";
@@ -19,12 +20,17 @@ export default function SlatePage() {
   const { analyses } = useLineAnalyses(slate); // also saves the Lines model's daily record whenever the slate is open
   const [edgesOnly, setEdgesOnly] = useState(false);
   const bestEdgeByGame = new Map<number, LineEdge>();
+  const confidenceByGame = new Map<number, ConfidenceRating>();
   const leansByGame = new Map<number, LineEdge[]>();
   for (const analysis of analyses) {
     const leans = (["spread", "total", "moneyline"] as const).map((market) => analysis.edges.filter((edge) => edge.market === market).sort((first, second) => second.evPercent - first.evPercent)[0]).filter((edge): edge is LineEdge => Boolean(edge)); // the side the model prefers in each market
     leansByGame.set(analysis.game.id, leans);
     const best = analysis.edges.filter((edge) => edge.flagged && edge.evPercent < implausibleEvPercent).sort((first, second) => second.evPercent - first.evPercent)[0];
-    if (best) bestEdgeByGame.set(analysis.game.id, best);
+    if (best) {
+      bestEdgeByGame.set(analysis.game.id, best);
+      const rating = confidenceOf(analysis, best);
+      if (rating) confidenceByGame.set(analysis.game.id, rating);
+    }
   }
   const games = slate.data?.games ?? null;
   const live = useLiveBoxScores(games);
@@ -89,6 +95,7 @@ export default function SlatePage() {
               rest={rest.result}
               boxScore={matchBoxScore(game, live.boxScores)}
               modelEdge={bestEdgeByGame.get(game.id) ?? null}
+              modelConfidence={confidenceByGame.get(game.id) ?? null}
               modelLeans={leansByGame.get(game.id) ?? []}
             />
           ))}
