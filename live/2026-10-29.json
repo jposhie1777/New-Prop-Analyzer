@@ -1,6 +1,6 @@
 {
  "date": "2026-10-29",
- "updatedAt": "2026-10-30T02:30:18.792Z",
+ "updatedAt": "2026-10-30T02:38:16.439Z",
  "state": "running",
  "games": [
   {
@@ -21,8 +21,8 @@
    "gameId": 21717989,
    "matchup": "MEM @ POR",
    "status": "1st Qtr",
-   "homeScore": 22,
-   "visitorScore": 20
+   "homeScore": 25,
+   "visitorScore": 25
   }
  ],
  "picks": [
@@ -1143,9 +1143,175 @@
     "gradedAt": "2026-10-30T02:25:15.237Z"
    },
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717989-1028025344-rebounds_assists",
+   "gameDate": "2026-10-29",
+   "gameId": 21717989,
+   "matchup": "MEM @ POR",
+   "playerId": 1028025344,
+   "playerName": "Donovan Clingan",
+   "teamAbbreviation": "POR",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 12.5,
+   "americanOdds": -146,
+   "vendor": "fanduel",
+   "modelProbability": 0.7338206301455585,
+   "evPercent": 23.64375001082699,
+   "foundAt": "2026-10-30T02:38:15.170Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 0,
+   "valueAtPick": 2,
+   "projection": 10.227443355972566,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21717989-1091339280-assists",
+   "gameDate": "2026-10-29",
+   "gameId": 21717989,
+   "matchup": "MEM @ POR",
+   "playerId": 1091339280,
+   "playerName": "Cameron Boozer",
+   "teamAbbreviation": "MEM",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": 113,
+   "vendor": "caesars",
+   "modelProbability": 0.5752220659587916,
+   "evPercent": 22.5223000492226,
+   "foundAt": "2026-10-30T02:38:15.170Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 0,
+   "valueAtPick": 3,
+   "projection": 5.8945914154190655,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21717989-1028048549-points",
+   "gameDate": "2026-10-29",
+   "gameId": 21717989,
+   "matchup": "MEM @ POR",
+   "playerId": 1028048549,
+   "playerName": "Cam Spencer",
+   "teamAbbreviation": "MEM",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 8.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6140361502378775,
+   "evPercent": 21.60323759612868,
+   "foundAt": "2026-10-30T02:38:15.170Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 0,
+   "valueAtPick": 5,
+   "projection": 9.475333100461638,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21717989-278-points",
+   "gameDate": "2026-10-29",
+   "gameId": 21717989,
+   "matchup": "MEM @ POR",
+   "playerId": 278,
+   "playerName": "Damian Lillard",
+   "teamAbbreviation": "POR",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 16.5,
+   "americanOdds": -105,
+   "vendor": "betmgm",
+   "modelProbability": 0.6213519992360472,
+   "evPercent": 21.31158080322826,
+   "foundAt": "2026-10-30T02:38:15.170Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 0,
+   "valueAtPick": 0,
+   "projection": 14.620479927008248,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21717989-3547242-points_rebounds",
+   "gameDate": "2026-10-29",
+   "gameId": 21717989,
+   "matchup": "MEM @ POR",
+   "playerId": 3547242,
+   "playerName": "Deni Avdija",
+   "teamAbbreviation": "POR",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 37.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6002827008644611,
+   "evPercent": 21.25710557462115,
+   "foundAt": "2026-10-30T02:38:15.170Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 0,
+   "valueAtPick": 13,
+   "projection": 35.66550926403396,
+   "latestValue": 13,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 417,
+ "calls": 437,
  "note": null,
  "checkpointsTaken": {
   "21717987": [
@@ -1157,6 +1323,9 @@
    "end-q1",
    "halftime",
    "end-q3"
+  ],
+  "21717989": [
+   "end-q1"
   ]
  }
 }
