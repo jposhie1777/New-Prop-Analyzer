@@ -27,7 +27,7 @@ function offerFor(bettingOdd: BdlBettingOdd, selection: GameSelection): SlipOffe
   return { vendor: bettingOdd.vendor, americanOdds, lineValue: lineValue !== null && Number.isFinite(lineValue) ? lineValue : null, deeplinks: bettingOdd.deeplinks ?? null, eventDeeplinks: bettingOdd.deeplinks ?? null };
 }
 
-export function buildGamePick(game: BdlGame, odds: BdlBettingOdd[], selection: GameSelection, source: string): Omit<SlipPick, "addedAt"> | null {
+export function buildGamePick(game: Pick<BdlGame, "id" | "date"> & { home_team: { abbreviation: string }; visitor_team: { abbreviation: string } }, odds: BdlBettingOdd[], selection: GameSelection, source: string): Omit<SlipPick, "addedAt"> | null {
   const offers = odds.filter((bettingOdd) => bettingOdd.game_id === game.id).map((bettingOdd) => offerFor(bettingOdd, selection)).filter((offer): offer is SlipOffer => offer !== null);
   if (offers.length === 0) return null;
   const offeredLines = offers.map((offer) => offer.lineValue).filter((lineValue): lineValue is number => lineValue !== null);

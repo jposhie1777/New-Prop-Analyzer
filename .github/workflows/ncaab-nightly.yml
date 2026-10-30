@@ -1,0 +1,67 @@
+name: NCAAB nightly data
+
+on:
+  schedule:
+    - cron: "47 10 * * *" # 6:47 AM Eastern, after late West Coast games are final
+  workflow_dispatch:
+    inputs:
+      budget_minutes:
+        description: "Minutes to spend rebuilding box scores from play-by-play (the first run backfills last season)"
+        default: "300"
+
+concurrency:
+  group: ncaab-data
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Get the last run's data and today's picks
+        run: |
+          for branch in ncaab-data ncaab-odds; do
+            if git ls-remote --exit-code --heads origin "$branch" > /dev/null; then
+              git clone --depth 1 --branch "$branch" "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "$branch"
+              rm -rf "$branch/.git"
+            else
+              mkdir "$branch"
+            fi
+          done
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build box scores, ratings and the record
+        run: npx tsx scripts/ncaab/refreshNcaab.ts --out ncaab-data --odds ncaab-odds --budget-minutes "${BUDGET_MINUTES:-300}"
+        env:
+          BDL_API_KEY: ${{ secrets.BDL_API_KEY }}
+          BDL_TIER: allstar
+          BUDGET_MINUTES: ${{ github.event.inputs.budget_minutes }}
+
+      - name: Publish as a single commit
+        if: always()
+        run: |
+          cd ncaab-data
+          [ -f ratings.json ] || exit 0
+          printf '{\n  "git": { "deploymentEnabled": false },\n  "ignoreCommand": "exit 0"\n}\n' > vercel.json
+          printf '# NCAAB data\n\nRebuilt every morning by the NCAAB nightly data workflow. History is replaced each run; never merge this branch.\n' > README.md
+          git init -b ncaab-data
+          git config user.name "pulse-ncaab-data"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "NCAAB data $(date -u +%Y-%m-%d) [skip ci]"
+          git push --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" ncaab-data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

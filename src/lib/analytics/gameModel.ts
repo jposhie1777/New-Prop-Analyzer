@@ -13,9 +13,13 @@ export const marginDeviation = 13; // spread of final margins around a good line
 export const totalDeviation = 18.5; // spread of final totals around a good line; NBA totals miss by about 15 points on average
 export const injuryReplacementShare = 0.75; // teammates make up about 75% of a missing scorer's points, so a 25-point scorer is worth about 6
 export const injuryCapPoints = 8;
-const tooFarSpread = 6; // gaps this big usually mean news the model has not seen
-const tooFarTotal = 10;
-const tooFarWinChance = 0.15;
+export interface TooFarLimits {
+  spread: number;
+  total: number;
+  winChance: number;
+}
+
+export const nbaTooFarLimits: TooFarLimits = { spread: 6, total: 10, winChance: 0.15 }; // gaps this big usually mean news the model has not seen
 export const implausibleEvPercent = 15; // NBA side and total edges are rarely above a few percent; bigger ones are missing news or a stale line
 
 export interface InjuryImpact {
@@ -175,7 +179,7 @@ function signed(value: number, digits = 1): string {
   return `${rounded > 0 ? "+" : ""}${rounded}`;
 }
 
-export function evaluateGameLines(projection: Pick<GameProjection, "margin" | "total" | "homeWinProbability">, odds: BdlBettingOdd[], homeAbbreviation: string, awayAbbreviation: string, evThresholdPercent: number, spread: OutcomeSpread = defaultOutcomeSpread): LineEdge[] {
+export function evaluateGameLines(projection: Pick<GameProjection, "margin" | "total" | "homeWinProbability">, odds: BdlBettingOdd[], homeAbbreviation: string, awayAbbreviation: string, evThresholdPercent: number, spread: OutcomeSpread = defaultOutcomeSpread, limits: TooFarLimits = nbaTooFarLimits): LineEdge[] {
   const { spreadHome: consensusSpreadHome, total: consensusTotal, homeNoVig } = marketConsensus(odds);
   const marketTexts = {
     spread: consensusSpreadHome === null ? "–" : `${homeAbbreviation} ${signed(consensusSpreadHome)}`,
@@ -188,9 +192,9 @@ export function evaluateGameLines(projection: Pick<GameProjection, "margin" | "t
     moneyline: `${homeAbbreviation} ${Math.round(projection.homeWinProbability * 100)}%`,
   };
   const tooFar = {
-    spread: consensusSpreadHome !== null && Math.abs(-projection.margin - consensusSpreadHome) > tooFarSpread,
-    total: consensusTotal !== null && Math.abs(projection.total - consensusTotal) > tooFarTotal,
-    moneyline: homeNoVig !== null && Math.abs(projection.homeWinProbability - homeNoVig) > tooFarWinChance,
+    spread: consensusSpreadHome !== null && Math.abs(-projection.margin - consensusSpreadHome) > limits.spread,
+    total: consensusTotal !== null && Math.abs(projection.total - consensusTotal) > limits.total,
+    moneyline: homeNoVig !== null && Math.abs(projection.homeWinProbability - homeNoVig) > limits.winChance,
   };
   const selections: Array<{ market: LineEdge["market"]; selection: GameSelection; sideLabel: (line: number | null) => string }> = [
     { market: "spread", selection: "spread_home", sideLabel: (line) => `${homeAbbreviation} ${line === null ? "" : signed(line)}` },

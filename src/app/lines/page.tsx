@@ -6,7 +6,8 @@ import { BooksIndicator } from "@/components/BooksIndicator";
 import { useSettings } from "@/lib/client/hooks";
 import { useSlate } from "@/lib/client/slateData";
 import { confidenceOf, useLineAnalyses, type GameAnalysis, type ModelVersion } from "@/lib/client/lineModel";
-import { confidenceLevel, confidenceLevels, confidenceStep, confidenceTiers, confidenceWeights, type ConfidenceRating } from "@/lib/analytics/confidence";
+import { confidenceLevels, confidenceStep, confidenceWeights, type ConfidenceRating } from "@/lib/analytics/confidence";
+import { bestEdgesByMarket, ConfidenceBreakdown, levelFilterText, LinesToolbar, marketTitles, meetsLevel, type LevelFilter, type LinesView, type MarketFilter, type SortKey } from "@/components/lines/LinesShared";
 import { ConfidenceBadge } from "@/components/ConfidenceBadge";
 import { groupOddsByGame } from "@/lib/odds/consensus";
 import type { LeagueRatings, TeamRating } from "@/lib/analytics/aggregates/teamRatings";
@@ -23,24 +24,11 @@ import { vendorLabel } from "@/lib/odds/deeplinks";
 import { formatNumber, formatPercent, formatSigned } from "@/lib/client/format";
 import type { BdlBettingOdd, BdlGame } from "@/lib/bdl/types";
 
-
-const marketTitles: Record<LineEdge["market"], string> = { spread: "Spread", total: "Total", moneyline: "Money" };
-
-type MarketFilter = "all" | LineEdge["market"];
-type LevelFilter = number; // minimum confidence score, 0 = any
-type SortKey = "confidence" | "ev" | "time";
-
 interface PlayChoice {
   analysis: GameAnalysis;
   edge: LineEdge;
   rating: ConfidenceRating | null;
 }
-
-function meetsLevel(rating: ConfidenceRating | null, levelFilter: LevelFilter): boolean {
-  return levelFilter === 0 || (rating?.score ?? 0) >= levelFilter;
-}
-
-const minimumScoreOptions = [0, ...confidenceTiers.filter((tier) => tier !== "very-low").reverse().map((tier) => confidenceLevels[tier].minimum)]; // Low and up, Medium and up, ...
 
 function sortPlays(plays: PlayChoice[], sortKey: SortKey): PlayChoice[] {
   return [...plays].sort((first, second) => {
@@ -50,38 +38,12 @@ function sortPlays(plays: PlayChoice[], sortKey: SortKey): PlayChoice[] {
   });
 }
 
-function bestEdgesByMarket(edges: LineEdge[], marketFilter: MarketFilter): LineEdge[] {
-  return (["spread", "total", "moneyline"] as const)
-    .filter((market) => marketFilter === "all" || marketFilter === market)
-    .map((market) => edges.filter((edge) => edge.market === market).sort((first, second) => second.evPercent - first.evPercent)[0])
-    .filter((edge): edge is LineEdge => Boolean(edge)); // the model's side in each market
-}
-
 function playableEdges(analysis: GameAnalysis, version: ModelVersion, marketFilter: MarketFilter, levelFilter: LevelFilter): PlayChoice[] {
   const edges = version === "learned" ? analysis.edges : analysis.originalEdges;
   return bestEdgesByMarket(edges, marketFilter)
     .filter((edge) => edge.flagged && edge.evPercent < implausibleEvPercent)
     .map((edge) => ({ analysis, edge, rating: confidenceOf(analysis, edge, version) }))
     .filter((play) => meetsLevel(play.rating, levelFilter));
-}
-
-function ConfidenceBreakdown({ rating }: { rating: ConfidenceRating }) {
-  return (
-    <div className="confidence-breakdown">
-      {rating.parts.map((part) => (
-        <div key={part.label} className="confidence-part">
-          <span className="strong">{part.label}</span>
-          <span className="meter">
-            <span style={{ width: `${(part.points / part.maximum) * 100}%` }} />
-          </span>
-          <span className="tabular small">
-            {Math.round(part.points)}/{part.maximum}
-          </span>
-          <span className="faint small confidence-note">{part.note}</span>
-        </div>
-      ))}
-    </div>
-  );
 }
 
 function RatingLine({ label, rating, league }: { label: string; rating: TeamRating; league: LeagueRatings }) {
@@ -260,7 +222,7 @@ export default function LinesPage() {
   const { analyses, ratings, ratingsLoading, gamesAhead, startedCount, parameters } = useLineAnalyses(slate); // also saves the daily model record
   const oddsByGame = groupOddsByGame(slate.data?.odds ?? []);
   const [version, setVersion] = useState<ModelVersion>("learned");
-  const [view, setView] = useState<"games" | "plays">("games");
+  const [view, setView] = useState<LinesView>("games");
   const [marketFilter, setMarketFilter] = useState<MarketFilter>("all");
   const [levelFilter, setLevelFilter] = useState<LevelFilter>(0);
   const [sortKey, setSortKey] = useState<SortKey>("confidence");
@@ -283,7 +245,7 @@ export default function LinesPage() {
         <div>
           <h1>Lines</h1>
           <p>
-            {version === "learned" ? "Learned" : "Original"} model vs. the books · {allPlays.length} play{allPlays.length === 1 ? "" : "s"} at {settings.evThresholdPercent}%+ EV{levelFilter > 0 ? ` with ${confidenceLevels[confidenceLevel(levelFilter)].label.toLowerCase()}+ confidence` : ""}
+            {version === "learned" ? "Learned" : "Original"} model vs. the books · {allPlays.length} play{allPlays.length === 1 ? "" : "s"} at {settings.evThresholdPercent}%+ EV{levelFilterText(levelFilter)}
           </p>
         </div>
         <div className="row wrap">
@@ -299,46 +261,7 @@ export default function LinesPage() {
           />
         </div>
       </div>
-      <div className="lines-toolbar">
-        <Segmented
-          label="View"
-          options={[
-            { value: "games", label: "Games" },
-            { value: "plays", label: "Plays" },
-          ]}
-          value={view}
-          onChange={setView}
-        />
-        <Segmented
-          label="Market"
-          options={[
-            { value: "all", label: "All" },
-            { value: "spread", label: "Spread" },
-            { value: "total", label: "Total" },
-            { value: "moneyline", label: "Money" },
-          ]}
-          value={marketFilter}
-          onChange={setMarketFilter}
-        />
-        <label className="small muted lines-sort">
-          Confidence
-          <select className="input" value={levelFilter} onChange={(changeEvent) => setLevelFilter(Number(changeEvent.target.value))}>
-            {minimumScoreOptions.map((minimumScore) => (
-              <option key={minimumScore} value={minimumScore}>
-                {minimumScore === 0 ? "Any" : `${confidenceLevels[confidenceLevel(minimumScore)].label}${minimumScore < confidenceLevels["very-high"].minimum ? "+" : ""} (${minimumScore}+)`}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label className="small muted lines-sort">
-          Sort
-          <select className="input" value={sortKey} onChange={(changeEvent) => setSortKey(changeEvent.target.value as SortKey)}>
-            <option value="confidence">Confidence</option>
-            <option value="ev">EV</option>
-            <option value="time">Tip-off</option>
-          </select>
-        </label>
-      </div>
+      <LinesToolbar filters={{ view, marketFilter, levelFilter, sortKey }} onChange={(next) => (setView(next.view), setMarketFilter(next.marketFilter), setLevelFilter(next.levelFilter), setSortKey(next.sortKey))} />
       {slate.error ? <div className="notice">Could not load the slate: {slate.error}</div> : null}
       {ratingsLoading && !ratings ? <div className="skeleton" style={{ minHeight: 200 }} /> : null}
       {slate.data && gamesAhead === 0 ? <div className="card empty-state">No games left to tip off today.</div> : null}

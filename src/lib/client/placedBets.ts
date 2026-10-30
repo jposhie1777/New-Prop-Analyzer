@@ -18,6 +18,7 @@ export interface PlacedLeg {
   lineValue: number | null;
   americanOdds: number | null;
   vendor: string | null;
+  sport?: "nba" | "ncaab";
 }
 
 export interface PlacedBet {
@@ -64,7 +65,7 @@ export function subscribePlacedBets(listener: (bets: PlacedBet[]) => void): () =
 
 function legFrom(pick: SlipPick, defaultBook: string, vendor: string | null): PlacedLeg {
   const offer = (vendor ? pick.offers.find((candidate) => candidate.vendor === vendor) : null) ?? selectedOffer(pick, defaultBook);
-  return { pickId: pick.pickId, kind: pick.kind, gameId: pick.gameId, gameDate: pick.gameDate, market: pick.market, selectionKey: pick.selectionKey, label: pick.label, detail: pick.detail, propType: pick.propType, playerId: pick.playerId, lineValue: offer?.lineValue ?? null, americanOdds: offer?.americanOdds ?? null, vendor: offer?.vendor ?? null };
+  return { pickId: pick.pickId, kind: pick.kind, gameId: pick.gameId, gameDate: pick.gameDate, market: pick.market, selectionKey: pick.selectionKey, label: pick.label, detail: pick.detail, propType: pick.propType, playerId: pick.playerId, lineValue: offer?.lineValue ?? null, americanOdds: offer?.americanOdds ?? null, vendor: offer?.vendor ?? null, sport: pick.sport };
 }
 
 export function placeBets(picks: SlipPick[], type: PlacedBet["type"], via: string, defaultBook: string, parlayVendor: string | null = null): number {

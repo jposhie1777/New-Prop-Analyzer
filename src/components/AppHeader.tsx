@@ -1,11 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { rememberSport, useSport, type Sport } from "@/lib/client/sport";
 import { SyncStatus } from "./SyncStatus";
 import { useSlip, useVisibleMinuteCounter } from "@/lib/client/hooks";
 
-const navGroups = [
+const nbaNavGroups = [
   {
     title: "Tonight",
     items: [
@@ -32,8 +33,31 @@ const navGroups = [
   },
 ];
 
+const ncaabNavGroups = [
+  {
+    title: "College",
+    items: [
+      { href: "/ncaab", label: "Lines" },
+      { href: "/ncaab/teams", label: "Teams" },
+    ],
+  },
+  {
+    title: "My bets",
+    items: [
+      { href: "/slip", label: "Slip" },
+      { href: "/ncaab/record", label: "Record" },
+    ],
+  },
+];
+
+const sportOptions: Array<{ value: Sport; label: string }> = [
+  { value: "nba", label: "NBA" },
+  { value: "ncaab", label: "NCAAB" },
+];
+
 function isActive(pathname: string, href: string): boolean {
-  if (href === "/") return pathname === "/";
+  if (href === "/" || href === "/ncaab") return pathname === href;
+  if (href === "/ncaab/teams" && pathname.startsWith("/ncaab/team/")) return true;
   if (href === "/players" && pathname.startsWith("/player/")) return true;
   if (href === "/live") return pathname === "/live"; // so Live Bets does not light up Live too
   return pathname.startsWith(href);
@@ -41,14 +65,33 @@ function isActive(pathname: string, href: string): boolean {
 
 export function AppHeader() {
   const pathname = usePathname();
+  const router = useRouter();
+  const sport = useSport(pathname);
+  const navGroups = sport === "ncaab" ? ncaabNavGroups : nbaNavGroups;
   const slip = useSlip();
   useVisibleMinuteCounter();
   return (
     <nav className="app-nav" aria-label="Main">
-      <Link href="/" className="brand">
+      <Link href={sport === "ncaab" ? "/ncaab" : "/"} className="brand">
         <span className="brand-mark">P</span>
-        <span>Pulse NBA</span>
+        <span>Pulse</span>
       </Link>
+      <div className="sport-switch" role="tablist" aria-label="Sport">
+        {sportOptions.map((option) => (
+          <button
+            key={option.value}
+            role="tab"
+            aria-selected={sport === option.value}
+            className={sport === option.value ? "active" : ""}
+            onClick={() => {
+              rememberSport(option.value);
+              router.push(option.value === "ncaab" ? "/ncaab" : "/");
+            }}
+          >
+            {option.label}
+          </button>
+        ))}
+      </div>
       {navGroups.map((navGroup) => (
         <div key={navGroup.title} className="nav-group">
           <span className="nav-group-title">{navGroup.title}</span>
@@ -65,7 +108,7 @@ export function AppHeader() {
           <span>⚙ Settings</span>
         </Link>
         <div className="nav-sync">
-          <SyncStatus />
+          {sport === "nba" ? <SyncStatus /> : null}
         </div>
       </div>
     </nav>
