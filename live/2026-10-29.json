@@ -1,6 +1,6 @@
 {
  "date": "2026-10-29",
- "updatedAt": "2026-10-30T04:13:19.162Z",
+ "updatedAt": "2026-10-30T04:17:19.317Z",
  "state": "running",
  "games": [
   {
@@ -21,8 +21,8 @@
    "gameId": 21717989,
    "matchup": "MEM @ POR",
    "status": "4th Qtr",
-   "homeScore": 93,
-   "visitorScore": 115
+   "homeScore": 101,
+   "visitorScore": 122
   }
  ],
  "picks": [
@@ -1199,7 +1199,7 @@
    "scoreMargin": 0,
    "valueAtPick": 3,
    "projection": 5.8945914154190655,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -1366,7 +1366,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 6.9249245022173715,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -1399,7 +1399,7 @@
    "scoreMargin": 0,
    "valueAtPick": 18,
    "projection": 27.40340277089878,
-   "latestValue": 26,
+   "latestValue": 30,
    "tags": [
     "Best bet",
     "Under",
@@ -1646,7 +1646,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 633,
+ "calls": 641,
  "note": null,
  "checkpointsTaken": {
   "21717987": [
