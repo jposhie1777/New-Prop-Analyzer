@@ -17,7 +17,8 @@ import { calibrateRating, learnThreeQuarterCalibration, type ThreeQuarterCalibra
 import { consensusLine, impliedTeamTotals } from "@/lib/odds/consensus";
 import { readTracked } from "@/lib/tracking/trackerStore";
 import { lineEdgeToTracked, modelLineToTracked, threeQuarterToTracked } from "@/lib/tracking/fromSources";
-import type { TrackedPick } from "@/lib/tracking/tracker";
+import { summarizeRecord, type TrackedPick } from "@/lib/tracking/tracker";
+import { confidenceTag, rateConfidence, type ConfidenceRating } from "@/lib/analytics/confidence";
 import type { AnalyticsEngine } from "@/lib/analytics/engine";
 import { sqlNumber, sqlString } from "@/lib/analytics/engine";
 import { isGameFinal, isGameLive } from "@/lib/data/flatten";
@@ -39,6 +40,13 @@ export interface GameAnalysis {
   homeRest: RestInfo | undefined;
   awayRest: RestInfo | undefined;
   bestEv: number;
+  confidence: Map<string, ConfidenceRating>; // by version and selection, see confidenceOf
+}
+
+export type ModelVersion = "learned" | "original";
+
+export function confidenceOf(analysis: GameAnalysis, edge: LineEdge, version: ModelVersion = "learned"): ConfidenceRating | null {
+  return analysis.confidence.get(`${version}:${edge.selection}`) ?? null;
 }
 
 type NewTracked = Omit<TrackedPick, "createdAt" | "result">;
@@ -87,13 +95,13 @@ export function modelTags(edge: LineEdge, projection: GameProjection, leaguePace
   return tags;
 }
 
-export function modelPicksFor(projection: GameProjection, edges: LineEdge[], projected: { margin: number; total: number }, rest: { homeRest: RestInfo | undefined; awayRest: RestInfo | undefined }, gameId: number, gameDate: string, leaguePace: number, backtest: boolean, version: "model" | "learned"): NewTracked[] {
+export function modelPicksFor(projection: GameProjection, edges: LineEdge[], projected: { margin: number; total: number }, rest: { homeRest: RestInfo | undefined; awayRest: RestInfo | undefined }, gameId: number, gameDate: string, leaguePace: number, backtest: boolean, version: "model" | "learned", extraTags: (edge: LineEdge) => string[] = () => []): NewTracked[] {
   const backToBack = Boolean(rest.homeRest?.backToBack || rest.awayRest?.backToBack);
   return (["spread", "total", "moneyline"] as const).flatMap((market) => {
     const best = edges.filter((edge) => edge.market === market).sort((first, second) => second.evPercent - first.evPercent)[0]; // the model's side is the one it likes more at the best price
     if (!best) return [];
     const projectedValue = market === "total" ? projected.total : projected.margin;
-    return [modelLineToTracked(best, projectedValue, modelTags(best, projection, leaguePace, { backToBack, backtest }), gameId, gameDate, version)];
+    return [modelLineToTracked(best, projectedValue, [...modelTags(best, projection, leaguePace, { backToBack, backtest }), ...extraTags(best)], gameId, gameDate, version)];
   });
 }
 
@@ -158,7 +166,16 @@ export function useLineAnalyses(slate: PolledData<SlateData>): { analyses: GameA
   const rest = useSnapshotOrQuery((snapshot) => snapshot.teamRest, teamIds.length > 0 ? (handle) => teamRest(handle.engine, teamIds, today) : null, `lines-rest:${today}:${teamIds.join(",")}`);
   const scorers = useSnapshotOrQuery((snapshot) => snapshot.injuredScorers, injuredIds.length > 0 ? (handle) => injuredScorers(handle.engine, injuredIds, appSettings.currentSeason) : null, `lines-injuries:${injuredIds.join(",")}`);
   const { parameters } = useLearnedParameters();
+  const linePicks = useLinePicks();
   const oddsByGame = groupOddsByGame(slate.data?.odds ?? []);
+  const openingByGame = groupOddsByGame(slate.data?.openingOdds ?? []);
+  const marketRecords = new Map<string, { decided: number; roiPercent: number | null }>();
+  for (const source of ["learned", "model"] as const) {
+    for (const market of ["spread", "total", "moneyline"] as const) {
+      const summary = summarizeRecord(linePicks.filter((pick) => pick.source === source && pick.kind === market));
+      marketRecords.set(`${source === "model" ? "original" : "learned"}:${market}`, { decided: summary.wins + summary.losses, roiPercent: summary.roiPercent });
+    }
+  }
   const analyses: GameAnalysis[] = [];
   if (ratings.result) {
     for (const game of games) {
@@ -172,7 +189,17 @@ export function useLineAnalyses(slate: PolledData<SlateData>): { analyses: GameA
       const learned = learnedForOdds(projection, gameOdds, parameters);
       const originalEdges = evaluateGameLines(projection, gameOdds, game.home_team.abbreviation, game.visitor_team.abbreviation, settings.evThresholdPercent);
       const edges = evaluateGameLines(learned, gameOdds, game.home_team.abbreviation, game.visitor_team.abbreviation, settings.evThresholdPercent, { margin: learned.marginDeviation, total: learned.totalDeviation });
-      analyses.push({ game, projection, learned, edges, originalEdges, home, away, homeRest, awayRest, bestEv: Math.max(-Infinity, ...edges.filter((edge) => edge.flagged).map((edge) => edge.evPercent)) });
+      const opening = marketConsensus(openingByGame.get(game.id) ?? []);
+      const openingValue = (market: LineEdge["market"]) => (market === "spread" ? opening.spreadHome : market === "total" ? opening.total : opening.homeNoVig);
+      const sampleGames = Math.min(home.current?.games ?? 0, away.current?.games ?? 0);
+      const injuryAdjusted = projection.factors.some((factor) => factor.label.includes("missing"));
+      const confidence = new Map<string, ConfidenceRating>();
+      for (const [version, versionEdges, otherEdges] of [["learned", edges, originalEdges], ["original", originalEdges, edges]] as const) {
+        for (const edge of versionEdges) {
+          confidence.set(`${version}:${edge.selection}`, rateConfidence({ edge, otherModelEdge: otherEdges.find((other) => other.selection === edge.selection) ?? null, openingMarketValue: openingValue(edge.market), marketRecord: marketRecords.get(`${version}:${edge.market}`) ?? null, sampleGames, injuryAdjusted }));
+        }
+      }
+      analyses.push({ game, projection, learned, edges, originalEdges, home, away, homeRest, awayRest, bestEv: Math.max(-Infinity, ...edges.filter((edge) => edge.flagged).map((edge) => edge.evPercent)), confidence });
     }
   }
   analyses.sort((first, second) => second.bestEv - first.bestEv || (first.game.datetime ?? "").localeCompare(second.game.datetime ?? ""));
@@ -185,7 +212,10 @@ export function useLineAnalyses(slate: PolledData<SlateData>): { analyses: GameA
     void upsertLinePicks(
       analyses.flatMap((analysis) => [
         ...modelPicksFor(analysis.projection, analysis.originalEdges, analysis.projection, analysis, analysis.game.id, analysis.game.date, leaguePace, false, "model"),
-        ...modelPicksFor(analysis.projection, analysis.edges, analysis.learned, analysis, analysis.game.id, analysis.game.date, leaguePace, false, "learned"),
+        ...modelPicksFor(analysis.projection, analysis.edges, analysis.learned, analysis, analysis.game.id, analysis.game.date, leaguePace, false, "learned", (edge) => {
+          const rating = confidenceOf(analysis, edge);
+          return rating ? [confidenceTag(rating.level)] : [];
+        }),
       ]),
     ); // both versions keep the last line seen before tip-off
   }, [snapshotKey]); // eslint-disable-line react-hooks/exhaustive-deps

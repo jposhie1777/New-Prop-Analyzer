@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import type { LineEdge } from "@/lib/analytics/gameModel";
+import { confidenceLevels, type ConfidenceRating } from "@/lib/analytics/confidence";
 import { formatNumber } from "@/lib/client/format";
 import { TeamLogo } from "@/components/TeamLogo";
 import type { BdlBettingOdd, BdlBoxScore, BdlGame, BdlPlayerInjury } from "@/lib/bdl/types";
@@ -105,7 +106,7 @@ export function SlateHeader() {
   );
 }
 
-export function GameRow({ game, odds, openingOdds, injuries, rest, boxScore, modelEdge, modelLeans }: { game: BdlGame; odds: BdlBettingOdd[]; openingOdds: BdlBettingOdd[]; injuries: BdlPlayerInjury[]; rest: Map<number, RestInfo> | null; boxScore: BdlBoxScore | null; modelEdge: LineEdge | null; modelLeans: LineEdge[] }) {
+export function GameRow({ game, odds, openingOdds, injuries, rest, boxScore, modelEdge, modelLeans, modelConfidence = null }: { game: BdlGame; odds: BdlBettingOdd[]; openingOdds: BdlBettingOdd[]; injuries: BdlPlayerInjury[]; rest: Map<number, RestInfo> | null; boxScore: BdlBoxScore | null; modelEdge: LineEdge | null; modelLeans: LineEdge[]; modelConfidence?: ConfidenceRating | null }) {
   const settings = useSettings();
   const [open, setOpen] = useState(false);
   const current = consensusLine(odds);
@@ -154,7 +155,7 @@ export function GameRow({ game, odds, openingOdds, injuries, rest, boxScore, mod
             </Link>
           ) : modelEdge ? (
             <span className="pill positive">
-              {modelEdge.sideLabel} · {formatNumber(modelEdge.evPercent, 1)}%
+              {modelEdge.sideLabel} · {formatNumber(modelEdge.evPercent, 1)}%{modelConfidence ? ` · ${confidenceLevels[modelConfidence.level].label} ${modelConfidence.score}` : ""}
             </span>
           ) : showScores ? null : (
             <span className="faint small">No edge</span>
