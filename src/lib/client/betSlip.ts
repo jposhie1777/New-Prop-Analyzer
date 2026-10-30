@@ -27,6 +27,7 @@ export interface SlipPick {
   source: string;
   addedAt: string;
   chosenVendor?: string | null; // the book picked on the slip for this leg
+  sport?: "nba" | "ncaab"; // missing means NBA
 }
 
 const slipStorageKey = "pulse-nba-bet-slip";
@@ -45,7 +46,7 @@ function writeSlip(picks: SlipPick[]): void {
 export function addPick(pick: Omit<SlipPick, "addedAt">): void {
   const others = readSlip().filter((existing) => existing.pickId !== pick.pickId);
   writeSlip([...others, { ...pick, addedAt: new Date().toISOString() }]);
-  trackPicks([slipPickToTracked(pick)]); // every slip pick is graded on the Record page
+  if (pick.sport !== "ncaab") trackPicks([slipPickToTracked(pick)]); // NBA slip picks are graded on the Record page; college games are not in the NBA stats
 }
 
 export function removePick(pickId: string): void {

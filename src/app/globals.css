@@ -679,3 +679,15 @@ a.setting-row:hover { background: var(--surface-sunken); }
   .show-narrow { display: inline; }
   .confidence-part { grid-template-columns: 96px minmax(40px, 1fr) 40px; }
 }
+
+.sport-switch { display: flex; gap: 2px; padding: 2px; background: var(--surface-sunken); border-radius: var(--radius-small); flex-shrink: 0; }
+.sport-switch button { flex: 1; border: 0; background: transparent; color: var(--text-secondary); font: inherit; font-size: 12.5px; font-weight: 700; padding: 5px 10px; border-radius: calc(var(--radius-small) - 2px); cursor: pointer; }
+.sport-switch button.active { background: var(--surface-raised); color: var(--text-primary); box-shadow: var(--shadow-card); }
+.rank-badge { font-size: 11px; font-weight: 800; color: var(--text-muted); margin-right: 4px; font-variant-numeric: tabular-nums; }
+.ncaab-search { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
+.ncaab-search .input { flex: 1 1 220px; min-width: 0; }
+.day-nav { display: flex; align-items: center; gap: 6px; }
+.box-table td, .box-table th { white-space: nowrap; }
+.result-row { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 10px 14px; border-top: 1px solid var(--border-subtle); }
+.result-row:first-child { border-top: 0; }
+.section-title { font-size: 15px; font-weight: 800; margin: 0 0 8px; }

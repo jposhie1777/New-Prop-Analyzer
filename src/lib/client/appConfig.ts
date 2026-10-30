@@ -8,6 +8,8 @@ export interface AppConfig {
   keyConfigured: boolean;
   baselinePath: string;
   siteDataBase: string | null; // the nightly stats copy and snapshot (site-data branch), null when there is none
+  ncaabDataBase: string;
+  ncaabOddsBase: string;
   defaults: { state: string; evThresholdPercent: number };
   currentSeason: number;
   lastSeason: number;

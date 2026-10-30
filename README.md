@@ -202,6 +202,17 @@ Everything is force-pushed as one commit to the `site-data` branch, so its histo
 
 The site reads these files from raw.githubusercontent.com. Slate, Lines, 100 in 3 and Live use the snapshot right away, and the in-browser database keeps loading in the background. If the snapshot is not from today, or the branch is missing, everything falls back to the old path. The workflow uses the same `BDL_API_KEY` secret as the live tracker. To run it now: Actions tab → Nightly site data → Run workflow.
 
+## College basketball (NCAAB)
+
+Pick **NCAAB** in the sport selector at the top of the menu. College is game lines only (spread, total, moneyline), with the same confidence ratings, filters and slip as NBA.
+
+- **Data**: BALLDONTLIE NCAAB on the same `BDL_API_KEY` (ALL-STAR tier, 60 calls a minute). ALL-STAR has no team stats or odds, so box scores are rebuilt from play-by-play: shots, rebounds, assists, turnovers, steals, blocks and fouls per team and per player, plus possessions.
+- **Model**: opponent-adjusted offense, defense and tempo per 100 possessions. Early in the season it leans on last season, shrunk by how much of last year's scoring returned (transfers count for their new school).
+- **Odds**: The Odds API free plan. Three pulls a day at 3 credits each, about 270 of the 500 free monthly credits. Add `ODDS_API_KEY` as a GitHub Actions secret; without it the odds job skips quietly.
+- **Jobs**: `NCAAB nightly data` (6:47 AM ET) writes ratings, team files, box scores and the graded record to the `ncaab-data` branch. `NCAAB odds` (10:05 AM, 3:35 PM, 6:35 PM ET) writes odds and picks to `ncaab-odds`. Both force-push a single commit and never deploy. The site reads them straight from raw.githubusercontent, so pages load small JSON files and no in-browser database.
+- **First run**: start `NCAAB nightly data` by hand from the Actions tab. It backfills last season's box scores (about 100 minutes per 6,000 games at 60 calls a minute; leftovers continue the next night). The log reports how many rebuilt box scores match the final score.
+- **Local**: `BDL_TIER=mock npx tsx scripts/ncaab/refreshNcaab.ts --out .ncaab-local/data` then `BDL_TIER=mock npx tsx scripts/ncaab/pullOdds.ts --out .ncaab-local/odds --data .ncaab-local/data`, and `npm run dev` in mock mode serves them.
+
 ## Sync across devices (slip and sportsbooks)
 
 The slip and these settings follow you between devices: your sportsbooks, default book, state, EV threshold, wager and 100-in-3 settings. Appearance and layout stay per device. The data is stored in a secret GitHub gist that only your server can read.

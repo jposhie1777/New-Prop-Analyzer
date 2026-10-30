@@ -15,3 +15,6 @@ live-data/
 .site-data-work/
 site-data/
 public/site-data-test/
+ncaab-data/
+ncaab-odds/
+.ncaab-local/
