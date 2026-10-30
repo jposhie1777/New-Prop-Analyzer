@@ -1,21 +1,21 @@
 {
  "date": "2026-10-29",
- "updatedAt": "2026-10-30T01:45:15.053Z",
+ "updatedAt": "2026-10-30T01:49:13.566Z",
  "state": "running",
  "games": [
   {
    "gameId": 21717987,
    "matchup": "CLE @ ATL",
    "status": "3rd Qtr",
-   "homeScore": 81,
-   "visitorScore": 75
+   "homeScore": 83,
+   "visitorScore": 79
   },
   {
    "gameId": 21717988,
    "matchup": "SAC @ NOP",
    "status": "3rd Qtr",
-   "homeScore": 90,
-   "visitorScore": 76
+   "homeScore": 96,
+   "visitorScore": 82
   },
   {
    "gameId": 21717989,
@@ -181,7 +181,7 @@
    "scoreMargin": 12,
    "valueAtPick": 0,
    "projection": 4.68980659311414,
-   "latestValue": 0,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -214,7 +214,7 @@
    "scoreMargin": -6,
    "valueAtPick": 1,
    "projection": 12.49892736779827,
-   "latestValue": 6,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -247,7 +247,7 @@
    "scoreMargin": -6,
    "valueAtPick": 2,
    "projection": 13.13909067648782,
-   "latestValue": 5,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -613,7 +613,7 @@
    "scoreMargin": -2,
    "valueAtPick": 30,
    "projection": 44.70387410293683,
-   "latestValue": 34,
+   "latestValue": 39,
    "tags": [
     "Best bet",
     "Under",
@@ -680,7 +680,7 @@
    "scoreMargin": 2,
    "valueAtPick": 7,
    "projection": 14.781555938645642,
-   "latestValue": 8,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -692,7 +692,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 319,
+ "calls": 327,
  "note": null,
  "checkpointsTaken": {
   "21717987": [
