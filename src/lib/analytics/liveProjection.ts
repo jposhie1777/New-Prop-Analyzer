@@ -13,8 +13,9 @@ export function parseGameClock(status: string | null | undefined, time: string |
   if (statusText.includes("final")) return { period: periodNumber, secondsLeftInPeriod: 0, isHalftime: false, isFinished: true };
   if (statusText.includes("halftime") || (statusText.includes("half") && periodNumber <= 2)) return { period: 2, secondsLeftInPeriod: 0, isHalftime: true, isFinished: false };
   const clockMatch = (time ?? "").match(/(\d{1,2}):(\d{2})(?:\.\d+)?/); // "5:42", "Q3 11:12", "0:31.4"
+  const secondsOnlyMatch = clockMatch ? null : (time ?? "").match(/(?:^|\s)(\d{1,2})(?:\.\d+)\s*$/); // the last minute comes as "45.2" or "Q2 8.9"
   const periodLength = periodNumber <= 4 ? 720 : 300;
-  const secondsLeftInPeriod = clockMatch ? Math.min(periodLength, Number(clockMatch[1]) * 60 + Number(clockMatch[2])) : statusText.includes("end") ? 0 : periodLength;
+  const secondsLeftInPeriod = clockMatch ? Math.min(periodLength, Number(clockMatch[1]) * 60 + Number(clockMatch[2])) : secondsOnlyMatch ? Number(secondsOnlyMatch[1]) : statusText.includes("end") ? 0 : periodLength;
   return { period: periodNumber, secondsLeftInPeriod, isHalftime: false, isFinished: false };
 }
 

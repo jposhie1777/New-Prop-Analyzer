@@ -210,11 +210,7 @@ async function main(): Promise<void> {
     log("first tip-off is too late for this run; a later scheduled run takes it");
     return;
   }
-  const status = readJson<{ state?: string; updatedAt?: string; date?: string }>(statusPath, {});
-  if (!options.once && status.date === today && status.state === "running" && Date.now() - Date.parse(status.updatedAt ?? "") < 4 * 60_000) {
-    log("another run is already tracking tonight");
-    return;
-  }
+  // runs never overlap (the workflow's concurrency group queues them), so a "running" status just means the last run handed off
   while (!options.once && Date.now() < firstTipMs - 10 * 60_000) {
     saveNight("waiting", `First tip-off ${new Date(firstTipMs).toISOString()}`);
     commitData(options, `live ${today}: waiting [skip ci]`);
@@ -249,7 +245,9 @@ async function main(): Promise<void> {
         const clock = parseGameClock(boxScore.status, boxScore.time, boxScore.period);
         const checkpoint = checkpointFor(clock);
         const taken = (night.checkpointsTaken ??= {})[String(game.id)] ?? [];
-        if (!checkpoint || taken.includes(checkpoint)) continue; // props are only read at the breaks, which also saves calls
+        const checkpointOrder = ["end-q1", "halftime", "end-q3"];
+        const laterTaken = checkpoint ? taken.some((takenCheckpoint) => checkpointOrder.indexOf(takenCheckpoint) > checkpointOrder.indexOf(checkpoint)) : false;
+        if (!checkpoint || taken.includes(checkpoint) || laterTaken) continue; // props are only read at the breaks, which also saves calls
         openingOdds ??= await client.getAllPages<BdlBettingOdd>("/nba/v2/odds/opening", { "dates[]": [today] }).catch(() => []);
         if (!openingProps.has(game.id)) openingProps.set(game.id, (await client.get<{ data: BdlPlayerProp[] }>("/nba/v2/odds/player_props/opening", { game_id: game.id }).catch(() => ({ data: [] }))).data ?? []);
         const boxPlayers = [...boxScore.home_team.players, ...boxScore.visitor_team.players];
@@ -262,7 +260,7 @@ async function main(): Promise<void> {
         const market = readLiveMarket(liveOdds.filter((bettingOdd) => bettingOdd.game_id === game.id), openingOdds.filter((bettingOdd) => bettingOdd.game_id === game.id), boxScore.home_team_score + boxScore.visitor_team_score, timeShares(clock, { 1: 0.25, 2: 0.25, 3: 0.25, 4: 0.25 }).remainingClock, game.datetime);
         const { rows } = buildLivePropRows(boxScore, props, openingProps.get(game.id) ?? [], profilesByGame.get(game.id)!, liveBetMinimumEvPercent, { activity, shotProfiles: null, market });
         const candidates = rows.map((row) => pickFromRow(row, boxScore, game.id, today, clock, nowIso)).filter((pick): pick is LiveBetPick => pick !== null);
-        const chosen = selectCheckpointPicks(candidates, checkpoint, new Set(night.picks.map((pick) => pick.pickId)));
+        const chosen = selectCheckpointPicks(candidates, checkpoint, new Set(night.picks.filter((pick) => pick.checkpoint).map((pick) => pick.pickId))); // picks saved the old way do not block checkpoint picks
         night.picks.push(...chosen);
         night.checkpointsTaken[String(game.id)] = [...taken, checkpoint];
         changedSinceCommit = true;

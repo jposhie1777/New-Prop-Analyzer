@@ -5,7 +5,9 @@ import { PriceButton } from "@/components/PriceButton";
 import { BooksIndicator } from "@/components/BooksIndicator";
 import { useSettings } from "@/lib/client/hooks";
 import { useSlate } from "@/lib/client/slateData";
-import { useLineAnalyses, type GameAnalysis } from "@/lib/client/lineModel";
+import { confidenceOf, useLineAnalyses, type GameAnalysis, type ModelVersion } from "@/lib/client/lineModel";
+import { confidenceLevel, confidenceLevels, confidenceStep, confidenceTiers, confidenceWeights, type ConfidenceRating } from "@/lib/analytics/confidence";
+import { ConfidenceBadge } from "@/components/ConfidenceBadge";
 import { groupOddsByGame } from "@/lib/odds/consensus";
 import type { LeagueRatings, TeamRating } from "@/lib/analytics/aggregates/teamRatings";
 import { homeCourtPoints, implausibleEvPercent, injuryReplacementShare, marginDeviation, totalDeviation, type LineEdge } from "@/lib/analytics/gameModel";
@@ -24,7 +26,63 @@ import type { BdlBettingOdd, BdlGame } from "@/lib/bdl/types";
 
 const marketTitles: Record<LineEdge["market"], string> = { spread: "Spread", total: "Total", moneyline: "Money" };
 
-type ModelVersion = "learned" | "original";
+type MarketFilter = "all" | LineEdge["market"];
+type LevelFilter = number; // minimum confidence score, 0 = any
+type SortKey = "confidence" | "ev" | "time";
+
+interface PlayChoice {
+  analysis: GameAnalysis;
+  edge: LineEdge;
+  rating: ConfidenceRating | null;
+}
+
+function meetsLevel(rating: ConfidenceRating | null, levelFilter: LevelFilter): boolean {
+  return levelFilter === 0 || (rating?.score ?? 0) >= levelFilter;
+}
+
+const minimumScoreOptions = [0, ...confidenceTiers.filter((tier) => tier !== "very-low").reverse().map((tier) => confidenceLevels[tier].minimum)]; // Low and up, Medium and up, ...
+
+function sortPlays(plays: PlayChoice[], sortKey: SortKey): PlayChoice[] {
+  return [...plays].sort((first, second) => {
+    if (sortKey === "time") return (first.analysis.game.datetime ?? "").localeCompare(second.analysis.game.datetime ?? "") || second.edge.evPercent - first.edge.evPercent;
+    if (sortKey === "ev") return second.edge.evPercent - first.edge.evPercent;
+    return (second.rating?.score ?? 0) - (first.rating?.score ?? 0) || second.edge.evPercent - first.edge.evPercent;
+  });
+}
+
+function bestEdgesByMarket(edges: LineEdge[], marketFilter: MarketFilter): LineEdge[] {
+  return (["spread", "total", "moneyline"] as const)
+    .filter((market) => marketFilter === "all" || marketFilter === market)
+    .map((market) => edges.filter((edge) => edge.market === market).sort((first, second) => second.evPercent - first.evPercent)[0])
+    .filter((edge): edge is LineEdge => Boolean(edge)); // the model's side in each market
+}
+
+function playableEdges(analysis: GameAnalysis, version: ModelVersion, marketFilter: MarketFilter, levelFilter: LevelFilter): PlayChoice[] {
+  const edges = version === "learned" ? analysis.edges : analysis.originalEdges;
+  return bestEdgesByMarket(edges, marketFilter)
+    .filter((edge) => edge.flagged && edge.evPercent < implausibleEvPercent)
+    .map((edge) => ({ analysis, edge, rating: confidenceOf(analysis, edge, version) }))
+    .filter((play) => meetsLevel(play.rating, levelFilter));
+}
+
+function ConfidenceBreakdown({ rating }: { rating: ConfidenceRating }) {
+  return (
+    <div className="confidence-breakdown">
+      {rating.parts.map((part) => (
+        <div key={part.label} className="confidence-part">
+          <span className="strong">{part.label}</span>
+          <span className="meter">
+            <span style={{ width: `${(part.points / part.maximum) * 100}%` }} />
+          </span>
+          <span className="tabular small">
+            {Math.round(part.points)}/{part.maximum}
+          </span>
+          <span className="faint small confidence-note">{part.note}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
 
 function RatingLine({ label, rating, league }: { label: string; rating: TeamRating; league: LeagueRatings }) {
   const sample = rating.current ?? rating.previous;
@@ -46,7 +104,7 @@ function RatingLine({ label, rating, league }: { label: string; rating: TeamRati
   );
 }
 
-function MinorEdge({ edge, game, odds }: { edge: LineEdge; game: BdlGame; odds: BdlBettingOdd[] }) {
+function MinorEdge({ edge, game, odds, rating }: { edge: LineEdge; game: BdlGame; odds: BdlBettingOdd[]; rating: ConfidenceRating | null }) {
   const slip = useSlip();
   const gamePick = buildGamePick(game, odds, edge.selection, "lines");
   const pick = gamePick ? { ...gamePick, modelProbability: edge.modelProbability } : null;
@@ -61,16 +119,17 @@ function MinorEdge({ edge, game, odds }: { edge: LineEdge; game: BdlGame; odds: 
       <span>
         {formatAmerican(edge.americanOdds)} · {edge.evPercent >= implausibleEvPercent ? "EV hidden" : `${formatSigned(edge.evPercent, 1)}%`}
       </span>
+      {edge.flagged && rating ? <span className={`confidence-mini ${rating.level}`}>{rating.score}</span> : null}
     </button>
   );
 }
 
-function Verdict({ edge, closest, game, odds }: { edge: LineEdge | null; closest: LineEdge | null; game: BdlGame; odds: BdlBettingOdd[] }) {
+function Verdict({ edge, closest, game, odds, rating, filtersActive }: { edge: LineEdge | null; closest: LineEdge | null; game: BdlGame; odds: BdlBettingOdd[]; rating: ConfidenceRating | null; filtersActive: boolean }) {
   if (!edge) {
     return (
       <div className="verdict none">
         <small>No edge</small>
-        <b>Model agrees with the market</b>
+        <b>{filtersActive ? "Nothing passes your filters" : "Model agrees with the market"}</b>
         <span>{closest ? `Closest: ${closest.sideLabel} at ${formatSigned(closest.evPercent, 1)}% EV` : "No lines posted yet."}</span>
       </div>
     );
@@ -80,7 +139,10 @@ function Verdict({ edge, closest, game, odds }: { edge: LineEdge | null; closest
   return (
     <div className="verdict">
       <div className="verdict-text">
-        <small>Best edge</small>
+        <span className="row" style={{ gap: 8 }}>
+          <small>Best edge</small>
+          <ConfidenceBadge rating={rating} />
+        </span>
         <b>
           {edge.sideLabel} at {formatAmerican(edge.americanOdds)}
         </b>
@@ -94,14 +156,14 @@ function Verdict({ edge, closest, game, odds }: { edge: LineEdge | null; closest
   );
 }
 
-function GameEdgeCard({ analysis, league, odds, parameters, version }: { analysis: GameAnalysis; league: LeagueRatings; odds: BdlBettingOdd[]; parameters: LearnedParameters; version: ModelVersion }) {
+function GameEdgeCard({ analysis, league, odds, parameters, version, verdict, marketFilter, filtersActive }: { analysis: GameAnalysis; league: LeagueRatings; odds: BdlBettingOdd[]; parameters: LearnedParameters; version: ModelVersion; verdict: PlayChoice | null; marketFilter: MarketFilter; filtersActive: boolean }) {
   const { game, projection, learned, home, away, homeRest, awayRest } = analysis;
   const edges = version === "learned" ? analysis.edges : analysis.originalEdges;
   const homePoints = version === "learned" ? (learned.total + learned.margin) / 2 : projection.homePoints;
   const awayPoints = version === "learned" ? (learned.total - learned.margin) / 2 : projection.awayPoints;
-  const bestByMarket = (["spread", "total", "moneyline"] as const).map((market) => edges.filter((edge) => edge.market === market).sort((first, second) => second.evPercent - first.evPercent)[0]).filter((edge): edge is LineEdge => Boolean(edge));
+  const bestByMarket = bestEdgesByMarket(edges, marketFilter);
   const ranked = [...bestByMarket].sort((first, second) => second.evPercent - first.evPercent);
-  const verdictEdge = ranked.find((edge) => edge.flagged && edge.evPercent < implausibleEvPercent) ?? null;
+  const verdictEdge = verdict?.edge ?? null;
   const minorEdges = bestByMarket.filter((edge) => edge !== verdictEdge);
   return (
     <article className="card flush">
@@ -128,11 +190,11 @@ function GameEdgeCard({ analysis, league, odds, parameters, version }: { analysi
             </div>
           ))}
         </div>
-        <Verdict edge={verdictEdge} closest={ranked[0] ?? null} game={game} odds={odds} />
+        <Verdict edge={verdictEdge} closest={ranked[0] ?? null} game={game} odds={odds} rating={verdict?.rating ?? null} filtersActive={filtersActive} />
         {minorEdges.length > 0 ? (
           <div className="minor-edges">
             {minorEdges.map((edge) => (
-              <MinorEdge key={edge.market} edge={edge} game={game} odds={odds} />
+              <MinorEdge key={edge.market} edge={edge} game={game} odds={odds} rating={confidenceOf(analysis, edge, version)} />
             ))}
           </div>
         ) : null}
@@ -143,6 +205,14 @@ function GameEdgeCard({ analysis, league, odds, parameters, version }: { analysi
           <span className="expand-hint">Why the model says this</span>
         </summary>
         <div className="card-foot-body">
+          {verdict?.rating ? (
+            <>
+              <p className="small strong" style={{ margin: "0 0 6px" }}>
+                Confidence in {verdictEdge?.sideLabel}: {verdict.rating.score}/100
+              </p>
+              <ConfidenceBreakdown rating={verdict.rating} />
+            </>
+          ) : null}
           <p className="small" style={{ margin: 0 }}>
             Original model: {game.home_team.abbreviation} {formatSigned(-projection.margin, 1)}, total {formatNumber(projection.total, 1)} ({formatNumber(projection.awayPoints, 1)}-{formatNumber(projection.homePoints, 1)}). Pace {formatNumber(projection.pace, 1)} (league {formatNumber(league.pace, 1)}).
           </p>
@@ -190,7 +260,22 @@ export default function LinesPage() {
   const { analyses, ratings, ratingsLoading, gamesAhead, startedCount, parameters } = useLineAnalyses(slate); // also saves the daily model record
   const oddsByGame = groupOddsByGame(slate.data?.odds ?? []);
   const [version, setVersion] = useState<ModelVersion>("learned");
-  const flaggedEdges = analyses.flatMap((analysis) => (version === "learned" ? analysis.edges : analysis.originalEdges).filter((edge) => edge.flagged));
+  const [view, setView] = useState<"games" | "plays">("games");
+  const [marketFilter, setMarketFilter] = useState<MarketFilter>("all");
+  const [levelFilter, setLevelFilter] = useState<LevelFilter>(0);
+  const [sortKey, setSortKey] = useState<SortKey>("confidence");
+  const [openPlay, setOpenPlay] = useState<string | null>(null);
+  const playsByGame = new Map(analyses.map((analysis) => [analysis.game.id, sortPlays(playableEdges(analysis, version, marketFilter, levelFilter), sortKey === "time" ? "confidence" : sortKey)]));
+  const allPlays = sortPlays(analyses.flatMap((analysis) => playsByGame.get(analysis.game.id) ?? []), sortKey);
+  const gameCards = analyses
+    .map((analysis) => ({ analysis, verdict: playsByGame.get(analysis.game.id)?.[0] ?? null }))
+    .filter((card) => levelFilter === 0 || card.verdict !== null)
+    .sort((first, second) => {
+      if (sortKey === "time") return (first.analysis.game.datetime ?? "").localeCompare(second.analysis.game.datetime ?? "");
+      const firstValue = sortKey === "ev" ? (first.verdict?.edge.evPercent ?? -99) : (first.verdict?.rating?.score ?? -1);
+      const secondValue = sortKey === "ev" ? (second.verdict?.edge.evPercent ?? -99) : (second.verdict?.rating?.score ?? -1);
+      return secondValue - firstValue;
+    });
 
   return (
     <main className="page">
@@ -198,7 +283,7 @@ export default function LinesPage() {
         <div>
           <h1>Lines</h1>
           <p>
-            {version === "learned" ? "Learned" : "Original"} model vs. the books · {flaggedEdges.length} edge{flaggedEdges.length === 1 ? "" : "s"} at {settings.evThresholdPercent}%+ EV
+            {version === "learned" ? "Learned" : "Original"} model vs. the books · {allPlays.length} play{allPlays.length === 1 ? "" : "s"} at {settings.evThresholdPercent}%+ EV{levelFilter > 0 ? ` with ${confidenceLevels[confidenceLevel(levelFilter)].label.toLowerCase()}+ confidence` : ""}
           </p>
         </div>
         <div className="row wrap">
@@ -214,15 +299,114 @@ export default function LinesPage() {
           />
         </div>
       </div>
+      <div className="lines-toolbar">
+        <Segmented
+          label="View"
+          options={[
+            { value: "games", label: "Games" },
+            { value: "plays", label: "Plays" },
+          ]}
+          value={view}
+          onChange={setView}
+        />
+        <Segmented
+          label="Market"
+          options={[
+            { value: "all", label: "All" },
+            { value: "spread", label: "Spread" },
+            { value: "total", label: "Total" },
+            { value: "moneyline", label: "Money" },
+          ]}
+          value={marketFilter}
+          onChange={setMarketFilter}
+        />
+        <label className="small muted lines-sort">
+          Confidence
+          <select className="input" value={levelFilter} onChange={(changeEvent) => setLevelFilter(Number(changeEvent.target.value))}>
+            {minimumScoreOptions.map((minimumScore) => (
+              <option key={minimumScore} value={minimumScore}>
+                {minimumScore === 0 ? "Any" : `${confidenceLevels[confidenceLevel(minimumScore)].label}${minimumScore < confidenceLevels["very-high"].minimum ? "+" : ""} (${minimumScore}+)`}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label className="small muted lines-sort">
+          Sort
+          <select className="input" value={sortKey} onChange={(changeEvent) => setSortKey(changeEvent.target.value as SortKey)}>
+            <option value="confidence">Confidence</option>
+            <option value="ev">EV</option>
+            <option value="time">Tip-off</option>
+          </select>
+        </label>
+      </div>
       {slate.error ? <div className="notice">Could not load the slate: {slate.error}</div> : null}
       {ratingsLoading && !ratings ? <div className="skeleton" style={{ minHeight: 200 }} /> : null}
       {slate.data && gamesAhead === 0 ? <div className="card empty-state">No games left to tip off today.</div> : null}
       {startedCount > 0 ? <p className="faint small">{startedCount} game(s) already started or finished are hidden: this model is for pregame lines. Use Live for in-game props.</p> : null}
-      <div className="card-grid">
-        {ratings
-          ? analyses.map((analysis) => <GameEdgeCard key={analysis.game.id} analysis={analysis} league={ratings} odds={oddsByGame.get(analysis.game.id) ?? []} parameters={parameters} version={version} />)
-          : null}
-      </div>
+      {ratings && view === "games" ? (
+        <div className="card-grid">
+          {gameCards.map(({ analysis, verdict }) => (
+            <GameEdgeCard key={analysis.game.id} analysis={analysis} league={ratings} odds={oddsByGame.get(analysis.game.id) ?? []} parameters={parameters} version={version} verdict={verdict} marketFilter={marketFilter} filtersActive={marketFilter !== "all" || levelFilter > 0} />
+          ))}
+          {gameCards.length === 0 && gamesAhead > 0 ? <div className="card empty-state">No games have a play that passes these filters.</div> : null}
+        </div>
+      ) : null}
+      {ratings && view === "plays" ? (
+        <div className="card flush ledger-list plays-list">
+          <div className="ledger-head" aria-hidden>
+            <span>Confidence</span>
+            <span>Play</span>
+            <span className="hide-narrow">Game</span>
+            <span className="numeric">EV</span>
+            <span className="numeric hide-narrow">Chance</span>
+            <span className="numeric">Price</span>
+            <span />
+          </div>
+          {allPlays.map((play) => {
+            const playKey = `${play.analysis.game.id}-${play.edge.selection}`;
+            const isOpen = openPlay === playKey;
+            const gamePick = buildGamePick(play.analysis.game, oddsByGame.get(play.analysis.game.id) ?? [], play.edge.selection, "lines");
+            const pick = gamePick ? { ...gamePick, modelProbability: play.edge.modelProbability } : null;
+            return (
+              <div key={playKey} className={`ledger-item${isOpen ? " open" : ""}`}>
+                <div className="ledger-row" role="button" tabIndex={0} onClick={() => setOpenPlay(isOpen ? null : playKey)} onKeyDown={(keyEvent) => (keyEvent.key === "Enter" || keyEvent.key === " ") && setOpenPlay(isOpen ? null : playKey)} aria-expanded={isOpen}>
+                  <span>
+                    <ConfidenceBadge rating={play.rating} />
+                  </span>
+                  <span style={{ minWidth: 0 }}>
+                    <span className="strong plays-name">{play.edge.sideLabel}</span>
+                    <span className="faint small plays-meta">
+                      {marketTitles[play.edge.market]} · model {play.edge.fairText}
+                      <span className="show-narrow"> · {play.analysis.game.visitor_team.abbreviation} @ {play.analysis.game.home_team.abbreviation}</span>
+                    </span>
+                  </span>
+                  <span className="faint small hide-narrow">
+                    {play.analysis.game.visitor_team.abbreviation} @ {play.analysis.game.home_team.abbreviation} · {formatTipoff(play.analysis.game.datetime).replace(" ET", "")}
+                  </span>
+                  <span className="numeric positive strong tabular">{formatSigned(play.edge.evPercent, 1)}%</span>
+                  <span className="numeric hide-narrow tabular">{formatPercent(play.edge.modelProbability, 0)}</span>
+                  <span className="numeric" onClick={(clickEvent) => clickEvent.stopPropagation()}>
+                    <PriceButton pick={pick} sideLabel="" odds={play.edge.americanOdds} vendor={play.edge.vendor} note={vendorLabel(play.edge.vendor)} highlight compact />
+                  </span>
+                  <span className="ledger-chevron">{isOpen ? "▲" : "▼"}</span>
+                </div>
+                {isOpen && play.rating ? (
+                  <div className="ledger-extra">
+                    <ConfidenceBreakdown rating={play.rating} />
+                  </div>
+                ) : null}
+              </div>
+            );
+          })}
+          {allPlays.length === 0 ? <div className="empty-state">No plays pass these filters.</div> : null}
+        </div>
+      ) : null}
+      <details className="card" style={{ marginTop: 12 }}>
+        <summary className="expand-hint">How confidence works</summary>
+        <p className="faint small">
+          Confidence (0-100, rounded to steps of {confidenceStep}) adds up five things: the size of the edge ({confidenceWeights.edge} points, full at 12% EV, zero when the model is suspiciously far from the market), whether the original and learned models agree ({confidenceWeights.agreement}), whether the line has moved toward the pick since the open ({confidenceWeights.movement}), the model&apos;s graded ROI in that market ({confidenceWeights.record}, neutral until 30 graded picks) and how much data is behind it ({confidenceWeights.data}: games played this season, less when injuries are guessed). Tiers: very high {confidenceLevels["very-high"].minimum}+, high {confidenceLevels.high.minimum}+, medium {confidenceLevels.medium.minimum}+, low {confidenceLevels.low.minimum}+, very low below that. The Record page breaks the learned model down by tier once games are graded, so you can see whether higher confidence really wins more.
+        </p>
+      </details>
       <details className="card" style={{ marginTop: 12 }}>
         <summary className="expand-hint">How the model works</summary>
         <p className="faint small">
