@@ -1,0 +1,29 @@
+name: Odds API key check
+
+on:
+  push:
+    branches: [odds-key-check]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: One request to the free sports list (0 credits)
+        run: |
+          if [ -z "$ODDS_API_KEY" ]; then echo "ODDS_API_KEY secret is empty or missing"; exit 1; fi
+          status=$(curl -sS -o body.json -D headers.txt -w "%{http_code}" "https://api.the-odds-api.com/v4/sports?apiKey=${ODDS_API_KEY}")
+          echo "HTTP status: $status"
+          grep -i -E "^x-requests-(remaining|used|last)" headers.txt || echo "no usage headers"
+          if [ "$status" = "200" ]; then
+            echo "Sports listed: $(grep -o '"key"' body.json | wc -l)"
+            grep -o '"key":"basketball_ncaab"[^}]*' body.json || echo "basketball_ncaab not in the active list yet"
+          else
+            head -c 300 body.json; echo
+            exit 1
+          fi
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}

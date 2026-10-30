@@ -4,7 +4,8 @@
       "live-data": false,
       "site-data": false,
       "ncaab-data": false,
-      "ncaab-odds": false
+      "ncaab-odds": false,
+      "odds-key-check": false
     }
   }
 }
