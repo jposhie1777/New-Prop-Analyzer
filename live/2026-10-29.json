@@ -1,6 +1,6 @@
 {
  "date": "2026-10-29",
- "updatedAt": "2026-10-30T04:01:18.747Z",
+ "updatedAt": "2026-10-30T04:05:18.789Z",
  "state": "running",
  "games": [
   {
@@ -21,8 +21,8 @@
    "gameId": 21717989,
    "matchup": "MEM @ POR",
    "status": "4th Qtr",
-   "homeScore": 87,
-   "visitorScore": 96
+   "homeScore": 89,
+   "visitorScore": 101
   }
  ],
  "picks": [
@@ -1166,7 +1166,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 10.227443355972566,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -1265,7 +1265,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 14.620479927008248,
-   "latestValue": 7,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -1299,7 +1299,7 @@
    "scoreMargin": 0,
    "valueAtPick": 13,
    "projection": 35.66550926403396,
-   "latestValue": 27,
+   "latestValue": 28,
    "tags": [
     "Best bet",
     "Under",
@@ -1433,7 +1433,7 @@
    "scoreMargin": 0,
    "valueAtPick": 4,
    "projection": 15.622689609093536,
-   "latestValue": 9,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -1467,7 +1467,7 @@
    "scoreMargin": 0,
    "valueAtPick": 6,
    "projection": 9.575653197015928,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -1501,7 +1501,7 @@
    "scoreMargin": 8,
    "valueAtPick": 0,
    "projection": 0.5851443715608954,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Over",
     "3PM",
@@ -1601,7 +1601,7 @@
    "scoreMargin": -8,
    "valueAtPick": 34,
    "projection": 43.00255429396188,
-   "latestValue": 34,
+   "latestValue": 35,
    "tags": [
     "Best bet",
     "Under",
@@ -1646,7 +1646,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 609,
+ "calls": 617,
  "note": null,
  "checkpointsTaken": {
   "21717987": [
