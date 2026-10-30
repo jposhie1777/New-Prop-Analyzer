@@ -1,6 +1,6 @@
 {
  "date": "2026-10-29",
- "updatedAt": "2026-10-30T03:48:18.360Z",
+ "updatedAt": "2026-10-30T03:52:18.372Z",
  "state": "running",
  "games": [
   {
@@ -21,8 +21,8 @@
    "gameId": 21717989,
    "matchup": "MEM @ POR",
    "status": "3rd Qtr",
-   "homeScore": 77,
-   "visitorScore": 87
+   "homeScore": 83,
+   "visitorScore": 91
   }
  ],
  "picks": [
@@ -1199,7 +1199,7 @@
    "scoreMargin": 0,
    "valueAtPick": 3,
    "projection": 5.8945914154190655,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -1265,7 +1265,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 14.620479927008248,
-   "latestValue": 3,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -1299,7 +1299,7 @@
    "scoreMargin": 0,
    "valueAtPick": 13,
    "projection": 35.66550926403396,
-   "latestValue": 25,
+   "latestValue": 27,
    "tags": [
     "Best bet",
     "Under",
@@ -1399,7 +1399,7 @@
    "scoreMargin": 0,
    "valueAtPick": 18,
    "projection": 27.40340277089878,
-   "latestValue": 22,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Under",
@@ -1433,7 +1433,7 @@
    "scoreMargin": 0,
    "valueAtPick": 4,
    "projection": 15.622689609093536,
-   "latestValue": 5,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -1478,9 +1478,175 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717989-666676-threes",
+   "gameDate": "2026-10-29",
+   "gameId": 21717989,
+   "matchup": "MEM @ POR",
+   "playerId": 666676,
+   "playerName": "Ty Jerome",
+   "teamAbbreviation": "MEM",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": 132,
+   "vendor": "fanduel",
+   "modelProbability": 0.5349514850700388,
+   "evPercent": 24.108744536249006,
+   "foundAt": "2026-10-30T03:51:18.112Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 8,
+   "valueAtPick": 0,
+   "projection": 0.5851443715608954,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "3PM",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717989-214-points_rebounds",
+   "gameDate": "2026-10-29",
+   "gameId": 21717989,
+   "matchup": "MEM @ POR",
+   "playerId": 214,
+   "playerName": "Jrue Holiday",
+   "teamAbbreviation": "POR",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 16.5,
+   "americanOdds": 100,
+   "vendor": "fanduel",
+   "modelProbability": 0.6186146617667241,
+   "evPercent": 23.722932353344817,
+   "foundAt": "2026-10-30T03:51:18.112Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -8,
+   "valueAtPick": 12,
+   "projection": 15.62806369362949,
+   "latestValue": 12,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717989-56677850-points_rebounds",
+   "gameDate": "2026-10-29",
+   "gameId": 21717989,
+   "matchup": "MEM @ POR",
+   "playerId": 56677850,
+   "playerName": "Toumani Camara",
+   "teamAbbreviation": "POR",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 17.5,
+   "americanOdds": -120,
+   "vendor": "fanduel",
+   "modelProbability": 0.6716067971243996,
+   "evPercent": 23.12791280613995,
+   "foundAt": "2026-10-30T03:51:18.112Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -8,
+   "valueAtPick": 15,
+   "projection": 18.816519083838184,
+   "latestValue": 15,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717989-3547242-points_rebounds_assists",
+   "gameDate": "2026-10-29",
+   "gameId": 21717989,
+   "matchup": "MEM @ POR",
+   "playerId": 3547242,
+   "playerName": "Deni Avdija",
+   "teamAbbreviation": "POR",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 45.5,
+   "americanOdds": -138,
+   "vendor": "fanduel",
+   "modelProbability": 0.7084439189502745,
+   "evPercent": 22.180907760989378,
+   "foundAt": "2026-10-30T03:51:18.112Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -8,
+   "valueAtPick": 34,
+   "projection": 43.00255429396188,
+   "latestValue": 34,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717989-278-assists",
+   "gameDate": "2026-10-29",
+   "gameId": 21717989,
+   "matchup": "MEM @ POR",
+   "playerId": 278,
+   "playerName": "Damian Lillard",
+   "teamAbbreviation": "POR",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": 142,
+   "vendor": "fanduel",
+   "modelProbability": 0.5029389185207491,
+   "evPercent": 21.711218282021292,
+   "foundAt": "2026-10-30T03:51:18.112Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -8,
+   "valueAtPick": 2,
+   "projection": 2.493671244635193,
+   "latestValue": 2,
+   "tags": [
+    "Under",
+    "Assists",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 580,
+ "calls": 591,
  "note": null,
  "checkpointsTaken": {
   "21717987": [
@@ -1495,7 +1661,8 @@
   ],
   "21717989": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ]
  }
 }
