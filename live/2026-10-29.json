@@ -1,6 +1,6 @@
 {
  "date": "2026-10-29",
- "updatedAt": "2026-10-30T03:11:16.874Z",
+ "updatedAt": "2026-10-30T03:18:17.238Z",
  "state": "running",
  "games": [
   {
@@ -1199,7 +1199,7 @@
    "scoreMargin": 0,
    "valueAtPick": 3,
    "projection": 5.8945914154190655,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -1399,7 +1399,7 @@
    "scoreMargin": 0,
    "valueAtPick": 18,
    "projection": 27.40340277089878,
-   "latestValue": 18,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -1480,7 +1480,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 506,
+ "calls": 520,
  "note": null,
  "checkpointsTaken": {
   "21717987": [
