@@ -2,7 +2,9 @@
   "git": {
     "deploymentEnabled": {
       "live-data": false,
-      "site-data": false
+      "site-data": false,
+      "ncaab-data": false,
+      "ncaab-odds": false
     }
   }
 }

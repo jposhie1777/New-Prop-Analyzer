@@ -10,6 +10,7 @@ import { saveGrades } from "@/lib/tracking/trackerStore";
 import { formatAmerican } from "@/lib/math/odds";
 import { vendorLabel } from "@/lib/odds/deeplinks";
 import { todayEastern } from "@/lib/dates";
+import { ncaabAsBdlGame, useNcaabGamesForDates } from "@/lib/client/ncaabData";
 
 const emptyBets: PlacedBet[] = [];
 let cachedBets: PlacedBet[] | null = null;
@@ -71,6 +72,7 @@ export function MyBets() {
   const games = slate.data?.games ?? null;
   const live = useLiveBoxScores(games);
   const trackedById = new Map(tracked.map((pick) => [pick.trackId, pick]));
+  const ncaabGames = useNcaabGamesForDates(bets.flatMap((bet) => bet.legs.filter((leg) => leg.sport === "ncaab").map((leg) => leg.gameDate))); // college scores come from their own route
 
   useEffect(() => {
     if (!handle) return;
@@ -86,6 +88,10 @@ export function MyBets() {
 
   const rows = bets.map((bet) => {
     const legs = bet.legs.map((leg) => {
+      if (leg.sport === "ncaab") {
+        const collegeGame = ncaabGames.find((candidate) => candidate.id === leg.gameId);
+        return { leg, progress: legProgress(leg, collegeGame ? ncaabAsBdlGame(collegeGame) : null, null, null) };
+      }
       const game = (games ?? []).find((candidate) => candidate.id === leg.gameId) ?? null;
       const boxScore = game ? matchBoxScore(game, live.boxScores) : null;
       return { leg, progress: legProgress(leg, game, boxScore, trackedById.get(`slip-${leg.pickId}`) ?? null) };

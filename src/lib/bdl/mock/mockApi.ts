@@ -1,6 +1,7 @@
 import type { QueryParams, QueryValue } from "@/lib/bdl/bdlClient";
 import type { BdlGame } from "@/lib/bdl/types";
 import { teamReferences, bdlTeam } from "@/lib/nba/teams";
+import { handleMockNcaab } from "./mockNcaab";
 import { addDays } from "@/lib/dates";
 import {
   allMockPlayers,
@@ -84,6 +85,7 @@ function playersMatching(params: QueryParams) {
 }
 
 export function handleMockRequest(path: string, params: QueryParams): unknown {
+  if (path.startsWith("/ncaab/")) return handleMockNcaab(path, params);
   const singleMatch = path.match(/^\/nba\/v1\/(teams|players|games)\/(\d+)$/);
   if (singleMatch) {
     const entityId = Number(singleMatch[2]);
