@@ -1,21 +1,21 @@
 {
  "date": "2026-10-29",
- "updatedAt": "2026-10-30T01:53:13.675Z",
+ "updatedAt": "2026-10-30T01:57:13.777Z",
  "state": "running",
  "games": [
   {
    "gameId": 21717987,
    "matchup": "CLE @ ATL",
-   "status": "3rd Qtr",
-   "homeScore": 89,
-   "visitorScore": 82
+   "status": "4th Qtr",
+   "homeScore": 94,
+   "visitorScore": 84
   },
   {
    "gameId": 21717988,
    "matchup": "SAC @ NOP",
-   "status": "3rd Qtr",
-   "homeScore": 102,
-   "visitorScore": 88
+   "status": "4th Qtr",
+   "homeScore": 104,
+   "visitorScore": 91
   },
   {
    "gameId": 21717989,
@@ -181,7 +181,7 @@
    "scoreMargin": 12,
    "valueAtPick": 0,
    "projection": 4.68980659311414,
-   "latestValue": 3,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -247,7 +247,7 @@
    "scoreMargin": -6,
    "valueAtPick": 2,
    "projection": 13.13909067648782,
-   "latestValue": 10,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -347,7 +347,7 @@
    "scoreMargin": 6,
    "valueAtPick": 7,
    "projection": 29.0872404513215,
-   "latestValue": 15,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -481,7 +481,7 @@
    "scoreMargin": 2,
    "valueAtPick": 17,
    "projection": 26.954792149208618,
-   "latestValue": 22,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Over",
@@ -580,7 +580,7 @@
    "scoreMargin": 2,
    "valueAtPick": 5,
    "projection": 8.154031167569867,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -613,7 +613,7 @@
    "scoreMargin": -2,
    "valueAtPick": 30,
    "projection": 44.70387410293683,
-   "latestValue": 43,
+   "latestValue": 44,
    "tags": [
     "Best bet",
     "Under",
@@ -680,7 +680,7 @@
    "scoreMargin": 2,
    "valueAtPick": 7,
    "projection": 14.781555938645642,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -746,7 +746,7 @@
    "scoreMargin": 7,
    "valueAtPick": 20,
    "projection": 25.044216334544473,
-   "latestValue": 20,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Over",
@@ -856,9 +856,176 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717988-1091338860-threes",
+   "gameDate": "2026-10-29",
+   "gameId": 21717988,
+   "matchup": "SAC @ NOP",
+   "playerId": 1091338860,
+   "playerName": "Darius Acuff Jr.",
+   "teamAbbreviation": "SAC",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 148,
+   "vendor": "fanduel",
+   "modelProbability": 0.4934150502490289,
+   "evPercent": 22.36693246175916,
+   "foundAt": "2026-10-30T01:54:13.523Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -14,
+   "valueAtPick": 2,
+   "projection": 2.4854076226616257,
+   "latestValue": 2,
+   "tags": [
+    "Over",
+    "3PM",
+    "Foul trouble",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717988-406-assists",
+   "gameDate": "2026-10-29",
+   "gameId": 21717988,
+   "matchup": "SAC @ NOP",
+   "playerId": 406,
+   "playerName": "Domantas Sabonis",
+   "teamAbbreviation": "SAC",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": -145,
+   "vendor": "betmgm",
+   "modelProbability": 0.7213023816580706,
+   "evPercent": 21.8752300042947,
+   "foundAt": "2026-10-30T01:54:13.523Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -14,
+   "valueAtPick": 6,
+   "projection": 6.841806362782975,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717988-18677986-points_assists",
+   "gameDate": "2026-10-29",
+   "gameId": 21717988,
+   "matchup": "SAC @ NOP",
+   "playerId": 18677986,
+   "playerName": "Trey Murphy III",
+   "teamAbbreviation": "NOP",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 23.5,
+   "americanOdds": -146,
+   "vendor": "fanduel",
+   "modelProbability": 0.699054170199797,
+   "evPercent": 17.785839636404166,
+   "foundAt": "2026-10-30T01:54:13.523Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 14,
+   "valueAtPick": 18,
+   "projection": 21.931305856251793,
+   "latestValue": 19,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717988-666656-threes",
+   "gameDate": "2026-10-29",
+   "gameId": 21717988,
+   "matchup": "SAC @ NOP",
+   "playerId": 666656,
+   "playerName": "De'Andre Hunter",
+   "teamAbbreviation": "SAC",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": 225,
+   "vendor": "fanduel",
+   "modelProbability": 0.3570892014344298,
+   "evPercent": 16.053990466189695,
+   "foundAt": "2026-10-30T01:54:13.523Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -14,
+   "valueAtPick": 4,
+   "projection": 4.245462599754848,
+   "latestValue": 4,
+   "tags": [
+    "Over",
+    "3PM",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717988-666969-assists",
+   "gameDate": "2026-10-29",
+   "gameId": 21717988,
+   "matchup": "SAC @ NOP",
+   "playerId": 666969,
+   "playerName": "Zion Williamson",
+   "teamAbbreviation": "NOP",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -115,
+   "vendor": "betmgm",
+   "modelProbability": 0.6147712709547493,
+   "evPercent": 14.935498482844412,
+   "foundAt": "2026-10-30T01:54:13.523Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 14,
+   "valueAtPick": 2,
+   "projection": 2.3034698954528277,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 338,
+ "calls": 349,
  "note": null,
  "checkpointsTaken": {
   "21717987": [
@@ -868,7 +1035,8 @@
   ],
   "21717988": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ]
  }
 }
