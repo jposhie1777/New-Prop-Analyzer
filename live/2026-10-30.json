@@ -1,56 +1,56 @@
 {
  "date": "2026-10-30",
- "updatedAt": "2026-10-31T01:04:09.848Z",
+ "updatedAt": "2026-10-31T01:08:10.134Z",
  "state": "running",
  "games": [
   {
    "gameId": 21717990,
    "matchup": "CHA @ WAS",
    "status": "4th Qtr",
-   "homeScore": 82,
-   "visitorScore": 61
+   "homeScore": 84,
+   "visitorScore": 65
   },
   {
    "gameId": 21717992,
    "matchup": "CHI @ BOS",
    "status": "3rd Qtr",
-   "homeScore": 78,
+   "homeScore": 80,
    "visitorScore": 54
   },
   {
    "gameId": 21717993,
    "matchup": "DET @ BKN",
    "status": "3rd Qtr",
-   "homeScore": 52,
+   "homeScore": 59,
    "visitorScore": 65
   },
   {
    "gameId": 21717994,
    "matchup": "NYK @ PHI",
    "status": "3rd Qtr",
-   "homeScore": 58,
-   "visitorScore": 47
+   "homeScore": 59,
+   "visitorScore": 54
   },
   {
    "gameId": 21717995,
    "matchup": "ORL @ TOR",
-   "status": "2nd Qtr",
-   "homeScore": 55,
-   "visitorScore": 64
+   "status": "3rd Qtr",
+   "homeScore": 57,
+   "visitorScore": 66
   },
   {
    "gameId": 21717996,
    "matchup": "IND @ MIA",
    "status": "2nd Qtr",
-   "homeScore": 60,
+   "homeScore": 62,
    "visitorScore": 54
   },
   {
    "gameId": 21717997,
    "matchup": "HOU @ DAL",
    "status": "2nd Qtr",
-   "homeScore": 38,
-   "visitorScore": 44
+   "homeScore": 43,
+   "visitorScore": 49
   },
   {
    "gameId": 21717998,
@@ -130,7 +130,7 @@
    "scoreMargin": 4,
    "valueAtPick": 6,
    "projection": 22.451691470441414,
-   "latestValue": 15,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Under",
@@ -230,7 +230,7 @@
    "scoreMargin": -4,
    "valueAtPick": 2,
    "projection": 4.222074992584498,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -394,7 +394,7 @@
    "scoreMargin": -7,
    "valueAtPick": 2,
    "projection": 6.174963501890475,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -656,7 +656,7 @@
    "scoreMargin": -5,
    "valueAtPick": 9,
    "projection": 17.57157931269208,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -723,7 +723,7 @@
    "scoreMargin": -5,
    "valueAtPick": 0,
    "projection": 0.8789511178108521,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -758,7 +758,7 @@
    "scoreMargin": -19,
    "valueAtPick": 1,
    "projection": 14.535644096081016,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -826,7 +826,7 @@
    "scoreMargin": 19,
    "valueAtPick": 6,
    "projection": 13.209981946610938,
-   "latestValue": 9,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Over",
@@ -994,7 +994,7 @@
    "scoreMargin": -4,
    "valueAtPick": 7,
    "projection": 23.895397183392763,
-   "latestValue": 23,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Over",
@@ -1192,7 +1192,7 @@
    "scoreMargin": -7,
    "valueAtPick": 3,
    "projection": 19.97237555788694,
-   "latestValue": 12,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -2019,7 +2019,7 @@
    "scoreMargin": -7,
    "valueAtPick": 2,
    "projection": 4.342935444272332,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Under",
     "Assists",
@@ -2288,7 +2288,7 @@
    "scoreMargin": -20,
    "valueAtPick": 7,
    "projection": 8.91461097634325,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -2391,7 +2391,7 @@
    "scoreMargin": 20,
    "valueAtPick": 8,
    "projection": 10.13080939635319,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -2402,9 +2402,174 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717998-1091343544-rebounds",
+   "gameDate": "2026-10-30",
+   "gameId": 21717998,
+   "matchup": "LAC @ MIN",
+   "playerId": 1091343544,
+   "playerName": "Keaton Wagler",
+   "teamAbbreviation": "LAC",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": -166,
+   "vendor": "draftkings",
+   "modelProbability": 0.7752832554343123,
+   "evPercent": 24.232136111763293,
+   "foundAt": "2026-10-31T01:05:09.500Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -13,
+   "valueAtPick": 2,
+   "projection": 3.4041417240926104,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717998-17896035-points_rebounds",
+   "gameDate": "2026-10-30",
+   "gameId": 21717998,
+   "matchup": "LAC @ MIN",
+   "playerId": 17896035,
+   "playerName": "Isaiah Jackson",
+   "teamAbbreviation": "LAC",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 20.5,
+   "americanOdds": -130,
+   "vendor": "fanduel",
+   "modelProbability": 0.7008173307706066,
+   "evPercent": 23.99075852095347,
+   "foundAt": "2026-10-31T01:05:09.500Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -13,
+   "valueAtPick": 14,
+   "projection": 22.88063399839897,
+   "latestValue": 14,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717998-139-points",
+   "gameDate": "2026-10-30",
+   "gameId": 21717998,
+   "matchup": "LAC @ MIN",
+   "playerId": 139,
+   "playerName": "Kris Dunn",
+   "teamAbbreviation": "LAC",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 7.5,
+   "americanOdds": 100,
+   "vendor": "betmgm",
+   "modelProbability": 0.6187601641217586,
+   "evPercent": 23.752032824351723,
+   "foundAt": "2026-10-31T01:05:09.500Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -13,
+   "valueAtPick": 5,
+   "projection": 8.384364079665549,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717998-247-threes",
+   "gameDate": "2026-10-30",
+   "gameId": 21717998,
+   "matchup": "LAC @ MIN",
+   "playerId": 247,
+   "playerName": "Derrick Jones Jr.",
+   "teamAbbreviation": "LAC",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 100,
+   "vendor": "draftkings",
+   "modelProbability": 0.5968976192811397,
+   "evPercent": 19.37952385622794,
+   "foundAt": "2026-10-31T01:05:09.500Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -13,
+   "valueAtPick": 2,
+   "projection": 2.773827564645221,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717998-3547239-threes",
+   "gameDate": "2026-10-30",
+   "gameId": 21717998,
+   "matchup": "LAC @ MIN",
+   "playerId": 3547239,
+   "playerName": "LaMelo Ball",
+   "teamAbbreviation": "MIN",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": 141,
+   "vendor": "caesars",
+   "modelProbability": 0.4885749292791861,
+   "evPercent": 17.74655795628386,
+   "foundAt": "2026-10-31T01:05:09.500Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 13,
+   "valueAtPick": 3,
+   "projection": 4.456144763521278,
+   "latestValue": 3,
+   "tags": [
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 359,
+ "calls": 371,
  "note": null,
  "checkpointsTaken": {
   "21717990": [
@@ -2435,7 +2600,8 @@
    "end-q1"
   ],
   "21717998": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
