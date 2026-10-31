@@ -1,6 +1,6 @@
 {
  "date": "2026-10-30",
- "updatedAt": "2026-10-31T03:08:14.909Z",
+ "updatedAt": "2026-10-31T03:12:15.045Z",
  "state": "running",
  "games": [
   {
@@ -63,8 +63,8 @@
    "gameId": 21717999,
    "matchup": "LAL @ GSW",
    "status": "2nd Qtr",
-   "homeScore": 33,
-   "visitorScore": 44
+   "homeScore": 35,
+   "visitorScore": 48
   },
   {
    "gameId": 21718000,
@@ -4760,7 +4760,7 @@
    "scoreMargin": 23,
    "valueAtPick": 24,
    "projection": 52.926278891746435,
-   "latestValue": 24,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Over",
@@ -5077,7 +5077,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 669,
+ "calls": 677,
  "note": null,
  "checkpointsTaken": {
   "21717990": [
