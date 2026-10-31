@@ -1,14 +1,14 @@
 {
  "date": "2026-10-31",
- "updatedAt": "2026-10-31T20:35:17.618Z",
+ "updatedAt": "2026-10-31T20:39:17.565Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718001,
    "matchup": "POR @ UTA",
    "status": "3rd Qtr",
-   "homeScore": 44,
-   "visitorScore": 65
+   "homeScore": 48,
+   "visitorScore": 68
   },
   {
    "gameId": 21718002,
@@ -76,7 +76,7 @@
    "scoreMargin": -9,
    "valueAtPick": 3,
    "projection": 16.246942850394007,
-   "latestValue": 10,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -143,7 +143,7 @@
    "scoreMargin": -9,
    "valueAtPick": 2,
    "projection": 7.130306960340483,
-   "latestValue": 4,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -392,7 +392,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 278,
+ "calls": 286,
  "note": null,
  "checkpointsTaken": {
   "21718001": [
