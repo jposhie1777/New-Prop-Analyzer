@@ -1,6 +1,6 @@
 {
  "date": "2026-10-30",
- "updatedAt": "2026-10-31T00:53:10.628Z",
+ "updatedAt": "2026-10-31T00:57:09.687Z",
  "state": "running",
  "games": [
   {
@@ -8,7 +8,7 @@
    "matchup": "CHA @ WAS",
    "status": "3rd Qtr",
    "homeScore": 79,
-   "visitorScore": 54
+   "visitorScore": 56
   },
   {
    "gameId": 21717992,
@@ -42,8 +42,8 @@
    "gameId": 21717996,
    "matchup": "IND @ MIA",
    "status": "2nd Qtr",
-   "homeScore": 44,
-   "visitorScore": 51
+   "homeScore": 51,
+   "visitorScore": 54
   },
   {
    "gameId": 21717997,
@@ -56,8 +56,8 @@
    "gameId": 21717998,
    "matchup": "LAC @ MIN",
    "status": "2nd Qtr",
-   "homeScore": 53,
-   "visitorScore": 43
+   "homeScore": 58,
+   "visitorScore": 50
   },
   {
    "gameId": 21717999,
@@ -130,7 +130,7 @@
    "scoreMargin": 4,
    "valueAtPick": 6,
    "projection": 22.451691470441414,
-   "latestValue": 11,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -656,7 +656,7 @@
    "scoreMargin": -5,
    "valueAtPick": 9,
    "projection": 17.57157931269208,
-   "latestValue": 10,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -2233,7 +2233,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 333,
+ "calls": 341,
  "note": null,
  "checkpointsTaken": {
   "21717990": [
