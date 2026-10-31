@@ -1,42 +1,42 @@
 {
  "date": "2026-10-30",
- "updatedAt": "2026-10-30T23:53:06.687Z",
+ "updatedAt": "2026-10-31T00:06:07.218Z",
  "state": "running",
  "games": [
   {
    "gameId": 21717990,
    "matchup": "CHA @ WAS",
    "status": "2nd Qtr",
-   "homeScore": 39,
-   "visitorScore": 38
+   "homeScore": 46,
+   "visitorScore": 44
   },
   {
    "gameId": 21717992,
    "matchup": "CHI @ BOS",
    "status": "1st Qtr",
-   "homeScore": 16,
-   "visitorScore": 12
+   "homeScore": 35,
+   "visitorScore": 18
   },
   {
    "gameId": 21717993,
    "matchup": "DET @ BKN",
    "status": "1st Qtr",
-   "homeScore": 14,
-   "visitorScore": 11
+   "homeScore": 27,
+   "visitorScore": 21
   },
   {
    "gameId": 21717994,
    "matchup": "NYK @ PHI",
    "status": "1st Qtr",
-   "homeScore": 14,
-   "visitorScore": 11
+   "homeScore": 29,
+   "visitorScore": 19
   },
   {
    "gameId": 21717995,
    "matchup": "ORL @ TOR",
    "status": "1st Qtr",
-   "homeScore": 10,
-   "visitorScore": 16
+   "homeScore": 16,
+   "visitorScore": 20
   },
   {
    "gameId": 21717996,
@@ -163,7 +163,7 @@
    "scoreMargin": 4,
    "valueAtPick": 0,
    "projection": 2.021564911323489,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Over",
@@ -197,7 +197,7 @@
    "scoreMargin": 4,
    "valueAtPick": 0,
    "projection": 1.291875814529063,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Over",
@@ -242,7 +242,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 158,
+ "calls": 184,
  "note": null,
  "checkpointsTaken": {
   "21717990": [
