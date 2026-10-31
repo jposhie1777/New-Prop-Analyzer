@@ -1,6 +1,6 @@
 {
  "date": "2026-10-31",
- "updatedAt": "2026-10-31T23:51:02.592Z",
+ "updatedAt": "2026-10-31T23:55:02.811Z",
  "state": "running",
  "games": [
   {
@@ -14,15 +14,15 @@
    "gameId": 21718002,
    "matchup": "PHI @ CHA",
    "status": "3rd Qtr",
-   "homeScore": 77,
-   "visitorScore": 74
+   "homeScore": 83,
+   "visitorScore": 77
   },
   {
    "gameId": 21718003,
    "matchup": "ATL @ NOP",
    "status": "2nd Qtr",
-   "homeScore": 41,
-   "visitorScore": 28
+   "homeScore": 47,
+   "visitorScore": 31
   },
   {
    "gameId": 21718004,
@@ -647,7 +647,7 @@
    "scoreMargin": -10,
    "valueAtPick": 3,
    "projection": 13.130643397644816,
-   "latestValue": 11,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -680,7 +680,7 @@
    "scoreMargin": -10,
    "valueAtPick": 16,
    "projection": 43.91938337126092,
-   "latestValue": 26,
+   "latestValue": 27,
    "tags": [
     "Best bet",
     "Over",
@@ -979,7 +979,7 @@
    "scoreMargin": 17,
    "valueAtPick": 9,
    "projection": 24.31707600194482,
-   "latestValue": 10,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -1128,7 +1128,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 166,
+ "calls": 174,
  "note": null,
  "checkpointsTaken": {
   "21718001": [
