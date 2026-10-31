@@ -1,26 +1,26 @@
 {
  "date": "2026-10-30",
- "updatedAt": "2026-10-31T00:57:09.687Z",
+ "updatedAt": "2026-10-31T01:00:14.887Z",
  "state": "running",
  "games": [
   {
    "gameId": 21717990,
    "matchup": "CHA @ WAS",
-   "status": "3rd Qtr",
+   "status": "4th Qtr",
    "homeScore": 79,
-   "visitorScore": 56
+   "visitorScore": 59
   },
   {
    "gameId": 21717992,
    "matchup": "CHI @ BOS",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 78,
    "visitorScore": 49
   },
   {
    "gameId": 21717993,
    "matchup": "DET @ BKN",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 49,
    "visitorScore": 56
   },
@@ -28,7 +28,7 @@
    "gameId": 21717994,
    "matchup": "NYK @ PHI",
    "status": "3rd Qtr",
-   "homeScore": 53,
+   "homeScore": 58,
    "visitorScore": 44
   },
   {
@@ -42,22 +42,22 @@
    "gameId": 21717996,
    "matchup": "IND @ MIA",
    "status": "2nd Qtr",
-   "homeScore": 51,
+   "homeScore": 56,
    "visitorScore": 54
   },
   {
    "gameId": 21717997,
    "matchup": "HOU @ DAL",
    "status": "2nd Qtr",
-   "homeScore": 35,
-   "visitorScore": 36
+   "homeScore": 38,
+   "visitorScore": 38
   },
   {
    "gameId": 21717998,
    "matchup": "LAC @ MIN",
    "status": "2nd Qtr",
-   "homeScore": 58,
-   "visitorScore": 50
+   "homeScore": 64,
+   "visitorScore": 54
   },
   {
    "gameId": 21717999,
@@ -130,7 +130,7 @@
    "scoreMargin": 4,
    "valueAtPick": 6,
    "projection": 22.451691470441414,
-   "latestValue": 13,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -492,7 +492,7 @@
    "scoreMargin": 8,
    "valueAtPick": 0,
    "projection": 5.351722584269099,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -656,7 +656,7 @@
    "scoreMargin": -5,
    "valueAtPick": 9,
    "projection": 17.57157931269208,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -1192,7 +1192,7 @@
    "scoreMargin": -7,
    "valueAtPick": 3,
    "projection": 19.97237555788694,
-   "latestValue": 5,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -1388,7 +1388,7 @@
    "scoreMargin": 10,
    "valueAtPick": 11,
    "projection": 30.552703024105355,
-   "latestValue": 13,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -1454,7 +1454,7 @@
    "scoreMargin": 9,
    "valueAtPick": 5,
    "projection": 8.232356891630781,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -2231,14 +2231,186 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717990-409-threes",
+   "gameDate": "2026-10-30",
+   "gameId": 21717990,
+   "matchup": "CHA @ WAS",
+   "playerId": 409,
+   "playerName": "Dennis Schroder",
+   "teamAbbreviation": "CHA",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 250,
+   "vendor": "draftkings",
+   "modelProbability": 0.35443120621984314,
+   "evPercent": 24.05092217694511,
+   "foundAt": "2026-10-31T00:59:09.256Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -20,
+   "valueAtPick": 1,
+   "projection": 1.2405044885218273,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717990-38017725-rebounds",
+   "gameDate": "2026-10-30",
+   "gameId": 21717990,
+   "matchup": "CHA @ WAS",
+   "playerId": 38017725,
+   "playerName": "Moussa Diabate",
+   "teamAbbreviation": "CHA",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 8.5,
+   "americanOdds": 100,
+   "vendor": "caesars",
+   "modelProbability": 0.5967965981208955,
+   "evPercent": 19.359319624179093,
+   "foundAt": "2026-10-31T00:59:09.256Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -20,
+   "valueAtPick": 7,
+   "projection": 8.91461097634325,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717990-8-points",
+   "gameDate": "2026-10-30",
+   "gameId": 21717990,
+   "matchup": "CHA @ WAS",
+   "playerId": 8,
+   "playerName": "Grayson Allen",
+   "teamAbbreviation": "CHA",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 8.5,
+   "americanOdds": -130,
+   "vendor": "draftkings",
+   "modelProbability": 0.6705507972829313,
+   "evPercent": 18.63591028851861,
+   "foundAt": "2026-10-31T00:59:09.256Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -20,
+   "valueAtPick": 5,
+   "projection": 7.409982139158412,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717990-1091340077-points",
+   "gameDate": "2026-10-30",
+   "gameId": 21717990,
+   "matchup": "CHA @ WAS",
+   "playerId": 1091340077,
+   "playerName": "AJ Dybantsa",
+   "teamAbbreviation": "WAS",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 14.5,
+   "americanOdds": 114,
+   "vendor": "fanduel",
+   "modelProbability": 0.5452322322429907,
+   "evPercent": 16.679697699999995,
+   "foundAt": "2026-10-31T00:59:09.256Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 20,
+   "valueAtPick": 12,
+   "projection": 14.80255808024627,
+   "latestValue": 12,
+   "tags": [
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717990-117-rebounds",
+   "gameDate": "2026-10-30",
+   "gameId": 21717990,
+   "matchup": "CHA @ WAS",
+   "playerId": 117,
+   "playerName": "Anthony Davis",
+   "teamAbbreviation": "WAS",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": -125,
+   "vendor": "fanduel",
+   "modelProbability": 0.6381174491346229,
+   "evPercent": 14.861140844232112,
+   "foundAt": "2026-10-31T00:59:09.256Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 20,
+   "valueAtPick": 8,
+   "projection": 10.13080939635319,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 341,
+ "calls": 351,
  "note": null,
  "checkpointsTaken": {
   "21717990": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21717992": [
    "end-q1",
