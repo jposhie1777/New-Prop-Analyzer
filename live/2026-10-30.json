@@ -1,13 +1,13 @@
 {
  "date": "2026-10-30",
- "updatedAt": "2026-10-31T00:49:09.110Z",
+ "updatedAt": "2026-10-31T00:53:10.628Z",
  "state": "running",
  "games": [
   {
    "gameId": 21717990,
    "matchup": "CHA @ WAS",
    "status": "3rd Qtr",
-   "homeScore": 75,
+   "homeScore": 79,
    "visitorScore": 54
   },
   {
@@ -35,8 +35,8 @@
    "gameId": 21717995,
    "matchup": "ORL @ TOR",
    "status": "2nd Qtr",
-   "homeScore": 53,
-   "visitorScore": 62
+   "homeScore": 55,
+   "visitorScore": 64
   },
   {
    "gameId": 21717996,
@@ -49,15 +49,15 @@
    "gameId": 21717997,
    "matchup": "HOU @ DAL",
    "status": "2nd Qtr",
-   "homeScore": 32,
-   "visitorScore": 29
+   "homeScore": 35,
+   "visitorScore": 36
   },
   {
    "gameId": 21717998,
    "matchup": "LAC @ MIN",
    "status": "2nd Qtr",
-   "homeScore": 50,
-   "visitorScore": 40
+   "homeScore": 53,
+   "visitorScore": 43
   },
   {
    "gameId": 21717999,
@@ -97,7 +97,7 @@
    "scoreMargin": -4,
    "valueAtPick": 2,
    "projection": 15.210236031443225,
-   "latestValue": 16,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Under",
@@ -961,7 +961,7 @@
    "scoreMargin": 4,
    "valueAtPick": 8,
    "projection": 25.826356128815384,
-   "latestValue": 16,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Over",
@@ -994,7 +994,7 @@
    "scoreMargin": -4,
    "valueAtPick": 7,
    "projection": 23.895397183392763,
-   "latestValue": 21,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Over",
@@ -1192,7 +1192,7 @@
    "scoreMargin": -7,
    "valueAtPick": 3,
    "projection": 19.97237555788694,
-   "latestValue": 3,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -1716,7 +1716,7 @@
    "scoreMargin": 6,
    "valueAtPick": 5,
    "projection": 13.277584109908199,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -2063,9 +2063,177 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717995-17896026-points_assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21717995,
+   "matchup": "ORL @ TOR",
+   "playerId": 17896026,
+   "playerName": "Franz Wagner",
+   "teamAbbreviation": "ORL",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 35.5,
+   "americanOdds": -130,
+   "vendor": "fanduel",
+   "modelProbability": 0.6954076480563625,
+   "evPercent": 23.033660809971824,
+   "foundAt": "2026-10-31T00:53:09.032Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 9,
+   "valueAtPick": 22,
+   "projection": 38.665125771430894,
+   "latestValue": 22,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717995-85-points_assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21717995,
+   "matchup": "ORL @ TOR",
+   "playerId": 85,
+   "playerName": "Wendell Carter Jr.",
+   "teamAbbreviation": "ORL",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 19.5,
+   "americanOdds": -120,
+   "vendor": "fanduel",
+   "modelProbability": 0.6708517164925354,
+   "evPercent": 22.989481356964838,
+   "foundAt": "2026-10-31T00:53:09.032Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 9,
+   "valueAtPick": 13,
+   "projection": 21.44970318506241,
+   "latestValue": 13,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717995-1057268940-assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21717995,
+   "matchup": "ORL @ TOR",
+   "playerId": 1057268940,
+   "playerName": "Collin Murray-Boyles",
+   "teamAbbreviation": "TOR",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": -110,
+   "vendor": "draftkings",
+   "modelProbability": 0.6424067234758237,
+   "evPercent": 22.641283572657265,
+   "foundAt": "2026-10-31T00:53:09.032Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -9,
+   "valueAtPick": 1,
+   "projection": 1.930343857067357,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717995-17896055-assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21717995,
+   "matchup": "ORL @ TOR",
+   "playerId": 17896055,
+   "playerName": "Scottie Barnes",
+   "teamAbbreviation": "TOR",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": 114,
+   "vendor": "draftkings",
+   "modelProbability": 0.5681110055016774,
+   "evPercent": 21.575755177358946,
+   "foundAt": "2026-10-31T00:53:09.032Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -9,
+   "valueAtPick": 3,
+   "projection": 5.189590036659954,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Foul trouble",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717995-1091350801-points",
+   "gameDate": "2026-10-30",
+   "gameId": 21717995,
+   "matchup": "ORL @ TOR",
+   "playerId": 1091350801,
+   "playerName": "Allen Graves",
+   "teamAbbreviation": "TOR",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.6372066748671253,
+   "evPercent": 17.72123315341807,
+   "foundAt": "2026-10-31T00:53:09.032Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -9,
+   "valueAtPick": 7,
+   "projection": 10.552259155423371,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 321,
+ "calls": 333,
  "note": null,
  "checkpointsTaken": {
   "21717990": [
@@ -2085,7 +2253,8 @@
    "halftime"
   ],
   "21717995": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21717996": [
    "end-q1"
