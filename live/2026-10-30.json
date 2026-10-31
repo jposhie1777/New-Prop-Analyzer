@@ -1,6 +1,6 @@
 {
  "date": "2026-10-30",
- "updatedAt": "2026-10-31T01:53:11.974Z",
+ "updatedAt": "2026-10-31T01:57:11.930Z",
  "state": "running",
  "games": [
   {
@@ -14,50 +14,50 @@
    "gameId": 21717992,
    "matchup": "CHI @ BOS",
    "status": "4th Qtr",
-   "homeScore": 114,
-   "visitorScore": 96
+   "homeScore": 118,
+   "visitorScore": 98
   },
   {
    "gameId": 21717993,
    "matchup": "DET @ BKN",
    "status": "4th Qtr",
-   "homeScore": 79,
-   "visitorScore": 100
+   "homeScore": 94,
+   "visitorScore": 110
   },
   {
    "gameId": 21717994,
    "matchup": "NYK @ PHI",
    "status": "4th Qtr",
-   "homeScore": 89,
-   "visitorScore": 87
+   "homeScore": 94,
+   "visitorScore": 90
   },
   {
    "gameId": 21717995,
    "matchup": "ORL @ TOR",
    "status": "4th Qtr",
-   "homeScore": 107,
-   "visitorScore": 112
+   "homeScore": 109,
+   "visitorScore": 117
   },
   {
    "gameId": 21717996,
    "matchup": "IND @ MIA",
    "status": "3rd Qtr",
-   "homeScore": 92,
-   "visitorScore": 71
+   "homeScore": 98,
+   "visitorScore": 75
   },
   {
    "gameId": 21717997,
    "matchup": "HOU @ DAL",
-   "status": "3rd Qtr",
-   "homeScore": 71,
-   "visitorScore": 80
+   "status": "4th Qtr",
+   "homeScore": 76,
+   "visitorScore": 84
   },
   {
    "gameId": 21717998,
    "matchup": "LAC @ MIN",
    "status": "4th Qtr",
    "homeScore": 98,
-   "visitorScore": 84
+   "visitorScore": 88
   },
   {
    "gameId": 21717999,
@@ -349,7 +349,7 @@
    "scoreMargin": 7,
    "valueAtPick": 1,
    "projection": 2.7272153434593647,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Over",
@@ -798,7 +798,7 @@
    "scoreMargin": -19,
    "valueAtPick": 1,
    "projection": 14.535644096081016,
-   "latestValue": 15,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Over",
@@ -1396,7 +1396,7 @@
    "scoreMargin": 10,
    "valueAtPick": 0,
    "projection": 2.4305439360962184,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Under",
     "Rebounds",
@@ -1461,7 +1461,7 @@
    "scoreMargin": 9,
    "valueAtPick": 8,
    "projection": 13.242760465884992,
-   "latestValue": 10,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -1657,7 +1657,7 @@
    "scoreMargin": 6,
    "valueAtPick": 1,
    "projection": 5.243863671875,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Over",
@@ -1789,7 +1789,7 @@
    "scoreMargin": -29,
    "valueAtPick": 4,
    "projection": 7.810674861246966,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -2126,7 +2126,7 @@
    "scoreMargin": 9,
    "valueAtPick": 22,
    "projection": 38.665125771430894,
-   "latestValue": 36,
+   "latestValue": 37,
    "tags": [
     "Best bet",
     "Over",
@@ -2984,7 +2984,7 @@
    "scoreMargin": 25,
    "valueAtPick": 30,
    "projection": 35.53374392699913,
-   "latestValue": 30,
+   "latestValue": 34,
    "tags": [
     "Best bet",
     "Over",
@@ -3228,7 +3228,7 @@
    "scoreMargin": -26,
    "valueAtPick": 9,
    "projection": 10.17354730972053,
-   "latestValue": 14,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Under",
@@ -3395,7 +3395,7 @@
    "scoreMargin": 9,
    "valueAtPick": 29,
    "projection": 37.24807304137202,
-   "latestValue": 32,
+   "latestValue": 33,
    "tags": [
     "Best bet",
     "Under",
@@ -3809,9 +3809,178 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717997-1057262088-rebounds_assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21717997,
+   "matchup": "HOU @ DAL",
+   "playerId": 1057262088,
+   "playerName": "Cooper Flagg",
+   "teamAbbreviation": "DAL",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 13.5,
+   "americanOdds": 110,
+   "vendor": "fanduel",
+   "modelProbability": 0.5811312123254442,
+   "evPercent": 22.03755458834329,
+   "foundAt": "2026-10-31T01:55:11.520Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -8,
+   "valueAtPick": 11,
+   "projection": 13.121521011487832,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717997-38017695-points",
+   "gameDate": "2026-10-30",
+   "gameId": 21717997,
+   "matchup": "HOU @ DAL",
+   "playerId": 38017695,
+   "playerName": "Tari Eason",
+   "teamAbbreviation": "HOU",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 14.5,
+   "americanOdds": -125,
+   "vendor": "draftkings",
+   "modelProbability": 0.6570890166296722,
+   "evPercent": 18.276022993341012,
+   "foundAt": "2026-10-31T01:55:11.520Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 8,
+   "valueAtPick": 11,
+   "projection": 15.928460801382553,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717997-458-assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21717997,
+   "matchup": "HOU @ DAL",
+   "playerId": 458,
+   "playerName": "Fred VanVleet",
+   "teamAbbreviation": "HOU",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 6.5,
+   "americanOdds": -120,
+   "vendor": "caesars",
+   "modelProbability": 0.6443675005567728,
+   "evPercent": 18.134041768741692,
+   "foundAt": "2026-10-31T01:55:11.520Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 8,
+   "valueAtPick": 5,
+   "projection": 6.038726792750057,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717997-228-threes",
+   "gameDate": "2026-10-30",
+   "gameId": 21717997,
+   "matchup": "HOU @ DAL",
+   "playerId": 228,
+   "playerName": "Kyrie Irving",
+   "teamAbbreviation": "DAL",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": -120,
+   "vendor": "fanduel",
+   "modelProbability": 0.6434110641184807,
+   "evPercent": 17.958695088388144,
+   "foundAt": "2026-10-31T01:55:11.520Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -8,
+   "valueAtPick": 3,
+   "projection": 3.2445304224055196,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717997-56677825-points",
+   "gameDate": "2026-10-30",
+   "gameId": 21717997,
+   "matchup": "HOU @ DAL",
+   "playerId": 56677825,
+   "playerName": "Amen Thompson",
+   "teamAbbreviation": "HOU",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 16.5,
+   "americanOdds": -108,
+   "vendor": "fanduel",
+   "modelProbability": 0.6102336049967824,
+   "evPercent": 17.526472073454393,
+   "foundAt": "2026-10-31T01:55:11.520Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 8,
+   "valueAtPick": 14,
+   "projection": 17.310075979710334,
+   "latestValue": 14,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 490,
+ "calls": 502,
  "note": null,
  "checkpointsTaken": {
   "21717990": [
@@ -3845,7 +4014,8 @@
   ],
   "21717997": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21717998": [
    "end-q1",
