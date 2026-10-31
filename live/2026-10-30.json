@@ -1,6 +1,6 @@
 {
  "date": "2026-10-30",
- "updatedAt": "2026-10-31T03:20:15.304Z",
+ "updatedAt": "2026-10-31T03:24:15.537Z",
  "state": "running",
  "games": [
   {
@@ -63,15 +63,15 @@
    "gameId": 21717999,
    "matchup": "LAL @ GSW",
    "status": "2nd Qtr",
-   "homeScore": 47,
-   "visitorScore": 51
+   "homeScore": 53,
+   "visitorScore": 53
   },
   {
    "gameId": 21718000,
    "matchup": "DEN @ PHX",
    "status": "3rd Qtr",
-   "homeScore": 67,
-   "visitorScore": 71
+   "homeScore": 74,
+   "visitorScore": 79
   }
  ],
  "picks": [
@@ -4660,7 +4660,7 @@
    "scoreMargin": 5,
    "valueAtPick": 0,
    "projection": 3.3214644656396395,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -4727,7 +4727,7 @@
    "scoreMargin": -5,
    "valueAtPick": 4,
    "projection": 22.08995469216908,
-   "latestValue": 14,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Under",
@@ -4998,7 +4998,7 @@
    "scoreMargin": 4,
    "valueAtPick": 14,
    "projection": 34.87509151615447,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -5075,9 +5075,175 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717999-413-threes",
+   "gameDate": "2026-10-30",
+   "gameId": 21717999,
+   "matchup": "LAL @ GSW",
+   "playerId": 413,
+   "playerName": "Collin Sexton",
+   "teamAbbreviation": "LAL",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6177886200011042,
+   "evPercent": 24.79330124022305,
+   "foundAt": "2026-10-31T03:23:15.172Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 0,
+   "valueAtPick": 0,
+   "projection": 0.8507209036212658,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717999-666923-steals",
+   "gameDate": "2026-10-30",
+   "gameId": 21717999,
+   "matchup": "LAL @ GSW",
+   "playerId": 666923,
+   "playerName": "Matisse Thybulle",
+   "teamAbbreviation": "LAL",
+   "propType": "steals",
+   "label": "Steals",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": -130,
+   "vendor": "draftkings",
+   "modelProbability": 0.7027885071313638,
+   "evPercent": 24.339505107856652,
+   "foundAt": "2026-10-31T03:23:15.172Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 0,
+   "valueAtPick": 2,
+   "projection": 3.1391531860443274,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Steals",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717999-17895858-threes",
+   "gameDate": "2026-10-30",
+   "gameId": 21717999,
+   "matchup": "LAL @ GSW",
+   "playerId": 17895858,
+   "playerName": "Quentin Grimes",
+   "teamAbbreviation": "LAL",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 116,
+   "vendor": "fanduel",
+   "modelProbability": 0.5749776758852105,
+   "evPercent": 24.195177991205476,
+   "foundAt": "2026-10-31T03:23:15.172Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 0,
+   "valueAtPick": 1,
+   "projection": 1.7008266489528219,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717999-219-rebounds",
+   "gameDate": "2026-10-30",
+   "gameId": 21717999,
+   "matchup": "LAL @ GSW",
+   "playerId": 219,
+   "playerName": "Al Horford",
+   "teamAbbreviation": "GSW",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 110,
+   "vendor": "draftkings",
+   "modelProbability": 0.5899850960432085,
+   "evPercent": 23.89687016907378,
+   "foundAt": "2026-10-31T03:23:15.172Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 0,
+   "valueAtPick": 1,
+   "projection": 2.8815708316627786,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717999-185-assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21717999,
+   "matchup": "LAL @ GSW",
+   "playerId": 185,
+   "playerName": "Draymond Green",
+   "teamAbbreviation": "GSW",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 8.5,
+   "americanOdds": 113,
+   "vendor": "caesars",
+   "modelProbability": 0.5776938763501933,
+   "evPercent": 23.04879566259117,
+   "foundAt": "2026-10-31T03:23:15.172Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 0,
+   "valueAtPick": 6,
+   "projection": 8.908715918431906,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 693,
+ "calls": 705,
  "note": null,
  "checkpointsTaken": {
   "21717990": [
@@ -5121,7 +5287,8 @@
    "end-q3"
   ],
   "21717999": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718000": [
    "end-q1",
