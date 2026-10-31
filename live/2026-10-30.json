@@ -1,47 +1,47 @@
 {
  "date": "2026-10-30",
- "updatedAt": "2026-10-31T01:15:11.906Z",
+ "updatedAt": "2026-10-31T01:19:10.525Z",
  "state": "running",
  "games": [
   {
    "gameId": 21717990,
    "matchup": "CHA @ WAS",
    "status": "4th Qtr",
-   "homeScore": 86,
+   "homeScore": 92,
    "visitorScore": 70
   },
   {
    "gameId": 21717992,
    "matchup": "CHI @ BOS",
    "status": "3rd Qtr",
-   "homeScore": 86,
-   "visitorScore": 66
+   "homeScore": 88,
+   "visitorScore": 67
   },
   {
    "gameId": 21717993,
    "matchup": "DET @ BKN",
    "status": "3rd Qtr",
    "homeScore": 61,
-   "visitorScore": 75
+   "visitorScore": 80
   },
   {
    "gameId": 21717994,
    "matchup": "NYK @ PHI",
    "status": "3rd Qtr",
-   "homeScore": 65,
-   "visitorScore": 56
+   "homeScore": 70,
+   "visitorScore": 60
   },
   {
    "gameId": 21717995,
    "matchup": "ORL @ TOR",
    "status": "3rd Qtr",
-   "homeScore": 65,
-   "visitorScore": 77
+   "homeScore": 76,
+   "visitorScore": 80
   },
   {
    "gameId": 21717996,
    "matchup": "IND @ MIA",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 68,
    "visitorScore": 61
   },
@@ -55,7 +55,7 @@
   {
    "gameId": 21717998,
    "matchup": "LAC @ MIN",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 69,
    "visitorScore": 56
   },
@@ -130,7 +130,7 @@
    "scoreMargin": 4,
    "valueAtPick": 6,
    "projection": 22.451691470441414,
-   "latestValue": 16,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -394,7 +394,7 @@
    "scoreMargin": -7,
    "valueAtPick": 2,
    "projection": 6.174963501890475,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -792,7 +792,7 @@
    "scoreMargin": 19,
    "valueAtPick": 0,
    "projection": 1.4730896259190904,
-   "latestValue": 0,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -860,7 +860,7 @@
    "scoreMargin": -19,
    "valueAtPick": 2,
    "projection": 7.209152509338035,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -1027,7 +1027,7 @@
    "scoreMargin": -4,
    "valueAtPick": 12,
    "projection": 23.042890780502713,
-   "latestValue": 17,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Over",
@@ -1060,7 +1060,7 @@
    "scoreMargin": -4,
    "valueAtPick": 0,
    "projection": 0.7430368011334711,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Under",
@@ -1487,7 +1487,7 @@
    "scoreMargin": -9,
    "valueAtPick": 15,
    "projection": 29.7019034717162,
-   "latestValue": 18,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -1520,7 +1520,7 @@
    "scoreMargin": 9,
    "valueAtPick": 3,
    "projection": 6.704543697423701,
-   "latestValue": 6,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -1553,7 +1553,7 @@
    "scoreMargin": 9,
    "valueAtPick": 1,
    "projection": 2.431158830842463,
-   "latestValue": 1,
+   "latestValue": 3,
    "tags": [
     "Over",
     "Rebounds",
@@ -1749,7 +1749,7 @@
    "scoreMargin": -29,
    "valueAtPick": 4,
    "projection": 7.810674861246966,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -1816,7 +1816,7 @@
    "scoreMargin": -29,
    "valueAtPick": 11,
    "projection": 16.768481790628087,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -1851,7 +1851,7 @@
    "scoreMargin": -29,
    "valueAtPick": 7,
    "projection": 10.382406122083614,
-   "latestValue": 10,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Over",
@@ -2086,7 +2086,7 @@
    "scoreMargin": 9,
    "valueAtPick": 22,
    "projection": 38.665125771430894,
-   "latestValue": 25,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Over",
@@ -2358,7 +2358,7 @@
    "scoreMargin": 20,
    "valueAtPick": 12,
    "projection": 14.80255808024627,
-   "latestValue": 12,
+   "latestValue": 15,
    "tags": [
     "Over",
     "Points",
@@ -2391,7 +2391,7 @@
    "scoreMargin": 20,
    "valueAtPick": 8,
    "projection": 10.13080939635319,
-   "latestValue": 10,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Over",
@@ -2732,9 +2732,178 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717996-38017507-assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21717996,
+   "matchup": "IND @ MIA",
+   "playerId": 38017507,
+   "playerName": "Andrew Nembhard",
+   "teamAbbreviation": "IND",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 9.5,
+   "americanOdds": 118,
+   "vendor": "fanduel",
+   "modelProbability": 0.5701986183805866,
+   "evPercent": 24.303298806967867,
+   "foundAt": "2026-10-31T01:17:10.052Z",
+   "clockLabel": "Halftime",
+   "period": 3,
+   "scoreMargin": -7,
+   "valueAtPick": 5,
+   "projection": 9.064010131195335,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Hot shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717996-4-assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21717996,
+   "matchup": "IND @ MIA",
+   "playerId": 4,
+   "playerName": "Bam Adebayo",
+   "teamAbbreviation": "MIA",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 110,
+   "vendor": "fanduel",
+   "modelProbability": 0.5825407454468845,
+   "evPercent": 22.333556543845745,
+   "foundAt": "2026-10-31T01:17:10.052Z",
+   "clockLabel": "Halftime",
+   "period": 3,
+   "scoreMargin": 7,
+   "valueAtPick": 2,
+   "projection": 3.846222730859375,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Hot shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717996-15-points_rebounds_assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21717996,
+   "matchup": "IND @ MIA",
+   "playerId": 15,
+   "playerName": "Giannis Antetokounmpo",
+   "teamAbbreviation": "MIA",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 55.5,
+   "americanOdds": -132,
+   "vendor": "fanduel",
+   "modelProbability": 0.6843931186185741,
+   "evPercent": 20.287275393567562,
+   "foundAt": "2026-10-31T01:17:10.052Z",
+   "clockLabel": "Halftime",
+   "period": 3,
+   "scoreMargin": 7,
+   "valueAtPick": 30,
+   "projection": 52.079298647304796,
+   "latestValue": 30,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Hot shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717996-1028036986-points_assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21717996,
+   "matchup": "IND @ MIA",
+   "playerId": 1028036986,
+   "playerName": "Pelle Larsson",
+   "teamAbbreviation": "MIA",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 18.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6029607089793159,
+   "evPercent": 19.409865895903742,
+   "foundAt": "2026-10-31T01:17:10.052Z",
+   "clockLabel": "Halftime",
+   "period": 3,
+   "scoreMargin": 7,
+   "valueAtPick": 10,
+   "projection": 17.421591619516,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717996-17896103-points_rebounds_assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21717996,
+   "matchup": "IND @ MIA",
+   "playerId": 17896103,
+   "playerName": "Jay Huff",
+   "teamAbbreviation": "IND",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 20.5,
+   "americanOdds": -120,
+   "vendor": "fanduel",
+   "modelProbability": 0.6463078129795172,
+   "evPercent": 18.4897657129115,
+   "foundAt": "2026-10-31T01:17:10.052Z",
+   "clockLabel": "Halftime",
+   "period": 3,
+   "scoreMargin": -7,
+   "valueAtPick": 14,
+   "projection": 22.122438887671024,
+   "latestValue": 14,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 389,
+ "calls": 401,
  "note": null,
  "checkpointsTaken": {
   "21717990": [
@@ -2759,7 +2928,8 @@
    "halftime"
   ],
   "21717996": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21717997": [
    "end-q1",
