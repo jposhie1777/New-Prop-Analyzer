@@ -1,6 +1,6 @@
 {
  "date": "2026-10-31",
- "updatedAt": "2026-10-31T23:24:01.551Z",
+ "updatedAt": "2026-10-31T23:28:01.674Z",
  "state": "running",
  "games": [
   {
@@ -15,14 +15,14 @@
    "matchup": "PHI @ CHA",
    "status": "3rd Qtr",
    "homeScore": 57,
-   "visitorScore": 61
+   "visitorScore": 62
   },
   {
    "gameId": 21718003,
    "matchup": "ATL @ NOP",
    "status": "1st Qtr",
-   "homeScore": 12,
-   "visitorScore": 8
+   "homeScore": 23,
+   "visitorScore": 15
   },
   {
    "gameId": 21718004,
@@ -680,7 +680,7 @@
    "scoreMargin": -10,
    "valueAtPick": 16,
    "projection": 43.91938337126092,
-   "latestValue": 22,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Over",
@@ -958,7 +958,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 108,
+ "calls": 116,
  "note": null,
  "checkpointsTaken": {
   "21718001": [
