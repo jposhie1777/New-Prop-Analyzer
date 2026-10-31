@@ -1,6 +1,6 @@
 {
  "date": "2026-10-31",
- "updatedAt": "2026-10-31T22:43:59.692Z",
+ "updatedAt": "2026-10-31T22:47:59.916Z",
  "state": "running",
  "games": [
   {
@@ -14,8 +14,8 @@
    "gameId": 21718002,
    "matchup": "PHI @ CHA",
    "status": "2nd Qtr",
-   "homeScore": 37,
-   "visitorScore": 33
+   "homeScore": 38,
+   "visitorScore": 35
   },
   {
    "gameId": 21718003,
@@ -680,7 +680,7 @@
    "scoreMargin": -10,
    "valueAtPick": 16,
    "projection": 43.91938337126092,
-   "latestValue": 17,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -791,7 +791,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 25,
+ "calls": 33,
  "note": null,
  "checkpointsTaken": {
   "21718001": [
