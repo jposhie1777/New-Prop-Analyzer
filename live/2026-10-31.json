@@ -1,6 +1,6 @@
 {
  "date": "2026-10-31",
- "updatedAt": "2026-10-31T21:28:20.204Z",
+ "updatedAt": "2026-10-31T22:19:21.788Z",
  "state": "running",
  "games": [
   {
@@ -13,9 +13,9 @@
   {
    "gameId": 21718002,
    "matchup": "PHI @ CHA",
-   "status": "2026-10-31T22:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 10,
+   "visitorScore": 14
   },
   {
    "gameId": 21718003,
@@ -626,8 +626,8 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 388,
- "note": null,
+ "calls": 490,
+ "note": "This run hit its time limit; the next scheduled run continues.",
  "checkpointsTaken": {
   "21718001": [
    "end-q1",
