@@ -1,6 +1,6 @@
 {
  "date": "2026-10-30",
- "updatedAt": "2026-10-31T02:32:13.402Z",
+ "updatedAt": "2026-10-31T02:36:13.544Z",
  "state": "running",
  "games": [
   {
@@ -42,15 +42,15 @@
    "gameId": 21717996,
    "matchup": "IND @ MIA",
    "status": "4th Qtr",
-   "homeScore": 138,
-   "visitorScore": 118
+   "homeScore": 141,
+   "visitorScore": 125
   },
   {
    "gameId": 21717997,
    "matchup": "HOU @ DAL",
    "status": "4th Qtr",
-   "homeScore": 107,
-   "visitorScore": 105
+   "homeScore": 111,
+   "visitorScore": 108
   },
   {
    "gameId": 21717998,
@@ -64,13 +64,13 @@
    "matchup": "LAL @ GSW",
    "status": "1st Qtr",
    "homeScore": 14,
-   "visitorScore": 28
+   "visitorScore": 31
   },
   {
    "gameId": 21718000,
    "matchup": "DEN @ PHX",
-   "status": "1st Qtr",
-   "homeScore": 34,
+   "status": "2nd Qtr",
+   "homeScore": 37,
    "visitorScore": 32
   }
  ],
@@ -1312,7 +1312,7 @@
    "scoreMargin": -7,
    "valueAtPick": 3,
    "projection": 19.97237555788694,
-   "latestValue": 24,
+   "latestValue": 27,
    "tags": [
     "Best bet",
     "Under",
@@ -4450,9 +4450,176 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718000-57-threes",
+   "gameDate": "2026-10-30",
+   "gameId": 21718000,
+   "matchup": "DEN @ PHX",
+   "playerId": 57,
+   "playerName": "Devin Booker",
+   "teamAbbreviation": "PHX",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": 110,
+   "vendor": "betrivers",
+   "modelProbability": 0.5938326630559451,
+   "evPercent": 24.70485924174848,
+   "foundAt": "2026-10-31T02:33:13.108Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 5,
+   "valueAtPick": 0,
+   "projection": 1.1736450965711804,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718000-246-threes",
+   "gameDate": "2026-10-30",
+   "gameId": 21718000,
+   "matchup": "DEN @ PHX",
+   "playerId": 246,
+   "playerName": "Nikola Jokic",
+   "teamAbbreviation": "DEN",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": -105,
+   "vendor": "betmgm",
+   "modelProbability": 0.635591384799945,
+   "evPercent": 24.091651318084505,
+   "foundAt": "2026-10-31T02:33:13.108Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -5,
+   "valueAtPick": 0,
+   "projection": 1.0493611562499998,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718000-66-rebounds_assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21718000,
+   "matchup": "DEN @ PHX",
+   "playerId": 66,
+   "playerName": "Dillon Brooks",
+   "teamAbbreviation": "PHX",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": -130,
+   "vendor": "fanduel",
+   "modelProbability": 0.6948487474997855,
+   "evPercent": 22.9347784038082,
+   "foundAt": "2026-10-31T02:33:13.108Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 5,
+   "valueAtPick": 0,
+   "projection": 3.3214644656396395,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718000-177-points",
+   "gameDate": "2026-10-30",
+   "gameId": 21718000,
+   "matchup": "DEN @ PHX",
+   "playerId": 177,
+   "playerName": "Aaron Gordon",
+   "teamAbbreviation": "DEN",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 14.5,
+   "americanOdds": -106,
+   "vendor": "caesars",
+   "modelProbability": 0.629300791455337,
+   "evPercent": 22.298078339433424,
+   "foundAt": "2026-10-31T02:33:13.108Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -5,
+   "valueAtPick": 3,
+   "projection": 12.85241273138214,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718000-335-points_rebounds",
+   "gameDate": "2026-10-30",
+   "gameId": 21718000,
+   "matchup": "DEN @ PHX",
+   "playerId": 335,
+   "playerName": "Jamal Murray",
+   "teamAbbreviation": "DEN",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 24.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.6456603946768126,
+   "evPercent": 21.202916193717456,
+   "foundAt": "2026-10-31T02:33:13.108Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -5,
+   "valueAtPick": 4,
+   "projection": 22.08995469216908,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 581,
+ "calls": 594,
  "note": null,
  "checkpointsTaken": {
   "21717990": [
@@ -4494,6 +4661,9 @@
    "end-q1",
    "halftime",
    "end-q3"
+  ],
+  "21718000": [
+   "end-q1"
   ]
  }
 }
