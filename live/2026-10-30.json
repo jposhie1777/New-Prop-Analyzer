@@ -1,6 +1,6 @@
 {
  "date": "2026-10-30",
- "updatedAt": "2026-10-31T03:04:14.721Z",
+ "updatedAt": "2026-10-31T03:08:14.909Z",
  "state": "running",
  "games": [
   {
@@ -64,7 +64,7 @@
    "matchup": "LAL @ GSW",
    "status": "2nd Qtr",
    "homeScore": 33,
-   "visitorScore": 42
+   "visitorScore": 44
   },
   {
    "gameId": 21718000,
@@ -4795,7 +4795,7 @@
    "scoreMargin": 23,
    "valueAtPick": 0,
    "projection": 1.1530065281249997,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Under",
@@ -4829,7 +4829,7 @@
    "scoreMargin": 23,
    "valueAtPick": 4,
    "projection": 13.248068841552733,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -4908,9 +4908,176 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718000-18678058-points_rebounds_assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21718000,
+   "matchup": "DEN @ PHX",
+   "playerId": 18678058,
+   "playerName": "Jordan Goodwin",
+   "teamAbbreviation": "PHX",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 10.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.6605037219347429,
+   "evPercent": 23.989295170206137,
+   "foundAt": "2026-10-31T03:05:14.455Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -4,
+   "valueAtPick": 4,
+   "projection": 9.084760502458753,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718000-38017727-points_rebounds_assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21718000,
+   "matchup": "DEN @ PHX",
+   "playerId": 38017727,
+   "playerName": "Collin Gillespie",
+   "teamAbbreviation": "PHX",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 26.5,
+   "americanOdds": -108,
+   "vendor": "fanduel",
+   "modelProbability": 0.643605893139357,
+   "evPercent": 23.953727567579875,
+   "foundAt": "2026-10-31T03:05:14.455Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -4,
+   "valueAtPick": 18,
+   "projection": 25.020760321919536,
+   "latestValue": 18,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718000-246-points_rebounds_assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21718000,
+   "matchup": "DEN @ PHX",
+   "playerId": 246,
+   "playerName": "Nikola Jokic",
+   "teamAbbreviation": "DEN",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 38.5,
+   "americanOdds": -130,
+   "vendor": "fanduel",
+   "modelProbability": 0.6995620197777896,
+   "evPercent": 23.768665037608926,
+   "foundAt": "2026-10-31T03:05:14.455Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 4,
+   "valueAtPick": 14,
+   "projection": 34.87509151615447,
+   "latestValue": 14,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Hot shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718000-17895966-points_rebounds_assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21718000,
+   "matchup": "DEN @ PHX",
+   "playerId": 17895966,
+   "playerName": "Jalen Green",
+   "teamAbbreviation": "PHX",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 18.5,
+   "americanOdds": -146,
+   "vendor": "fanduel",
+   "modelProbability": 0.722469595530345,
+   "evPercent": 21.731178424975937,
+   "foundAt": "2026-10-31T03:05:14.455Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -4,
+   "valueAtPick": 6,
+   "projection": 15.710765050611004,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718000-125-rebounds_assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21718000,
+   "matchup": "DEN @ PHX",
+   "playerId": 125,
+   "playerName": "DeMar DeRozan",
+   "teamAbbreviation": "DEN",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 8.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.598610641228625,
+   "evPercent": 20.91934952818224,
+   "foundAt": "2026-10-31T03:05:14.455Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 4,
+   "valueAtPick": 6,
+   "projection": 9.053786618924475,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Reb+Ast",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 657,
+ "calls": 669,
  "note": null,
  "checkpointsTaken": {
   "21717990": [
@@ -4957,7 +5124,8 @@
    "end-q1"
   ],
   "21718000": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
