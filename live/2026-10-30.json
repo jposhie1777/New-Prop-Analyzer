@@ -1,6 +1,6 @@
 {
  "date": "2026-10-30",
- "updatedAt": "2026-10-31T02:00:16.194Z",
+ "updatedAt": "2026-10-31T02:04:12.506Z",
  "state": "running",
  "games": [
   {
@@ -14,8 +14,8 @@
    "gameId": 21717992,
    "matchup": "CHI @ BOS",
    "status": "4th Qtr",
-   "homeScore": 119,
-   "visitorScore": 99
+   "homeScore": 123,
+   "visitorScore": 107
   },
   {
    "gameId": 21717993,
@@ -28,36 +28,36 @@
    "gameId": 21717994,
    "matchup": "NYK @ PHI",
    "status": "4th Qtr",
-   "homeScore": 94,
-   "visitorScore": 90
+   "homeScore": 96,
+   "visitorScore": 91
   },
   {
    "gameId": 21717995,
    "matchup": "ORL @ TOR",
    "status": "4th Qtr",
    "homeScore": 112,
-   "visitorScore": 117
+   "visitorScore": 119
   },
   {
    "gameId": 21717996,
    "matchup": "IND @ MIA",
    "status": "3rd Qtr",
    "homeScore": 103,
-   "visitorScore": 85
+   "visitorScore": 88
   },
   {
    "gameId": 21717997,
    "matchup": "HOU @ DAL",
    "status": "4th Qtr",
-   "homeScore": 80,
-   "visitorScore": 84
+   "homeScore": 88,
+   "visitorScore": 88
   },
   {
    "gameId": 21717998,
    "matchup": "LAC @ MIN",
    "status": "4th Qtr",
-   "homeScore": 98,
-   "visitorScore": 88
+   "homeScore": 106,
+   "visitorScore": 90
   },
   {
    "gameId": 21717999,
@@ -532,7 +532,7 @@
    "scoreMargin": 8,
    "valueAtPick": 0,
    "projection": 5.351722584269099,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -1186,7 +1186,7 @@
    "scoreMargin": 7,
    "valueAtPick": 2,
    "projection": 7.135313317425978,
-   "latestValue": 3,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -1416,7 +1416,7 @@
    "scoreMargin": 10,
    "valueAtPick": 0,
    "projection": 2.4305439360962184,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Under",
     "Rebounds",
@@ -1448,7 +1448,7 @@
    "scoreMargin": 10,
    "valueAtPick": 11,
    "projection": 30.552703024105355,
-   "latestValue": 19,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Over",
@@ -2658,7 +2658,7 @@
    "scoreMargin": 13,
    "valueAtPick": 3,
    "projection": 4.456144763521278,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Over",
     "3PM",
@@ -2822,7 +2822,7 @@
    "scoreMargin": 7,
    "valueAtPick": 6,
    "projection": 13.74335580107693,
-   "latestValue": 9,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Over",
@@ -3024,7 +3024,7 @@
    "scoreMargin": 25,
    "valueAtPick": 30,
    "projection": 35.53374392699913,
-   "latestValue": 34,
+   "latestValue": 35,
    "tags": [
     "Best bet",
     "Over",
@@ -3588,7 +3588,7 @@
    "scoreMargin": 7,
    "valueAtPick": 22,
    "projection": 31.05266832166832,
-   "latestValue": 29,
+   "latestValue": 31,
    "tags": [
     "Best bet",
     "Over",
@@ -3722,7 +3722,7 @@
    "scoreMargin": -17,
    "valueAtPick": 6,
    "projection": 6.95258383150285,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -3790,7 +3790,7 @@
    "scoreMargin": 17,
    "valueAtPick": 24,
    "projection": 27.986758725715028,
-   "latestValue": 24,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Over",
@@ -3993,7 +3993,7 @@
    "scoreMargin": -8,
    "valueAtPick": 3,
    "projection": 3.2445304224055196,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -4038,9 +4038,181 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717996-15-points_assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21717996,
+   "matchup": "IND @ MIA",
+   "playerId": 15,
+   "playerName": "Giannis Antetokounmpo",
+   "teamAbbreviation": "MIA",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 35.5,
+   "americanOdds": -125,
+   "vendor": "fanduel",
+   "modelProbability": 0.6910238034584395,
+   "evPercent": 24.384284622519115,
+   "foundAt": "2026-10-31T02:03:11.890Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 15,
+   "valueAtPick": 27,
+   "projection": 33.56233038284188,
+   "latestValue": 27,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717996-340-rebounds",
+   "gameDate": "2026-10-30",
+   "gameId": 21717996,
+   "matchup": "IND @ MIA",
+   "playerId": 340,
+   "playerName": "Larry Nance Jr.",
+   "teamAbbreviation": "IND",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 122,
+   "vendor": "fanduel",
+   "modelProbability": 0.5554926148847701,
+   "evPercent": 23.31936050441894,
+   "foundAt": "2026-10-31T02:03:11.890Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -15,
+   "valueAtPick": 2,
+   "projection": 2.63608521484375,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717996-360-rebounds",
+   "gameDate": "2026-10-30",
+   "gameId": 21717996,
+   "matchup": "IND @ MIA",
+   "playerId": 360,
+   "playerName": "Kelly Oubre Jr.",
+   "teamAbbreviation": "IND",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": 110,
+   "vendor": "fanduel",
+   "modelProbability": 0.5830702436119881,
+   "evPercent": 22.44475115851752,
+   "foundAt": "2026-10-31T02:03:11.890Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -15,
+   "valueAtPick": 4,
+   "projection": 4.717195150924912,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717996-38017507-points_rebounds_assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21717996,
+   "matchup": "IND @ MIA",
+   "playerId": 38017507,
+   "playerName": "Andrew Nembhard",
+   "teamAbbreviation": "IND",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 34.5,
+   "americanOdds": -140,
+   "vendor": "fanduel",
+   "modelProbability": 0.7094233397584226,
+   "evPercent": 21.615429672872466,
+   "foundAt": "2026-10-31T02:03:11.890Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -15,
+   "valueAtPick": 26,
+   "projection": 32.38567844211749,
+   "latestValue": 26,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717996-1028036986-points",
+   "gameDate": "2026-10-30",
+   "gameId": 21717996,
+   "matchup": "IND @ MIA",
+   "playerId": 1028036986,
+   "playerName": "Pelle Larsson",
+   "teamAbbreviation": "MIA",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 13.5,
+   "americanOdds": 114,
+   "vendor": "fanduel",
+   "modelProbability": 0.5636852947828062,
+   "evPercent": 20.62865308352051,
+   "foundAt": "2026-10-31T02:03:11.890Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 15,
+   "valueAtPick": 11,
+   "projection": 13.937018536352051,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 509,
+ "calls": 521,
  "note": null,
  "checkpointsTaken": {
   "21717990": [
@@ -4070,7 +4242,8 @@
   ],
   "21717996": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21717997": [
    "end-q1",
