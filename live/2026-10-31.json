@@ -1,0 +1,59 @@
+{
+ "date": "2026-10-31",
+ "updatedAt": "2026-10-31T16:34:36.580Z",
+ "state": "waiting",
+ "games": [
+  {
+   "gameId": 21718001,
+   "matchup": "POR @ UTA",
+   "status": "2026-10-31T19:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718002,
+   "matchup": "PHI @ CHA",
+   "status": "2026-10-31T22:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718003,
+   "matchup": "ATL @ NOP",
+   "status": "2026-10-31T23:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718004,
+   "matchup": "SAC @ MEM",
+   "status": "2026-11-01T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718005,
+   "matchup": "CLE @ MIL",
+   "status": "2026-11-01T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718006,
+   "matchup": "MIN @ SAS",
+   "status": "2026-11-01T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718007,
+   "matchup": "OKC @ HOU",
+   "status": "2026-11-01T00:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  }
+ ],
+ "picks": [],
+ "calls": 1,
+ "note": "First tip-off 2026-10-31T19:00:00.000Z"
+}
