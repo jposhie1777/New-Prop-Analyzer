@@ -1,56 +1,56 @@
 {
  "date": "2026-10-30",
- "updatedAt": "2026-10-31T01:08:10.134Z",
+ "updatedAt": "2026-10-31T01:12:10.507Z",
  "state": "running",
  "games": [
   {
    "gameId": 21717990,
    "matchup": "CHA @ WAS",
    "status": "4th Qtr",
-   "homeScore": 84,
-   "visitorScore": 65
+   "homeScore": 86,
+   "visitorScore": 70
   },
   {
    "gameId": 21717992,
    "matchup": "CHI @ BOS",
    "status": "3rd Qtr",
-   "homeScore": 80,
-   "visitorScore": 54
+   "homeScore": 85,
+   "visitorScore": 60
   },
   {
    "gameId": 21717993,
    "matchup": "DET @ BKN",
    "status": "3rd Qtr",
    "homeScore": 59,
-   "visitorScore": 65
+   "visitorScore": 72
   },
   {
    "gameId": 21717994,
    "matchup": "NYK @ PHI",
    "status": "3rd Qtr",
-   "homeScore": 59,
+   "homeScore": 62,
    "visitorScore": 54
   },
   {
    "gameId": 21717995,
    "matchup": "ORL @ TOR",
    "status": "3rd Qtr",
-   "homeScore": 57,
-   "visitorScore": 66
+   "homeScore": 65,
+   "visitorScore": 74
   },
   {
    "gameId": 21717996,
    "matchup": "IND @ MIA",
    "status": "2nd Qtr",
-   "homeScore": 62,
-   "visitorScore": 54
+   "homeScore": 67,
+   "visitorScore": 59
   },
   {
    "gameId": 21717997,
    "matchup": "HOU @ DAL",
    "status": "2nd Qtr",
-   "homeScore": 43,
-   "visitorScore": 49
+   "homeScore": 44,
+   "visitorScore": 51
   },
   {
    "gameId": 21717998,
@@ -296,7 +296,7 @@
    "scoreMargin": 7,
    "valueAtPick": 2,
    "projection": 3.8218718821696385,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -394,7 +394,7 @@
    "scoreMargin": -7,
    "valueAtPick": 2,
    "projection": 6.174963501890475,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -492,7 +492,7 @@
    "scoreMargin": 8,
    "valueAtPick": 0,
    "projection": 5.351722584269099,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -758,7 +758,7 @@
    "scoreMargin": -19,
    "valueAtPick": 1,
    "projection": 14.535644096081016,
-   "latestValue": 5,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -928,7 +928,7 @@
    "scoreMargin": 4,
    "valueAtPick": 4,
    "projection": 12.775274335925028,
-   "latestValue": 11,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -1454,7 +1454,7 @@
    "scoreMargin": 9,
    "valueAtPick": 5,
    "projection": 8.232356891630781,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -1683,7 +1683,7 @@
    "scoreMargin": 6,
    "valueAtPick": 3,
    "projection": 10.997614036355124,
-   "latestValue": 3,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -1716,7 +1716,7 @@
    "scoreMargin": 6,
    "valueAtPick": 5,
    "projection": 13.277584109908199,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -1749,7 +1749,7 @@
    "scoreMargin": -29,
    "valueAtPick": 4,
    "projection": 7.810674861246966,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -1783,7 +1783,7 @@
    "scoreMargin": -29,
    "valueAtPick": 0,
    "projection": 0.3990839041721941,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Over",
     "3PM",
@@ -1851,7 +1851,7 @@
    "scoreMargin": -29,
    "valueAtPick": 7,
    "projection": 10.382406122083614,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -2052,7 +2052,7 @@
    "scoreMargin": 7,
    "valueAtPick": 16,
    "projection": 32.13195366237903,
-   "latestValue": 18,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Under",
@@ -2119,7 +2119,7 @@
    "scoreMargin": 9,
    "valueAtPick": 13,
    "projection": 21.44970318506241,
-   "latestValue": 13,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Over",
@@ -2186,7 +2186,7 @@
    "scoreMargin": -9,
    "valueAtPick": 3,
    "projection": 5.189590036659954,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -2391,7 +2391,7 @@
    "scoreMargin": 20,
    "valueAtPick": 8,
    "projection": 10.13080939635319,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -2567,9 +2567,174 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717997-420-threes",
+   "gameDate": "2026-10-30",
+   "gameId": 21717997,
+   "matchup": "HOU @ DAL",
+   "playerId": 420,
+   "playerName": "Marcus Smart",
+   "teamAbbreviation": "HOU",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 0.5,
+   "americanOdds": 124,
+   "vendor": "fanduel",
+   "modelProbability": 0.5530771308055538,
+   "evPercent": 23.889277300444057,
+   "foundAt": "2026-10-31T01:11:09.767Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 7,
+   "valueAtPick": 0,
+   "projection": 0.393754588214231,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717997-38017695-steals",
+   "gameDate": "2026-10-30",
+   "gameId": 21717997,
+   "matchup": "HOU @ DAL",
+   "playerId": 38017695,
+   "playerName": "Tari Eason",
+   "teamAbbreviation": "HOU",
+   "propType": "steals",
+   "label": "Steals",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 100,
+   "vendor": "draftkings",
+   "modelProbability": 0.6103878914794593,
+   "evPercent": 22.077578295891854,
+   "foundAt": "2026-10-31T01:11:09.767Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 7,
+   "valueAtPick": 1,
+   "projection": 1.778125,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Steals",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717997-228-assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21717997,
+   "matchup": "HOU @ DAL",
+   "playerId": 228,
+   "playerName": "Kyrie Irving",
+   "teamAbbreviation": "DAL",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": -113,
+   "vendor": "caesars",
+   "modelProbability": 0.643275435660697,
+   "evPercent": 21.254573270556154,
+   "foundAt": "2026-10-31T01:11:09.767Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -7,
+   "valueAtPick": 3,
+   "projection": 5.159891025,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717997-1057262088-assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21717997,
+   "matchup": "HOU @ DAL",
+   "playerId": 1057262088,
+   "playerName": "Cooper Flagg",
+   "teamAbbreviation": "DAL",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6050583404465504,
+   "evPercent": 19.8252791864737,
+   "foundAt": "2026-10-31T01:11:09.767Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -7,
+   "valueAtPick": 1,
+   "projection": 3.035205971603236,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21717997-458-points",
+   "gameDate": "2026-10-30",
+   "gameId": 21717997,
+   "matchup": "HOU @ DAL",
+   "playerId": 458,
+   "playerName": "Fred VanVleet",
+   "teamAbbreviation": "HOU",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 12.5,
+   "americanOdds": -106,
+   "vendor": "fanduel",
+   "modelProbability": 0.6106110522557613,
+   "evPercent": 18.66592147611965,
+   "foundAt": "2026-10-31T01:11:09.767Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 7,
+   "valueAtPick": 6,
+   "projection": 13.74335580107693,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 371,
+ "calls": 383,
  "note": null,
  "checkpointsTaken": {
   "21717990": [
@@ -2597,7 +2762,8 @@
    "end-q1"
   ],
   "21717997": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21717998": [
    "end-q1",
