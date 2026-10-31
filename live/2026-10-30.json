@@ -1,6 +1,6 @@
 {
  "date": "2026-10-30",
- "updatedAt": "2026-10-31T02:48:14.182Z",
+ "updatedAt": "2026-10-31T02:52:14.347Z",
  "state": "running",
  "games": [
   {
@@ -63,15 +63,15 @@
    "gameId": 21717999,
    "matchup": "LAL @ GSW",
    "status": "2nd Qtr",
-   "homeScore": 15,
-   "visitorScore": 38
+   "homeScore": 25,
+   "visitorScore": 40
   },
   {
    "gameId": 21718000,
    "matchup": "DEN @ PHX",
    "status": "2nd Qtr",
    "homeScore": 51,
-   "visitorScore": 46
+   "visitorScore": 51
   }
  ],
  "picks": [
@@ -4727,7 +4727,7 @@
    "scoreMargin": -5,
    "valueAtPick": 4,
    "projection": 22.08995469216908,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -4897,7 +4897,7 @@
    "scoreMargin": -23,
    "valueAtPick": 2,
    "projection": 9.311083431858528,
-   "latestValue": 2,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -4910,7 +4910,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 625,
+ "calls": 633,
  "note": null,
  "checkpointsTaken": {
   "21717990": [
