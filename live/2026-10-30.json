@@ -1,6 +1,6 @@
 {
  "date": "2026-10-30",
- "updatedAt": "2026-10-31T01:45:12.931Z",
+ "updatedAt": "2026-10-31T01:49:12.454Z",
  "state": "running",
  "games": [
   {
@@ -15,49 +15,49 @@
    "matchup": "CHI @ BOS",
    "status": "4th Qtr",
    "homeScore": 111,
-   "visitorScore": 88
+   "visitorScore": 92
   },
   {
    "gameId": 21717993,
    "matchup": "DET @ BKN",
    "status": "4th Qtr",
-   "homeScore": 74,
-   "visitorScore": 96
+   "homeScore": 79,
+   "visitorScore": 100
   },
   {
    "gameId": 21717994,
    "matchup": "NYK @ PHI",
    "status": "4th Qtr",
-   "homeScore": 87,
-   "visitorScore": 82
+   "homeScore": 89,
+   "visitorScore": 85
   },
   {
    "gameId": 21717995,
    "matchup": "ORL @ TOR",
    "status": "4th Qtr",
-   "homeScore": 102,
-   "visitorScore": 100
+   "homeScore": 103,
+   "visitorScore": 107
   },
   {
    "gameId": 21717996,
    "matchup": "IND @ MIA",
    "status": "3rd Qtr",
-   "homeScore": 86,
-   "visitorScore": 65
+   "homeScore": 88,
+   "visitorScore": 68
   },
   {
    "gameId": 21717997,
    "matchup": "HOU @ DAL",
    "status": "3rd Qtr",
-   "homeScore": 65,
-   "visitorScore": 71
+   "homeScore": 67,
+   "visitorScore": 75
   },
   {
    "gameId": 21717998,
    "matchup": "LAC @ MIN",
    "status": "3rd Qtr",
-   "homeScore": 94,
-   "visitorScore": 78
+   "homeScore": 98,
+   "visitorScore": 81
   },
   {
    "gameId": 21717999,
@@ -316,7 +316,7 @@
    "scoreMargin": 7,
    "valueAtPick": 2,
    "projection": 3.8218718821696385,
-   "latestValue": 5,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -447,7 +447,7 @@
    "scoreMargin": -8,
    "valueAtPick": 0,
    "projection": 1.3036085354608726,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Over",
     "3PM",
@@ -545,7 +545,7 @@
    "scoreMargin": 8,
    "valueAtPick": 2,
    "projection": 4.409594042756915,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Under",
     "Rebounds",
@@ -798,7 +798,7 @@
    "scoreMargin": -19,
    "valueAtPick": 1,
    "projection": 14.535644096081016,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -968,7 +968,7 @@
    "scoreMargin": 4,
    "valueAtPick": 4,
    "projection": 12.775274335925028,
-   "latestValue": 14,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -1001,7 +1001,7 @@
    "scoreMargin": 4,
    "valueAtPick": 8,
    "projection": 25.826356128815384,
-   "latestValue": 21,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Over",
@@ -1034,7 +1034,7 @@
    "scoreMargin": -4,
    "valueAtPick": 7,
    "projection": 23.895397183392763,
-   "latestValue": 40,
+   "latestValue": 41,
    "tags": [
     "Best bet",
     "Over",
@@ -1363,7 +1363,7 @@
    "scoreMargin": -10,
    "valueAtPick": 2,
    "projection": 9.111068712133505,
-   "latestValue": 11,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -1396,7 +1396,7 @@
    "scoreMargin": 10,
    "valueAtPick": 0,
    "projection": 2.4305439360962184,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Under",
     "Rebounds",
@@ -1527,7 +1527,7 @@
    "scoreMargin": -9,
    "valueAtPick": 15,
    "projection": 29.7019034717162,
-   "latestValue": 31,
+   "latestValue": 34,
    "tags": [
     "Best bet",
     "Under",
@@ -1756,7 +1756,7 @@
    "scoreMargin": 6,
    "valueAtPick": 5,
    "projection": 13.277584109908199,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -2092,7 +2092,7 @@
    "scoreMargin": 7,
    "valueAtPick": 16,
    "projection": 32.13195366237903,
-   "latestValue": 26,
+   "latestValue": 28,
    "tags": [
     "Best bet",
     "Under",
@@ -2126,7 +2126,7 @@
    "scoreMargin": 9,
    "valueAtPick": 22,
    "projection": 38.665125771430894,
-   "latestValue": 29,
+   "latestValue": 33,
    "tags": [
     "Best bet",
     "Over",
@@ -2485,7 +2485,7 @@
    "scoreMargin": -13,
    "valueAtPick": 2,
    "projection": 3.4041417240926104,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -2815,7 +2815,7 @@
    "scoreMargin": -7,
    "valueAtPick": 5,
    "projection": 9.064010131195335,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -3228,7 +3228,7 @@
    "scoreMargin": -26,
    "valueAtPick": 9,
    "projection": 10.17354730972053,
-   "latestValue": 9,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -3262,7 +3262,7 @@
    "scoreMargin": 26,
    "valueAtPick": 9,
    "projection": 12.244687457588292,
-   "latestValue": 9,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Over",
@@ -3330,7 +3330,7 @@
    "scoreMargin": -9,
    "valueAtPick": 11,
    "projection": 14.580438393199815,
-   "latestValue": 19,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Under",
@@ -3395,7 +3395,7 @@
    "scoreMargin": 9,
    "valueAtPick": 29,
    "projection": 37.24807304137202,
-   "latestValue": 31,
+   "latestValue": 32,
    "tags": [
     "Best bet",
     "Under",
@@ -3528,7 +3528,7 @@
    "scoreMargin": 7,
    "valueAtPick": 22,
    "projection": 31.05266832166832,
-   "latestValue": 22,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Over",
@@ -3639,9 +3639,179 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717998-139-assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21717998,
+   "matchup": "LAC @ MIN",
+   "playerId": 139,
+   "playerName": "Kris Dunn",
+   "teamAbbreviation": "LAC",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": -110,
+   "vendor": "draftkings",
+   "modelProbability": 0.6477492342374589,
+   "evPercent": 23.661217445333072,
+   "foundAt": "2026-10-31T01:49:11.340Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -17,
+   "valueAtPick": 6,
+   "projection": 6.95258383150285,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717998-1057271099-rebounds",
+   "gameDate": "2026-10-30",
+   "gameId": 21717998,
+   "matchup": "LAC @ MIN",
+   "playerId": 1057271099,
+   "playerName": "Joan Beringer",
+   "teamAbbreviation": "MIN",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": -154,
+   "vendor": "draftkings",
+   "modelProbability": 0.7431111768792813,
+   "evPercent": 22.565090212556793,
+   "foundAt": "2026-10-31T01:49:11.340Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 17,
+   "valueAtPick": 3,
+   "projection": 4.467000620052609,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717998-3547259-points_assists",
+   "gameDate": "2026-10-30",
+   "gameId": 21717998,
+   "matchup": "LAC @ MIN",
+   "playerId": 3547259,
+   "playerName": "Jaden McDaniels",
+   "teamAbbreviation": "MIN",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 26.5,
+   "americanOdds": -138,
+   "vendor": "fanduel",
+   "modelProbability": 0.6882808193462475,
+   "evPercent": 18.703503626381824,
+   "foundAt": "2026-10-31T01:49:11.340Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 17,
+   "valueAtPick": 24,
+   "projection": 27.986758725715028,
+   "latestValue": 24,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717998-176-points_rebounds",
+   "gameDate": "2026-10-30",
+   "gameId": 21717998,
+   "matchup": "LAC @ MIN",
+   "playerId": 176,
+   "playerName": "Rudy Gobert",
+   "teamAbbreviation": "MIN",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 23.5,
+   "americanOdds": -144,
+   "vendor": "fanduel",
+   "modelProbability": 0.6964088563596469,
+   "evPercent": 18.002611772051267,
+   "foundAt": "2026-10-31T01:49:11.340Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 17,
+   "valueAtPick": 20,
+   "projection": 25.293904393721355,
+   "latestValue": 20,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21717998-1057396055-threes",
+   "gameDate": "2026-10-30",
+   "gameId": 21717998,
+   "matchup": "LAC @ MIN",
+   "playerId": 1057396055,
+   "playerName": "Kobe Sanders",
+   "teamAbbreviation": "LAC",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 185,
+   "vendor": "draftkings",
+   "modelProbability": 0.41251059880787067,
+   "evPercent": 17.565520660243152,
+   "foundAt": "2026-10-31T01:49:11.340Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -17,
+   "valueAtPick": 1,
+   "projection": 1.3371170823384397,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 470,
+ "calls": 482,
  "note": null,
  "checkpointsTaken": {
   "21717990": [
@@ -3679,7 +3849,8 @@
   ],
   "21717998": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ]
  }
 }
