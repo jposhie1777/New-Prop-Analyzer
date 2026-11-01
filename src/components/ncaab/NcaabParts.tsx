@@ -182,9 +182,9 @@ export function PlayerAveragesTable({ averages }: { averages: PlayerAverage[] })
   );
 }
 
-export function matchesTeamSearch(query: string, team: { id: number; college: string; full_name?: string; name?: string; abbreviation: string }): boolean {
+export function matchesTeamSearch(query: string, team: { id: number; college: string | null; full_name?: string | null; name?: string | null; abbreviation: string | null }): boolean {
   const trimmed = query.trim().toLowerCase();
   if (!trimmed) return true;
   if (/^\d+$/.test(trimmed)) return String(team.id) === trimmed; // a team id
-  return [team.college, team.full_name ?? "", team.name ?? "", team.abbreviation].some((text) => text.toLowerCase().includes(trimmed));
+  return [team.college, team.full_name, team.name, team.abbreviation].some((text) => (text ?? "").toLowerCase().includes(trimmed));
 }

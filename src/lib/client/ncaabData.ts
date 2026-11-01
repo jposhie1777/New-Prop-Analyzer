@@ -113,8 +113,8 @@ export function useNcaabSlate(isoDate: string): NcaabSlate {
   return { games, ratings: ratings.data, oddsFile: odds.data, loading: gamesPolled.loading || ratings.loading, error: gamesPolled.error ?? ratings.error };
 }
 
-export function teamLabel(team: { college: string; abbreviation: string }): string {
-  return team.abbreviation || team.college;
+export function teamLabel(team: { college: string | null; abbreviation: string | null }): string {
+  return team.abbreviation || team.college || "TBD";
 }
 
 export function buildNcaabGamePick(game: NcaabGame, odds: BdlBettingOdd[], selection: GameSelection, source: string): Omit<SlipPick, "addedAt"> | null {
