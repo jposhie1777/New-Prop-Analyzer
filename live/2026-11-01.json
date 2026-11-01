@@ -1,14 +1,14 @@
 {
  "date": "2026-11-01",
- "updatedAt": "2026-11-01T22:44:14.412Z",
+ "updatedAt": "2026-11-01T22:48:14.538Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718008,
    "matchup": "BOS @ ORL",
    "status": "4th Qtr",
-   "homeScore": 83,
-   "visitorScore": 90
+   "homeScore": 85,
+   "visitorScore": 95
   },
   {
    "gameId": 21718009,
@@ -288,7 +288,7 @@
    "scoreMargin": -5,
    "valueAtPick": 4,
    "projection": 5.910885334792178,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -532,7 +532,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 25,
+ "calls": 33,
  "note": null,
  "checkpointsTaken": {
   "21718008": [
