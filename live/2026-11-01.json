@@ -1,6 +1,6 @@
 {
  "date": "2026-11-01",
- "updatedAt": "2026-11-01T23:12:15.334Z",
+ "updatedAt": "2026-11-01T23:16:15.606Z",
  "state": "running",
  "games": [
   {
@@ -14,8 +14,8 @@
    "gameId": 21718009,
    "matchup": "BKN @ IND",
    "status": "2nd Qtr",
-   "homeScore": 32,
-   "visitorScore": 37
+   "homeScore": 34,
+   "visitorScore": 39
   },
   {
    "gameId": 21718010,
@@ -427,7 +427,7 @@
    "scoreMargin": -1,
    "valueAtPick": 3,
    "projection": 7.412600620837429,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -493,7 +493,7 @@
    "scoreMargin": 1,
    "valueAtPick": 9,
    "projection": 27.610845225914662,
-   "latestValue": 11,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -572,7 +572,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 86,
+ "calls": 94,
  "note": null,
  "checkpointsTaken": {
   "21718008": [
