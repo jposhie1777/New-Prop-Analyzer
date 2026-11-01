@@ -1,6 +1,6 @@
 {
  "date": "2026-10-31",
- "updatedAt": "2026-11-01T01:46:07.677Z",
+ "updatedAt": "2026-11-01T01:50:08.994Z",
  "state": "running",
  "games": [
   {
@@ -28,22 +28,22 @@
    "gameId": 21718004,
    "matchup": "SAC @ MEM",
    "status": "3rd Qtr",
-   "homeScore": 85,
-   "visitorScore": 64
+   "homeScore": 92,
+   "visitorScore": 70
   },
   {
    "gameId": 21718005,
    "matchup": "CLE @ MIL",
-   "status": "3rd Qtr",
-   "homeScore": 73,
-   "visitorScore": 106
+   "status": "4th Qtr",
+   "homeScore": 76,
+   "visitorScore": 109
   },
   {
    "gameId": 21718006,
    "matchup": "MIN @ SAS",
    "status": "3rd Qtr",
-   "homeScore": 77,
-   "visitorScore": 75
+   "homeScore": 82,
+   "visitorScore": 76
   },
   {
    "gameId": 21718007,
@@ -1953,7 +1953,7 @@
    "scoreMargin": 6,
    "valueAtPick": 5,
    "projection": 14.768173864354113,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -3088,9 +3088,145 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718005-322-points",
+   "gameDate": "2026-10-31",
+   "gameId": 21718005,
+   "matchup": "CLE @ MIL",
+   "playerId": 322,
+   "playerName": "Donovan Mitchell",
+   "teamAbbreviation": "CLE",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 13.5,
+   "americanOdds": -136,
+   "vendor": "fanduel",
+   "modelProbability": 0.6797327992590537,
+   "evPercent": 17.953632812600496,
+   "foundAt": "2026-11-01T01:50:07.242Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": 33,
+   "valueAtPick": 12,
+   "projection": 14.726381609825733,
+   "latestValue": 12,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Foul trouble",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718005-208-threes",
+   "gameDate": "2026-10-31",
+   "gameId": 21718005,
+   "matchup": "CLE @ MIL",
+   "playerId": 208,
+   "playerName": "Mario Hezonja",
+   "teamAbbreviation": "CLE",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 145,
+   "vendor": "draftkings",
+   "modelProbability": 0.46398337647377386,
+   "evPercent": 13.675927236074603,
+   "foundAt": "2026-11-01T01:50:07.242Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": 33,
+   "valueAtPick": 1,
+   "projection": 1.425201363960218,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718005-38017733-threes",
+   "gameDate": "2026-10-31",
+   "gameId": 21718005,
+   "matchup": "CLE @ MIL",
+   "playerId": 38017733,
+   "playerName": "A.J. Green",
+   "teamAbbreviation": "MIL",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 0.5,
+   "americanOdds": -145,
+   "vendor": "draftkings",
+   "modelProbability": 0.6502955973615752,
+   "evPercent": 9.877531967990283,
+   "foundAt": "2026-11-01T01:50:07.242Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": -33,
+   "valueAtPick": 0,
+   "projection": 0.2316543869428791,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718005-1057272939-threes",
+   "gameDate": "2026-10-31",
+   "gameId": 21718005,
+   "matchup": "CLE @ MIL",
+   "playerId": 1057272939,
+   "playerName": "Kasparas Jakučionis",
+   "teamAbbreviation": "MIL",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 154,
+   "vendor": "draftkings",
+   "modelProbability": 0.4162367431877576,
+   "evPercent": 5.724132769690438,
+   "foundAt": "2026-11-01T01:50:07.242Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": -33,
+   "valueAtPick": 1,
+   "projection": 1.3428431108127512,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 435,
+ "calls": 446,
  "note": null,
  "checkpointsTaken": {
   "21718001": [
@@ -3114,7 +3250,8 @@
   ],
   "21718005": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718006": [
    "end-q1",
