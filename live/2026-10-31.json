@@ -1,6 +1,6 @@
 {
  "date": "2026-10-31",
- "updatedAt": "2026-11-01T00:07:03.545Z",
+ "updatedAt": "2026-11-01T00:11:03.444Z",
  "state": "running",
  "games": [
   {
@@ -21,8 +21,8 @@
    "gameId": 21718003,
    "matchup": "ATL @ NOP",
    "status": "2nd Qtr",
-   "homeScore": 60,
-   "visitorScore": 44
+   "homeScore": 61,
+   "visitorScore": 46
   },
   {
    "gameId": 21718004,
@@ -1081,7 +1081,7 @@
    "scoreMargin": 17,
    "valueAtPick": 8,
    "projection": 18.731655634873423,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -1249,7 +1249,7 @@
    "scoreMargin": -6,
    "valueAtPick": 14,
    "projection": 19.525326853391697,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -1296,7 +1296,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 201,
+ "calls": 209,
  "note": null,
  "checkpointsTaken": {
   "21718001": [
