@@ -1,6 +1,6 @@
 {
  "date": "2026-10-31",
- "updatedAt": "2026-11-01T00:37:09.473Z",
+ "updatedAt": "2026-11-01T00:41:04.973Z",
  "state": "running",
  "games": [
   {
@@ -13,37 +13,37 @@
   {
    "gameId": 21718002,
    "matchup": "PHI @ CHA",
-   "status": "4th Qtr",
+   "status": "Final",
    "homeScore": 104,
-   "visitorScore": 107
+   "visitorScore": 109
   },
   {
    "gameId": 21718003,
    "matchup": "ATL @ NOP",
    "status": "3rd Qtr",
-   "homeScore": 76,
-   "visitorScore": 58
+   "homeScore": 80,
+   "visitorScore": 61
   },
   {
    "gameId": 21718004,
    "matchup": "SAC @ MEM",
    "status": "1st Qtr",
    "homeScore": 27,
-   "visitorScore": 16
+   "visitorScore": 21
   },
   {
    "gameId": 21718005,
    "matchup": "CLE @ MIL",
    "status": "2nd Qtr",
-   "homeScore": 25,
-   "visitorScore": 24
+   "homeScore": 31,
+   "visitorScore": 27
   },
   {
    "gameId": 21718006,
    "matchup": "MIN @ SAS",
-   "status": "1st Qtr",
-   "homeScore": 34,
-   "visitorScore": 28
+   "status": "2nd Qtr",
+   "homeScore": 36,
+   "visitorScore": 30
   },
   {
    "gameId": 21718007,
@@ -655,7 +655,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 19,
+    "gradedAt": "2026-11-01T00:40:07.431Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -689,7 +693,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 42,
+    "gradedAt": "2026-11-01T00:40:07.431Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -721,7 +729,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 3,
+    "gradedAt": "2026-11-01T00:40:07.431Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -754,7 +766,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 5,
+    "gradedAt": "2026-11-01T00:40:07.431Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -787,7 +803,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 0,
+    "gradedAt": "2026-11-01T00:40:07.431Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -820,7 +840,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 7,
+    "gradedAt": "2026-11-01T00:40:07.431Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -853,7 +877,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 2,
+    "gradedAt": "2026-11-01T00:40:07.431Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -887,7 +915,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 11,
+    "gradedAt": "2026-11-01T00:40:07.431Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -921,7 +953,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 24,
+    "gradedAt": "2026-11-01T00:40:07.431Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -954,7 +990,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 7,
+    "gradedAt": "2026-11-01T00:40:07.431Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -979,7 +1019,7 @@
    "scoreMargin": 17,
    "valueAtPick": 9,
    "projection": 24.31707600194482,
-   "latestValue": 24,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Under",
@@ -1081,7 +1121,7 @@
    "scoreMargin": 17,
    "valueAtPick": 8,
    "projection": 18.731655634873423,
-   "latestValue": 13,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -1158,7 +1198,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 5,
+    "gradedAt": "2026-11-01T00:40:07.431Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -1191,7 +1235,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 5,
+    "gradedAt": "2026-11-01T00:40:07.431Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -1224,7 +1272,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 14,
+    "gradedAt": "2026-11-01T00:40:07.431Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -1249,7 +1301,7 @@
    "scoreMargin": -6,
    "valueAtPick": 14,
    "projection": 19.525326853391697,
-   "latestValue": 20,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Under",
@@ -1258,7 +1310,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 21,
+    "gradedAt": "2026-11-01T00:40:07.431Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -1292,7 +1348,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 8,
+    "gradedAt": "2026-11-01T00:40:07.431Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -1317,7 +1377,7 @@
    "scoreMargin": -15,
    "valueAtPick": 7,
    "projection": 12.217323456132648,
-   "latestValue": 12,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -1387,7 +1447,7 @@
    "scoreMargin": 15,
    "valueAtPick": 4,
    "projection": 10.685047350040307,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -1422,7 +1482,7 @@
    "scoreMargin": 15,
    "valueAtPick": 14,
    "projection": 21.834849425080677,
-   "latestValue": 19,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Under",
@@ -1797,9 +1857,173 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718004-1028048549-points_rebounds",
+   "gameDate": "2026-10-31",
+   "gameId": 21718004,
+   "matchup": "SAC @ MEM",
+   "playerId": 1028048549,
+   "playerName": "Cam Spencer",
+   "teamAbbreviation": "MEM",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 12.5,
+   "americanOdds": -132,
+   "vendor": "fanduel",
+   "modelProbability": 0.7004283986639117,
+   "evPercent": 23.10559734092994,
+   "foundAt": "2026-11-01T00:40:04.408Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 6,
+   "valueAtPick": 0,
+   "projection": 9.981487225183786,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718004-1057266649-points",
+   "gameDate": "2026-10-31",
+   "gameId": 21718004,
+   "matchup": "SAC @ MEM",
+   "playerId": 1057266649,
+   "playerName": "Cedric Coward",
+   "teamAbbreviation": "MEM",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 16.5,
+   "americanOdds": -108,
+   "vendor": "fanduel",
+   "modelProbability": 0.6362177426370728,
+   "evPercent": 22.530824507880688,
+   "foundAt": "2026-11-01T00:40:04.408Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 6,
+   "valueAtPick": 5,
+   "projection": 14.768173864354113,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718004-1028039105-rebounds",
+   "gameDate": "2026-10-31",
+   "gameId": 21718004,
+   "matchup": "SAC @ MEM",
+   "playerId": 1028039105,
+   "playerName": "Jaylen Wells",
+   "teamAbbreviation": "MEM",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 130,
+   "vendor": "betmgm",
+   "modelProbability": 0.5272212020503242,
+   "evPercent": 21.26087647157455,
+   "foundAt": "2026-11-01T00:40:04.408Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 6,
+   "valueAtPick": 1,
+   "projection": 3.6355468749999997,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718004-3547249-points",
+   "gameDate": "2026-10-31",
+   "gameId": 21718004,
+   "matchup": "SAC @ MEM",
+   "playerId": 3547249,
+   "playerName": "Precious Achiuwa",
+   "teamAbbreviation": "SAC",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 11.5,
+   "americanOdds": -105,
+   "vendor": "betmgm",
+   "modelProbability": 0.60532328438734,
+   "evPercent": 18.18216504705208,
+   "foundAt": "2026-11-01T00:40:04.408Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -6,
+   "valueAtPick": 2,
+   "projection": 10.27745561111652,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718004-406-rebounds",
+   "gameDate": "2026-10-31",
+   "gameId": 21718004,
+   "matchup": "SAC @ MEM",
+   "playerId": 406,
+   "playerName": "Domantas Sabonis",
+   "teamAbbreviation": "SAC",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 11.5,
+   "americanOdds": -105,
+   "vendor": "draftkings",
+   "modelProbability": 0.6015445493850027,
+   "evPercent": 17.44441202278624,
+   "foundAt": "2026-11-01T00:40:04.408Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -6,
+   "valueAtPick": 1,
+   "projection": 10.528692713159828,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 272,
+ "calls": 285,
  "note": null,
  "checkpointsTaken": {
   "21718001": [
@@ -1815,6 +2039,9 @@
   "21718003": [
    "end-q1",
    "halftime"
+  ],
+  "21718004": [
+   "end-q1"
   ],
   "21718005": [
    "end-q1"
