@@ -1,0 +1,41 @@
+name: NCAAB play text sample
+
+on:
+  push:
+    branches: [odds-key-check]
+
+permissions:
+  contents: read
+
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Print play text formats for a few games (about 8 BDL calls)
+        run: |
+          cat > sample.mjs <<'SCRIPT'
+          const headers = { Authorization: process.env.BDL_API_KEY };
+          const known = /\b(made|missed)\b|rebound|turnover|steal|block|foul|timeout|jump ball|end of|start of|enters the game|subbing|substitution/i;
+          for (const gameId of [46427, 50044, 50858, 46217]) {
+            let cursor = null, plays = [], pages = 0;
+            do {
+              const response = await fetch(`https://api.balldontlie.io/ncaab/v1/plays?game_id=${gameId}&per_page=100${cursor ? `&cursor=${cursor}` : ""}`, { headers });
+              if (!response.ok) { console.log(gameId, "status", response.status); break; }
+              const body = await response.json();
+              plays.push(...body.data); pages += 1; cursor = body.meta?.next_cursor ?? null;
+            } while (cursor && pages < 10);
+            const orders = plays.map((play) => play.order);
+            console.log(`\n=== game ${gameId}: ${plays.length} plays, ${pages} page(s), unique orders ${new Set(orders).size}, last score ${plays.at(-1)?.home_score}-${plays.at(-1)?.away_score}`);
+            const byType = new Map();
+            for (const play of plays) { const list = byType.get(play.type) ?? []; if (list.length < 2) list.push(`${play.text} | team=${play.team?.id ?? "none"} score=${play.home_score}-${play.away_score} value=${play.score_value} scoring=${play.scoring_play}`); byType.set(play.type, list); }
+            for (const [type, examples] of byType) console.log(`[${type}]`, examples.join("  ||  "));
+            console.log("unmatched examples:", plays.filter((play) => !known.test(play.text ?? "")).slice(0, 12).map((play) => play.text));
+          }
+          SCRIPT
+          node sample.mjs
+        env:
+          BDL_API_KEY: ${{ secrets.BDL_API_KEY }}
