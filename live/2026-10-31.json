@@ -1,6 +1,6 @@
 {
  "date": "2026-10-31",
- "updatedAt": "2026-11-01T00:11:03.444Z",
+ "updatedAt": "2026-11-01T00:15:08.959Z",
  "state": "running",
  "games": [
   {
@@ -15,35 +15,35 @@
    "matchup": "PHI @ CHA",
    "status": "4th Qtr",
    "homeScore": 95,
-   "visitorScore": 88
+   "visitorScore": 90
   },
   {
    "gameId": 21718003,
    "matchup": "ATL @ NOP",
    "status": "2nd Qtr",
-   "homeScore": 61,
-   "visitorScore": 46
+   "homeScore": 63,
+   "visitorScore": 48
   },
   {
    "gameId": 21718004,
    "matchup": "SAC @ MEM",
-   "status": "2026-11-01T00:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 2,
+   "visitorScore": 7
   },
   {
    "gameId": 21718005,
    "matchup": "CLE @ MIL",
-   "status": "2026-11-01T00:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 5,
+   "visitorScore": 4
   },
   {
    "gameId": 21718006,
    "matchup": "MIN @ SAS",
-   "status": "2026-11-01T00:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 5,
+   "visitorScore": 2
   },
   {
    "gameId": 21718007,
@@ -680,7 +680,7 @@
    "scoreMargin": -10,
    "valueAtPick": 16,
    "projection": 43.91938337126092,
-   "latestValue": 33,
+   "latestValue": 35,
    "tags": [
     "Best bet",
     "Over",
@@ -1294,9 +1294,182 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718003-303-points",
+   "gameDate": "2026-10-31",
+   "gameId": 21718003,
+   "matchup": "ATL @ NOP",
+   "playerId": 303,
+   "playerName": "CJ McCollum",
+   "teamAbbreviation": "ATL",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 13.5,
+   "americanOdds": -105,
+   "vendor": "caesars",
+   "modelProbability": 0.6379734807832366,
+   "evPercent": 24.556727200536656,
+   "foundAt": "2026-11-01T00:13:03.213Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -15,
+   "valueAtPick": 7,
+   "projection": 12.217323456132648,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Foul trouble",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718003-17896040-points_assists",
+   "gameDate": "2026-10-31",
+   "gameId": 21718003,
+   "matchup": "ATL @ NOP",
+   "playerId": 17896040,
+   "playerName": "Jalen Johnson",
+   "teamAbbreviation": "ATL",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 24.5,
+   "americanOdds": -122,
+   "vendor": "fanduel",
+   "modelProbability": 0.6811376959946043,
+   "evPercent": 23.94472828754275,
+   "foundAt": "2026-11-01T00:13:03.213Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -15,
+   "valueAtPick": 9,
+   "projection": 21.93192263510426,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Blowout risk",
+    "Foul trouble",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718003-18677986-points",
+   "gameDate": "2026-10-31",
+   "gameId": 21718003,
+   "matchup": "ATL @ NOP",
+   "playerId": 18677986,
+   "playerName": "Trey Murphy III",
+   "teamAbbreviation": "NOP",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 12.5,
+   "americanOdds": -120,
+   "vendor": "caesars",
+   "modelProbability": 0.6705089959367698,
+   "evPercent": 22.926649255074484,
+   "foundAt": "2026-11-01T00:13:03.213Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 15,
+   "valueAtPick": 4,
+   "projection": 10.685047350040307,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718003-1057267077-points_assists",
+   "gameDate": "2026-10-31",
+   "gameId": 21718003,
+   "matchup": "ATL @ NOP",
+   "playerId": 1057267077,
+   "playerName": "Jeremiah Fears",
+   "teamAbbreviation": "NOP",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 23.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.6525669707862958,
+   "evPercent": 22.499413814269566,
+   "foundAt": "2026-11-01T00:13:03.213Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 15,
+   "valueAtPick": 14,
+   "projection": 21.834849425080677,
+   "latestValue": 14,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718003-1057274415-rebounds_assists",
+   "gameDate": "2026-10-31",
+   "gameId": 21718003,
+   "matchup": "ATL @ NOP",
+   "playerId": 1057274415,
+   "playerName": "Derik Queen",
+   "teamAbbreviation": "NOP",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 8.5,
+   "americanOdds": -120,
+   "vendor": "fanduel",
+   "modelProbability": 0.6638975019045306,
+   "evPercent": 21.714542015830606,
+   "foundAt": "2026-11-01T00:13:03.213Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 15,
+   "valueAtPick": 3,
+   "projection": 7.376796155988464,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 209,
+ "calls": 220,
  "note": null,
  "checkpointsTaken": {
   "21718001": [
@@ -1310,7 +1483,8 @@
    "end-q3"
   ],
   "21718003": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
