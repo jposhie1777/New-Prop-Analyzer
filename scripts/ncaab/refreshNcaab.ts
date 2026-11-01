@@ -215,7 +215,7 @@ async function main(): Promise<void> {
     const box = boxes.get(game.id) ?? null;
     for (const atHome of [true, false]) {
       const teamId = atHome ? game.home_team.id : game.visitor_team.id;
-      const entry: TeamGameLog = { gameId: game.id, date: ncaabGameDate(game), season: game.season, opponentId: atHome ? game.visitor_team.id : game.home_team.id, atHome, neutral: game.postseason, scored: atHome ? game.home_score! : game.away_score!, allowed: atHome ? game.away_score! : game.home_score!, possessions: box ? Math.round(box.possessions * 10) / 10 : null, boxAvailable: box !== null };
+      const entry: TeamGameLog = { gameId: game.id, date: ncaabGameDate(game), season: game.season, opponentId: atHome ? game.visitor_team.id : game.home_team.id, atHome, neutral: game.postseason, scored: atHome ? game.home_score! : game.away_score!, allowed: atHome ? game.away_score! : game.home_score!, possessions: box?.quality.pointsMatch ? Math.round(box.possessions * 10) / 10 : null, boxAvailable: box !== null };
       logsByTeam.set(teamId, [...(logsByTeam.get(teamId) ?? []), entry]);
     }
     if (box) {
