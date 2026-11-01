@@ -1,6 +1,6 @@
 {
  "date": "2026-10-31",
- "updatedAt": "2026-11-01T02:29:09.454Z",
+ "updatedAt": "2026-11-01T02:33:09.307Z",
  "state": "running",
  "games": [
   {
@@ -28,8 +28,8 @@
    "gameId": 21718004,
    "matchup": "SAC @ MEM",
    "status": "4th Qtr",
-   "homeScore": 120,
-   "visitorScore": 99
+   "homeScore": 132,
+   "visitorScore": 103
   },
   {
    "gameId": 21718005,
@@ -49,8 +49,8 @@
    "gameId": 21718007,
    "matchup": "OKC @ HOU",
    "status": "4th Qtr",
-   "homeScore": 104,
-   "visitorScore": 81
+   "homeScore": 110,
+   "visitorScore": 86
   }
  ],
  "picks": [
@@ -3092,7 +3092,7 @@
    "scoreMargin": 11,
    "valueAtPick": 23,
    "projection": 35.677275045885594,
-   "latestValue": 42,
+   "latestValue": 43,
    "tags": [
     "Best bet",
     "Over",
@@ -3843,7 +3843,7 @@
    "scoreMargin": 17,
    "valueAtPick": 4,
    "projection": 4.698204176801689,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -3857,7 +3857,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 535,
+ "calls": 543,
  "note": null,
  "checkpointsTaken": {
   "21718001": [
