@@ -1,6 +1,6 @@
 {
  "date": "2026-10-31",
- "updatedAt": "2026-11-01T00:15:08.959Z",
+ "updatedAt": "2026-11-01T00:19:03.789Z",
  "state": "running",
  "games": [
   {
@@ -14,7 +14,7 @@
    "gameId": 21718002,
    "matchup": "PHI @ CHA",
    "status": "4th Qtr",
-   "homeScore": 95,
+   "homeScore": 97,
    "visitorScore": 90
   },
   {
@@ -28,21 +28,21 @@
    "gameId": 21718004,
    "matchup": "SAC @ MEM",
    "status": "1st Qtr",
-   "homeScore": 2,
-   "visitorScore": 7
+   "homeScore": 11,
+   "visitorScore": 11
   },
   {
    "gameId": 21718005,
    "matchup": "CLE @ MIL",
    "status": "1st Qtr",
-   "homeScore": 5,
-   "visitorScore": 4
+   "homeScore": 10,
+   "visitorScore": 10
   },
   {
    "gameId": 21718006,
    "matchup": "MIN @ SAS",
    "status": "1st Qtr",
-   "homeScore": 5,
+   "homeScore": 11,
    "visitorScore": 2
   },
   {
@@ -746,7 +746,7 @@
    "scoreMargin": 10,
    "valueAtPick": 1,
    "projection": 3.7854571111210884,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -1249,7 +1249,7 @@
    "scoreMargin": -6,
    "valueAtPick": 14,
    "projection": 19.525326853391697,
-   "latestValue": 15,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Under",
@@ -1469,7 +1469,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 220,
+ "calls": 228,
  "note": null,
  "checkpointsTaken": {
   "21718001": [
