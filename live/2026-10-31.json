@@ -1,6 +1,6 @@
 {
  "date": "2026-10-31",
- "updatedAt": "2026-11-01T01:38:07.213Z",
+ "updatedAt": "2026-11-01T01:42:07.306Z",
  "state": "running",
  "games": [
   {
@@ -28,22 +28,22 @@
    "gameId": 21718004,
    "matchup": "SAC @ MEM",
    "status": "3rd Qtr",
-   "homeScore": 77,
-   "visitorScore": 60
+   "homeScore": 84,
+   "visitorScore": 64
   },
   {
    "gameId": 21718005,
    "matchup": "CLE @ MIL",
    "status": "3rd Qtr",
-   "homeScore": 68,
-   "visitorScore": 89
+   "homeScore": 72,
+   "visitorScore": 101
   },
   {
    "gameId": 21718006,
    "matchup": "MIN @ SAS",
    "status": "3rd Qtr",
    "homeScore": 73,
-   "visitorScore": 66
+   "visitorScore": 69
   },
   {
    "gameId": 21718007,
@@ -1623,7 +1623,7 @@
    "scoreMargin": 1,
    "valueAtPick": 8,
    "projection": 26.758637654692528,
-   "latestValue": 17,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -1656,7 +1656,7 @@
    "scoreMargin": -1,
    "valueAtPick": 2,
    "projection": 15.558386219164017,
-   "latestValue": 25,
+   "latestValue": 27,
    "tags": [
     "Best bet",
     "Under",
@@ -1723,7 +1723,7 @@
    "scoreMargin": -1,
    "valueAtPick": 10,
    "projection": 22.74397326042511,
-   "latestValue": 24,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Over",
@@ -1920,7 +1920,7 @@
    "scoreMargin": 6,
    "valueAtPick": 0,
    "projection": 9.981487225183786,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -2311,7 +2311,7 @@
    "scoreMargin": 26,
    "valueAtPick": 4,
    "projection": 8.543109297334725,
-   "latestValue": 4,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -2781,7 +2781,7 @@
    "scoreMargin": 11,
    "valueAtPick": 1,
    "projection": 3.55800490612709,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Over",
@@ -2922,9 +2922,175 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718007-201-points_rebounds_assists",
+   "gameDate": "2026-10-31",
+   "gameId": 21718007,
+   "matchup": "OKC @ HOU",
+   "playerId": 201,
+   "playerName": "Isaiah Hartenstein",
+   "teamAbbreviation": "OKC",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 20.5,
+   "americanOdds": -120,
+   "vendor": "fanduel",
+   "modelProbability": 0.6765713041958514,
+   "evPercent": 24.0380724359061,
+   "foundAt": "2026-11-01T01:39:06.849Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -11,
+   "valueAtPick": 11,
+   "projection": 22.896420605041975,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Foul trouble",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718007-1028027372-rebounds_assists",
+   "gameDate": "2026-10-31",
+   "gameId": 21718007,
+   "matchup": "OKC @ HOU",
+   "playerId": 1028027372,
+   "playerName": "Jared McCain",
+   "teamAbbreviation": "OKC",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": -130,
+   "vendor": "fanduel",
+   "modelProbability": 0.6847924952373451,
+   "evPercent": 21.155595311222598,
+   "foundAt": "2026-11-01T01:39:06.849Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -11,
+   "valueAtPick": 3,
+   "projection": 5.456938687109375,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Reb+Ast",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718007-38017684-points_rebounds_assists",
+   "gameDate": "2026-10-31",
+   "gameId": 21718007,
+   "matchup": "OKC @ HOU",
+   "playerId": 38017684,
+   "playerName": "Jabari Smith Jr.",
+   "teamAbbreviation": "HOU",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 34.5,
+   "americanOdds": 106,
+   "vendor": "fanduel",
+   "modelProbability": 0.5862941230975778,
+   "evPercent": 20.776589358101027,
+   "foundAt": "2026-11-01T01:39:06.849Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 11,
+   "valueAtPick": 23,
+   "projection": 35.677275045885594,
+   "latestValue": 23,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718007-38017695-points",
+   "gameDate": "2026-10-31",
+   "gameId": 21718007,
+   "matchup": "OKC @ HOU",
+   "playerId": 38017695,
+   "playerName": "Tari Eason",
+   "teamAbbreviation": "HOU",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 7.5,
+   "americanOdds": -110,
+   "vendor": "fanduel",
+   "modelProbability": 0.6227213868880164,
+   "evPercent": 18.883173860439495,
+   "foundAt": "2026-11-01T01:39:06.849Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 11,
+   "valueAtPick": 3,
+   "projection": 8.685750734658047,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718007-140-threes",
+   "gameDate": "2026-10-31",
+   "gameId": 21718007,
+   "matchup": "OKC @ HOU",
+   "playerId": 140,
+   "playerName": "Kevin Durant",
+   "teamAbbreviation": "HOU",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 0.5,
+   "americanOdds": 175,
+   "vendor": "draftkings",
+   "modelProbability": 0.43021272409319994,
+   "evPercent": 18.30849912562997,
+   "foundAt": "2026-11-01T01:39:06.849Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 11,
+   "valueAtPick": 0,
+   "projection": 0.6845995822875,
+   "latestValue": 0,
+   "tags": [
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 416,
+ "calls": 427,
  "note": null,
  "checkpointsTaken": {
   "21718001": [
@@ -2955,7 +3121,8 @@
    "halftime"
   ],
   "21718007": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
