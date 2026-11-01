@@ -1,6 +1,6 @@
 {
  "date": "2026-10-31",
- "updatedAt": "2026-11-01T02:09:08.295Z",
+ "updatedAt": "2026-11-01T02:13:08.567Z",
  "state": "running",
  "games": [
   {
@@ -28,29 +28,29 @@
    "gameId": 21718004,
    "matchup": "SAC @ MEM",
    "status": "4th Qtr",
-   "homeScore": 112,
+   "homeScore": 114,
    "visitorScore": 80
   },
   {
    "gameId": 21718005,
    "matchup": "CLE @ MIL",
    "status": "4th Qtr",
-   "homeScore": 102,
-   "visitorScore": 126
+   "homeScore": 109,
+   "visitorScore": 127
   },
   {
    "gameId": 21718006,
    "matchup": "MIN @ SAS",
    "status": "4th Qtr",
    "homeScore": 105,
-   "visitorScore": 97
+   "visitorScore": 101
   },
   {
    "gameId": 21718007,
    "matchup": "OKC @ HOU",
    "status": "3rd Qtr",
-   "homeScore": 78,
-   "visitorScore": 64
+   "homeScore": 85,
+   "visitorScore": 72
   }
  ],
  "picks": [
@@ -1756,7 +1756,7 @@
    "scoreMargin": -6,
    "valueAtPick": 1,
    "projection": 4.292683770751953,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -2051,7 +2051,7 @@
    "scoreMargin": -6,
    "valueAtPick": 1,
    "projection": 10.528692713159828,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -2448,7 +2448,7 @@
    "scoreMargin": -9,
    "valueAtPick": 5,
    "projection": 15.811154118667217,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -2481,7 +2481,7 @@
    "scoreMargin": 9,
    "valueAtPick": 11,
    "projection": 31.46073894387216,
-   "latestValue": 15,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Over",
@@ -2547,7 +2547,7 @@
    "scoreMargin": -9,
    "valueAtPick": 10,
    "projection": 36.58643525342739,
-   "latestValue": 24,
+   "latestValue": 30,
    "tags": [
     "Best bet",
     "Over",
@@ -2646,7 +2646,7 @@
    "scoreMargin": 1,
    "valueAtPick": 3,
    "projection": 5.63155353200883,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -2880,7 +2880,7 @@
    "scoreMargin": -11,
    "valueAtPick": 9,
    "projection": 17.971960516053556,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -2979,7 +2979,7 @@
    "scoreMargin": -11,
    "valueAtPick": 3,
    "projection": 5.456938687109375,
-   "latestValue": 3,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -3012,7 +3012,7 @@
    "scoreMargin": 11,
    "valueAtPick": 23,
    "projection": 35.677275045885594,
-   "latestValue": 31,
+   "latestValue": 35,
    "tags": [
     "Best bet",
     "Over",
@@ -3046,7 +3046,7 @@
    "scoreMargin": 11,
    "valueAtPick": 3,
    "projection": 8.685750734658047,
-   "latestValue": 3,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -3280,7 +3280,7 @@
    "scoreMargin": -5,
    "valueAtPick": 30,
    "projection": 37.771469777969784,
-   "latestValue": 35,
+   "latestValue": 38,
    "tags": [
     "Best bet",
     "Over",
@@ -3568,7 +3568,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 490,
+ "calls": 498,
  "note": null,
  "checkpointsTaken": {
   "21718001": [
