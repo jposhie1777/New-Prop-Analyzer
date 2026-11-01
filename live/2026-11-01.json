@@ -1,6 +1,6 @@
 {
  "date": "2026-11-01",
- "updatedAt": "2026-11-01T21:58:17.253Z",
+ "updatedAt": "2026-11-01T22:02:17.272Z",
  "state": "running",
  "games": [
   {
@@ -8,7 +8,7 @@
    "matchup": "BOS @ ORL",
    "status": "3rd Qtr",
    "homeScore": 50,
-   "visitorScore": 58
+   "visitorScore": 60
   },
   {
    "gameId": 21718009,
@@ -55,7 +55,7 @@
    "scoreMargin": -1,
    "valueAtPick": 0,
    "projection": 5.045328776041665,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -366,7 +366,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 251,
+ "calls": 259,
  "note": null,
  "checkpointsTaken": {
   "21718008": [
