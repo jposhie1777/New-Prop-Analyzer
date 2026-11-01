@@ -38,8 +38,11 @@ export interface GameBox {
   away: TeamBox;
   possessions: number; // average of the two sides
   players: PlayerBox[];
-  quality: { pointsMatch: boolean; homePlayerPoints: number; awayPlayerPoints: number; unparsedPlays: number; totalPlays: number };
+  quality: { pointsMatch: boolean; homePlayerPoints: number; awayPlayerPoints: number; unparsedPlays: number; totalPlays: number; duplicatesRemoved?: number };
+  parserVersion?: number; // boxes from an older parser are rebuilt
 }
+
+export const boxParserVersion = 2; // 2: the "makes"/"misses" feed format and doubled feeds
 
 function emptyLine(): ShootingLine {
   return { points: 0, fieldGoalsMade: 0, fieldGoalsAttempted: 0, threesMade: 0, threesAttempted: 0, freeThrowsMade: 0, freeThrowsAttempted: 0, offensiveRebounds: 0, defensiveRebounds: 0, assists: 0, turnovers: 0, steals: 0, blocks: 0, fouls: 0 };
@@ -61,14 +64,28 @@ function isTeamName(name: string): boolean {
   return /\bteam\b|deadball/i.test(name); // "Duke Team Rebound", "Deadball Team Rebound"
 }
 
-const shotPattern = /^(.+?)\s+(made|missed)\s+(.+?)(?:\.\s*(.*))?$/i;
+const shotPattern = /^(?:(.+?)\s+)?(makes|misses|made|missed)\s+(.+)$/i; // "X made Jumper." and "X makes 23-foot three point jumper (Y assists)"
 const reboundPattern = /^(.+?)\s+(offensive|defensive)\s+(?:team\s+)?rebound/i; // "Duke Offensive Team Rebound" too
-const turnoverPattern = /^(.+?)\s+turnover/i;
 const stealPattern = /^(.+?)\s+steal/i;
 const blockPattern = /^(.+?)\s+block/i;
-const foulOnPattern = /^foul on\s+(.+?)\.?$/i;
+const foulOnPattern = /foul on\s+(.+?)\.?$/i; // "Foul on X." and "Technical Foul on Georgetown."
 const foulByPattern = /^(.+?)\s+(?:personal|shooting|offensive|technical|flagrant)?\s*foul/i;
-const assistPattern = /assisted by\s+(.+?)\.?$/i;
+const assistPattern = /assisted by\s+(.+?)\.?$|\((.+?) assists?\)/i;
+const ignoredPattern = /timeout|jump ball|start game|end game|end of|start of|enters the game|subbing|substitution|official|review|deadball/i;
+
+function turnoverName(text: string): string {
+  const before = text.split(/turnover/i)[0].replace(/\s+/g, " ").trim();
+  return before.replace(/\s+shot clock$/i, "").replace(/(?:\s+[a-z][a-z0-9'-]*)+$/, "").trim(); // drops "bad pass", "lost ball", "traveling" after the name
+}
+
+function withoutDuplicates(plays: NcaabPlay[]): { plays: NcaabPlay[]; removed: number } {
+  const keyOf = (play: NcaabPlay) => `${play.period}|${play.clock}|${play.home_score}|${play.away_score}|${play.text}`;
+  const unique = new Map<string, NcaabPlay>();
+  for (const play of plays) if (!unique.has(keyOf(play))) unique.set(keyOf(play), play);
+  const removed = plays.length - unique.size;
+  if (removed < plays.length * 0.25) return { plays, removed: 0 }; // a few repeats are real (two missed free throws); a doubled feed repeats everything
+  return { plays: [...unique.values()], removed };
+}
 
 export function buildGameBox(game: NcaabGame, plays: NcaabPlay[], rosterIds: Map<string, number> = new Map()): GameBox {
   const homeTeamId = game.home_team.id;
@@ -93,7 +110,8 @@ export function buildGameBox(game: NcaabGame, plays: NcaabPlay[], rosterIds: Map
   let unparsedPlays = 0;
   let previousHome = 0;
   let previousAway = 0;
-  const ordered = [...plays].sort((first, second) => first.order - second.order);
+  const deduplicated = withoutDuplicates([...plays].sort((first, second) => first.order - second.order));
+  const ordered = deduplicated.plays;
   for (const play of ordered) {
     const text = (play.text ?? "").trim();
     const homeScore = play.home_score ?? previousHome;
@@ -105,13 +123,14 @@ export function buildGameBox(game: NcaabGame, plays: NcaabPlay[], rosterIds: Map
     if (!text) continue;
     const shot = text.match(shotPattern);
     if (shot && teamId !== null) {
-      const [, shooter, result, description, rest] = shot;
-      const made = result.toLowerCase() === "made";
+      const [, rawShooter, result, description] = shot;
+      const shooter = (rawShooter ?? "").trim();
+      const made = /^made|makes$/i.test(result);
       const freeThrow = /free throw/i.test(description);
       const three = !freeThrow && (/three|3-pt|3pt/i.test(description) || play.score_value === 3);
       const value = freeThrow ? 1 : three ? 3 : 2;
       const team = teamLines.get(teamId)!;
-      const player = isTeamLabel(shooter) ? null : playerLine(shooter, teamId);
+      const player = !shooter || isTeamLabel(shooter) ? null : playerLine(shooter, teamId);
       for (const line of player ? [team, player] : [team]) {
         if (freeThrow) {
           line.freeThrowsAttempted += 1;
@@ -126,10 +145,11 @@ export function buildGameBox(game: NcaabGame, plays: NcaabPlay[], rosterIds: Map
         }
         if (made) line.points += value;
       }
-      const assist = (rest ?? "").match(assistPattern) ?? text.match(assistPattern);
-      if (made && assist) {
+      const assist = text.match(assistPattern);
+      const assister = assist ? (assist[1] ?? assist[2]).trim() : null;
+      if (made && assister) {
         team.assists += 1;
-        playerLine(assist[1], teamId).assists += 1;
+        playerLine(assister, teamId).assists += 1;
       }
       continue;
     }
@@ -146,10 +166,10 @@ export function buildGameBox(game: NcaabGame, plays: NcaabPlay[], rosterIds: Map
       }
       continue;
     }
-    const turnover = text.match(turnoverPattern);
-    if (turnover && teamId !== null) {
+    if (/turnover/i.test(text) && teamId !== null) {
+      const name = turnoverName(text);
       teamLines.get(teamId)!.turnovers += 1;
-      if (!isTeamLabel(turnover[1])) playerLine(turnover[1], teamId).turnovers += 1;
+      if (name && !isTeamLabel(name)) playerLine(name, teamId).turnovers += 1;
       continue;
     }
     const steal = text.match(stealPattern);
@@ -170,7 +190,7 @@ export function buildGameBox(game: NcaabGame, plays: NcaabPlay[], rosterIds: Map
       if (!isTeamLabel(foul[1])) playerLine(foul[1], teamId).fouls += 1;
       continue;
     }
-    if (!/timeout|jump ball|end of|start of|enters the game|subbing|substitution|official|review/i.test(text)) unparsedPlays += 1; // anything else the parser skipped
+    if (!ignoredPattern.test(text)) unparsedPlays += 1; // anything else the parser skipped
   }
   const possessionsOf = (line: ShootingLine) => line.fieldGoalsAttempted - line.offensiveRebounds + line.turnovers + 0.475 * line.freeThrowsAttempted;
   const home: TeamBox = { ...teamLines.get(homeTeamId)!, teamId: homeTeamId, possessions: possessionsOf(teamLines.get(homeTeamId)!) };
@@ -188,7 +208,8 @@ export function buildGameBox(game: NcaabGame, plays: NcaabPlay[], rosterIds: Map
     away,
     possessions: (home.possessions + away.possessions) / 2,
     players,
-    quality: { pointsMatch: home.points === (game.home_score ?? -1) && away.points === (game.away_score ?? -1), homePlayerPoints, awayPlayerPoints, unparsedPlays, totalPlays: plays.length },
+    quality: { pointsMatch: home.points === (game.home_score ?? -1) && away.points === (game.away_score ?? -1), homePlayerPoints, awayPlayerPoints, unparsedPlays, totalPlays: plays.length, duplicatesRemoved: deduplicated.removed },
+    parserVersion: boxParserVersion,
   };
 }
 

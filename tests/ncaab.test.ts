@@ -78,6 +78,50 @@ describe("NCAAB box score against the BALLDONTLIE docs example", () => {
   });
 });
 
+describe("NCAAB box score from the newer feed format", () => {
+  const georgetown: NcaabTeam = { id: 86, conference_id: 1, name: "Hoyas", full_name: "Georgetown Hoyas", college: "Georgetown", abbreviation: "GTWN" };
+  const stJohnsRed: NcaabTeam = { id: 90, conference_id: 1, name: "Red Storm", full_name: "St. John's Red Storm", college: "St. John's", abbreviation: "SJU" };
+  const game = gameOf(5, 7, { id: 46427, home_team: georgetown, visitor_team: stJohnsRed });
+  const rows: Array<[string, number | null, number, number, number | null]> = [
+    ["Start game", null, 0, 0, null],
+    ["Jump Ball won by Georgetown", 86, 0, 0, null],
+    ["Isaiah Abraham makes 23-foot three point jumper (Julius Halaifonua assists)", 86, 3, 0, 3],
+    ["Bryce Hopkins bad pass\nturnover", 90, 3, 0, null],
+    ["Julius Halaifonua misses 14-foot jumper", 86, 3, 0, 2],
+    ["Ian Jackson Defensive Rebound.", 90, 3, 0, null],
+    ["Bryce Hopkins makes free throw 1 of 2", 90, 3, 1, 1],
+    ["Bryce Hopkins misses free throw 2 of 2", 90, 3, 1, 1],
+    ["Zuby Ejiofor makes layup (Oziyah Sellers assists)", 90, 3, 3, 2],
+    ["Jayden Fort makes 0-foot tip in layup", 86, 5, 3, 2],
+    ["Oziyah Sellers makes 3-foot dunk (Dylan Darling assists)", 90, 5, 5, 2],
+    ["St. John's  Turnover.", 90, 5, 5, null],
+    ["Technical Foul on Georgetown.", 86, 5, 5, null],
+    ["St. John's Deadball Team Rebound.", 90, 5, 5, null],
+    ["  missed Shot.", 90, 5, 5, 2],
+    ["Ian Jackson makes 23-foot three point jumper", 90, 5, 8, 3],
+    ["End of Game", null, 5, 8, null],
+  ];
+  const plays: NcaabPlay[] = rows.map(([playText, teamId, homeScore, awayScore, value], index) => ({ game_id: 46427, order: index + 1, type: null, text: playText, home_score: homeScore, away_score: awayScore, period: 1, clock: null, scoring_play: null, score_value: value, team: teamId === null ? null : { id: teamId } }));
+
+  it("reads makes, misses, assists in brackets and two-line turnovers", () => {
+    const box = buildGameBox({ ...game, home_score: 5, away_score: 8 }, plays);
+    expect(box.home).toMatchObject({ points: 5, fieldGoalsMade: 2, fieldGoalsAttempted: 3, threesMade: 1, assists: 1, fouls: 1 });
+    expect(box.away).toMatchObject({ points: 8, fieldGoalsMade: 3, fieldGoalsAttempted: 4, threesMade: 1, freeThrowsMade: 1, freeThrowsAttempted: 2, assists: 2, turnovers: 2, defensiveRebounds: 1 });
+    expect(box.quality).toMatchObject({ pointsMatch: true, unparsedPlays: 0 });
+    expect(box.players.find((line) => line.name === "Bryce Hopkins")).toMatchObject({ points: 1, turnovers: 1, freeThrowsAttempted: 2 });
+    expect(box.players.find((line) => line.name === "Julius Halaifonua")).toMatchObject({ assists: 1, fieldGoalsAttempted: 1 });
+    expect(box.players.some((line) => /bad pass|georgetown|john|technical/i.test(line.name) || line.name === "")).toBe(false);
+  });
+
+  it("drops a feed that repeats every play", () => {
+    const doubled = [...plays, ...plays.map((play) => ({ ...play, order: play.order + 100 }))];
+    const box = buildGameBox({ ...game, home_score: 5, away_score: 8 }, doubled);
+    expect(box.home.points).toBe(5);
+    expect(box.away.points).toBe(8);
+    expect(box.quality.duplicatesRemoved).toBe(plays.length);
+  });
+});
+
 describe("NCAAB ratings", () => {
   const makeBox = (gameId: number, homeId: number, awayId: number, homePoints: number, awayPoints: number) => ({
     gameId,

@@ -3,7 +3,7 @@ import { join } from "node:path";
 import { gunzipSync, gzipSync } from "node:zlib";
 import { BdlClient } from "../../src/lib/bdl/bdlClient";
 import { todayEastern } from "../../src/lib/dates";
-import { buildGameBox, normalizeName, type GameBox } from "../../src/lib/ncaab/boxScore";
+import { boxParserVersion, buildGameBox, normalizeName, type GameBox } from "../../src/lib/ncaab/boxScore";
 import { adjustedRatings, blendRatings, leagueAverages, returningShares } from "../../src/lib/ncaab/ratings";
 import { isNcaabFinal, ncaabGameDate, ncaabSeasonFor, type NcaabConference, type NcaabGame, type NcaabPlay, type NcaabPlayer, type NcaabRanking, type NcaabTeam } from "../../src/lib/ncaab/types";
 import { playerAverages, type BoxFile, type MetaFile, type PicksFile, type RatingsFile, type RecordFile, type TeamFile, type TeamGameLog } from "../../src/lib/ncaab/dataFiles";
@@ -130,8 +130,9 @@ async function main(): Promise<void> {
   log(`${games.length} games, ${finals.length} final`);
 
   const { boxes, failures } = loadBoxCache(options.outputDirectory);
+  const needsBox = (game: NcaabGame) => (!boxes.has(game.id) || (boxes.get(game.id)!.parserVersion ?? 1) < boxParserVersion) && (failures.get(game.id) ?? 0) < 3; // missing, or built by an older parser
   const missing = finals
-    .filter((game) => !boxes.has(game.id) && (failures.get(game.id) ?? 0) < 3)
+    .filter(needsBox)
     .sort((first, second) => (first.season !== second.season ? second.season - first.season : ncaabGameDate(second).localeCompare(ncaabGameDate(first)))); // this season first, newest first
   log(`${boxes.size} box scores cached, ${missing.length} to rebuild`);
   let rebuiltCount = 0;
@@ -214,7 +215,7 @@ async function main(): Promise<void> {
     const box = boxes.get(game.id) ?? null;
     for (const atHome of [true, false]) {
       const teamId = atHome ? game.home_team.id : game.visitor_team.id;
-      const entry: TeamGameLog = { gameId: game.id, date: ncaabGameDate(game), season: game.season, opponentId: atHome ? game.visitor_team.id : game.home_team.id, atHome, neutral: game.postseason, scored: atHome ? game.home_score! : game.away_score!, allowed: atHome ? game.away_score! : game.home_score!, possessions: box ? Math.round(box.possessions * 10) / 10 : null, boxAvailable: box !== null };
+      const entry: TeamGameLog = { gameId: game.id, date: ncaabGameDate(game), season: game.season, opponentId: atHome ? game.visitor_team.id : game.home_team.id, atHome, neutral: game.postseason, scored: atHome ? game.home_score! : game.away_score!, allowed: atHome ? game.away_score! : game.home_score!, possessions: box?.quality.pointsMatch ? Math.round(box.possessions * 10) / 10 : null, boxAvailable: box !== null };
       logsByTeam.set(teamId, [...(logsByTeam.get(teamId) ?? []), entry]);
     }
     if (box) {
@@ -249,7 +250,7 @@ async function main(): Promise<void> {
   }
   const unparsedSample = [...boxes.values()].slice(-50).reduce((runningTotal, box) => runningTotal + box.quality.unparsedPlays, 0);
   log(`unparsed plays in the last 50 boxes: ${unparsedSample}`);
-  const metaFile: MetaFile = { generatedAt, boxes: boxStats, callsUsed: client.callCount, backfillRemaining: finals.filter((game) => !boxes.has(game.id) && (failures.get(game.id) ?? 0) < 3).length };
+  const metaFile: MetaFile = { generatedAt, boxes: boxStats, callsUsed: client.callCount, backfillRemaining: finals.filter(needsBox).length };
   writeJson(join(options.outputDirectory, "meta.json"), metaFile);
   log(`done in ${Math.round((Date.now() - startedAt) / 60_000)} min, ${client.callCount} BDL calls, ${metaFile.backfillRemaining} box scores left for later nights`);
 }
