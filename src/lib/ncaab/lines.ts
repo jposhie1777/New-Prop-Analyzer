@@ -21,8 +21,8 @@ export interface OddsApiEvent {
 
 const vendorNames: Record<string, string> = { williamhill_us: "caesars", espnbet: "espnbet", fanatics: "fanatics", betrivers: "betrivers", ballybet: "bally", hardrockbet: "hardrock" }; // Odds API keys that differ from the app's vendor names
 
-export function teamNameKey(name: string): string {
-  return name
+export function teamNameKey(name: string | null | undefined): string {
+  return (name ?? "") // some smaller schools come back without a mascot or full name
     .toLowerCase()
     .normalize("NFD")
     .replace(/[̀-ͯ]/g, "")
@@ -37,11 +37,13 @@ export function teamNameKey(name: string): string {
 
 function nameScore(oddsName: string, team: NcaabGame["home_team"]): number {
   const key = teamNameKey(oddsName);
+  if (!key) return 0;
   if (key === teamNameKey(team.full_name)) return 100;
   if (key === teamNameKey(team.college)) return 90;
-  if (key.startsWith(`${teamNameKey(team.college)} `) && key.endsWith(teamNameKey(team.name))) return 85; // "Miami OH RedHawks" vs college "Miami (OH)"
+  if (teamNameKey(team.college) && key.startsWith(`${teamNameKey(team.college)} `) && key.endsWith(teamNameKey(team.name))) return 85; // "Miami OH RedHawks" vs college "Miami (OH)"
   const oddsTokens = new Set(key.split(" "));
-  const teamTokens = teamNameKey(team.full_name).split(" ");
+  const teamTokens = teamNameKey(team.full_name || team.college).split(" ").filter(Boolean);
+  if (teamTokens.length === 0) return 0;
   const shared = teamTokens.filter((token) => oddsTokens.has(token)).length;
   return (shared / Math.max(teamTokens.length, oddsTokens.size)) * 70; // partial overlap, never beats an exact name
 }
@@ -123,8 +125,8 @@ export function analyzeNcaabGame(inputs: AnalysisInputs): NcaabGameAnalysis {
   const neutral = game.postseason; // tournament games are on neutral floors
   const projection = projectNcaabGame(home.blended, away.blended, league, neutral);
   const seasonOnlyProjection = home.season && away.season && home.season.games >= 3 && away.season.games >= 3 ? projectNcaabGame(home.season, away.season, league, neutral) : null;
-  const homeAbbreviation = game.home_team.abbreviation || game.home_team.college;
-  const awayAbbreviation = game.visitor_team.abbreviation || game.visitor_team.college;
+  const homeAbbreviation = game.home_team.abbreviation || game.home_team.college || "Home";
+  const awayAbbreviation = game.visitor_team.abbreviation || game.visitor_team.college || "Away";
   const evaluate = (candidate: GameProjection) => evaluateGameLines(candidate, odds, homeAbbreviation, awayAbbreviation, evThresholdPercent, ncaabOutcomeSpread, ncaabTooFarLimits);
   const edges = evaluate(projection);
   const otherEdges = seasonOnlyProjection ? evaluate(seasonOnlyProjection) : [];

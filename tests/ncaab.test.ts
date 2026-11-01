@@ -214,6 +214,14 @@ describe("NCAAB odds matching", () => {
     expect(odds).toMatchObject({ game_id: 900, vendor: "caesars", spread_home_value: "-6.5", spread_away_value: "6.5", moneyline_home_odds: -250, moneyline_away_odds: 205, total_value: "145.5", total_over_odds: -108, total_under_odds: -112 });
   });
 
+  it("skips schools that come back without names instead of crashing", () => {
+    const nameless = { id: 77, conference_id: null, name: null, full_name: null, college: null, abbreviation: null } as unknown as NcaabTeam;
+    const otherGame = { ...game, id: 901, home_team: nameless, visitor_team: nameless };
+    const { matched } = matchOddsEvents([event], [otherGame, game]);
+    expect(matched.get(900)?.id).toBe("abc");
+    expect(matched.has(901)).toBe(false);
+  });
+
   it("keeps BDL home and away when the Odds API lists a neutral game the other way round", () => {
     const swapped = { ...event, home_team: event.away_team, away_team: event.home_team };
     expect(matchOddsEvents([swapped], [game]).matched.has(900)).toBe(true);
