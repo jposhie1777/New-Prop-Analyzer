@@ -1,21 +1,21 @@
 {
  "date": "2026-11-01",
- "updatedAt": "2026-11-01T22:14:17.795Z",
+ "updatedAt": "2026-11-01T22:18:17.862Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718008,
    "matchup": "BOS @ ORL",
    "status": "3rd Qtr",
-   "homeScore": 60,
+   "homeScore": 66,
    "visitorScore": 69
   },
   {
    "gameId": 21718009,
    "matchup": "BKN @ IND",
    "status": "1st Qtr",
-   "homeScore": 0,
-   "visitorScore": 3
+   "homeScore": 4,
+   "visitorScore": 9
   },
   {
    "gameId": 21718010,
@@ -288,7 +288,7 @@
    "scoreMargin": -5,
    "valueAtPick": 4,
    "projection": 5.910885334792178,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -366,7 +366,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 283,
+ "calls": 291,
  "note": null,
  "checkpointsTaken": {
   "21718008": [
