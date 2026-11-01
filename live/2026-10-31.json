@@ -1,6 +1,6 @@
 {
  "date": "2026-10-31",
- "updatedAt": "2026-11-01T01:04:06.388Z",
+ "updatedAt": "2026-11-01T01:08:06.284Z",
  "state": "running",
  "games": [
   {
@@ -21,36 +21,36 @@
    "gameId": 21718003,
    "matchup": "ATL @ NOP",
    "status": "4th Qtr",
-   "homeScore": 96,
-   "visitorScore": 78
+   "homeScore": 100,
+   "visitorScore": 83
   },
   {
    "gameId": 21718004,
    "matchup": "SAC @ MEM",
    "status": "2nd Qtr",
-   "homeScore": 51,
-   "visitorScore": 37
+   "homeScore": 53,
+   "visitorScore": 44
   },
   {
    "gameId": 21718005,
    "matchup": "CLE @ MIL",
    "status": "2nd Qtr",
-   "homeScore": 45,
-   "visitorScore": 69
+   "homeScore": 46,
+   "visitorScore": 72
   },
   {
    "gameId": 21718006,
    "matchup": "MIN @ SAS",
    "status": "2nd Qtr",
-   "homeScore": 50,
-   "visitorScore": 56
+   "homeScore": 57,
+   "visitorScore": 61
   },
   {
    "gameId": 21718007,
    "matchup": "OKC @ HOU",
    "status": "1st Qtr",
-   "homeScore": 29,
-   "visitorScore": 16
+   "homeScore": 35,
+   "visitorScore": 24
   }
  ],
  "picks": [
@@ -1121,7 +1121,7 @@
    "scoreMargin": 17,
    "valueAtPick": 8,
    "projection": 18.731655634873423,
-   "latestValue": 21,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Over",
@@ -1583,7 +1583,7 @@
    "scoreMargin": 1,
    "valueAtPick": 8,
    "projection": 26.758637654692528,
-   "latestValue": 11,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -1683,7 +1683,7 @@
    "scoreMargin": -1,
    "valueAtPick": 10,
    "projection": 22.74397326042511,
-   "latestValue": 16,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Over",
@@ -2196,7 +2196,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 334,
+ "calls": 342,
  "note": null,
  "checkpointsTaken": {
   "21718001": [
