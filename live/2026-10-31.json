@@ -1,6 +1,6 @@
 {
  "date": "2026-10-31",
- "updatedAt": "2026-11-01T02:41:09.820Z",
+ "updatedAt": "2026-11-01T02:45:10.691Z",
  "state": "running",
  "games": [
   {
@@ -49,8 +49,8 @@
    "gameId": 21718007,
    "matchup": "OKC @ HOU",
    "status": "4th Qtr",
-   "homeScore": 112,
-   "visitorScore": 90
+   "homeScore": 119,
+   "visitorScore": 95
   }
  ],
  "picks": [
@@ -2660,7 +2660,7 @@
    "scoreMargin": 9,
    "valueAtPick": 0,
    "projection": 2.402515019741579,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Over",
     "Assists",
@@ -3917,7 +3917,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 560,
+ "calls": 568,
  "note": null,
  "checkpointsTaken": {
   "21718001": [
