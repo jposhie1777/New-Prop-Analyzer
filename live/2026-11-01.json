@@ -1,6 +1,6 @@
 {
  "date": "2026-11-01",
- "updatedAt": "2026-11-01T23:16:15.606Z",
+ "updatedAt": "2026-11-01T23:20:15.846Z",
  "state": "running",
  "games": [
   {
@@ -14,8 +14,8 @@
    "gameId": 21718009,
    "matchup": "BKN @ IND",
    "status": "2nd Qtr",
-   "homeScore": 34,
-   "visitorScore": 39
+   "homeScore": 40,
+   "visitorScore": 43
   },
   {
    "gameId": 21718010,
@@ -493,7 +493,7 @@
    "scoreMargin": 1,
    "valueAtPick": 9,
    "projection": 27.610845225914662,
-   "latestValue": 13,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -570,9 +570,176 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718009-375-rebounds",
+   "gameDate": "2026-11-01",
+   "gameId": 21718009,
+   "matchup": "BKN @ IND",
+   "playerId": 375,
+   "playerName": "Michael Porter Jr.",
+   "teamAbbreviation": "BKN",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 7.5,
+   "americanOdds": -104,
+   "vendor": "caesars",
+   "modelProbability": 0.6367140275522165,
+   "evPercent": 24.893905404473248,
+   "foundAt": "2026-11-01T23:19:15.465Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 3,
+   "valueAtPick": 5,
+   "projection": 8.273598790485856,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718009-360-points_rebounds_assists",
+   "gameDate": "2026-11-01",
+   "gameId": 21718009,
+   "matchup": "BKN @ IND",
+   "playerId": 360,
+   "playerName": "Kelly Oubre Jr.",
+   "teamAbbreviation": "IND",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 16.5,
+   "americanOdds": -125,
+   "vendor": "fanduel",
+   "modelProbability": 0.6925913758818343,
+   "evPercent": 24.666447658730185,
+   "foundAt": "2026-11-01T23:19:15.465Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -3,
+   "valueAtPick": 8,
+   "projection": 14.547268641401308,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718009-17896103-rebounds",
+   "gameDate": "2026-11-01",
+   "gameId": 21718009,
+   "matchup": "BKN @ IND",
+   "playerId": 17896103,
+   "playerName": "Jay Huff",
+   "teamAbbreviation": "IND",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": -140,
+   "vendor": "draftkings",
+   "modelProbability": 0.7244051975077186,
+   "evPercent": 24.18374814418034,
+   "foundAt": "2026-11-01T23:19:15.465Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -3,
+   "valueAtPick": 2,
+   "projection": 4.696636605070156,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Foul trouble",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718009-416-points",
+   "gameDate": "2026-11-01",
+   "gameId": 21718009,
+   "matchup": "BKN @ IND",
+   "playerId": 416,
+   "playerName": "Pascal Siakam",
+   "teamAbbreviation": "IND",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 24.5,
+   "americanOdds": 100,
+   "vendor": "draftkings",
+   "modelProbability": 0.6139649031716399,
+   "evPercent": 22.792980634327975,
+   "foundAt": "2026-11-01T23:19:15.465Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -3,
+   "valueAtPick": 13,
+   "projection": 23.04007792524325,
+   "latestValue": 13,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718009-38017507-points_rebounds",
+   "gameDate": "2026-11-01",
+   "gameId": 21718009,
+   "matchup": "BKN @ IND",
+   "playerId": 38017507,
+   "playerName": "Andrew Nembhard",
+   "teamAbbreviation": "IND",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 16.5,
+   "americanOdds": -132,
+   "vendor": "fanduel",
+   "modelProbability": 0.6902237279976988,
+   "evPercent": 21.312049163231904,
+   "foundAt": "2026-11-01T23:19:15.465Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -3,
+   "valueAtPick": 4,
+   "projection": 14.106319309779241,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 94,
+ "calls": 105,
  "note": null,
  "checkpointsTaken": {
   "21718008": [
@@ -581,7 +748,8 @@
    "end-q3"
   ],
   "21718009": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
