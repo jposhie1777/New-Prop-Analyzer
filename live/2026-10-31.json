@@ -1,6 +1,6 @@
 {
  "date": "2026-10-31",
- "updatedAt": "2026-11-01T00:53:05.154Z",
+ "updatedAt": "2026-11-01T00:57:05.981Z",
  "state": "running",
  "games": [
   {
@@ -21,35 +21,35 @@
    "gameId": 21718003,
    "matchup": "ATL @ NOP",
    "status": "3rd Qtr",
-   "homeScore": 91,
+   "homeScore": 92,
    "visitorScore": 74
   },
   {
    "gameId": 21718004,
    "matchup": "SAC @ MEM",
    "status": "2nd Qtr",
-   "homeScore": 44,
+   "homeScore": 49,
    "visitorScore": 29
   },
   {
    "gameId": 21718005,
    "matchup": "CLE @ MIL",
    "status": "2nd Qtr",
-   "homeScore": 43,
-   "visitorScore": 51
+   "homeScore": 45,
+   "visitorScore": 61
   },
   {
    "gameId": 21718006,
    "matchup": "MIN @ SAS",
    "status": "2nd Qtr",
    "homeScore": 46,
-   "visitorScore": 41
+   "visitorScore": 48
   },
   {
    "gameId": 21718007,
    "matchup": "OKC @ HOU",
    "status": "1st Qtr",
-   "homeScore": 12,
+   "homeScore": 18,
    "visitorScore": 11
   }
  ],
@@ -1088,7 +1088,7 @@
    "scoreMargin": -17,
    "valueAtPick": 5,
    "projection": 18.016637251345742,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Over",
     "Reb+Ast",
@@ -1516,7 +1516,7 @@
    "scoreMargin": 15,
    "valueAtPick": 3,
    "projection": 7.376796155988464,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -1583,7 +1583,7 @@
    "scoreMargin": 1,
    "valueAtPick": 8,
    "projection": 26.758637654692528,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -1650,7 +1650,7 @@
    "scoreMargin": -1,
    "valueAtPick": 1,
    "projection": 2.089083203125,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -1683,7 +1683,7 @@
    "scoreMargin": -1,
    "valueAtPick": 10,
    "projection": 22.74397326042511,
-   "latestValue": 10,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -1716,7 +1716,7 @@
    "scoreMargin": -6,
    "valueAtPick": 1,
    "projection": 4.292683770751953,
-   "latestValue": 1,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -1782,7 +1782,7 @@
    "scoreMargin": -6,
    "valueAtPick": 0,
    "projection": 1.2704999958333332,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Under",
@@ -1880,7 +1880,7 @@
    "scoreMargin": 6,
    "valueAtPick": 0,
    "projection": 9.981487225183786,
-   "latestValue": 4,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -2021,9 +2021,182 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718003-666400-points",
+   "gameDate": "2026-10-31",
+   "gameId": 21718003,
+   "matchup": "ATL @ NOP",
+   "playerId": 666400,
+   "playerName": "Nickeil Alexander-Walker",
+   "teamAbbreviation": "ATL",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 10.5,
+   "americanOdds": -115,
+   "vendor": "draftkings",
+   "modelProbability": 0.6671530304678854,
+   "evPercent": 24.728610043995957,
+   "foundAt": "2026-11-01T00:57:05.093Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -18,
+   "valueAtPick": 6,
+   "projection": 9.259287636767427,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718003-1057267077-rebounds",
+   "gameDate": "2026-10-31",
+   "gameId": 21718003,
+   "matchup": "ATL @ NOP",
+   "playerId": 1057267077,
+   "playerName": "Jeremiah Fears",
+   "teamAbbreviation": "NOP",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.6510984219892751,
+   "evPercent": 22.22373886465341,
+   "foundAt": "2026-11-01T00:57:05.093Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 18,
+   "valueAtPick": 5,
+   "projection": 5.966816776266797,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Foul trouble",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718003-17896040-threes",
+   "gameDate": "2026-10-31",
+   "gameId": 21718003,
+   "matchup": "ATL @ NOP",
+   "playerId": 17896040,
+   "playerName": "Jalen Johnson",
+   "teamAbbreviation": "ATL",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 260,
+   "vendor": "fanduel",
+   "modelProbability": 0.33928684642704354,
+   "evPercent": 22.14326471373569,
+   "foundAt": "2026-11-01T00:57:05.093Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -18,
+   "valueAtPick": 1,
+   "projection": 1.2119922570156216,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718003-1057274415-points_assists",
+   "gameDate": "2026-10-31",
+   "gameId": 21718003,
+   "matchup": "ATL @ NOP",
+   "playerId": 1057274415,
+   "playerName": "Derik Queen",
+   "teamAbbreviation": "NOP",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 14.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6114589925876507,
+   "evPercent": 21.092859316377876,
+   "foundAt": "2026-11-01T00:57:05.093Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 18,
+   "valueAtPick": 11,
+   "projection": 13.783617183321953,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718003-666969-assists",
+   "gameDate": "2026-10-31",
+   "gameId": 21718003,
+   "matchup": "ATL @ NOP",
+   "playerId": 666969,
+   "playerName": "Zion Williamson",
+   "teamAbbreviation": "NOP",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -135,
+   "vendor": "betmgm",
+   "modelProbability": 0.686027403873946,
+   "evPercent": 19.419585118798,
+   "foundAt": "2026-11-01T00:57:05.093Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 18,
+   "valueAtPick": 2,
+   "projection": 2.175448591279959,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 309,
+ "calls": 320,
  "note": null,
  "checkpointsTaken": {
   "21718001": [
@@ -2038,7 +2211,8 @@
   ],
   "21718003": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718004": [
    "end-q1"
