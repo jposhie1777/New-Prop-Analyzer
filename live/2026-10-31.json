@@ -1,6 +1,6 @@
 {
  "date": "2026-10-31",
- "updatedAt": "2026-11-01T01:15:09.455Z",
+ "updatedAt": "2026-11-01T01:19:06.754Z",
  "state": "running",
  "games": [
   {
@@ -21,8 +21,8 @@
    "gameId": 21718003,
    "matchup": "ATL @ NOP",
    "status": "4th Qtr",
-   "homeScore": 108,
-   "visitorScore": 87
+   "homeScore": 111,
+   "visitorScore": 91
   },
   {
    "gameId": 21718004,
@@ -49,8 +49,8 @@
    "gameId": 21718007,
    "matchup": "OKC @ HOU",
    "status": "2nd Qtr",
-   "homeScore": 37,
-   "visitorScore": 30
+   "homeScore": 49,
+   "visitorScore": 34
   }
  ],
  "picks": [
@@ -1019,7 +1019,7 @@
    "scoreMargin": 17,
    "valueAtPick": 9,
    "projection": 24.31707600194482,
-   "latestValue": 28,
+   "latestValue": 31,
    "tags": [
     "Best bet",
     "Under",
@@ -1482,7 +1482,7 @@
    "scoreMargin": 15,
    "valueAtPick": 14,
    "projection": 21.834849425080677,
-   "latestValue": 23,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Under",
@@ -1716,7 +1716,7 @@
    "scoreMargin": -6,
    "valueAtPick": 1,
    "projection": 4.292683770751953,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -2044,7 +2044,7 @@
    "scoreMargin": -18,
    "valueAtPick": 6,
    "projection": 9.259287636767427,
-   "latestValue": 8,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -2698,9 +2698,173 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718004-1091339280-assists",
+   "gameDate": "2026-10-31",
+   "gameId": 21718004,
+   "matchup": "SAC @ MEM",
+   "playerId": 1091339280,
+   "playerName": "Cameron Boozer",
+   "teamAbbreviation": "MEM",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": -132,
+   "vendor": "fanduel",
+   "modelProbability": 0.7057544456458433,
+   "evPercent": 24.041690446845188,
+   "foundAt": "2026-11-01T01:16:05.912Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 11,
+   "valueAtPick": 1,
+   "projection": 3.55800490612709,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718004-268-threes",
+   "gameDate": "2026-10-31",
+   "gameId": 21718004,
+   "matchup": "SAC @ MEM",
+   "playerId": 268,
+   "playerName": "Zach LaVine",
+   "teamAbbreviation": "SAC",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": -159,
+   "vendor": "caesars",
+   "modelProbability": 0.7595737943702382,
+   "evPercent": 23.729316189868975,
+   "foundAt": "2026-11-01T01:16:05.912Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -11,
+   "valueAtPick": 0,
+   "projection": 0.7337920313815792,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718004-666656-threes",
+   "gameDate": "2026-10-31",
+   "gameId": 21718004,
+   "matchup": "SAC @ MEM",
+   "playerId": 666656,
+   "playerName": "De'Andre Hunter",
+   "teamAbbreviation": "SAC",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": -122,
+   "vendor": "fanduel",
+   "modelProbability": 0.6789096369837533,
+   "evPercent": 23.53929459868298,
+   "foundAt": "2026-11-01T01:16:05.912Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -11,
+   "valueAtPick": 2,
+   "projection": 3.1254724371640865,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718004-406-rebounds_assists",
+   "gameDate": "2026-10-31",
+   "gameId": 21718004,
+   "matchup": "SAC @ MEM",
+   "playerId": 406,
+   "playerName": "Domantas Sabonis",
+   "teamAbbreviation": "SAC",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 19.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.6561756199837132,
+   "evPercent": 23.176826909223358,
+   "foundAt": "2026-11-01T01:16:05.912Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -11,
+   "valueAtPick": 9,
+   "projection": 17.971960516053556,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718004-1028039105-assists",
+   "gameDate": "2026-10-31",
+   "gameId": 21718004,
+   "matchup": "SAC @ MEM",
+   "playerId": 1028039105,
+   "playerName": "Jaylen Wells",
+   "teamAbbreviation": "MEM",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 0.5,
+   "americanOdds": 150,
+   "vendor": "betmgm",
+   "modelProbability": 0.4834468872435986,
+   "evPercent": 20.861721810899645,
+   "foundAt": "2026-11-01T01:16:05.912Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 11,
+   "valueAtPick": 0,
+   "projection": 0.537194524653518,
+   "latestValue": 0,
+   "tags": [
+    "Under",
+    "Assists",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 366,
+ "calls": 377,
  "note": null,
  "checkpointsTaken": {
   "21718001": [
@@ -2719,7 +2883,8 @@
    "end-q3"
   ],
   "21718004": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718005": [
    "end-q1",
