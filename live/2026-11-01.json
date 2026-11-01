@@ -1,0 +1,38 @@
+{
+ "date": "2026-11-01",
+ "updatedAt": "2026-11-01T16:34:55.678Z",
+ "state": "waiting",
+ "games": [
+  {
+   "gameId": 21718008,
+   "matchup": "BOS @ ORL",
+   "status": "2026-11-01T20:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718009,
+   "matchup": "BKN @ IND",
+   "status": "2026-11-01T22:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718010,
+   "matchup": "LAC @ GSW",
+   "status": "2026-11-02T01:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718011,
+   "matchup": "TOR @ LAL",
+   "status": "2026-11-02T02:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  }
+ ],
+ "picks": [],
+ "calls": 1,
+ "note": "First tip-off 2026-11-01T20:30:00.000Z"
+}
