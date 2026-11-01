@@ -1,0 +1,29 @@
+name: NCAAB parser check
+
+on:
+  push:
+    branches: [odds-key-check]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ncaab-parser-formats
+      - uses: actions/checkout@v4
+        with:
+          path: temp-check
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Rebuild 60 real games with the new parser (60 BDL calls)
+        run: cp -r temp-check/check . && npx tsx check/validate.ts
+        env:
+          BDL_API_KEY: ${{ secrets.BDL_API_KEY }}
