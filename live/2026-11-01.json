@@ -1,6 +1,6 @@
 {
  "date": "2026-11-01",
- "updatedAt": "2026-11-02T04:16:28.271Z",
+ "updatedAt": "2026-11-02T04:20:28.537Z",
  "state": "running",
  "games": [
   {
@@ -28,8 +28,8 @@
    "gameId": 21718011,
    "matchup": "TOR @ LAL",
    "status": "4th Qtr",
-   "homeScore": 120,
-   "visitorScore": 106
+   "homeScore": 121,
+   "visitorScore": 107
   }
  ],
  "picks": [
@@ -2026,8 +2026,8 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 722,
- "note": null,
+ "calls": 730,
+ "note": "This run hit its time limit; the next scheduled run continues.",
  "checkpointsTaken": {
   "21718008": [
    "end-q1",
