@@ -1,6 +1,6 @@
 {
  "date": "2026-11-01",
- "updatedAt": "2026-11-02T03:16:25.587Z",
+ "updatedAt": "2026-11-02T03:20:25.816Z",
  "state": "running",
  "games": [
   {
@@ -21,8 +21,8 @@
    "gameId": 21718010,
    "matchup": "LAC @ GSW",
    "status": "3rd Qtr",
-   "homeScore": 90,
-   "visitorScore": 79
+   "homeScore": 91,
+   "visitorScore": 83
   },
   {
    "gameId": 21718011,
@@ -1181,7 +1181,7 @@
    "scoreMargin": 6,
    "valueAtPick": 22,
    "projection": 38.330038686081274,
-   "latestValue": 34,
+   "latestValue": 36,
    "tags": [
     "Best bet",
     "Over",
@@ -1626,7 +1626,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 595,
+ "calls": 603,
  "note": null,
  "checkpointsTaken": {
   "21718008": [
