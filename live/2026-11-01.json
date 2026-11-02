@@ -1,6 +1,6 @@
 {
  "date": "2026-11-01",
- "updatedAt": "2026-11-02T00:48:19.341Z",
+ "updatedAt": "2026-11-02T02:07:23.004Z",
  "state": "running",
  "games": [
   {
@@ -20,9 +20,9 @@
   {
    "gameId": 21718010,
    "matchup": "LAC @ GSW",
-   "status": "2026-11-02T01:30:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 29,
+   "visitorScore": 37
   },
   {
    "gameId": 21718011,
@@ -961,9 +961,173 @@
     "gradedAt": "2026-11-02T00:48:19.341Z"
    },
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718010-666581-assists",
+   "gameDate": "2026-11-01",
+   "gameId": 21718010,
+   "matchup": "LAC @ GSW",
+   "playerId": 666581,
+   "playerName": "Darius Garland",
+   "teamAbbreviation": "LAC",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": -115,
+   "vendor": "draftkings",
+   "modelProbability": 0.6675297739575614,
+   "evPercent": 24.799044696413652,
+   "foundAt": "2026-11-02T02:07:22.420Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 8,
+   "valueAtPick": 2,
+   "projection": 7.7722871601191414,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718010-1091343544-threes",
+   "gameDate": "2026-11-01",
+   "gameId": 21718010,
+   "matchup": "LAC @ GSW",
+   "playerId": 1091343544,
+   "playerName": "Keaton Wagler",
+   "teamAbbreviation": "LAC",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": 104,
+   "vendor": "fanduel",
+   "modelProbability": 0.6005142766356414,
+   "evPercent": 22.504912433670853,
+   "foundAt": "2026-11-02T02:07:22.420Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 8,
+   "valueAtPick": 0,
+   "projection": 1.1530065281249997,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718010-57875092-assists",
+   "gameDate": "2026-11-01",
+   "gameId": 21718010,
+   "matchup": "LAC @ GSW",
+   "playerId": 57875092,
+   "playerName": "Gui Santos",
+   "teamAbbreviation": "GSW",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 140,
+   "vendor": "draftkings",
+   "modelProbability": 0.5098256295811846,
+   "evPercent": 22.358151099484292,
+   "foundAt": "2026-11-02T02:07:22.420Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -8,
+   "valueAtPick": 0,
+   "projection": 1.5373420375000002,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718010-24489167-threes",
+   "gameDate": "2026-11-01",
+   "gameId": 21718010,
+   "matchup": "LAC @ GSW",
+   "playerId": 24489167,
+   "playerName": "Brandon Williams",
+   "teamAbbreviation": "GSW",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 0.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6142752118603862,
+   "evPercent": 21.650581172351014,
+   "foundAt": "2026-11-02T02:07:22.420Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -8,
+   "valueAtPick": 0,
+   "projection": 0.2981219815340909,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718010-313-rebounds_assists",
+   "gameDate": "2026-11-01",
+   "gameId": 21718010,
+   "matchup": "LAC @ GSW",
+   "playerId": 313,
+   "playerName": "De'Anthony Melton",
+   "teamAbbreviation": "GSW",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": 112,
+   "vendor": "fanduel",
+   "modelProbability": 0.5735819058784506,
+   "evPercent": 21.59936404623153,
+   "foundAt": "2026-11-02T02:07:22.420Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -8,
+   "valueAtPick": 1,
+   "projection": 6.027772563900241,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Reb+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 285,
+ "calls": 447,
  "note": null,
  "checkpointsTaken": {
   "21718008": [
@@ -975,6 +1139,9 @@
    "end-q1",
    "halftime",
    "end-q3"
+  ],
+  "21718010": [
+   "end-q1"
   ]
  }
 }
