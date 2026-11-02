@@ -1,6 +1,6 @@
 {
  "date": "2026-11-01",
- "updatedAt": "2026-11-02T03:56:27.595Z",
+ "updatedAt": "2026-11-02T04:00:27.800Z",
  "state": "running",
  "games": [
   {
@@ -28,8 +28,8 @@
    "gameId": 21718011,
    "matchup": "TOR @ LAL",
    "status": "4th Qtr",
-   "homeScore": 104,
-   "visitorScore": 86
+   "homeScore": 109,
+   "visitorScore": 95
   }
  ],
  "picks": [
@@ -1387,7 +1387,7 @@
    "scoreMargin": -13,
    "valueAtPick": 3,
    "projection": 18.25145904695505,
-   "latestValue": 16,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Under",
@@ -1420,7 +1420,7 @@
    "scoreMargin": -13,
    "valueAtPick": 5,
    "projection": 27.257046590635532,
-   "latestValue": 27,
+   "latestValue": 33,
    "tags": [
     "Best bet",
     "Over",
@@ -1654,7 +1654,7 @@
    "scoreMargin": 12,
    "valueAtPick": 5,
    "projection": 8.48224281208879,
-   "latestValue": 9,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -1910,7 +1910,7 @@
    "scoreMargin": -22,
    "valueAtPick": 31,
    "projection": 37.99741465203728,
-   "latestValue": 32,
+   "latestValue": 38,
    "tags": [
     "Best bet",
     "Over",
@@ -1945,7 +1945,7 @@
    "scoreMargin": 22,
    "valueAtPick": 14,
    "projection": 15.806681061876409,
-   "latestValue": 14,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Over",
@@ -1980,7 +1980,7 @@
    "scoreMargin": -22,
    "valueAtPick": 14,
    "projection": 17.5264780526663,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -2014,7 +2014,7 @@
    "scoreMargin": -22,
    "valueAtPick": 10,
    "projection": 11.350035081590073,
-   "latestValue": 11,
+   "latestValue": 13,
    "tags": [
     "Under",
     "Reb+Ast",
@@ -2026,7 +2026,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 682,
+ "calls": 690,
  "note": null,
  "checkpointsTaken": {
   "21718008": [
