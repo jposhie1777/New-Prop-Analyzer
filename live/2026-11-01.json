@@ -1,6 +1,6 @@
 {
  "date": "2026-11-01",
- "updatedAt": "2026-11-02T04:24:58.123Z",
+ "updatedAt": "2026-11-02T04:28:58.308Z",
  "state": "running",
  "games": [
   {
@@ -28,8 +28,8 @@
    "gameId": 21718011,
    "matchup": "TOR @ LAL",
    "status": "4th Qtr",
-   "homeScore": 123,
-   "visitorScore": 109
+   "homeScore": 127,
+   "visitorScore": 120
   }
  ],
  "picks": [
@@ -1453,7 +1453,7 @@
    "scoreMargin": 13,
    "valueAtPick": 2,
    "projection": 11.05292457023087,
-   "latestValue": 15,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -1621,7 +1621,7 @@
    "scoreMargin": 12,
    "valueAtPick": 6,
    "projection": 10.752325615323517,
-   "latestValue": 12,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Under",
@@ -2026,7 +2026,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 12,
+ "calls": 20,
  "note": null,
  "checkpointsTaken": {
   "21718008": [
