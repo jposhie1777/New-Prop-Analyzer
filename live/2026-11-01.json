@@ -1,6 +1,6 @@
 {
  "date": "2026-11-01",
- "updatedAt": "2026-11-02T03:48:27.109Z",
+ "updatedAt": "2026-11-02T03:52:27.329Z",
  "state": "running",
  "games": [
   {
@@ -21,15 +21,15 @@
    "gameId": 21718010,
    "matchup": "LAC @ GSW",
    "status": "4th Qtr",
-   "homeScore": 118,
-   "visitorScore": 104
+   "homeScore": 121,
+   "visitorScore": 110
   },
   {
    "gameId": 21718011,
    "matchup": "TOR @ LAL",
    "status": "3rd Qtr",
-   "homeScore": 99,
-   "visitorScore": 76
+   "homeScore": 104,
+   "visitorScore": 82
   }
  ],
  "picks": [
@@ -1380,7 +1380,7 @@
    "scoreMargin": -13,
    "valueAtPick": 5,
    "projection": 27.257046590635532,
-   "latestValue": 23,
+   "latestValue": 27,
    "tags": [
     "Best bet",
     "Over",
@@ -1413,7 +1413,7 @@
    "scoreMargin": 13,
    "valueAtPick": 2,
    "projection": 11.05292457023087,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -1479,7 +1479,7 @@
    "scoreMargin": -12,
    "valueAtPick": 3,
    "projection": 5.1280600910762715,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -1547,7 +1547,7 @@
    "scoreMargin": -12,
    "valueAtPick": 1,
    "projection": 9.230294667093228,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -1614,7 +1614,7 @@
    "scoreMargin": 12,
    "valueAtPick": 5,
    "projection": 8.48224281208879,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -1794,9 +1794,179 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718011-666923-threes",
+   "gameDate": "2026-11-01",
+   "gameId": 21718011,
+   "matchup": "TOR @ LAL",
+   "playerId": 666923,
+   "playerName": "Matisse Thybulle",
+   "teamAbbreviation": "LAL",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 240,
+   "vendor": "fanduel",
+   "modelProbability": 0.36514727595581375,
+   "evPercent": 24.15007382497667,
+   "foundAt": "2026-11-02T03:51:27.120Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 22,
+   "valueAtPick": 2,
+   "projection": 2.26041613007684,
+   "latestValue": 2,
+   "tags": [
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718011-17896055-points_rebounds_assists",
+   "gameDate": "2026-11-01",
+   "gameId": 21718011,
+   "matchup": "TOR @ LAL",
+   "playerId": 17896055,
+   "playerName": "Scottie Barnes",
+   "teamAbbreviation": "TOR",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 36.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6455217984738724,
+   "evPercent": 22.188054711125837,
+   "foundAt": "2026-11-02T03:51:27.120Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -22,
+   "valueAtPick": 31,
+   "projection": 37.99741465203728,
+   "latestValue": 31,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Blowout risk",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718011-413-points_assists",
+   "gameDate": "2026-11-01",
+   "gameId": 21718011,
+   "matchup": "TOR @ LAL",
+   "playerId": 413,
+   "playerName": "Collin Sexton",
+   "teamAbbreviation": "LAL",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 15.5,
+   "americanOdds": 116,
+   "vendor": "fanduel",
+   "modelProbability": 0.559793866410666,
+   "evPercent": 20.915475144703866,
+   "foundAt": "2026-11-02T03:51:27.120Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 22,
+   "valueAtPick": 14,
+   "projection": 15.806681061876409,
+   "latestValue": 14,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718011-1028029111-points_rebounds",
+   "gameDate": "2026-11-01",
+   "gameId": 21718011,
+   "matchup": "TOR @ LAL",
+   "playerId": 1028029111,
+   "playerName": "Ja'Kobe Walter",
+   "teamAbbreviation": "TOR",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 16.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.6407353479579713,
+   "evPercent": 18.37314055494723,
+   "foundAt": "2026-11-02T03:51:27.120Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -22,
+   "valueAtPick": 14,
+   "projection": 17.5264780526663,
+   "latestValue": 14,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718011-3547269-rebounds_assists",
+   "gameDate": "2026-11-01",
+   "gameId": 21718011,
+   "matchup": "TOR @ LAL",
+   "playerId": 3547269,
+   "playerName": "Immanuel Quickley",
+   "teamAbbreviation": "TOR",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 11.5,
+   "americanOdds": 118,
+   "vendor": "fanduel",
+   "modelProbability": 0.5405103936250264,
+   "evPercent": 17.831265810255736,
+   "foundAt": "2026-11-02T03:51:27.120Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -22,
+   "valueAtPick": 10,
+   "projection": 11.350035081590073,
+   "latestValue": 10,
+   "tags": [
+    "Under",
+    "Reb+Ast",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 662,
+ "calls": 673,
  "note": null,
  "checkpointsTaken": {
   "21718008": [
@@ -1816,7 +1986,8 @@
   ],
   "21718011": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ]
  }
 }
