@@ -1,6 +1,6 @@
 {
  "date": "2026-11-01",
- "updatedAt": "2026-11-02T00:04:17.550Z",
+ "updatedAt": "2026-11-02T00:10:19.001Z",
  "state": "running",
  "games": [
   {
@@ -15,7 +15,7 @@
    "matchup": "BKN @ IND",
    "status": "3rd Qtr",
    "homeScore": 62,
-   "visitorScore": 68
+   "visitorScore": 71
   },
   {
    "gameId": 21718010,
@@ -737,9 +737,173 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718009-56677843-points",
+   "gameDate": "2026-11-01",
+   "gameId": 21718009,
+   "matchup": "BKN @ IND",
+   "playerId": 56677843,
+   "playerName": "Noah Clowney",
+   "teamAbbreviation": "BKN",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 9.5,
+   "americanOdds": 104,
+   "vendor": "fanduel",
+   "modelProbability": 0.60344191203718,
+   "evPercent": 23.102150055584715,
+   "foundAt": "2026-11-02T00:10:17.582Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 9,
+   "valueAtPick": 8,
+   "projection": 9.068740176074288,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718009-1057275262-points_rebounds",
+   "gameDate": "2026-11-01",
+   "gameId": 21718009,
+   "matchup": "BKN @ IND",
+   "playerId": 1057275262,
+   "playerName": "Nolan Traoré",
+   "teamAbbreviation": "BKN",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 12.5,
+   "americanOdds": -140,
+   "vendor": "fanduel",
+   "modelProbability": 0.6999296619880271,
+   "evPercent": 19.987942055090357,
+   "foundAt": "2026-11-02T00:10:17.582Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 9,
+   "valueAtPick": 11,
+   "projection": 13.839651970917302,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718009-416-threes",
+   "gameDate": "2026-11-01",
+   "gameId": 21718009,
+   "matchup": "BKN @ IND",
+   "playerId": 416,
+   "playerName": "Pascal Siakam",
+   "teamAbbreviation": "IND",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": 205,
+   "vendor": "fanduel",
+   "modelProbability": 0.390501159995321,
+   "evPercent": 19.102853798572884,
+   "foundAt": "2026-11-02T00:10:17.582Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -9,
+   "valueAtPick": 0,
+   "projection": 0.3051381979345947,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "3PM",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718009-3547250-rebounds",
+   "gameDate": "2026-11-01",
+   "gameId": 21718009,
+   "matchup": "BKN @ IND",
+   "playerId": 3547250,
+   "playerName": "Aaron Nesmith",
+   "teamAbbreviation": "IND",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": -128,
+   "vendor": "fanduel",
+   "modelProbability": 0.6567857910489666,
+   "evPercent": 16.989969030597173,
+   "foundAt": "2026-11-02T00:10:17.582Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -9,
+   "valueAtPick": 3,
+   "projection": 3.9915143270981694,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718009-17896038-assists",
+   "gameDate": "2026-11-01",
+   "gameId": 21718009,
+   "matchup": "BKN @ IND",
+   "playerId": 17896038,
+   "playerName": "Day'Ron Sharpe",
+   "teamAbbreviation": "BKN",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 130,
+   "vendor": "betmgm",
+   "modelProbability": 0.5084550631811326,
+   "evPercent": 16.944664531660504,
+   "foundAt": "2026-11-02T00:10:17.582Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 9,
+   "valueAtPick": 2,
+   "projection": 2.5186638277013285,
+   "latestValue": 2,
+   "tags": [
+    "Over",
+    "Assists",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 193,
+ "calls": 208,
  "note": null,
  "checkpointsTaken": {
   "21718008": [
@@ -749,7 +913,8 @@
   ],
   "21718009": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ]
  }
 }
