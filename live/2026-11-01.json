@@ -1,6 +1,6 @@
 {
  "date": "2026-11-01",
- "updatedAt": "2026-11-02T03:44:26.922Z",
+ "updatedAt": "2026-11-02T03:48:27.109Z",
  "state": "running",
  "games": [
   {
@@ -21,14 +21,14 @@
    "gameId": 21718010,
    "matchup": "LAC @ GSW",
    "status": "4th Qtr",
-   "homeScore": 116,
-   "visitorScore": 96
+   "homeScore": 118,
+   "visitorScore": 104
   },
   {
    "gameId": 21718011,
    "matchup": "TOR @ LAL",
    "status": "3rd Qtr",
-   "homeScore": 97,
+   "homeScore": 99,
    "visitorScore": 76
   }
  ],
@@ -1181,7 +1181,7 @@
    "scoreMargin": 6,
    "valueAtPick": 22,
    "projection": 38.330038686081274,
-   "latestValue": 45,
+   "latestValue": 47,
    "tags": [
     "Best bet",
     "Over",
@@ -1413,7 +1413,7 @@
    "scoreMargin": 13,
    "valueAtPick": 2,
    "projection": 11.05292457023087,
-   "latestValue": 10,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Over",
@@ -1581,7 +1581,7 @@
    "scoreMargin": 12,
    "valueAtPick": 6,
    "projection": 10.752325615323517,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -1796,7 +1796,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 654,
+ "calls": 662,
  "note": null,
  "checkpointsTaken": {
   "21718008": [
