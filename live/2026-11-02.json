@@ -1,0 +1,115 @@
+{
+ "date": "2026-11-02",
+ "updatedAt": "2026-11-02T22:35:59.991Z",
+ "state": "waiting",
+ "games": [
+  {
+   "gameId": 21718012,
+   "matchup": "OKC @ CLE",
+   "status": "2026-11-03T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718013,
+   "matchup": "DET @ CHA",
+   "status": "2026-11-03T00:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718014,
+   "matchup": "ATL @ IND",
+   "status": "2026-11-03T00:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718015,
+   "matchup": "BKN @ NYK",
+   "status": "2026-11-03T00:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718016,
+   "matchup": "WAS @ ORL",
+   "status": "2026-11-03T00:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718017,
+   "matchup": "CHI @ PHI",
+   "status": "2026-11-03T00:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718018,
+   "matchup": "SAC @ DAL",
+   "status": "2026-11-03T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718019,
+   "matchup": "NOP @ MEM",
+   "status": "2026-11-03T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718020,
+   "matchup": "MIL @ MIN",
+   "status": "2026-11-03T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718021,
+   "matchup": "BOS @ HOU",
+   "status": "2026-11-03T01:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718022,
+   "matchup": "UTA @ SAS",
+   "status": "2026-11-03T01:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718023,
+   "matchup": "POR @ DEN",
+   "status": "2026-11-03T02:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718024,
+   "matchup": "PHX @ GSW",
+   "status": "2026-11-03T03:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718025,
+   "matchup": "TOR @ LAC",
+   "status": "2026-11-03T03:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718026,
+   "matchup": "MIA @ LAL",
+   "status": "2026-11-03T03:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  }
+ ],
+ "picks": [],
+ "calls": 1,
+ "note": "First tip-off 2026-11-03T00:00:00.000Z"
+}
