@@ -1,7 +1,7 @@
 {
  "date": "2026-11-01",
- "updatedAt": "2026-11-02T04:32:58.665Z",
- "state": "running",
+ "updatedAt": "2026-11-02T04:34:58.774Z",
+ "state": "done",
  "games": [
   {
    "gameId": 21718008,
@@ -27,7 +27,7 @@
   {
    "gameId": 21718011,
    "matchup": "TOR @ LAL",
-   "status": "4th Qtr",
+   "status": "Final",
    "homeScore": 131,
    "visitorScore": 125
   }
@@ -1362,7 +1362,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 3,
+    "gradedAt": "2026-11-02T04:34:58.773Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1395,7 +1399,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 19,
+    "gradedAt": "2026-11-02T04:34:58.773Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1428,7 +1436,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 35,
+    "gradedAt": "2026-11-02T04:34:58.773Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1461,7 +1473,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 16,
+    "gradedAt": "2026-11-02T04:34:58.773Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1494,7 +1510,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 4,
+    "gradedAt": "2026-11-02T04:34:58.773Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1527,7 +1547,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 5,
+    "gradedAt": "2026-11-02T04:34:58.773Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -1562,7 +1586,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 60,
+    "gradedAt": "2026-11-02T04:34:58.773Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -1596,7 +1624,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 8,
+    "gradedAt": "2026-11-02T04:34:58.773Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -1629,7 +1661,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 16,
+    "gradedAt": "2026-11-02T04:34:58.773Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -1662,7 +1698,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 12,
+    "gradedAt": "2026-11-02T04:34:58.773Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -1885,7 +1925,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 2,
+    "gradedAt": "2026-11-02T04:34:58.773Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -1920,7 +1964,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 40,
+    "gradedAt": "2026-11-02T04:34:58.773Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -1955,7 +2003,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 17,
+    "gradedAt": "2026-11-02T04:34:58.773Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -1989,7 +2041,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 15,
+    "gradedAt": "2026-11-02T04:34:58.773Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -2022,12 +2078,16 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 13,
+    "gradedAt": "2026-11-02T04:34:58.773Z"
+   },
    "checkpoint": "end-q3"
   }
  ],
- "calls": 28,
- "note": null,
+ "calls": 33,
+ "note": "All games are final and graded.",
  "checkpointsTaken": {
   "21718008": [
    "end-q1",
