@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "updatedAt": "2026-11-03T02:38:19.265Z",
+ "updatedAt": "2026-11-03T02:42:16.130Z",
  "state": "running",
  "games": [
   {
@@ -15,77 +15,77 @@
    "matchup": "DET @ CHA",
    "status": "4th Qtr",
    "homeScore": 77,
-   "visitorScore": 100
+   "visitorScore": 106
   },
   {
    "gameId": 21718014,
    "matchup": "ATL @ IND",
    "status": "4th Qtr",
-   "homeScore": 92,
+   "homeScore": 93,
    "visitorScore": 101
   },
   {
    "gameId": 21718015,
    "matchup": "BKN @ NYK",
    "status": "4th Qtr",
-   "homeScore": 81,
-   "visitorScore": 79
+   "homeScore": 84,
+   "visitorScore": 81
   },
   {
    "gameId": 21718016,
    "matchup": "WAS @ ORL",
    "status": "4th Qtr",
-   "homeScore": 84,
-   "visitorScore": 91
+   "homeScore": 86,
+   "visitorScore": 93
   },
   {
    "gameId": 21718017,
    "matchup": "CHI @ PHI",
    "status": "4th Qtr",
-   "homeScore": 103,
-   "visitorScore": 92
+   "homeScore": 107,
+   "visitorScore": 96
   },
   {
    "gameId": 21718018,
    "matchup": "SAC @ DAL",
    "status": "3rd Qtr",
-   "homeScore": 62,
-   "visitorScore": 62
+   "homeScore": 65,
+   "visitorScore": 69
   },
   {
    "gameId": 21718019,
    "matchup": "NOP @ MEM",
    "status": "3rd Qtr",
-   "homeScore": 82,
-   "visitorScore": 87
+   "homeScore": 86,
+   "visitorScore": 92
   },
   {
    "gameId": 21718020,
    "matchup": "MIL @ MIN",
    "status": "3rd Qtr",
-   "homeScore": 69,
+   "homeScore": 72,
    "visitorScore": 69
   },
   {
    "gameId": 21718021,
    "matchup": "BOS @ HOU",
    "status": "2nd Qtr",
-   "homeScore": 55,
-   "visitorScore": 45
+   "homeScore": 57,
+   "visitorScore": 50
   },
   {
    "gameId": 21718022,
    "matchup": "UTA @ SAS",
    "status": "2nd Qtr",
-   "homeScore": 50,
-   "visitorScore": 40
+   "homeScore": 57,
+   "visitorScore": 47
   },
   {
    "gameId": 21718023,
    "matchup": "POR @ DEN",
-   "status": "1st Qtr",
-   "homeScore": 31,
-   "visitorScore": 19
+   "status": "2nd Qtr",
+   "homeScore": 34,
+   "visitorScore": 22
   },
   {
    "gameId": 21718024,
@@ -314,7 +314,7 @@
    "scoreMargin": 8,
    "valueAtPick": 2,
    "projection": 6.31880457714017,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -479,7 +479,7 @@
    "scoreMargin": 6,
    "valueAtPick": 1,
    "projection": 4.6914101744688645,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -644,7 +644,7 @@
    "scoreMargin": 5,
    "valueAtPick": 3,
    "projection": 7.932863197571809,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -677,7 +677,7 @@
    "scoreMargin": 5,
    "valueAtPick": 5,
    "projection": 18.780900196396956,
-   "latestValue": 18,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Under",
@@ -839,7 +839,7 @@
    "scoreMargin": 7,
    "valueAtPick": 2,
    "projection": 5.118069281781497,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -939,7 +939,7 @@
    "scoreMargin": 7,
    "valueAtPick": 0,
    "projection": 2.2390275077160493,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -1459,7 +1459,7 @@
    "scoreMargin": -12,
    "valueAtPick": 17,
    "projection": 25.21580510212474,
-   "latestValue": 19,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Under",
@@ -1724,7 +1724,7 @@
    "scoreMargin": -5,
    "valueAtPick": 12,
    "projection": 22.927740061807626,
-   "latestValue": 24,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Over",
@@ -1924,7 +1924,7 @@
    "scoreMargin": 1,
    "valueAtPick": 4,
    "projection": 7.553780541369503,
-   "latestValue": 5,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -1957,7 +1957,7 @@
    "scoreMargin": 1,
    "valueAtPick": 1,
    "projection": 10.02556424155836,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -2155,7 +2155,7 @@
    "scoreMargin": 1,
    "valueAtPick": 17,
    "projection": 26.402317502270463,
-   "latestValue": 25,
+   "latestValue": 27,
    "tags": [
     "Best bet",
     "Over",
@@ -2255,7 +2255,7 @@
    "scoreMargin": -1,
    "valueAtPick": 12,
    "projection": 23.825947387548226,
-   "latestValue": 21,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Under",
@@ -3007,7 +3007,7 @@
    "scoreMargin": -1,
    "valueAtPick": 7,
    "projection": 12.436875669137828,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -3073,7 +3073,7 @@
    "scoreMargin": 1,
    "valueAtPick": 9,
    "projection": 21.394031324593026,
-   "latestValue": 14,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Under",
@@ -3106,7 +3106,7 @@
    "scoreMargin": -1,
    "valueAtPick": 3,
    "projection": 5.721851679104477,
-   "latestValue": 3,
+   "latestValue": 5,
    "tags": [
     "Over",
     "Rebounds",
@@ -3172,7 +3172,7 @@
    "scoreMargin": -3,
    "valueAtPick": 12,
    "projection": 22.67232515356752,
-   "latestValue": 22,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Under",
@@ -3239,7 +3239,7 @@
    "scoreMargin": -3,
    "valueAtPick": 3,
    "projection": 4.87291839425458,
-   "latestValue": 4,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -3306,7 +3306,7 @@
    "scoreMargin": 3,
    "valueAtPick": 10,
    "projection": 14.258614307251001,
-   "latestValue": 10,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -3606,7 +3606,7 @@
    "scoreMargin": -8,
    "valueAtPick": 22,
    "projection": 28.015675371627832,
-   "latestValue": 27,
+   "latestValue": 28,
    "tags": [
     "Best bet",
     "Under",
@@ -3674,7 +3674,7 @@
    "scoreMargin": 11,
    "valueAtPick": 4,
    "projection": 11.353910243264885,
-   "latestValue": 4,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -3707,7 +3707,7 @@
    "scoreMargin": -11,
    "valueAtPick": 0,
    "projection": 1.6157459367208171,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -3906,7 +3906,7 @@
    "scoreMargin": -11,
    "valueAtPick": 16,
    "projection": 22.248078694174893,
-   "latestValue": 24,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Under",
@@ -4040,7 +4040,7 @@
    "scoreMargin": -11,
    "valueAtPick": 11,
    "projection": 15.931782213014749,
-   "latestValue": 17,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -4073,7 +4073,7 @@
    "scoreMargin": 11,
    "valueAtPick": 11,
    "projection": 16.48970168188999,
-   "latestValue": 18,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Under",
@@ -4171,7 +4171,7 @@
    "scoreMargin": 23,
    "valueAtPick": 15,
    "projection": 17.7687189907478,
-   "latestValue": 15,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Over",
@@ -4239,7 +4239,7 @@
    "scoreMargin": 23,
    "valueAtPick": 4,
    "projection": 4.8929109569715425,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -4410,7 +4410,7 @@
    "scoreMargin": -4,
    "valueAtPick": 1,
    "projection": 2.0166027439760357,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -4612,7 +4612,7 @@
    "scoreMargin": -12,
    "valueAtPick": 3,
    "projection": 16.656289620072215,
-   "latestValue": 3,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -4655,9 +4655,173 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718021-56677825-rebounds_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718021,
+   "matchup": "BOS @ HOU",
+   "playerId": 56677825,
+   "playerName": "Amen Thompson",
+   "teamAbbreviation": "HOU",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 9.5,
+   "americanOdds": 120,
+   "vendor": "fanduel",
+   "modelProbability": 0.5600102457352806,
+   "evPercent": 23.202254061761728,
+   "foundAt": "2026-11-03T02:41:10.661Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 7,
+   "valueAtPick": 5,
+   "projection": 9.111512759823462,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718021-140-points_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718021,
+   "matchup": "BOS @ HOU",
+   "playerId": 140,
+   "playerName": "Kevin Durant",
+   "teamAbbreviation": "HOU",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 22.5,
+   "americanOdds": -136,
+   "vendor": "fanduel",
+   "modelProbability": 0.7084091352327166,
+   "evPercent": 22.929820525677314,
+   "foundAt": "2026-11-03T02:41:10.661Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 7,
+   "valueAtPick": 10,
+   "projection": 19.883672308612645,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718021-3547276-assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718021,
+   "matchup": "BOS @ HOU",
+   "playerId": 3547276,
+   "playerName": "Payton Pritchard",
+   "teamAbbreviation": "BOS",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": 150,
+   "vendor": "betmgm",
+   "modelProbability": 0.489584881201022,
+   "evPercent": 22.3962203002555,
+   "foundAt": "2026-11-03T02:41:10.661Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -7,
+   "valueAtPick": 2,
+   "projection": 3.539612086966386,
+   "latestValue": 2,
+   "tags": [
+    "Under",
+    "Assists",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718021-458-points_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718021,
+   "matchup": "BOS @ HOU",
+   "playerId": 458,
+   "playerName": "Fred VanVleet",
+   "teamAbbreviation": "HOU",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 13.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6156476892793943,
+   "evPercent": 21.92238552395849,
+   "foundAt": "2026-11-03T02:41:10.661Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 7,
+   "valueAtPick": 6,
+   "projection": 14.824854804565309,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718021-420-threes",
+   "gameDate": "2026-11-02",
+   "gameId": 21718021,
+   "matchup": "BOS @ HOU",
+   "playerId": 420,
+   "playerName": "Marcus Smart",
+   "teamAbbreviation": "HOU",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": 130,
+   "vendor": "draftkings",
+   "modelProbability": 0.5297329327626662,
+   "evPercent": 21.838574535413223,
+   "foundAt": "2026-11-03T02:41:10.661Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 7,
+   "valueAtPick": 0,
+   "projection": 0.571560502111254,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "3PM",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 488,
+ "calls": 500,
  "note": null,
  "checkpointsTaken": {
   "21718012": [
@@ -4703,7 +4867,8 @@
    "halftime"
   ],
   "21718021": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718022": [
    "end-q1"
