@@ -1,13 +1,13 @@
 {
  "date": "2026-11-02",
- "updatedAt": "2026-11-03T02:15:23.417Z",
+ "updatedAt": "2026-11-03T02:19:11.186Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718012,
    "matchup": "OKC @ CLE",
    "status": "4th Qtr",
-   "homeScore": 104,
+   "homeScore": 106,
    "visitorScore": 105
   },
   {
@@ -15,35 +15,35 @@
    "matchup": "DET @ CHA",
    "status": "3rd Qtr",
    "homeScore": 75,
-   "visitorScore": 87
+   "visitorScore": 89
   },
   {
    "gameId": 21718014,
    "matchup": "ATL @ IND",
-   "status": "3rd Qtr",
+   "status": "4th Qtr",
    "homeScore": 79,
-   "visitorScore": 87
+   "visitorScore": 89
   },
   {
    "gameId": 21718015,
    "matchup": "BKN @ NYK",
    "status": "3rd Qtr",
-   "homeScore": 68,
-   "visitorScore": 60
+   "homeScore": 69,
+   "visitorScore": 64
   },
   {
    "gameId": 21718016,
    "matchup": "WAS @ ORL",
    "status": "3rd Qtr",
    "homeScore": 68,
-   "visitorScore": 73
+   "visitorScore": 79
   },
   {
    "gameId": 21718017,
    "matchup": "CHI @ PHI",
    "status": "3rd Qtr",
-   "homeScore": 89,
-   "visitorScore": 75
+   "homeScore": 90,
+   "visitorScore": 78
   },
   {
    "gameId": 21718018,
@@ -62,30 +62,30 @@
   {
    "gameId": 21718020,
    "matchup": "MIL @ MIN",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 48,
-   "visitorScore": 47
+   "visitorScore": 50
   },
   {
    "gameId": 21718021,
    "matchup": "BOS @ HOU",
    "status": "2nd Qtr",
-   "homeScore": 33,
+   "homeScore": 38,
    "visitorScore": 32
   },
   {
    "gameId": 21718022,
    "matchup": "UTA @ SAS",
-   "status": "1st Qtr",
+   "status": "2nd Qtr",
    "homeScore": 27,
-   "visitorScore": 16
+   "visitorScore": 19
   },
   {
    "gameId": 21718023,
    "matchup": "POR @ DEN",
    "status": "1st Qtr",
-   "homeScore": 5,
-   "visitorScore": 3
+   "homeScore": 9,
+   "visitorScore": 6
   },
   {
    "gameId": 21718024,
@@ -591,7 +591,7 @@
    "scoreMargin": -6,
    "valueAtPick": 5,
    "projection": 16.336888789941383,
-   "latestValue": 8,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -2248,7 +2248,7 @@
    "scoreMargin": 1,
    "valueAtPick": 12,
    "projection": 19.980141280903332,
-   "latestValue": 12,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -2282,7 +2282,7 @@
    "scoreMargin": -7,
    "valueAtPick": 9,
    "projection": 19.077478340601836,
-   "latestValue": 9,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -2446,7 +2446,7 @@
    "scoreMargin": -11,
    "valueAtPick": 3,
    "projection": 7.5177743406554445,
-   "latestValue": 7,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -2580,7 +2580,7 @@
    "scoreMargin": -11,
    "valueAtPick": 3,
    "projection": 6.4603627517279065,
-   "latestValue": 3,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -2613,7 +2613,7 @@
    "scoreMargin": -6,
    "valueAtPick": 15,
    "projection": 19.257522143239164,
-   "latestValue": 15,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -2813,7 +2813,7 @@
    "scoreMargin": -1,
    "valueAtPick": 8,
    "projection": 10.757161458333334,
-   "latestValue": 8,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -3380,7 +3380,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 17.533316246943414,
-   "latestValue": 4,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -3446,7 +3446,7 @@
    "scoreMargin": -8,
    "valueAtPick": 4,
    "projection": 5.712199116775936,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -3546,7 +3546,7 @@
    "scoreMargin": -8,
    "valueAtPick": 22,
    "projection": 28.015675371627832,
-   "latestValue": 22,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Under",
@@ -3647,7 +3647,7 @@
    "scoreMargin": -11,
    "valueAtPick": 0,
    "projection": 1.6157459367208171,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Under",
@@ -3759,7 +3759,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 420,
+ "calls": 428,
  "note": null,
  "checkpointsTaken": {
   "21718012": [
