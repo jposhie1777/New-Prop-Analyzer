@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "updatedAt": "2026-11-03T04:24:44.329Z",
+ "updatedAt": "2026-11-03T04:28:44.457Z",
  "state": "running",
  "games": [
   {
@@ -84,8 +84,8 @@
    "gameId": 21718023,
    "matchup": "POR @ DEN",
    "status": "4th Qtr",
-   "homeScore": 107,
-   "visitorScore": 113
+   "homeScore": 110,
+   "visitorScore": 115
   },
   {
    "gameId": 21718024,
@@ -97,9 +97,9 @@
   {
    "gameId": 21718025,
    "matchup": "TOR @ LAC",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 63,
-   "visitorScore": 52
+   "visitorScore": 54
   },
   {
    "gameId": 21718026,
@@ -6170,7 +6170,7 @@
    "scoreMargin": 8,
    "valueAtPick": 25,
    "projection": 43.30608147199866,
-   "latestValue": 45,
+   "latestValue": 46,
    "tags": [
     "Best bet",
     "Over",
@@ -6203,7 +6203,7 @@
    "scoreMargin": 8,
    "valueAtPick": 17,
    "projection": 37.27018148827192,
-   "latestValue": 32,
+   "latestValue": 35,
    "tags": [
     "Best bet",
     "Over",
@@ -7211,7 +7211,7 @@
    "scoreMargin": -2,
    "valueAtPick": 21,
    "projection": 26.912683880401122,
-   "latestValue": 26,
+   "latestValue": 28,
    "tags": [
     "Best bet",
     "Under",
@@ -7760,7 +7760,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 12,
+ "calls": 20,
  "note": null,
  "checkpointsTaken": {
   "21718012": [
