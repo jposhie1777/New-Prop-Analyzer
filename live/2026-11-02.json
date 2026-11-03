@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "updatedAt": "2026-11-03T04:19:14.951Z",
+ "updatedAt": "2026-11-03T04:20:15.524Z",
  "state": "running",
  "games": [
   {
@@ -85,7 +85,7 @@
    "matchup": "POR @ DEN",
    "status": "4th Qtr",
    "homeScore": 99,
-   "visitorScore": 103
+   "visitorScore": 105
   },
   {
    "gameId": 21718024,
@@ -98,7 +98,7 @@
    "gameId": 21718025,
    "matchup": "TOR @ LAC",
    "status": "2nd Qtr",
-   "homeScore": 61,
+   "homeScore": 63,
    "visitorScore": 52
   },
   {
@@ -7211,7 +7211,7 @@
    "scoreMargin": -2,
    "valueAtPick": 21,
    "projection": 26.912683880401122,
-   "latestValue": 24,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Under",
@@ -7760,8 +7760,8 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 763,
- "note": null,
+ "calls": 765,
+ "note": "This run hit its time limit; the next scheduled run continues.",
  "checkpointsTaken": {
   "21718012": [
    "end-q1",
