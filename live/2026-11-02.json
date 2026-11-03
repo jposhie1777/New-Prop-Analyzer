@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "updatedAt": "2026-11-03T05:00:46.007Z",
+ "updatedAt": "2026-11-03T05:04:46.029Z",
  "state": "running",
  "games": [
   {
@@ -91,22 +91,22 @@
    "gameId": 21718024,
    "matchup": "PHX @ GSW",
    "status": "3rd Qtr",
-   "homeScore": 86,
+   "homeScore": 87,
    "visitorScore": 90
   },
   {
    "gameId": 21718025,
    "matchup": "TOR @ LAC",
-   "status": "3rd Qtr",
-   "homeScore": 90,
+   "status": "4th Qtr",
+   "homeScore": 91,
    "visitorScore": 78
   },
   {
    "gameId": 21718026,
    "matchup": "MIA @ LAL",
    "status": "4th Qtr",
-   "homeScore": 111,
-   "visitorScore": 93
+   "homeScore": 116,
+   "visitorScore": 96
   }
  ],
  "picks": [
@@ -6690,7 +6690,7 @@
    "scoreMargin": -12,
    "valueAtPick": 3,
    "projection": 20.601144392933747,
-   "latestValue": 18,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -7053,7 +7053,7 @@
    "scoreMargin": 7,
    "valueAtPick": 0,
    "projection": 3.132335398626829,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -7119,7 +7119,7 @@
    "scoreMargin": -7,
    "valueAtPick": 14,
    "projection": 48.500910481714776,
-   "latestValue": 39,
+   "latestValue": 40,
    "tags": [
     "Best bet",
     "Under",
@@ -7674,7 +7674,7 @@
    "scoreMargin": -7,
    "valueAtPick": 25,
    "projection": 42.57094814791398,
-   "latestValue": 30,
+   "latestValue": 31,
    "tags": [
     "Best bet",
     "Under",
@@ -7708,7 +7708,7 @@
    "scoreMargin": 7,
    "valueAtPick": 12,
    "projection": 23.702466970803734,
-   "latestValue": 21,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Under",
@@ -7741,7 +7741,7 @@
    "scoreMargin": -7,
    "valueAtPick": 4,
    "projection": 10.06558251944308,
-   "latestValue": 7,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -7774,7 +7774,7 @@
    "scoreMargin": 7,
    "valueAtPick": 6,
    "projection": 11.267229075813157,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -7989,9 +7989,178 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718025-1028029111-rebounds_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718025,
+   "matchup": "TOR @ LAC",
+   "playerId": 1028029111,
+   "playerName": "Ja'Kobe Walter",
+   "teamAbbreviation": "TOR",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 8.5,
+   "americanOdds": -166,
+   "vendor": "fanduel",
+   "modelProbability": 0.7783558163518526,
+   "evPercent": 24.724486234694453,
+   "foundAt": "2026-11-03T05:02:45.541Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -13,
+   "valueAtPick": 8,
+   "projection": 9.808012423010393,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Reb+Ast",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718025-1028038426-points",
+   "gameDate": "2026-11-02",
+   "gameId": 21718025,
+   "matchup": "TOR @ LAC",
+   "playerId": 1028038426,
+   "playerName": "Jamal Shead",
+   "teamAbbreviation": "TOR",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": -110,
+   "vendor": "draftkings",
+   "modelProbability": 0.6502832081404778,
+   "evPercent": 24.144976099545758,
+   "foundAt": "2026-11-03T05:02:45.541Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -13,
+   "valueAtPick": 6,
+   "projection": 6.9131627696032725,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718025-1091343544-points",
+   "gameDate": "2026-11-02",
+   "gameId": 21718025,
+   "matchup": "TOR @ LAC",
+   "playerId": 1091343544,
+   "playerName": "Keaton Wagler",
+   "teamAbbreviation": "LAC",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": -138,
+   "vendor": "fanduel",
+   "modelProbability": 0.7118814385066743,
+   "evPercent": 22.77375533665833,
+   "foundAt": "2026-11-03T05:02:45.541Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 13,
+   "valueAtPick": 4,
+   "projection": 8.355197128026752,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718025-283-points_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718025,
+   "matchup": "TOR @ LAC",
+   "playerId": 283,
+   "playerName": "Brook Lopez",
+   "teamAbbreviation": "LAC",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 14.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.6547651034386682,
+   "evPercent": 20.965078431889552,
+   "foundAt": "2026-11-03T05:02:45.541Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 13,
+   "valueAtPick": 13,
+   "projection": 15.44417006678432,
+   "latestValue": 13,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718025-1057268940-points_rebounds",
+   "gameDate": "2026-11-02",
+   "gameId": 21718025,
+   "matchup": "TOR @ LAC",
+   "playerId": 1057268940,
+   "playerName": "Collin Murray-Boyles",
+   "teamAbbreviation": "TOR",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 18.5,
+   "americanOdds": -108,
+   "vendor": "fanduel",
+   "modelProbability": 0.6236804813842487,
+   "evPercent": 20.11624085918864,
+   "foundAt": "2026-11-03T05:02:45.541Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -13,
+   "valueAtPick": 15,
+   "projection": 19.515685276980687,
+   "latestValue": 15,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Foul trouble",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 92,
+ "calls": 105,
  "note": null,
  "checkpointsTaken": {
   "21718012": [
@@ -8060,7 +8229,8 @@
   ],
   "21718025": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718026": [
    "end-q1",
