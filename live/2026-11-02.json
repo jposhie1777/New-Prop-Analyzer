@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "updatedAt": "2026-11-03T02:00:13.995Z",
+ "updatedAt": "2026-11-03T02:03:17.384Z",
  "state": "running",
  "games": [
   {
@@ -14,64 +14,64 @@
    "gameId": 21718013,
    "matchup": "DET @ CHA",
    "status": "3rd Qtr",
-   "homeScore": 54,
-   "visitorScore": 65
+   "homeScore": 57,
+   "visitorScore": 70
   },
   {
    "gameId": 21718014,
    "matchup": "ATL @ IND",
    "status": "3rd Qtr",
    "homeScore": 68,
-   "visitorScore": 80
+   "visitorScore": 82
   },
   {
    "gameId": 21718015,
    "matchup": "BKN @ NYK",
    "status": "3rd Qtr",
    "homeScore": 55,
-   "visitorScore": 48
+   "visitorScore": 49
   },
   {
    "gameId": 21718016,
    "matchup": "WAS @ ORL",
    "status": "3rd Qtr",
    "homeScore": 63,
-   "visitorScore": 67
+   "visitorScore": 69
   },
   {
    "gameId": 21718017,
    "matchup": "CHI @ PHI",
    "status": "3rd Qtr",
-   "homeScore": 75,
-   "visitorScore": 64
+   "homeScore": 77,
+   "visitorScore": 66
   },
   {
    "gameId": 21718018,
    "matchup": "SAC @ DAL",
    "status": "2nd Qtr",
-   "homeScore": 42,
-   "visitorScore": 42
+   "homeScore": 47,
+   "visitorScore": 47
   },
   {
    "gameId": 21718019,
    "matchup": "NOP @ MEM",
    "status": "2nd Qtr",
-   "homeScore": 49,
-   "visitorScore": 53
+   "homeScore": 54,
+   "visitorScore": 57
   },
   {
    "gameId": 21718020,
    "matchup": "MIL @ MIN",
    "status": "2nd Qtr",
-   "homeScore": 47,
-   "visitorScore": 41
+   "homeScore": 48,
+   "visitorScore": 47
   },
   {
    "gameId": 21718021,
    "matchup": "BOS @ HOU",
    "status": "1st Qtr",
    "homeScore": 25,
-   "visitorScore": 15
+   "visitorScore": 16
   },
   {
    "gameId": 21718022,
@@ -294,7 +294,7 @@
    "scoreMargin": 8,
    "valueAtPick": 2,
    "projection": 6.31880457714017,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -852,7 +852,7 @@
    "scoreMargin": 7,
    "valueAtPick": 1,
    "projection": 6.162371212023386,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Over",
@@ -919,7 +919,7 @@
    "scoreMargin": 7,
    "valueAtPick": 0,
    "projection": 2.2390275077160493,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -1119,7 +1119,7 @@
    "scoreMargin": 3,
    "valueAtPick": 2,
    "projection": 5.846451025390625,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -1684,7 +1684,7 @@
    "scoreMargin": -5,
    "valueAtPick": 12,
    "projection": 22.927740061807626,
-   "latestValue": 14,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -1717,7 +1717,7 @@
    "scoreMargin": 5,
    "valueAtPick": 17,
    "projection": 31.670782752703673,
-   "latestValue": 19,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Under",
@@ -1851,7 +1851,7 @@
    "scoreMargin": -1,
    "valueAtPick": 4,
    "projection": 21.171805601670712,
-   "latestValue": 6,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -2115,7 +2115,7 @@
    "scoreMargin": 1,
    "valueAtPick": 17,
    "projection": 26.402317502270463,
-   "latestValue": 19,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Over",
@@ -2381,7 +2381,7 @@
    "scoreMargin": -7,
    "valueAtPick": 3,
    "projection": 6.771386981670728,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Over",
     "Rebounds",
@@ -2480,7 +2480,7 @@
    "scoreMargin": 11,
    "valueAtPick": 3,
    "projection": 5.720271513914498,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -2546,7 +2546,7 @@
    "scoreMargin": 11,
    "valueAtPick": 8,
    "projection": 14.13608858821207,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -2757,9 +2757,176 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718020-176-rebounds",
+   "gameDate": "2026-11-02",
+   "gameId": 21718020,
+   "matchup": "MIL @ MIN",
+   "playerId": 176,
+   "playerName": "Rudy Gobert",
+   "teamAbbreviation": "MIN",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 10.5,
+   "americanOdds": 111,
+   "vendor": "caesars",
+   "modelProbability": 0.5827033769592809,
+   "evPercent": 22.950412538408283,
+   "foundAt": "2026-11-03T02:03:09.134Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 1,
+   "valueAtPick": 5,
+   "projection": 9.932934073256671,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718020-1091349754-rebounds",
+   "gameDate": "2026-11-02",
+   "gameId": 21718020,
+   "matchup": "MIL @ MIN",
+   "playerId": 1091349754,
+   "playerName": "Brayden Burries",
+   "teamAbbreviation": "MIL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 10.5,
+   "americanOdds": 123,
+   "vendor": "caesars",
+   "modelProbability": 0.5503969810989895,
+   "evPercent": 22.738526785074665,
+   "foundAt": "2026-11-03T02:03:09.134Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -1,
+   "valueAtPick": 8,
+   "projection": 10.757161458333334,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718020-38017712-points_rebounds_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718020,
+   "matchup": "MIL @ MIN",
+   "playerId": 38017712,
+   "playerName": "Ryan Rollins",
+   "teamAbbreviation": "MIL",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 19.5,
+   "americanOdds": 104,
+   "vendor": "fanduel",
+   "modelProbability": 0.6003213180841357,
+   "evPercent": 22.465548889163678,
+   "foundAt": "2026-11-03T02:03:09.134Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -1,
+   "valueAtPick": 10,
+   "projection": 20.76475285328191,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718020-265-points",
+   "gameDate": "2026-11-02",
+   "gameId": 21718020,
+   "matchup": "MIL @ MIN",
+   "playerId": 265,
+   "playerName": "Kyle Kuzma",
+   "teamAbbreviation": "MIL",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": -132,
+   "vendor": "fanduel",
+   "modelProbability": 0.689584506188142,
+   "evPercent": 21.199701087612844,
+   "foundAt": "2026-11-03T02:03:09.134Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -1,
+   "valueAtPick": 2,
+   "projection": 5.938494368206621,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718020-17553979-points_rebounds_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718020,
+   "matchup": "MIL @ MIN",
+   "playerId": 17553979,
+   "playerName": "Jonathan Kuminga",
+   "teamAbbreviation": "MIN",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 23.5,
+   "americanOdds": -132,
+   "vendor": "fanduel",
+   "modelProbability": 0.6794724186333072,
+   "evPercent": 19.422425093126726,
+   "foundAt": "2026-11-03T02:03:09.134Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 1,
+   "valueAtPick": 10,
+   "projection": 21.140053103531457,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 364,
+ "calls": 374,
  "note": null,
  "checkpointsTaken": {
   "21718012": [
@@ -2794,7 +2961,8 @@
    "end-q1"
   ],
   "21718020": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
