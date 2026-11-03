@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "updatedAt": "2026-11-03T03:40:19.631Z",
+ "updatedAt": "2026-11-03T03:44:13.856Z",
  "state": "running",
  "games": [
   {
@@ -70,43 +70,43 @@
    "gameId": 21718021,
    "matchup": "BOS @ HOU",
    "status": "4th Qtr",
-   "homeScore": 84,
-   "visitorScore": 76
+   "homeScore": 93,
+   "visitorScore": 79
   },
   {
    "gameId": 21718022,
    "matchup": "UTA @ SAS",
    "status": "4th Qtr",
-   "homeScore": 97,
-   "visitorScore": 73
+   "homeScore": 102,
+   "visitorScore": 78
   },
   {
    "gameId": 21718023,
    "matchup": "POR @ DEN",
    "status": "3rd Qtr",
-   "homeScore": 72,
-   "visitorScore": 66
+   "homeScore": 74,
+   "visitorScore": 70
   },
   {
    "gameId": 21718024,
    "matchup": "PHX @ GSW",
-   "status": "1st Qtr",
-   "homeScore": 19,
-   "visitorScore": 31
+   "status": "2nd Qtr",
+   "homeScore": 21,
+   "visitorScore": 35
   },
   {
    "gameId": 21718025,
    "matchup": "TOR @ LAC",
-   "status": "1st Qtr",
+   "status": "2nd Qtr",
    "homeScore": 33,
-   "visitorScore": 22
+   "visitorScore": 24
   },
   {
    "gameId": 21718026,
    "matchup": "MIA @ LAL",
-   "status": "1st Qtr",
-   "homeScore": 35,
-   "visitorScore": 28
+   "status": "2nd Qtr",
+   "homeScore": 37,
+   "visitorScore": 30
   }
  ],
  "picks": [
@@ -3760,7 +3760,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 17.533316246943414,
-   "latestValue": 17,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -4014,7 +4014,7 @@
    "scoreMargin": 11,
    "valueAtPick": 4,
    "projection": 11.353910243264885,
-   "latestValue": 13,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -4115,7 +4115,7 @@
    "scoreMargin": 11,
    "valueAtPick": 0,
    "projection": 1.2347341227445543,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Over",
     "3PM",
@@ -4932,7 +4932,7 @@
    "scoreMargin": 12,
    "valueAtPick": 15,
    "projection": 37.226488130997495,
-   "latestValue": 26,
+   "latestValue": 27,
    "tags": [
     "Best bet",
     "Over",
@@ -5032,7 +5032,7 @@
    "scoreMargin": -12,
    "valueAtPick": 3,
    "projection": 16.656289620072215,
-   "latestValue": 11,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -5065,7 +5065,7 @@
    "scoreMargin": 12,
    "valueAtPick": 7,
    "projection": 21.714257096934375,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -5164,7 +5164,7 @@
    "scoreMargin": -7,
    "valueAtPick": 2,
    "projection": 3.539612086966386,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Under",
     "Assists",
@@ -5230,7 +5230,7 @@
    "scoreMargin": 7,
    "valueAtPick": 0,
    "projection": 0.571560502111254,
-   "latestValue": 0,
+   "latestValue": 2,
    "tags": [
     "Over",
     "3PM",
@@ -5363,7 +5363,7 @@
    "scoreMargin": 10,
    "valueAtPick": 17,
    "projection": 26.728819319510905,
-   "latestValue": 24,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Under",
@@ -6090,7 +6090,7 @@
    "scoreMargin": 8,
    "valueAtPick": 25,
    "projection": 43.30608147199866,
-   "latestValue": 27,
+   "latestValue": 28,
    "tags": [
     "Best bet",
     "Over",
@@ -6123,7 +6123,7 @@
    "scoreMargin": 8,
    "valueAtPick": 17,
    "projection": 37.27018148827192,
-   "latestValue": 19,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Over",
@@ -6294,7 +6294,7 @@
    "scoreMargin": 25,
    "valueAtPick": 5,
    "projection": 6.352900239320751,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Over",
     "Reb+Ast",
@@ -6328,7 +6328,7 @@
    "scoreMargin": 9,
    "valueAtPick": 6,
    "projection": 7.813102960811977,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -6728,7 +6728,7 @@
    "scoreMargin": -11,
    "valueAtPick": 4,
    "projection": 17.041413985041064,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -6805,9 +6805,173 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718026-475-rebounds",
+   "gameDate": "2026-11-02",
+   "gameId": 21718026,
+   "matchup": "MIA @ LAL",
+   "playerId": 475,
+   "playerName": "Andrew Wiggins",
+   "teamAbbreviation": "MIA",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": 130,
+   "vendor": "draftkings",
+   "modelProbability": 0.539104046401934,
+   "evPercent": 23.99393067244482,
+   "foundAt": "2026-11-03T03:42:13.022Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -7,
+   "valueAtPick": 0,
+   "projection": 2.3172670572916663,
+   "latestValue": 0,
+   "tags": [
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718026-38017705-blocks",
+   "gameDate": "2026-11-02",
+   "gameId": 21718026,
+   "matchup": "MIA @ LAL",
+   "playerId": 38017705,
+   "playerName": "Walker Kessler",
+   "teamAbbreviation": "LAL",
+   "propType": "blocks",
+   "label": "Blocks",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": -130,
+   "vendor": "draftkings",
+   "modelProbability": 0.6953609379245294,
+   "evPercent": 23.02539670972441,
+   "foundAt": "2026-11-03T03:42:13.022Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 7,
+   "valueAtPick": 0,
+   "projection": 0.9231275525948777,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Blocks",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718026-17895858-rebounds",
+   "gameDate": "2026-11-02",
+   "gameId": 21718026,
+   "matchup": "MIA @ LAL",
+   "playerId": 17895858,
+   "playerName": "Quentin Grimes",
+   "teamAbbreviation": "LAL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 100,
+   "vendor": "draftkings",
+   "modelProbability": 0.6149363066257411,
+   "evPercent": 22.98726132514821,
+   "foundAt": "2026-11-03T03:42:13.022Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 7,
+   "valueAtPick": 0,
+   "projection": 3.132335398626829,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718026-132-assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718026,
+   "matchup": "MIA @ LAL",
+   "playerId": 132,
+   "playerName": "Luka Doncic",
+   "teamAbbreviation": "LAL",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": 114,
+   "vendor": "fanduel",
+   "modelProbability": 0.5643441198557118,
+   "evPercent": 20.769641649122295,
+   "foundAt": "2026-11-03T03:42:13.022Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 7,
+   "valueAtPick": 5,
+   "projection": 9.940239980981913,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718026-15-points_rebounds_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718026,
+   "matchup": "MIA @ LAL",
+   "playerId": 15,
+   "playerName": "Giannis Antetokounmpo",
+   "teamAbbreviation": "MIA",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 50.5,
+   "americanOdds": 104,
+   "vendor": "fanduel",
+   "modelProbability": 0.5887829924498271,
+   "evPercent": 20.111730459764733,
+   "foundAt": "2026-11-03T03:42:13.022Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -7,
+   "valueAtPick": 14,
+   "projection": 48.500910481714776,
+   "latestValue": 14,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 662,
+ "calls": 675,
  "note": null,
  "checkpointsTaken": {
   "21718012": [
@@ -6873,6 +7037,9 @@
    "end-q1"
   ],
   "21718025": [
+   "end-q1"
+  ],
+  "21718026": [
    "end-q1"
   ]
  }
