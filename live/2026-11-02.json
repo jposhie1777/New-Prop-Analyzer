@@ -1,13 +1,13 @@
 {
  "date": "2026-11-02",
- "updatedAt": "2026-11-03T01:57:09.905Z",
+ "updatedAt": "2026-11-03T02:00:13.995Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718012,
    "matchup": "OKC @ CLE",
    "status": "4th Qtr",
-   "homeScore": 92,
+   "homeScore": 94,
    "visitorScore": 93
   },
   {
@@ -21,36 +21,36 @@
    "gameId": 21718014,
    "matchup": "ATL @ IND",
    "status": "3rd Qtr",
-   "homeScore": 66,
+   "homeScore": 68,
    "visitorScore": 80
   },
   {
    "gameId": 21718015,
    "matchup": "BKN @ NYK",
    "status": "3rd Qtr",
-   "homeScore": 51,
-   "visitorScore": 44
+   "homeScore": 55,
+   "visitorScore": 48
   },
   {
    "gameId": 21718016,
    "matchup": "WAS @ ORL",
    "status": "3rd Qtr",
-   "homeScore": 61,
-   "visitorScore": 62
+   "homeScore": 63,
+   "visitorScore": 67
   },
   {
    "gameId": 21718017,
    "matchup": "CHI @ PHI",
    "status": "3rd Qtr",
-   "homeScore": 73,
+   "homeScore": 75,
    "visitorScore": 64
   },
   {
    "gameId": 21718018,
    "matchup": "SAC @ DAL",
    "status": "2nd Qtr",
-   "homeScore": 37,
-   "visitorScore": 32
+   "homeScore": 42,
+   "visitorScore": 42
   },
   {
    "gameId": 21718019,
@@ -63,22 +63,22 @@
    "gameId": 21718020,
    "matchup": "MIL @ MIN",
    "status": "2nd Qtr",
-   "homeScore": 44,
+   "homeScore": 47,
    "visitorScore": 41
   },
   {
    "gameId": 21718021,
    "matchup": "BOS @ HOU",
    "status": "1st Qtr",
-   "homeScore": 15,
-   "visitorScore": 13
+   "homeScore": 25,
+   "visitorScore": 15
   },
   {
    "gameId": 21718022,
    "matchup": "UTA @ SAS",
    "status": "1st Qtr",
-   "homeScore": 18,
-   "visitorScore": 4
+   "homeScore": 20,
+   "visitorScore": 6
   },
   {
    "gameId": 21718023,
@@ -294,7 +294,7 @@
    "scoreMargin": 8,
    "valueAtPick": 2,
    "projection": 6.31880457714017,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -525,7 +525,7 @@
    "scoreMargin": 6,
    "valueAtPick": 0,
    "projection": 4.759647465366367,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Over",
     "Assists",
@@ -690,7 +690,7 @@
    "scoreMargin": -5,
    "valueAtPick": 2,
    "projection": 3.3438283381331804,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Over",
     "3PM",
@@ -1717,7 +1717,7 @@
    "scoreMargin": 5,
    "valueAtPick": 17,
    "projection": 31.670782752703673,
-   "latestValue": 18,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -2381,7 +2381,7 @@
    "scoreMargin": -7,
    "valueAtPick": 3,
    "projection": 6.771386981670728,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Over",
     "Rebounds",
@@ -2759,7 +2759,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 358,
+ "calls": 364,
  "note": null,
  "checkpointsTaken": {
   "21718012": [
