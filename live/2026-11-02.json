@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "updatedAt": "2026-11-03T03:25:13.532Z",
+ "updatedAt": "2026-11-03T03:29:13.381Z",
  "state": "running",
  "games": [
   {
@@ -49,41 +49,41 @@
    "gameId": 21718018,
    "matchup": "SAC @ DAL",
    "status": "4th Qtr",
-   "homeScore": 93,
-   "visitorScore": 106
+   "homeScore": 100,
+   "visitorScore": 115
   },
   {
    "gameId": 21718019,
    "matchup": "NOP @ MEM",
    "status": "OT1",
-   "homeScore": 126,
-   "visitorScore": 124
+   "homeScore": 129,
+   "visitorScore": 129
   },
   {
    "gameId": 21718020,
    "matchup": "MIL @ MIN",
-   "status": "4th Qtr",
-   "homeScore": 110,
-   "visitorScore": 98
+   "status": "Final",
+   "homeScore": 112,
+   "visitorScore": 100
   },
   {
    "gameId": 21718021,
    "matchup": "BOS @ HOU",
    "status": "3rd Qtr",
    "homeScore": 80,
-   "visitorScore": 71
+   "visitorScore": 73
   },
   {
    "gameId": 21718022,
    "matchup": "UTA @ SAS",
-   "status": "3rd Qtr",
-   "homeScore": 92,
-   "visitorScore": 69
+   "status": "4th Qtr",
+   "homeScore": 94,
+   "visitorScore": 70
   },
   {
    "gameId": 21718023,
    "matchup": "POR @ DEN",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 66,
    "visitorScore": 58
   },
@@ -91,21 +91,21 @@
    "gameId": 21718024,
    "matchup": "PHX @ GSW",
    "status": "1st Qtr",
-   "homeScore": 8,
-   "visitorScore": 14
+   "homeScore": 15,
+   "visitorScore": 18
   },
   {
    "gameId": 21718025,
    "matchup": "TOR @ LAC",
    "status": "1st Qtr",
-   "homeScore": 16,
-   "visitorScore": 11
+   "homeScore": 19,
+   "visitorScore": 13
   },
   {
    "gameId": 21718026,
    "matchup": "MIA @ LAL",
    "status": "1st Qtr",
-   "homeScore": 19,
+   "homeScore": 23,
    "visitorScore": 17
   }
  ],
@@ -1619,7 +1619,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 1,
+    "gradedAt": "2026-11-03T03:27:16.628Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1644,7 +1648,7 @@
    "scoreMargin": -11,
    "valueAtPick": 7,
    "projection": 18.362540582180106,
-   "latestValue": 17,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Over",
@@ -1652,7 +1656,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 19,
+    "gradedAt": "2026-11-03T03:27:16.628Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1686,7 +1694,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 6,
+    "gradedAt": "2026-11-03T03:27:16.628Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1720,7 +1732,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 13,
+    "gradedAt": "2026-11-03T03:27:16.628Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1753,7 +1769,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 20,
+    "gradedAt": "2026-11-03T03:27:16.628Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1963,7 +1983,7 @@
    "scoreMargin": -1,
    "valueAtPick": 0,
    "projection": 2.0235862921719527,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -3048,7 +3068,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 10,
+    "gradedAt": "2026-11-03T03:27:16.628Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -3082,7 +3106,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 9,
+    "gradedAt": "2026-11-03T03:27:16.628Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -3116,7 +3144,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 15,
+    "gradedAt": "2026-11-03T03:27:16.628Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -3149,7 +3181,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 2,
+    "gradedAt": "2026-11-03T03:27:16.628Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -3182,7 +3218,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 21,
+    "gradedAt": "2026-11-03T03:27:16.628Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -5316,7 +5356,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 12,
+    "gradedAt": "2026-11-03T03:27:16.628Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -5349,7 +5393,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 21,
+    "gradedAt": "2026-11-03T03:27:16.628Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -5382,7 +5430,11 @@
     "Under 60% of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 8,
+    "gradedAt": "2026-11-03T03:27:16.628Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -5415,7 +5467,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 20,
+    "gradedAt": "2026-11-03T03:27:16.628Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -5449,7 +5505,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 10,
+    "gradedAt": "2026-11-03T03:27:16.628Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -5474,7 +5534,7 @@
    "scoreMargin": 5,
    "valueAtPick": 13,
    "projection": 16.328863667363212,
-   "latestValue": 16,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -5953,9 +6013,181 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718022-56677822-assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718022,
+   "matchup": "UTA @ SAS",
+   "playerId": 56677822,
+   "playerName": "Victor Wembanyama",
+   "teamAbbreviation": "SAS",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": 104,
+   "vendor": "fanduel",
+   "modelProbability": 0.6073616013078165,
+   "evPercent": 23.901766666794554,
+   "foundAt": "2026-11-03T03:26:12.366Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 25,
+   "valueAtPick": 4,
+   "projection": 4.797486913145558,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Blowout risk",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718022-666682-points",
+   "gameDate": "2026-11-02",
+   "gameId": 21718022,
+   "matchup": "UTA @ SAS",
+   "playerId": 666682,
+   "playerName": "Keldon Johnson",
+   "teamAbbreviation": "SAS",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 15.5,
+   "americanOdds": 124,
+   "vendor": "draftkings",
+   "modelProbability": 0.549608272222198,
+   "evPercent": 23.11225297777235,
+   "foundAt": "2026-11-03T03:26:12.366Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 25,
+   "valueAtPick": 13,
+   "projection": 15.833821312865496,
+   "latestValue": 13,
+   "tags": [
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718022-297-points",
+   "gameDate": "2026-11-02",
+   "gameId": 21718022,
+   "matchup": "UTA @ SAS",
+   "playerId": 297,
+   "playerName": "Lauri Markkanen",
+   "teamAbbreviation": "UTA",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 25.5,
+   "americanOdds": -130,
+   "vendor": "draftkings",
+   "modelProbability": 0.669445946198074,
+   "evPercent": 18.440436635043845,
+   "foundAt": "2026-11-03T03:26:12.366Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -25,
+   "valueAtPick": 22,
+   "projection": 24.416134546815414,
+   "latestValue": 22,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718022-3547246-points",
+   "gameDate": "2026-11-02",
+   "gameId": 21718022,
+   "matchup": "UTA @ SAS",
+   "playerId": 3547246,
+   "playerName": "Devin Vassell",
+   "teamAbbreviation": "SAS",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 14.5,
+   "americanOdds": 100,
+   "vendor": "betmgm",
+   "modelProbability": 0.5888057073189039,
+   "evPercent": 17.76114146378078,
+   "foundAt": "2026-11-03T03:26:12.366Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 25,
+   "valueAtPick": 11,
+   "projection": 13.89273200857184,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718022-38017649-rebounds_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718022,
+   "matchup": "UTA @ SAS",
+   "playerId": 38017649,
+   "playerName": "Julian Champagnie",
+   "teamAbbreviation": "SAS",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": 154,
+   "vendor": "fanduel",
+   "modelProbability": 0.46030294856450893,
+   "evPercent": 16.916948935385268,
+   "foundAt": "2026-11-03T03:26:12.366Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 25,
+   "valueAtPick": 5,
+   "projection": 6.352900239320751,
+   "latestValue": 5,
+   "tags": [
+    "Over",
+    "Reb+Ast",
+    "Blowout risk",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 611,
+ "calls": 624,
  "note": null,
  "checkpointsTaken": {
   "21718012": [
@@ -6009,7 +6241,8 @@
   ],
   "21718022": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718023": [
    "end-q1",
