@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "updatedAt": "2026-11-03T01:31:08.389Z",
+ "updatedAt": "2026-11-03T01:35:10.363Z",
  "state": "running",
  "games": [
   {
@@ -15,7 +15,7 @@
    "matchup": "DET @ CHA",
    "status": "2nd Qtr",
    "homeScore": 38,
-   "visitorScore": 45
+   "visitorScore": 47
   },
   {
    "gameId": 21718014,
@@ -28,42 +28,42 @@
    "gameId": 21718015,
    "matchup": "BKN @ NYK",
    "status": "2nd Qtr",
-   "homeScore": 39,
-   "visitorScore": 38
+   "homeScore": 41,
+   "visitorScore": 40
   },
   {
    "gameId": 21718016,
    "matchup": "WAS @ ORL",
    "status": "2nd Qtr",
-   "homeScore": 51,
-   "visitorScore": 51
+   "homeScore": 55,
+   "visitorScore": 56
   },
   {
    "gameId": 21718017,
    "matchup": "CHI @ PHI",
    "status": "2nd Qtr",
-   "homeScore": 55,
-   "visitorScore": 52
+   "homeScore": 62,
+   "visitorScore": 54
   },
   {
    "gameId": 21718018,
    "matchup": "SAC @ DAL",
    "status": "1st Qtr",
-   "homeScore": 12,
-   "visitorScore": 14
+   "homeScore": 18,
+   "visitorScore": 17
   },
   {
    "gameId": 21718019,
    "matchup": "NOP @ MEM",
    "status": "1st Qtr",
-   "homeScore": 19,
-   "visitorScore": 22
+   "homeScore": 28,
+   "visitorScore": 30
   },
   {
    "gameId": 21718020,
    "matchup": "MIL @ MIN",
    "status": "1st Qtr",
-   "homeScore": 25,
+   "homeScore": 29,
    "visitorScore": 16
   },
   {
@@ -132,7 +132,7 @@
    "scoreMargin": -4,
    "valueAtPick": 10,
    "projection": 36.973477396721286,
-   "latestValue": 24,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Over",
@@ -591,7 +591,7 @@
    "scoreMargin": -6,
    "valueAtPick": 5,
    "projection": 16.336888789941383,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -657,7 +657,7 @@
    "scoreMargin": 5,
    "valueAtPick": 5,
    "projection": 18.780900196396956,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -1263,9 +1263,175 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718014-3547244-points_rebounds_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718014,
+   "matchup": "ATL @ IND",
+   "playerId": 3547244,
+   "playerName": "Onyeka Okongwu",
+   "teamAbbreviation": "ATL",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 27.5,
+   "americanOdds": -108,
+   "vendor": "fanduel",
+   "modelProbability": 0.6324276158295126,
+   "evPercent": 21.800874159757978,
+   "foundAt": "2026-11-03T01:32:07.902Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 12,
+   "valueAtPick": 15,
+   "projection": 25.81295986031116,
+   "latestValue": 15,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718014-44477085-rebounds_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718014,
+   "matchup": "ATL @ IND",
+   "playerId": 44477085,
+   "playerName": "Quenton Jackson",
+   "teamAbbreviation": "IND",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 11.5,
+   "americanOdds": -154,
+   "vendor": "fanduel",
+   "modelProbability": 0.7354777118681924,
+   "evPercent": 21.3060641652733,
+   "foundAt": "2026-11-03T01:32:07.902Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -12,
+   "valueAtPick": 5,
+   "projection": 9.757835295811667,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718014-666541-points_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718014,
+   "matchup": "ATL @ IND",
+   "playerId": 666541,
+   "playerName": "Luguentz Dort",
+   "teamAbbreviation": "ATL",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 12.5,
+   "americanOdds": 104,
+   "vendor": "fanduel",
+   "modelProbability": 0.5919883608319136,
+   "evPercent": 20.76562560971038,
+   "foundAt": "2026-11-03T01:32:07.902Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 12,
+   "valueAtPick": 8,
+   "projection": 11.811158145944423,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718014-17896078-rebounds_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718014,
+   "matchup": "ATL @ IND",
+   "playerId": 17896078,
+   "playerName": "Aaron Wiggins",
+   "teamAbbreviation": "ATL",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 6.5,
+   "americanOdds": -130,
+   "vendor": "fanduel",
+   "modelProbability": 0.6688636367941212,
+   "evPercent": 18.337412663575293,
+   "foundAt": "2026-11-03T01:32:07.902Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 12,
+   "valueAtPick": 3,
+   "projection": 5.60543237678032,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718014-17896103-points",
+   "gameDate": "2026-11-02",
+   "gameId": 21718014,
+   "matchup": "ATL @ IND",
+   "playerId": 17896103,
+   "playerName": "Jay Huff",
+   "teamAbbreviation": "IND",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 26.5,
+   "americanOdds": -108,
+   "vendor": "fanduel",
+   "modelProbability": 0.6109029033663012,
+   "evPercent": 17.655373981658016,
+   "foundAt": "2026-11-03T01:32:07.902Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -12,
+   "valueAtPick": 17,
+   "projection": 25.21580510212474,
+   "latestValue": 17,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 267,
+ "calls": 279,
  "note": null,
  "checkpointsTaken": {
   "21718012": [
@@ -1276,7 +1442,8 @@
    "end-q1"
   ],
   "21718014": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718015": [
    "end-q1"
