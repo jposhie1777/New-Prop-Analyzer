@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "updatedAt": "2026-11-03T03:51:13.958Z",
+ "updatedAt": "2026-11-03T03:55:15.158Z",
  "state": "running",
  "games": [
   {
@@ -70,29 +70,29 @@
    "gameId": 21718021,
    "matchup": "BOS @ HOU",
    "status": "4th Qtr",
-   "homeScore": 102,
-   "visitorScore": 84
+   "homeScore": 104,
+   "visitorScore": 89
   },
   {
    "gameId": 21718022,
    "matchup": "UTA @ SAS",
    "status": "4th Qtr",
    "homeScore": 106,
-   "visitorScore": 83
+   "visitorScore": 90
   },
   {
    "gameId": 21718023,
    "matchup": "POR @ DEN",
    "status": "3rd Qtr",
-   "homeScore": 85,
-   "visitorScore": 82
+   "homeScore": 87,
+   "visitorScore": 85
   },
   {
    "gameId": 21718024,
    "matchup": "PHX @ GSW",
    "status": "2nd Qtr",
-   "homeScore": 34,
-   "visitorScore": 44
+   "homeScore": 36,
+   "visitorScore": 46
   },
   {
    "gameId": 21718025,
@@ -105,8 +105,8 @@
    "gameId": 21718026,
    "matchup": "MIA @ LAL",
    "status": "2nd Qtr",
-   "homeScore": 40,
-   "visitorScore": 36
+   "homeScore": 46,
+   "visitorScore": 40
   }
  ],
  "picks": [
@@ -5065,7 +5065,7 @@
    "scoreMargin": 12,
    "valueAtPick": 7,
    "projection": 21.714257096934375,
-   "latestValue": 17,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Over",
@@ -6123,7 +6123,7 @@
    "scoreMargin": 8,
    "valueAtPick": 17,
    "projection": 37.27018148827192,
-   "latestValue": 26,
+   "latestValue": 27,
    "tags": [
     "Best bet",
     "Over",
@@ -6530,7 +6530,7 @@
    "scoreMargin": -12,
    "valueAtPick": 3,
    "projection": 20.601144392933747,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -6629,7 +6629,7 @@
    "scoreMargin": 12,
    "valueAtPick": 2,
    "projection": 3.9400722998749997,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -6728,7 +6728,7 @@
    "scoreMargin": -11,
    "valueAtPick": 4,
    "projection": 17.041413985041064,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -6959,7 +6959,7 @@
    "scoreMargin": -7,
    "valueAtPick": 14,
    "projection": 48.500910481714776,
-   "latestValue": 17,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Under",
@@ -6969,9 +6969,176 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718023-214-rebounds_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718023,
+   "matchup": "POR @ DEN",
+   "playerId": 214,
+   "playerName": "Jrue Holiday",
+   "teamAbbreviation": "POR",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 14.5,
+   "americanOdds": 138,
+   "vendor": "fanduel",
+   "modelProbability": 0.5169971657949526,
+   "evPercent": 23.045325459198708,
+   "foundAt": "2026-11-03T03:54:13.539Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -2,
+   "valueAtPick": 12,
+   "projection": 14.586977217990949,
+   "latestValue": 12,
+   "tags": [
+    "Over",
+    "Reb+Ast",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718023-335-points",
+   "gameDate": "2026-11-02",
+   "gameId": 21718023,
+   "matchup": "POR @ DEN",
+   "playerId": 335,
+   "playerName": "Jamal Murray",
+   "teamAbbreviation": "DEN",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 32.5,
+   "americanOdds": -105,
+   "vendor": "draftkings",
+   "modelProbability": 0.6264334020374469,
+   "evPercent": 22.30366420731107,
+   "foundAt": "2026-11-03T03:54:13.539Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 2,
+   "valueAtPick": 27,
+   "projection": 33.84139674375556,
+   "latestValue": 27,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718023-177-rebounds_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718023,
+   "matchup": "POR @ DEN",
+   "playerId": 177,
+   "playerName": "Aaron Gordon",
+   "teamAbbreviation": "DEN",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 6.5,
+   "americanOdds": 118,
+   "vendor": "fanduel",
+   "modelProbability": 0.5567322431154949,
+   "evPercent": 21.367628999177857,
+   "foundAt": "2026-11-03T03:54:13.539Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 2,
+   "valueAtPick": 5,
+   "projection": 6.29404204807647,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718023-3547242-points_rebounds",
+   "gameDate": "2026-11-02",
+   "gameId": 21718023,
+   "matchup": "POR @ DEN",
+   "playerId": 3547242,
+   "playerName": "Deni Avdija",
+   "teamAbbreviation": "POR",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 28.5,
+   "americanOdds": -122,
+   "vendor": "fanduel",
+   "modelProbability": 0.6665602007079594,
+   "evPercent": 21.292102096038512,
+   "foundAt": "2026-11-03T03:54:13.539Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -2,
+   "valueAtPick": 21,
+   "projection": 26.912683880401122,
+   "latestValue": 21,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Foul trouble",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718023-38017709-points",
+   "gameDate": "2026-11-02",
+   "gameId": 21718023,
+   "matchup": "POR @ DEN",
+   "playerId": 38017709,
+   "playerName": "Christian Braun",
+   "teamAbbreviation": "DEN",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 14.5,
+   "americanOdds": -110,
+   "vendor": "draftkings",
+   "modelProbability": 0.6229426841579564,
+   "evPercent": 18.9254215210644,
+   "foundAt": "2026-11-03T03:54:13.539Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 2,
+   "valueAtPick": 12,
+   "projection": 15.421551272137135,
+   "latestValue": 12,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 689,
+ "calls": 701,
  "note": null,
  "checkpointsTaken": {
   "21718012": [
@@ -7031,7 +7198,8 @@
   ],
   "21718023": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718024": [
    "end-q1"
