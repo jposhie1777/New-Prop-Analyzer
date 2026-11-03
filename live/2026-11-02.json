@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "updatedAt": "2026-11-03T03:09:13.192Z",
+ "updatedAt": "2026-11-03T03:13:15.749Z",
  "state": "running",
  "games": [
   {
@@ -56,36 +56,36 @@
    "gameId": 21718019,
    "matchup": "NOP @ MEM",
    "status": "4th Qtr",
-   "homeScore": 107,
-   "visitorScore": 116
+   "homeScore": 113,
+   "visitorScore": 121
   },
   {
    "gameId": 21718020,
    "matchup": "MIL @ MIN",
    "status": "4th Qtr",
-   "homeScore": 91,
+   "homeScore": 96,
    "visitorScore": 81
   },
   {
    "gameId": 21718021,
    "matchup": "BOS @ HOU",
    "status": "3rd Qtr",
-   "homeScore": 70,
-   "visitorScore": 66
+   "homeScore": 75,
+   "visitorScore": 69
   },
   {
    "gameId": 21718022,
    "matchup": "UTA @ SAS",
    "status": "3rd Qtr",
-   "homeScore": 73,
-   "visitorScore": 58
+   "homeScore": 80,
+   "visitorScore": 61
   },
   {
    "gameId": 21718023,
    "matchup": "POR @ DEN",
    "status": "2nd Qtr",
-   "homeScore": 62,
-   "visitorScore": 55
+   "homeScore": 66,
+   "visitorScore": 58
   },
   {
    "gameId": 21718024,
@@ -97,16 +97,16 @@
   {
    "gameId": 21718025,
    "matchup": "TOR @ LAC",
-   "status": "2026-11-03T03:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 3,
+   "visitorScore": 2
   },
   {
    "gameId": 21718026,
    "matchup": "MIA @ LAL",
-   "status": "2026-11-03T03:00:00Z",
+   "status": "1st Qtr",
    "homeScore": 0,
-   "visitorScore": 0
+   "visitorScore": 2
   }
  ],
  "picks": [
@@ -1677,7 +1677,7 @@
    "scoreMargin": 11,
    "valueAtPick": 3,
    "projection": 6.0032581570549475,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -1745,7 +1745,7 @@
    "scoreMargin": 11,
    "valueAtPick": 8,
    "projection": 23.9145809338165,
-   "latestValue": 14,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Over",
@@ -2031,7 +2031,7 @@
    "scoreMargin": -1,
    "valueAtPick": 4,
    "projection": 21.171805601670712,
-   "latestValue": 19,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Under",
@@ -2163,7 +2163,7 @@
    "scoreMargin": -3,
    "valueAtPick": 2,
    "projection": 9.789780038174875,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -2196,7 +2196,7 @@
    "scoreMargin": 3,
    "valueAtPick": 0,
    "projection": 10.858667869232585,
-   "latestValue": 18,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Under",
@@ -3040,7 +3040,7 @@
    "scoreMargin": 1,
    "valueAtPick": 5,
    "projection": 9.932934073256671,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -3405,7 +3405,7 @@
    "scoreMargin": 3,
    "valueAtPick": 5,
    "projection": 10.151387506894036,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -3607,7 +3607,7 @@
    "scoreMargin": 0,
    "valueAtPick": 3,
    "projection": 7.407907474384957,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -3640,7 +3640,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 17.533316246943414,
-   "latestValue": 13,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Under",
@@ -3894,7 +3894,7 @@
    "scoreMargin": 11,
    "valueAtPick": 4,
    "projection": 11.353910243264885,
-   "latestValue": 8,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -3961,7 +3961,7 @@
    "scoreMargin": -11,
    "valueAtPick": 1,
    "projection": 1.8720587304886824,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -4812,7 +4812,7 @@
    "scoreMargin": 12,
    "valueAtPick": 15,
    "projection": 37.226488130997495,
-   "latestValue": 20,
+   "latestValue": 24,
    "tags": [
     "Best bet",
     "Over",
@@ -4945,7 +4945,7 @@
    "scoreMargin": 12,
    "valueAtPick": 7,
    "projection": 21.714257096934375,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -5077,7 +5077,7 @@
    "scoreMargin": 7,
    "valueAtPick": 6,
    "projection": 14.824854804565309,
-   "latestValue": 13,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -5142,7 +5142,7 @@
    "scoreMargin": -10,
    "valueAtPick": 5,
    "projection": 6.289957315396219,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -5243,7 +5243,7 @@
    "scoreMargin": 10,
    "valueAtPick": 17,
    "projection": 26.728819319510905,
-   "latestValue": 21,
+   "latestValue": 24,
    "tags": [
     "Best bet",
     "Under",
@@ -5676,7 +5676,7 @@
    "scoreMargin": 7,
    "valueAtPick": 26,
    "projection": 33.09542687239865,
-   "latestValue": 26,
+   "latestValue": 27,
    "tags": [
     "Best bet",
     "Under",
@@ -5745,7 +5745,7 @@
    "scoreMargin": -7,
    "valueAtPick": 15,
    "projection": 20.374773461849664,
-   "latestValue": 18,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -5788,9 +5788,174 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718023-278-assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718023,
+   "matchup": "POR @ DEN",
+   "playerId": 278,
+   "playerName": "Damian Lillard",
+   "teamAbbreviation": "POR",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 7.5,
+   "americanOdds": 142,
+   "vendor": "fanduel",
+   "modelProbability": 0.512107692025564,
+   "evPercent": 23.9300614701865,
+   "foundAt": "2026-11-03T03:13:11.808Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -8,
+   "valueAtPick": 5,
+   "projection": 7.559374999999999,
+   "latestValue": 5,
+   "tags": [
+    "Over",
+    "Assists",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718023-3547242-rebounds_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718023,
+   "matchup": "POR @ DEN",
+   "playerId": 3547242,
+   "playerName": "Deni Avdija",
+   "teamAbbreviation": "POR",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6546658849392075,
+   "evPercent": 23.918899649207127,
+   "foundAt": "2026-11-03T03:13:11.808Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -8,
+   "valueAtPick": 1,
+   "projection": 6.333835913098956,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718023-56677850-points_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718023,
+   "matchup": "POR @ DEN",
+   "playerId": 56677850,
+   "playerName": "Toumani Camara",
+   "teamAbbreviation": "POR",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 13.5,
+   "americanOdds": -110,
+   "vendor": "fanduel",
+   "modelProbability": 0.6419035574691769,
+   "evPercent": 22.54522460775197,
+   "foundAt": "2026-11-03T03:13:11.808Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -8,
+   "valueAtPick": 7,
+   "projection": 15.065870259391602,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718023-335-points_rebounds_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718023,
+   "matchup": "POR @ DEN",
+   "playerId": 335,
+   "playerName": "Jamal Murray",
+   "teamAbbreviation": "DEN",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 41.5,
+   "americanOdds": 100,
+   "vendor": "fanduel",
+   "modelProbability": 0.6096242735778865,
+   "evPercent": 21.924854715577304,
+   "foundAt": "2026-11-03T03:13:11.808Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 8,
+   "valueAtPick": 25,
+   "projection": 43.30608147199866,
+   "latestValue": 25,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718023-246-points_rebounds",
+   "gameDate": "2026-11-02",
+   "gameId": 21718023,
+   "matchup": "POR @ DEN",
+   "playerId": 246,
+   "playerName": "Nikola Jokic",
+   "teamAbbreviation": "DEN",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 35.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6022802128978555,
+   "evPercent": 21.66060300536681,
+   "foundAt": "2026-11-03T03:13:11.808Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 8,
+   "valueAtPick": 17,
+   "projection": 37.27018148827192,
+   "latestValue": 17,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 575,
+ "calls": 587,
  "note": null,
  "checkpointsTaken": {
   "21718012": [
@@ -5847,7 +6012,8 @@
    "halftime"
   ],
   "21718023": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
