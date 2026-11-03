@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "updatedAt": "2026-11-03T02:42:16.130Z",
+ "updatedAt": "2026-11-03T02:46:12.501Z",
  "state": "running",
  "games": [
   {
@@ -14,57 +14,57 @@
    "gameId": 21718013,
    "matchup": "DET @ CHA",
    "status": "4th Qtr",
-   "homeScore": 77,
+   "homeScore": 80,
    "visitorScore": 106
   },
   {
    "gameId": 21718014,
    "matchup": "ATL @ IND",
    "status": "4th Qtr",
-   "homeScore": 93,
-   "visitorScore": 101
+   "homeScore": 99,
+   "visitorScore": 104
   },
   {
    "gameId": 21718015,
    "matchup": "BKN @ NYK",
    "status": "4th Qtr",
-   "homeScore": 84,
+   "homeScore": 88,
    "visitorScore": 81
   },
   {
    "gameId": 21718016,
    "matchup": "WAS @ ORL",
    "status": "4th Qtr",
-   "homeScore": 86,
-   "visitorScore": 93
+   "homeScore": 88,
+   "visitorScore": 95
   },
   {
    "gameId": 21718017,
    "matchup": "CHI @ PHI",
    "status": "4th Qtr",
-   "homeScore": 107,
-   "visitorScore": 96
+   "homeScore": 113,
+   "visitorScore": 101
   },
   {
    "gameId": 21718018,
    "matchup": "SAC @ DAL",
    "status": "3rd Qtr",
-   "homeScore": 65,
-   "visitorScore": 69
+   "homeScore": 69,
+   "visitorScore": 74
   },
   {
    "gameId": 21718019,
    "matchup": "NOP @ MEM",
    "status": "3rd Qtr",
-   "homeScore": 86,
-   "visitorScore": 92
+   "homeScore": 95,
+   "visitorScore": 94
   },
   {
    "gameId": 21718020,
    "matchup": "MIL @ MIN",
    "status": "3rd Qtr",
-   "homeScore": 72,
-   "visitorScore": 69
+   "homeScore": 76,
+   "visitorScore": 71
   },
   {
    "gameId": 21718021,
@@ -77,15 +77,15 @@
    "gameId": 21718022,
    "matchup": "UTA @ SAS",
    "status": "2nd Qtr",
-   "homeScore": 57,
-   "visitorScore": 47
+   "homeScore": 59,
+   "visitorScore": 49
   },
   {
    "gameId": 21718023,
    "matchup": "POR @ DEN",
    "status": "2nd Qtr",
    "homeScore": 34,
-   "visitorScore": 22
+   "visitorScore": 27
   },
   {
    "gameId": 21718024,
@@ -479,7 +479,7 @@
    "scoreMargin": 6,
    "valueAtPick": 1,
    "projection": 4.6914101744688645,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -1326,7 +1326,7 @@
    "scoreMargin": 12,
    "valueAtPick": 15,
    "projection": 25.81295986031116,
-   "latestValue": 22,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Under",
@@ -1359,7 +1359,7 @@
    "scoreMargin": -12,
    "valueAtPick": 5,
    "projection": 9.757835295811667,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -1724,7 +1724,7 @@
    "scoreMargin": -5,
    "valueAtPick": 12,
    "projection": 22.927740061807626,
-   "latestValue": 25,
+   "latestValue": 28,
    "tags": [
     "Best bet",
     "Over",
@@ -1891,7 +1891,7 @@
    "scoreMargin": -1,
    "valueAtPick": 4,
    "projection": 21.171805601670712,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -2023,7 +2023,7 @@
    "scoreMargin": -3,
    "valueAtPick": 2,
    "projection": 9.789780038174875,
-   "latestValue": 5,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -2056,7 +2056,7 @@
    "scoreMargin": 3,
    "valueAtPick": 0,
    "projection": 10.858667869232585,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -3073,7 +3073,7 @@
    "scoreMargin": 1,
    "valueAtPick": 9,
    "projection": 21.394031324593026,
-   "latestValue": 18,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Under",
@@ -3172,7 +3172,7 @@
    "scoreMargin": -3,
    "valueAtPick": 12,
    "projection": 22.67232515356752,
-   "latestValue": 23,
+   "latestValue": 24,
    "tags": [
     "Best bet",
     "Under",
@@ -3205,7 +3205,7 @@
    "scoreMargin": 3,
    "valueAtPick": 5,
    "projection": 10.151387506894036,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -3639,7 +3639,7 @@
    "scoreMargin": 8,
    "valueAtPick": 20,
    "projection": 24.08521407227172,
-   "latestValue": 21,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Under",
@@ -3707,7 +3707,7 @@
    "scoreMargin": -11,
    "valueAtPick": 0,
    "projection": 1.6157459367208171,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -4040,7 +4040,7 @@
    "scoreMargin": -11,
    "valueAtPick": 11,
    "projection": 15.931782213014749,
-   "latestValue": 19,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Under",
@@ -4073,7 +4073,7 @@
    "scoreMargin": 11,
    "valueAtPick": 11,
    "projection": 16.48970168188999,
-   "latestValue": 22,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Under",
@@ -4139,7 +4139,7 @@
    "scoreMargin": 11,
    "valueAtPick": 7,
    "projection": 8.6051393772109,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Over",
     "Assists",
@@ -4612,7 +4612,7 @@
    "scoreMargin": -12,
    "valueAtPick": 3,
    "projection": 16.656289620072215,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -4819,9 +4819,176 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718022-56677834-rebounds",
+   "gameDate": "2026-11-02",
+   "gameId": 21718022,
+   "matchup": "UTA @ SAS",
+   "playerId": 56677834,
+   "playerName": "Keyonte George",
+   "teamAbbreviation": "UTA",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 6.5,
+   "americanOdds": 120,
+   "vendor": "betmgm",
+   "modelProbability": 0.5601112985116878,
+   "evPercent": 23.224485672571337,
+   "foundAt": "2026-11-03T02:44:10.757Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -10,
+   "valueAtPick": 5,
+   "projection": 6.289957315396219,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718022-56677822-rebounds_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718022,
+   "matchup": "UTA @ SAS",
+   "playerId": 56677822,
+   "playerName": "Victor Wembanyama",
+   "teamAbbreviation": "SAS",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 14.5,
+   "americanOdds": -144,
+   "vendor": "fanduel",
+   "modelProbability": 0.7267718511541287,
+   "evPercent": 23.14745255667181,
+   "foundAt": "2026-11-03T02:44:10.757Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 10,
+   "valueAtPick": 7,
+   "projection": 12.676784274664495,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718022-3547246-assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718022,
+   "matchup": "UTA @ SAS",
+   "playerId": 3547246,
+   "playerName": "Devin Vassell",
+   "teamAbbreviation": "SAS",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": -125,
+   "vendor": "betmgm",
+   "modelProbability": 0.6838295805795739,
+   "evPercent": 23.089324504323304,
+   "foundAt": "2026-11-03T02:44:10.757Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 10,
+   "valueAtPick": 1,
+   "projection": 2.1187393815718254,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718022-1057262518-points_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718022,
+   "matchup": "UTA @ SAS",
+   "playerId": 1057262518,
+   "playerName": "Dylan Harper",
+   "teamAbbreviation": "SAS",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 28.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6459571640404906,
+   "evPercent": 22.270463193378575,
+   "foundAt": "2026-11-03T02:44:10.757Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 10,
+   "valueAtPick": 17,
+   "projection": 26.728819319510905,
+   "latestValue": 17,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718022-1028025261-rebounds_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718022,
+   "matchup": "UTA @ SAS",
+   "playerId": 1028025261,
+   "playerName": "Stephon Castle",
+   "teamAbbreviation": "SAS",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 14.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.6482370086671516,
+   "evPercent": 19.75904058427038,
+   "foundAt": "2026-11-03T02:44:10.757Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 10,
+   "valueAtPick": 9,
+   "projection": 13.478141047599955,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 500,
+ "calls": 512,
  "note": null,
  "checkpointsTaken": {
   "21718012": [
@@ -4871,7 +5038,8 @@
    "halftime"
   ],
   "21718022": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718023": [
    "end-q1"
