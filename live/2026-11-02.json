@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "updatedAt": "2026-11-03T04:20:15.524Z",
+ "updatedAt": "2026-11-03T04:20:44.330Z",
  "state": "running",
  "games": [
   {
@@ -85,7 +85,7 @@
    "matchup": "POR @ DEN",
    "status": "4th Qtr",
    "homeScore": 99,
-   "visitorScore": 105
+   "visitorScore": 108
   },
   {
    "gameId": 21718024,
@@ -6103,7 +6103,7 @@
    "scoreMargin": -8,
    "valueAtPick": 1,
    "projection": 6.333835913098956,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -7760,8 +7760,8 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 765,
- "note": "This run hit its time limit; the next scheduled run continues.",
+ "calls": 4,
+ "note": null,
  "checkpointsTaken": {
   "21718012": [
    "end-q1",
