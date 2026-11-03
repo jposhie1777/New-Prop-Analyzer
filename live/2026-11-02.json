@@ -1,91 +1,91 @@
 {
  "date": "2026-11-02",
- "updatedAt": "2026-11-03T02:26:10.535Z",
+ "updatedAt": "2026-11-03T02:30:15.847Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718012,
    "matchup": "OKC @ CLE",
    "status": "4th Qtr",
-   "homeScore": 109,
-   "visitorScore": 107
+   "homeScore": 112,
+   "visitorScore": 115
   },
   {
    "gameId": 21718013,
    "matchup": "DET @ CHA",
-   "status": "3rd Qtr",
-   "homeScore": 75,
+   "status": "4th Qtr",
+   "homeScore": 77,
    "visitorScore": 98
   },
   {
    "gameId": 21718014,
    "matchup": "ATL @ IND",
    "status": "4th Qtr",
-   "homeScore": 84,
-   "visitorScore": 92
+   "homeScore": 89,
+   "visitorScore": 93
   },
   {
    "gameId": 21718015,
    "matchup": "BKN @ NYK",
    "status": "3rd Qtr",
-   "homeScore": 72,
-   "visitorScore": 74
+   "homeScore": 75,
+   "visitorScore": 78
   },
   {
    "gameId": 21718016,
    "matchup": "WAS @ ORL",
    "status": "4th Qtr",
    "homeScore": 76,
-   "visitorScore": 81
+   "visitorScore": 83
   },
   {
    "gameId": 21718017,
    "matchup": "CHI @ PHI",
    "status": "4th Qtr",
-   "homeScore": 90,
+   "homeScore": 94,
    "visitorScore": 79
   },
   {
    "gameId": 21718018,
    "matchup": "SAC @ DAL",
    "status": "3rd Qtr",
-   "homeScore": 53,
-   "visitorScore": 57
+   "homeScore": 55,
+   "visitorScore": 62
   },
   {
    "gameId": 21718019,
    "matchup": "NOP @ MEM",
    "status": "3rd Qtr",
-   "homeScore": 69,
-   "visitorScore": 65
+   "homeScore": 80,
+   "visitorScore": 73
   },
   {
    "gameId": 21718020,
    "matchup": "MIL @ MIN",
    "status": "3rd Qtr",
-   "homeScore": 56,
-   "visitorScore": 55
+   "homeScore": 60,
+   "visitorScore": 58
   },
   {
    "gameId": 21718021,
    "matchup": "BOS @ HOU",
    "status": "2nd Qtr",
-   "homeScore": 40,
-   "visitorScore": 35
+   "homeScore": 49,
+   "visitorScore": 40
   },
   {
    "gameId": 21718022,
    "matchup": "UTA @ SAS",
    "status": "2nd Qtr",
-   "homeScore": 35,
-   "visitorScore": 29
+   "homeScore": 37,
+   "visitorScore": 34
   },
   {
    "gameId": 21718023,
    "matchup": "POR @ DEN",
    "status": "1st Qtr",
-   "homeScore": 17,
-   "visitorScore": 10
+   "homeScore": 22,
+   "visitorScore": 15
   },
   {
    "gameId": 21718024,
@@ -132,7 +132,7 @@
    "scoreMargin": -4,
    "valueAtPick": 10,
    "projection": 36.973477396721286,
-   "latestValue": 41,
+   "latestValue": 46,
    "tags": [
     "Best bet",
     "Over",
@@ -525,7 +525,7 @@
    "scoreMargin": 6,
    "valueAtPick": 0,
    "projection": 4.759647465366367,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Over",
     "Assists",
@@ -591,7 +591,7 @@
    "scoreMargin": -6,
    "valueAtPick": 5,
    "projection": 16.336888789941383,
-   "latestValue": 13,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -919,7 +919,7 @@
    "scoreMargin": 7,
    "valueAtPick": 0,
    "projection": 2.2390275077160493,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -1286,7 +1286,7 @@
    "scoreMargin": 12,
    "valueAtPick": 15,
    "projection": 25.81295986031116,
-   "latestValue": 18,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -1983,7 +1983,7 @@
    "scoreMargin": -3,
    "valueAtPick": 2,
    "projection": 9.789780038174875,
-   "latestValue": 2,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -2282,7 +2282,7 @@
    "scoreMargin": -7,
    "valueAtPick": 9,
    "projection": 19.077478340601836,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -2413,7 +2413,7 @@
    "scoreMargin": 7,
    "valueAtPick": 0,
    "projection": 1.0118258010699992,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -3013,7 +3013,7 @@
    "scoreMargin": 1,
    "valueAtPick": 9,
    "projection": 21.394031324593026,
-   "latestValue": 9,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -3280,7 +3280,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 5.851513004477339,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -3446,7 +3446,7 @@
    "scoreMargin": -8,
    "valueAtPick": 4,
    "projection": 5.712199116775936,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -3747,7 +3747,7 @@
    "scoreMargin": 11,
    "valueAtPick": 3,
    "projection": 11.676600559913236,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -4013,7 +4013,7 @@
    "scoreMargin": 11,
    "valueAtPick": 11,
    "projection": 16.48970168188999,
-   "latestValue": 11,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -4088,9 +4088,180 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718013-397-points",
+   "gameDate": "2026-11-02",
+   "gameId": 21718013,
+   "matchup": "DET @ CHA",
+   "playerId": 397,
+   "playerName": "Duncan Robinson",
+   "teamAbbreviation": "DET",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 16.5,
+   "americanOdds": -125,
+   "vendor": "draftkings",
+   "modelProbability": 0.6841602680264134,
+   "evPercent": 23.148848244754404,
+   "foundAt": "2026-11-03T02:27:10.143Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": 23,
+   "valueAtPick": 15,
+   "projection": 17.7687189907478,
+   "latestValue": 15,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718013-8-threes",
+   "gameDate": "2026-11-02",
+   "gameId": 21718013,
+   "matchup": "DET @ CHA",
+   "playerId": 8,
+   "playerName": "Grayson Allen",
+   "teamAbbreviation": "CHA",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 145,
+   "vendor": "draftkings",
+   "modelProbability": 0.5020623235460314,
+   "evPercent": 23.005269268777706,
+   "foundAt": "2026-11-03T02:27:10.143Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": -23,
+   "valueAtPick": 3,
+   "projection": 3.504659702720155,
+   "latestValue": 3,
+   "tags": [
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718013-1028240128-assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718013,
+   "matchup": "DET @ CHA",
+   "playerId": 1028240128,
+   "playerName": "Daniss Jenkins",
+   "teamAbbreviation": "DET",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": -145,
+   "vendor": "caesars",
+   "modelProbability": 0.7003632686008532,
+   "evPercent": 18.337241936006233,
+   "foundAt": "2026-11-03T02:27:10.143Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": 23,
+   "valueAtPick": 4,
+   "projection": 4.8929109569715425,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Blowout risk",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718013-17896075-points_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718013,
+   "matchup": "DET @ CHA",
+   "playerId": 17896075,
+   "playerName": "Cade Cunningham",
+   "teamAbbreviation": "DET",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 46.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.5978209697452128,
+   "evPercent": 12.222532917083818,
+   "foundAt": "2026-11-03T02:27:10.143Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": 23,
+   "valueAtPick": 40,
+   "projection": 47.53094144600968,
+   "latestValue": 40,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718013-56677823-rebounds_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718013,
+   "matchup": "DET @ CHA",
+   "playerId": 56677823,
+   "playerName": "Brandon Miller",
+   "teamAbbreviation": "CHA",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": 114,
+   "vendor": "fanduel",
+   "modelProbability": 0.5242119693895284,
+   "evPercent": 12.181361449359063,
+   "foundAt": "2026-11-03T02:27:10.143Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": -23,
+   "valueAtPick": 5,
+   "projection": 6.597387623191964,
+   "latestValue": 5,
+   "tags": [
+    "Over",
+    "Reb+Ast",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 450,
+ "calls": 462,
  "note": null,
  "checkpointsTaken": {
   "21718012": [
@@ -4100,7 +4271,8 @@
   ],
   "21718013": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718014": [
    "end-q1",
