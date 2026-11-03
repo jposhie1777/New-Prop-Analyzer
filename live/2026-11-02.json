@@ -1,49 +1,49 @@
 {
  "date": "2026-11-02",
- "updatedAt": "2026-11-03T00:42:06.590Z",
+ "updatedAt": "2026-11-03T00:48:06.524Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718012,
    "matchup": "OKC @ CLE",
    "status": "2nd Qtr",
-   "homeScore": 30,
-   "visitorScore": 29
+   "homeScore": 34,
+   "visitorScore": 33
   },
   {
    "gameId": 21718013,
    "matchup": "DET @ CHA",
    "status": "1st Qtr",
-   "homeScore": 2,
-   "visitorScore": 0
+   "homeScore": 6,
+   "visitorScore": 6
   },
   {
    "gameId": 21718014,
    "matchup": "ATL @ IND",
    "status": "1st Qtr",
-   "homeScore": 0,
-   "visitorScore": 3
+   "homeScore": 15,
+   "visitorScore": 14
   },
   {
    "gameId": 21718015,
    "matchup": "BKN @ NYK",
    "status": "1st Qtr",
-   "homeScore": 0,
-   "visitorScore": 0
+   "homeScore": 10,
+   "visitorScore": 7
   },
   {
    "gameId": 21718016,
    "matchup": "WAS @ ORL",
    "status": "1st Qtr",
-   "homeScore": 2,
-   "visitorScore": 0
+   "homeScore": 16,
+   "visitorScore": 16
   },
   {
    "gameId": 21718017,
    "matchup": "CHI @ PHI",
    "status": "1st Qtr",
-   "homeScore": 0,
-   "visitorScore": 0
+   "homeScore": 7,
+   "visitorScore": 3
   },
   {
    "gameId": 21718018,
@@ -165,7 +165,7 @@
    "scoreMargin": -4,
    "valueAtPick": 2,
    "projection": 4.284443281934456,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Under",
     "Rebounds",
@@ -273,7 +273,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 140,
+ "calls": 152,
  "note": null,
  "checkpointsTaken": {
   "21718012": [
