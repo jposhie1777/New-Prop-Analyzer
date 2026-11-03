@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "updatedAt": "2026-11-03T01:42:13.203Z",
+ "updatedAt": "2026-11-03T01:45:18.869Z",
  "state": "running",
  "games": [
   {
@@ -13,9 +13,9 @@
   {
    "gameId": 21718013,
    "matchup": "DET @ CHA",
-   "status": "2nd Qtr",
-   "homeScore": 52,
-   "visitorScore": 62
+   "status": "3rd Qtr",
+   "homeScore": 54,
+   "visitorScore": 65
   },
   {
    "gameId": 21718014,
@@ -49,22 +49,22 @@
    "gameId": 21718018,
    "matchup": "SAC @ DAL",
    "status": "2nd Qtr",
-   "homeScore": 22,
-   "visitorScore": 25
+   "homeScore": 28,
+   "visitorScore": 28
   },
   {
    "gameId": 21718019,
    "matchup": "NOP @ MEM",
    "status": "2nd Qtr",
    "homeScore": 31,
-   "visitorScore": 35
+   "visitorScore": 39
   },
   {
    "gameId": 21718020,
    "matchup": "MIL @ MIN",
    "status": "2nd Qtr",
    "homeScore": 31,
-   "visitorScore": 26
+   "visitorScore": 28
   },
   {
    "gameId": 21718021,
@@ -1551,7 +1551,7 @@
    "scoreMargin": -11,
    "valueAtPick": 3,
    "projection": 15.980247899568994,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -1585,7 +1585,7 @@
    "scoreMargin": 11,
    "valueAtPick": 8,
    "projection": 23.9145809338165,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -1817,7 +1817,7 @@
    "scoreMargin": -1,
    "valueAtPick": 1,
    "projection": 8.94286841328882,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -1950,7 +1950,7 @@
    "scoreMargin": 3,
    "valueAtPick": 2,
    "projection": 6.7213265047451936,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -2016,7 +2016,7 @@
    "scoreMargin": 3,
    "valueAtPick": 0,
    "projection": 10.858667869232585,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Under",
@@ -2423,9 +2423,176 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718013-38017725-points",
+   "gameDate": "2026-11-02",
+   "gameId": 21718013,
+   "matchup": "DET @ CHA",
+   "playerId": 38017725,
+   "playerName": "Moussa Diabate",
+   "teamAbbreviation": "CHA",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": 100,
+   "vendor": "fanduel",
+   "modelProbability": 0.6183091943827244,
+   "evPercent": 23.66183887654487,
+   "foundAt": "2026-11-03T01:45:08.405Z",
+   "clockLabel": "Halftime",
+   "period": 3,
+   "scoreMargin": -11,
+   "valueAtPick": 3,
+   "projection": 7.5177743406554445,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718013-56677826-rebounds",
+   "gameDate": "2026-11-02",
+   "gameId": 21718013,
+   "matchup": "DET @ CHA",
+   "playerId": 56677826,
+   "playerName": "Ausar Thompson",
+   "teamAbbreviation": "DET",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 6.5,
+   "americanOdds": -112,
+   "vendor": "caesars",
+   "modelProbability": 0.6504918365013257,
+   "evPercent": 23.128811909179504,
+   "foundAt": "2026-11-03T01:45:08.405Z",
+   "clockLabel": "Halftime",
+   "period": 3,
+   "scoreMargin": 11,
+   "valueAtPick": 3,
+   "projection": 5.720271513914498,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718013-56677823-points",
+   "gameDate": "2026-11-02",
+   "gameId": 21718013,
+   "matchup": "DET @ CHA",
+   "playerId": 56677823,
+   "playerName": "Brandon Miller",
+   "teamAbbreviation": "CHA",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 25.5,
+   "americanOdds": -110,
+   "vendor": "draftkings",
+   "modelProbability": 0.6436136778618486,
+   "evPercent": 22.87170213726202,
+   "foundAt": "2026-11-03T01:45:08.405Z",
+   "clockLabel": "Halftime",
+   "period": 3,
+   "scoreMargin": -11,
+   "valueAtPick": 14,
+   "projection": 23.678337828065725,
+   "latestValue": 14,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718013-17896075-rebounds_assists",
+   "gameDate": "2026-11-02",
+   "gameId": 21718013,
+   "matchup": "DET @ CHA",
+   "playerId": 17896075,
+   "playerName": "Cade Cunningham",
+   "teamAbbreviation": "DET",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 12.5,
+   "americanOdds": -132,
+   "vendor": "fanduel",
+   "modelProbability": 0.6986538617726554,
+   "evPercent": 22.793709038830357,
+   "foundAt": "2026-11-03T01:45:08.405Z",
+   "clockLabel": "Halftime",
+   "period": 3,
+   "scoreMargin": 11,
+   "valueAtPick": 8,
+   "projection": 14.13608858821207,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Reb+Ast",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718013-409-points",
+   "gameDate": "2026-11-02",
+   "gameId": 21718013,
+   "matchup": "DET @ CHA",
+   "playerId": 409,
+   "playerName": "Dennis Schroder",
+   "teamAbbreviation": "CHA",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": -110,
+   "vendor": "draftkings",
+   "modelProbability": 0.637343351940749,
+   "evPercent": 21.67463991596117,
+   "foundAt": "2026-11-03T01:45:08.405Z",
+   "clockLabel": "Halftime",
+   "period": 3,
+   "scoreMargin": -11,
+   "valueAtPick": 3,
+   "projection": 6.4603627517279065,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 320,
+ "calls": 330,
  "note": null,
  "checkpointsTaken": {
   "21718012": [
@@ -2433,7 +2600,8 @@
    "halftime"
   ],
   "21718013": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718014": [
    "end-q1",
