@@ -1,6 +1,6 @@
 {
  "date": "2026-11-04",
- "updatedAt": "2026-11-05T03:04:17.600Z",
+ "updatedAt": "2026-11-05T03:08:18.077Z",
  "state": "running",
  "games": [
   {
@@ -28,7 +28,7 @@
    "gameId": 21718030,
    "matchup": "CHA @ BKN",
    "status": "4th Qtr",
-   "homeScore": 106,
+   "homeScore": 109,
    "visitorScore": 97
   },
   {
@@ -42,50 +42,50 @@
    "gameId": 21718032,
    "matchup": "IND @ MEM",
    "status": "4th Qtr",
-   "homeScore": 87,
-   "visitorScore": 86
+   "homeScore": 91,
+   "visitorScore": 88
   },
   {
    "gameId": 21718033,
    "matchup": "UTA @ NOP",
-   "status": "3rd Qtr",
-   "homeScore": 70,
-   "visitorScore": 80
+   "status": "4th Qtr",
+   "homeScore": 72,
+   "visitorScore": 82
   },
   {
    "gameId": 21718034,
    "matchup": "CLE @ OKC",
    "status": "4th Qtr",
-   "homeScore": 100,
-   "visitorScore": 88
+   "homeScore": 102,
+   "visitorScore": 90
   },
   {
    "gameId": 21718035,
    "matchup": "MIN @ HOU",
    "status": "3rd Qtr",
-   "homeScore": 63,
-   "visitorScore": 62
+   "homeScore": 68,
+   "visitorScore": 64
   },
   {
    "gameId": 21718036,
    "matchup": "TOR @ DEN",
    "status": "2nd Qtr",
-   "homeScore": 62,
+   "homeScore": 64,
    "visitorScore": 67
   },
   {
    "gameId": 21718037,
    "matchup": "POR @ PHX",
    "status": "2nd Qtr",
-   "homeScore": 49,
-   "visitorScore": 61
+   "homeScore": 54,
+   "visitorScore": 65
   },
   {
    "gameId": 21718038,
    "matchup": "DAL @ SAS",
    "status": "1st Qtr",
-   "homeScore": 16,
-   "visitorScore": 11
+   "homeScore": 20,
+   "visitorScore": 19
   },
   {
    "gameId": 21718039,
@@ -2743,7 +2743,7 @@
    "scoreMargin": 2,
    "valueAtPick": 2,
    "projection": 5.85322348591477,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -3049,7 +3049,7 @@
    "scoreMargin": -3,
    "valueAtPick": 2,
    "projection": 5.1113270036659895,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -3249,7 +3249,7 @@
    "scoreMargin": -5,
    "valueAtPick": 5,
    "projection": 8.192941971875,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -4124,7 +4124,7 @@
    "scoreMargin": 0,
    "valueAtPick": 1,
    "projection": 1.7172498862672465,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Over",
@@ -4590,7 +4590,7 @@
    "scoreMargin": 2,
    "valueAtPick": 17,
    "projection": 20.281075358263045,
-   "latestValue": 17,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Under",
@@ -4657,7 +4657,7 @@
    "scoreMargin": 2,
    "valueAtPick": 14,
    "projection": 16.17625970241624,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -4766,9 +4766,176 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718036-246-rebounds",
+   "gameDate": "2026-11-04",
+   "gameId": 21718036,
+   "matchup": "TOR @ DEN",
+   "playerId": 246,
+   "playerName": "Nikola Jokic",
+   "teamAbbreviation": "DEN",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 12.5,
+   "americanOdds": 100,
+   "vendor": "fanduel",
+   "modelProbability": 0.6249541189127936,
+   "evPercent": 24.990823782558724,
+   "foundAt": "2026-11-05T03:05:17.342Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -3,
+   "valueAtPick": 7,
+   "projection": 13.4923287661465,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Hot shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718036-666679-points_rebounds",
+   "gameDate": "2026-11-04",
+   "gameId": 21718036,
+   "matchup": "TOR @ DEN",
+   "playerId": 666679,
+   "playerName": "Cameron Johnson",
+   "teamAbbreviation": "DEN",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 16.5,
+   "americanOdds": -110,
+   "vendor": "fanduel",
+   "modelProbability": 0.6530997030373067,
+   "evPercent": 24.682670579849475,
+   "foundAt": "2026-11-05T03:05:17.342Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -3,
+   "valueAtPick": 9,
+   "projection": 15.033394653072804,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Hot shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718036-38017709-points_rebounds",
+   "gameDate": "2026-11-04",
+   "gameId": 21718036,
+   "matchup": "TOR @ DEN",
+   "playerId": 38017709,
+   "playerName": "Christian Braun",
+   "teamAbbreviation": "DEN",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 14.5,
+   "americanOdds": -130,
+   "vendor": "fanduel",
+   "modelProbability": 0.6997815254586122,
+   "evPercent": 23.807500658062143,
+   "foundAt": "2026-11-05T03:05:17.342Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -3,
+   "valueAtPick": 5,
+   "projection": 12.346924896905648,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718036-335-points_rebounds_assists",
+   "gameDate": "2026-11-04",
+   "gameId": 21718036,
+   "matchup": "TOR @ DEN",
+   "playerId": 335,
+   "playerName": "Jamal Murray",
+   "teamAbbreviation": "DEN",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 29.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.653184152599054,
+   "evPercent": 22.6152707510505,
+   "foundAt": "2026-11-05T03:05:17.342Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -3,
+   "valueAtPick": 11,
+   "projection": 27.102640270027493,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718036-666423-threes",
+   "gameDate": "2026-11-04",
+   "gameId": 21718036,
+   "matchup": "TOR @ DEN",
+   "playerId": 666423,
+   "playerName": "RJ Barrett",
+   "teamAbbreviation": "TOR",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": 138,
+   "vendor": "fanduel",
+   "modelProbability": 0.5132291883693458,
+   "evPercent": 22.148546831904305,
+   "foundAt": "2026-11-05T03:05:17.342Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 3,
+   "valueAtPick": 2,
+   "projection": 2.4711146817044813,
+   "latestValue": 2,
+   "tags": [
+    "Under",
+    "3PM",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 600,
+ "calls": 612,
  "note": null,
  "checkpointsTaken": {
   "21718027": [
@@ -4816,7 +4983,8 @@
    "halftime"
   ],
   "21718036": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718037": [
    "end-q1"
