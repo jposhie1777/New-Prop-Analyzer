@@ -1,6 +1,6 @@
 {
  "date": "2026-11-04",
- "updatedAt": "2026-11-05T02:52:18.781Z",
+ "updatedAt": "2026-11-05T02:56:17.397Z",
  "state": "running",
  "games": [
   {
@@ -8,7 +8,7 @@
    "matchup": "PHI @ DET",
    "status": "4th Qtr",
    "homeScore": 106,
-   "visitorScore": 110
+   "visitorScore": 112
   },
   {
    "gameId": 21718028,
@@ -20,7 +20,7 @@
   {
    "gameId": 21718029,
    "matchup": "MIL @ BOS",
-   "status": "4th Qtr",
+   "status": "Final",
    "homeScore": 109,
    "visitorScore": 102
   },
@@ -28,20 +28,20 @@
    "gameId": 21718030,
    "matchup": "CHA @ BKN",
    "status": "4th Qtr",
-   "homeScore": 92,
-   "visitorScore": 87
+   "homeScore": 99,
+   "visitorScore": 91
   },
   {
    "gameId": 21718031,
    "matchup": "CHI @ NYK",
    "status": "4th Qtr",
-   "homeScore": 129,
-   "visitorScore": 96
+   "homeScore": 131,
+   "visitorScore": 98
   },
   {
    "gameId": 21718032,
    "matchup": "IND @ MEM",
-   "status": "3rd Qtr",
+   "status": "4th Qtr",
    "homeScore": 82,
    "visitorScore": 80
   },
@@ -49,15 +49,15 @@
    "gameId": 21718033,
    "matchup": "UTA @ NOP",
    "status": "3rd Qtr",
-   "homeScore": 64,
-   "visitorScore": 67
+   "homeScore": 66,
+   "visitorScore": 71
   },
   {
    "gameId": 21718034,
    "matchup": "CLE @ OKC",
    "status": "4th Qtr",
-   "homeScore": 88,
-   "visitorScore": 74
+   "homeScore": 96,
+   "visitorScore": 77
   },
   {
    "gameId": 21718035,
@@ -70,22 +70,22 @@
    "gameId": 21718036,
    "matchup": "TOR @ DEN",
    "status": "2nd Qtr",
-   "homeScore": 49,
-   "visitorScore": 55
+   "homeScore": 51,
+   "visitorScore": 59
   },
   {
    "gameId": 21718037,
    "matchup": "POR @ PHX",
    "status": "2nd Qtr",
-   "homeScore": 43,
-   "visitorScore": 48
+   "homeScore": 47,
+   "visitorScore": 53
   },
   {
    "gameId": 21718038,
    "matchup": "DAL @ SAS",
    "status": "1st Qtr",
-   "homeScore": 6,
-   "visitorScore": 3
+   "homeScore": 12,
+   "visitorScore": 8
   },
   {
    "gameId": 21718039,
@@ -671,7 +671,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 12,
+    "gradedAt": "2026-11-05T02:54:17.788Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -704,7 +708,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 4,
+    "gradedAt": "2026-11-05T02:54:17.788Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -738,7 +746,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 5,
+    "gradedAt": "2026-11-05T02:54:17.788Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -771,7 +783,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 18,
+    "gradedAt": "2026-11-05T02:54:17.788Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -804,7 +820,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 5,
+    "gradedAt": "2026-11-05T02:54:17.788Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1065,7 +1085,7 @@
    "scoreMargin": -3,
    "valueAtPick": 3,
    "projection": 7.635180606675259,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -1163,7 +1183,7 @@
    "scoreMargin": 14,
    "valueAtPick": 5,
    "projection": 19.29788876253172,
-   "latestValue": 24,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Over",
@@ -1340,7 +1360,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 10,
+    "gradedAt": "2026-11-05T02:54:17.788Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -1374,7 +1398,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 5,
+    "gradedAt": "2026-11-05T02:54:17.788Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -1407,7 +1435,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 14,
+    "gradedAt": "2026-11-05T02:54:17.788Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -1441,7 +1473,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 7,
+    "gradedAt": "2026-11-05T02:54:17.788Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -1475,7 +1511,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 21,
+    "gradedAt": "2026-11-05T02:54:17.788Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -1964,7 +2004,7 @@
    "scoreMargin": -17,
    "valueAtPick": 1,
    "projection": 4.2861404175079825,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -3372,7 +3412,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 10,
+    "gradedAt": "2026-11-05T02:54:17.788Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3406,7 +3450,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 2,
+    "gradedAt": "2026-11-05T02:54:17.788Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3439,7 +3487,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 4,
+    "gradedAt": "2026-11-05T02:54:17.788Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3472,7 +3524,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 4,
+    "gradedAt": "2026-11-05T02:54:17.788Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3505,7 +3561,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 2,
+    "gradedAt": "2026-11-05T02:54:17.788Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3598,7 +3658,7 @@
    "scoreMargin": -2,
    "valueAtPick": 0,
    "projection": 8.005227004408209,
-   "latestValue": 0,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -3762,7 +3822,7 @@
    "scoreMargin": 5,
    "valueAtPick": 1,
    "projection": 4.710310255311956,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Over",
     "Assists",
@@ -3861,7 +3921,7 @@
    "scoreMargin": 5,
    "valueAtPick": 2,
    "projection": 6.741076352407866,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -3927,7 +3987,7 @@
    "scoreMargin": 0,
    "valueAtPick": 8,
    "projection": 9.958837305665396,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -4227,7 +4287,7 @@
    "scoreMargin": 14,
    "valueAtPick": 9,
    "projection": 10.944448174776683,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -4537,7 +4597,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 569,
+ "calls": 578,
  "note": null,
  "checkpointsTaken": {
   "21718027": [
