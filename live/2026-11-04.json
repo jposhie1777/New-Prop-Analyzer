@@ -1,6 +1,6 @@
 {
  "date": "2026-11-04",
- "updatedAt": "2026-11-05T03:16:18.786Z",
+ "updatedAt": "2026-11-05T03:20:22.122Z",
  "state": "running",
  "games": [
   {
@@ -27,8 +27,8 @@
   {
    "gameId": 21718030,
    "matchup": "CHA @ BKN",
-   "status": "4th Qtr",
-   "homeScore": 112,
+   "status": "Final",
+   "homeScore": 114,
    "visitorScore": 104
   },
   {
@@ -42,34 +42,34 @@
    "gameId": 21718032,
    "matchup": "IND @ MEM",
    "status": "4th Qtr",
-   "homeScore": 96,
-   "visitorScore": 99
+   "homeScore": 98,
+   "visitorScore": 104
   },
   {
    "gameId": 21718033,
    "matchup": "UTA @ NOP",
    "status": "4th Qtr",
-   "homeScore": 85,
-   "visitorScore": 87
+   "homeScore": 88,
+   "visitorScore": 89
   },
   {
    "gameId": 21718034,
    "matchup": "CLE @ OKC",
    "status": "4th Qtr",
-   "homeScore": 113,
-   "visitorScore": 99
+   "homeScore": 117,
+   "visitorScore": 108
   },
   {
    "gameId": 21718035,
    "matchup": "MIN @ HOU",
    "status": "3rd Qtr",
-   "homeScore": 72,
-   "visitorScore": 71
+   "homeScore": 76,
+   "visitorScore": 73
   },
   {
    "gameId": 21718036,
    "matchup": "TOR @ DEN",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 64,
    "visitorScore": 67
   },
@@ -84,15 +84,15 @@
    "gameId": 21718038,
    "matchup": "DAL @ SAS",
    "status": "1st Qtr",
-   "homeScore": 25,
-   "visitorScore": 23
+   "homeScore": 32,
+   "visitorScore": 26
   },
   {
    "gameId": 21718039,
    "matchup": "LAL @ SAC",
    "status": "1st Qtr",
-   "homeScore": 9,
-   "visitorScore": 5
+   "homeScore": 16,
+   "visitorScore": 8
   },
   {
    "gameId": 21718040,
@@ -1067,7 +1067,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 15,
+    "gradedAt": "2026-11-05T03:18:18.588Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1100,7 +1104,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 15,
+    "gradedAt": "2026-11-05T03:18:18.588Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1125,7 +1133,7 @@
    "scoreMargin": -3,
    "valueAtPick": 3,
    "projection": 7.635180606675259,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -1133,7 +1141,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 10,
+    "gradedAt": "2026-11-05T03:18:18.588Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1165,7 +1177,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 4,
+    "gradedAt": "2026-11-05T03:18:18.588Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1198,7 +1214,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 4,
+    "gradedAt": "2026-11-05T03:18:18.588Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1600,7 +1620,7 @@
    "scoreMargin": 8,
    "valueAtPick": 8,
    "projection": 24.196562175769266,
-   "latestValue": 15,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -1894,7 +1914,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 13.78305910702418,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -2029,7 +2049,7 @@
    "scoreMargin": 17,
    "valueAtPick": 1,
    "projection": 4.712381335312564,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -2300,7 +2320,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 9,
+    "gradedAt": "2026-11-05T03:18:18.588Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2332,7 +2356,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 2,
+    "gradedAt": "2026-11-05T03:18:18.588Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2365,7 +2393,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 2,
+    "gradedAt": "2026-11-05T03:18:18.588Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2398,7 +2430,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 4,
+    "gradedAt": "2026-11-05T03:18:18.588Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2433,7 +2469,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 26,
+    "gradedAt": "2026-11-05T03:18:18.588Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2844,7 +2884,7 @@
    "scoreMargin": 16,
    "valueAtPick": 4,
    "projection": 8.264246281992875,
-   "latestValue": 7,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -2913,7 +2953,7 @@
    "scoreMargin": -16,
    "valueAtPick": 0,
    "projection": 0.8327805189639136,
-   "latestValue": 2,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -3016,7 +3056,7 @@
    "scoreMargin": 3,
    "valueAtPick": 3,
    "projection": 10.795739662623127,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -4066,7 +4106,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 7,
+    "gradedAt": "2026-11-05T03:18:18.588Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -4099,7 +4143,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 9,
+    "gradedAt": "2026-11-05T03:18:18.588Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -4132,7 +4180,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 2,
+    "gradedAt": "2026-11-05T03:18:18.588Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -4166,7 +4218,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 3,
+    "gradedAt": "2026-11-05T03:18:18.588Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -4200,7 +4256,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 5,
+    "gradedAt": "2026-11-05T03:18:18.588Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -4424,7 +4484,7 @@
    "scoreMargin": 14,
    "valueAtPick": 2,
    "projection": 4.007672589219674,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -5098,9 +5158,176 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718038-1028025261-assists",
+   "gameDate": "2026-11-04",
+   "gameId": 21718038,
+   "matchup": "DAL @ SAS",
+   "playerId": 1028025261,
+   "playerName": "Stephon Castle",
+   "teamAbbreviation": "SAS",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": -122,
+   "vendor": "caesars",
+   "modelProbability": 0.681557032684184,
+   "evPercent": 24.02103381630234,
+   "foundAt": "2026-11-05T03:20:17.986Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 6,
+   "valueAtPick": 1,
+   "projection": 4.430897887116107,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718038-228-rebounds_assists",
+   "gameDate": "2026-11-04",
+   "gameId": 21718038,
+   "matchup": "DAL @ SAS",
+   "playerId": 228,
+   "playerName": "Kyrie Irving",
+   "teamAbbreviation": "DAL",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 8.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6544825093727115,
+   "evPercent": 23.88418927412037,
+   "foundAt": "2026-11-05T03:20:17.986Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -6,
+   "valueAtPick": 2,
+   "projection": 7.335150257112788,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718038-38017649-threes",
+   "gameDate": "2026-11-04",
+   "gameId": 21718038,
+   "matchup": "DAL @ SAS",
+   "playerId": 38017649,
+   "playerName": "Julian Champagnie",
+   "teamAbbreviation": "SAS",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 105,
+   "vendor": "draftkings",
+   "modelProbability": 0.5967605141668717,
+   "evPercent": 22.335905404208688,
+   "foundAt": "2026-11-05T03:20:17.986Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 6,
+   "valueAtPick": 0,
+   "projection": 1.9320531691119738,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718038-3547246-threes",
+   "gameDate": "2026-11-04",
+   "gameId": 21718038,
+   "matchup": "DAL @ SAS",
+   "playerId": 3547246,
+   "playerName": "Devin Vassell",
+   "teamAbbreviation": "SAS",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": -137,
+   "vendor": "caesars",
+   "modelProbability": 0.701139384372855,
+   "evPercent": 21.291995690778553,
+   "foundAt": "2026-11-05T03:20:17.986Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 6,
+   "valueAtPick": 0,
+   "projection": 0.8740369499624264,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718038-1057262518-assists",
+   "gameDate": "2026-11-04",
+   "gameId": 21718038,
+   "matchup": "DAL @ SAS",
+   "playerId": 1057262518,
+   "playerName": "Dylan Harper",
+   "teamAbbreviation": "SAS",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": -118,
+   "vendor": "betmgm",
+   "modelProbability": 0.6497110285592571,
+   "evPercent": 20.031359513489868,
+   "foundAt": "2026-11-05T03:20:17.986Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 6,
+   "valueAtPick": 0,
+   "projection": 2.72399281703309,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 632,
+ "calls": 646,
  "note": null,
  "checkpointsTaken": {
   "21718027": [
@@ -5154,6 +5381,9 @@
   "21718037": [
    "end-q1",
    "halftime"
+  ],
+  "21718038": [
+   "end-q1"
   ]
  }
 }
