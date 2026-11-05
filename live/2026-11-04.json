@@ -1,6 +1,6 @@
 {
  "date": "2026-11-04",
- "updatedAt": "2026-11-05T05:49:52.380Z",
+ "updatedAt": "2026-11-05T05:53:52.536Z",
  "state": "running",
  "games": [
   {
@@ -98,8 +98,8 @@
    "gameId": 21718040,
    "matchup": "MIA @ LAC",
    "status": "4th Qtr",
-   "homeScore": 104,
-   "visitorScore": 103
+   "homeScore": 106,
+   "visitorScore": 105
   }
  ],
  "picks": [
@@ -6950,7 +6950,7 @@
    "scoreMargin": 15,
    "valueAtPick": 11,
    "projection": 23.08688789534537,
-   "latestValue": 22,
+   "latestValue": 24,
    "tags": [
     "Best bet",
     "Under",
@@ -6985,7 +6985,7 @@
    "scoreMargin": 15,
    "valueAtPick": 19,
    "projection": 30.677108782660902,
-   "latestValue": 27,
+   "latestValue": 29,
    "tags": [
     "Best bet",
     "Over",
@@ -7644,7 +7644,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 205,
+ "calls": 213,
  "note": null,
  "checkpointsTaken": {
   "21718027": [
