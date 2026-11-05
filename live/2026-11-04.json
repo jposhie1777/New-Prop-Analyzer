@@ -1,7 +1,7 @@
 {
  "date": "2026-11-04",
- "updatedAt": "2026-11-05T06:21:53.644Z",
- "state": "running",
+ "updatedAt": "2026-11-05T06:23:53.918Z",
+ "state": "done",
  "games": [
   {
    "gameId": 21718027,
@@ -97,7 +97,7 @@
   {
    "gameId": 21718040,
    "matchup": "MIA @ LAC",
-   "status": "OT1",
+   "status": "Final",
    "homeScore": 116,
    "visitorScore": 117
   }
@@ -6417,7 +6417,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 3,
+    "gradedAt": "2026-11-05T06:23:53.917Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -6450,7 +6454,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 11,
+    "gradedAt": "2026-11-05T06:23:53.917Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -6483,7 +6491,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 2,
+    "gradedAt": "2026-11-05T06:23:53.917Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -6516,7 +6528,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 12,
+    "gradedAt": "2026-11-05T06:23:53.917Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -6548,7 +6564,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 4,
+    "gradedAt": "2026-11-05T06:23:53.917Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -6960,7 +6980,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 33,
+    "gradedAt": "2026-11-05T06:23:53.917Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -6995,7 +7019,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 30,
+    "gradedAt": "2026-11-05T06:23:53.917Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -7029,7 +7057,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 10,
+    "gradedAt": "2026-11-05T06:23:53.917Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -7064,7 +7096,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 11,
+    "gradedAt": "2026-11-05T06:23:53.917Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -7098,7 +7134,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 12,
+    "gradedAt": "2026-11-05T06:23:53.917Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -7507,7 +7547,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 14,
+    "gradedAt": "2026-11-05T06:23:53.917Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -7540,7 +7584,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 1,
+    "gradedAt": "2026-11-05T06:23:53.917Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -7573,7 +7621,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 14,
+    "gradedAt": "2026-11-05T06:23:53.917Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -7606,7 +7658,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 21,
+    "gradedAt": "2026-11-05T06:23:53.917Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -7640,12 +7696,16 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 4,
+    "gradedAt": "2026-11-05T06:23:53.917Z"
+   },
    "checkpoint": "end-q3"
   }
  ],
- "calls": 269,
- "note": null,
+ "calls": 274,
+ "note": "All games are final and graded.",
  "checkpointsTaken": {
   "21718027": [
    "end-q1",
