@@ -1,6 +1,6 @@
 {
  "date": "2026-11-04",
- "updatedAt": "2026-11-05T04:12:20.741Z",
+ "updatedAt": "2026-11-05T04:16:20.736Z",
  "state": "running",
  "games": [
   {
@@ -71,14 +71,14 @@
    "matchup": "TOR @ DEN",
    "status": "4th Qtr",
    "homeScore": 126,
-   "visitorScore": 100
+   "visitorScore": 102
   },
   {
    "gameId": 21718037,
    "matchup": "POR @ PHX",
    "status": "4th Qtr",
-   "homeScore": 90,
-   "visitorScore": 107
+   "homeScore": 93,
+   "visitorScore": 109
   },
   {
    "gameId": 21718038,
@@ -92,13 +92,13 @@
    "matchup": "LAL @ SAC",
    "status": "2nd Qtr",
    "homeScore": 51,
-   "visitorScore": 57
+   "visitorScore": 61
   },
   {
    "gameId": 21718040,
    "matchup": "MIA @ LAC",
    "status": "2nd Qtr",
-   "homeScore": 32,
+   "homeScore": 34,
    "visitorScore": 33
   }
  ],
@@ -4139,7 +4139,7 @@
    "scoreMargin": -5,
    "valueAtPick": 4,
    "projection": 11.448413741976278,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -4172,7 +4172,7 @@
    "scoreMargin": 5,
    "valueAtPick": 8,
    "projection": 26.946574893057626,
-   "latestValue": 20,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Over",
@@ -5224,7 +5224,7 @@
    "scoreMargin": 13,
    "valueAtPick": 14,
    "projection": 26.47705995200139,
-   "latestValue": 22,
+   "latestValue": 24,
    "tags": [
     "Best bet",
     "Over",
@@ -5741,7 +5741,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 2.3643188841238896,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Under",
     "Rebounds",
@@ -6564,7 +6564,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 780,
+ "calls": 788,
  "note": null,
  "checkpointsTaken": {
   "21718027": [
