@@ -1,21 +1,21 @@
 {
  "date": "2026-11-04",
- "updatedAt": "2026-11-04T23:50:09.643Z",
+ "updatedAt": "2026-11-05T00:38:13.219Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718027,
    "matchup": "PHI @ DET",
-   "status": "2026-11-05T00:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 20,
+   "visitorScore": 24
   },
   {
    "gameId": 21718028,
    "matchup": "ATL @ WAS",
-   "status": "2026-11-05T00:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 32,
+   "visitorScore": 37
   },
   {
    "gameId": 21718029,
@@ -102,7 +102,179 @@
    "visitorScore": 0
   }
  ],
- "picks": [],
- "calls": 83,
- "note": null
+ "picks": [
+  {
+   "pickId": "21718028-1091340077-points_assists",
+   "gameDate": "2026-11-04",
+   "gameId": 21718028,
+   "matchup": "ATL @ WAS",
+   "playerId": 1091340077,
+   "playerName": "AJ Dybantsa",
+   "teamAbbreviation": "WAS",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 21.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.6644190665389071,
+   "evPercent": 24.72428091168959,
+   "foundAt": "2026-11-05T00:38:11.391Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -5,
+   "valueAtPick": 6,
+   "projection": 19.163911010134647,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718028-17896078-points",
+   "gameDate": "2026-11-04",
+   "gameId": 21718028,
+   "matchup": "ATL @ WAS",
+   "playerId": 17896078,
+   "playerName": "Aaron Wiggins",
+   "teamAbbreviation": "ATL",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 13.5,
+   "americanOdds": -120,
+   "vendor": "draftkings",
+   "modelProbability": 0.6796965849450304,
+   "evPercent": 24.611040573255583,
+   "foundAt": "2026-11-05T00:38:11.391Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 5,
+   "valueAtPick": 3,
+   "projection": 11.353756233793439,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718028-1057262985-points",
+   "gameDate": "2026-11-04",
+   "gameId": 21718028,
+   "matchup": "ATL @ WAS",
+   "playerId": 1057262985,
+   "playerName": "Tre Johnson",
+   "teamAbbreviation": "WAS",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 6.5,
+   "americanOdds": -130,
+   "vendor": "draftkings",
+   "modelProbability": 0.7021074658604123,
+   "evPercent": 24.219013190688333,
+   "foundAt": "2026-11-05T00:38:11.391Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -5,
+   "valueAtPick": 0,
+   "projection": 4.675526598038668,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718028-38017677-points_rebounds_assists",
+   "gameDate": "2026-11-04",
+   "gameId": 21718028,
+   "matchup": "ATL @ WAS",
+   "playerId": 38017677,
+   "playerName": "Dyson Daniels",
+   "teamAbbreviation": "ATL",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 21.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.6473414599102164,
+   "evPercent": 21.51848457963712,
+   "foundAt": "2026-11-05T00:38:11.391Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 5,
+   "valueAtPick": 6,
+   "projection": 23.928291853574823,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718028-1028028405-points_assists",
+   "gameDate": "2026-11-04",
+   "gameId": 21718028,
+   "matchup": "ATL @ WAS",
+   "playerId": 1028028405,
+   "playerName": "Alexandre Sarr",
+   "teamAbbreviation": "WAS",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 12.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.6554484574408617,
+   "evPercent": 21.091325188226982,
+   "foundAt": "2026-11-05T00:38:11.391Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -5,
+   "valueAtPick": 4,
+   "projection": 10.905579475837193,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  }
+ ],
+ "calls": 186,
+ "note": null,
+ "checkpointsTaken": {
+  "21718028": [
+   "end-q1"
+  ]
+ }
 }
