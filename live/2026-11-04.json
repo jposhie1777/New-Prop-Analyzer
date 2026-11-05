@@ -1,13 +1,13 @@
 {
  "date": "2026-11-04",
- "updatedAt": "2026-11-05T01:10:14.086Z",
+ "updatedAt": "2026-11-05T01:14:13.341Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718027,
    "matchup": "PHI @ DET",
    "status": "2nd Qtr",
-   "homeScore": 35,
+   "homeScore": 40,
    "visitorScore": 48
   },
   {
@@ -21,43 +21,43 @@
    "gameId": 21718029,
    "matchup": "MIL @ BOS",
    "status": "2nd Qtr",
-   "homeScore": 28,
-   "visitorScore": 14
+   "homeScore": 37,
+   "visitorScore": 19
   },
   {
    "gameId": 21718030,
    "matchup": "CHA @ BKN",
    "status": "1st Qtr",
-   "homeScore": 13,
-   "visitorScore": 17
+   "homeScore": 15,
+   "visitorScore": 22
   },
   {
    "gameId": 21718031,
    "matchup": "CHI @ NYK",
-   "status": "1st Qtr",
+   "status": "2nd Qtr",
    "homeScore": 43,
    "visitorScore": 21
   },
   {
    "gameId": 21718032,
    "matchup": "IND @ MEM",
-   "status": "2026-11-05T01:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 5,
+   "visitorScore": 6
   },
   {
    "gameId": 21718033,
    "matchup": "UTA @ NOP",
-   "status": "2026-11-05T01:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 8,
+   "visitorScore": 4
   },
   {
    "gameId": 21718034,
    "matchup": "CLE @ OKC",
-   "status": "2026-11-05T01:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 5,
+   "visitorScore": 4
   },
   {
    "gameId": 21718035,
@@ -623,7 +623,7 @@
    "scoreMargin": 14,
    "valueAtPick": 2,
    "projection": 7.157509765625,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -756,7 +756,7 @@
    "scoreMargin": -14,
    "valueAtPick": 1,
    "projection": 3.7986144470214844,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Over",
@@ -766,9 +766,179 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718031-447-rebounds_assists",
+   "gameDate": "2026-11-04",
+   "gameId": 21718031,
+   "matchup": "CHI @ NYK",
+   "playerId": 447,
+   "playerName": "Karl-Anthony Towns",
+   "teamAbbreviation": "NYK",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 16.5,
+   "americanOdds": 108,
+   "vendor": "fanduel",
+   "modelProbability": 0.5989788394493225,
+   "evPercent": 24.587598605459092,
+   "foundAt": "2026-11-05T01:11:12.857Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 22,
+   "valueAtPick": 5,
+   "projection": 17.630542519447765,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Reb+Ast",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718031-61-rebounds",
+   "gameDate": "2026-11-04",
+   "gameId": 21718031,
+   "matchup": "CHI @ NYK",
+   "playerId": 61,
+   "playerName": "Mikal Bridges",
+   "teamAbbreviation": "NYK",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": 144,
+   "vendor": "fanduel",
+   "modelProbability": 0.5081428056117043,
+   "evPercent": 23.98684456925586,
+   "foundAt": "2026-11-05T01:11:12.857Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 22,
+   "valueAtPick": 2,
+   "projection": 4.539775,
+   "latestValue": 2,
+   "tags": [
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718031-3547264-rebounds",
+   "gameDate": "2026-11-04",
+   "gameId": 21718031,
+   "matchup": "CHI @ NYK",
+   "playerId": 3547264,
+   "playerName": "Jalen Smith",
+   "teamAbbreviation": "CHI",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": 114,
+   "vendor": "draftkings",
+   "modelProbability": 0.5791313877071768,
+   "evPercent": 23.934116969335804,
+   "foundAt": "2026-11-05T01:11:12.857Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -22,
+   "valueAtPick": 2,
+   "projection": 7.048556282513975,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718031-414-rebounds",
+   "gameDate": "2026-11-04",
+   "gameId": 21718031,
+   "matchup": "CHI @ NYK",
+   "playerId": 414,
+   "playerName": "Landry Shamet",
+   "teamAbbreviation": "NYK",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 114,
+   "vendor": "fanduel",
+   "modelProbability": 0.5779615298843321,
+   "evPercent": 23.683767395247067,
+   "foundAt": "2026-11-05T01:11:12.857Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 22,
+   "valueAtPick": 1,
+   "projection": 2.824861922053099,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718031-1091343852-points",
+   "gameDate": "2026-11-04",
+   "gameId": 21718031,
+   "matchup": "CHI @ NYK",
+   "playerId": 1091343852,
+   "playerName": "Caleb Wilson",
+   "teamAbbreviation": "CHI",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 12.5,
+   "americanOdds": -105,
+   "vendor": "draftkings",
+   "modelProbability": 0.6316059651804393,
+   "evPercent": 23.313545582847684,
+   "foundAt": "2026-11-05T01:11:12.857Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -22,
+   "valueAtPick": 0,
+   "projection": 14.538453310087954,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 264,
+ "calls": 277,
  "note": null,
  "checkpointsTaken": {
   "21718027": [
@@ -779,6 +949,9 @@
    "halftime"
   ],
   "21718029": [
+   "end-q1"
+  ],
+  "21718031": [
    "end-q1"
   ]
  }
