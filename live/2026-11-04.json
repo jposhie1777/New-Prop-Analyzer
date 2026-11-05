@@ -1,6 +1,6 @@
 {
  "date": "2026-11-04",
- "updatedAt": "2026-11-05T04:16:20.736Z",
+ "updatedAt": "2026-11-05T04:20:20.900Z",
  "state": "running",
  "games": [
   {
@@ -71,19 +71,19 @@
    "matchup": "TOR @ DEN",
    "status": "4th Qtr",
    "homeScore": 126,
-   "visitorScore": 102
+   "visitorScore": 107
   },
   {
    "gameId": 21718037,
    "matchup": "POR @ PHX",
    "status": "4th Qtr",
-   "homeScore": 93,
-   "visitorScore": 109
+   "homeScore": 97,
+   "visitorScore": 114
   },
   {
    "gameId": 21718038,
    "matchup": "DAL @ SAS",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 68,
    "visitorScore": 51
   },
@@ -91,15 +91,15 @@
    "gameId": 21718039,
    "matchup": "LAL @ SAC",
    "status": "2nd Qtr",
-   "homeScore": 51,
+   "homeScore": 54,
    "visitorScore": 61
   },
   {
    "gameId": 21718040,
    "matchup": "MIA @ LAC",
    "status": "2nd Qtr",
-   "homeScore": 34,
-   "visitorScore": 33
+   "homeScore": 45,
+   "visitorScore": 35
   }
  ],
  "picks": [
@@ -4172,7 +4172,7 @@
    "scoreMargin": 5,
    "valueAtPick": 8,
    "projection": 26.946574893057626,
-   "latestValue": 23,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Over",
@@ -5224,7 +5224,7 @@
    "scoreMargin": 13,
    "valueAtPick": 14,
    "projection": 26.47705995200139,
-   "latestValue": 24,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Over",
@@ -5356,7 +5356,7 @@
    "scoreMargin": 13,
    "valueAtPick": 3,
    "projection": 5.776759724637553,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -6348,7 +6348,7 @@
    "scoreMargin": -9,
    "valueAtPick": 0,
    "projection": 10.98970989023635,
-   "latestValue": 3,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -6516,7 +6516,7 @@
    "scoreMargin": 19,
    "valueAtPick": 26,
    "projection": 31.236203426007833,
-   "latestValue": 26,
+   "latestValue": 27,
    "tags": [
     "Best bet",
     "Over",
@@ -6562,9 +6562,174 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718039-666923-steals",
+   "gameDate": "2026-11-04",
+   "gameId": 21718039,
+   "matchup": "LAL @ SAC",
+   "playerId": 666923,
+   "playerName": "Matisse Thybulle",
+   "teamAbbreviation": "LAL",
+   "propType": "steals",
+   "label": "Steals",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": -115,
+   "vendor": "draftkings",
+   "modelProbability": 0.667356965999185,
+   "evPercent": 24.766737121586768,
+   "foundAt": "2026-11-05T04:17:20.432Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 7,
+   "valueAtPick": 2,
+   "projection": 2.9822460995,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Steals",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718039-406-rebounds",
+   "gameDate": "2026-11-04",
+   "gameId": 21718039,
+   "matchup": "LAL @ SAC",
+   "playerId": 406,
+   "playerName": "Domantas Sabonis",
+   "teamAbbreviation": "SAC",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 16.5,
+   "americanOdds": -105,
+   "vendor": "caesars",
+   "modelProbability": 0.6329806984622,
+   "evPercent": 23.58194589023903,
+   "foundAt": "2026-11-05T04:17:20.432Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -7,
+   "valueAtPick": 11,
+   "projection": 17.56435590585496,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718039-3547249-points",
+   "gameDate": "2026-11-04",
+   "gameId": 21718039,
+   "matchup": "LAL @ SAC",
+   "playerId": 3547249,
+   "playerName": "Precious Achiuwa",
+   "teamAbbreviation": "SAC",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 10.5,
+   "americanOdds": -154,
+   "vendor": "draftkings",
+   "modelProbability": 0.741373310883841,
+   "evPercent": 22.2784551717504,
+   "foundAt": "2026-11-05T04:17:20.432Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -7,
+   "valueAtPick": 7,
+   "projection": 13.029226599742076,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718039-132-points_rebounds_assists",
+   "gameDate": "2026-11-04",
+   "gameId": 21718039,
+   "matchup": "LAL @ SAC",
+   "playerId": 132,
+   "playerName": "Luka Doncic",
+   "teamAbbreviation": "LAL",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 52.5,
+   "americanOdds": -106,
+   "vendor": "fanduel",
+   "modelProbability": 0.6264012035795101,
+   "evPercent": 21.734573525829326,
+   "foundAt": "2026-11-05T04:17:20.432Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 7,
+   "valueAtPick": 29,
+   "projection": 50.24669647423816,
+   "latestValue": 29,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718039-268-points",
+   "gameDate": "2026-11-04",
+   "gameId": 21718039,
+   "matchup": "LAL @ SAC",
+   "playerId": 268,
+   "playerName": "Zach LaVine",
+   "teamAbbreviation": "SAC",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 18.5,
+   "americanOdds": -118,
+   "vendor": "caesars",
+   "modelProbability": 0.653797188537947,
+   "evPercent": 20.786260255315625,
+   "foundAt": "2026-11-05T04:17:20.432Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -7,
+   "valueAtPick": 8,
+   "projection": 16.64944247261814,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 788,
+ "calls": 800,
  "note": null,
  "checkpointsTaken": {
   "21718027": [
@@ -6627,7 +6792,8 @@
    "halftime"
   ],
   "21718039": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718040": [
    "end-q1"
