@@ -1,6 +1,6 @@
 {
  "date": "2026-11-04",
- "updatedAt": "2026-11-05T03:40:19.326Z",
+ "updatedAt": "2026-11-05T03:44:19.788Z",
  "state": "running",
  "games": [
   {
@@ -70,7 +70,7 @@
    "gameId": 21718036,
    "matchup": "TOR @ DEN",
    "status": "3rd Qtr",
-   "homeScore": 84,
+   "homeScore": 90,
    "visitorScore": 78
   },
   {
@@ -78,28 +78,28 @@
    "matchup": "POR @ PHX",
    "status": "3rd Qtr",
    "homeScore": 71,
-   "visitorScore": 80
+   "visitorScore": 82
   },
   {
    "gameId": 21718038,
    "matchup": "DAL @ SAS",
    "status": "2nd Qtr",
-   "homeScore": 49,
-   "visitorScore": 46
+   "homeScore": 56,
+   "visitorScore": 48
   },
   {
    "gameId": 21718039,
    "matchup": "LAL @ SAC",
    "status": "2nd Qtr",
    "homeScore": 28,
-   "visitorScore": 28
+   "visitorScore": 30
   },
   {
    "gameId": 21718040,
    "matchup": "MIA @ LAC",
-   "status": "2026-11-05T03:30:00Z",
+   "status": "1st Qtr",
    "homeScore": 0,
-   "visitorScore": 0
+   "visitorScore": 4
   }
  ],
  "picks": [
@@ -5070,7 +5070,7 @@
    "scoreMargin": -3,
    "valueAtPick": 11,
    "projection": 27.102640270027493,
-   "latestValue": 15,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Under",
@@ -5136,7 +5136,7 @@
    "scoreMargin": 13,
    "valueAtPick": 14,
    "projection": 26.47705995200139,
-   "latestValue": 14,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -5235,7 +5235,7 @@
    "scoreMargin": -13,
    "valueAtPick": 3,
    "projection": 6.108292337637806,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -5776,7 +5776,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 697,
+ "calls": 705,
  "note": null,
  "checkpointsTaken": {
   "21718027": [
