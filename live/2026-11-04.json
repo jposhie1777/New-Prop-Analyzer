@@ -1,14 +1,14 @@
 {
  "date": "2026-11-04",
- "updatedAt": "2026-11-05T01:14:13.341Z",
+ "updatedAt": "2026-11-05T01:18:15.102Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718027,
    "matchup": "PHI @ DET",
    "status": "2nd Qtr",
-   "homeScore": 40,
-   "visitorScore": 48
+   "homeScore": 41,
+   "visitorScore": 51
   },
   {
    "gameId": 21718028,
@@ -21,43 +21,43 @@
    "gameId": 21718029,
    "matchup": "MIL @ BOS",
    "status": "2nd Qtr",
-   "homeScore": 37,
-   "visitorScore": 19
+   "homeScore": 41,
+   "visitorScore": 27
   },
   {
    "gameId": 21718030,
    "matchup": "CHA @ BKN",
-   "status": "1st Qtr",
-   "homeScore": 15,
-   "visitorScore": 22
+   "status": "2nd Qtr",
+   "homeScore": 21,
+   "visitorScore": 24
   },
   {
    "gameId": 21718031,
    "matchup": "CHI @ NYK",
    "status": "2nd Qtr",
-   "homeScore": 43,
-   "visitorScore": 21
+   "homeScore": 49,
+   "visitorScore": 26
   },
   {
    "gameId": 21718032,
    "matchup": "IND @ MEM",
    "status": "1st Qtr",
-   "homeScore": 5,
-   "visitorScore": 6
+   "homeScore": 12,
+   "visitorScore": 9
   },
   {
    "gameId": 21718033,
    "matchup": "UTA @ NOP",
    "status": "1st Qtr",
-   "homeScore": 8,
+   "homeScore": 10,
    "visitorScore": 4
   },
   {
    "gameId": 21718034,
    "matchup": "CLE @ OKC",
    "status": "1st Qtr",
-   "homeScore": 5,
-   "visitorScore": 4
+   "homeScore": 15,
+   "visitorScore": 9
   },
   {
    "gameId": 21718035,
@@ -623,7 +623,7 @@
    "scoreMargin": 14,
    "valueAtPick": 2,
    "projection": 7.157509765625,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -823,7 +823,7 @@
    "scoreMargin": 22,
    "valueAtPick": 2,
    "projection": 4.539775,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Over",
     "Rebounds",
@@ -936,9 +936,173 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718030-38017725-points_rebounds_assists",
+   "gameDate": "2026-11-04",
+   "gameId": 21718030,
+   "matchup": "CHA @ BKN",
+   "playerId": 38017725,
+   "playerName": "Moussa Diabate",
+   "teamAbbreviation": "CHA",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 19.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.674743012858559,
+   "evPercent": 24.655912545055813,
+   "foundAt": "2026-11-05T01:18:13.154Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 3,
+   "valueAtPick": 4,
+   "projection": 17.020717950190594,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718030-56677823-points_rebounds_assists",
+   "gameDate": "2026-11-04",
+   "gameId": 21718030,
+   "matchup": "CHA @ BKN",
+   "playerId": 56677823,
+   "playerName": "Brandon Miller",
+   "teamAbbreviation": "CHA",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 27.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6236344872946656,
+   "evPercent": 23.504084738747522,
+   "foundAt": "2026-11-05T01:18:13.154Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 3,
+   "valueAtPick": 3,
+   "projection": 25.246482120712937,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718030-375-rebounds",
+   "gameDate": "2026-11-04",
+   "gameId": 21718030,
+   "matchup": "CHA @ BKN",
+   "playerId": 375,
+   "playerName": "Michael Porter Jr.",
+   "teamAbbreviation": "BKN",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.6668501409115689,
+   "evPercent": 23.19773789722206,
+   "foundAt": "2026-11-05T01:18:13.154Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -3,
+   "valueAtPick": 3,
+   "projection": 7.635180606675259,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718030-409-assists",
+   "gameDate": "2026-11-04",
+   "gameId": 21718030,
+   "matchup": "CHA @ BKN",
+   "playerId": 409,
+   "playerName": "Dennis Schroder",
+   "teamAbbreviation": "CHA",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": 130,
+   "vendor": "draftkings",
+   "modelProbability": 0.5297267557886461,
+   "evPercent": 21.8371538313886,
+   "foundAt": "2026-11-05T01:18:13.154Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 3,
+   "valueAtPick": 0,
+   "projection": 2.3599099634320995,
+   "latestValue": 0,
+   "tags": [
+    "Under",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718030-1091339436-assists",
+   "gameDate": "2026-11-04",
+   "gameId": 21718030,
+   "matchup": "CHA @ BKN",
+   "playerId": 1091339436,
+   "playerName": "Mikel Brown Jr.",
+   "teamAbbreviation": "BKN",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": -120,
+   "vendor": "betmgm",
+   "modelProbability": 0.6567882280323167,
+   "evPercent": 20.411175139258077,
+   "foundAt": "2026-11-05T01:18:13.154Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -3,
+   "valueAtPick": 0,
+   "projection": 2.6903485656249995,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 277,
+ "calls": 290,
  "note": null,
  "checkpointsTaken": {
   "21718027": [
@@ -949,6 +1113,9 @@
    "halftime"
   ],
   "21718029": [
+   "end-q1"
+  ],
+  "21718030": [
    "end-q1"
   ],
   "21718031": [
