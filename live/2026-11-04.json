@@ -1,26 +1,26 @@
 {
  "date": "2026-11-04",
- "updatedAt": "2026-11-05T01:45:18.534Z",
+ "updatedAt": "2026-11-05T01:49:15.027Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718027,
    "matchup": "PHI @ DET",
    "status": "3rd Qtr",
-   "homeScore": 50,
-   "visitorScore": 60
+   "homeScore": 54,
+   "visitorScore": 62
   },
   {
    "gameId": 21718028,
    "matchup": "ATL @ WAS",
    "status": "3rd Qtr",
-   "homeScore": 76,
-   "visitorScore": 83
+   "homeScore": 79,
+   "visitorScore": 87
   },
   {
    "gameId": 21718029,
    "matchup": "MIL @ BOS",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 62,
    "visitorScore": 41
   },
@@ -28,8 +28,8 @@
    "gameId": 21718030,
    "matchup": "CHA @ BKN",
    "status": "2nd Qtr",
-   "homeScore": 47,
-   "visitorScore": 51
+   "homeScore": 49,
+   "visitorScore": 57
   },
   {
    "gameId": 21718031,
@@ -42,29 +42,29 @@
    "gameId": 21718032,
    "matchup": "IND @ MEM",
    "status": "2nd Qtr",
-   "homeScore": 30,
-   "visitorScore": 35
+   "homeScore": 37,
+   "visitorScore": 37
   },
   {
    "gameId": 21718033,
    "matchup": "UTA @ NOP",
    "status": "2nd Qtr",
-   "homeScore": 31,
+   "homeScore": 34,
    "visitorScore": 25
   },
   {
    "gameId": 21718034,
    "matchup": "CLE @ OKC",
    "status": "2nd Qtr",
-   "homeScore": 43,
-   "visitorScore": 22
+   "homeScore": 46,
+   "visitorScore": 23
   },
   {
    "gameId": 21718035,
    "matchup": "MIN @ HOU",
    "status": "1st Qtr",
-   "homeScore": 5,
-   "visitorScore": 7
+   "homeScore": 15,
+   "visitorScore": 13
   },
   {
    "gameId": 21718036,
@@ -224,7 +224,7 @@
    "scoreMargin": 5,
    "valueAtPick": 6,
    "projection": 23.928291853574823,
-   "latestValue": 19,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Over",
@@ -324,7 +324,7 @@
    "scoreMargin": 8,
    "valueAtPick": 3,
    "projection": 9.267298496497244,
-   "latestValue": 5,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -423,7 +423,7 @@
    "scoreMargin": -8,
    "valueAtPick": 3,
    "projection": 13.340610047733898,
-   "latestValue": 7,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -590,7 +590,7 @@
    "scoreMargin": -7,
    "valueAtPick": 16,
    "projection": 29.37170551102558,
-   "latestValue": 18,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Over",
@@ -1223,7 +1223,7 @@
    "scoreMargin": -14,
    "valueAtPick": 8,
    "projection": 13.017980660685632,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -1526,7 +1526,7 @@
    "scoreMargin": -8,
    "valueAtPick": 3,
    "projection": 23.51048293040699,
-   "latestValue": 6,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -1721,7 +1721,7 @@
    "scoreMargin": 0,
    "valueAtPick": 5,
    "projection": 18.107509790660494,
-   "latestValue": 11,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -1935,9 +1935,182 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718031-380-points_assists",
+   "gameDate": "2026-11-04",
+   "gameId": 21718031,
+   "matchup": "CHI @ NYK",
+   "playerId": 380,
+   "playerName": "Norman Powell",
+   "teamAbbreviation": "CHI",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 13.5,
+   "americanOdds": -125,
+   "vendor": "fanduel",
+   "modelProbability": 0.6919331628962822,
+   "evPercent": 24.547969321330786,
+   "foundAt": "2026-11-05T01:46:14.279Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -32,
+   "valueAtPick": 7,
+   "projection": 15.7489036608935,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718031-1091343852-points_assists",
+   "gameDate": "2026-11-04",
+   "gameId": 21718031,
+   "matchup": "CHI @ NYK",
+   "playerId": 1091343852,
+   "playerName": "Caleb Wilson",
+   "teamAbbreviation": "CHI",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 12.5,
+   "americanOdds": -130,
+   "vendor": "fanduel",
+   "modelProbability": 0.7031090854146063,
+   "evPercent": 24.396222804122637,
+   "foundAt": "2026-11-05T01:46:14.279Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -32,
+   "valueAtPick": 5,
+   "projection": 15.066400588138304,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718031-414-points",
+   "gameDate": "2026-11-04",
+   "gameId": 21718031,
+   "matchup": "CHI @ NYK",
+   "playerId": 414,
+   "playerName": "Landry Shamet",
+   "teamAbbreviation": "NYK",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": -166,
+   "vendor": "fanduel",
+   "modelProbability": 0.7750784724473971,
+   "evPercent": 24.199321488558812,
+   "foundAt": "2026-11-05T01:46:14.279Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 32,
+   "valueAtPick": 7,
+   "projection": 12.25552381956373,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718031-17896065-points_rebounds_assists",
+   "gameDate": "2026-11-04",
+   "gameId": 21718031,
+   "matchup": "CHI @ NYK",
+   "playerId": 17896065,
+   "playerName": "Josh Giddey",
+   "teamAbbreviation": "CHI",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 20.5,
+   "americanOdds": 104,
+   "vendor": "fanduel",
+   "modelProbability": 0.6002276130367665,
+   "evPercent": 22.446433059500382,
+   "foundAt": "2026-11-05T01:46:14.279Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -32,
+   "valueAtPick": 12,
+   "projection": 21.69939216649993,
+   "latestValue": 12,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Blowout risk",
+    "Hot shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718031-447-rebounds",
+   "gameDate": "2026-11-04",
+   "gameId": 21718031,
+   "matchup": "CHI @ NYK",
+   "playerId": 447,
+   "playerName": "Karl-Anthony Towns",
+   "teamAbbreviation": "NYK",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": -160,
+   "vendor": "fanduel",
+   "modelProbability": 0.7499155939668176,
+   "evPercent": 21.861284019607872,
+   "foundAt": "2026-11-05T01:46:14.279Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 32,
+   "valueAtPick": 6,
+   "projection": 11.419050327620972,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 367,
+ "calls": 379,
  "note": null,
  "checkpointsTaken": {
   "21718027": [
@@ -1956,7 +2129,8 @@
    "end-q1"
   ],
   "21718031": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718032": [
    "end-q1"
