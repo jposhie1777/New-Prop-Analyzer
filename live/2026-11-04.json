@@ -1,6 +1,6 @@
 {
  "date": "2026-11-04",
- "updatedAt": "2026-11-05T04:21:21.032Z",
+ "updatedAt": "2026-11-05T04:21:48.753Z",
  "state": "running",
  "games": [
   {
@@ -71,7 +71,7 @@
    "matchup": "TOR @ DEN",
    "status": "4th Qtr",
    "homeScore": 128,
-   "visitorScore": 107
+   "visitorScore": 109
   },
   {
    "gameId": 21718037,
@@ -4172,7 +4172,7 @@
    "scoreMargin": 5,
    "valueAtPick": 8,
    "projection": 26.946574893057626,
-   "latestValue": 25,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Over",
@@ -6729,8 +6729,8 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 802,
- "note": "This run hit its time limit; the next scheduled run continues.",
+ "calls": 4,
+ "note": null,
  "checkpointsTaken": {
   "21718027": [
    "end-q1",
