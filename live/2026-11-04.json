@@ -1,6 +1,6 @@
 {
  "date": "2026-11-04",
- "updatedAt": "2026-11-05T04:20:20.900Z",
+ "updatedAt": "2026-11-05T04:21:21.032Z",
  "state": "running",
  "games": [
   {
@@ -70,7 +70,7 @@
    "gameId": 21718036,
    "matchup": "TOR @ DEN",
    "status": "4th Qtr",
-   "homeScore": 126,
+   "homeScore": 128,
    "visitorScore": 107
   },
   {
@@ -6729,8 +6729,8 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 800,
- "note": null,
+ "calls": 802,
+ "note": "This run hit its time limit; the next scheduled run continues.",
  "checkpointsTaken": {
   "21718027": [
    "end-q1",
