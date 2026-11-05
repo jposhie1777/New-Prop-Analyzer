@@ -1,6 +1,6 @@
 {
  "date": "2026-11-04",
- "updatedAt": "2026-11-05T02:32:17.393Z",
+ "updatedAt": "2026-11-05T02:36:19.137Z",
  "state": "running",
  "games": [
   {
@@ -21,64 +21,64 @@
    "gameId": 21718029,
    "matchup": "MIL @ BOS",
    "status": "4th Qtr",
-   "homeScore": 92,
+   "homeScore": 95,
    "visitorScore": 92
   },
   {
    "gameId": 21718030,
    "matchup": "CHA @ BKN",
    "status": "3rd Qtr",
-   "homeScore": 70,
-   "visitorScore": 71
+   "homeScore": 76,
+   "visitorScore": 78
   },
   {
    "gameId": 21718031,
    "matchup": "CHI @ NYK",
    "status": "3rd Qtr",
    "homeScore": 113,
-   "visitorScore": 73
+   "visitorScore": 79
   },
   {
    "gameId": 21718032,
    "matchup": "IND @ MEM",
    "status": "3rd Qtr",
-   "homeScore": 62,
-   "visitorScore": 58
+   "homeScore": 66,
+   "visitorScore": 63
   },
   {
    "gameId": 21718033,
    "matchup": "UTA @ NOP",
    "status": "3rd Qtr",
-   "homeScore": 47,
-   "visitorScore": 48
+   "homeScore": 50,
+   "visitorScore": 50
   },
   {
    "gameId": 21718034,
    "matchup": "CLE @ OKC",
    "status": "3rd Qtr",
-   "homeScore": 72,
-   "visitorScore": 59
+   "homeScore": 74,
+   "visitorScore": 62
   },
   {
    "gameId": 21718035,
    "matchup": "MIN @ HOU",
    "status": "2nd Qtr",
-   "homeScore": 46,
+   "homeScore": 48,
    "visitorScore": 49
   },
   {
    "gameId": 21718036,
    "matchup": "TOR @ DEN",
    "status": "1st Qtr",
-   "homeScore": 25,
-   "visitorScore": 26
+   "homeScore": 33,
+   "visitorScore": 35
   },
   {
    "gameId": 21718037,
    "matchup": "POR @ PHX",
    "status": "1st Qtr",
-   "homeScore": 25,
-   "visitorScore": 25
+   "homeScore": 32,
+   "visitorScore": 27
   },
   {
    "gameId": 21718038,
@@ -1032,7 +1032,7 @@
    "scoreMargin": 3,
    "valueAtPick": 3,
    "projection": 25.246482120712937,
-   "latestValue": 9,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -1500,7 +1500,7 @@
    "scoreMargin": 8,
    "valueAtPick": 8,
    "projection": 24.196562175769266,
-   "latestValue": 10,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -1566,7 +1566,7 @@
    "scoreMargin": -8,
    "valueAtPick": 3,
    "projection": 23.51048293040699,
-   "latestValue": 17,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Under",
@@ -1697,7 +1697,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 2.3172670572916667,
-   "latestValue": 0,
+   "latestValue": 2,
    "tags": [
     "Under",
     "Rebounds",
@@ -1794,7 +1794,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 13.78305910702418,
-   "latestValue": 0,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -2205,7 +2205,7 @@
    "scoreMargin": -7,
    "valueAtPick": 1,
    "projection": 2.487404547802404,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Over",
     "Rebounds",
@@ -2270,7 +2270,7 @@
    "scoreMargin": -7,
    "valueAtPick": 1,
    "projection": 2.975038593821119,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -2557,7 +2557,7 @@
    "scoreMargin": -2,
    "valueAtPick": 1,
    "projection": 5.021411409505208,
-   "latestValue": 2,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -2690,7 +2690,7 @@
    "scoreMargin": -16,
    "valueAtPick": 17,
    "projection": 31.283276822195248,
-   "latestValue": 28,
+   "latestValue": 31,
    "tags": [
     "Best bet",
     "Over",
@@ -3507,9 +3507,209 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718031-17896065-assists",
+   "gameDate": "2026-11-04",
+   "gameId": 21718031,
+   "matchup": "CHI @ NYK",
+   "playerId": 17896065,
+   "playerName": "Josh Giddey",
+   "teamAbbreviation": "CHI",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 7.5,
+   "americanOdds": 135,
+   "vendor": "caesars",
+   "modelProbability": 0.4660984567114608,
+   "evPercent": 9.533137327193275,
+   "foundAt": "2026-11-05T02:34:16.312Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -34,
+   "valueAtPick": 6,
+   "projection": 7.37788759921875,
+   "latestValue": 6,
+   "tags": [
+    "Over",
+    "Assists",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718036-3547269-threes",
+   "gameDate": "2026-11-04",
+   "gameId": 21718036,
+   "matchup": "TOR @ DEN",
+   "playerId": 3547269,
+   "playerName": "Immanuel Quickley",
+   "teamAbbreviation": "TOR",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 116,
+   "vendor": "caesars",
+   "modelProbability": 0.5742718527844126,
+   "evPercent": 24.04272020143314,
+   "foundAt": "2026-11-05T02:36:16.386Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 2,
+   "valueAtPick": 1,
+   "projection": 2.820602625164148,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718036-38017709-points",
+   "gameDate": "2026-11-04",
+   "gameId": 21718036,
+   "matchup": "TOR @ DEN",
+   "playerId": 38017709,
+   "playerName": "Christian Braun",
+   "teamAbbreviation": "DEN",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 9.5,
+   "americanOdds": -105,
+   "vendor": "draftkings",
+   "modelProbability": 0.6301101724498277,
+   "evPercent": 23.021509859252063,
+   "foundAt": "2026-11-05T02:36:16.386Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -2,
+   "valueAtPick": 0,
+   "projection": 8.005227004408209,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718036-1057268940-assists",
+   "gameDate": "2026-11-04",
+   "gameId": 21718036,
+   "matchup": "TOR @ DEN",
+   "playerId": 1057268940,
+   "playerName": "Collin Murray-Boyles",
+   "teamAbbreviation": "TOR",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": -132,
+   "vendor": "betrivers",
+   "modelProbability": 0.6919382941038699,
+   "evPercent": 21.613397145528634,
+   "foundAt": "2026-11-05T02:36:16.386Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 2,
+   "valueAtPick": 1,
+   "projection": 2.1603152906250003,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Already 60%+ of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718036-373-rebounds",
+   "gameDate": "2026-11-04",
+   "gameId": 21718036,
+   "matchup": "TOR @ DEN",
+   "playerId": 373,
+   "playerName": "Jakob Poeltl",
+   "teamAbbreviation": "TOR",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": 102,
+   "vendor": "caesars",
+   "modelProbability": 0.6010960476351516,
+   "evPercent": 21.421401622300618,
+   "foundAt": "2026-11-05T02:36:16.386Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 2,
+   "valueAtPick": 0,
+   "projection": 3.8827719204075035,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718036-1091463040-points",
+   "gameDate": "2026-11-04",
+   "gameId": 21718036,
+   "matchup": "TOR @ DEN",
+   "playerId": 1091463040,
+   "playerName": "Trevon Brazile",
+   "teamAbbreviation": "DEN",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 7.5,
+   "americanOdds": -103,
+   "vendor": "caesars",
+   "modelProbability": 0.6093656285324307,
+   "evPercent": 20.098274361246048,
+   "foundAt": "2026-11-05T02:36:16.386Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -2,
+   "valueAtPick": 4,
+   "projection": 8.429526844444176,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 499,
+ "calls": 516,
  "note": null,
  "checkpointsTaken": {
   "21718027": [
@@ -3533,7 +3733,8 @@
   ],
   "21718031": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718032": [
    "end-q1",
@@ -3548,6 +3749,9 @@
    "halftime"
   ],
   "21718035": [
+   "end-q1"
+  ],
+  "21718036": [
    "end-q1"
   ]
  }
