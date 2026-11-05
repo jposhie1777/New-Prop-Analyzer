@@ -1,6 +1,6 @@
 {
  "date": "2026-11-04",
- "updatedAt": "2026-11-05T04:53:51.328Z",
+ "updatedAt": "2026-11-05T04:57:50.247Z",
  "state": "running",
  "games": [
   {
@@ -83,23 +83,23 @@
   {
    "gameId": 21718038,
    "matchup": "DAL @ SAS",
-   "status": "3rd Qtr",
-   "homeScore": 90,
-   "visitorScore": 80
+   "status": "4th Qtr",
+   "homeScore": 93,
+   "visitorScore": 82
   },
   {
    "gameId": 21718039,
    "matchup": "LAL @ SAC",
    "status": "3rd Qtr",
-   "homeScore": 69,
-   "visitorScore": 83
+   "homeScore": 74,
+   "visitorScore": 87
   },
   {
    "gameId": 21718040,
    "matchup": "MIA @ LAC",
    "status": "3rd Qtr",
-   "homeScore": 68,
-   "visitorScore": 54
+   "homeScore": 73,
+   "visitorScore": 62
   }
  ],
  "picks": [
@@ -5952,7 +5952,7 @@
    "scoreMargin": 0,
    "valueAtPick": 1,
    "projection": 3.909270140947463,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -6280,7 +6280,7 @@
    "scoreMargin": 17,
    "valueAtPick": 0,
    "projection": 1.8698030190308002,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -6804,7 +6804,7 @@
    "scoreMargin": 7,
    "valueAtPick": 29,
    "projection": 50.24669647423816,
-   "latestValue": 44,
+   "latestValue": 48,
    "tags": [
     "Best bet",
     "Under",
@@ -6870,7 +6870,7 @@
    "scoreMargin": 15,
    "valueAtPick": 11,
    "projection": 23.08688789534537,
-   "latestValue": 11,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -6905,7 +6905,7 @@
    "scoreMargin": 15,
    "valueAtPick": 19,
    "projection": 30.677108782660902,
-   "latestValue": 19,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -6940,7 +6940,7 @@
    "scoreMargin": 15,
    "valueAtPick": 3,
    "projection": 6.874368042423063,
-   "latestValue": 3,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -7190,7 +7190,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 82,
+ "calls": 90,
  "note": null,
  "checkpointsTaken": {
   "21718027": [
