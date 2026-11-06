@@ -1,6 +1,6 @@
 {
  "date": "2026-11-05",
- "updatedAt": "2026-11-06T05:09:52.557Z",
+ "updatedAt": "2026-11-06T05:13:52.613Z",
  "state": "running",
  "games": [
   {
@@ -14,8 +14,8 @@
    "gameId": 21718042,
    "matchup": "MIA @ GSW",
    "status": "4th Qtr",
-   "homeScore": 95,
-   "visitorScore": 81
+   "homeScore": 98,
+   "visitorScore": 84
   }
  ],
  "picks": [
@@ -818,7 +818,7 @@
    "scoreMargin": -15,
    "valueAtPick": 19,
    "projection": 23.626191717131615,
-   "latestValue": 21,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Over",
@@ -971,7 +971,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 106,
+ "calls": 114,
  "note": null,
  "checkpointsTaken": {
   "21718041": [
