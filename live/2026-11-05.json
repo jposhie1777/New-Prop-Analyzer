@@ -1,6 +1,6 @@
 {
  "date": "2026-11-05",
- "updatedAt": "2026-11-06T05:17:52.739Z",
+ "updatedAt": "2026-11-06T05:21:53.012Z",
  "state": "running",
  "games": [
   {
@@ -14,8 +14,8 @@
    "gameId": 21718042,
    "matchup": "MIA @ GSW",
    "status": "4th Qtr",
-   "homeScore": 103,
-   "visitorScore": 85
+   "homeScore": 107,
+   "visitorScore": 93
   }
  ],
  "picks": [
@@ -443,7 +443,7 @@
    "scoreMargin": 3,
    "valueAtPick": 7,
    "projection": 20.30723639400093,
-   "latestValue": 10,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -477,7 +477,7 @@
    "scoreMargin": 3,
    "valueAtPick": 1,
    "projection": 10.389832861939214,
-   "latestValue": 7,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -719,7 +719,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 3.1085838663723084,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -818,7 +818,7 @@
    "scoreMargin": -15,
    "valueAtPick": 19,
    "projection": 23.626191717131615,
-   "latestValue": 19,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Over",
@@ -853,7 +853,7 @@
    "scoreMargin": 15,
    "valueAtPick": 3,
    "projection": 5.732286533171136,
-   "latestValue": 3,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -923,7 +923,7 @@
    "scoreMargin": -15,
    "valueAtPick": 0,
    "projection": 0.39535569479112004,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Under",
@@ -957,7 +957,7 @@
    "scoreMargin": 15,
    "valueAtPick": 12,
    "projection": 17.135928175532165,
-   "latestValue": 12,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -971,7 +971,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 122,
+ "calls": 130,
  "note": null,
  "checkpointsTaken": {
   "21718041": [
