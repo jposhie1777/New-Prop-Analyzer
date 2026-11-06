@@ -1,21 +1,21 @@
 {
  "date": "2026-11-05",
- "updatedAt": "2026-11-06T03:34:18.874Z",
+ "updatedAt": "2026-11-06T03:38:18.969Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718041,
    "matchup": "ORL @ PHX",
    "status": "3rd Qtr",
-   "homeScore": 78,
-   "visitorScore": 60
+   "homeScore": 83,
+   "visitorScore": 62
   },
   {
    "gameId": 21718042,
    "matchup": "MIA @ GSW",
    "status": "1st Qtr",
-   "homeScore": 21,
-   "visitorScore": 25
+   "homeScore": 26,
+   "visitorScore": 29
   }
  ],
  "picks": [
@@ -173,7 +173,7 @@
    "scoreMargin": 7,
    "valueAtPick": 4,
    "projection": 10.290134816533106,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -239,7 +239,7 @@
    "scoreMargin": -12,
    "valueAtPick": 22,
    "projection": 36.70680685083193,
-   "latestValue": 25,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Over",
@@ -337,7 +337,7 @@
    "scoreMargin": 12,
    "valueAtPick": 4,
    "projection": 6.306064467185137,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Under",
     "Assists",
@@ -347,14 +347,183 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718042-313-assists",
+   "gameDate": "2026-11-05",
+   "gameId": 21718042,
+   "matchup": "MIA @ GSW",
+   "playerId": 313,
+   "playerName": "De'Anthony Melton",
+   "teamAbbreviation": "GSW",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 105,
+   "vendor": "draftkings",
+   "modelProbability": 0.6080006101870603,
+   "evPercent": 24.640125088347343,
+   "foundAt": "2026-11-06T03:37:18.644Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -3,
+   "valueAtPick": 2,
+   "projection": 3.9704717421956977,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718042-475-points_rebounds_assists",
+   "gameDate": "2026-11-05",
+   "gameId": 21718042,
+   "matchup": "MIA @ GSW",
+   "playerId": 475,
+   "playerName": "Andrew Wiggins",
+   "teamAbbreviation": "MIA",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 18.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6280405754700634,
+   "evPercent": 24.376662985247854,
+   "foundAt": "2026-11-06T03:37:18.644Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 3,
+   "valueAtPick": 7,
+   "projection": 20.30723639400093,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718042-4-rebounds_assists",
+   "gameDate": "2026-11-05",
+   "gameId": 21718042,
+   "matchup": "MIA @ GSW",
+   "playerId": 4,
+   "playerName": "Bam Adebayo",
+   "teamAbbreviation": "MIA",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": 110,
+   "vendor": "fanduel",
+   "modelProbability": 0.5905104100420067,
+   "evPercent": 24.0071861088214,
+   "foundAt": "2026-11-06T03:37:18.644Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 3,
+   "valueAtPick": 1,
+   "projection": 10.389832861939214,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Reb+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718042-56677858-assists",
+   "gameDate": "2026-11-05",
+   "gameId": 21718042,
+   "matchup": "MIA @ GSW",
+   "playerId": 56677858,
+   "playerName": "Brandin Podziemski",
+   "teamAbbreviation": "GSW",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 120,
+   "vendor": "fanduel",
+   "modelProbability": 0.5602232837843208,
+   "evPercent": 23.249122432550596,
+   "foundAt": "2026-11-06T03:37:18.644Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -3,
+   "valueAtPick": 1,
+   "projection": 3.810624595642598,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718042-377-rebounds",
+   "gameDate": "2026-11-05",
+   "gameId": 21718042,
+   "matchup": "MIA @ GSW",
+   "playerId": 377,
+   "playerName": "Bobby Portis",
+   "teamAbbreviation": "MIA",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": 110,
+   "vendor": "caesars",
+   "modelProbability": 0.5729816724300058,
+   "evPercent": 20.326151210301212,
+   "foundAt": "2026-11-06T03:37:18.644Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 3,
+   "valueAtPick": 3,
+   "projection": 6.946885156591369,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 297,
+ "calls": 309,
  "note": null,
  "checkpointsTaken": {
   "21718041": [
    "end-q1",
    "halftime"
+  ],
+  "21718042": [
+   "end-q1"
   ]
  }
 }
