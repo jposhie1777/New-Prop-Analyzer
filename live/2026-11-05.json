@@ -1,21 +1,21 @@
 {
  "date": "2026-11-05",
- "updatedAt": "2026-11-06T03:42:19.271Z",
+ "updatedAt": "2026-11-06T03:46:19.343Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718041,
    "matchup": "ORL @ PHX",
    "status": "3rd Qtr",
-   "homeScore": 87,
-   "visitorScore": 62
+   "homeScore": 89,
+   "visitorScore": 65
   },
   {
    "gameId": 21718042,
    "matchup": "MIA @ GSW",
    "status": "2nd Qtr",
-   "homeScore": 31,
-   "visitorScore": 32
+   "homeScore": 33,
+   "visitorScore": 36
   }
  ],
  "picks": [
@@ -503,7 +503,7 @@
    "scoreMargin": 3,
    "valueAtPick": 3,
    "projection": 6.946885156591369,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -515,7 +515,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 317,
+ "calls": 325,
  "note": null,
  "checkpointsTaken": {
   "21718041": [
