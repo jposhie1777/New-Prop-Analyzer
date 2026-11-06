@@ -1,21 +1,21 @@
 {
  "date": "2026-11-05",
- "updatedAt": "2026-11-06T03:46:19.343Z",
+ "updatedAt": "2026-11-06T03:52:20.023Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718041,
    "matchup": "ORL @ PHX",
    "status": "3rd Qtr",
-   "homeScore": 89,
-   "visitorScore": 65
+   "homeScore": 96,
+   "visitorScore": 73
   },
   {
    "gameId": 21718042,
    "matchup": "MIA @ GSW",
    "status": "2nd Qtr",
-   "homeScore": 33,
-   "visitorScore": 36
+   "homeScore": 36,
+   "visitorScore": 38
   }
  ],
  "picks": [
@@ -239,7 +239,7 @@
    "scoreMargin": -12,
    "valueAtPick": 22,
    "projection": 36.70680685083193,
-   "latestValue": 26,
+   "latestValue": 29,
    "tags": [
     "Best bet",
     "Over",
@@ -513,14 +513,83 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718041-1028025497-assists",
+   "gameDate": "2026-11-05",
+   "gameId": 21718041,
+   "matchup": "ORL @ PHX",
+   "playerId": 1028025497,
+   "playerName": "Tristan Da Silva",
+   "teamAbbreviation": "ORL",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": -148,
+   "vendor": "fanduel",
+   "modelProbability": 0.6985083011767967,
+   "evPercent": 17.04733695394973,
+   "foundAt": "2026-11-06T03:52:19.292Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -23,
+   "valueAtPick": 1,
+   "projection": 1.1516782405345212,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718041-17896026-rebounds",
+   "gameDate": "2026-11-05",
+   "gameId": 21718041,
+   "matchup": "ORL @ PHX",
+   "playerId": 17896026,
+   "playerName": "Franz Wagner",
+   "teamAbbreviation": "ORL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": 119,
+   "vendor": "caesars",
+   "modelProbability": 0.5128884063258403,
+   "evPercent": 12.322560985359022,
+   "foundAt": "2026-11-06T03:52:19.292Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -23,
+   "valueAtPick": 5,
+   "projection": 6.549173770690423,
+   "latestValue": 5,
+   "tags": [
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 325,
+ "calls": 340,
  "note": null,
  "checkpointsTaken": {
   "21718041": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718042": [
    "end-q1"
