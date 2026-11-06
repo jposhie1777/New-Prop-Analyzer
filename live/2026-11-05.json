@@ -1,14 +1,14 @@
 {
  "date": "2026-11-05",
- "updatedAt": "2026-11-06T04:08:20.213Z",
+ "updatedAt": "2026-11-06T04:12:20.961Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718041,
    "matchup": "ORL @ PHX",
    "status": "4th Qtr",
-   "homeScore": 109,
-   "visitorScore": 87
+   "homeScore": 113,
+   "visitorScore": 92
   },
   {
    "gameId": 21718042,
@@ -140,7 +140,7 @@
    "scoreMargin": 7,
    "valueAtPick": 2,
    "projection": 13.555975016459348,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -239,7 +239,7 @@
    "scoreMargin": -12,
    "valueAtPick": 22,
    "projection": 36.70680685083193,
-   "latestValue": 32,
+   "latestValue": 37,
    "tags": [
     "Best bet",
     "Over",
@@ -581,9 +581,175 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718042-185-points",
+   "gameDate": "2026-11-05",
+   "gameId": 21718042,
+   "matchup": "MIA @ GSW",
+   "playerId": 185,
+   "playerName": "Draymond Green",
+   "teamAbbreviation": "GSW",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": -125,
+   "vendor": "betmgm",
+   "modelProbability": 0.6802399512421067,
+   "evPercent": 22.443191223579205,
+   "foundAt": "2026-11-06T04:12:20.152Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 0,
+   "valueAtPick": 2,
+   "projection": 3.5673275449784674,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718042-115-steals",
+   "gameDate": "2026-11-05",
+   "gameId": 21718042,
+   "matchup": "MIA @ GSW",
+   "playerId": 115,
+   "playerName": "Stephen Curry",
+   "teamAbbreviation": "GSW",
+   "propType": "steals",
+   "label": "Steals",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 110,
+   "vendor": "draftkings",
+   "modelProbability": 0.5773111819721852,
+   "evPercent": 21.23534821415891,
+   "foundAt": "2026-11-06T04:12:20.152Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 0,
+   "valueAtPick": 1,
+   "projection": 1.6810089077256034,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Steals",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718042-17553994-threes",
+   "gameDate": "2026-11-05",
+   "gameId": 21718042,
+   "matchup": "MIA @ GSW",
+   "playerId": 17553994,
+   "playerName": "Davion Mitchell",
+   "teamAbbreviation": "MIA",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": -130,
+   "vendor": "draftkings",
+   "modelProbability": 0.6756383349599293,
+   "evPercent": 19.53601310829518,
+   "foundAt": "2026-11-06T04:12:20.152Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 0,
+   "valueAtPick": 2,
+   "projection": 3.1085838663723084,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718042-443-threes",
+   "gameDate": "2026-11-05",
+   "gameId": 21718042,
+   "matchup": "MIA @ GSW",
+   "playerId": 443,
+   "playerName": "Klay Thompson",
+   "teamAbbreviation": "MIA",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -134,
+   "vendor": "caesars",
+   "modelProbability": 0.6766926756913503,
+   "evPercent": 18.16872097893729,
+   "foundAt": "2026-11-06T04:12:20.152Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 0,
+   "valueAtPick": 1,
+   "projection": 1.9369147329825958,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718042-313-rebounds",
+   "gameDate": "2026-11-05",
+   "gameId": 21718042,
+   "matchup": "MIA @ GSW",
+   "playerId": 313,
+   "playerName": "De'Anthony Melton",
+   "teamAbbreviation": "GSW",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": -110,
+   "vendor": "draftkings",
+   "modelProbability": 0.6114755734909405,
+   "evPercent": 16.73624584827047,
+   "foundAt": "2026-11-06T04:12:20.152Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 0,
+   "valueAtPick": 2,
+   "projection": 3.9881944899096835,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 372,
+ "calls": 383,
  "note": null,
  "checkpointsTaken": {
   "21718041": [
@@ -592,7 +758,8 @@
    "end-q3"
   ],
   "21718042": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
