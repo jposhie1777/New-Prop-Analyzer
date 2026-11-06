@@ -1,14 +1,14 @@
 {
  "date": "2026-11-05",
- "updatedAt": "2026-11-06T02:36:17.730Z",
+ "updatedAt": "2026-11-06T02:57:17.365Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718041,
    "matchup": "ORL @ PHX",
-   "status": "1st Qtr",
-   "homeScore": 33,
-   "visitorScore": 26
+   "status": "2nd Qtr",
+   "homeScore": 49,
+   "visitorScore": 39
   },
   {
    "gameId": 21718042,
@@ -173,7 +173,7 @@
    "scoreMargin": 7,
    "valueAtPick": 4,
    "projection": 10.290134816533106,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -185,7 +185,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 178,
+ "calls": 220,
  "note": null,
  "checkpointsTaken": {
   "21718041": [
