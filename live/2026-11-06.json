@@ -1,28 +1,28 @@
 {
  "date": "2026-11-06",
- "updatedAt": "2026-11-07T02:08:10.395Z",
+ "updatedAt": "2026-11-07T02:12:10.893Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718043,
    "matchup": "WAS @ ATL",
    "status": "4th Qtr",
-   "homeScore": 129,
-   "visitorScore": 125
+   "homeScore": 133,
+   "visitorScore": 127
   },
   {
    "gameId": 21718044,
    "matchup": "BOS @ CHA",
    "status": "4th Qtr",
-   "homeScore": 64,
-   "visitorScore": 109
+   "homeScore": 67,
+   "visitorScore": 112
   },
   {
    "gameId": 21718045,
    "matchup": "PHI @ CLE",
    "status": "3rd Qtr",
-   "homeScore": 64,
-   "visitorScore": 61
+   "homeScore": 66,
+   "visitorScore": 63
   },
   {
    "gameId": 21718046,
@@ -35,22 +35,22 @@
    "gameId": 21718047,
    "matchup": "OKC @ MEM",
    "status": "2nd Qtr",
-   "homeScore": 46,
+   "homeScore": 49,
    "visitorScore": 71
   },
   {
    "gameId": 21718048,
    "matchup": "TOR @ MIL",
    "status": "2nd Qtr",
-   "homeScore": 56,
-   "visitorScore": 42
+   "homeScore": 60,
+   "visitorScore": 51
   },
   {
    "gameId": 21718049,
    "matchup": "MIN @ NOP",
    "status": "2nd Qtr",
-   "homeScore": 45,
-   "visitorScore": 51
+   "homeScore": 47,
+   "visitorScore": 53
   },
   {
    "gameId": 21718050,
@@ -189,7 +189,7 @@
    "scoreMargin": -4,
    "valueAtPick": 1,
    "projection": 5.166482417204237,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -222,7 +222,7 @@
    "scoreMargin": -4,
    "valueAtPick": 6,
    "projection": 16.684810807324865,
-   "latestValue": 33,
+   "latestValue": 35,
    "tags": [
     "Best bet",
     "Under",
@@ -255,7 +255,7 @@
    "scoreMargin": 20,
    "valueAtPick": 0,
    "projection": 2.6109607781250004,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -490,7 +490,7 @@
    "scoreMargin": 7,
    "valueAtPick": 11,
    "projection": 18.149553745430406,
-   "latestValue": 24,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Under",
@@ -624,7 +624,7 @@
    "scoreMargin": 31,
    "valueAtPick": 1,
    "projection": 4.157269179743098,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -794,7 +794,7 @@
    "scoreMargin": -11,
    "valueAtPick": 2,
    "projection": 6.35649949845679,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -859,7 +859,7 @@
    "scoreMargin": -11,
    "valueAtPick": 2,
    "projection": 9.409139129560469,
-   "latestValue": 17,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -1124,7 +1124,7 @@
    "scoreMargin": -3,
    "valueAtPick": 4,
    "projection": 9.943079230509877,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -1620,7 +1620,7 @@
    "scoreMargin": 11,
    "valueAtPick": 21,
    "projection": 26.412184658973626,
-   "latestValue": 23,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Under",
@@ -1686,7 +1686,7 @@
    "scoreMargin": 11,
    "valueAtPick": 15,
    "projection": 17.69238539956181,
-   "latestValue": 23,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Over",
@@ -1720,7 +1720,7 @@
    "scoreMargin": 11,
    "valueAtPick": 18,
    "projection": 22.01718146522557,
-   "latestValue": 20,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Over",
@@ -1753,7 +1753,7 @@
    "scoreMargin": 8,
    "valueAtPick": 12,
    "projection": 18.778610326982538,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -1855,7 +1855,7 @@
    "scoreMargin": -8,
    "valueAtPick": 10,
    "projection": 26.104298439321646,
-   "latestValue": 16,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -1888,7 +1888,7 @@
    "scoreMargin": -8,
    "valueAtPick": 6,
    "projection": 11.594838400747875,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -2134,9 +2134,179 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718047-1028039105-rebounds",
+   "gameDate": "2026-11-06",
+   "gameId": 21718047,
+   "matchup": "OKC @ MEM",
+   "playerId": 1028039105,
+   "playerName": "Jaylen Wells",
+   "teamAbbreviation": "MEM",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 134,
+   "vendor": "fanduel",
+   "modelProbability": 0.5319579229776831,
+   "evPercent": 24.47815397677784,
+   "foundAt": "2026-11-07T02:09:09.806Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -22,
+   "valueAtPick": 0,
+   "projection": 1.624991055026863,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718047-666676-points_assists",
+   "gameDate": "2026-11-06",
+   "gameId": 21718047,
+   "matchup": "OKC @ MEM",
+   "playerId": 666676,
+   "playerName": "Ty Jerome",
+   "teamAbbreviation": "MEM",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 24.5,
+   "americanOdds": -110,
+   "vendor": "fanduel",
+   "modelProbability": 0.6496422878651193,
+   "evPercent": 24.02261859243189,
+   "foundAt": "2026-11-07T02:09:09.806Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -22,
+   "valueAtPick": 14,
+   "projection": 26.566335471894767,
+   "latestValue": 14,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718047-1028048549-rebounds",
+   "gameDate": "2026-11-06",
+   "gameId": 21718047,
+   "matchup": "OKC @ MEM",
+   "playerId": 1028048549,
+   "playerName": "Cam Spencer",
+   "teamAbbreviation": "MEM",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": -175,
+   "vendor": "betmgm",
+   "modelProbability": 0.7868032877306844,
+   "evPercent": 23.640516643393262,
+   "foundAt": "2026-11-07T02:09:09.806Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -22,
+   "valueAtPick": 0,
+   "projection": 0.6913703680038452,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718047-182-threes",
+   "gameDate": "2026-11-06",
+   "gameId": 21718047,
+   "matchup": "OKC @ MEM",
+   "playerId": 182,
+   "playerName": "Jerami Grant",
+   "teamAbbreviation": "MEM",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": 124,
+   "vendor": "fanduel",
+   "modelProbability": 0.5510930789662909,
+   "evPercent": 23.444849688449175,
+   "foundAt": "2026-11-07T02:09:09.806Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -22,
+   "valueAtPick": 1,
+   "projection": 1.3972903792307692,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718047-1091339280-rebounds_assists",
+   "gameDate": "2026-11-06",
+   "gameId": 21718047,
+   "matchup": "OKC @ MEM",
+   "playerId": 1091339280,
+   "playerName": "Cameron Boozer",
+   "teamAbbreviation": "MEM",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 16.5,
+   "americanOdds": -136,
+   "vendor": "fanduel",
+   "modelProbability": 0.704980160062052,
+   "evPercent": 22.334792481356082,
+   "foundAt": "2026-11-07T02:09:09.806Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -22,
+   "valueAtPick": 12,
+   "projection": 18.20258830766544,
+   "latestValue": 12,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Reb+Ast",
+    "Blowout risk",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 359,
+ "calls": 371,
  "note": null,
  "checkpointsTaken": {
   "21718043": [
@@ -2158,7 +2328,8 @@
    "halftime"
   ],
   "21718047": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718048": [
    "end-q1"
