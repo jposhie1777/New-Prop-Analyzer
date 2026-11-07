@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "updatedAt": "2026-11-07T05:14:43.924Z",
+ "updatedAt": "2026-11-07T05:18:44.113Z",
  "state": "running",
  "games": [
   {
@@ -55,7 +55,7 @@
   {
    "gameId": 21718050,
    "matchup": "POR @ LAL",
-   "status": "3rd Qtr",
+   "status": "4th Qtr",
    "homeScore": 87,
    "visitorScore": 75
   },
@@ -63,8 +63,8 @@
    "gameId": 21718051,
    "matchup": "SAS @ SAC",
    "status": "4th Qtr",
-   "homeScore": 80,
-   "visitorScore": 99
+   "homeScore": 85,
+   "visitorScore": 102
   }
  ],
  "picks": [
@@ -4081,7 +4081,7 @@
    "scoreMargin": -9,
    "valueAtPick": 6,
    "projection": 22.959331126700487,
-   "latestValue": 15,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Under",
@@ -4214,7 +4214,7 @@
    "scoreMargin": 9,
    "valueAtPick": 1,
    "projection": 2.2437846542499997,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Over",
     "3PM",
@@ -4481,7 +4481,7 @@
    "scoreMargin": -19,
    "valueAtPick": 2,
    "projection": 4.644292582646875,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Over",
     "Reb+Ast",
@@ -4549,7 +4549,7 @@
    "scoreMargin": 19,
    "valueAtPick": 15,
    "projection": 25.338187138496618,
-   "latestValue": 25,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Over",
@@ -4617,7 +4617,7 @@
    "scoreMargin": 19,
    "valueAtPick": 6,
    "projection": 6.675323309698565,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -4652,7 +4652,7 @@
    "scoreMargin": -19,
    "valueAtPick": 2,
    "projection": 2.7003769376324875,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -4730,9 +4730,177 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718050-56677817-points_rebounds_assists",
+   "gameDate": "2026-11-06",
+   "gameId": 21718050,
+   "matchup": "POR @ LAL",
+   "playerId": 56677817,
+   "playerName": "Sidy Cissoko",
+   "teamAbbreviation": "POR",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 12.5,
+   "americanOdds": -108,
+   "vendor": "fanduel",
+   "modelProbability": 0.6425974484413084,
+   "evPercent": 23.75950858869644,
+   "foundAt": "2026-11-07T05:15:43.686Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -12,
+   "valueAtPick": 10,
+   "projection": 13.543130245099501,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718050-1028025344-points_rebounds_assists",
+   "gameDate": "2026-11-06",
+   "gameId": 21718050,
+   "matchup": "POR @ LAL",
+   "playerId": 1028025344,
+   "playerName": "Donovan Clingan",
+   "teamAbbreviation": "POR",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 20.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6478547791096194,
+   "evPercent": 22.629654617177962,
+   "foundAt": "2026-11-07T05:15:43.686Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -12,
+   "valueAtPick": 17,
+   "projection": 21.75515891844246,
+   "latestValue": 17,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718050-132-points_rebounds_assists",
+   "gameDate": "2026-11-06",
+   "gameId": 21718050,
+   "matchup": "POR @ LAL",
+   "playerId": 132,
+   "playerName": "Luka Doncic",
+   "teamAbbreviation": "LAL",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 60.5,
+   "americanOdds": -122,
+   "vendor": "fanduel",
+   "modelProbability": 0.669808330601493,
+   "evPercent": 21.88315524059956,
+   "foundAt": "2026-11-07T05:15:43.686Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 12,
+   "valueAtPick": 49,
+   "projection": 58.451403764374035,
+   "latestValue": 49,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Foul trouble",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718050-17895858-points",
+   "gameDate": "2026-11-06",
+   "gameId": 21718050,
+   "matchup": "POR @ LAL",
+   "playerId": 17895858,
+   "playerName": "Quentin Grimes",
+   "teamAbbreviation": "LAL",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": 105,
+   "vendor": "draftkings",
+   "modelProbability": 0.5895658815092366,
+   "evPercent": 20.86100570939349,
+   "foundAt": "2026-11-07T05:15:43.686Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 12,
+   "valueAtPick": 2,
+   "projection": 3.1190139077479118,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718050-38017705-points",
+   "gameDate": "2026-11-06",
+   "gameId": 21718050,
+   "matchup": "POR @ LAL",
+   "playerId": 38017705,
+   "playerName": "Walker Kessler",
+   "teamAbbreviation": "LAL",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 13.5,
+   "americanOdds": -152,
+   "vendor": "fanduel",
+   "modelProbability": 0.7210291707718862,
+   "evPercent": 19.539046733233768,
+   "foundAt": "2026-11-07T05:15:43.686Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 12,
+   "valueAtPick": 12,
+   "projection": 15.155446980258073,
+   "latestValue": 12,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 126,
+ "calls": 138,
  "note": null,
  "checkpointsTaken": {
   "21718043": [
@@ -4772,7 +4940,8 @@
   ],
   "21718050": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718051": [
    "end-q1",
