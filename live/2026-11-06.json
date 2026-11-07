@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "updatedAt": "2026-11-07T01:08:08.395Z",
+ "updatedAt": "2026-11-07T01:13:08.924Z",
  "state": "running",
  "games": [
   {
@@ -20,37 +20,37 @@
   {
    "gameId": 21718045,
    "matchup": "PHI @ CLE",
-   "status": "1st Qtr",
-   "homeScore": 27,
-   "visitorScore": 15
+   "status": "2nd Qtr",
+   "homeScore": 33,
+   "visitorScore": 22
   },
   {
    "gameId": 21718046,
    "matchup": "UTA @ DAL",
-   "status": "2026-11-07T01:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 5,
+   "visitorScore": 3
   },
   {
    "gameId": 21718047,
    "matchup": "OKC @ MEM",
-   "status": "2026-11-07T01:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 4,
+   "visitorScore": 4
   },
   {
    "gameId": 21718048,
    "matchup": "TOR @ MIL",
-   "status": "2026-11-07T01:00:00Z",
+   "status": "1st Qtr",
    "homeScore": 0,
    "visitorScore": 0
   },
   {
    "gameId": 21718049,
    "matchup": "MIN @ NOP",
-   "status": "2026-11-07T01:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 5,
+   "visitorScore": 5
   },
   {
    "gameId": 21718050,
@@ -189,7 +189,7 @@
    "scoreMargin": -4,
    "valueAtPick": 1,
    "projection": 5.166482417204237,
-   "latestValue": 3,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -738,9 +738,172 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718045-38017721-points_assists",
+   "gameDate": "2026-11-06",
+   "gameId": 21718045,
+   "matchup": "PHI @ CLE",
+   "playerId": 38017721,
+   "playerName": "Peyton Watson",
+   "teamAbbreviation": "CLE",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 10.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6495441617260412,
+   "evPercent": 22.94943061242922,
+   "foundAt": "2026-11-07T01:13:07.448Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 11,
+   "valueAtPick": 2,
+   "projection": 12.376376805130178,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718045-237-rebounds",
+   "gameDate": "2026-11-06",
+   "gameId": 21718045,
+   "matchup": "PHI @ CLE",
+   "playerId": 237,
+   "playerName": "LeBron James",
+   "teamAbbreviation": "PHI",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": -124,
+   "vendor": "caesars",
+   "modelProbability": 0.672949029701272,
+   "evPercent": 21.564986010552367,
+   "foundAt": "2026-11-07T01:13:07.448Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -11,
+   "valueAtPick": 2,
+   "projection": 6.35649949845679,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718045-192-rebounds",
+   "gameDate": "2026-11-06",
+   "gameId": 21718045,
+   "matchup": "PHI @ CLE",
+   "playerId": 192,
+   "playerName": "James Harden",
+   "teamAbbreviation": "CLE",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 6.5,
+   "americanOdds": 122,
+   "vendor": "caesars",
+   "modelProbability": 0.5459908896639891,
+   "evPercent": 21.209977505405565,
+   "foundAt": "2026-11-07T01:13:07.448Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 11,
+   "valueAtPick": 3,
+   "projection": 6.245499826425,
+   "latestValue": 3,
+   "tags": [
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718045-1057261935-points",
+   "gameDate": "2026-11-06",
+   "gameId": 21718045,
+   "matchup": "PHI @ CLE",
+   "playerId": 1057261935,
+   "playerName": "VJ Edgecombe",
+   "teamAbbreviation": "PHI",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 10.5,
+   "americanOdds": 100,
+   "vendor": "fanduel",
+   "modelProbability": 0.5994625245966517,
+   "evPercent": 19.892504919330346,
+   "foundAt": "2026-11-07T01:13:07.448Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -11,
+   "valueAtPick": 2,
+   "projection": 9.409139129560469,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718045-3547254-threes",
+   "gameDate": "2026-11-06",
+   "gameId": 21718045,
+   "matchup": "PHI @ CLE",
+   "playerId": 3547254,
+   "playerName": "Tyrese Maxey",
+   "teamAbbreviation": "PHI",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 120,
+   "vendor": "fanatics",
+   "modelProbability": 0.5435051185047446,
+   "evPercent": 19.57112607104381,
+   "foundAt": "2026-11-07T01:13:07.448Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -11,
+   "valueAtPick": 1,
+   "projection": 2.6796886460117424,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 198,
+ "calls": 213,
  "note": null,
  "checkpointsTaken": {
   "21718043": [
@@ -750,6 +913,9 @@
   "21718044": [
    "end-q1",
    "halftime"
+  ],
+  "21718045": [
+   "end-q1"
   ]
  }
 }
