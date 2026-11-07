@@ -1,0 +1,60 @@
+{
+ "date": "2026-11-07",
+ "updatedAt": "2026-11-07T22:36:11.187Z",
+ "state": "running",
+ "games": [
+  {
+   "gameId": 21718052,
+   "matchup": "DEN @ IND",
+   "status": "1st Qtr",
+   "homeScore": 13,
+   "visitorScore": 23
+  },
+  {
+   "gameId": 21718053,
+   "matchup": "BKN @ ATL",
+   "status": "2026-11-08T00:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718054,
+   "matchup": "NYK @ CLE",
+   "status": "2026-11-08T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718055,
+   "matchup": "WAS @ OKC",
+   "status": "2026-11-08T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718056,
+   "matchup": "ORL @ GSW",
+   "status": "2026-11-08T01:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718057,
+   "matchup": "HOU @ PHX",
+   "status": "2026-11-08T02:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718058,
+   "matchup": "SAS @ POR",
+   "status": "2026-11-08T03:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  }
+ ],
+ "picks": [],
+ "calls": 56,
+ "note": null,
+ "checkpointsTaken": {}
+}
