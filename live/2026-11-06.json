@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "updatedAt": "2026-11-07T04:54:42.937Z",
+ "updatedAt": "2026-11-07T04:58:43.395Z",
  "state": "running",
  "games": [
   {
@@ -56,15 +56,15 @@
    "gameId": 21718050,
    "matchup": "POR @ LAL",
    "status": "3rd Qtr",
-   "homeScore": 65,
+   "homeScore": 68,
    "visitorScore": 68
   },
   {
    "gameId": 21718051,
    "matchup": "SAS @ SAC",
    "status": "3rd Qtr",
-   "homeScore": 63,
-   "visitorScore": 82
+   "homeScore": 71,
+   "visitorScore": 86
   }
  ],
  "picks": [
@@ -4081,7 +4081,7 @@
    "scoreMargin": -9,
    "valueAtPick": 6,
    "projection": 22.959331126700487,
-   "latestValue": 9,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -4313,7 +4313,7 @@
    "scoreMargin": -7,
    "valueAtPick": 2,
    "projection": 4.832591892031265,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -4549,7 +4549,7 @@
    "scoreMargin": 19,
    "valueAtPick": 15,
    "projection": 25.338187138496618,
-   "latestValue": 16,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -4562,7 +4562,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 82,
+ "calls": 90,
  "note": null,
  "checkpointsTaken": {
   "21718043": [
