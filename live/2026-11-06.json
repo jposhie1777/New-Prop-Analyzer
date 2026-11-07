@@ -1,21 +1,21 @@
 {
  "date": "2026-11-06",
- "updatedAt": "2026-11-07T01:49:09.285Z",
+ "updatedAt": "2026-11-07T01:52:10.888Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718043,
    "matchup": "WAS @ ATL",
    "status": "4th Qtr",
-   "homeScore": 113,
-   "visitorScore": 102
+   "homeScore": 118,
+   "visitorScore": 107
   },
   {
    "gameId": 21718044,
    "matchup": "BOS @ CHA",
    "status": "3rd Qtr",
-   "homeScore": 54,
-   "visitorScore": 94
+   "homeScore": 57,
+   "visitorScore": 96
   },
   {
    "gameId": 21718045,
@@ -28,28 +28,28 @@
    "gameId": 21718046,
    "matchup": "UTA @ DAL",
    "status": "2nd Qtr",
-   "homeScore": 35,
-   "visitorScore": 40
+   "homeScore": 42,
+   "visitorScore": 45
   },
   {
    "gameId": 21718047,
    "matchup": "OKC @ MEM",
    "status": "2nd Qtr",
-   "homeScore": 36,
-   "visitorScore": 50
+   "homeScore": 37,
+   "visitorScore": 54
   },
   {
    "gameId": 21718048,
    "matchup": "TOR @ MIL",
    "status": "2nd Qtr",
-   "homeScore": 38,
-   "visitorScore": 31
+   "homeScore": 42,
+   "visitorScore": 32
   },
   {
    "gameId": 21718049,
    "matchup": "MIN @ NOP",
    "status": "2nd Qtr",
-   "homeScore": 37,
+   "homeScore": 38,
    "visitorScore": 35
   },
   {
@@ -156,7 +156,7 @@
    "scoreMargin": -4,
    "valueAtPick": 0,
    "projection": 2.0892835920411086,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -222,7 +222,7 @@
    "scoreMargin": -4,
    "valueAtPick": 6,
    "projection": 16.684810807324865,
-   "latestValue": 27,
+   "latestValue": 28,
    "tags": [
     "Best bet",
     "Under",
@@ -425,7 +425,7 @@
    "scoreMargin": -7,
    "valueAtPick": 0,
    "projection": 1.2296203287245018,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Under",
@@ -490,7 +490,7 @@
    "scoreMargin": 7,
    "valueAtPick": 11,
    "projection": 18.149553745430406,
-   "latestValue": 22,
+   "latestValue": 24,
    "tags": [
     "Best bet",
     "Under",
@@ -557,7 +557,7 @@
    "scoreMargin": 7,
    "valueAtPick": 2,
    "projection": 4.36157136772415,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Under",
     "Assists",
@@ -957,7 +957,7 @@
    "scoreMargin": 7,
    "valueAtPick": 13,
    "projection": 26.78197111491168,
-   "latestValue": 13,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -1290,7 +1290,7 @@
    "scoreMargin": 2,
    "valueAtPick": 2,
    "projection": 16.1626548913077,
-   "latestValue": 2,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -1356,7 +1356,7 @@
    "scoreMargin": -2,
    "valueAtPick": 6,
    "projection": 21.482935368000433,
-   "latestValue": 8,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -1898,9 +1898,77 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718044-351-points",
+   "gameDate": "2026-11-06",
+   "gameId": 21718044,
+   "matchup": "BOS @ CHA",
+   "playerId": 351,
+   "playerName": "Royce O'Neale",
+   "teamAbbreviation": "CHA",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 7.5,
+   "americanOdds": -110,
+   "vendor": "draftkings",
+   "modelProbability": 0.5953161763117077,
+   "evPercent": 13.651270023144214,
+   "foundAt": "2026-11-07T01:52:09.125Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -39,
+   "valueAtPick": 7,
+   "projection": 7.854760685275627,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718044-1057384156-threes",
+   "gameDate": "2026-11-06",
+   "gameId": 21718044,
+   "matchup": "BOS @ CHA",
+   "playerId": 1057384156,
+   "playerName": "Sion James",
+   "teamAbbreviation": "CHA",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": -175,
+   "vendor": "draftkings",
+   "modelProbability": 0.6790751840134,
+   "evPercent": 6.711814630677138,
+   "foundAt": "2026-11-07T01:52:09.125Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -39,
+   "valueAtPick": 3,
+   "projection": 3.17675391846734,
+   "latestValue": 3,
+   "tags": [
+    "Under",
+    "3PM",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 313,
+ "calls": 323,
  "note": null,
  "checkpointsTaken": {
   "21718043": [
@@ -1910,7 +1978,8 @@
   ],
   "21718044": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718045": [
    "end-q1",
