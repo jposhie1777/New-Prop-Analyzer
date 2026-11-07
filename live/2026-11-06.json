@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "updatedAt": "2026-11-07T05:10:44.092Z",
+ "updatedAt": "2026-11-07T05:14:43.924Z",
  "state": "running",
  "games": [
   {
@@ -56,15 +56,15 @@
    "gameId": 21718050,
    "matchup": "POR @ LAL",
    "status": "3rd Qtr",
-   "homeScore": 81,
-   "visitorScore": 72
+   "homeScore": 87,
+   "visitorScore": 75
   },
   {
    "gameId": 21718051,
    "matchup": "SAS @ SAC",
-   "status": "3rd Qtr",
-   "homeScore": 78,
-   "visitorScore": 96
+   "status": "4th Qtr",
+   "homeScore": 80,
+   "visitorScore": 99
   }
  ],
  "picks": [
@@ -4280,7 +4280,7 @@
    "scoreMargin": -7,
    "valueAtPick": 2,
    "projection": 5.858697930103612,
-   "latestValue": 5,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -4447,7 +4447,7 @@
    "scoreMargin": 19,
    "valueAtPick": 11,
    "projection": 18.67718948661713,
-   "latestValue": 16,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Over",
@@ -4560,9 +4560,179 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718051-3547249-rebounds",
+   "gameDate": "2026-11-06",
+   "gameId": 21718051,
+   "matchup": "SAS @ SAC",
+   "playerId": 3547249,
+   "playerName": "Precious Achiuwa",
+   "teamAbbreviation": "SAC",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": -117,
+   "vendor": "caesars",
+   "modelProbability": 0.6731406532842258,
+   "evPercent": 24.84745449801453,
+   "foundAt": "2026-11-07T05:13:43.610Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": -19,
+   "valueAtPick": 4,
+   "projection": 4.9620123305368455,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718051-1028025261-assists",
+   "gameDate": "2026-11-06",
+   "gameId": 21718051,
+   "matchup": "SAS @ SAC",
+   "playerId": 1028025261,
+   "playerName": "Stephon Castle",
+   "teamAbbreviation": "SAS",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": -188,
+   "vendor": "draftkings",
+   "modelProbability": 0.7941037541409764,
+   "evPercent": 21.64993680457512,
+   "foundAt": "2026-11-07T05:13:43.610Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": 19,
+   "valueAtPick": 6,
+   "projection": 6.675323309698565,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718051-268-rebounds",
+   "gameDate": "2026-11-06",
+   "gameId": 21718051,
+   "matchup": "SAS @ SAC",
+   "playerId": 268,
+   "playerName": "Zach LaVine",
+   "teamAbbreviation": "SAC",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 105,
+   "vendor": "draftkings",
+   "modelProbability": 0.5776251872263198,
+   "evPercent": 18.41316338139556,
+   "foundAt": "2026-11-07T05:13:43.610Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": -19,
+   "valueAtPick": 2,
+   "projection": 2.7003769376324875,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718051-666682-points_rebounds",
+   "gameDate": "2026-11-06",
+   "gameId": 21718051,
+   "matchup": "SAS @ SAC",
+   "playerId": 666682,
+   "playerName": "Keldon Johnson",
+   "teamAbbreviation": "SAS",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 12.5,
+   "americanOdds": -148,
+   "vendor": "fanduel",
+   "modelProbability": 0.7013712931003131,
+   "evPercent": 17.52708154653895,
+   "foundAt": "2026-11-07T05:13:43.610Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": 19,
+   "valueAtPick": 8,
+   "projection": 11.091203592894423,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718051-56677822-assists",
+   "gameDate": "2026-11-06",
+   "gameId": 21718051,
+   "matchup": "SAS @ SAC",
+   "playerId": 56677822,
+   "playerName": "Victor Wembanyama",
+   "teamAbbreviation": "SAS",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 122,
+   "vendor": "fanduel",
+   "modelProbability": 0.527780261942548,
+   "evPercent": 17.167218151245645,
+   "foundAt": "2026-11-07T05:13:43.610Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": 19,
+   "valueAtPick": 1,
+   "projection": 1.563993250820569,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "Assists",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 114,
+ "calls": 126,
  "note": null,
  "checkpointsTaken": {
   "21718043": [
@@ -4606,7 +4776,8 @@
   ],
   "21718051": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ]
  }
 }
