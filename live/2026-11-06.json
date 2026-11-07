@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "updatedAt": "2026-11-07T04:25:41.667Z",
+ "updatedAt": "2026-11-07T04:28:42.934Z",
  "state": "running",
  "games": [
   {
@@ -64,7 +64,7 @@
    "matchup": "SAS @ SAC",
    "status": "2nd Qtr",
    "homeScore": 56,
-   "visitorScore": 74
+   "visitorScore": 75
   }
  ],
  "picks": [
@@ -4390,9 +4390,179 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718051-666682-points",
+   "gameDate": "2026-11-06",
+   "gameId": 21718051,
+   "matchup": "SAS @ SAC",
+   "playerId": 666682,
+   "playerName": "Keldon Johnson",
+   "teamAbbreviation": "SAS",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 8.5,
+   "americanOdds": -115,
+   "vendor": "caesars",
+   "modelProbability": 0.6656153635177152,
+   "evPercent": 24.441133179398932,
+   "foundAt": "2026-11-07T04:28:41.483Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 19,
+   "valueAtPick": 3,
+   "projection": 7.118886566671816,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718051-1057262518-points",
+   "gameDate": "2026-11-06",
+   "gameId": 21718051,
+   "matchup": "SAS @ SAC",
+   "playerId": 1057262518,
+   "playerName": "Dylan Harper",
+   "teamAbbreviation": "SAS",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 17.5,
+   "americanOdds": 105,
+   "vendor": "draftkings",
+   "modelProbability": 0.6053064818729033,
+   "evPercent": 24.087828783945152,
+   "foundAt": "2026-11-07T04:28:41.483Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 19,
+   "valueAtPick": 11,
+   "projection": 18.67718948661713,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718051-268-rebounds_assists",
+   "gameDate": "2026-11-06",
+   "gameId": 21718051,
+   "matchup": "SAS @ SAC",
+   "playerId": 268,
+   "playerName": "Zach LaVine",
+   "teamAbbreviation": "SAC",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": 132,
+   "vendor": "fanduel",
+   "modelProbability": 0.5278762011697324,
+   "evPercent": 22.467278671377944,
+   "foundAt": "2026-11-07T04:28:41.483Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -19,
+   "valueAtPick": 2,
+   "projection": 4.644292582646875,
+   "latestValue": 2,
+   "tags": [
+    "Over",
+    "Reb+Ast",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718051-1091466685-points",
+   "gameDate": "2026-11-06",
+   "gameId": 21718051,
+   "matchup": "SAS @ SAC",
+   "playerId": 1091466685,
+   "playerName": "Emanuel Sharp",
+   "teamAbbreviation": "SAC",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 12.5,
+   "americanOdds": -135,
+   "vendor": "draftkings",
+   "modelProbability": 0.7020650269305755,
+   "evPercent": 22.211319502729808,
+   "foundAt": "2026-11-07T04:28:41.483Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -19,
+   "valueAtPick": 9,
+   "projection": 11.238016549464286,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718051-1028025261-points_assists",
+   "gameDate": "2026-11-06",
+   "gameId": 21718051,
+   "matchup": "SAS @ SAC",
+   "playerId": 1028025261,
+   "playerName": "Stephon Castle",
+   "teamAbbreviation": "SAS",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 23.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.6469009669390526,
+   "evPercent": 21.435795548208137,
+   "foundAt": "2026-11-07T04:28:41.483Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 19,
+   "valueAtPick": 15,
+   "projection": 25.338187138496618,
+   "latestValue": 15,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 19,
+ "calls": 30,
  "note": null,
  "checkpointsTaken": {
   "21718043": [
@@ -4435,7 +4605,8 @@
    "halftime"
   ],
   "21718051": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
