@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "updatedAt": "2026-11-07T01:00:11.028Z",
+ "updatedAt": "2026-11-07T01:04:07.509Z",
  "state": "running",
  "games": [
   {
@@ -8,21 +8,21 @@
    "matchup": "WAS @ ATL",
    "status": "2nd Qtr",
    "homeScore": 66,
-   "visitorScore": 57
+   "visitorScore": 59
   },
   {
    "gameId": 21718044,
    "matchup": "BOS @ CHA",
    "status": "2nd Qtr",
    "homeScore": 31,
-   "visitorScore": 59
+   "visitorScore": 62
   },
   {
    "gameId": 21718045,
    "matchup": "PHI @ CLE",
    "status": "1st Qtr",
-   "homeScore": 19,
-   "visitorScore": 9
+   "homeScore": 25,
+   "visitorScore": 12
   },
   {
    "gameId": 21718046,
@@ -391,7 +391,7 @@
    "scoreMargin": 20,
    "valueAtPick": 0,
    "projection": 1.7889609010416667,
-   "latestValue": 0,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -402,13 +402,179 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718043-490-rebounds",
+   "gameDate": "2026-11-06",
+   "gameId": 21718043,
+   "matchup": "WAS @ ATL",
+   "playerId": 490,
+   "playerName": "Trae Young",
+   "teamAbbreviation": "WAS",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": 115,
+   "vendor": "betmgm",
+   "modelProbability": 0.5790327253207905,
+   "evPercent": 24.49203594396996,
+   "foundAt": "2026-11-07T01:01:07.009Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -7,
+   "valueAtPick": 0,
+   "projection": 1.2296203287245018,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718043-1028026060-threes",
+   "gameDate": "2026-11-06",
+   "gameId": 21718043,
+   "matchup": "WAS @ ATL",
+   "playerId": 1028026060,
+   "playerName": "KyShawn George",
+   "teamAbbreviation": "WAS",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 140,
+   "vendor": "betmgm",
+   "modelProbability": 0.5173893289546483,
+   "evPercent": 24.17343894911559,
+   "foundAt": "2026-11-07T01:01:07.009Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -7,
+   "valueAtPick": 1,
+   "projection": 1.5406810601743266,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718043-38017677-points_assists",
+   "gameDate": "2026-11-06",
+   "gameId": 21718043,
+   "matchup": "WAS @ ATL",
+   "playerId": 38017677,
+   "playerName": "Dyson Daniels",
+   "teamAbbreviation": "ATL",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 20.5,
+   "americanOdds": -140,
+   "vendor": "fanduel",
+   "modelProbability": 0.7189161987432384,
+   "evPercent": 23.2427769274123,
+   "foundAt": "2026-11-07T01:01:07.009Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 7,
+   "valueAtPick": 11,
+   "projection": 18.149553745430406,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718043-303-points",
+   "gameDate": "2026-11-06",
+   "gameId": 21718043,
+   "matchup": "WAS @ ATL",
+   "playerId": 303,
+   "playerName": "CJ McCollum",
+   "teamAbbreviation": "ATL",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 9.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6453424165705591,
+   "evPercent": 22.154100279427258,
+   "foundAt": "2026-11-07T01:01:07.009Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 7,
+   "valueAtPick": 2,
+   "projection": 8.042475574837308,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718043-1091340263-assists",
+   "gameDate": "2026-11-06",
+   "gameId": 21718043,
+   "matchup": "WAS @ ATL",
+   "playerId": 1091340263,
+   "playerName": "Kingston Flemings",
+   "teamAbbreviation": "ATL",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": 130,
+   "vendor": "betmgm",
+   "modelProbability": 0.5293645366533771,
+   "evPercent": 21.75384343027673,
+   "foundAt": "2026-11-07T01:01:07.009Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 7,
+   "valueAtPick": 2,
+   "projection": 4.36157136772415,
+   "latestValue": 2,
+   "tags": [
+    "Under",
+    "Assists",
+    "Hot shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 174,
+ "calls": 186,
  "note": null,
  "checkpointsTaken": {
   "21718043": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718044": [
    "end-q1"
