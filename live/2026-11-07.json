@@ -1,14 +1,14 @@
 {
  "date": "2026-11-07",
- "updatedAt": "2026-11-07T23:35:13.227Z",
+ "updatedAt": "2026-11-07T23:46:13.584Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718052,
    "matchup": "DEN @ IND",
    "status": "3rd Qtr",
-   "homeScore": 49,
-   "visitorScore": 74
+   "homeScore": 64,
+   "visitorScore": 79
   },
   {
    "gameId": 21718053,
@@ -209,7 +209,7 @@
    "scoreMargin": -8,
    "valueAtPick": 3,
    "projection": 16.489255395208264,
-   "latestValue": 4,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -312,7 +312,7 @@
    "scoreMargin": 23,
    "valueAtPick": 6,
    "projection": 11.185944309609486,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -394,7 +394,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 182,
+ "calls": 204,
  "note": null,
  "checkpointsTaken": {
   "21718052": [
