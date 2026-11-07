@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "updatedAt": "2026-11-07T01:04:07.509Z",
+ "updatedAt": "2026-11-07T01:08:08.395Z",
  "state": "running",
  "games": [
   {
@@ -14,15 +14,15 @@
    "gameId": 21718044,
    "matchup": "BOS @ CHA",
    "status": "2nd Qtr",
-   "homeScore": 31,
-   "visitorScore": 62
+   "homeScore": 39,
+   "visitorScore": 70
   },
   {
    "gameId": 21718045,
    "matchup": "PHI @ CLE",
    "status": "1st Qtr",
-   "homeScore": 25,
-   "visitorScore": 12
+   "homeScore": 27,
+   "visitorScore": 15
   },
   {
    "gameId": 21718046,
@@ -323,7 +323,7 @@
    "scoreMargin": -20,
    "valueAtPick": 1,
    "projection": 2.8501833626568014,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Over",
@@ -567,9 +567,180 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718044-1057384362-rebounds",
+   "gameDate": "2026-11-06",
+   "gameId": 21718044,
+   "matchup": "BOS @ CHA",
+   "playerId": 1057384362,
+   "playerName": "Ryan Kalkbrenner",
+   "teamAbbreviation": "CHA",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": 110,
+   "vendor": "betmgm",
+   "modelProbability": 0.5871276970034285,
+   "evPercent": 23.296816370719988,
+   "foundAt": "2026-11-07T01:08:07.225Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -31,
+   "valueAtPick": 1,
+   "projection": 3.1090612465360254,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718044-56677864-points_rebounds",
+   "gameDate": "2026-11-06",
+   "gameId": 21718044,
+   "matchup": "BOS @ CHA",
+   "playerId": 56677864,
+   "playerName": "Jordan Walsh",
+   "teamAbbreviation": "BOS",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": -146,
+   "vendor": "fanduel",
+   "modelProbability": 0.7307218581772563,
+   "evPercent": 23.121628158633612,
+   "foundAt": "2026-11-07T01:08:07.225Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 31,
+   "valueAtPick": 1,
+   "projection": 4.157269179743098,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718044-8-points_rebounds",
+   "gameDate": "2026-11-06",
+   "gameId": 21718044,
+   "matchup": "BOS @ CHA",
+   "playerId": 8,
+   "playerName": "Grayson Allen",
+   "teamAbbreviation": "CHA",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 8.5,
+   "americanOdds": -125,
+   "vendor": "fanduel",
+   "modelProbability": 0.6789754188331949,
+   "evPercent": 22.215575389975093,
+   "foundAt": "2026-11-07T01:08:07.225Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -31,
+   "valueAtPick": 2,
+   "projection": 6.93408962788699,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718044-434-rebounds_assists",
+   "gameDate": "2026-11-06",
+   "gameId": 21718044,
+   "matchup": "BOS @ CHA",
+   "playerId": 434,
+   "playerName": "Jayson Tatum",
+   "teamAbbreviation": "BOS",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 14.5,
+   "americanOdds": 108,
+   "vendor": "fanduel",
+   "modelProbability": 0.5776238355204573,
+   "evPercent": 20.145757788255114,
+   "foundAt": "2026-11-07T01:08:07.225Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 31,
+   "valueAtPick": 10,
+   "projection": 15.058846110212624,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Reb+Ast",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718044-3547276-assists",
+   "gameDate": "2026-11-06",
+   "gameId": 21718044,
+   "matchup": "BOS @ CHA",
+   "playerId": 3547276,
+   "playerName": "Payton Pritchard",
+   "teamAbbreviation": "BOS",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": 130,
+   "vendor": "fanduel",
+   "modelProbability": 0.5156503947378303,
+   "evPercent": 18.599590789700947,
+   "foundAt": "2026-11-07T01:08:07.225Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 31,
+   "valueAtPick": 3,
+   "projection": 4.44237841909908,
+   "latestValue": 3,
+   "tags": [
+    "Under",
+    "Assists",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 186,
+ "calls": 198,
  "note": null,
  "checkpointsTaken": {
   "21718043": [
@@ -577,7 +748,8 @@
    "halftime"
   ],
   "21718044": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
