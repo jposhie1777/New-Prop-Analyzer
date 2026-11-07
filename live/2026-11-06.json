@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "updatedAt": "2026-11-07T02:47:11.790Z",
+ "updatedAt": "2026-11-07T02:51:12.015Z",
  "state": "running",
  "games": [
   {
@@ -21,36 +21,36 @@
    "gameId": 21718045,
    "matchup": "PHI @ CLE",
    "status": "4th Qtr",
-   "homeScore": 96,
-   "visitorScore": 76
+   "homeScore": 103,
+   "visitorScore": 82
   },
   {
    "gameId": 21718046,
    "matchup": "UTA @ DAL",
-   "status": "3rd Qtr",
-   "homeScore": 87,
-   "visitorScore": 73
+   "status": "4th Qtr",
+   "homeScore": 89,
+   "visitorScore": 76
   },
   {
    "gameId": 21718047,
    "matchup": "OKC @ MEM",
    "status": "3rd Qtr",
-   "homeScore": 70,
-   "visitorScore": 95
+   "homeScore": 72,
+   "visitorScore": 97
   },
   {
    "gameId": 21718048,
    "matchup": "TOR @ MIL",
    "status": "3rd Qtr",
    "homeScore": 79,
-   "visitorScore": 73
+   "visitorScore": 77
   },
   {
    "gameId": 21718049,
    "matchup": "MIN @ NOP",
    "status": "3rd Qtr",
    "homeScore": 73,
-   "visitorScore": 66
+   "visitorScore": 71
   },
   {
    "gameId": 21718050,
@@ -841,7 +841,7 @@
    "scoreMargin": 11,
    "valueAtPick": 2,
    "projection": 12.376376805130178,
-   "latestValue": 12,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -874,7 +874,7 @@
    "scoreMargin": -11,
    "valueAtPick": 2,
    "projection": 6.35649949845679,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -1204,7 +1204,7 @@
    "scoreMargin": -3,
    "valueAtPick": 4,
    "projection": 9.943079230509877,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -1887,7 +1887,7 @@
    "scoreMargin": -8,
    "valueAtPick": 11,
    "projection": 18.98954133468574,
-   "latestValue": 16,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -1988,7 +1988,7 @@
    "scoreMargin": -8,
    "valueAtPick": 6,
    "projection": 11.594838400747875,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -2163,7 +2163,7 @@
    "scoreMargin": 0,
    "valueAtPick": 4,
    "projection": 12.191055211125805,
-   "latestValue": 7,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -2837,7 +2837,7 @@
    "scoreMargin": 17,
    "valueAtPick": 7,
    "projection": 8.51221267358731,
-   "latestValue": 7,
+   "latestValue": 10,
    "tags": [
     "Over",
     "Reb+Ast",
@@ -2905,7 +2905,7 @@
    "scoreMargin": 17,
    "valueAtPick": 21,
    "projection": 25.880405221434458,
-   "latestValue": 23,
+   "latestValue": 26,
    "tags": [
     "Over",
     "Pts+Ast",
@@ -2915,9 +2915,178 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718046-1057262088-threes",
+   "gameDate": "2026-11-06",
+   "gameId": 21718046,
+   "matchup": "UTA @ DAL",
+   "playerId": 1057262088,
+   "playerName": "Cooper Flagg",
+   "teamAbbreviation": "DAL",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 270,
+   "vendor": "fanduel",
+   "modelProbability": 0.3298575894914031,
+   "evPercent": 22.04730811181914,
+   "foundAt": "2026-11-07T02:48:11.360Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 13,
+   "valueAtPick": 1,
+   "projection": 1.1939948869485295,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718046-666950-rebounds",
+   "gameDate": "2026-11-06",
+   "gameId": 21718046,
+   "matchup": "UTA @ DAL",
+   "playerId": 666950,
+   "playerName": "P.J. Washington",
+   "teamAbbreviation": "DAL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": 104,
+   "vendor": "fanduel",
+   "modelProbability": 0.5963146705528912,
+   "evPercent": 21.64819279278982,
+   "foundAt": "2026-11-07T02:48:11.360Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 13,
+   "valueAtPick": 4,
+   "projection": 5.912250901268496,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718046-666626-points_rebounds",
+   "gameDate": "2026-11-06",
+   "gameId": 21718046,
+   "matchup": "UTA @ DAL",
+   "playerId": 666626,
+   "playerName": "Jaxson Hayes",
+   "teamAbbreviation": "UTA",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 16.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6425887515804306,
+   "evPercent": 21.632870834867223,
+   "foundAt": "2026-11-07T02:48:11.360Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -13,
+   "valueAtPick": 14,
+   "projection": 17.54305223459209,
+   "latestValue": 14,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718046-297-rebounds",
+   "gameDate": "2026-11-06",
+   "gameId": 21718046,
+   "matchup": "UTA @ DAL",
+   "playerId": 297,
+   "playerName": "Lauri Markkanen",
+   "teamAbbreviation": "UTA",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": -135,
+   "vendor": "draftkings",
+   "modelProbability": 0.6873263121886667,
+   "evPercent": 19.645691380990126,
+   "foundAt": "2026-11-07T02:48:11.360Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -13,
+   "valueAtPick": 3,
+   "projection": 4.1364614642032205,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Foul trouble",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718046-228-points",
+   "gameDate": "2026-11-06",
+   "gameId": 21718046,
+   "matchup": "UTA @ DAL",
+   "playerId": 228,
+   "playerName": "Kyrie Irving",
+   "teamAbbreviation": "DAL",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 13.5,
+   "americanOdds": -112,
+   "vendor": "caesars",
+   "modelProbability": 0.6144435564502496,
+   "evPercent": 16.305387470940104,
+   "foundAt": "2026-11-07T02:48:11.360Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 13,
+   "valueAtPick": 10,
+   "projection": 14.479357409840768,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 455,
+ "calls": 467,
  "note": null,
  "checkpointsTaken": {
   "21718043": [
@@ -2937,7 +3106,8 @@
   ],
   "21718046": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718047": [
    "end-q1",
