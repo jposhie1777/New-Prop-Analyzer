@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "updatedAt": "2026-11-07T03:49:14.038Z",
+ "updatedAt": "2026-11-07T03:55:15.561Z",
  "state": "running",
  "games": [
   {
@@ -56,15 +56,15 @@
    "gameId": 21718050,
    "matchup": "POR @ LAL",
    "status": "2nd Qtr",
-   "homeScore": 20,
-   "visitorScore": 30
+   "homeScore": 28,
+   "visitorScore": 38
   },
   {
    "gameId": 21718051,
    "matchup": "SAS @ SAC",
    "status": "1st Qtr",
-   "homeScore": 26,
-   "visitorScore": 30
+   "homeScore": 29,
+   "visitorScore": 38
   }
  ],
  "picks": [
@@ -4058,9 +4058,175 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718051-1091338860-points_rebounds",
+   "gameDate": "2026-11-06",
+   "gameId": 21718051,
+   "matchup": "SAS @ SAC",
+   "playerId": 1091338860,
+   "playerName": "Darius Acuff Jr.",
+   "teamAbbreviation": "SAC",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 26.5,
+   "americanOdds": -136,
+   "vendor": "fanduel",
+   "modelProbability": 0.7146136636012632,
+   "evPercent": 24.006488683748618,
+   "foundAt": "2026-11-07T03:55:13.960Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -9,
+   "valueAtPick": 6,
+   "projection": 22.959331126700487,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718051-161-rebounds_assists",
+   "gameDate": "2026-11-06",
+   "gameId": 21718051,
+   "matchup": "SAS @ SAC",
+   "playerId": 161,
+   "playerName": "De'Aaron Fox",
+   "teamAbbreviation": "SAS",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": -130,
+   "vendor": "fanduel",
+   "modelProbability": 0.6992623039521877,
+   "evPercent": 23.715638391540892,
+   "foundAt": "2026-11-07T03:55:13.960Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 9,
+   "valueAtPick": 1,
+   "projection": 8.289187535707018,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Reb+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718051-666682-rebounds",
+   "gameDate": "2026-11-06",
+   "gameId": 21718051,
+   "matchup": "SAS @ SAC",
+   "playerId": 666682,
+   "playerName": "Keldon Johnson",
+   "teamAbbreviation": "SAS",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": 108,
+   "vendor": "caesars",
+   "modelProbability": 0.588400351617669,
+   "evPercent": 22.38727313647515,
+   "foundAt": "2026-11-07T03:55:13.960Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 9,
+   "valueAtPick": 0,
+   "projection": 3.0248628085049862,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718051-3547246-threes",
+   "gameDate": "2026-11-06",
+   "gameId": 21718051,
+   "matchup": "SAS @ SAC",
+   "playerId": 3547246,
+   "playerName": "Devin Vassell",
+   "teamAbbreviation": "SAS",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": -110,
+   "vendor": "fanduel",
+   "modelProbability": 0.639784036468449,
+   "evPercent": 22.140588780340266,
+   "foundAt": "2026-11-07T03:55:13.960Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 9,
+   "valueAtPick": 3,
+   "projection": 4.037469676737608,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718051-56677822-threes",
+   "gameDate": "2026-11-06",
+   "gameId": 21718051,
+   "matchup": "SAS @ SAC",
+   "playerId": 56677822,
+   "playerName": "Victor Wembanyama",
+   "teamAbbreviation": "SAS",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 178,
+   "vendor": "fanduel",
+   "modelProbability": 0.4281607269304597,
+   "evPercent": 19.028682086667814,
+   "foundAt": "2026-11-07T03:55:13.960Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 9,
+   "valueAtPick": 1,
+   "projection": 2.2437846542499997,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "3PM",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 605,
+ "calls": 622,
  "note": null,
  "checkpointsTaken": {
   "21718043": [
@@ -4099,6 +4265,9 @@
    "end-q3"
   ],
   "21718050": [
+   "end-q1"
+  ],
+  "21718051": [
    "end-q1"
   ]
  }
