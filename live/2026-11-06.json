@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "updatedAt": "2026-11-07T03:42:13.790Z",
+ "updatedAt": "2026-11-07T03:45:15.649Z",
  "state": "running",
  "games": [
   {
@@ -49,22 +49,22 @@
    "gameId": 21718049,
    "matchup": "MIN @ NOP",
    "status": "4th Qtr",
-   "homeScore": 104,
-   "visitorScore": 113
+   "homeScore": 109,
+   "visitorScore": 115
   },
   {
    "gameId": 21718050,
    "matchup": "POR @ LAL",
    "status": "1st Qtr",
-   "homeScore": 19,
-   "visitorScore": 28
+   "homeScore": 20,
+   "visitorScore": 29
   },
   {
    "gameId": 21718051,
    "matchup": "SAS @ SAC",
    "status": "1st Qtr",
-   "homeScore": 22,
-   "visitorScore": 24
+   "homeScore": 24,
+   "visitorScore": 30
   }
  ],
  "picks": [
@@ -1278,7 +1278,7 @@
    "scoreMargin": 3,
    "valueAtPick": 2,
    "projection": 17.51868772376051,
-   "latestValue": 10,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -2893,7 +2893,7 @@
    "scoreMargin": -6,
    "valueAtPick": 4,
    "projection": 16.91623429670812,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -3721,7 +3721,7 @@
    "scoreMargin": 2,
    "valueAtPick": 3,
    "projection": 3.8027795845014087,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -3833,9 +3833,174 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718050-17895858-threes",
+   "gameDate": "2026-11-06",
+   "gameId": 21718050,
+   "matchup": "POR @ LAL",
+   "playerId": 17895858,
+   "playerName": "Quentin Grimes",
+   "teamAbbreviation": "LAL",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 0.5,
+   "americanOdds": 114,
+   "vendor": "draftkings",
+   "modelProbability": 0.5814301861645113,
+   "evPercent": 24.426059839205383,
+   "foundAt": "2026-11-07T03:45:13.589Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -9,
+   "valueAtPick": 0,
+   "projection": 0.34647644091109153,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718050-1028025344-points_assists",
+   "gameDate": "2026-11-06",
+   "gameId": 21718050,
+   "matchup": "POR @ LAL",
+   "playerId": 1028025344,
+   "playerName": "Donovan Clingan",
+   "teamAbbreviation": "POR",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 11.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6131228272434672,
+   "evPercent": 23.85081110318039,
+   "foundAt": "2026-11-07T03:45:13.589Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 9,
+   "valueAtPick": 3,
+   "projection": 12.869630621936938,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718050-56677850-rebounds",
+   "gameDate": "2026-11-06",
+   "gameId": 21718050,
+   "matchup": "POR @ LAL",
+   "playerId": 56677850,
+   "playerName": "Toumani Camara",
+   "teamAbbreviation": "POR",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -115,
+   "vendor": "draftkings",
+   "modelProbability": 0.6617088682512515,
+   "evPercent": 23.710788412190496,
+   "foundAt": "2026-11-07T03:45:13.589Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 9,
+   "valueAtPick": 0,
+   "projection": 1.8132183256976384,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718050-476-points_rebounds",
+   "gameDate": "2026-11-06",
+   "gameId": 21718050,
+   "matchup": "POR @ LAL",
+   "playerId": 476,
+   "playerName": "Robert Williams III",
+   "teamAbbreviation": "POR",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 15.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.6539143559687746,
+   "evPercent": 22.752344015191017,
+   "foundAt": "2026-11-07T03:45:13.589Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 9,
+   "valueAtPick": 5,
+   "projection": 13.72631614093964,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718050-214-threes",
+   "gameDate": "2026-11-06",
+   "gameId": 21718050,
+   "matchup": "POR @ LAL",
+   "playerId": 214,
+   "playerName": "Jrue Holiday",
+   "teamAbbreviation": "POR",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": -110,
+   "vendor": "fanduel",
+   "modelProbability": 0.6371177919988852,
+   "evPercent": 21.631578472514445,
+   "foundAt": "2026-11-07T03:45:13.589Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 9,
+   "valueAtPick": 1,
+   "projection": 3.153068480711077,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 585,
+ "calls": 596,
  "note": null,
  "checkpointsTaken": {
   "21718043": [
@@ -3872,6 +4037,9 @@
    "end-q1",
    "halftime",
    "end-q3"
+  ],
+  "21718050": [
+   "end-q1"
   ]
  }
 }
