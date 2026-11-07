@@ -1,14 +1,14 @@
 {
  "date": "2026-11-06",
- "updatedAt": "2026-11-07T01:13:08.924Z",
+ "updatedAt": "2026-11-07T01:18:08.698Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718043,
    "matchup": "WAS @ ATL",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 66,
-   "visitorScore": 59
+   "visitorScore": 61
   },
   {
    "gameId": 21718044,
@@ -21,36 +21,36 @@
    "gameId": 21718045,
    "matchup": "PHI @ CLE",
    "status": "2nd Qtr",
-   "homeScore": 33,
-   "visitorScore": 22
+   "homeScore": 37,
+   "visitorScore": 25
   },
   {
    "gameId": 21718046,
    "matchup": "UTA @ DAL",
    "status": "1st Qtr",
-   "homeScore": 5,
-   "visitorScore": 3
+   "homeScore": 12,
+   "visitorScore": 10
   },
   {
    "gameId": 21718047,
    "matchup": "OKC @ MEM",
    "status": "1st Qtr",
-   "homeScore": 4,
-   "visitorScore": 4
+   "homeScore": 14,
+   "visitorScore": 10
   },
   {
    "gameId": 21718048,
    "matchup": "TOR @ MIL",
    "status": "1st Qtr",
-   "homeScore": 0,
-   "visitorScore": 0
+   "homeScore": 10,
+   "visitorScore": 4
   },
   {
    "gameId": 21718049,
    "matchup": "MIN @ NOP",
    "status": "1st Qtr",
-   "homeScore": 5,
-   "visitorScore": 5
+   "homeScore": 7,
+   "visitorScore": 13
   },
   {
    "gameId": 21718050,
@@ -90,7 +90,7 @@
    "scoreMargin": 4,
    "valueAtPick": 3,
    "projection": 20.753904899387255,
-   "latestValue": 10,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -859,7 +859,7 @@
    "scoreMargin": -11,
    "valueAtPick": 2,
    "projection": 9.409139129560469,
-   "latestValue": 2,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -903,7 +903,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 213,
+ "calls": 223,
  "note": null,
  "checkpointsTaken": {
   "21718043": [
