@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "updatedAt": "2026-11-07T02:31:13.378Z",
+ "updatedAt": "2026-11-07T02:35:12.406Z",
  "state": "running",
  "games": [
   {
@@ -21,36 +21,36 @@
    "gameId": 21718045,
    "matchup": "PHI @ CLE",
    "status": "3rd Qtr",
-   "homeScore": 85,
-   "visitorScore": 73
+   "homeScore": 91,
+   "visitorScore": 74
   },
   {
    "gameId": 21718046,
    "matchup": "UTA @ DAL",
    "status": "3rd Qtr",
-   "homeScore": 68,
+   "homeScore": 72,
    "visitorScore": 70
   },
   {
    "gameId": 21718047,
    "matchup": "OKC @ MEM",
    "status": "3rd Qtr",
-   "homeScore": 51,
-   "visitorScore": 80
+   "homeScore": 58,
+   "visitorScore": 86
   },
   {
    "gameId": 21718048,
    "matchup": "TOR @ MIL",
    "status": "3rd Qtr",
-   "homeScore": 62,
-   "visitorScore": 55
+   "homeScore": 64,
+   "visitorScore": 62
   },
   {
    "gameId": 21718049,
    "matchup": "MIN @ NOP",
    "status": "3rd Qtr",
-   "homeScore": 55,
-   "visitorScore": 58
+   "homeScore": 60,
+   "visitorScore": 64
   },
   {
    "gameId": 21718050,
@@ -841,7 +841,7 @@
    "scoreMargin": 11,
    "valueAtPick": 2,
    "projection": 12.376376805130178,
-   "latestValue": 10,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -1037,7 +1037,7 @@
    "scoreMargin": 7,
    "valueAtPick": 13,
    "projection": 26.78197111491168,
-   "latestValue": 19,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Over",
@@ -1071,7 +1071,7 @@
    "scoreMargin": -7,
    "valueAtPick": 8,
    "projection": 25.576498283676116,
-   "latestValue": 13,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Over",
@@ -1137,7 +1137,7 @@
    "scoreMargin": 7,
    "valueAtPick": 0,
    "projection": 2.718327300849345,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Under",
@@ -1238,7 +1238,7 @@
    "scoreMargin": 3,
    "valueAtPick": 2,
    "projection": 17.51868772376051,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -1601,7 +1601,7 @@
    "scoreMargin": 5,
    "valueAtPick": 6,
    "projection": 9.267333984375,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -1955,7 +1955,7 @@
    "scoreMargin": -8,
    "valueAtPick": 10,
    "projection": 26.104298439321646,
-   "latestValue": 23,
+   "latestValue": 24,
    "tags": [
     "Best bet",
     "Under",
@@ -2163,7 +2163,7 @@
    "scoreMargin": 0,
    "valueAtPick": 4,
    "projection": 12.191055211125805,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -2298,7 +2298,7 @@
    "scoreMargin": -22,
    "valueAtPick": 14,
    "projection": 26.566335471894767,
-   "latestValue": 16,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Over",
@@ -2400,7 +2400,7 @@
    "scoreMargin": -22,
    "valueAtPick": 12,
    "projection": 18.20258830766544,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -2501,7 +2501,7 @@
    "scoreMargin": -9,
    "valueAtPick": 13,
    "projection": 23.59266397287272,
-   "latestValue": 13,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -2601,7 +2601,7 @@
    "scoreMargin": -6,
    "valueAtPick": 1,
    "projection": 1.9415506459529102,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -2700,7 +2700,7 @@
    "scoreMargin": 6,
    "valueAtPick": 15,
    "projection": 28.147380251637223,
-   "latestValue": 15,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Under",
@@ -2733,7 +2733,7 @@
    "scoreMargin": -6,
    "valueAtPick": 4,
    "projection": 16.91623429670812,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -2744,9 +2744,180 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718045-145-points_rebounds",
+   "gameDate": "2026-11-06",
+   "gameId": 21718045,
+   "matchup": "PHI @ CLE",
+   "playerId": 145,
+   "playerName": "Joel Embiid",
+   "teamAbbreviation": "PHI",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 17.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.662898077055225,
+   "evPercent": 24.438761833173817,
+   "foundAt": "2026-11-07T02:35:10.786Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -17,
+   "valueAtPick": 13,
+   "projection": 19.0708575318922,
+   "latestValue": 13,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Blowout risk",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718045-237-assists",
+   "gameDate": "2026-11-06",
+   "gameId": 21718045,
+   "matchup": "PHI @ CLE",
+   "playerId": 237,
+   "playerName": "LeBron James",
+   "teamAbbreviation": "PHI",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": -136,
+   "vendor": "fanduel",
+   "modelProbability": 0.7166638115762858,
+   "evPercent": 24.362249655884895,
+   "foundAt": "2026-11-07T02:35:10.786Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -17,
+   "valueAtPick": 3,
+   "projection": 4.298208557425308,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Blowout risk",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718045-38017721-rebounds_assists",
+   "gameDate": "2026-11-06",
+   "gameId": 21718045,
+   "matchup": "PHI @ CLE",
+   "playerId": 38017721,
+   "playerName": "Peyton Watson",
+   "teamAbbreviation": "CLE",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 8.5,
+   "americanOdds": 146,
+   "vendor": "fanduel",
+   "modelProbability": 0.5031224795287983,
+   "evPercent": 23.768129964084373,
+   "foundAt": "2026-11-07T02:35:10.786Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 17,
+   "valueAtPick": 7,
+   "projection": 8.51221267358731,
+   "latestValue": 7,
+   "tags": [
+    "Over",
+    "Reb+Ast",
+    "Blowout risk",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718045-70-assists",
+   "gameDate": "2026-11-06",
+   "gameId": 21718045,
+   "matchup": "PHI @ CLE",
+   "playerId": 70,
+   "playerName": "Jaylen Brown",
+   "teamAbbreviation": "PHI",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6492999795721641,
+   "evPercent": 22.903210419016773,
+   "foundAt": "2026-11-07T02:35:10.786Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -17,
+   "valueAtPick": 5,
+   "projection": 5.959145749635063,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718045-17896076-points_assists",
+   "gameDate": "2026-11-06",
+   "gameId": 21718045,
+   "matchup": "PHI @ CLE",
+   "playerId": 17896076,
+   "playerName": "Evan Mobley",
+   "teamAbbreviation": "CLE",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 25.5,
+   "americanOdds": 114,
+   "vendor": "fanduel",
+   "modelProbability": 0.5451994142173618,
+   "evPercent": 16.672674642515428,
+   "foundAt": "2026-11-07T02:35:10.786Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 17,
+   "valueAtPick": 21,
+   "projection": 25.880405221434458,
+   "latestValue": 21,
+   "tags": [
+    "Over",
+    "Pts+Ast",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 419,
+ "calls": 431,
  "note": null,
  "checkpointsTaken": {
   "21718043": [
@@ -2761,7 +2932,8 @@
   ],
   "21718045": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718046": [
    "end-q1",
