@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "updatedAt": "2026-11-07T05:48:45.361Z",
+ "updatedAt": "2026-11-07T05:53:45.697Z",
  "state": "running",
  "games": [
   {
@@ -57,7 +57,7 @@
    "matchup": "POR @ LAL",
    "status": "4th Qtr",
    "homeScore": 110,
-   "visitorScore": 103
+   "visitorScore": 105
   },
   {
    "gameId": 21718051,
@@ -3982,7 +3982,7 @@
    "scoreMargin": 9,
    "valueAtPick": 0,
    "projection": 1.8132183256976384,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -4960,7 +4960,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 199,
+ "calls": 209,
  "note": null,
  "checkpointsTaken": {
   "21718043": [
