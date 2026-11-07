@@ -1,28 +1,28 @@
 {
  "date": "2026-11-06",
- "updatedAt": "2026-11-07T00:57:07.135Z",
+ "updatedAt": "2026-11-07T01:00:11.028Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718043,
    "matchup": "WAS @ ATL",
    "status": "2nd Qtr",
-   "homeScore": 59,
-   "visitorScore": 49
+   "homeScore": 66,
+   "visitorScore": 57
   },
   {
    "gameId": 21718044,
    "matchup": "BOS @ CHA",
    "status": "2nd Qtr",
-   "homeScore": 30,
-   "visitorScore": 53
+   "homeScore": 31,
+   "visitorScore": 59
   },
   {
    "gameId": 21718045,
    "matchup": "PHI @ CLE",
    "status": "1st Qtr",
    "homeScore": 19,
-   "visitorScore": 4
+   "visitorScore": 9
   },
   {
    "gameId": 21718046,
@@ -90,7 +90,7 @@
    "scoreMargin": 4,
    "valueAtPick": 3,
    "projection": 20.753904899387255,
-   "latestValue": 5,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -357,7 +357,7 @@
    "scoreMargin": 20,
    "valueAtPick": 4,
    "projection": 15.715377360978836,
-   "latestValue": 6,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -404,7 +404,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 168,
+ "calls": 174,
  "note": null,
  "checkpointsTaken": {
   "21718043": [
