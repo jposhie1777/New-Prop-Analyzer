@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "updatedAt": "2026-11-08T01:57:19.312Z",
+ "updatedAt": "2026-11-08T02:00:22.244Z",
  "state": "running",
  "games": [
   {
@@ -13,23 +13,23 @@
   {
    "gameId": 21718053,
    "matchup": "BKN @ ATL",
-   "status": "2nd Qtr",
-   "homeScore": 66,
-   "visitorScore": 70
+   "status": "3rd Qtr",
+   "homeScore": 68,
+   "visitorScore": 75
   },
   {
    "gameId": 21718054,
    "matchup": "NYK @ CLE",
    "status": "2nd Qtr",
-   "homeScore": 42,
-   "visitorScore": 37
+   "homeScore": 45,
+   "visitorScore": 46
   },
   {
    "gameId": 21718055,
    "matchup": "WAS @ OKC",
    "status": "2nd Qtr",
-   "homeScore": 41,
-   "visitorScore": 25
+   "homeScore": 44,
+   "visitorScore": 29
   },
   {
    "gameId": 21718056,
@@ -873,7 +873,7 @@
    "scoreMargin": 6,
    "valueAtPick": 1,
    "projection": 6.883040565625,
-   "latestValue": 1,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -939,7 +939,7 @@
    "scoreMargin": -6,
    "valueAtPick": 1,
    "projection": 4.577170025634766,
-   "latestValue": 1,
+   "latestValue": 3,
    "tags": [
     "Over",
     "Assists",
@@ -1069,7 +1069,7 @@
    "scoreMargin": 1,
    "valueAtPick": 7,
    "projection": 16.4298269773057,
-   "latestValue": 7,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -1168,7 +1168,7 @@
    "scoreMargin": 4,
    "valueAtPick": 12,
    "projection": 26.027966057277222,
-   "latestValue": 12,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -1279,7 +1279,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 485,
+ "calls": 491,
  "note": null,
  "checkpointsTaken": {
   "21718052": [
