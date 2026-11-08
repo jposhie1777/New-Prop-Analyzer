@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "updatedAt": "2026-11-08T03:23:23.041Z",
+ "updatedAt": "2026-11-08T03:27:23.168Z",
  "state": "running",
  "games": [
   {
@@ -20,7 +20,7 @@
   {
    "gameId": 21718054,
    "matchup": "NYK @ CLE",
-   "status": "4th Qtr",
+   "status": "Final",
    "homeScore": 97,
    "visitorScore": 109
   },
@@ -34,23 +34,23 @@
   {
    "gameId": 21718056,
    "matchup": "ORL @ GSW",
-   "status": "3rd Qtr",
-   "homeScore": 77,
-   "visitorScore": 78
+   "status": "4th Qtr",
+   "homeScore": 80,
+   "visitorScore": 83
   },
   {
    "gameId": 21718057,
    "matchup": "HOU @ PHX",
    "status": "3rd Qtr",
-   "homeScore": 51,
-   "visitorScore": 54
+   "homeScore": 55,
+   "visitorScore": 58
   },
   {
    "gameId": 21718058,
    "matchup": "SAS @ POR",
    "status": "1st Qtr",
-   "homeScore": 5,
-   "visitorScore": 12
+   "homeScore": 10,
+   "visitorScore": 18
   }
  ],
  "picks": [
@@ -1019,7 +1019,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 5,
+    "gradedAt": "2026-11-08T03:24:23.563Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1052,7 +1056,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 32,
+    "gradedAt": "2026-11-08T03:24:23.563Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1084,7 +1092,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 4,
+    "gradedAt": "2026-11-08T03:24:23.563Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1117,7 +1129,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 13,
+    "gradedAt": "2026-11-08T03:24:23.563Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1150,7 +1166,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 5,
+    "gradedAt": "2026-11-08T03:24:23.563Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1360,7 +1380,7 @@
    "scoreMargin": -12,
    "valueAtPick": 2,
    "projection": 5.785252187499999,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -1393,7 +1413,7 @@
    "scoreMargin": 12,
    "valueAtPick": 4,
    "projection": 11.226800321542802,
-   "latestValue": 7,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -1728,7 +1748,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 31,
+    "gradedAt": "2026-11-08T03:24:23.563Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -1761,7 +1785,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 10,
+    "gradedAt": "2026-11-08T03:24:23.563Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -1794,7 +1822,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 2,
+    "gradedAt": "2026-11-08T03:24:23.563Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -1828,7 +1860,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 1,
+    "gradedAt": "2026-11-08T03:24:23.563Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -1861,7 +1897,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 1,
+    "gradedAt": "2026-11-08T03:24:23.563Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2072,7 +2112,7 @@
    "scoreMargin": -12,
    "valueAtPick": 3,
    "projection": 20.95512866388648,
-   "latestValue": 15,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -2105,7 +2145,7 @@
    "scoreMargin": -12,
    "valueAtPick": 1,
    "projection": 5.5207992644971595,
-   "latestValue": 3,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -2237,7 +2277,7 @@
    "scoreMargin": -16,
    "valueAtPick": 2,
    "projection": 8.33234398057697,
-   "latestValue": 13,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Under",
@@ -2375,7 +2415,7 @@
    "scoreMargin": 16,
    "valueAtPick": 5,
    "projection": 7.308679473063782,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Under",
     "Assists",
@@ -2417,7 +2457,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 2,
+    "gradedAt": "2026-11-08T03:24:23.563Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -2452,7 +2496,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 4,
+    "gradedAt": "2026-11-08T03:24:23.563Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -2485,7 +2533,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 2,
+    "gradedAt": "2026-11-08T03:24:23.563Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -2519,7 +2571,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 1,
+    "gradedAt": "2026-11-08T03:24:23.563Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -2553,7 +2609,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 9,
+    "gradedAt": "2026-11-08T03:24:23.563Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -2756,9 +2816,177 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718056-1028025497-points",
+   "gameDate": "2026-11-07",
+   "gameId": 21718056,
+   "matchup": "ORL @ GSW",
+   "playerId": 1028025497,
+   "playerName": "Tristan Da Silva",
+   "teamAbbreviation": "ORL",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 15.5,
+   "americanOdds": -158,
+   "vendor": "fanduel",
+   "modelProbability": 0.7617841916270633,
+   "evPercent": 24.39260850619136,
+   "foundAt": "2026-11-08T03:24:22.885Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 1,
+   "valueAtPick": 13,
+   "projection": 18.043555213105975,
+   "latestValue": 13,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718056-85-assists",
+   "gameDate": "2026-11-07",
+   "gameId": 21718056,
+   "matchup": "ORL @ GSW",
+   "playerId": 85,
+   "playerName": "Wendell Carter Jr.",
+   "teamAbbreviation": "ORL",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": 174,
+   "vendor": "fanduel",
+   "modelProbability": 0.452782856500793,
+   "evPercent": 24.06250268121728,
+   "foundAt": "2026-11-08T03:24:22.885Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 1,
+   "valueAtPick": 0,
+   "projection": 0.40741395489154714,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718056-17896026-points",
+   "gameDate": "2026-11-07",
+   "gameId": 21718056,
+   "matchup": "ORL @ GSW",
+   "playerId": 17896026,
+   "playerName": "Franz Wagner",
+   "teamAbbreviation": "ORL",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 25.5,
+   "americanOdds": -122,
+   "vendor": "fanduel",
+   "modelProbability": 0.6799984228056433,
+   "evPercent": 23.73741792037116,
+   "foundAt": "2026-11-08T03:24:22.885Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 1,
+   "valueAtPick": 19,
+   "projection": 23.86001050695355,
+   "latestValue": 21,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Foul trouble",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718056-185-points_assists",
+   "gameDate": "2026-11-07",
+   "gameId": 21718056,
+   "matchup": "ORL @ GSW",
+   "playerId": 185,
+   "playerName": "Draymond Green",
+   "teamAbbreviation": "GSW",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 10.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6220448569456323,
+   "evPercent": 23.189275591193837,
+   "foundAt": "2026-11-08T03:24:22.885Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -1,
+   "valueAtPick": 8,
+   "projection": 9.857481895300351,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718056-56677858-points_rebounds_assists",
+   "gameDate": "2026-11-07",
+   "gameId": 21718056,
+   "matchup": "ORL @ GSW",
+   "playerId": 56677858,
+   "playerName": "Brandin Podziemski",
+   "teamAbbreviation": "GSW",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 21.5,
+   "americanOdds": -138,
+   "vendor": "fanduel",
+   "modelProbability": 0.7077510590065614,
+   "evPercent": 22.06141452432002,
+   "foundAt": "2026-11-08T03:24:22.885Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -1,
+   "valueAtPick": 15,
+   "projection": 19.701773736057895,
+   "latestValue": 15,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 688,
+ "calls": 700,
  "note": null,
  "checkpointsTaken": {
   "21718052": [
@@ -2783,7 +3011,8 @@
   ],
   "21718056": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718057": [
    "end-q1",
