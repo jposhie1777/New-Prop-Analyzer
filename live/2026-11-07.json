@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "updatedAt": "2026-11-08T03:19:23.337Z",
+ "updatedAt": "2026-11-08T03:23:23.041Z",
  "state": "running",
  "games": [
   {
@@ -22,7 +22,7 @@
    "matchup": "NYK @ CLE",
    "status": "4th Qtr",
    "homeScore": 97,
-   "visitorScore": 107
+   "visitorScore": 109
   },
   {
    "gameId": 21718055,
@@ -35,22 +35,22 @@
    "gameId": 21718056,
    "matchup": "ORL @ GSW",
    "status": "3rd Qtr",
-   "homeScore": 73,
-   "visitorScore": 77
+   "homeScore": 77,
+   "visitorScore": 78
   },
   {
    "gameId": 21718057,
    "matchup": "HOU @ PHX",
    "status": "3rd Qtr",
-   "homeScore": 47,
-   "visitorScore": 47
+   "homeScore": 51,
+   "visitorScore": 54
   },
   {
    "gameId": 21718058,
    "matchup": "SAS @ POR",
    "status": "1st Qtr",
-   "homeScore": 3,
-   "visitorScore": 11
+   "homeScore": 5,
+   "visitorScore": 12
   }
  ],
  "picks": [
@@ -2072,7 +2072,7 @@
    "scoreMargin": -12,
    "valueAtPick": 3,
    "projection": 20.95512866388648,
-   "latestValue": 13,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -2105,7 +2105,7 @@
    "scoreMargin": -12,
    "valueAtPick": 1,
    "projection": 5.5207992644971595,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -2237,7 +2237,7 @@
    "scoreMargin": -16,
    "valueAtPick": 2,
    "projection": 8.33234398057697,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -2714,7 +2714,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 4.0413056402214735,
-   "latestValue": 2,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -2747,7 +2747,7 @@
    "scoreMargin": 0,
    "valueAtPick": 3,
    "projection": 4.381570202708141,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Under",
     "Assists",
@@ -2758,7 +2758,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 680,
+ "calls": 688,
  "note": null,
  "checkpointsTaken": {
   "21718052": [
