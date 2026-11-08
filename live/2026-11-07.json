@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "updatedAt": "2026-11-08T02:12:20.356Z",
+ "updatedAt": "2026-11-08T02:16:20.171Z",
  "state": "running",
  "games": [
   {
@@ -14,8 +14,8 @@
    "gameId": 21718053,
    "matchup": "BKN @ ATL",
    "status": "3rd Qtr",
-   "homeScore": 80,
-   "visitorScore": 87
+   "homeScore": 83,
+   "visitorScore": 91
   },
   {
    "gameId": 21718054,
@@ -35,15 +35,15 @@
    "gameId": 21718056,
    "matchup": "ORL @ GSW",
    "status": "2nd Qtr",
-   "homeScore": 34,
-   "visitorScore": 21
+   "homeScore": 36,
+   "visitorScore": 23
   },
   {
    "gameId": 21718057,
    "matchup": "HOU @ PHX",
    "status": "1st Qtr",
-   "homeScore": 0,
-   "visitorScore": 0
+   "homeScore": 8,
+   "visitorScore": 7
   },
   {
    "gameId": 21718058,
@@ -1135,7 +1135,7 @@
    "scoreMargin": 4,
    "valueAtPick": 7,
    "projection": 13.62622317927013,
-   "latestValue": 7,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -1168,7 +1168,7 @@
    "scoreMargin": 4,
    "valueAtPick": 12,
    "projection": 26.027966057277222,
-   "latestValue": 20,
+   "latestValue": 24,
    "tags": [
     "Best bet",
     "Under",
@@ -1201,7 +1201,7 @@
    "scoreMargin": -4,
    "valueAtPick": 0,
    "projection": 0.5391654389460111,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Under",
     "3PM",
@@ -1785,7 +1785,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 525,
+ "calls": 533,
  "note": null,
  "checkpointsTaken": {
   "21718052": [
