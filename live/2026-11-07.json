@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "updatedAt": "2026-11-08T03:30:25.188Z",
+ "updatedAt": "2026-11-08T03:34:23.420Z",
  "state": "running",
  "games": [
   {
@@ -35,22 +35,22 @@
    "gameId": 21718056,
    "matchup": "ORL @ GSW",
    "status": "4th Qtr",
-   "homeScore": 85,
+   "homeScore": 89,
    "visitorScore": 87
   },
   {
    "gameId": 21718057,
    "matchup": "HOU @ PHX",
    "status": "3rd Qtr",
-   "homeScore": 58,
+   "homeScore": 59,
    "visitorScore": 63
   },
   {
    "gameId": 21718058,
    "matchup": "SAS @ POR",
    "status": "1st Qtr",
-   "homeScore": 10,
-   "visitorScore": 18
+   "homeScore": 13,
+   "visitorScore": 20
   }
  ],
  "picks": [
@@ -2112,7 +2112,7 @@
    "scoreMargin": -12,
    "valueAtPick": 3,
    "projection": 20.95512866388648,
-   "latestValue": 22,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Under",
@@ -2145,7 +2145,7 @@
    "scoreMargin": -12,
    "valueAtPick": 1,
    "projection": 5.5207992644971595,
-   "latestValue": 5,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -2986,7 +2986,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 706,
+ "calls": 714,
  "note": null,
  "checkpointsTaken": {
   "21718052": [
