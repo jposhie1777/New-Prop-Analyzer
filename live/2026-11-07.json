@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "updatedAt": "2026-11-08T03:50:24.174Z",
+ "updatedAt": "2026-11-08T03:54:24.287Z",
  "state": "running",
  "games": [
   {
@@ -35,22 +35,22 @@
    "gameId": 21718056,
    "matchup": "ORL @ GSW",
    "status": "4th Qtr",
-   "homeScore": 98,
-   "visitorScore": 98
+   "homeScore": 103,
+   "visitorScore": 103
   },
   {
    "gameId": 21718057,
    "matchup": "HOU @ PHX",
    "status": "3rd Qtr",
-   "homeScore": 74,
-   "visitorScore": 73
+   "homeScore": 76,
+   "visitorScore": 75
   },
   {
    "gameId": 21718058,
    "matchup": "SAS @ POR",
    "status": "2nd Qtr",
-   "homeScore": 22,
-   "visitorScore": 30
+   "homeScore": 27,
+   "visitorScore": 33
   }
  ],
  "picks": [
@@ -1380,7 +1380,7 @@
    "scoreMargin": -12,
    "valueAtPick": 2,
    "projection": 5.785252187499999,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -2277,7 +2277,7 @@
    "scoreMargin": -16,
    "valueAtPick": 2,
    "projection": 8.33234398057697,
-   "latestValue": 16,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Under",
@@ -2312,7 +2312,7 @@
    "scoreMargin": -16,
    "valueAtPick": 7,
    "projection": 17.38981329477997,
-   "latestValue": 19,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Over",
@@ -2415,7 +2415,7 @@
    "scoreMargin": 16,
    "valueAtPick": 5,
    "projection": 7.308679473063782,
-   "latestValue": 9,
+   "latestValue": 11,
    "tags": [
     "Under",
     "Assists",
@@ -2741,7 +2741,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 2.6059888799747526,
-   "latestValue": 3,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -2839,7 +2839,7 @@
    "scoreMargin": 1,
    "valueAtPick": 13,
    "projection": 18.043555213105975,
-   "latestValue": 13,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -2940,7 +2940,7 @@
    "scoreMargin": -1,
    "valueAtPick": 8,
    "projection": 9.857481895300351,
-   "latestValue": 11,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -3151,9 +3151,181 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718057-38017684-points",
+   "gameDate": "2026-11-07",
+   "gameId": 21718057,
+   "matchup": "HOU @ PHX",
+   "playerId": 38017684,
+   "playerName": "Jabari Smith Jr.",
+   "teamAbbreviation": "HOU",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 15.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6255453512980177,
+   "evPercent": 23.882510747254493,
+   "foundAt": "2026-11-08T03:53:24.081Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -1,
+   "valueAtPick": 11,
+   "projection": 14.541854391508636,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718057-458-points_assists",
+   "gameDate": "2026-11-07",
+   "gameId": 21718057,
+   "matchup": "HOU @ PHX",
+   "playerId": 458,
+   "playerName": "Fred VanVleet",
+   "teamAbbreviation": "HOU",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 22.5,
+   "americanOdds": -125,
+   "vendor": "fanduel",
+   "modelProbability": 0.6868718181152635,
+   "evPercent": 23.63692726074744,
+   "foundAt": "2026-11-08T03:53:24.081Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -1,
+   "valueAtPick": 18,
+   "projection": 21.18242723298933,
+   "latestValue": 18,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Foul trouble",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718057-57-rebounds_assists",
+   "gameDate": "2026-11-07",
+   "gameId": 21718057,
+   "matchup": "HOU @ PHX",
+   "playerId": 57,
+   "playerName": "Devin Booker",
+   "teamAbbreviation": "PHX",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6112923330653595,
+   "evPercent": 23.481051279202614,
+   "foundAt": "2026-11-08T03:53:24.081Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 1,
+   "valueAtPick": 3,
+   "projection": 4.120338491030092,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Foul trouble",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718057-62-points",
+   "gameDate": "2026-11-07",
+   "gameId": 21718057,
+   "matchup": "HOU @ PHX",
+   "playerId": 62,
+   "playerName": "Miles Bridges",
+   "teamAbbreviation": "PHX",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 10.5,
+   "americanOdds": 103,
+   "vendor": "caesars",
+   "modelProbability": 0.6044240790262456,
+   "evPercent": 22.698088042327868,
+   "foundAt": "2026-11-08T03:53:24.081Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 1,
+   "valueAtPick": 6,
+   "projection": 9.69078693857202,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718057-38017695-points_rebounds",
+   "gameDate": "2026-11-07",
+   "gameId": 21718057,
+   "matchup": "HOU @ PHX",
+   "playerId": 38017695,
+   "playerName": "Tari Eason",
+   "teamAbbreviation": "HOU",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 11.5,
+   "americanOdds": -108,
+   "vendor": "fanduel",
+   "modelProbability": 0.6247795457369849,
+   "evPercent": 20.32791251230821,
+   "foundAt": "2026-11-08T03:53:24.081Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -1,
+   "valueAtPick": 7,
+   "projection": 10.586504822313493,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Foul trouble",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 750,
+ "calls": 761,
  "note": null,
  "checkpointsTaken": {
   "21718052": [
@@ -3183,7 +3355,8 @@
   ],
   "21718057": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718058": [
    "end-q1"
