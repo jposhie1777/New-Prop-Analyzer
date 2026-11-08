@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "updatedAt": "2026-11-08T01:49:18.971Z",
+ "updatedAt": "2026-11-08T01:57:19.312Z",
  "state": "running",
  "games": [
   {
@@ -21,21 +21,21 @@
    "gameId": 21718054,
    "matchup": "NYK @ CLE",
    "status": "2nd Qtr",
-   "homeScore": 36,
-   "visitorScore": 30
+   "homeScore": 42,
+   "visitorScore": 37
   },
   {
    "gameId": 21718055,
    "matchup": "WAS @ OKC",
    "status": "2nd Qtr",
-   "homeScore": 33,
-   "visitorScore": 23
+   "homeScore": 41,
+   "visitorScore": 25
   },
   {
    "gameId": 21718056,
    "matchup": "ORL @ GSW",
    "status": "1st Qtr",
-   "homeScore": 15,
+   "homeScore": 23,
    "visitorScore": 9
   },
   {
@@ -807,7 +807,7 @@
    "scoreMargin": 6,
    "valueAtPick": 0,
    "projection": 8.238804638004302,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Under",
@@ -1279,7 +1279,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 469,
+ "calls": 485,
  "note": null,
  "checkpointsTaken": {
   "21718052": [
