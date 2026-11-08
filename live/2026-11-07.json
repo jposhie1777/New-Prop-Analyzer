@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "updatedAt": "2026-11-08T00:18:15.045Z",
+ "updatedAt": "2026-11-08T00:22:15.203Z",
  "state": "running",
  "games": [
   {
@@ -8,7 +8,7 @@
    "matchup": "DEN @ IND",
    "status": "4th Qtr",
    "homeScore": 95,
-   "visitorScore": 104
+   "visitorScore": 108
   },
   {
    "gameId": 21718053,
@@ -109,7 +109,7 @@
    "scoreMargin": 8,
    "valueAtPick": 2,
    "projection": 12.476120501836592,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -142,7 +142,7 @@
    "scoreMargin": 8,
    "valueAtPick": 1,
    "projection": 6.753069601982796,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -209,7 +209,7 @@
    "scoreMargin": -8,
    "valueAtPick": 3,
    "projection": 16.489255395208264,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -312,7 +312,7 @@
    "scoreMargin": 23,
    "valueAtPick": 6,
    "projection": 11.185944309609486,
-   "latestValue": 10,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -481,7 +481,7 @@
    "scoreMargin": 12,
    "valueAtPick": 7,
    "projection": 11.461179952992403,
-   "latestValue": 7,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -515,7 +515,7 @@
    "scoreMargin": 12,
    "valueAtPick": 37,
    "projection": 45.9936085550459,
-   "latestValue": 37,
+   "latestValue": 39,
    "tags": [
     "Best bet",
     "Over",
@@ -561,7 +561,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 271,
+ "calls": 279,
  "note": null,
  "checkpointsTaken": {
   "21718052": [
