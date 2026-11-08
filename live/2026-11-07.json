@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "updatedAt": "2026-11-08T03:27:23.168Z",
+ "updatedAt": "2026-11-08T03:30:25.188Z",
  "state": "running",
  "games": [
   {
@@ -35,15 +35,15 @@
    "gameId": 21718056,
    "matchup": "ORL @ GSW",
    "status": "4th Qtr",
-   "homeScore": 80,
-   "visitorScore": 83
+   "homeScore": 85,
+   "visitorScore": 87
   },
   {
    "gameId": 21718057,
    "matchup": "HOU @ PHX",
    "status": "3rd Qtr",
-   "homeScore": 55,
-   "visitorScore": 58
+   "homeScore": 58,
+   "visitorScore": 63
   },
   {
    "gameId": 21718058,
@@ -1413,7 +1413,7 @@
    "scoreMargin": 12,
    "valueAtPick": 4,
    "projection": 11.226800321542802,
-   "latestValue": 10,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -1479,7 +1479,7 @@
    "scoreMargin": 12,
    "valueAtPick": 1,
    "projection": 2.0393945873432267,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -2112,7 +2112,7 @@
    "scoreMargin": -12,
    "valueAtPick": 3,
    "projection": 20.95512866388648,
-   "latestValue": 17,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Under",
@@ -2415,7 +2415,7 @@
    "scoreMargin": 16,
    "valueAtPick": 5,
    "projection": 7.308679473063782,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Under",
     "Assists",
@@ -2708,7 +2708,7 @@
    "scoreMargin": 0,
    "valueAtPick": 5,
    "projection": 12.74730691915757,
-   "latestValue": 5,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -2940,7 +2940,7 @@
    "scoreMargin": -1,
    "valueAtPick": 8,
    "projection": 9.857481895300351,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -2973,7 +2973,7 @@
    "scoreMargin": -1,
    "valueAtPick": 15,
    "projection": 19.701773736057895,
-   "latestValue": 15,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Under",
@@ -2986,7 +2986,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 700,
+ "calls": 706,
  "note": null,
  "checkpointsTaken": {
   "21718052": [
