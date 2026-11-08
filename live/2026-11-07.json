@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "updatedAt": "2026-11-08T03:04:22.650Z",
+ "updatedAt": "2026-11-08T03:08:22.463Z",
  "state": "running",
  "games": [
   {
@@ -14,29 +14,29 @@
    "gameId": 21718053,
    "matchup": "BKN @ ATL",
    "status": "4th Qtr",
-   "homeScore": 121,
+   "homeScore": 123,
    "visitorScore": 116
   },
   {
    "gameId": 21718054,
    "matchup": "NYK @ CLE",
    "status": "4th Qtr",
-   "homeScore": 82,
-   "visitorScore": 97
+   "homeScore": 89,
+   "visitorScore": 102
   },
   {
    "gameId": 21718055,
    "matchup": "WAS @ OKC",
    "status": "4th Qtr",
-   "homeScore": 97,
-   "visitorScore": 65
+   "homeScore": 103,
+   "visitorScore": 67
   },
   {
    "gameId": 21718056,
    "matchup": "ORL @ GSW",
    "status": "3rd Qtr",
-   "homeScore": 65,
-   "visitorScore": 55
+   "homeScore": 69,
+   "visitorScore": 63
   },
   {
    "gameId": 21718057,
@@ -1300,7 +1300,7 @@
    "scoreMargin": -12,
    "valueAtPick": 2,
    "projection": 5.785252187499999,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -1366,7 +1366,7 @@
    "scoreMargin": 12,
    "valueAtPick": 3,
    "projection": 13.862992659634914,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -1570,7 +1570,7 @@
    "scoreMargin": -21,
    "valueAtPick": 5,
    "projection": 11.017687848891448,
-   "latestValue": 17,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -1639,7 +1639,7 @@
    "scoreMargin": 10,
    "valueAtPick": 20,
    "projection": 34.62818173365116,
-   "latestValue": 26,
+   "latestValue": 28,
    "tags": [
     "Best bet",
     "Over",
@@ -2172,7 +2172,7 @@
    "scoreMargin": -16,
    "valueAtPick": 7,
    "projection": 17.38981329477997,
-   "latestValue": 10,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -2377,7 +2377,7 @@
    "scoreMargin": -18,
    "valueAtPick": 1,
    "projection": 1.451064043016645,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Over",
     "Assists",
@@ -2478,7 +2478,7 @@
    "scoreMargin": 31,
    "valueAtPick": 11,
    "projection": 12.768060451908768,
-   "latestValue": 16,
+   "latestValue": 18,
    "tags": [
     "Over",
     "Points",
@@ -2654,7 +2654,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 648,
+ "calls": 656,
  "note": null,
  "checkpointsTaken": {
   "21718052": [
