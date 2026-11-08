@@ -1,8 +1,8 @@
 {
  "date": "2026-11-07",
  "state": "running",
- "updatedAt": "2026-11-08T04:18:25.437Z",
- "picks": 91,
+ "updatedAt": "2026-11-08T04:20:25.999Z",
+ "picks": 96,
  "liveGames": 3,
- "note": null
+ "note": "This run hit its time limit; the next scheduled run continues."
 }

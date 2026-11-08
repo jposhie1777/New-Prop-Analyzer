@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "updatedAt": "2026-11-08T04:18:25.437Z",
+ "updatedAt": "2026-11-08T04:20:25.999Z",
  "state": "running",
  "games": [
   {
@@ -35,7 +35,7 @@
    "gameId": 21718056,
    "matchup": "ORL @ GSW",
    "status": "OT1",
-   "homeScore": 120,
+   "homeScore": 122,
    "visitorScore": 118
   },
   {
@@ -43,14 +43,14 @@
    "matchup": "HOU @ PHX",
    "status": "4th Qtr",
    "homeScore": 102,
-   "visitorScore": 97
+   "visitorScore": 99
   },
   {
    "gameId": 21718058,
    "matchup": "SAS @ POR",
    "status": "2nd Qtr",
-   "homeScore": 47,
-   "visitorScore": 62
+   "homeScore": 49,
+   "visitorScore": 64
   }
  ],
  "picks": [
@@ -2112,7 +2112,7 @@
    "scoreMargin": -12,
    "valueAtPick": 3,
    "projection": 20.95512866388648,
-   "latestValue": 29,
+   "latestValue": 31,
    "tags": [
     "Best bet",
     "Under",
@@ -2244,7 +2244,7 @@
    "scoreMargin": -12,
    "valueAtPick": 1,
    "projection": 4.0150328638085,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -2807,7 +2807,7 @@
    "scoreMargin": 0,
    "valueAtPick": 3,
    "projection": 4.381570202708141,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Under",
     "Assists",
@@ -3207,7 +3207,7 @@
    "scoreMargin": -1,
    "valueAtPick": 18,
    "projection": 21.18242723298933,
-   "latestValue": 19,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Under",
@@ -3311,7 +3311,7 @@
    "scoreMargin": -1,
    "valueAtPick": 7,
    "projection": 10.586504822313493,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -3323,10 +3323,184 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718058-3547246-rebounds",
+   "gameDate": "2026-11-07",
+   "gameId": 21718058,
+   "matchup": "SAS @ POR",
+   "playerId": 3547246,
+   "playerName": "Devin Vassell",
+   "teamAbbreviation": "SAS",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 120,
+   "vendor": "draftkings",
+   "modelProbability": 0.5678579075764736,
+   "evPercent": 24.928739666824207,
+   "foundAt": "2026-11-08T04:20:25.342Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 15,
+   "valueAtPick": 1,
+   "projection": 2.7787249999999997,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Foul trouble",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718058-56677822-points_rebounds_assists",
+   "gameDate": "2026-11-07",
+   "gameId": 21718058,
+   "matchup": "SAS @ POR",
+   "playerId": 56677822,
+   "playerName": "Victor Wembanyama",
+   "teamAbbreviation": "SAS",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 36.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6266532137762749,
+   "evPercent": 24.1019109635368,
+   "foundAt": "2026-11-08T04:20:25.342Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 15,
+   "valueAtPick": 19,
+   "projection": 34.56725034952982,
+   "latestValue": 19,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Blowout risk",
+    "Hot shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718058-278-threes",
+   "gameDate": "2026-11-07",
+   "gameId": 21718058,
+   "matchup": "SAS @ POR",
+   "playerId": 278,
+   "playerName": "Damian Lillard",
+   "teamAbbreviation": "POR",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -150,
+   "vendor": "caesars",
+   "modelProbability": 0.7436842639563843,
+   "evPercent": 23.947377326064046,
+   "foundAt": "2026-11-08T04:20:25.342Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -15,
+   "valueAtPick": 1,
+   "projection": 1.7706749743609678,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718058-56677850-points_rebounds_assists",
+   "gameDate": "2026-11-07",
+   "gameId": 21718058,
+   "matchup": "SAS @ POR",
+   "playerId": 56677850,
+   "playerName": "Toumani Camara",
+   "teamAbbreviation": "POR",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 12.5,
+   "americanOdds": -130,
+   "vendor": "fanduel",
+   "modelProbability": 0.6975753127037416,
+   "evPercent": 23.417170709123504,
+   "foundAt": "2026-11-08T04:20:25.342Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -15,
+   "valueAtPick": 7,
+   "projection": 14.673853329630893,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Blowout risk",
+    "Foul trouble",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718058-161-assists",
+   "gameDate": "2026-11-07",
+   "gameId": 21718058,
+   "matchup": "SAS @ POR",
+   "playerId": 161,
+   "playerName": "De'Aaron Fox",
+   "teamAbbreviation": "SAS",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 7.5,
+   "americanOdds": 104,
+   "vendor": "fanduel",
+   "modelProbability": 0.6000905737097373,
+   "evPercent": 22.41847703678641,
+   "foundAt": "2026-11-08T04:20:25.342Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 15,
+   "valueAtPick": 5,
+   "projection": 8.040657523721872,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 809,
- "note": null,
+ "calls": 816,
+ "note": "This run hit its time limit; the next scheduled run continues.",
  "checkpointsTaken": {
   "21718052": [
    "end-q1",
@@ -3359,7 +3533,8 @@
    "end-q3"
   ],
   "21718058": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
