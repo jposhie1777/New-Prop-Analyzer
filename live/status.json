@@ -1,8 +1,8 @@
 {
  "date": "2026-11-07",
- "state": "running",
- "updatedAt": "2026-11-08T05:05:54.152Z",
+ "state": "done",
+ "updatedAt": "2026-11-08T05:34:54.859Z",
  "picks": 101,
- "liveGames": 1,
- "note": null
+ "liveGames": 0,
+ "note": "All games are final and graded."
 }
