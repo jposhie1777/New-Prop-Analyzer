@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "updatedAt": "2026-11-08T03:00:23.392Z",
+ "updatedAt": "2026-11-08T03:04:22.650Z",
  "state": "running",
  "games": [
   {
@@ -14,36 +14,36 @@
    "gameId": 21718053,
    "matchup": "BKN @ ATL",
    "status": "4th Qtr",
-   "homeScore": 117,
-   "visitorScore": 114
+   "homeScore": 121,
+   "visitorScore": 116
   },
   {
    "gameId": 21718054,
    "matchup": "NYK @ CLE",
    "status": "4th Qtr",
-   "homeScore": 78,
-   "visitorScore": 90
+   "homeScore": 82,
+   "visitorScore": 97
   },
   {
    "gameId": 21718055,
    "matchup": "WAS @ OKC",
    "status": "4th Qtr",
    "homeScore": 97,
-   "visitorScore": 63
+   "visitorScore": 65
   },
   {
    "gameId": 21718056,
    "matchup": "ORL @ GSW",
    "status": "3rd Qtr",
-   "homeScore": 61,
-   "visitorScore": 50
+   "homeScore": 65,
+   "visitorScore": 55
   },
   {
    "gameId": 21718057,
    "matchup": "HOU @ PHX",
    "status": "2nd Qtr",
    "homeScore": 47,
-   "visitorScore": 45
+   "visitorScore": 47
   },
   {
    "gameId": 21718058,
@@ -1004,7 +1004,7 @@
    "scoreMargin": -1,
    "valueAtPick": 14,
    "projection": 34.396153388972905,
-   "latestValue": 27,
+   "latestValue": 32,
    "tags": [
     "Best bet",
     "Over",
@@ -1168,7 +1168,7 @@
    "scoreMargin": 4,
    "valueAtPick": 12,
    "projection": 26.027966057277222,
-   "latestValue": 29,
+   "latestValue": 32,
    "tags": [
     "Best bet",
     "Under",
@@ -1300,7 +1300,7 @@
    "scoreMargin": -12,
    "valueAtPick": 2,
    "projection": 5.785252187499999,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -1433,7 +1433,7 @@
    "scoreMargin": -12,
    "valueAtPick": 0,
    "projection": 1.5027709883898384,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -1570,7 +1570,7 @@
    "scoreMargin": -21,
    "valueAtPick": 5,
    "projection": 11.017687848891448,
-   "latestValue": 15,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -1906,7 +1906,7 @@
    "scoreMargin": 7,
    "valueAtPick": 8,
    "projection": 14.247054858151094,
-   "latestValue": 23,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Over",
@@ -1972,7 +1972,7 @@
    "scoreMargin": -12,
    "valueAtPick": 3,
    "projection": 20.95512866388648,
-   "latestValue": 10,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -2038,7 +2038,7 @@
    "scoreMargin": 12,
    "valueAtPick": 0,
    "projection": 1.8658498248281234,
-   "latestValue": 1,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -2137,7 +2137,7 @@
    "scoreMargin": -16,
    "valueAtPick": 2,
    "projection": 8.33234398057697,
-   "latestValue": 5,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -2172,7 +2172,7 @@
    "scoreMargin": -16,
    "valueAtPick": 7,
    "projection": 17.38981329477997,
-   "latestValue": 7,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -2275,7 +2275,7 @@
    "scoreMargin": 16,
    "valueAtPick": 5,
    "projection": 7.308679473063782,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Under",
     "Assists",
@@ -2308,7 +2308,7 @@
    "scoreMargin": 18,
    "valueAtPick": 1,
    "projection": 1.44622765937471,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Over",
     "Assists",
@@ -2342,7 +2342,7 @@
    "scoreMargin": 18,
    "valueAtPick": 3,
    "projection": 3.6454892912177685,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -2488,9 +2488,173 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718057-56677825-points",
+   "gameDate": "2026-11-07",
+   "gameId": 21718057,
+   "matchup": "HOU @ PHX",
+   "playerId": 56677825,
+   "playerName": "Amen Thompson",
+   "teamAbbreviation": "HOU",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 15.5,
+   "americanOdds": -115,
+   "vendor": "fanatics",
+   "modelProbability": 0.6535917206935141,
+   "evPercent": 22.19323473835264,
+   "foundAt": "2026-11-08T03:04:22.045Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 0,
+   "valueAtPick": 10,
+   "projection": 17.184166073629694,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718057-66-points_assists",
+   "gameDate": "2026-11-07",
+   "gameId": 21718057,
+   "matchup": "HOU @ PHX",
+   "playerId": 66,
+   "playerName": "Dillon Brooks",
+   "teamAbbreviation": "PHX",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 14.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.6610054371390395,
+   "evPercent": 22.11795364094118,
+   "foundAt": "2026-11-08T03:04:22.045Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 0,
+   "valueAtPick": 5,
+   "projection": 12.74730691915757,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718057-38017727-points",
+   "gameDate": "2026-11-07",
+   "gameId": 21718057,
+   "matchup": "HOU @ PHX",
+   "playerId": 38017727,
+   "playerName": "Collin Gillespie",
+   "teamAbbreviation": "PHX",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": -110,
+   "vendor": "draftkings",
+   "modelProbability": 0.6361451914339651,
+   "evPercent": 21.445900182847886,
+   "foundAt": "2026-11-08T03:04:22.045Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 0,
+   "valueAtPick": 0,
+   "projection": 2.6059888799747526,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718057-1028036515-points",
+   "gameDate": "2026-11-07",
+   "gameId": 21718057,
+   "matchup": "HOU @ PHX",
+   "playerId": 1028036515,
+   "playerName": "Oso Ighodaro",
+   "teamAbbreviation": "PHX",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": 108,
+   "vendor": "fanduel",
+   "modelProbability": 0.5799794113131977,
+   "evPercent": 20.635717553145128,
+   "foundAt": "2026-11-08T03:04:22.045Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 0,
+   "valueAtPick": 2,
+   "projection": 4.0413056402214735,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718057-17895966-assists",
+   "gameDate": "2026-11-07",
+   "gameId": 21718057,
+   "matchup": "HOU @ PHX",
+   "playerId": 17895966,
+   "playerName": "Jalen Green",
+   "teamAbbreviation": "PHX",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": 125,
+   "vendor": "caesars",
+   "modelProbability": 0.532837762106944,
+   "evPercent": 19.88849647406239,
+   "foundAt": "2026-11-08T03:04:22.045Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 0,
+   "valueAtPick": 3,
+   "projection": 4.381570202708141,
+   "latestValue": 3,
+   "tags": [
+    "Under",
+    "Assists",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 637,
+ "calls": 648,
  "note": null,
  "checkpointsTaken": {
   "21718052": [
@@ -2518,7 +2682,8 @@
    "halftime"
   ],
   "21718057": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
