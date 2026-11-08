@@ -1,14 +1,14 @@
 {
  "date": "2026-11-08",
- "updatedAt": "2026-11-08T22:17:28.545Z",
+ "updatedAt": "2026-11-08T22:19:28.259Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718059,
    "matchup": "PHI @ CHI",
    "status": "4th Qtr",
-   "homeScore": 93,
-   "visitorScore": 99
+   "homeScore": 95,
+   "visitorScore": 101
   },
   {
    "gameId": 21718060,
@@ -554,8 +554,8 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 293,
- "note": null,
+ "calls": 297,
+ "note": "This run hit its time limit; the next scheduled run continues.",
  "checkpointsTaken": {
   "21718059": [
    "end-q1",
