@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "updatedAt": "2026-11-08T01:31:18.631Z",
+ "updatedAt": "2026-11-08T01:37:19.247Z",
  "state": "running",
  "games": [
   {
@@ -14,22 +14,22 @@
    "gameId": 21718053,
    "matchup": "BKN @ ATL",
    "status": "2nd Qtr",
-   "homeScore": 46,
-   "visitorScore": 53
+   "homeScore": 52,
+   "visitorScore": 64
   },
   {
    "gameId": 21718054,
    "matchup": "NYK @ CLE",
    "status": "1st Qtr",
-   "homeScore": 16,
-   "visitorScore": 14
+   "homeScore": 23,
+   "visitorScore": 19
   },
   {
    "gameId": 21718055,
    "matchup": "WAS @ OKC",
-   "status": "1st Qtr",
-   "homeScore": 21,
-   "visitorScore": 16
+   "status": "2nd Qtr",
+   "homeScore": 25,
+   "visitorScore": 19
   },
   {
    "gameId": 21718056,
@@ -784,9 +784,173 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718055-89-points_rebounds",
+   "gameDate": "2026-11-07",
+   "gameId": 21718055,
+   "matchup": "WAS @ OKC",
+   "playerId": 89,
+   "playerName": "Alex Caruso",
+   "teamAbbreviation": "OKC",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 10.5,
+   "americanOdds": -128,
+   "vendor": "fanduel",
+   "modelProbability": 0.6982758233630014,
+   "evPercent": 24.380381036534637,
+   "foundAt": "2026-11-08T01:37:18.269Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 6,
+   "valueAtPick": 0,
+   "projection": 8.238804638004302,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718055-201-points",
+   "gameDate": "2026-11-07",
+   "gameId": 21718055,
+   "matchup": "WAS @ OKC",
+   "playerId": 201,
+   "playerName": "Isaiah Hartenstein",
+   "teamAbbreviation": "OKC",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 6.5,
+   "americanOdds": 102,
+   "vendor": "caesars",
+   "modelProbability": 0.6051830950829903,
+   "evPercent": 22.246985206764048,
+   "foundAt": "2026-11-08T01:37:18.269Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 6,
+   "valueAtPick": 0,
+   "projection": 5.504412774439261,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718055-175-rebounds_assists",
+   "gameDate": "2026-11-07",
+   "gameId": 21718055,
+   "matchup": "WAS @ OKC",
+   "playerId": 175,
+   "playerName": "Shai Gilgeous-Alexander",
+   "teamAbbreviation": "OKC",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 8.5,
+   "americanOdds": -136,
+   "vendor": "fanduel",
+   "modelProbability": 0.7003454186998705,
+   "evPercent": 21.530528539095183,
+   "foundAt": "2026-11-08T01:37:18.269Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 6,
+   "valueAtPick": 1,
+   "projection": 6.883040565625,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718055-1028028405-points",
+   "gameDate": "2026-11-07",
+   "gameId": 21718055,
+   "matchup": "WAS @ OKC",
+   "playerId": 1028028405,
+   "playerName": "Alexandre Sarr",
+   "teamAbbreviation": "WAS",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 18.5,
+   "americanOdds": -125,
+   "vendor": "caesars",
+   "modelProbability": 0.6561238698293665,
+   "evPercent": 18.10229656928599,
+   "foundAt": "2026-11-08T01:37:18.269Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -6,
+   "valueAtPick": 9,
+   "projection": 16.723396740184047,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718055-1028026060-assists",
+   "gameDate": "2026-11-07",
+   "gameId": 21718055,
+   "matchup": "WAS @ OKC",
+   "playerId": 1028026060,
+   "playerName": "KyShawn George",
+   "teamAbbreviation": "WAS",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": 130,
+   "vendor": "fanduel",
+   "modelProbability": 0.5133103529453045,
+   "evPercent": 18.06138117742002,
+   "foundAt": "2026-11-08T01:37:18.269Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -6,
+   "valueAtPick": 1,
+   "projection": 4.577170025634766,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 422,
+ "calls": 438,
  "note": null,
  "checkpointsTaken": {
   "21718052": [
@@ -795,6 +959,9 @@
    "end-q3"
   ],
   "21718053": [
+   "end-q1"
+  ],
+  "21718055": [
    "end-q1"
   ]
  }
