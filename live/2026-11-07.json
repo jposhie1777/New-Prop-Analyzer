@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "updatedAt": "2026-11-08T04:14:25.251Z",
+ "updatedAt": "2026-11-08T04:18:25.437Z",
  "state": "running",
  "games": [
   {
@@ -35,7 +35,7 @@
    "gameId": 21718056,
    "matchup": "ORL @ GSW",
    "status": "OT1",
-   "homeScore": 117,
+   "homeScore": 120,
    "visitorScore": 118
   },
   {
@@ -43,14 +43,14 @@
    "matchup": "HOU @ PHX",
    "status": "4th Qtr",
    "homeScore": 102,
-   "visitorScore": 95
+   "visitorScore": 97
   },
   {
    "gameId": 21718058,
    "matchup": "SAS @ POR",
    "status": "2nd Qtr",
-   "homeScore": 38,
-   "visitorScore": 52
+   "homeScore": 47,
+   "visitorScore": 62
   }
  ],
  "picks": [
@@ -1413,7 +1413,7 @@
    "scoreMargin": 12,
    "valueAtPick": 4,
    "projection": 11.226800321542802,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -2112,7 +2112,7 @@
    "scoreMargin": -12,
    "valueAtPick": 3,
    "projection": 20.95512866388648,
-   "latestValue": 28,
+   "latestValue": 29,
    "tags": [
     "Best bet",
     "Under",
@@ -2244,7 +2244,7 @@
    "scoreMargin": -12,
    "valueAtPick": 1,
    "projection": 4.0150328638085,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -2675,7 +2675,7 @@
    "scoreMargin": 0,
    "valueAtPick": 10,
    "projection": 17.184166073629694,
-   "latestValue": 15,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Over",
@@ -3074,7 +3074,7 @@
    "scoreMargin": -2,
    "valueAtPick": 2,
    "projection": 9.028467011946438,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -3108,7 +3108,7 @@
    "scoreMargin": -2,
    "valueAtPick": 4,
    "projection": 21.041131701665652,
-   "latestValue": 5,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -3207,7 +3207,7 @@
    "scoreMargin": -1,
    "valueAtPick": 18,
    "projection": 21.18242723298933,
-   "latestValue": 18,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -3325,7 +3325,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 801,
+ "calls": 809,
  "note": null,
  "checkpointsTaken": {
   "21718052": [
