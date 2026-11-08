@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "updatedAt": "2026-11-08T04:43:52.434Z",
+ "updatedAt": "2026-11-08T04:47:52.551Z",
  "state": "running",
  "games": [
   {
@@ -50,7 +50,7 @@
    "matchup": "SAS @ POR",
    "status": "3rd Qtr",
    "homeScore": 59,
-   "visitorScore": 79
+   "visitorScore": 84
   }
  ],
  "picks": [
@@ -3107,7 +3107,7 @@
    "scoreMargin": 2,
    "valueAtPick": 3,
    "projection": 12.255734631066009,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -3174,7 +3174,7 @@
    "scoreMargin": -2,
    "valueAtPick": 2,
    "projection": 9.028467011946438,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -3466,7 +3466,7 @@
    "scoreMargin": 15,
    "valueAtPick": 1,
    "projection": 2.7787249999999997,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Over",
@@ -3501,7 +3501,7 @@
    "scoreMargin": 15,
    "valueAtPick": 19,
    "projection": 34.56725034952982,
-   "latestValue": 30,
+   "latestValue": 36,
    "tags": [
     "Best bet",
     "Under",
@@ -3619,7 +3619,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 53,
+ "calls": 61,
  "note": null,
  "checkpointsTaken": {
   "21718052": [
