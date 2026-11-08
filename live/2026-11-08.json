@@ -1,14 +1,14 @@
 {
  "date": "2026-11-08",
- "updatedAt": "2026-11-08T22:36:09.629Z",
+ "updatedAt": "2026-11-08T22:40:11.133Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718059,
    "matchup": "PHI @ CHI",
    "status": "4th Qtr",
-   "homeScore": 113,
-   "visitorScore": 116
+   "homeScore": 116,
+   "visitorScore": 123
   },
   {
    "gameId": 21718060,
@@ -143,7 +143,7 @@
    "scoreMargin": 1,
    "valueAtPick": 5,
    "projection": 14.047546865591434,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -309,7 +309,7 @@
    "scoreMargin": 7,
    "valueAtPick": 15,
    "projection": 29.320500528995336,
-   "latestValue": 24,
+   "latestValue": 27,
    "tags": [
     "Best bet",
     "Over",
@@ -508,7 +508,7 @@
    "scoreMargin": 6,
    "valueAtPick": 2,
    "projection": 2.516627609124617,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Over",
     "3PM",
@@ -554,7 +554,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 5,
+ "calls": 13,
  "note": null,
  "checkpointsTaken": {
   "21718059": [
