@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updatedAt": "2026-11-09T03:33:22.252Z",
+ "updatedAt": "2026-11-09T03:37:22.477Z",
  "state": "running",
  "games": [
   {
@@ -41,9 +41,9 @@
   {
    "gameId": 21718064,
    "matchup": "NOP @ LAC",
-   "status": "2nd Qtr",
-   "homeScore": 67,
-   "visitorScore": 60
+   "status": "3rd Qtr",
+   "homeScore": 73,
+   "visitorScore": 67
   },
   {
    "gameId": 21718065,
@@ -3227,7 +3227,7 @@
    "scoreMargin": 7,
    "valueAtPick": 0,
    "projection": 0.5611585530333876,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Over",
     "3PM",
@@ -3367,7 +3367,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 659,
+ "calls": 667,
  "note": null,
  "checkpointsTaken": {
   "21718059": [
