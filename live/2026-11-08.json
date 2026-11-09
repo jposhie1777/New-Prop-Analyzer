@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updatedAt": "2026-11-09T03:49:23.009Z",
+ "updatedAt": "2026-11-09T03:53:23.079Z",
  "state": "running",
  "games": [
   {
@@ -42,7 +42,7 @@
    "gameId": 21718064,
    "matchup": "NOP @ LAC",
    "status": "3rd Qtr",
-   "homeScore": 82,
+   "homeScore": 87,
    "visitorScore": 86
   },
   {
@@ -50,7 +50,7 @@
    "matchup": "MIA @ SAC",
    "status": "3rd Qtr",
    "homeScore": 76,
-   "visitorScore": 88
+   "visitorScore": 91
   }
  ],
  "picks": [
@@ -2642,7 +2642,7 @@
    "scoreMargin": 0,
    "valueAtPick": 6,
    "projection": 18.713602570303323,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -2708,7 +2708,7 @@
    "scoreMargin": 4,
    "valueAtPick": 9,
    "projection": 42.04837405899659,
-   "latestValue": 34,
+   "latestValue": 36,
    "tags": [
     "Best bet",
     "Under",
@@ -3062,7 +3062,7 @@
    "scoreMargin": -9,
    "valueAtPick": 21,
    "projection": 36.7006140124419,
-   "latestValue": 29,
+   "latestValue": 30,
    "tags": [
     "Best bet",
     "Under",
@@ -3367,7 +3367,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 691,
+ "calls": 699,
  "note": null,
  "checkpointsTaken": {
   "21718059": [
