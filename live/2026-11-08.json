@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updatedAt": "2026-11-09T00:00:20.054Z",
+ "updatedAt": "2026-11-09T00:05:14.198Z",
  "state": "running",
  "games": [
   {
@@ -14,7 +14,7 @@
    "gameId": 21718060,
    "matchup": "LAL @ DET",
    "status": "2nd Qtr",
-   "homeScore": 38,
+   "homeScore": 42,
    "visitorScore": 53
   },
   {
@@ -736,7 +736,7 @@
    "scoreMargin": -24,
    "valueAtPick": 0,
    "projection": 22.032135600726733,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -783,7 +783,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 179,
+ "calls": 189,
  "note": null,
  "checkpointsTaken": {
   "21718059": [
