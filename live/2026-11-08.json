@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updatedAt": "2026-11-09T03:12:21.820Z",
+ "updatedAt": "2026-11-09T03:16:24.895Z",
  "state": "running",
  "games": [
   {
@@ -34,16 +34,16 @@
   {
    "gameId": 21718063,
    "matchup": "BOS @ MIL",
-   "status": "4th Qtr",
-   "homeScore": 91,
-   "visitorScore": 112
+   "status": "Final",
+   "homeScore": 97,
+   "visitorScore": 117
   },
   {
    "gameId": 21718064,
    "matchup": "NOP @ LAC",
    "status": "2nd Qtr",
-   "homeScore": 61,
-   "visitorScore": 53
+   "homeScore": 64,
+   "visitorScore": 58
   },
   {
    "gameId": 21718065,
@@ -1761,7 +1761,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 13,
+    "gradedAt": "2026-11-09T03:16:24.895Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1794,7 +1798,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 3,
+    "gradedAt": "2026-11-09T03:16:24.895Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1828,7 +1836,11 @@
     "Already 60%+ of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 27,
+    "gradedAt": "2026-11-09T03:16:24.895Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1861,7 +1873,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 6,
+    "gradedAt": "2026-11-09T03:16:24.895Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1895,7 +1911,11 @@
     "Already 60%+ of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 5,
+    "gradedAt": "2026-11-09T03:16:24.895Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -2307,7 +2327,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 3,
+    "gradedAt": "2026-11-09T03:16:24.895Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2341,7 +2365,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 21,
+    "gradedAt": "2026-11-09T03:16:24.895Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2374,7 +2402,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 1,
+    "gradedAt": "2026-11-09T03:16:24.895Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2408,7 +2440,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 4,
+    "gradedAt": "2026-11-09T03:16:24.895Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2441,7 +2477,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 19,
+    "gradedAt": "2026-11-09T03:16:24.895Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2537,7 +2577,7 @@
    "scoreMargin": 0,
    "valueAtPick": 3,
    "projection": 22.576305955374153,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -2570,7 +2610,7 @@
    "scoreMargin": 0,
    "valueAtPick": 3,
    "projection": 5.627526356388077,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Over",
     "Rebounds",
@@ -2602,7 +2642,7 @@
    "scoreMargin": 0,
    "valueAtPick": 6,
    "projection": 18.713602570303323,
-   "latestValue": 6,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -2767,7 +2807,7 @@
    "scoreMargin": -4,
    "valueAtPick": 2,
    "projection": 6.217043777861363,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Under",
     "Reb+Ast",
@@ -2840,7 +2880,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 21,
+    "gradedAt": "2026-11-09T03:16:24.895Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -2874,7 +2918,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 11,
+    "gradedAt": "2026-11-09T03:16:24.895Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -2909,7 +2957,11 @@
     "Under 60% of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 12,
+    "gradedAt": "2026-11-09T03:16:24.895Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -2943,7 +2995,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 7,
+    "gradedAt": "2026-11-09T03:16:24.895Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -2977,11 +3033,180 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 16,
+    "gradedAt": "2026-11-09T03:16:24.895Z"
+   },
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718065-1091338860-points_rebounds_assists",
+   "gameDate": "2026-11-08",
+   "gameId": 21718065,
+   "matchup": "MIA @ SAC",
+   "playerId": 1091338860,
+   "playerName": "Darius Acuff Jr.",
+   "teamAbbreviation": "SAC",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 39.5,
+   "americanOdds": -120,
+   "vendor": "fanduel",
+   "modelProbability": 0.6793364151346055,
+   "evPercent": 24.545009441344344,
+   "foundAt": "2026-11-09T03:13:21.105Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -9,
+   "valueAtPick": 21,
+   "projection": 36.7006140124419,
+   "latestValue": 21,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Hot shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718065-4-points_rebounds",
+   "gameDate": "2026-11-08",
+   "gameId": 21718065,
+   "matchup": "MIA @ SAC",
+   "playerId": 4,
+   "playerName": "Bam Adebayo",
+   "teamAbbreviation": "MIA",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 34.5,
+   "americanOdds": 100,
+   "vendor": "fanduel",
+   "modelProbability": 0.6218154417617061,
+   "evPercent": 24.363088352341222,
+   "foundAt": "2026-11-09T03:13:21.105Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 9,
+   "valueAtPick": 21,
+   "projection": 36.34304045950195,
+   "latestValue": 21,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718065-377-threes",
+   "gameDate": "2026-11-08",
+   "gameId": 21718065,
+   "matchup": "MIA @ SAC",
+   "playerId": 377,
+   "playerName": "Bobby Portis",
+   "teamAbbreviation": "MIA",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 130,
+   "vendor": "fanduel",
+   "modelProbability": 0.5344121449206923,
+   "evPercent": 22.91479333175923,
+   "foundAt": "2026-11-09T03:13:21.105Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 9,
+   "valueAtPick": 1,
+   "projection": 1.5837255037954803,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718065-1028036986-threes",
+   "gameDate": "2026-11-08",
+   "gameId": 21718065,
+   "matchup": "MIA @ SAC",
+   "playerId": 1028036986,
+   "playerName": "Pelle Larsson",
+   "teamAbbreviation": "MIA",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 194,
+   "vendor": "fanduel",
+   "modelProbability": 0.41644650798296556,
+   "evPercent": 22.43527334699187,
+   "foundAt": "2026-11-09T03:13:21.105Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 9,
+   "valueAtPick": 1,
+   "projection": 1.3431682574530495,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718065-268-rebounds",
+   "gameDate": "2026-11-08",
+   "gameId": 21718065,
+   "matchup": "MIA @ SAC",
+   "playerId": 268,
+   "playerName": "Zach LaVine",
+   "teamAbbreviation": "SAC",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6047623872918821,
+   "evPercent": 22.162002232960187,
+   "foundAt": "2026-11-09T03:13:21.105Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -9,
+   "valueAtPick": 3,
+   "projection": 4.954128122273544,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 610,
+ "calls": 622,
  "note": null,
  "checkpointsTaken": {
   "21718059": [
@@ -3013,7 +3238,8 @@
    "end-q1"
   ],
   "21718065": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
