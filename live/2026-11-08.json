@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updatedAt": "2026-11-09T03:20:21.960Z",
+ "updatedAt": "2026-11-09T03:29:22.029Z",
  "state": "running",
  "games": [
   {
@@ -48,7 +48,7 @@
   {
    "gameId": 21718065,
    "matchup": "MIA @ SAC",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 59,
    "visitorScore": 68
   }
@@ -2708,7 +2708,7 @@
    "scoreMargin": 4,
    "valueAtPick": 9,
    "projection": 42.04837405899659,
-   "latestValue": 21,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Under",
@@ -3367,7 +3367,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 633,
+ "calls": 651,
  "note": null,
  "checkpointsTaken": {
   "21718059": [
