@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updatedAt": "2026-11-09T01:18:16.529Z",
+ "updatedAt": "2026-11-09T01:22:16.912Z",
  "state": "running",
  "games": [
   {
@@ -14,8 +14,8 @@
    "gameId": 21718060,
    "matchup": "LAL @ DET",
    "status": "4th Qtr",
-   "homeScore": 96,
-   "visitorScore": 100
+   "homeScore": 99,
+   "visitorScore": 104
   },
   {
    "gameId": 21718061,
@@ -28,7 +28,7 @@
    "gameId": 21718062,
    "matchup": "BKN @ DAL",
    "status": "2nd Qtr",
-   "homeScore": 44,
+   "homeScore": 49,
    "visitorScore": 32
   },
   {
@@ -36,7 +36,7 @@
    "matchup": "BOS @ MIL",
    "status": "1st Qtr",
    "homeScore": 20,
-   "visitorScore": 6
+   "visitorScore": 13
   },
   {
    "gameId": 21718064,
@@ -736,7 +736,7 @@
    "scoreMargin": -24,
    "valueAtPick": 0,
    "projection": 22.032135600726733,
-   "latestValue": 16,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -770,7 +770,7 @@
    "scoreMargin": 24,
    "valueAtPick": 3,
    "projection": 11.64350628950308,
-   "latestValue": 5,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -1235,7 +1235,7 @@
    "scoreMargin": -7,
    "valueAtPick": 4,
    "projection": 5.417208195153943,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Under",
     "Assists",
@@ -1611,7 +1611,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 352,
+ "calls": 360,
  "note": null,
  "checkpointsTaken": {
   "21718059": [
