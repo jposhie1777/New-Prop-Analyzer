@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updatedAt": "2026-11-09T01:26:16.932Z",
+ "updatedAt": "2026-11-09T01:30:18.998Z",
  "state": "running",
  "games": [
   {
@@ -14,7 +14,7 @@
    "gameId": 21718060,
    "matchup": "LAL @ DET",
    "status": "4th Qtr",
-   "homeScore": 102,
+   "homeScore": 104,
    "visitorScore": 109
   },
   {
@@ -22,14 +22,14 @@
    "matchup": "UTA @ MIN",
    "status": "3rd Qtr",
    "homeScore": 59,
-   "visitorScore": 57
+   "visitorScore": 59
   },
   {
    "gameId": 21718062,
    "matchup": "BKN @ DAL",
    "status": "2nd Qtr",
-   "homeScore": 54,
-   "visitorScore": 32
+   "homeScore": 56,
+   "visitorScore": 35
   },
   {
    "gameId": 21718063,
@@ -1103,7 +1103,7 @@
    "scoreMargin": -3,
    "valueAtPick": 2,
    "projection": 4.401130322265626,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Under",
     "Rebounds",
@@ -1268,7 +1268,7 @@
    "scoreMargin": 7,
    "valueAtPick": 10,
    "projection": 13.150720407527565,
-   "latestValue": 15,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -1401,7 +1401,7 @@
    "scoreMargin": -6,
    "valueAtPick": 22,
    "projection": 37.486393790497985,
-   "latestValue": 22,
+   "latestValue": 24,
    "tags": [
     "Best bet",
     "Under",
@@ -1611,7 +1611,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 368,
+ "calls": 376,
  "note": null,
  "checkpointsTaken": {
   "21718059": [
