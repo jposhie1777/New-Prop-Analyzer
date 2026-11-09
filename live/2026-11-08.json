@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updatedAt": "2026-11-09T04:24:53.927Z",
+ "updatedAt": "2026-11-09T04:28:54.136Z",
  "state": "running",
  "games": [
   {
@@ -42,15 +42,15 @@
    "gameId": 21718064,
    "matchup": "NOP @ LAC",
    "status": "4th Qtr",
-   "homeScore": 128,
-   "visitorScore": 112
+   "homeScore": 133,
+   "visitorScore": 115
   },
   {
    "gameId": 21718065,
    "matchup": "MIA @ SAC",
    "status": "4th Qtr",
-   "homeScore": 101,
-   "visitorScore": 108
+   "homeScore": 105,
+   "visitorScore": 112
   }
  ],
  "picks": [
@@ -2708,7 +2708,7 @@
    "scoreMargin": 4,
    "valueAtPick": 9,
    "projection": 42.04837405899659,
-   "latestValue": 40,
+   "latestValue": 45,
    "tags": [
     "Best bet",
     "Under",
@@ -2774,7 +2774,7 @@
    "scoreMargin": 4,
    "valueAtPick": 0,
    "projection": 3.615406334783782,
-   "latestValue": 2,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Under",
@@ -3062,7 +3062,7 @@
    "scoreMargin": -9,
    "valueAtPick": 21,
    "projection": 36.7006140124419,
-   "latestValue": 43,
+   "latestValue": 45,
    "tags": [
     "Best bet",
     "Under",
@@ -3388,7 +3388,7 @@
    "scoreMargin": 10,
    "valueAtPick": 5,
    "projection": 7.259981574251572,
-   "latestValue": 6,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -3421,7 +3421,7 @@
    "scoreMargin": 10,
    "valueAtPick": 25,
    "projection": 32.75822556730161,
-   "latestValue": 28,
+   "latestValue": 32,
    "tags": [
     "Best bet",
     "Under",
@@ -3699,7 +3699,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 13,
+ "calls": 21,
  "note": null,
  "checkpointsTaken": {
   "21718059": [
