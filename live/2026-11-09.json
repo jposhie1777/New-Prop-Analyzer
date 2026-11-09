@@ -1,0 +1,66 @@
+{
+ "date": "2026-11-09",
+ "updatedAt": "2026-11-09T22:36:22.286Z",
+ "state": "waiting",
+ "games": [
+  {
+   "gameId": 21718066,
+   "matchup": "LAL @ ATL",
+   "status": "2026-11-10T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718067,
+   "matchup": "CLE @ CHA",
+   "status": "2026-11-10T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718068,
+   "matchup": "WAS @ DET",
+   "status": "2026-11-10T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718069,
+   "matchup": "MEM @ TOR",
+   "status": "2026-11-10T00:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718070,
+   "matchup": "IND @ DAL",
+   "status": "2026-11-10T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718071,
+   "matchup": "DEN @ HOU",
+   "status": "2026-11-10T01:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718072,
+   "matchup": "SAS @ PHX",
+   "status": "2026-11-10T02:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718073,
+   "matchup": "NOP @ GSW",
+   "status": "2026-11-10T03:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  }
+ ],
+ "picks": [],
+ "calls": 1,
+ "note": "First tip-off 2026-11-10T00:00:00.000Z"
+}
