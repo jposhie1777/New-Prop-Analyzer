@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updatedAt": "2026-11-09T01:02:16.153Z",
+ "updatedAt": "2026-11-09T01:06:16.710Z",
  "state": "running",
  "games": [
   {
@@ -14,22 +14,22 @@
    "gameId": 21718060,
    "matchup": "LAL @ DET",
    "status": "4th Qtr",
-   "homeScore": 89,
-   "visitorScore": 90
+   "homeScore": 92,
+   "visitorScore": 94
   },
   {
    "gameId": 21718061,
    "matchup": "UTA @ MIN",
    "status": "2nd Qtr",
-   "homeScore": 48,
-   "visitorScore": 44
+   "homeScore": 54,
+   "visitorScore": 48
   },
   {
    "gameId": 21718062,
    "matchup": "BKN @ DAL",
    "status": "1st Qtr",
-   "homeScore": 26,
-   "visitorScore": 14
+   "homeScore": 30,
+   "visitorScore": 21
   },
   {
    "gameId": 21718063,
@@ -736,7 +736,7 @@
    "scoreMargin": -24,
    "valueAtPick": 0,
    "projection": 22.032135600726733,
-   "latestValue": 15,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Under",
@@ -1038,7 +1038,7 @@
    "scoreMargin": 3,
    "valueAtPick": 3,
    "projection": 15.816679794011813,
-   "latestValue": 4,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -1103,7 +1103,7 @@
    "scoreMargin": -3,
    "valueAtPick": 2,
    "projection": 4.401130322265626,
-   "latestValue": 3,
+   "latestValue": 5,
    "tags": [
     "Under",
     "Rebounds",
@@ -1168,7 +1168,7 @@
    "scoreMargin": 7,
    "valueAtPick": 11,
    "projection": 13.476545512449084,
-   "latestValue": 13,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -1235,7 +1235,7 @@
    "scoreMargin": -7,
    "valueAtPick": 4,
    "projection": 5.417208195153943,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Under",
     "Assists",
@@ -1268,7 +1268,7 @@
    "scoreMargin": 7,
    "valueAtPick": 10,
    "projection": 13.150720407527565,
-   "latestValue": 10,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -1281,7 +1281,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 313,
+ "calls": 321,
  "note": null,
  "checkpointsTaken": {
   "21718059": [
