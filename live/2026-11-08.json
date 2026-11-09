@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updatedAt": "2026-11-09T02:04:18.580Z",
+ "updatedAt": "2026-11-09T02:08:18.569Z",
  "state": "running",
  "games": [
   {
@@ -28,15 +28,15 @@
    "gameId": 21718062,
    "matchup": "BKN @ DAL",
    "status": "3rd Qtr",
-   "homeScore": 68,
-   "visitorScore": 50
+   "homeScore": 77,
+   "visitorScore": 58
   },
   {
    "gameId": 21718063,
    "matchup": "BOS @ MIL",
    "status": "2nd Qtr",
-   "homeScore": 43,
-   "visitorScore": 54
+   "homeScore": 45,
+   "visitorScore": 58
   },
   {
    "gameId": 21718064,
@@ -1625,7 +1625,7 @@
    "scoreMargin": 7,
    "valueAtPick": 3,
    "projection": 7.06979651087949,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -1692,7 +1692,7 @@
    "scoreMargin": -2,
    "valueAtPick": 2,
    "projection": 8.322930718795043,
-   "latestValue": 5,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -1998,7 +1998,7 @@
    "scoreMargin": 20,
    "valueAtPick": 7,
    "projection": 10.401087539902633,
-   "latestValue": 7,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -2098,7 +2098,7 @@
    "scoreMargin": -12,
    "valueAtPick": 3,
    "projection": 4.633856640625,
-   "latestValue": 4,
+   "latestValue": 3,
    "tags": [
     "Over",
     "Rebounds",
@@ -2175,9 +2175,177 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718063-452-points",
+   "gameDate": "2026-11-08",
+   "gameId": 21718063,
+   "matchup": "BOS @ MIL",
+   "playerId": 452,
+   "playerName": "Myles Turner",
+   "teamAbbreviation": "MIL",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6173516790428462,
+   "evPercent": 24.70503916665492,
+   "foundAt": "2026-11-09T02:07:18.285Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -13,
+   "valueAtPick": 0,
+   "projection": 4.508219043771064,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718063-3547276-points_rebounds_assists",
+   "gameDate": "2026-11-08",
+   "gameId": 21718063,
+   "matchup": "BOS @ MIL",
+   "playerId": 3547276,
+   "playerName": "Payton Pritchard",
+   "teamAbbreviation": "BOS",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 15.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.6516934041937086,
+   "evPercent": 22.335428506538292,
+   "foundAt": "2026-11-09T02:07:18.285Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 13,
+   "valueAtPick": 6,
+   "projection": 13.843925119566293,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718063-666633-rebounds",
+   "gameDate": "2026-11-08",
+   "gameId": 21718063,
+   "matchup": "BOS @ MIL",
+   "playerId": 666633,
+   "playerName": "Tyler Herro",
+   "teamAbbreviation": "MIL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": 130,
+   "vendor": "fanduel",
+   "modelProbability": 0.5297523490453269,
+   "evPercent": 21.843040280425164,
+   "foundAt": "2026-11-09T02:07:18.285Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -13,
+   "valueAtPick": 0,
+   "projection": 1.3923036575317382,
+   "latestValue": 0,
+   "tags": [
+    "Under",
+    "Rebounds",
+    "Hot shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718063-265-rebounds",
+   "gameDate": "2026-11-08",
+   "gameId": 21718063,
+   "matchup": "BOS @ MIL",
+   "playerId": 265,
+   "playerName": "Kyle Kuzma",
+   "teamAbbreviation": "MIL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": -160,
+   "vendor": "draftkings",
+   "modelProbability": 0.7370421018676897,
+   "evPercent": 19.769341553499586,
+   "foundAt": "2026-11-09T02:07:18.285Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -13,
+   "valueAtPick": 2,
+   "projection": 3.53819230927592,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Hot shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718063-473-points_rebounds_assists",
+   "gameDate": "2026-11-08",
+   "gameId": 21718063,
+   "matchup": "BOS @ MIL",
+   "playerId": 473,
+   "playerName": "Derrick White",
+   "teamAbbreviation": "BOS",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 22.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.63644780285675,
+   "evPercent": 19.473534922232005,
+   "foundAt": "2026-11-09T02:07:18.285Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 13,
+   "valueAtPick": 13,
+   "projection": 21.002781965408325,
+   "latestValue": 13,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 455,
+ "calls": 466,
  "note": null,
  "checkpointsTaken": {
   "21718059": [
@@ -2200,7 +2368,8 @@
    "halftime"
   ],
   "21718063": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
