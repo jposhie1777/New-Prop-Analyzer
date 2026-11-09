@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updatedAt": "2026-11-09T02:44:20.326Z",
+ "updatedAt": "2026-11-09T02:48:20.441Z",
  "state": "running",
  "games": [
   {
@@ -28,29 +28,29 @@
    "gameId": 21718062,
    "matchup": "BKN @ DAL",
    "status": "4th Qtr",
-   "homeScore": 107,
-   "visitorScore": 76
+   "homeScore": 109,
+   "visitorScore": 78
   },
   {
    "gameId": 21718063,
    "matchup": "BOS @ MIL",
    "status": "3rd Qtr",
-   "homeScore": 71,
-   "visitorScore": 87
+   "homeScore": 74,
+   "visitorScore": 91
   },
   {
    "gameId": 21718064,
    "matchup": "NOP @ LAC",
    "status": "2nd Qtr",
    "homeScore": 35,
-   "visitorScore": 30
+   "visitorScore": 33
   },
   {
    "gameId": 21718065,
    "matchup": "MIA @ SAC",
    "status": "2nd Qtr",
-   "homeScore": 30,
-   "visitorScore": 36
+   "homeScore": 40,
+   "visitorScore": 43
   }
  ],
  "picks": [
@@ -2292,7 +2292,7 @@
    "scoreMargin": 13,
    "valueAtPick": 6,
    "projection": 13.843925119566293,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -2426,7 +2426,7 @@
    "scoreMargin": 29,
    "valueAtPick": 7,
    "projection": 8.229343219697643,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Under",
     "Rebounds",
@@ -2460,7 +2460,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 4.024118376153997,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -2493,7 +2493,7 @@
    "scoreMargin": 0,
    "valueAtPick": 3,
    "projection": 22.576305955374153,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -2755,7 +2755,7 @@
    "scoreMargin": 4,
    "valueAtPick": 1,
    "projection": 3.696652495238231,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Over",
     "Assists",
@@ -2764,9 +2764,180 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718063-434-points",
+   "gameDate": "2026-11-08",
+   "gameId": 21718063,
+   "matchup": "BOS @ MIL",
+   "playerId": 434,
+   "playerName": "Jayson Tatum",
+   "teamAbbreviation": "BOS",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 23.5,
+   "americanOdds": -115,
+   "vendor": "draftkings",
+   "modelProbability": 0.6617319777146636,
+   "evPercent": 23.715108877089275,
+   "foundAt": "2026-11-09T02:47:20.067Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 17,
+   "valueAtPick": 21,
+   "projection": 24.792253729145816,
+   "latestValue": 21,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718063-38017712-rebounds_assists",
+   "gameDate": "2026-11-08",
+   "gameId": 21718063,
+   "matchup": "BOS @ MIL",
+   "playerId": 38017712,
+   "playerName": "Ryan Rollins",
+   "teamAbbreviation": "MIL",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 12.5,
+   "americanOdds": 126,
+   "vendor": "fanduel",
+   "modelProbability": 0.5471903516135455,
+   "evPercent": 23.665019464661263,
+   "foundAt": "2026-11-09T02:47:20.067Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -17,
+   "valueAtPick": 11,
+   "projection": 12.695918169664333,
+   "latestValue": 11,
+   "tags": [
+    "Over",
+    "Reb+Ast",
+    "Blowout risk",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718063-3547276-points",
+   "gameDate": "2026-11-08",
+   "gameId": 21718063,
+   "matchup": "BOS @ MIL",
+   "playerId": 3547276,
+   "playerName": "Payton Pritchard",
+   "teamAbbreviation": "BOS",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": -102,
+   "vendor": "caesars",
+   "modelProbability": 0.6221728932125054,
+   "evPercent": 23.2146317930648,
+   "foundAt": "2026-11-09T02:47:20.067Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 17,
+   "valueAtPick": 3,
+   "projection": 4.830338315952048,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718063-399-rebounds",
+   "gameDate": "2026-11-08",
+   "gameId": 21718063,
+   "matchup": "BOS @ MIL",
+   "playerId": 399,
+   "playerName": "Mitchell Robinson",
+   "teamAbbreviation": "BOS",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 8.5,
+   "americanOdds": -105,
+   "vendor": "draftkings",
+   "modelProbability": 0.6298612522452356,
+   "evPercent": 22.972911152641238,
+   "foundAt": "2026-11-09T02:47:20.067Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 17,
+   "valueAtPick": 7,
+   "projection": 8.078988231034753,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718063-666633-points_rebounds_assists",
+   "gameDate": "2026-11-08",
+   "gameId": 21718063,
+   "matchup": "BOS @ MIL",
+   "playerId": 666633,
+   "playerName": "Tyler Herro",
+   "teamAbbreviation": "MIL",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 21.5,
+   "americanOdds": -130,
+   "vendor": "fanduel",
+   "modelProbability": 0.6919757998582337,
+   "evPercent": 22.42648766722595,
+   "foundAt": "2026-11-09T02:47:20.067Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -17,
+   "valueAtPick": 16,
+   "projection": 19.98235853561808,
+   "latestValue": 16,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 550,
+ "calls": 561,
  "note": null,
  "checkpointsTaken": {
   "21718059": [
@@ -2791,7 +2962,8 @@
   ],
   "21718063": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718064": [
    "end-q1"
