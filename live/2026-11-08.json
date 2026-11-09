@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updatedAt": "2026-11-09T01:42:17.440Z",
+ "updatedAt": "2026-11-09T01:45:18.689Z",
  "state": "running",
  "games": [
   {
@@ -21,22 +21,22 @@
    "gameId": 21718061,
    "matchup": "UTA @ MIN",
    "status": "3rd Qtr",
-   "homeScore": 70,
-   "visitorScore": 65
+   "homeScore": 72,
+   "visitorScore": 67
   },
   {
    "gameId": 21718062,
    "matchup": "BKN @ DAL",
    "status": "2nd Qtr",
-   "homeScore": 61,
-   "visitorScore": 40
+   "homeScore": 66,
+   "visitorScore": 44
   },
   {
    "gameId": 21718063,
    "matchup": "BOS @ MIL",
    "status": "2nd Qtr",
    "homeScore": 27,
-   "visitorScore": 28
+   "visitorScore": 30
   },
   {
    "gameId": 21718064,
@@ -1078,7 +1078,7 @@
    "scoreMargin": 3,
    "valueAtPick": 3,
    "projection": 15.816679794011813,
-   "latestValue": 10,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -1839,7 +1839,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 405,
+ "calls": 411,
  "note": null,
  "checkpointsTaken": {
   "21718059": [
