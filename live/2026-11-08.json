@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updatedAt": "2026-11-09T00:14:14.451Z",
+ "updatedAt": "2026-11-09T00:28:14.612Z",
  "state": "running",
  "games": [
   {
@@ -13,16 +13,16 @@
   {
    "gameId": 21718060,
    "matchup": "LAL @ DET",
-   "status": "2nd Qtr",
-   "homeScore": 48,
-   "visitorScore": 61
+   "status": "3rd Qtr",
+   "homeScore": 50,
+   "visitorScore": 64
   },
   {
    "gameId": 21718061,
    "matchup": "UTA @ MIN",
    "status": "1st Qtr",
-   "homeScore": 6,
-   "visitorScore": 3
+   "homeScore": 16,
+   "visitorScore": 20
   },
   {
    "gameId": 21718062,
@@ -635,7 +635,7 @@
    "scoreMargin": 24,
    "valueAtPick": 0,
    "projection": 2.194270681013342,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -951,7 +951,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 210,
+ "calls": 238,
  "note": null,
  "checkpointsTaken": {
   "21718059": [
