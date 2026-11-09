@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updatedAt": "2026-11-09T04:04:23.845Z",
+ "updatedAt": "2026-11-09T04:08:23.714Z",
  "state": "running",
  "games": [
   {
@@ -42,14 +42,14 @@
    "gameId": 21718064,
    "matchup": "NOP @ LAC",
    "status": "4th Qtr",
-   "homeScore": 102,
-   "visitorScore": 95
+   "homeScore": 108,
+   "visitorScore": 97
   },
   {
    "gameId": 21718065,
    "matchup": "MIA @ SAC",
    "status": "4th Qtr",
-   "homeScore": 87,
+   "homeScore": 88,
    "visitorScore": 91
   }
  ],
@@ -2544,7 +2544,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 4.024118376153997,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -2675,7 +2675,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 5.1886653473275866,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -3699,7 +3699,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 727,
+ "calls": 735,
  "note": null,
  "checkpointsTaken": {
   "21718059": [
