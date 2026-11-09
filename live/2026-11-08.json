@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updatedAt": "2026-11-09T01:45:18.689Z",
+ "updatedAt": "2026-11-09T01:49:17.813Z",
  "state": "running",
  "games": [
   {
@@ -21,22 +21,22 @@
    "gameId": 21718061,
    "matchup": "UTA @ MIN",
    "status": "3rd Qtr",
-   "homeScore": 72,
-   "visitorScore": 67
+   "homeScore": 75,
+   "visitorScore": 70
   },
   {
    "gameId": 21718062,
    "matchup": "BKN @ DAL",
    "status": "2nd Qtr",
    "homeScore": 66,
-   "visitorScore": 44
+   "visitorScore": 46
   },
   {
    "gameId": 21718063,
    "matchup": "BOS @ MIL",
    "status": "2nd Qtr",
-   "homeScore": 27,
-   "visitorScore": 30
+   "homeScore": 29,
+   "visitorScore": 33
   },
   {
    "gameId": 21718064,
@@ -1078,7 +1078,7 @@
    "scoreMargin": 3,
    "valueAtPick": 3,
    "projection": 15.816679794011813,
-   "latestValue": 12,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -1837,9 +1837,182 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718062-3547293-points",
+   "gameDate": "2026-11-08",
+   "gameId": 21718062,
+   "matchup": "BKN @ DAL",
+   "playerId": 3547293,
+   "playerName": "Naji Marshall",
+   "teamAbbreviation": "DAL",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 11.5,
+   "americanOdds": 103,
+   "vendor": "caesars",
+   "modelProbability": 0.6092259779675063,
+   "evPercent": 23.672873527403794,
+   "foundAt": "2026-11-09T01:46:17.363Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 20,
+   "valueAtPick": 8,
+   "projection": 12.428166437269711,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718062-666747-points_rebounds",
+   "gameDate": "2026-11-08",
+   "gameId": 21718062,
+   "matchup": "BKN @ DAL",
+   "playerId": 666747,
+   "playerName": "Caleb Martin",
+   "teamAbbreviation": "DAL",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": -136,
+   "vendor": "fanduel",
+   "modelProbability": 0.7098340400456221,
+   "evPercent": 23.177083419681498,
+   "foundAt": "2026-11-09T01:46:17.363Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 20,
+   "valueAtPick": 4,
+   "projection": 6.937024577688517,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718062-17896038-points_rebounds",
+   "gameDate": "2026-11-08",
+   "gameId": 21718062,
+   "matchup": "BKN @ DAL",
+   "playerId": 17896038,
+   "playerName": "Day'Ron Sharpe",
+   "teamAbbreviation": "BKN",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": -104,
+   "vendor": "fanduel",
+   "modelProbability": 0.6271160023219545,
+   "evPercent": 23.011215840075707,
+   "foundAt": "2026-11-09T01:46:17.363Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -20,
+   "valueAtPick": 4,
+   "projection": 10.780374354864156,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718062-666950-points_rebounds_assists",
+   "gameDate": "2026-11-08",
+   "gameId": 21718062,
+   "matchup": "BKN @ DAL",
+   "playerId": 666950,
+   "playerName": "P.J. Washington",
+   "teamAbbreviation": "DAL",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 12.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6493234656839033,
+   "evPercent": 22.907656004453123,
+   "foundAt": "2026-11-09T01:46:17.363Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 20,
+   "valueAtPick": 3,
+   "projection": 10.86856043426058,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718062-666577-points",
+   "gameDate": "2026-11-08",
+   "gameId": 21718062,
+   "matchup": "BKN @ DAL",
+   "playerId": 666577,
+   "playerName": "Daniel Gafford",
+   "teamAbbreviation": "DAL",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6206480615945142,
+   "evPercent": 17.47981165896162,
+   "foundAt": "2026-11-09T01:46:17.363Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 20,
+   "valueAtPick": 7,
+   "projection": 10.401087539902633,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 411,
+ "calls": 422,
  "note": null,
  "checkpointsTaken": {
   "21718059": [
@@ -1857,7 +2030,8 @@
    "halftime"
   ],
   "21718062": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718063": [
    "end-q1"
