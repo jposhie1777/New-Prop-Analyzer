@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updatedAt": "2026-11-09T00:54:16.282Z",
+ "updatedAt": "2026-11-09T00:58:15.835Z",
  "state": "running",
  "games": [
   {
@@ -13,8 +13,8 @@
   {
    "gameId": 21718060,
    "matchup": "LAL @ DET",
-   "status": "3rd Qtr",
-   "homeScore": 81,
+   "status": "4th Qtr",
+   "homeScore": 83,
    "visitorScore": 88
   },
   {
@@ -22,14 +22,14 @@
    "matchup": "UTA @ MIN",
    "status": "2nd Qtr",
    "homeScore": 43,
-   "visitorScore": 35
+   "visitorScore": 37
   },
   {
    "gameId": 21718062,
    "matchup": "BKN @ DAL",
    "status": "1st Qtr",
-   "homeScore": 15,
-   "visitorScore": 11
+   "homeScore": 22,
+   "visitorScore": 12
   },
   {
    "gameId": 21718063,
@@ -1103,7 +1103,7 @@
    "scoreMargin": -3,
    "valueAtPick": 2,
    "projection": 4.401130322265626,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Under",
     "Rebounds",
@@ -1281,7 +1281,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 297,
+ "calls": 305,
  "note": null,
  "checkpointsTaken": {
   "21718059": [
