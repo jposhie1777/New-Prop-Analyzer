@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updatedAt": "2026-11-09T00:32:14.869Z",
+ "updatedAt": "2026-11-09T00:36:17.123Z",
  "state": "running",
  "games": [
   {
@@ -14,15 +14,15 @@
    "gameId": 21718060,
    "matchup": "LAL @ DET",
    "status": "3rd Qtr",
-   "homeScore": 53,
-   "visitorScore": 71
+   "homeScore": 61,
+   "visitorScore": 78
   },
   {
    "gameId": 21718061,
    "matchup": "UTA @ MIN",
    "status": "1st Qtr",
-   "homeScore": 23,
-   "visitorScore": 20
+   "homeScore": 28,
+   "visitorScore": 25
   },
   {
    "gameId": 21718062,
@@ -669,7 +669,7 @@
    "scoreMargin": 24,
    "valueAtPick": 0,
    "projection": 1.8230279110883865,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Under",
@@ -736,7 +736,7 @@
    "scoreMargin": -24,
    "valueAtPick": 0,
    "projection": 22.032135600726733,
-   "latestValue": 7,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -770,7 +770,7 @@
    "scoreMargin": 24,
    "valueAtPick": 3,
    "projection": 11.64350628950308,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -949,9 +949,172 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718061-3547259-assists",
+   "gameDate": "2026-11-08",
+   "gameId": 21718061,
+   "matchup": "UTA @ MIN",
+   "playerId": 3547259,
+   "playerName": "Jaden McDaniels",
+   "teamAbbreviation": "MIN",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": 107,
+   "vendor": "caesars",
+   "modelProbability": 0.5905731564950726,
+   "evPercent": 22.248643394480048,
+   "foundAt": "2026-11-09T00:36:14.668Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 3,
+   "valueAtPick": 3,
+   "projection": 4.884396670034352,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Already 60%+ of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718061-56677842-points",
+   "gameDate": "2026-11-08",
+   "gameId": 21718061,
+   "matchup": "UTA @ MIN",
+   "playerId": 56677842,
+   "playerName": "Brice Sensabaugh",
+   "teamAbbreviation": "UTA",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": -105,
+   "vendor": "betrivers",
+   "modelProbability": 0.6201756456866998,
+   "evPercent": 21.081911776927107,
+   "foundAt": "2026-11-09T00:36:14.668Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -3,
+   "valueAtPick": 0,
+   "projection": 6.280461334033203,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718061-17895983-points",
+   "gameDate": "2026-11-08",
+   "gameId": 21718061,
+   "matchup": "UTA @ MIN",
+   "playerId": 17895983,
+   "playerName": "Ayo Dosunmu",
+   "teamAbbreviation": "MIN",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 17.5,
+   "americanOdds": -104,
+   "vendor": "betrivers",
+   "modelProbability": 0.6162358570140288,
+   "evPercent": 20.877033491213346,
+   "foundAt": "2026-11-09T00:36:14.668Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 3,
+   "valueAtPick": 3,
+   "projection": 15.816679794011813,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718061-1057260888-threes",
+   "gameDate": "2026-11-08",
+   "gameId": 21718061,
+   "matchup": "UTA @ MIN",
+   "playerId": 1057260888,
+   "playerName": "Airious Bailey",
+   "teamAbbreviation": "UTA",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 140,
+   "vendor": "fanduel",
+   "modelProbability": 0.5000647472803239,
+   "evPercent": 20.015539347277734,
+   "foundAt": "2026-11-09T00:36:14.668Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -3,
+   "valueAtPick": 1,
+   "projection": 2.5002522321428566,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718061-56677834-rebounds",
+   "gameDate": "2026-11-08",
+   "gameId": 21718061,
+   "matchup": "UTA @ MIN",
+   "playerId": 56677834,
+   "playerName": "Keyonte George",
+   "teamAbbreviation": "UTA",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": 130,
+   "vendor": "betmgm",
+   "modelProbability": 0.5208088974061456,
+   "evPercent": 19.786046403413458,
+   "foundAt": "2026-11-09T00:36:14.668Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -3,
+   "valueAtPick": 2,
+   "projection": 4.401130322265626,
+   "latestValue": 2,
+   "tags": [
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 246,
+ "calls": 258,
  "note": null,
  "checkpointsTaken": {
   "21718059": [
@@ -962,6 +1125,9 @@
   "21718060": [
    "end-q1",
    "halftime"
+  ],
+  "21718061": [
+   "end-q1"
   ]
  }
 }
