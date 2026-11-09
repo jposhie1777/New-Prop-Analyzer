@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updatedAt": "2026-11-09T01:10:16.447Z",
+ "updatedAt": "2026-11-09T01:14:16.344Z",
  "state": "running",
  "games": [
   {
@@ -15,7 +15,7 @@
    "matchup": "LAL @ DET",
    "status": "4th Qtr",
    "homeScore": 94,
-   "visitorScore": 95
+   "visitorScore": 97
   },
   {
    "gameId": 21718061,
@@ -27,16 +27,16 @@
   {
    "gameId": 21718062,
    "matchup": "BKN @ DAL",
-   "status": "1st Qtr",
-   "homeScore": 30,
-   "visitorScore": 25
+   "status": "2nd Qtr",
+   "homeScore": 36,
+   "visitorScore": 26
   },
   {
    "gameId": 21718063,
    "matchup": "BOS @ MIL",
-   "status": "2026-11-09T01:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 7,
+   "visitorScore": 3
   },
   {
    "gameId": 21718064,
@@ -1268,7 +1268,7 @@
    "scoreMargin": 7,
    "valueAtPick": 10,
    "projection": 13.150720407527565,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -1443,9 +1443,175 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718062-1057275262-rebounds_assists",
+   "gameDate": "2026-11-08",
+   "gameId": 21718062,
+   "matchup": "BKN @ DAL",
+   "playerId": 1057275262,
+   "playerName": "Nolan Traoré",
+   "teamAbbreviation": "BKN",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": 120,
+   "vendor": "fanduel",
+   "modelProbability": 0.5633784131873016,
+   "evPercent": 23.94325090120637,
+   "foundAt": "2026-11-09T01:11:15.970Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -7,
+   "valueAtPick": 1,
+   "projection": 4.141216593436064,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718062-462-points_rebounds",
+   "gameDate": "2026-11-08",
+   "gameId": 21718062,
+   "matchup": "BKN @ DAL",
+   "playerId": 462,
+   "playerName": "Moritz Wagner",
+   "teamAbbreviation": "BKN",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 11.5,
+   "americanOdds": -110,
+   "vendor": "fanduel",
+   "modelProbability": 0.6223991840712535,
+   "evPercent": 18.821662413602947,
+   "foundAt": "2026-11-09T01:11:15.970Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -7,
+   "valueAtPick": 4,
+   "projection": 12.911563933771307,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718062-666950-points_assists",
+   "gameDate": "2026-11-08",
+   "gameId": 21718062,
+   "matchup": "BKN @ DAL",
+   "playerId": 666950,
+   "playerName": "P.J. Washington",
+   "teamAbbreviation": "DAL",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 12.5,
+   "americanOdds": -138,
+   "vendor": "fanduel",
+   "modelProbability": 0.6846518930609644,
+   "evPercent": 18.07764532500691,
+   "foundAt": "2026-11-09T01:11:15.970Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 7,
+   "valueAtPick": 0,
+   "projection": 10.17439977449962,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718062-666577-rebounds",
+   "gameDate": "2026-11-08",
+   "gameId": 21718062,
+   "matchup": "BKN @ DAL",
+   "playerId": 666577,
+   "playerName": "Daniel Gafford",
+   "teamAbbreviation": "DAL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": -104,
+   "vendor": "caesars",
+   "modelProbability": 0.5913427316295966,
+   "evPercent": 15.994151204267038,
+   "foundAt": "2026-11-09T01:11:15.970Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 7,
+   "valueAtPick": 3,
+   "projection": 7.06979651087949,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718062-375-rebounds",
+   "gameDate": "2026-11-08",
+   "gameId": 21718062,
+   "matchup": "BKN @ DAL",
+   "playerId": 375,
+   "playerName": "Michael Porter Jr.",
+   "teamAbbreviation": "BKN",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 9.5,
+   "americanOdds": -130,
+   "vendor": "fanduel",
+   "modelProbability": 0.6392058429874976,
+   "evPercent": 13.09026452855726,
+   "foundAt": "2026-11-09T01:11:15.970Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -7,
+   "valueAtPick": 4,
+   "projection": 8.568722844467914,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 332,
+ "calls": 344,
  "note": null,
  "checkpointsTaken": {
   "21718059": [
@@ -1461,6 +1627,9 @@
   "21718061": [
    "end-q1",
    "halftime"
+  ],
+  "21718062": [
+   "end-q1"
   ]
  }
 }
