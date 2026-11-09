@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updatedAt": "2026-11-09T04:20:24.550Z",
+ "updatedAt": "2026-11-09T04:20:53.828Z",
  "state": "running",
  "games": [
   {
@@ -42,7 +42,7 @@
    "gameId": 21718064,
    "matchup": "NOP @ LAC",
    "status": "4th Qtr",
-   "homeScore": 119,
+   "homeScore": 121,
    "visitorScore": 105
   },
   {
@@ -3699,8 +3699,8 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 759,
- "note": "This run hit its time limit; the next scheduled run continues.",
+ "calls": 5,
+ "note": null,
  "checkpointsTaken": {
   "21718059": [
    "end-q1",
