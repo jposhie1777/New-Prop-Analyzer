@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updatedAt": "2026-11-09T00:10:14.307Z",
+ "updatedAt": "2026-11-09T00:14:14.451Z",
  "state": "running",
  "games": [
   {
@@ -14,15 +14,15 @@
    "gameId": 21718060,
    "matchup": "LAL @ DET",
    "status": "2nd Qtr",
-   "homeScore": 45,
-   "visitorScore": 60
+   "homeScore": 48,
+   "visitorScore": 61
   },
   {
    "gameId": 21718061,
    "matchup": "UTA @ MIN",
-   "status": "2026-11-09T00:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 6,
+   "visitorScore": 3
   },
   {
    "gameId": 21718062,
@@ -736,7 +736,7 @@
    "scoreMargin": -24,
    "valueAtPick": 0,
    "projection": 22.032135600726733,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -781,9 +781,177 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718060-17896075-rebounds",
+   "gameDate": "2026-11-08",
+   "gameId": 21718060,
+   "matchup": "LAL @ DET",
+   "playerId": 17896075,
+   "playerName": "Cade Cunningham",
+   "teamAbbreviation": "DET",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": 105,
+   "vendor": "draftkings",
+   "modelProbability": 0.6082269758681291,
+   "evPercent": 24.68653005296646,
+   "foundAt": "2026-11-09T00:13:13.691Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -13,
+   "valueAtPick": 3,
+   "projection": 5.0223506877821675,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718060-17895858-points",
+   "gameDate": "2026-11-08",
+   "gameId": 21718060,
+   "matchup": "LAL @ DET",
+   "playerId": 17895858,
+   "playerName": "Quentin Grimes",
+   "teamAbbreviation": "LAL",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 17.5,
+   "americanOdds": -128,
+   "vendor": "fanduel",
+   "modelProbability": 0.6963366328074749,
+   "evPercent": 24.034962718831476,
+   "foundAt": "2026-11-09T00:13:13.691Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 13,
+   "valueAtPick": 12,
+   "projection": 19.77992602780898,
+   "latestValue": 12,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718060-101-points",
+   "gameDate": "2026-11-08",
+   "gameId": 21718060,
+   "matchup": "LAL @ DET",
+   "playerId": 101,
+   "playerName": "John Collins",
+   "teamAbbreviation": "DET",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 11.5,
+   "americanOdds": 105,
+   "vendor": "draftkings",
+   "modelProbability": 0.601881262221931,
+   "evPercent": 23.385658755495832,
+   "foundAt": "2026-11-09T00:13:13.691Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -13,
+   "valueAtPick": 6,
+   "projection": 10.617428843277164,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718060-221-threes",
+   "gameDate": "2026-11-08",
+   "gameId": 21718060,
+   "matchup": "LAL @ DET",
+   "playerId": 221,
+   "playerName": "Kevin Huerter",
+   "teamAbbreviation": "DET",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 118,
+   "vendor": "fanduel",
+   "modelProbability": 0.5655512904924023,
+   "evPercent": 23.290181327343685,
+   "foundAt": "2026-11-09T00:13:13.691Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -13,
+   "valueAtPick": 3,
+   "projection": 3.671641045898768,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718060-1028240128-threes",
+   "gameDate": "2026-11-08",
+   "gameId": 21718060,
+   "matchup": "LAL @ DET",
+   "playerId": 1028240128,
+   "playerName": "Daniss Jenkins",
+   "teamAbbreviation": "DET",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": -135,
+   "vendor": "draftkings",
+   "modelProbability": 0.6945167500032094,
+   "evPercent": 20.897360185743864,
+   "foundAt": "2026-11-09T00:13:13.691Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -13,
+   "valueAtPick": 6,
+   "projection": 7.210009609327072,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 199,
+ "calls": 210,
  "note": null,
  "checkpointsTaken": {
   "21718059": [
@@ -792,7 +960,8 @@
    "end-q3"
   ],
   "21718060": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
