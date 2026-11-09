@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "updatedAt": "2026-11-09T00:44:15.629Z",
+ "updatedAt": "2026-11-09T00:54:16.282Z",
  "state": "running",
  "games": [
   {
@@ -14,22 +14,22 @@
    "gameId": 21718060,
    "matchup": "LAL @ DET",
    "status": "3rd Qtr",
-   "homeScore": 70,
-   "visitorScore": 84
+   "homeScore": 81,
+   "visitorScore": 88
   },
   {
    "gameId": 21718061,
    "matchup": "UTA @ MIN",
    "status": "2nd Qtr",
-   "homeScore": 32,
-   "visitorScore": 27
+   "homeScore": 43,
+   "visitorScore": 35
   },
   {
    "gameId": 21718062,
    "matchup": "BKN @ DAL",
    "status": "1st Qtr",
-   "homeScore": 7,
-   "visitorScore": 5
+   "homeScore": 15,
+   "visitorScore": 11
   },
   {
    "gameId": 21718063,
@@ -1112,9 +1112,176 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718060-666923-points",
+   "gameDate": "2026-11-08",
+   "gameId": 21718060,
+   "matchup": "LAL @ DET",
+   "playerId": 666923,
+   "playerName": "Matisse Thybulle",
+   "teamAbbreviation": "LAL",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": -105,
+   "vendor": "draftkings",
+   "modelProbability": 0.6373941055848056,
+   "evPercent": 24.44361109036679,
+   "foundAt": "2026-11-09T00:54:15.329Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 7,
+   "valueAtPick": 4,
+   "projection": 5.0814117227819455,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718060-413-points_assists",
+   "gameDate": "2026-11-08",
+   "gameId": 21718060,
+   "matchup": "LAL @ DET",
+   "playerId": 413,
+   "playerName": "Collin Sexton",
+   "teamAbbreviation": "LAL",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 14.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.6659751618137377,
+   "evPercent": 23.036089216436295,
+   "foundAt": "2026-11-09T00:54:15.329Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 7,
+   "valueAtPick": 11,
+   "projection": 13.476545512449084,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718060-1028240128-rebounds",
+   "gameDate": "2026-11-08",
+   "gameId": 21718060,
+   "matchup": "LAL @ DET",
+   "playerId": 1028240128,
+   "playerName": "Daniss Jenkins",
+   "teamAbbreviation": "DET",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 105,
+   "vendor": "draftkings",
+   "modelProbability": 0.5971746693268927,
+   "evPercent": 22.42080721201298,
+   "foundAt": "2026-11-09T00:54:15.329Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -7,
+   "valueAtPick": 2,
+   "projection": 2.762732696951919,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718060-17896075-assists",
+   "gameDate": "2026-11-08",
+   "gameId": 21718060,
+   "matchup": "LAL @ DET",
+   "playerId": 17896075,
+   "playerName": "Cade Cunningham",
+   "teamAbbreviation": "DET",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": 132,
+   "vendor": "caesars",
+   "modelProbability": 0.5226791720051631,
+   "evPercent": 21.261567905197865,
+   "foundAt": "2026-11-09T00:54:15.329Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -7,
+   "valueAtPick": 4,
+   "projection": 5.417208195153943,
+   "latestValue": 4,
+   "tags": [
+    "Under",
+    "Assists",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718060-38017705-rebounds",
+   "gameDate": "2026-11-08",
+   "gameId": 21718060,
+   "matchup": "LAL @ DET",
+   "playerId": 38017705,
+   "playerName": "Walker Kessler",
+   "teamAbbreviation": "LAL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 12.5,
+   "americanOdds": -104,
+   "vendor": "fanduel",
+   "modelProbability": 0.6178448872132203,
+   "evPercent": 21.192650953362445,
+   "foundAt": "2026-11-09T00:54:15.329Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 7,
+   "valueAtPick": 10,
+   "projection": 13.150720407527565,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 274,
+ "calls": 297,
  "note": null,
  "checkpointsTaken": {
   "21718059": [
@@ -1124,7 +1291,8 @@
   ],
   "21718060": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718061": [
    "end-q1"
