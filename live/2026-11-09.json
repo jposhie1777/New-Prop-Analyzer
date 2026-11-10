@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "updatedAt": "2026-11-10T03:50:20.899Z",
+ "updatedAt": "2026-11-10T03:54:19.631Z",
  "state": "running",
  "games": [
   {
@@ -41,23 +41,23 @@
   {
    "gameId": 21718071,
    "matchup": "DEN @ HOU",
-   "status": "4th Qtr",
+   "status": "Final",
    "homeScore": 110,
-   "visitorScore": 98
+   "visitorScore": 100
   },
   {
    "gameId": 21718072,
    "matchup": "SAS @ PHX",
    "status": "3rd Qtr",
    "homeScore": 68,
-   "visitorScore": 90
+   "visitorScore": 93
   },
   {
    "gameId": 21718073,
    "matchup": "NOP @ GSW",
    "status": "2nd Qtr",
-   "homeScore": 50,
-   "visitorScore": 24
+   "homeScore": 53,
+   "visitorScore": 28
   }
  ],
  "picks": [
@@ -2024,7 +2024,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 3,
+    "gradedAt": "2026-11-10T03:52:19.830Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -2057,7 +2061,11 @@
     "Already 60%+ of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 4,
+    "gradedAt": "2026-11-10T03:52:19.830Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -2089,7 +2097,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 2,
+    "gradedAt": "2026-11-10T03:52:19.830Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -2122,7 +2134,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 25,
+    "gradedAt": "2026-11-10T03:52:19.830Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -2154,7 +2170,11 @@
     "Already 60%+ of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 1,
+    "gradedAt": "2026-11-10T03:52:19.830Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -2754,7 +2774,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 41,
+    "gradedAt": "2026-11-10T03:52:19.830Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2787,7 +2811,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 12,
+    "gradedAt": "2026-11-10T03:52:19.830Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2820,7 +2848,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 2,
+    "gradedAt": "2026-11-10T03:52:19.830Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2852,7 +2884,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 1,
+    "gradedAt": "2026-11-10T03:52:19.830Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2886,7 +2922,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 42,
+    "gradedAt": "2026-11-10T03:52:19.830Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -3330,7 +3370,7 @@
    "scoreMargin": 15,
    "valueAtPick": 9,
    "projection": 15.070233781217302,
-   "latestValue": 11,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -3443,7 +3483,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 20,
+    "gradedAt": "2026-11-10T03:52:19.830Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3477,7 +3521,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 7,
+    "gradedAt": "2026-11-10T03:52:19.830Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3511,7 +3559,11 @@
     "Under 60% of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 0,
+    "gradedAt": "2026-11-10T03:52:19.830Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3544,7 +3596,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 16,
+    "gradedAt": "2026-11-10T03:52:19.830Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3577,7 +3633,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 2,
+    "gradedAt": "2026-11-10T03:52:19.830Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3750,9 +3810,181 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718072-62-points",
+   "gameDate": "2026-11-09",
+   "gameId": 21718072,
+   "matchup": "SAS @ PHX",
+   "playerId": 62,
+   "playerName": "Miles Bridges",
+   "teamAbbreviation": "PHX",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": 114,
+   "vendor": "fanduel",
+   "modelProbability": 0.570959733149057,
+   "evPercent": 22.185382893898176,
+   "foundAt": "2026-11-10T03:53:19.225Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -25,
+   "valueAtPick": 7,
+   "projection": 9.991984538486566,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718072-17895966-threes",
+   "gameDate": "2026-11-09",
+   "gameId": 21718072,
+   "matchup": "SAS @ PHX",
+   "playerId": 17895966,
+   "playerName": "Jalen Green",
+   "teamAbbreviation": "PHX",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": 320,
+   "vendor": "fanduel",
+   "modelProbability": 0.28568986703506627,
+   "evPercent": 19.98974415472783,
+   "foundAt": "2026-11-10T03:53:19.225Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -25,
+   "valueAtPick": 0,
+   "projection": 0.1066258898278846,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718072-57-points",
+   "gameDate": "2026-11-09",
+   "gameId": 21718072,
+   "matchup": "SAS @ PHX",
+   "playerId": 57,
+   "playerName": "Devin Booker",
+   "teamAbbreviation": "PHX",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 37.5,
+   "americanOdds": -112,
+   "vendor": "caesars",
+   "modelProbability": 0.6261432223618227,
+   "evPercent": 18.519967089916435,
+   "foundAt": "2026-11-10T03:53:19.225Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -25,
+   "valueAtPick": 32,
+   "projection": 36.42389612738047,
+   "latestValue": 32,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Foul trouble",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718072-1028025261-threes",
+   "gameDate": "2026-11-09",
+   "gameId": 21718072,
+   "matchup": "SAS @ PHX",
+   "playerId": 1028025261,
+   "playerName": "Stephon Castle",
+   "teamAbbreviation": "SAS",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": 260,
+   "vendor": "fanduel",
+   "modelProbability": 0.3270713173985803,
+   "evPercent": 17.74567426348892,
+   "foundAt": "2026-11-10T03:53:19.225Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 25,
+   "valueAtPick": 0,
+   "projection": 0.1886378359165207,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718072-1028036515-assists",
+   "gameDate": "2026-11-09",
+   "gameId": 21718072,
+   "matchup": "SAS @ PHX",
+   "playerId": 1028036515,
+   "playerName": "Oso Ighodaro",
+   "teamAbbreviation": "PHX",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 174,
+   "vendor": "fanduel",
+   "modelProbability": 0.40866641410863036,
+   "evPercent": 11.974597465764724,
+   "foundAt": "2026-11-10T03:53:19.225Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -25,
+   "valueAtPick": 2,
+   "projection": 2.3362381718480143,
+   "latestValue": 2,
+   "tags": [
+    "Over",
+    "Assists",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 605,
+ "calls": 617,
  "note": null,
  "checkpointsTaken": {
   "21718066": [
@@ -3787,7 +4019,8 @@
   ],
   "21718072": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718073": [
    "end-q1"
