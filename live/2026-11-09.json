@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "updatedAt": "2026-11-10T03:58:19.804Z",
+ "updatedAt": "2026-11-10T04:02:20.094Z",
  "state": "running",
  "games": [
   {
@@ -49,15 +49,15 @@
    "gameId": 21718072,
    "matchup": "SAS @ PHX",
    "status": "4th Qtr",
-   "homeScore": 70,
-   "visitorScore": 99
+   "homeScore": 73,
+   "visitorScore": 104
   },
   {
    "gameId": 21718073,
    "matchup": "NOP @ GSW",
    "status": "2nd Qtr",
-   "homeScore": 63,
-   "visitorScore": 31
+   "homeScore": 66,
+   "visitorScore": 37
   }
  ],
  "picks": [
@@ -2951,7 +2951,7 @@
    "scoreMargin": -6,
    "valueAtPick": 0,
    "projection": 5.07936262603231,
-   "latestValue": 0,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -3336,7 +3336,7 @@
    "scoreMargin": 15,
    "valueAtPick": 1,
    "projection": 1.6420810399682972,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Over",
@@ -3764,7 +3764,7 @@
    "scoreMargin": 15,
    "valueAtPick": 9,
    "projection": 27.888325277772402,
-   "latestValue": 13,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -3984,7 +3984,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 625,
+ "calls": 633,
  "note": null,
  "checkpointsTaken": {
   "21718066": [
