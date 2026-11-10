@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "updatedAt": "2026-11-10T03:34:18.952Z",
+ "updatedAt": "2026-11-10T03:38:19.057Z",
  "state": "running",
  "games": [
   {
@@ -35,29 +35,29 @@
    "gameId": 21718070,
    "matchup": "IND @ DAL",
    "status": "4th Qtr",
-   "homeScore": 123,
-   "visitorScore": 119
+   "homeScore": 125,
+   "visitorScore": 122
   },
   {
    "gameId": 21718071,
    "matchup": "DEN @ HOU",
    "status": "4th Qtr",
-   "homeScore": 93,
-   "visitorScore": 87
+   "homeScore": 96,
+   "visitorScore": 90
   },
   {
    "gameId": 21718072,
    "matchup": "SAS @ PHX",
    "status": "3rd Qtr",
-   "homeScore": 58,
-   "visitorScore": 74
+   "homeScore": 59,
+   "visitorScore": 78
   },
   {
    "gameId": 21718073,
    "matchup": "NOP @ GSW",
    "status": "1st Qtr",
-   "homeScore": 31,
-   "visitorScore": 18
+   "homeScore": 35,
+   "visitorScore": 20
   }
  ],
  "picks": [
@@ -1702,7 +1702,7 @@
    "scoreMargin": -5,
    "valueAtPick": 0,
    "projection": 9.108528714251198,
-   "latestValue": 10,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -2353,7 +2353,7 @@
    "scoreMargin": -10,
    "valueAtPick": 4,
    "projection": 8.244875193206408,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -2387,7 +2387,7 @@
    "scoreMargin": 10,
    "valueAtPick": 4,
    "projection": 6.012805967756988,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -2421,7 +2421,7 @@
    "scoreMargin": -10,
    "valueAtPick": 1,
    "projection": 3.447042023721203,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -2454,7 +2454,7 @@
    "scoreMargin": -10,
    "valueAtPick": 20,
    "projection": 35.9955202038237,
-   "latestValue": 54,
+   "latestValue": 53,
    "tags": [
     "Best bet",
     "Under",
@@ -2487,7 +2487,7 @@
    "scoreMargin": 10,
    "valueAtPick": 2,
    "projection": 2.847377538441743,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -2706,7 +2706,7 @@
    "scoreMargin": -14,
    "valueAtPick": 18,
    "projection": 38.059800140318174,
-   "latestValue": 33,
+   "latestValue": 34,
    "tags": [
     "Best bet",
     "Over",
@@ -2739,7 +2739,7 @@
    "scoreMargin": 14,
    "valueAtPick": 5,
    "projection": 10.014678057494798,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -2837,7 +2837,7 @@
    "scoreMargin": -14,
    "valueAtPick": 18,
    "projection": 34.931706756745825,
-   "latestValue": 39,
+   "latestValue": 41,
    "tags": [
     "Best bet",
     "Over",
@@ -2904,7 +2904,7 @@
    "scoreMargin": -6,
    "valueAtPick": 1,
    "projection": 6.076291600921528,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -3270,7 +3270,7 @@
    "scoreMargin": 15,
    "valueAtPick": 9,
    "projection": 15.070233781217302,
-   "latestValue": 10,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -3476,7 +3476,7 @@
    "scoreMargin": -9,
    "valueAtPick": 14,
    "projection": 16.694774928125,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Over",
     "Rebounds",
@@ -3519,9 +3519,180 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718073-24489167-rebounds",
+   "gameDate": "2026-11-09",
+   "gameId": 21718073,
+   "matchup": "NOP @ GSW",
+   "playerId": 24489167,
+   "playerName": "Brandon Williams",
+   "teamAbbreviation": "GSW",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": -104,
+   "vendor": "fanduel",
+   "modelProbability": 0.634509067530691,
+   "evPercent": 24.461394015635562,
+   "foundAt": "2026-11-10T03:37:18.640Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 15,
+   "valueAtPick": 0,
+   "projection": 2.11076073904562,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718073-38017686-rebounds_assists",
+   "gameDate": "2026-11-09",
+   "gameId": 21718073,
+   "matchup": "NOP @ GSW",
+   "playerId": 38017686,
+   "playerName": "Bennedict Mathurin",
+   "teamAbbreviation": "NOP",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": 124,
+   "vendor": "fanduel",
+   "modelProbability": 0.5541645996817814,
+   "evPercent": 24.132870328719047,
+   "foundAt": "2026-11-10T03:37:18.640Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -15,
+   "valueAtPick": 0,
+   "projection": 3.1912957718239205,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718073-313-points",
+   "gameDate": "2026-11-09",
+   "gameId": 21718073,
+   "matchup": "NOP @ GSW",
+   "playerId": 313,
+   "playerName": "De'Anthony Melton",
+   "teamAbbreviation": "GSW",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6477585893616913,
+   "evPercent": 22.61144727203441,
+   "foundAt": "2026-11-10T03:37:18.640Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 15,
+   "valueAtPick": 4,
+   "projection": 11.108432637289539,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718073-1091351802-points_assists",
+   "gameDate": "2026-11-09",
+   "gameId": 21718073,
+   "matchup": "NOP @ GSW",
+   "playerId": 1091351802,
+   "playerName": "Yaxel Lendeborg",
+   "teamAbbreviation": "GSW",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 25.5,
+   "americanOdds": -110,
+   "vendor": "fanduel",
+   "modelProbability": 0.6414561114189479,
+   "evPercent": 22.459803089071873,
+   "foundAt": "2026-11-10T03:37:18.640Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 15,
+   "valueAtPick": 9,
+   "projection": 27.888325277772402,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718073-17896024-points_rebounds_assists",
+   "gameDate": "2026-11-09",
+   "gameId": 21718073,
+   "matchup": "NOP @ GSW",
+   "playerId": 17896024,
+   "playerName": "Herbert Jones",
+   "teamAbbreviation": "NOP",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 15.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6168307880982106,
+   "evPercent": 22.156685486116224,
+   "foundAt": "2026-11-10T03:37:18.640Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -15,
+   "valueAtPick": 5,
+   "projection": 17.06544402718969,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 568,
+ "calls": 580,
  "note": null,
  "checkpointsTaken": {
   "21718066": [
@@ -3557,6 +3728,9 @@
   "21718072": [
    "end-q1",
    "halftime"
+  ],
+  "21718073": [
+   "end-q1"
   ]
  }
 }
