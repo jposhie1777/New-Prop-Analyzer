@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "updatedAt": "2026-11-10T02:14:15.591Z",
+ "updatedAt": "2026-11-10T02:18:17.049Z",
  "state": "running",
  "games": [
   {
@@ -8,28 +8,28 @@
    "matchup": "LAL @ ATL",
    "status": "4th Qtr",
    "homeScore": 109,
-   "visitorScore": 113
+   "visitorScore": 115
   },
   {
    "gameId": 21718067,
    "matchup": "CLE @ CHA",
    "status": "4th Qtr",
-   "homeScore": 123,
-   "visitorScore": 110
+   "homeScore": 124,
+   "visitorScore": 112
   },
   {
    "gameId": 21718068,
    "matchup": "WAS @ DET",
    "status": "4th Qtr",
-   "homeScore": 105,
+   "homeScore": 107,
    "visitorScore": 91
   },
   {
    "gameId": 21718069,
    "matchup": "MEM @ TOR",
    "status": "3rd Qtr",
-   "homeScore": 74,
-   "visitorScore": 81
+   "homeScore": 76,
+   "visitorScore": 85
   },
   {
    "gameId": 21718070,
@@ -42,15 +42,15 @@
    "gameId": 21718071,
    "matchup": "DEN @ HOU",
    "status": "2nd Qtr",
-   "homeScore": 41,
-   "visitorScore": 24
+   "homeScore": 47,
+   "visitorScore": 29
   },
   {
    "gameId": 21718072,
    "matchup": "SAS @ PHX",
    "status": "1st Qtr",
-   "homeScore": 2,
-   "visitorScore": 5
+   "homeScore": 7,
+   "visitorScore": 9
   },
   {
    "gameId": 21718073,
@@ -116,7 +116,7 @@
    "scoreMargin": -1,
    "valueAtPick": 0,
    "projection": 5.4420582791206655,
-   "latestValue": 16,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Under",
@@ -713,7 +713,7 @@
    "scoreMargin": 16,
    "valueAtPick": 25,
    "projection": 40.301631317349205,
-   "latestValue": 36,
+   "latestValue": 38,
    "tags": [
     "Best bet",
     "Over",
@@ -748,7 +748,7 @@
    "scoreMargin": 1,
    "valueAtPick": 5,
    "projection": 30.92617092032169,
-   "latestValue": 19,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Under",
@@ -2291,7 +2291,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 385,
+ "calls": 393,
  "note": null,
  "checkpointsTaken": {
   "21718066": [
