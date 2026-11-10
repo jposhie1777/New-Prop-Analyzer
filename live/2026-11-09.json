@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "updatedAt": "2026-11-10T04:53:50.761Z",
+ "updatedAt": "2026-11-10T04:57:50.833Z",
  "state": "running",
  "games": [
   {
@@ -55,8 +55,8 @@
   {
    "gameId": 21718073,
    "matchup": "NOP @ GSW",
-   "status": "3rd Qtr",
-   "homeScore": 111,
+   "status": "4th Qtr",
+   "homeScore": 114,
    "visitorScore": 65
   }
  ],
@@ -3804,7 +3804,7 @@
    "scoreMargin": 15,
    "valueAtPick": 9,
    "projection": 27.888325277772402,
-   "latestValue": 26,
+   "latestValue": 27,
    "tags": [
     "Best bet",
     "Over",
@@ -4201,7 +4201,7 @@
    "scoreMargin": 29,
    "valueAtPick": 15,
    "projection": 23.13796363257361,
-   "latestValue": 20,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Over",
@@ -4213,9 +4213,146 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718073-1057267077-points",
+   "gameDate": "2026-11-09",
+   "gameId": 21718073,
+   "matchup": "NOP @ GSW",
+   "playerId": 1057267077,
+   "playerName": "Jeremiah Fears",
+   "teamAbbreviation": "NOP",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 12.5,
+   "americanOdds": -125,
+   "vendor": "draftkings",
+   "modelProbability": 0.6579814096991752,
+   "evPercent": 18.43665374585153,
+   "foundAt": "2026-11-10T04:54:50.424Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -47,
+   "valueAtPick": 11,
+   "projection": 13.529510063732273,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718073-38017686-points",
+   "gameDate": "2026-11-09",
+   "gameId": 21718073,
+   "matchup": "NOP @ GSW",
+   "playerId": 38017686,
+   "playerName": "Bennedict Mathurin",
+   "teamAbbreviation": "NOP",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 6.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.5933602801135991,
+   "evPercent": 17.50860449308531,
+   "foundAt": "2026-11-10T04:54:50.424Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -47,
+   "valueAtPick": 4,
+   "projection": 5.972369516767826,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718073-666848-threes",
+   "gameDate": "2026-11-09",
+   "gameId": 21718073,
+   "matchup": "NOP @ GSW",
+   "playerId": 666848,
+   "playerName": "Jordan Poole",
+   "teamAbbreviation": "NOP",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": -175,
+   "vendor": "draftkings",
+   "modelProbability": 0.6987483460951391,
+   "evPercent": 9.803311529236147,
+   "foundAt": "2026-11-10T04:54:50.424Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -47,
+   "valueAtPick": 1,
+   "projection": 1.1380506034638727,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718073-1057274415-rebounds",
+   "gameDate": "2026-11-09",
+   "gameId": 21718073,
+   "matchup": "NOP @ GSW",
+   "playerId": 1057274415,
+   "playerName": "Derik Queen",
+   "teamAbbreviation": "NOP",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": -120,
+   "vendor": "draftkings",
+   "modelProbability": 0.5754263550511658,
+   "evPercent": 5.494831759380414,
+   "foundAt": "2026-11-10T04:54:50.424Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -47,
+   "valueAtPick": 4,
+   "projection": 5.240928569062557,
+   "latestValue": 4,
+   "tags": [
+    "Under",
+    "Rebounds",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 69,
+ "calls": 82,
  "note": null,
  "checkpointsTaken": {
   "21718066": [
@@ -4255,7 +4392,8 @@
   ],
   "21718073": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ]
  }
 }
