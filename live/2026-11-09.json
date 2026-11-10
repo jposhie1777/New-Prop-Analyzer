@@ -1,28 +1,28 @@
 {
  "date": "2026-11-09",
- "updatedAt": "2026-11-10T01:46:14.555Z",
+ "updatedAt": "2026-11-10T01:50:17.591Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718066,
    "matchup": "LAL @ ATL",
    "status": "3rd Qtr",
-   "homeScore": 87,
-   "visitorScore": 91
+   "homeScore": 89,
+   "visitorScore": 93
   },
   {
    "gameId": 21718067,
    "matchup": "CLE @ CHA",
-   "status": "3rd Qtr",
-   "homeScore": 104,
+   "status": "4th Qtr",
+   "homeScore": 107,
    "visitorScore": 80
   },
   {
    "gameId": 21718068,
    "matchup": "WAS @ DET",
    "status": "3rd Qtr",
-   "homeScore": 77,
-   "visitorScore": 62
+   "homeScore": 80,
+   "visitorScore": 64
   },
   {
    "gameId": 21718069,
@@ -35,15 +35,15 @@
    "gameId": 21718070,
    "matchup": "IND @ DAL",
    "status": "2nd Qtr",
-   "homeScore": 31,
-   "visitorScore": 35
+   "homeScore": 41,
+   "visitorScore": 39
   },
   {
    "gameId": 21718071,
    "matchup": "DEN @ HOU",
    "status": "1st Qtr",
-   "homeScore": 7,
-   "visitorScore": 6
+   "homeScore": 14,
+   "visitorScore": 13
   },
   {
    "gameId": 21718072,
@@ -1552,9 +1552,79 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718067-208-assists",
+   "gameDate": "2026-11-09",
+   "gameId": 21718067,
+   "matchup": "CLE @ CHA",
+   "playerId": 208,
+   "playerName": "Mario Hezonja",
+   "teamAbbreviation": "CLE",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 0.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6110265868794564,
+   "evPercent": 23.427370549650206,
+   "foundAt": "2026-11-10T01:47:14.032Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -27,
+   "valueAtPick": 0,
+   "projection": 0.30849255859375,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718067-8-points",
+   "gameDate": "2026-11-09",
+   "gameId": 21718067,
+   "matchup": "CLE @ CHA",
+   "playerId": 8,
+   "playerName": "Grayson Allen",
+   "teamAbbreviation": "CHA",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 29.5,
+   "americanOdds": -152,
+   "vendor": "fanduel",
+   "modelProbability": 0.7001017186518617,
+   "evPercent": 16.069495460703376,
+   "foundAt": "2026-11-10T01:47:14.032Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 27,
+   "valueAtPick": 27,
+   "projection": 31.213019488002402,
+   "latestValue": 27,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 313,
+ "calls": 324,
  "note": null,
  "checkpointsTaken": {
   "21718066": [
@@ -1563,7 +1633,8 @@
   ],
   "21718067": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718068": [
    "end-q1",
