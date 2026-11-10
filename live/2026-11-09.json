@@ -1,13 +1,13 @@
 {
  "date": "2026-11-09",
- "updatedAt": "2026-11-10T01:27:13.794Z",
+ "updatedAt": "2026-11-10T01:30:17.074Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718066,
    "matchup": "LAL @ ATL",
    "status": "3rd Qtr",
-   "homeScore": 57,
+   "homeScore": 61,
    "visitorScore": 72
   },
   {
@@ -29,13 +29,13 @@
    "matchup": "MEM @ TOR",
    "status": "2nd Qtr",
    "homeScore": 41,
-   "visitorScore": 42
+   "visitorScore": 46
   },
   {
    "gameId": 21718070,
    "matchup": "IND @ DAL",
    "status": "1st Qtr",
-   "homeScore": 19,
+   "homeScore": 20,
    "visitorScore": 23
   },
   {
@@ -280,7 +280,7 @@
    "scoreMargin": -9,
    "valueAtPick": 2,
    "projection": 17.346820341777814,
-   "latestValue": 11,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -880,7 +880,7 @@
    "scoreMargin": -1,
    "valueAtPick": 0,
    "projection": 5.439042747842153,
-   "latestValue": 0,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -913,7 +913,7 @@
    "scoreMargin": 11,
    "valueAtPick": 7,
    "projection": 14.127303388181172,
-   "latestValue": 7,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -1011,7 +1011,7 @@
    "scoreMargin": -11,
    "valueAtPick": 12,
    "projection": 23.66306914693292,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -1222,7 +1222,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 268,
+ "calls": 274,
  "note": null,
  "checkpointsTaken": {
   "21718066": [
