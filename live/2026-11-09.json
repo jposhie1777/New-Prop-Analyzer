@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "updatedAt": "2026-11-10T04:06:20.100Z",
+ "updatedAt": "2026-11-10T04:10:20.400Z",
  "state": "running",
  "games": [
   {
@@ -49,8 +49,8 @@
    "gameId": 21718072,
    "matchup": "SAS @ PHX",
    "status": "4th Qtr",
-   "homeScore": 77,
-   "visitorScore": 107
+   "homeScore": 86,
+   "visitorScore": 114
   },
   {
    "gameId": 21718073,
@@ -2951,7 +2951,7 @@
    "scoreMargin": -6,
    "valueAtPick": 0,
    "projection": 5.07936262603231,
-   "latestValue": 3,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -3440,7 +3440,7 @@
    "scoreMargin": -15,
    "valueAtPick": 8,
    "projection": 13.060068840084632,
-   "latestValue": 14,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Under",
@@ -3982,9 +3982,180 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718073-1057274415-points",
+   "gameDate": "2026-11-09",
+   "gameId": 21718073,
+   "matchup": "NOP @ GSW",
+   "playerId": 1057274415,
+   "playerName": "Derik Queen",
+   "teamAbbreviation": "NOP",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 15.5,
+   "americanOdds": 100,
+   "vendor": "draftkings",
+   "modelProbability": 0.6249540738372414,
+   "evPercent": 24.99081476744829,
+   "foundAt": "2026-11-10T04:08:19.879Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -29,
+   "valueAtPick": 10,
+   "projection": 14.43326470914886,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718073-344-rebounds",
+   "gameDate": "2026-11-09",
+   "gameId": 21718073,
+   "matchup": "NOP @ GSW",
+   "playerId": 344,
+   "playerName": "Georges Niang",
+   "teamAbbreviation": "GSW",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -154,
+   "vendor": "draftkings",
+   "modelProbability": 0.7541857321033075,
+   "evPercent": 24.39167269755851,
+   "foundAt": "2026-11-10T04:08:19.879Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 29,
+   "valueAtPick": 1,
+   "projection": 1.7646843560205854,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718073-1057267077-threes",
+   "gameDate": "2026-11-09",
+   "gameId": 21718073,
+   "matchup": "NOP @ GSW",
+   "playerId": 1057267077,
+   "playerName": "Jeremiah Fears",
+   "teamAbbreviation": "NOP",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 118,
+   "vendor": "fanduel",
+   "modelProbability": 0.5665618323123152,
+   "evPercent": 23.510479444084687,
+   "foundAt": "2026-11-10T04:08:19.879Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -29,
+   "valueAtPick": 1,
+   "projection": 1.6747095400897791,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718073-334-threes",
+   "gameDate": "2026-11-09",
+   "gameId": 21718073,
+   "matchup": "NOP @ GSW",
+   "playerId": 334,
+   "playerName": "Dejounte Murray",
+   "teamAbbreviation": "NOP",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": 135,
+   "vendor": "draftkings",
+   "modelProbability": 0.5228243874389753,
+   "evPercent": 22.863731048159195,
+   "foundAt": "2026-11-10T04:08:19.879Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -29,
+   "valueAtPick": 0,
+   "projection": 0.5540652577028211,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718073-56677858-points",
+   "gameDate": "2026-11-09",
+   "gameId": 21718073,
+   "matchup": "NOP @ GSW",
+   "playerId": 56677858,
+   "playerName": "Brandin Podziemski",
+   "teamAbbreviation": "GSW",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 21.5,
+   "americanOdds": -110,
+   "vendor": "betmgm",
+   "modelProbability": 0.6409436645772307,
+   "evPercent": 22.361972328380418,
+   "foundAt": "2026-11-10T04:08:19.879Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 29,
+   "valueAtPick": 15,
+   "projection": 23.13796363257361,
+   "latestValue": 15,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 641,
+ "calls": 652,
  "note": null,
  "checkpointsTaken": {
   "21718066": [
@@ -4023,7 +4194,8 @@
    "end-q3"
   ],
   "21718073": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
