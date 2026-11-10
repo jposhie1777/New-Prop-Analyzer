@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "updatedAt": "2026-11-10T03:42:19.272Z",
+ "updatedAt": "2026-11-10T03:46:19.450Z",
  "state": "running",
  "games": [
   {
@@ -42,15 +42,15 @@
    "gameId": 21718071,
    "matchup": "DEN @ HOU",
    "status": "4th Qtr",
-   "homeScore": 98,
-   "visitorScore": 90
+   "homeScore": 106,
+   "visitorScore": 98
   },
   {
    "gameId": 21718072,
    "matchup": "SAS @ PHX",
    "status": "3rd Qtr",
-   "homeScore": 61,
-   "visitorScore": 78
+   "homeScore": 66,
+   "visitorScore": 85
   },
   {
    "gameId": 21718073,
@@ -2114,7 +2114,7 @@
    "scoreMargin": -8,
    "valueAtPick": 6,
    "projection": 23.121354015427208,
-   "latestValue": 19,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Over",
@@ -2746,7 +2746,7 @@
    "scoreMargin": -14,
    "valueAtPick": 18,
    "projection": 38.059800140318174,
-   "latestValue": 34,
+   "latestValue": 41,
    "tags": [
     "Best bet",
     "Over",
@@ -2779,7 +2779,7 @@
    "scoreMargin": 14,
    "valueAtPick": 5,
    "projection": 10.014678057494798,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -2877,7 +2877,7 @@
    "scoreMargin": -14,
    "valueAtPick": 18,
    "projection": 34.931706756745825,
-   "latestValue": 40,
+   "latestValue": 42,
    "tags": [
     "Best bet",
     "Over",
@@ -3434,7 +3434,7 @@
    "scoreMargin": 9,
    "valueAtPick": 16,
    "projection": 17.637235806276706,
-   "latestValue": 18,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -3536,7 +3536,7 @@
    "scoreMargin": -9,
    "valueAtPick": 14,
    "projection": 16.694774928125,
-   "latestValue": 15,
+   "latestValue": 16,
    "tags": [
     "Over",
     "Rebounds",
@@ -3752,7 +3752,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 589,
+ "calls": 597,
  "note": null,
  "checkpointsTaken": {
   "21718066": [
