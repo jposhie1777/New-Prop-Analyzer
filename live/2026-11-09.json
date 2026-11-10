@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "updatedAt": "2026-11-10T04:37:50.073Z",
+ "updatedAt": "2026-11-10T04:41:50.179Z",
  "state": "running",
  "games": [
   {
@@ -56,8 +56,8 @@
    "gameId": 21718073,
    "matchup": "NOP @ GSW",
    "status": "3rd Qtr",
-   "homeScore": 87,
-   "visitorScore": 58
+   "homeScore": 94,
+   "visitorScore": 61
   }
  ],
  "picks": [
@@ -3804,7 +3804,7 @@
    "scoreMargin": 15,
    "valueAtPick": 9,
    "projection": 27.888325277772402,
-   "latestValue": 19,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Over",
@@ -3838,7 +3838,7 @@
    "scoreMargin": -15,
    "valueAtPick": 5,
    "projection": 17.06544402718969,
-   "latestValue": 13,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Over",
@@ -4215,7 +4215,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 37,
+ "calls": 45,
  "note": null,
  "checkpointsTaken": {
   "21718066": [
