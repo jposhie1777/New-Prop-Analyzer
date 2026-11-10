@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "updatedAt": "2026-11-10T04:21:20.652Z",
+ "updatedAt": "2026-11-10T04:21:49.396Z",
  "state": "running",
  "games": [
   {
@@ -4215,8 +4215,8 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 675,
- "note": "This run hit its time limit; the next scheduled run continues.",
+ "calls": 5,
+ "note": null,
  "checkpointsTaken": {
   "21718066": [
    "end-q1",
