@@ -1,28 +1,28 @@
 {
  "date": "2026-11-09",
- "updatedAt": "2026-11-09T23:50:09.934Z",
+ "updatedAt": "2026-11-10T00:35:12.734Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718066,
    "matchup": "LAL @ ATL",
-   "status": "2026-11-10T00:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 22,
+   "visitorScore": 28
   },
   {
    "gameId": 21718067,
    "matchup": "CLE @ CHA",
-   "status": "2026-11-10T00:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "2nd Qtr",
+   "homeScore": 29,
+   "visitorScore": 28
   },
   {
    "gameId": 21718068,
    "matchup": "WAS @ DET",
-   "status": "2026-11-10T00:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 24,
+   "visitorScore": 24
   },
   {
    "gameId": 21718069,
@@ -60,7 +60,177 @@
    "visitorScore": 0
   }
  ],
- "picks": [],
- "calls": 48,
- "note": null
+ "picks": [
+  {
+   "pickId": "21718067-17896076-rebounds_assists",
+   "gameDate": "2026-11-09",
+   "gameId": 21718067,
+   "matchup": "CLE @ CHA",
+   "playerId": 17896076,
+   "playerName": "Evan Mobley",
+   "teamAbbreviation": "CLE",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 8.5,
+   "americanOdds": -110,
+   "vendor": "fanduel",
+   "modelProbability": 0.6441583815621595,
+   "evPercent": 22.97569102550319,
+   "foundAt": "2026-11-10T00:35:11.264Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -1,
+   "valueAtPick": 0,
+   "projection": 7.238291871107041,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718067-1091467074-points",
+   "gameDate": "2026-11-09",
+   "gameId": 21718067,
+   "matchup": "CLE @ CHA",
+   "playerId": 1091467074,
+   "playerName": "Meleek Thomas",
+   "teamAbbreviation": "CLE",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 6.5,
+   "americanOdds": -105,
+   "vendor": "draftkings",
+   "modelProbability": 0.6122218701768518,
+   "evPercent": 19.52903179643297,
+   "foundAt": "2026-11-10T00:35:11.264Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -1,
+   "valueAtPick": 0,
+   "projection": 5.4420582791206655,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718067-208-rebounds",
+   "gameDate": "2026-11-09",
+   "gameId": 21718067,
+   "matchup": "CLE @ CHA",
+   "playerId": 208,
+   "playerName": "Mario Hezonja",
+   "teamAbbreviation": "CLE",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": 110,
+   "vendor": "draftkings",
+   "modelProbability": 0.5669740066747931,
+   "evPercent": 19.06454140170657,
+   "foundAt": "2026-11-10T00:35:11.264Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -1,
+   "valueAtPick": 0,
+   "projection": 3.134842562364158,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718067-38017721-rebounds",
+   "gameDate": "2026-11-09",
+   "gameId": 21718067,
+   "matchup": "CLE @ CHA",
+   "playerId": 38017721,
+   "playerName": "Peyton Watson",
+   "teamAbbreviation": "CLE",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 134,
+   "vendor": "fanduel",
+   "modelProbability": 0.4955371832922566,
+   "evPercent": 15.955700890388048,
+   "foundAt": "2026-11-10T00:35:11.264Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -1,
+   "valueAtPick": 0,
+   "projection": 3.4745039693368844,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718067-192-assists",
+   "gameDate": "2026-11-09",
+   "gameId": 21718067,
+   "matchup": "CLE @ CHA",
+   "playerId": 192,
+   "playerName": "James Harden",
+   "teamAbbreviation": "CLE",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 8.5,
+   "americanOdds": 100,
+   "vendor": "fanduel",
+   "modelProbability": 0.5774370353746549,
+   "evPercent": 15.487407074930971,
+   "foundAt": "2026-11-10T00:35:11.264Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -1,
+   "valueAtPick": 4,
+   "projection": 9.035990094487396,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  }
+ ],
+ "calls": 143,
+ "note": null,
+ "checkpointsTaken": {
+  "21718067": [
+   "end-q1"
+  ]
+ }
 }
