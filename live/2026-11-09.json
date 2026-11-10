@@ -1,26 +1,26 @@
 {
  "date": "2026-11-09",
- "updatedAt": "2026-11-10T00:43:11.862Z",
+ "updatedAt": "2026-11-10T00:47:11.902Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718066,
    "matchup": "LAL @ ATL",
    "status": "2nd Qtr",
-   "homeScore": 27,
+   "homeScore": 30,
    "visitorScore": 41
   },
   {
    "gameId": 21718067,
    "matchup": "CLE @ CHA",
    "status": "2nd Qtr",
-   "homeScore": 47,
+   "homeScore": 49,
    "visitorScore": 39
   },
   {
    "gameId": 21718068,
    "matchup": "WAS @ DET",
-   "status": "1st Qtr",
+   "status": "2nd Qtr",
    "homeScore": 31,
    "visitorScore": 32
   },
@@ -28,7 +28,7 @@
    "gameId": 21718069,
    "matchup": "MEM @ TOR",
    "status": "1st Qtr",
-   "homeScore": 0,
+   "homeScore": 4,
    "visitorScore": 0
   },
   {
@@ -389,15 +389,182 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718068-1028026060-assists",
+   "gameDate": "2026-11-09",
+   "gameId": 21718068,
+   "matchup": "WAS @ DET",
+   "playerId": 1028026060,
+   "playerName": "KyShawn George",
+   "teamAbbreviation": "WAS",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": 140,
+   "vendor": "fanduel",
+   "modelProbability": 0.5105391246884892,
+   "evPercent": 22.529389925237385,
+   "foundAt": "2026-11-10T00:44:11.541Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 1,
+   "valueAtPick": 1,
+   "projection": 4.5609603061347865,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718068-397-points_rebounds_assists",
+   "gameDate": "2026-11-09",
+   "gameId": 21718068,
+   "matchup": "WAS @ DET",
+   "playerId": 397,
+   "playerName": "Duncan Robinson",
+   "teamAbbreviation": "DET",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 20.5,
+   "americanOdds": -106,
+   "vendor": "fanduel",
+   "modelProbability": 0.611755432786107,
+   "evPercent": 18.888319956545317,
+   "foundAt": "2026-11-10T00:44:11.541Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -1,
+   "valueAtPick": 6,
+   "projection": 22.23479748458249,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718068-1028028405-points_assists",
+   "gameDate": "2026-11-09",
+   "gameId": 21718068,
+   "matchup": "WAS @ DET",
+   "playerId": 1028028405,
+   "playerName": "Alexandre Sarr",
+   "teamAbbreviation": "WAS",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 10.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.5978467608761897,
+   "evPercent": 18.39710362450031,
+   "foundAt": "2026-11-10T00:44:11.541Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 1,
+   "valueAtPick": 2,
+   "projection": 9.472771464319568,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718068-101-rebounds",
+   "gameDate": "2026-11-09",
+   "gameId": 21718068,
+   "matchup": "WAS @ DET",
+   "playerId": 101,
+   "playerName": "John Collins",
+   "teamAbbreviation": "DET",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": -118,
+   "vendor": "caesars",
+   "modelProbability": 0.6392461974490492,
+   "evPercent": 18.098026308383663,
+   "foundAt": "2026-11-10T00:44:11.541Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -1,
+   "valueAtPick": 1,
+   "projection": 4.6655808,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718068-490-threes",
+   "gameDate": "2026-11-09",
+   "gameId": 21718068,
+   "matchup": "WAS @ DET",
+   "playerId": 490,
+   "playerName": "Trae Young",
+   "teamAbbreviation": "WAS",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 122,
+   "vendor": "fanduel",
+   "modelProbability": 0.5240476839349016,
+   "evPercent": 16.338585833548148,
+   "foundAt": "2026-11-10T00:44:11.541Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 1,
+   "valueAtPick": 2,
+   "projection": 3.5967053538227804,
+   "latestValue": 2,
+   "tags": [
+    "Over",
+    "3PM",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 163,
+ "calls": 175,
  "note": null,
  "checkpointsTaken": {
   "21718066": [
    "end-q1"
   ],
   "21718067": [
+   "end-q1"
+  ],
+  "21718068": [
    "end-q1"
   ]
  }
