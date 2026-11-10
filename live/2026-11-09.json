@@ -1,33 +1,33 @@
 {
  "date": "2026-11-09",
- "updatedAt": "2026-11-10T01:50:17.591Z",
+ "updatedAt": "2026-11-10T01:54:14.955Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718066,
    "matchup": "LAL @ ATL",
-   "status": "3rd Qtr",
-   "homeScore": 89,
-   "visitorScore": 93
+   "status": "4th Qtr",
+   "homeScore": 90,
+   "visitorScore": 95
   },
   {
    "gameId": 21718067,
    "matchup": "CLE @ CHA",
    "status": "4th Qtr",
    "homeScore": 107,
-   "visitorScore": 80
+   "visitorScore": 85
   },
   {
    "gameId": 21718068,
    "matchup": "WAS @ DET",
    "status": "3rd Qtr",
-   "homeScore": 80,
-   "visitorScore": 64
+   "homeScore": 82,
+   "visitorScore": 71
   },
   {
    "gameId": 21718069,
    "matchup": "MEM @ TOR",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 53,
    "visitorScore": 59
   },
@@ -35,15 +35,15 @@
    "gameId": 21718070,
    "matchup": "IND @ DAL",
    "status": "2nd Qtr",
-   "homeScore": 41,
-   "visitorScore": 39
+   "homeScore": 43,
+   "visitorScore": 42
   },
   {
    "gameId": 21718071,
    "matchup": "DEN @ HOU",
    "status": "1st Qtr",
-   "homeScore": 14,
-   "visitorScore": 13
+   "homeScore": 19,
+   "visitorScore": 16
   },
   {
    "gameId": 21718072,
@@ -116,7 +116,7 @@
    "scoreMargin": -1,
    "valueAtPick": 0,
    "projection": 5.4420582791206655,
-   "latestValue": 6,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -543,7 +543,7 @@
    "scoreMargin": 1,
    "valueAtPick": 2,
    "projection": 3.5967053538227804,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Over",
     "3PM",
@@ -1509,7 +1509,7 @@
    "scoreMargin": 5,
    "valueAtPick": 7,
    "projection": 19.644758895835157,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -1622,14 +1622,178 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718066-17896059-threes",
+   "gameDate": "2026-11-09",
+   "gameId": 21718066,
+   "matchup": "LAL @ ATL",
+   "playerId": 17896059,
+   "playerName": "Sandro Mamukelashvili",
+   "teamAbbreviation": "LAL",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": 174,
+   "vendor": "fanduel",
+   "modelProbability": 0.45487348269723904,
+   "evPercent": 24.635334259043518,
+   "foundAt": "2026-11-10T01:51:14.162Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 5,
+   "valueAtPick": 4,
+   "projection": 4.4081130601471665,
+   "latestValue": 4,
+   "tags": [
+    "Over",
+    "3PM",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718066-38017705-assists",
+   "gameDate": "2026-11-09",
+   "gameId": 21718066,
+   "matchup": "LAL @ ATL",
+   "playerId": 38017705,
+   "playerName": "Walker Kessler",
+   "teamAbbreviation": "LAL",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 225,
+   "vendor": "fanduel",
+   "modelProbability": 0.3805604303299487,
+   "evPercent": 23.68213985723333,
+   "foundAt": "2026-11-10T01:51:14.162Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 5,
+   "valueAtPick": 2,
+   "projection": 2.296404465794188,
+   "latestValue": 2,
+   "tags": [
+    "Over",
+    "Assists",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718066-413-threes",
+   "gameDate": "2026-11-09",
+   "gameId": 21718066,
+   "matchup": "LAL @ ATL",
+   "playerId": 413,
+   "playerName": "Collin Sexton",
+   "teamAbbreviation": "LAL",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 210,
+   "vendor": "fanduel",
+   "modelProbability": 0.39171103368831894,
+   "evPercent": 21.430420443378885,
+   "foundAt": "2026-11-10T01:51:14.162Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 5,
+   "valueAtPick": 2,
+   "projection": 2.306817301874854,
+   "latestValue": 2,
+   "tags": [
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718066-132-threes",
+   "gameDate": "2026-11-09",
+   "gameId": 21718066,
+   "matchup": "LAL @ ATL",
+   "playerId": 132,
+   "playerName": "Luka Doncic",
+   "teamAbbreviation": "LAL",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": -197,
+   "vendor": "caesars",
+   "modelProbability": 0.7929018071331033,
+   "evPercent": 19.53900341042216,
+   "foundAt": "2026-11-10T01:51:14.162Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 5,
+   "valueAtPick": 3,
+   "projection": 3.6589617810408295,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718066-38017677-assists",
+   "gameDate": "2026-11-09",
+   "gameId": 21718066,
+   "matchup": "LAL @ ATL",
+   "playerId": 38017677,
+   "playerName": "Dyson Daniels",
+   "teamAbbreviation": "ATL",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 8.5,
+   "americanOdds": 164,
+   "vendor": "fanduel",
+   "modelProbability": 0.4513041025781789,
+   "evPercent": 19.1442830806392,
+   "foundAt": "2026-11-10T01:51:14.162Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -5,
+   "valueAtPick": 7,
+   "projection": 8.327606839519108,
+   "latestValue": 7,
+   "tags": [
+    "Over",
+    "Assists",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 324,
+ "calls": 335,
  "note": null,
  "checkpointsTaken": {
   "21718066": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718067": [
    "end-q1",
