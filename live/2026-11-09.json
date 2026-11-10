@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "updatedAt": "2026-11-10T03:14:18.044Z",
+ "updatedAt": "2026-11-10T03:18:18.736Z",
  "state": "running",
  "games": [
   {
@@ -35,15 +35,15 @@
    "gameId": 21718070,
    "matchup": "IND @ DAL",
    "status": "4th Qtr",
-   "homeScore": 108,
-   "visitorScore": 105
+   "homeScore": 113,
+   "visitorScore": 108
   },
   {
    "gameId": 21718071,
    "matchup": "DEN @ HOU",
    "status": "3rd Qtr",
-   "homeScore": 73,
-   "visitorScore": 66
+   "homeScore": 77,
+   "visitorScore": 68
   },
   {
    "gameId": 21718072,
@@ -56,8 +56,8 @@
    "gameId": 21718073,
    "matchup": "NOP @ GSW",
    "status": "1st Qtr",
-   "homeScore": 8,
-   "visitorScore": 3
+   "homeScore": 16,
+   "visitorScore": 9
   }
  ],
  "picks": [
@@ -1636,7 +1636,7 @@
    "scoreMargin": -5,
    "valueAtPick": 11,
    "projection": 32.276667023208105,
-   "latestValue": 40,
+   "latestValue": 43,
    "tags": [
     "Best bet",
     "Under",
@@ -2454,7 +2454,7 @@
    "scoreMargin": -10,
    "valueAtPick": 20,
    "projection": 35.9955202038237,
-   "latestValue": 44,
+   "latestValue": 47,
    "tags": [
     "Best bet",
     "Under",
@@ -2706,7 +2706,7 @@
    "scoreMargin": -14,
    "valueAtPick": 18,
    "projection": 38.059800140318174,
-   "latestValue": 34,
+   "latestValue": 33,
    "tags": [
     "Best bet",
     "Over",
@@ -2937,7 +2937,7 @@
    "scoreMargin": 6,
    "valueAtPick": 1,
    "projection": 4.801007094071954,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Over",
@@ -3036,7 +3036,7 @@
    "scoreMargin": 3,
    "valueAtPick": 16,
    "projection": 21.187375101019757,
-   "latestValue": 19,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Under",
@@ -3351,9 +3351,177 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718071-140-rebounds_assists",
+   "gameDate": "2026-11-09",
+   "gameId": 21718071,
+   "matchup": "DEN @ HOU",
+   "playerId": 140,
+   "playerName": "Kevin Durant",
+   "teamAbbreviation": "HOU",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 18.5,
+   "americanOdds": -132,
+   "vendor": "fanduel",
+   "modelProbability": 0.7024300581115402,
+   "evPercent": 23.45740415293738,
+   "foundAt": "2026-11-10T03:18:17.840Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 9,
+   "valueAtPick": 16,
+   "projection": 17.637235806276706,
+   "latestValue": 16,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718071-38017684-rebounds",
+   "gameDate": "2026-11-09",
+   "gameId": 21718071,
+   "matchup": "DEN @ HOU",
+   "playerId": 38017684,
+   "playerName": "Jabari Smith Jr.",
+   "teamAbbreviation": "HOU",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 7.5,
+   "americanOdds": 122,
+   "vendor": "fanduel",
+   "modelProbability": 0.5545436208494613,
+   "evPercent": 23.1086838285804,
+   "foundAt": "2026-11-10T03:18:17.840Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 9,
+   "valueAtPick": 6,
+   "projection": 7.719921875,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718071-177-threes",
+   "gameDate": "2026-11-09",
+   "gameId": 21718071,
+   "matchup": "DEN @ HOU",
+   "playerId": 177,
+   "playerName": "Aaron Gordon",
+   "teamAbbreviation": "DEN",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": 230,
+   "vendor": "fanduel",
+   "modelProbability": 0.3689998009896187,
+   "evPercent": 21.76993432657417,
+   "foundAt": "2026-11-10T03:18:17.840Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -9,
+   "valueAtPick": 0,
+   "projection": 0.2675259146341463,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "3PM",
+    "Foul trouble",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718071-246-rebounds",
+   "gameDate": "2026-11-09",
+   "gameId": 21718071,
+   "matchup": "DEN @ HOU",
+   "playerId": 246,
+   "playerName": "Nikola Jokic",
+   "teamAbbreviation": "DEN",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 16.5,
+   "americanOdds": 124,
+   "vendor": "draftkings",
+   "modelProbability": 0.5386527816647046,
+   "evPercent": 20.658223092893845,
+   "foundAt": "2026-11-10T03:18:17.840Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -9,
+   "valueAtPick": 14,
+   "projection": 16.694774928125,
+   "latestValue": 14,
+   "tags": [
+    "Over",
+    "Rebounds",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718071-666679-threes",
+   "gameDate": "2026-11-09",
+   "gameId": 21718071,
+   "matchup": "DEN @ HOU",
+   "playerId": 666679,
+   "playerName": "Cameron Johnson",
+   "teamAbbreviation": "DEN",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 178,
+   "vendor": "fanduel",
+   "modelProbability": 0.4273251883478122,
+   "evPercent": 18.7964023606918,
+   "foundAt": "2026-11-10T03:18:17.840Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -9,
+   "valueAtPick": 2,
+   "projection": 2.3604491641746916,
+   "latestValue": 2,
+   "tags": [
+    "Over",
+    "3PM",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 525,
+ "calls": 536,
  "note": null,
  "checkpointsTaken": {
   "21718066": [
@@ -3383,7 +3551,8 @@
   ],
   "21718071": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718072": [
    "end-q1",
