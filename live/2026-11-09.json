@@ -1,19 +1,19 @@
 {
  "date": "2026-11-09",
- "updatedAt": "2026-11-10T02:18:17.049Z",
+ "updatedAt": "2026-11-10T02:22:17.268Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718066,
    "matchup": "LAL @ ATL",
    "status": "4th Qtr",
-   "homeScore": 109,
-   "visitorScore": 115
+   "homeScore": 114,
+   "visitorScore": 124
   },
   {
    "gameId": 21718067,
    "matchup": "CLE @ CHA",
-   "status": "4th Qtr",
+   "status": "Final",
    "homeScore": 124,
    "visitorScore": 112
   },
@@ -21,15 +21,15 @@
    "gameId": 21718068,
    "matchup": "WAS @ DET",
    "status": "4th Qtr",
-   "homeScore": 107,
+   "homeScore": 108,
    "visitorScore": 91
   },
   {
    "gameId": 21718069,
    "matchup": "MEM @ TOR",
-   "status": "3rd Qtr",
-   "homeScore": 76,
-   "visitorScore": 85
+   "status": "4th Qtr",
+   "homeScore": 81,
+   "visitorScore": 89
   },
   {
    "gameId": 21718070,
@@ -49,8 +49,8 @@
    "gameId": 21718072,
    "matchup": "SAS @ PHX",
    "status": "1st Qtr",
-   "homeScore": 7,
-   "visitorScore": 9
+   "homeScore": 9,
+   "visitorScore": 11
   },
   {
    "gameId": 21718073,
@@ -91,7 +91,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 5,
+    "gradedAt": "2026-11-10T02:20:22.669Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -124,7 +128,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 18,
+    "gradedAt": "2026-11-10T02:20:22.669Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -157,7 +165,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 3,
+    "gradedAt": "2026-11-10T02:20:22.669Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -189,7 +201,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 2,
+    "gradedAt": "2026-11-10T02:20:22.669Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -222,7 +238,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 5,
+    "gradedAt": "2026-11-10T02:20:22.669Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -346,7 +366,7 @@
    "scoreMargin": 9,
    "valueAtPick": 5,
    "projection": 9.812049840139323,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -510,7 +530,7 @@
    "scoreMargin": -1,
    "valueAtPick": 1,
    "projection": 4.6655808,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -586,7 +606,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 11,
+    "gradedAt": "2026-11-10T02:20:22.669Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -620,7 +644,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 4,
+    "gradedAt": "2026-11-10T02:20:22.669Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -655,7 +683,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 6,
+    "gradedAt": "2026-11-10T02:20:22.669Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -688,7 +720,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 11,
+    "gradedAt": "2026-11-10T02:20:22.669Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -723,7 +759,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 38,
+    "gradedAt": "2026-11-10T02:20:22.669Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -814,7 +854,7 @@
    "scoreMargin": 1,
    "valueAtPick": 1,
    "projection": 8.16535076353906,
-   "latestValue": 13,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Over",
@@ -847,7 +887,7 @@
    "scoreMargin": -1,
    "valueAtPick": 2,
    "projection": 13.134907175643857,
-   "latestValue": 10,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -978,7 +1018,7 @@
    "scoreMargin": -11,
    "valueAtPick": 3,
    "projection": 6.719424699538468,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -1044,7 +1084,7 @@
    "scoreMargin": -11,
    "valueAtPick": 0,
    "projection": 0.4116077651854432,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Under",
     "3PM",
@@ -1310,7 +1350,7 @@
    "scoreMargin": -6,
    "valueAtPick": 18,
    "projection": 28.26436021681294,
-   "latestValue": 18,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -1585,7 +1625,11 @@
     "Under 60% of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 0,
+    "gradedAt": "2026-11-10T02:20:22.669Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -1620,7 +1664,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 27,
+    "gradedAt": "2026-11-10T02:20:22.669Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -1775,7 +1823,7 @@
    "scoreMargin": -5,
    "valueAtPick": 7,
    "projection": 8.327606839519108,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Over",
     "Assists",
@@ -1874,7 +1922,7 @@
    "scoreMargin": -8,
    "valueAtPick": 0,
    "projection": 2.3172670572916667,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Under",
     "Rebounds",
@@ -2076,7 +2124,7 @@
    "scoreMargin": -16,
    "valueAtPick": 5,
    "projection": 6.833584671276785,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -2289,9 +2337,175 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718069-1028038426-points",
+   "gameDate": "2026-11-09",
+   "gameId": 21718069,
+   "matchup": "MEM @ TOR",
+   "playerId": 1028038426,
+   "playerName": "Jamal Shead",
+   "teamAbbreviation": "TOR",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 17.5,
+   "americanOdds": -125,
+   "vendor": "draftkings",
+   "modelProbability": 0.6932385088897772,
+   "evPercent": 24.7829316001599,
+   "foundAt": "2026-11-10T02:20:15.472Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -8,
+   "valueAtPick": 15,
+   "projection": 16.512146639967042,
+   "latestValue": 15,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718069-1057266649-points_rebounds_assists",
+   "gameDate": "2026-11-09",
+   "gameId": 21718069,
+   "matchup": "MEM @ TOR",
+   "playerId": 1057266649,
+   "playerName": "Cedric Coward",
+   "teamAbbreviation": "MEM",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 13.5,
+   "americanOdds": -122,
+   "vendor": "fanduel",
+   "modelProbability": 0.6797320559916253,
+   "evPercent": 23.688947893558066,
+   "foundAt": "2026-11-10T02:20:15.472Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 8,
+   "valueAtPick": 8,
+   "projection": 12.07113335904911,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718069-1028025754-rebounds",
+   "gameDate": "2026-11-09",
+   "gameId": 21718069,
+   "matchup": "MEM @ TOR",
+   "playerId": 1028025754,
+   "playerName": "Zach Edey",
+   "teamAbbreviation": "MEM",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 8.5,
+   "americanOdds": -121,
+   "vendor": "caesars",
+   "modelProbability": 0.6743091099675007,
+   "evPercent": 23.158936613898874,
+   "foundAt": "2026-11-10T02:20:15.472Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 8,
+   "valueAtPick": 7,
+   "projection": 9.346243092816081,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718069-1028029111-threes",
+   "gameDate": "2026-11-09",
+   "gameId": 21718069,
+   "matchup": "MEM @ TOR",
+   "playerId": 1028029111,
+   "playerName": "Ja'Kobe Walter",
+   "teamAbbreviation": "TOR",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 140,
+   "vendor": "draftkings",
+   "modelProbability": 0.5006605058819213,
+   "evPercent": 20.158521411661123,
+   "foundAt": "2026-11-10T02:20:15.472Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -8,
+   "valueAtPick": 2,
+   "projection": 2.5014876708270544,
+   "latestValue": 2,
+   "tags": [
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718069-1028048549-points_rebounds_assists",
+   "gameDate": "2026-11-09",
+   "gameId": 21718069,
+   "matchup": "MEM @ TOR",
+   "playerId": 1028048549,
+   "playerName": "Cam Spencer",
+   "teamAbbreviation": "MEM",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 14.5,
+   "americanOdds": -130,
+   "vendor": "fanduel",
+   "modelProbability": 0.6759465828497084,
+   "evPercent": 19.590549273409952,
+   "foundAt": "2026-11-10T02:20:15.472Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 8,
+   "valueAtPick": 13,
+   "projection": 15.620447229287226,
+   "latestValue": 13,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 393,
+ "calls": 405,
  "note": null,
  "checkpointsTaken": {
   "21718066": [
@@ -2311,7 +2525,8 @@
   ],
   "21718069": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718070": [
    "end-q1",
