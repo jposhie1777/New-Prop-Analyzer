@@ -1,12 +1,12 @@
 {
  "date": "2026-11-09",
- "updatedAt": "2026-11-10T01:19:13.384Z",
+ "updatedAt": "2026-11-10T01:23:13.542Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718066,
    "matchup": "LAL @ ATL",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 57,
    "visitorScore": 68
   },
@@ -14,29 +14,29 @@
    "gameId": 21718067,
    "matchup": "CLE @ CHA",
    "status": "3rd Qtr",
-   "homeScore": 69,
-   "visitorScore": 53
+   "homeScore": 75,
+   "visitorScore": 62
   },
   {
    "gameId": 21718068,
    "matchup": "WAS @ DET",
    "status": "2nd Qtr",
-   "homeScore": 65,
-   "visitorScore": 55
+   "homeScore": 68,
+   "visitorScore": 58
   },
   {
    "gameId": 21718069,
    "matchup": "MEM @ TOR",
    "status": "2nd Qtr",
-   "homeScore": 33,
-   "visitorScore": 36
+   "homeScore": 39,
+   "visitorScore": 38
   },
   {
    "gameId": 21718070,
    "matchup": "IND @ DAL",
    "status": "1st Qtr",
-   "homeScore": 10,
-   "visitorScore": 14
+   "homeScore": 11,
+   "visitorScore": 17
   },
   {
    "gameId": 21718071,
@@ -83,7 +83,7 @@
    "scoreMargin": -1,
    "valueAtPick": 0,
    "projection": 7.238291871107041,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -444,7 +444,7 @@
    "scoreMargin": -1,
    "valueAtPick": 6,
    "projection": 22.23479748458249,
-   "latestValue": 15,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Over",
@@ -477,7 +477,7 @@
    "scoreMargin": 1,
    "valueAtPick": 2,
    "projection": 9.472771464319568,
-   "latestValue": 2,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -611,7 +611,7 @@
    "scoreMargin": -16,
    "valueAtPick": 2,
    "projection": 4.627181551106771,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Over",
     "Assists",
@@ -645,7 +645,7 @@
    "scoreMargin": 16,
    "valueAtPick": 5,
    "projection": 7.117110934802933,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -713,7 +713,7 @@
    "scoreMargin": 16,
    "valueAtPick": 25,
    "projection": 40.301631317349205,
-   "latestValue": 25,
+   "latestValue": 29,
    "tags": [
     "Best bet",
     "Over",
@@ -748,7 +748,7 @@
    "scoreMargin": 1,
    "valueAtPick": 5,
    "projection": 30.92617092032169,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -781,7 +781,7 @@
    "scoreMargin": 1,
    "valueAtPick": 2,
    "projection": 10.102137270993792,
-   "latestValue": 7,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -1053,9 +1053,176 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718068-1057262985-points",
+   "gameDate": "2026-11-09",
+   "gameId": 21718068,
+   "matchup": "WAS @ DET",
+   "playerId": 1057262985,
+   "playerName": "Tre Johnson",
+   "teamAbbreviation": "WAS",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6518079316526243,
+   "evPercent": 23.377929919961016,
+   "foundAt": "2026-11-10T01:22:13.142Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -10,
+   "valueAtPick": 0,
+   "projection": 3.3619751476996695,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718068-1028026060-points",
+   "gameDate": "2026-11-09",
+   "gameId": 21718068,
+   "matchup": "WAS @ DET",
+   "playerId": 1028026060,
+   "playerName": "KyShawn George",
+   "teamAbbreviation": "WAS",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 8.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.5939652706289951,
+   "evPercent": 19.980984667057,
+   "foundAt": "2026-11-10T01:22:13.142Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -10,
+   "valueAtPick": 2,
+   "projection": 9.538320345374814,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Foul trouble",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718068-1091340077-assists",
+   "gameDate": "2026-11-09",
+   "gameId": 21718068,
+   "matchup": "WAS @ DET",
+   "playerId": 1091340077,
+   "playerName": "AJ Dybantsa",
+   "teamAbbreviation": "WAS",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 0.5,
+   "americanOdds": 178,
+   "vendor": "fanduel",
+   "modelProbability": 0.42361983837505346,
+   "evPercent": 17.76631506826487,
+   "foundAt": "2026-11-10T01:22:13.142Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -10,
+   "valueAtPick": 0,
+   "projection": 0.696588913690476,
+   "latestValue": 0,
+   "tags": [
+    "Under",
+    "Assists",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718068-397-points_rebounds",
+   "gameDate": "2026-11-09",
+   "gameId": 21718068,
+   "matchup": "WAS @ DET",
+   "playerId": 397,
+   "playerName": "Duncan Robinson",
+   "teamAbbreviation": "DET",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 24.5,
+   "americanOdds": -130,
+   "vendor": "fanduel",
+   "modelProbability": 0.6628705912094455,
+   "evPercent": 17.277104598594196,
+   "foundAt": "2026-11-10T01:22:13.142Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 10,
+   "valueAtPick": 17,
+   "projection": 26.46062197193056,
+   "latestValue": 17,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718068-17896075-assists",
+   "gameDate": "2026-11-09",
+   "gameId": 21718068,
+   "matchup": "WAS @ DET",
+   "playerId": 17896075,
+   "playerName": "Cade Cunningham",
+   "teamAbbreviation": "DET",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 10.5,
+   "americanOdds": 108,
+   "vendor": "caesars",
+   "modelProbability": 0.5630220503560097,
+   "evPercent": 17.108586474050025,
+   "foundAt": "2026-11-10T01:22:13.142Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 10,
+   "valueAtPick": 6,
+   "projection": 10.106921177270719,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Foul trouble",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 249,
+ "calls": 260,
  "note": null,
  "checkpointsTaken": {
   "21718066": [
@@ -1067,7 +1234,8 @@
    "halftime"
   ],
   "21718068": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718069": [
    "end-q1"
