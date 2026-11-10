@@ -1,49 +1,49 @@
 {
  "date": "2026-11-09",
- "updatedAt": "2026-11-10T02:02:15.324Z",
+ "updatedAt": "2026-11-10T02:06:15.233Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718066,
    "matchup": "LAL @ ATL",
    "status": "4th Qtr",
-   "homeScore": 95,
-   "visitorScore": 99
+   "homeScore": 98,
+   "visitorScore": 104
   },
   {
    "gameId": 21718067,
    "matchup": "CLE @ CHA",
    "status": "4th Qtr",
-   "homeScore": 113,
-   "visitorScore": 97
+   "homeScore": 115,
+   "visitorScore": 99
   },
   {
    "gameId": 21718068,
    "matchup": "WAS @ DET",
    "status": "3rd Qtr",
-   "homeScore": 95,
+   "homeScore": 98,
    "visitorScore": 82
   },
   {
    "gameId": 21718069,
    "matchup": "MEM @ TOR",
    "status": "3rd Qtr",
-   "homeScore": 57,
-   "visitorScore": 71
+   "homeScore": 63,
+   "visitorScore": 73
   },
   {
    "gameId": 21718070,
    "matchup": "IND @ DAL",
    "status": "2nd Qtr",
-   "homeScore": 48,
-   "visitorScore": 55
+   "homeScore": 55,
+   "visitorScore": 63
   },
   {
    "gameId": 21718071,
    "matchup": "DEN @ HOU",
-   "status": "1st Qtr",
-   "homeScore": 29,
-   "visitorScore": 22
+   "status": "2nd Qtr",
+   "homeScore": 32,
+   "visitorScore": 24
   },
   {
    "gameId": 21718072,
@@ -280,7 +280,7 @@
    "scoreMargin": -9,
    "valueAtPick": 2,
    "projection": 17.346820341777814,
-   "latestValue": 21,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Under",
@@ -379,7 +379,7 @@
    "scoreMargin": 9,
    "valueAtPick": 4,
    "projection": 21.076570991546003,
-   "latestValue": 19,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -748,7 +748,7 @@
    "scoreMargin": 1,
    "valueAtPick": 5,
    "projection": 30.92617092032169,
-   "latestValue": 9,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -814,7 +814,7 @@
    "scoreMargin": 1,
    "valueAtPick": 1,
    "projection": 8.16535076353906,
-   "latestValue": 4,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -913,7 +913,7 @@
    "scoreMargin": 11,
    "valueAtPick": 7,
    "projection": 14.127303388181172,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -1377,7 +1377,7 @@
    "scoreMargin": 6,
    "valueAtPick": 10,
    "projection": 18.498431133837325,
-   "latestValue": 13,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -1410,7 +1410,7 @@
    "scoreMargin": -5,
    "valueAtPick": 3,
    "projection": 6.9810649702282435,
-   "latestValue": 3,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -1476,7 +1476,7 @@
    "scoreMargin": -5,
    "valueAtPick": 11,
    "projection": 32.276667023208105,
-   "latestValue": 14,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Under",
@@ -1509,7 +1509,7 @@
    "scoreMargin": 5,
    "valueAtPick": 7,
    "projection": 19.644758895835157,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -1542,7 +1542,7 @@
    "scoreMargin": -5,
    "valueAtPick": 0,
    "projection": 9.108528714251198,
-   "latestValue": 0,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -1678,7 +1678,7 @@
    "scoreMargin": 5,
    "valueAtPick": 2,
    "projection": 2.296404465794188,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Over",
     "Assists",
@@ -1785,9 +1785,172 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718071-56677825-assists",
+   "gameDate": "2026-11-09",
+   "gameId": 21718071,
+   "matchup": "DEN @ HOU",
+   "playerId": 56677825,
+   "playerName": "Amen Thompson",
+   "teamAbbreviation": "HOU",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": 105,
+   "vendor": "draftkings",
+   "modelProbability": 0.6049404925685238,
+   "evPercent": 24.012800976547368,
+   "foundAt": "2026-11-10T02:04:14.744Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 8,
+   "valueAtPick": 0,
+   "projection": 2.0356851885416667,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718071-125-rebounds",
+   "gameDate": "2026-11-09",
+   "gameId": 21718071,
+   "matchup": "DEN @ HOU",
+   "playerId": 125,
+   "playerName": "DeMar DeRozan",
+   "teamAbbreviation": "DEN",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": -135,
+   "vendor": "betmgm",
+   "modelProbability": 0.7068739702112872,
+   "evPercent": 23.04843185159442,
+   "foundAt": "2026-11-10T02:04:14.744Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -8,
+   "valueAtPick": 1,
+   "projection": 2.2415032897949216,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Already 60%+ of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718071-335-rebounds",
+   "gameDate": "2026-11-09",
+   "gameId": 21718071,
+   "matchup": "DEN @ HOU",
+   "playerId": 335,
+   "playerName": "Jamal Murray",
+   "teamAbbreviation": "DEN",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": 126,
+   "vendor": "fanduel",
+   "modelProbability": 0.539104046401934,
+   "evPercent": 21.837514486837062,
+   "foundAt": "2026-11-10T02:04:14.744Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -8,
+   "valueAtPick": 0,
+   "projection": 2.3172670572916667,
+   "latestValue": 0,
+   "tags": [
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718071-246-points",
+   "gameDate": "2026-11-09",
+   "gameId": 21718071,
+   "matchup": "DEN @ HOU",
+   "playerId": 246,
+   "playerName": "Nikola Jokic",
+   "teamAbbreviation": "DEN",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 20.5,
+   "americanOdds": -117,
+   "vendor": "caesars",
+   "modelProbability": 0.654790707123265,
+   "evPercent": 21.44408841516967,
+   "foundAt": "2026-11-10T02:04:14.744Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -8,
+   "valueAtPick": 6,
+   "projection": 23.121354015427208,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718071-17896062-threes",
+   "gameDate": "2026-11-09",
+   "gameId": 21718071,
+   "matchup": "DEN @ HOU",
+   "playerId": 17896062,
+   "playerName": "Alperen Sengun",
+   "teamAbbreviation": "HOU",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 154,
+   "vendor": "draftkings",
+   "modelProbability": 0.47571523451315567,
+   "evPercent": 20.83166956634155,
+   "foundAt": "2026-11-10T02:04:14.744Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 8,
+   "valueAtPick": 1,
+   "projection": 1.4482552028564453,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 351,
+ "calls": 363,
  "note": null,
  "checkpointsTaken": {
   "21718066": [
@@ -1809,6 +1972,9 @@
    "halftime"
   ],
   "21718070": [
+   "end-q1"
+  ],
+  "21718071": [
    "end-q1"
   ]
  }
