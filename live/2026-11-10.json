@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T04:36:57.629Z",
+ "updatedAt": "2026-11-11T04:40:58.014Z",
  "state": "running",
  "games": [
   {
@@ -29,7 +29,7 @@
    "matchup": "MIA @ UTA",
    "status": "4th Qtr",
    "homeScore": 107,
-   "visitorScore": 112
+   "visitorScore": 113
   },
   {
    "gameId": 21718079,
@@ -42,8 +42,8 @@
    "gameId": 21718080,
    "matchup": "OKC @ POR",
    "status": "1st Qtr",
-   "homeScore": 22,
-   "visitorScore": 21
+   "homeScore": 24,
+   "visitorScore": 27
   }
  ],
  "picks": [
@@ -1728,7 +1728,7 @@
    "scoreMargin": 10,
    "valueAtPick": 12,
    "projection": 21.28166031980144,
-   "latestValue": 23,
+   "latestValue": 24,
    "tags": [
     "Best bet",
     "Over",
@@ -2207,7 +2207,7 @@
    "scoreMargin": -20,
    "valueAtPick": 27,
    "projection": 34.40047747223203,
-   "latestValue": 34,
+   "latestValue": 33,
    "tags": [
     "Best bet",
     "Over",
@@ -2309,7 +2309,7 @@
    "scoreMargin": 20,
    "valueAtPick": 0,
    "projection": 0.16038534246899627,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Under",
@@ -2489,7 +2489,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 38,
+ "calls": 46,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
