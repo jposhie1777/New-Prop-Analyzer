@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T03:06:22.012Z",
+ "updatedAt": "2026-11-11T03:10:22.257Z",
  "state": "running",
  "games": [
   {
@@ -28,8 +28,8 @@
    "gameId": 21718078,
    "matchup": "MIA @ UTA",
    "status": "2nd Qtr",
-   "homeScore": 34,
-   "visitorScore": 49
+   "homeScore": 41,
+   "visitorScore": 55
   },
   {
    "gameId": 21718079,
@@ -1159,7 +1159,7 @@
    "scoreMargin": -4,
    "valueAtPick": 0,
    "projection": 6.404403963867186,
-   "latestValue": 0,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Over",
@@ -1192,7 +1192,7 @@
    "scoreMargin": 4,
    "valueAtPick": 2,
    "projection": 11.337117856489005,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -1358,7 +1358,7 @@
    "scoreMargin": -9,
    "valueAtPick": 3,
    "projection": 4.132012263463051,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -1607,7 +1607,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 417,
+ "calls": 425,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
