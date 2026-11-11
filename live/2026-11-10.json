@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T04:18:25.009Z",
+ "updatedAt": "2026-11-11T04:20:26.134Z",
  "state": "running",
  "games": [
   {
@@ -21,14 +21,14 @@
    "gameId": 21718076,
    "matchup": "LAC @ PHX",
    "status": "4th Qtr",
-   "homeScore": 125,
-   "visitorScore": 95
+   "homeScore": 127,
+   "visitorScore": 97
   },
   {
    "gameId": 21718078,
    "matchup": "MIA @ UTA",
    "status": "4th Qtr",
-   "homeScore": 87,
+   "homeScore": 93,
    "visitorScore": 101
   },
   {
@@ -42,8 +42,8 @@
    "gameId": 21718080,
    "matchup": "OKC @ POR",
    "status": "1st Qtr",
-   "homeScore": 5,
-   "visitorScore": 2
+   "homeScore": 7,
+   "visitorScore": 7
   }
  ],
  "picks": [
@@ -1134,7 +1134,7 @@
    "scoreMargin": -11,
    "valueAtPick": 0,
    "projection": 3.8227157105100704,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -1167,7 +1167,7 @@
    "scoreMargin": -4,
    "valueAtPick": 0,
    "projection": 0.33967031250000007,
-   "latestValue": 2,
+   "latestValue": 4,
    "tags": [
     "Over",
     "3PM",
@@ -2155,7 +2155,7 @@
    "scoreMargin": -20,
    "valueAtPick": 27,
    "projection": 34.40047747223203,
-   "latestValue": 32,
+   "latestValue": 33,
    "tags": [
     "Best bet",
     "Over",
@@ -2437,8 +2437,8 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 578,
- "note": null,
+ "calls": 582,
+ "note": "This run hit its time limit; the next scheduled run continues.",
  "checkpointsTaken": {
   "21718074": [
    "end-q1",
