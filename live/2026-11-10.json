@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T05:20:59.599Z",
+ "updatedAt": "2026-11-11T05:24:59.652Z",
  "state": "running",
  "games": [
   {
@@ -35,8 +35,8 @@
    "gameId": 21718079,
    "matchup": "ORL @ SAC",
    "status": "4th Qtr",
-   "homeScore": 92,
-   "visitorScore": 103
+   "homeScore": 98,
+   "visitorScore": 105
   },
   {
    "gameId": 21718080,
@@ -2832,7 +2832,7 @@
    "scoreMargin": -8,
    "valueAtPick": 2,
    "projection": 3.317103764443303,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -3045,7 +3045,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 139,
+ "calls": 147,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
