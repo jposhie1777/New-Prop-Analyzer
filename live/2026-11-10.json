@@ -1,35 +1,35 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T02:50:21.914Z",
+ "updatedAt": "2026-11-11T02:54:22.010Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718074,
    "matchup": "MIL @ NYK",
-   "status": "4th Qtr",
-   "homeScore": 114,
+   "status": "Final",
+   "homeScore": 117,
    "visitorScore": 85
   },
   {
    "gameId": 21718075,
    "matchup": "BOS @ PHI",
    "status": "3rd Qtr",
-   "homeScore": 79,
-   "visitorScore": 82
+   "homeScore": 82,
+   "visitorScore": 91
   },
   {
    "gameId": 21718076,
    "matchup": "LAC @ PHX",
    "status": "2nd Qtr",
-   "homeScore": 39,
-   "visitorScore": 29
+   "homeScore": 51,
+   "visitorScore": 34
   },
   {
    "gameId": 21718078,
    "matchup": "MIA @ UTA",
    "status": "2nd Qtr",
-   "homeScore": 25,
-   "visitorScore": 31
+   "homeScore": 31,
+   "visitorScore": 38
   },
   {
    "gameId": 21718079,
@@ -77,7 +77,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 5,
+    "gradedAt": "2026-11-11T02:52:21.492Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -110,7 +114,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 21,
+    "gradedAt": "2026-11-11T02:52:21.492Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -143,7 +151,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 19,
+    "gradedAt": "2026-11-11T02:52:21.492Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -176,7 +188,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 21,
+    "gradedAt": "2026-11-11T02:52:21.492Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -210,7 +226,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 4,
+    "gradedAt": "2026-11-11T02:52:21.492Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -244,7 +264,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 1,
+    "gradedAt": "2026-11-11T02:52:21.492Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -278,7 +302,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 5,
+    "gradedAt": "2026-11-11T02:52:21.492Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -312,7 +340,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 8,
+    "gradedAt": "2026-11-11T02:52:21.492Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -346,7 +378,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 4,
+    "gradedAt": "2026-11-11T02:52:21.492Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -380,7 +416,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 0,
+    "gradedAt": "2026-11-11T02:52:21.492Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -438,7 +478,7 @@
    "scoreMargin": 7,
    "valueAtPick": 6,
    "projection": 12.575121735382378,
-   "latestValue": 13,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -471,7 +511,7 @@
    "scoreMargin": 7,
    "valueAtPick": 0,
    "projection": 3.825860320181822,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -570,7 +610,7 @@
    "scoreMargin": 11,
    "valueAtPick": 17,
    "projection": 33.73230011900911,
-   "latestValue": 24,
+   "latestValue": 29,
    "tags": [
     "Best bet",
     "Under",
@@ -745,7 +785,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 10,
+    "gradedAt": "2026-11-11T02:52:21.492Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -778,7 +822,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 16,
+    "gradedAt": "2026-11-11T02:52:21.492Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -810,7 +858,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 2,
+    "gradedAt": "2026-11-11T02:52:21.492Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -843,7 +895,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 11,
+    "gradedAt": "2026-11-11T02:52:21.492Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -876,7 +932,11 @@
     "Under 60% of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 4,
+    "gradedAt": "2026-11-11T02:52:21.492Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -934,7 +994,7 @@
    "scoreMargin": 11,
    "valueAtPick": 6,
    "projection": 16.32048100109157,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -1165,7 +1225,7 @@
    "scoreMargin": -4,
    "valueAtPick": 1,
    "projection": 2.130350364540197,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -1209,9 +1269,175 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718075-3547276-threes",
+   "gameDate": "2026-11-10",
+   "gameId": 21718075,
+   "matchup": "BOS @ PHI",
+   "playerId": 3547276,
+   "playerName": "Payton Pritchard",
+   "teamAbbreviation": "BOS",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 122,
+   "vendor": "fanduel",
+   "modelProbability": 0.5629308914201406,
+   "evPercent": 24.9706578952712,
+   "foundAt": "2026-11-11T02:54:21.201Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 9,
+   "valueAtPick": 2,
+   "projection": 2.663750354574021,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718075-434-rebounds_assists",
+   "gameDate": "2026-11-10",
+   "gameId": 21718075,
+   "matchup": "BOS @ PHI",
+   "playerId": 434,
+   "playerName": "Jayson Tatum",
+   "teamAbbreviation": "BOS",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 10.5,
+   "americanOdds": 100,
+   "vendor": "fanduel",
+   "modelProbability": 0.6045936444557822,
+   "evPercent": 20.918728891156448,
+   "foundAt": "2026-11-11T02:54:21.201Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 9,
+   "valueAtPick": 8,
+   "projection": 10.021468098628578,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718075-70-rebounds",
+   "gameDate": "2026-11-10",
+   "gameId": 21718075,
+   "matchup": "BOS @ PHI",
+   "playerId": 70,
+   "playerName": "Jaylen Brown",
+   "teamAbbreviation": "PHI",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": -106,
+   "vendor": "caesars",
+   "modelProbability": 0.6113617613462513,
+   "evPercent": 18.81181399747902,
+   "foundAt": "2026-11-11T02:54:21.201Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -9,
+   "valueAtPick": 3,
+   "projection": 4.132012263463051,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718075-1057261935-assists",
+   "gameDate": "2026-11-10",
+   "gameId": 21718075,
+   "matchup": "BOS @ PHI",
+   "playerId": 1057261935,
+   "playerName": "VJ Edgecombe",
+   "teamAbbreviation": "PHI",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6250652170519563,
+   "evPercent": 18.315916084834583,
+   "foundAt": "2026-11-11T02:54:21.201Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -9,
+   "valueAtPick": 4,
+   "projection": 4.861894182652144,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718075-237-rebounds_assists",
+   "gameDate": "2026-11-10",
+   "gameId": 21718075,
+   "matchup": "BOS @ PHI",
+   "playerId": 237,
+   "playerName": "LeBron James",
+   "teamAbbreviation": "PHI",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 13.5,
+   "americanOdds": 128,
+   "vendor": "fanduel",
+   "modelProbability": 0.5172826469876657,
+   "evPercent": 17.940443513187798,
+   "foundAt": "2026-11-11T02:54:21.201Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -9,
+   "valueAtPick": 10,
+   "projection": 13.604391078200482,
+   "latestValue": 10,
+   "tags": [
+    "Over",
+    "Reb+Ast",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 378,
+ "calls": 390,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
@@ -1221,7 +1447,8 @@
   ],
   "21718075": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718076": [
    "end-q1"
