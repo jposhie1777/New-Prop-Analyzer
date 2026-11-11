@@ -1,35 +1,35 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T02:10:19.628Z",
+ "updatedAt": "2026-11-11T02:14:19.739Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718074,
    "matchup": "MIL @ NYK",
    "status": "3rd Qtr",
-   "homeScore": 78,
-   "visitorScore": 56
+   "homeScore": 82,
+   "visitorScore": 61
   },
   {
    "gameId": 21718075,
    "matchup": "BOS @ PHI",
-   "status": "2nd Qtr",
-   "homeScore": 49,
+   "status": "3rd Qtr",
+   "homeScore": 51,
    "visitorScore": 62
   },
   {
    "gameId": 21718076,
    "matchup": "LAC @ PHX",
-   "status": "2026-11-11T02:00:00Z",
-   "homeScore": 0,
+   "status": "1st Qtr",
+   "homeScore": 4,
    "visitorScore": 0
   },
   {
    "gameId": 21718078,
    "matchup": "MIA @ UTA",
-   "status": "2026-11-11T02:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 10,
+   "visitorScore": 6
   },
   {
    "gameId": 21718079,
@@ -547,9 +547,176 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718075-434-points_rebounds_assists",
+   "gameDate": "2026-11-10",
+   "gameId": 21718075,
+   "matchup": "BOS @ PHI",
+   "playerId": 434,
+   "playerName": "Jayson Tatum",
+   "teamAbbreviation": "BOS",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 37.5,
+   "americanOdds": -144,
+   "vendor": "fanduel",
+   "modelProbability": 0.7281886428456785,
+   "evPercent": 23.38752003773996,
+   "foundAt": "2026-11-11T02:12:19.309Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 11,
+   "valueAtPick": 17,
+   "projection": 33.73230011900911,
+   "latestValue": 17,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718075-237-threes",
+   "gameDate": "2026-11-10",
+   "gameId": 21718075,
+   "matchup": "BOS @ PHI",
+   "playerId": 237,
+   "playerName": "LeBron James",
+   "teamAbbreviation": "PHI",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": 105,
+   "vendor": "draftkings",
+   "modelProbability": 0.5940075810321964,
+   "evPercent": 21.771554111600256,
+   "foundAt": "2026-11-11T02:12:19.309Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -11,
+   "valueAtPick": 0,
+   "projection": 0.7637713815789474,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718075-70-assists",
+   "gameDate": "2026-11-10",
+   "gameId": 21718075,
+   "matchup": "BOS @ PHI",
+   "playerId": 70,
+   "playerName": "Jaylen Brown",
+   "teamAbbreviation": "PHI",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 114,
+   "vendor": "draftkings",
+   "modelProbability": 0.5677245583877338,
+   "evPercent": 21.49305549497502,
+   "foundAt": "2026-11-11T02:12:19.309Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -11,
+   "valueAtPick": 2,
+   "projection": 3.778125,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Foul trouble",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718075-81-points",
+   "gameDate": "2026-11-10",
+   "gameId": 21718075,
+   "matchup": "BOS @ PHI",
+   "playerId": 81,
+   "playerName": "Kentavious Caldwell-Pope",
+   "teamAbbreviation": "PHI",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6327931728608334,
+   "evPercent": 19.77870772008632,
+   "foundAt": "2026-11-11T02:12:19.309Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -11,
+   "valueAtPick": 0,
+   "projection": 1.7800399579531327,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718075-1057261935-points",
+   "gameDate": "2026-11-10",
+   "gameId": 21718075,
+   "matchup": "BOS @ PHI",
+   "playerId": 1057261935,
+   "playerName": "VJ Edgecombe",
+   "teamAbbreviation": "PHI",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 11.5,
+   "americanOdds": -110,
+   "vendor": "draftkings",
+   "modelProbability": 0.6220551295016422,
+   "evPercent": 18.755979268495327,
+   "foundAt": "2026-11-11T02:12:19.309Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -11,
+   "valueAtPick": 6,
+   "projection": 10.45615220249463,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 284,
+ "calls": 295,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
@@ -557,7 +724,8 @@
    "halftime"
   ],
   "21718075": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
