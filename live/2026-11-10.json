@@ -1,7 +1,7 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T06:31:02.611Z",
- "state": "running",
+ "updatedAt": "2026-11-11T06:32:02.704Z",
+ "state": "done",
  "games": [
   {
    "gameId": 21718074,
@@ -41,7 +41,7 @@
   {
    "gameId": 21718080,
    "matchup": "OKC @ POR",
-   "status": "4th Qtr",
+   "status": "Final",
    "homeScore": 123,
    "visitorScore": 103
   }
@@ -2618,7 +2618,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 13,
+    "gradedAt": "2026-11-11T06:32:02.704Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -2651,7 +2655,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 11,
+    "gradedAt": "2026-11-11T06:32:02.704Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -2683,7 +2691,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 2,
+    "gradedAt": "2026-11-11T06:32:02.704Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -2716,7 +2728,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 6,
+    "gradedAt": "2026-11-11T06:32:02.704Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -2749,7 +2765,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 3,
+    "gradedAt": "2026-11-11T06:32:02.704Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -2968,7 +2988,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 3,
+    "gradedAt": "2026-11-11T06:32:02.704Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -3001,7 +3025,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 3,
+    "gradedAt": "2026-11-11T06:32:02.704Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -3035,7 +3063,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 4,
+    "gradedAt": "2026-11-11T06:32:02.704Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -3068,7 +3100,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 34,
+    "gradedAt": "2026-11-11T06:32:02.704Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -3101,7 +3137,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 22,
+    "gradedAt": "2026-11-11T06:32:02.704Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -3135,7 +3175,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 3,
+    "gradedAt": "2026-11-11T06:32:02.704Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3169,7 +3213,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 38,
+    "gradedAt": "2026-11-11T06:32:02.704Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3203,7 +3251,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 12,
+    "gradedAt": "2026-11-11T06:32:02.704Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3238,7 +3290,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 20,
+    "gradedAt": "2026-11-11T06:32:02.704Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3272,12 +3328,16 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 12,
+    "gradedAt": "2026-11-11T06:32:02.704Z"
+   },
    "checkpoint": "end-q3"
   }
  ],
- "calls": 283,
- "note": null,
+ "calls": 286,
+ "note": "All games are final and graded.",
  "checkpointsTaken": {
   "21718074": [
    "end-q1",
