@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T05:00:58.793Z",
+ "updatedAt": "2026-11-11T05:04:58.807Z",
  "state": "running",
  "games": [
   {
@@ -36,14 +36,14 @@
    "matchup": "ORL @ SAC",
    "status": "4th Qtr",
    "homeScore": 78,
-   "visitorScore": 88
+   "visitorScore": 92
   },
   {
    "gameId": 21718080,
    "matchup": "OKC @ POR",
    "status": "2nd Qtr",
-   "homeScore": 46,
-   "visitorScore": 46
+   "homeScore": 49,
+   "visitorScore": 50
   }
  ],
  "picks": [
@@ -1934,7 +1934,7 @@
    "scoreMargin": 7,
    "valueAtPick": 2,
    "projection": 9.093359374999999,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -2404,7 +2404,7 @@
    "scoreMargin": 5,
    "valueAtPick": 19,
    "projection": 32.00599816213981,
-   "latestValue": 22,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Over",
@@ -2570,7 +2570,7 @@
    "scoreMargin": -1,
    "valueAtPick": 5,
    "projection": 13.216107958402612,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -2603,7 +2603,7 @@
    "scoreMargin": 1,
    "valueAtPick": 6,
    "projection": 12.65460117950554,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -2879,7 +2879,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 96,
+ "calls": 104,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
