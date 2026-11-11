@@ -1,35 +1,35 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T02:34:20.702Z",
+ "updatedAt": "2026-11-11T02:38:20.857Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718074,
    "matchup": "MIL @ NYK",
    "status": "4th Qtr",
-   "homeScore": 97,
-   "visitorScore": 76
+   "homeScore": 106,
+   "visitorScore": 78
   },
   {
    "gameId": 21718075,
    "matchup": "BOS @ PHI",
    "status": "3rd Qtr",
    "homeScore": 63,
-   "visitorScore": 69
+   "visitorScore": 71
   },
   {
    "gameId": 21718076,
    "matchup": "LAC @ PHX",
-   "status": "1st Qtr",
-   "homeScore": 27,
+   "status": "2nd Qtr",
+   "homeScore": 29,
    "visitorScore": 18
   },
   {
    "gameId": 21718078,
    "matchup": "MIA @ UTA",
    "status": "1st Qtr",
-   "homeScore": 21,
-   "visitorScore": 22
+   "homeScore": 23,
+   "visitorScore": 26
   },
   {
    "gameId": 21718079,
@@ -69,7 +69,7 @@
    "scoreMargin": -5,
    "valueAtPick": 1,
    "projection": 4.035054749691843,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -102,7 +102,7 @@
    "scoreMargin": 5,
    "valueAtPick": 5,
    "projection": 21.511987566008923,
-   "latestValue": 18,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Over",
@@ -471,7 +471,7 @@
    "scoreMargin": 7,
    "valueAtPick": 0,
    "projection": 3.825860320181822,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Under",
@@ -570,7 +570,7 @@
    "scoreMargin": 11,
    "valueAtPick": 17,
    "projection": 33.73230011900911,
-   "latestValue": 20,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Under",
@@ -878,9 +878,175 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718076-666908-rebounds",
+   "gameDate": "2026-11-10",
+   "gameId": 21718076,
+   "matchup": "LAC @ PHX",
+   "playerId": 666908,
+   "playerName": "Max Strus",
+   "teamAbbreviation": "LAC",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": -140,
+   "vendor": "draftkings",
+   "modelProbability": 0.7195451416868603,
+   "evPercent": 23.350595717747492,
+   "foundAt": "2026-11-11T02:36:20.480Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -11,
+   "valueAtPick": 0,
+   "projection": 2.3988120201865186,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718076-1028036515-points_rebounds_assists",
+   "gameDate": "2026-11-10",
+   "gameId": 21718076,
+   "matchup": "LAC @ PHX",
+   "playerId": 1028036515,
+   "playerName": "Oso Ighodaro",
+   "teamAbbreviation": "PHX",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 14.5,
+   "americanOdds": -110,
+   "vendor": "fanduel",
+   "modelProbability": 0.6456699057112791,
+   "evPercent": 23.264254726698752,
+   "foundAt": "2026-11-11T02:36:20.480Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 11,
+   "valueAtPick": 6,
+   "projection": 16.32048100109157,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718076-38017727-rebounds_assists",
+   "gameDate": "2026-11-10",
+   "gameId": 21718076,
+   "matchup": "LAC @ PHX",
+   "playerId": 38017727,
+   "playerName": "Collin Gillespie",
+   "teamAbbreviation": "PHX",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6087260886515774,
+   "evPercent": 22.96266990761864,
+   "foundAt": "2026-11-11T02:36:20.480Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 11,
+   "valueAtPick": 2,
+   "projection": 7.306746223958333,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Reb+Ast",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718076-1057396055-points_rebounds",
+   "gameDate": "2026-11-10",
+   "gameId": 21718076,
+   "matchup": "LAC @ PHX",
+   "playerId": 1057396055,
+   "playerName": "Kobe Sanders",
+   "teamAbbreviation": "LAC",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": -108,
+   "vendor": "fanduel",
+   "modelProbability": 0.6366812565538846,
+   "evPercent": 22.620093854822244,
+   "foundAt": "2026-11-11T02:36:20.480Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -11,
+   "valueAtPick": 0,
+   "projection": 6.181761373296822,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718076-1091343544-rebounds_assists",
+   "gameDate": "2026-11-10",
+   "gameId": 21718076,
+   "matchup": "LAC @ PHX",
+   "playerId": 1091343544,
+   "playerName": "Keaton Wagler",
+   "teamAbbreviation": "LAC",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": 100,
+   "vendor": "fanduel",
+   "modelProbability": 0.607575603891814,
+   "evPercent": 21.515120778362796,
+   "foundAt": "2026-11-11T02:36:20.480Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -11,
+   "valueAtPick": 0,
+   "projection": 3.8227157105100704,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 338,
+ "calls": 350,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
@@ -891,6 +1057,9 @@
   "21718075": [
    "end-q1",
    "halftime"
+  ],
+  "21718076": [
+   "end-q1"
   ]
  }
 }
