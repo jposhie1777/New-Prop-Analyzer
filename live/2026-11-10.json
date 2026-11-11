@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T03:54:24.098Z",
+ "updatedAt": "2026-11-11T03:58:24.169Z",
  "state": "running",
  "games": [
   {
@@ -20,23 +20,23 @@
   {
    "gameId": 21718076,
    "matchup": "LAC @ PHX",
-   "status": "3rd Qtr",
+   "status": "4th Qtr",
    "homeScore": 99,
-   "visitorScore": 71
+   "visitorScore": 72
   },
   {
    "gameId": 21718078,
    "matchup": "MIA @ UTA",
    "status": "3rd Qtr",
    "homeScore": 66,
-   "visitorScore": 85
+   "visitorScore": 89
   },
   {
    "gameId": 21718079,
    "matchup": "ORL @ SAC",
    "status": "2nd Qtr",
    "homeScore": 43,
-   "visitorScore": 42
+   "visitorScore": 47
   },
   {
    "gameId": 21718080,
@@ -1232,7 +1232,7 @@
    "scoreMargin": 4,
    "valueAtPick": 2,
    "projection": 11.337117856489005,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -1299,7 +1299,7 @@
    "scoreMargin": 4,
    "valueAtPick": 4,
    "projection": 13.287798705783741,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -1854,7 +1854,7 @@
    "scoreMargin": 7,
    "valueAtPick": 2,
    "projection": 9.093359374999999,
-   "latestValue": 2,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -1887,7 +1887,7 @@
    "scoreMargin": -7,
    "valueAtPick": 5,
    "projection": 12.348247586668801,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -1996,9 +1996,110 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718076-666908-threes",
+   "gameDate": "2026-11-10",
+   "gameId": 21718076,
+   "matchup": "LAC @ PHX",
+   "playerId": 666908,
+   "playerName": "Max Strus",
+   "teamAbbreviation": "LAC",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 110,
+   "vendor": "fanduel",
+   "modelProbability": 0.5732269429995696,
+   "evPercent": 20.377658029909608,
+   "foundAt": "2026-11-11T03:55:23.806Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -27,
+   "valueAtPick": 2,
+   "projection": 2.69530973146051,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718076-38017727-assists",
+   "gameDate": "2026-11-10",
+   "gameId": 21718076,
+   "matchup": "LAC @ PHX",
+   "playerId": 38017727,
+   "playerName": "Collin Gillespie",
+   "teamAbbreviation": "PHX",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": -108,
+   "vendor": "fanduel",
+   "modelProbability": 0.6114328325171362,
+   "evPercent": 17.757434410707717,
+   "foundAt": "2026-11-11T03:55:23.806Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 27,
+   "valueAtPick": 4,
+   "projection": 5.13180478788419,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718076-1057268513-points",
+   "gameDate": "2026-11-10",
+   "gameId": 21718076,
+   "matchup": "LAC @ PHX",
+   "playerId": 1057268513,
+   "playerName": "Khaman Maluach",
+   "teamAbbreviation": "PHX",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 11.5,
+   "americanOdds": -186,
+   "vendor": "fanduel",
+   "modelProbability": 0.6902643586620417,
+   "evPercent": 6.13742289104513,
+   "foundAt": "2026-11-11T03:55:23.806Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 27,
+   "valueAtPick": 9,
+   "projection": 10.524664621665515,
+   "latestValue": 9,
+   "tags": [
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 521,
+ "calls": 532,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
@@ -2013,7 +2114,8 @@
   ],
   "21718076": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718078": [
    "end-q1",
