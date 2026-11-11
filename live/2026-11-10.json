@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T03:42:23.561Z",
+ "updatedAt": "2026-11-11T03:46:23.643Z",
  "state": "running",
  "games": [
   {
@@ -21,21 +21,21 @@
    "gameId": 21718076,
    "matchup": "LAC @ PHX",
    "status": "3rd Qtr",
-   "homeScore": 89,
-   "visitorScore": 59
+   "homeScore": 91,
+   "visitorScore": 62
   },
   {
    "gameId": 21718078,
    "matchup": "MIA @ UTA",
    "status": "3rd Qtr",
-   "homeScore": 60,
-   "visitorScore": 69
+   "homeScore": 64,
+   "visitorScore": 76
   },
   {
    "gameId": 21718079,
    "matchup": "ORL @ SAC",
    "status": "2nd Qtr",
-   "homeScore": 31,
+   "homeScore": 34,
    "visitorScore": 34
   },
   {
@@ -1232,7 +1232,7 @@
    "scoreMargin": 4,
    "valueAtPick": 2,
    "projection": 11.337117856489005,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -1688,7 +1688,7 @@
    "scoreMargin": 10,
    "valueAtPick": 12,
    "projection": 21.28166031980144,
-   "latestValue": 15,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Over",
@@ -1788,7 +1788,7 @@
    "scoreMargin": -10,
    "valueAtPick": 4,
    "projection": 6.430209651443682,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Under",
     "Rebounds",
@@ -1998,7 +1998,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 497,
+ "calls": 505,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
