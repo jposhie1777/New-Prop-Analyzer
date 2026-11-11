@@ -1,21 +1,21 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T01:58:19.071Z",
+ "updatedAt": "2026-11-11T02:02:19.664Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718074,
    "matchup": "MIL @ NYK",
    "status": "3rd Qtr",
-   "homeScore": 65,
-   "visitorScore": 49
+   "homeScore": 69,
+   "visitorScore": 52
   },
   {
    "gameId": 21718075,
    "matchup": "BOS @ PHI",
    "status": "2nd Qtr",
-   "homeScore": 36,
-   "visitorScore": 48
+   "homeScore": 40,
+   "visitorScore": 54
   },
   {
    "gameId": 21718076,
@@ -102,7 +102,7 @@
    "scoreMargin": 5,
    "valueAtPick": 5,
    "projection": 21.511987566008923,
-   "latestValue": 9,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Over",
@@ -135,7 +135,7 @@
    "scoreMargin": -5,
    "valueAtPick": 2,
    "projection": 13.732300776158766,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -168,7 +168,7 @@
    "scoreMargin": -5,
    "valueAtPick": 9,
    "projection": 26.403999199563046,
-   "latestValue": 17,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -438,7 +438,7 @@
    "scoreMargin": 7,
    "valueAtPick": 6,
    "projection": 12.575121735382378,
-   "latestValue": 9,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -549,7 +549,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 260,
+ "calls": 268,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
