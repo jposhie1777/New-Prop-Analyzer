@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T04:06:24.557Z",
+ "updatedAt": "2026-11-11T04:10:24.715Z",
  "state": "running",
  "games": [
   {
@@ -21,22 +21,22 @@
    "gameId": 21718076,
    "matchup": "LAC @ PHX",
    "status": "4th Qtr",
-   "homeScore": 109,
-   "visitorScore": 84
+   "homeScore": 115,
+   "visitorScore": 89
   },
   {
    "gameId": 21718078,
    "matchup": "MIA @ UTA",
    "status": "4th Qtr",
-   "homeScore": 72,
-   "visitorScore": 92
+   "homeScore": 75,
+   "visitorScore": 97
   },
   {
    "gameId": 21718079,
    "matchup": "ORL @ SAC",
    "status": "2nd Qtr",
-   "homeScore": 50,
-   "visitorScore": 55
+   "homeScore": 52,
+   "visitorScore": 57
   },
   {
    "gameId": 21718080,
@@ -1067,7 +1067,7 @@
    "scoreMargin": 11,
    "valueAtPick": 2,
    "projection": 7.306746223958333,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -1101,7 +1101,7 @@
    "scoreMargin": -11,
    "valueAtPick": 0,
    "projection": 6.181761373296822,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -1167,7 +1167,7 @@
    "scoreMargin": -4,
    "valueAtPick": 0,
    "projection": 0.33967031250000007,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Over",
     "3PM",
@@ -1586,7 +1586,7 @@
    "scoreMargin": -17,
    "valueAtPick": 2,
    "projection": 3.2953744369999995,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Over",
     "Assists",
@@ -1654,7 +1654,7 @@
    "scoreMargin": 17,
    "valueAtPick": 5,
    "projection": 7.972464771395201,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -1854,7 +1854,7 @@
    "scoreMargin": 7,
    "valueAtPick": 2,
    "projection": 9.093359374999999,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -1986,7 +1986,7 @@
    "scoreMargin": -7,
    "valueAtPick": 1,
    "projection": 5.57691197818782,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -2053,7 +2053,7 @@
    "scoreMargin": 27,
    "valueAtPick": 4,
    "projection": 5.13180478788419,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -2269,9 +2269,175 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718079-56677827-points_assists",
+   "gameDate": "2026-11-10",
+   "gameId": 21718079,
+   "matchup": "ORL @ SAC",
+   "playerId": 56677827,
+   "playerName": "Anthony Black",
+   "teamAbbreviation": "ORL",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 30.5,
+   "americanOdds": 104,
+   "vendor": "fanduel",
+   "modelProbability": 0.6084771355181806,
+   "evPercent": 24.12933564570885,
+   "foundAt": "2026-11-11T04:09:24.346Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 5,
+   "valueAtPick": 19,
+   "projection": 32.00599816213981,
+   "latestValue": 19,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718079-3547249-points_rebounds_assists",
+   "gameDate": "2026-11-10",
+   "gameId": 21718079,
+   "matchup": "ORL @ SAC",
+   "playerId": 3547249,
+   "playerName": "Precious Achiuwa",
+   "teamAbbreviation": "SAC",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 13.5,
+   "americanOdds": -132,
+   "vendor": "fanduel",
+   "modelProbability": 0.6999060166238431,
+   "evPercent": 23.01378473994817,
+   "foundAt": "2026-11-11T04:09:24.346Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -5,
+   "valueAtPick": 8,
+   "projection": 15.706664547652196,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718079-1091338860-rebounds",
+   "gameDate": "2026-11-10",
+   "gameId": 21718079,
+   "matchup": "ORL @ SAC",
+   "playerId": 1091338860,
+   "playerName": "Darius Acuff Jr.",
+   "teamAbbreviation": "SAC",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": -120,
+   "vendor": "draftkings",
+   "modelProbability": 0.6520150932943495,
+   "evPercent": 19.53610043729741,
+   "foundAt": "2026-11-11T04:09:24.346Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -5,
+   "valueAtPick": 3,
+   "projection": 5.210342708526854,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718079-38017734-rebounds",
+   "gameDate": "2026-11-10",
+   "gameId": 21718079,
+   "matchup": "ORL @ SAC",
+   "playerId": 38017734,
+   "playerName": "Jamal Cain",
+   "teamAbbreviation": "ORL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": -170,
+   "vendor": "caesars",
+   "modelProbability": 0.7478011926778885,
+   "evPercent": 18.768424719429344,
+   "foundAt": "2026-11-11T04:09:24.346Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 5,
+   "valueAtPick": 2,
+   "projection": 3.5002182707939404,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718079-3547287-assists",
+   "gameDate": "2026-11-10",
+   "gameId": 21718079,
+   "matchup": "ORL @ SAC",
+   "playerId": 3547287,
+   "playerName": "Desmond Bane",
+   "teamAbbreviation": "ORL",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": -118,
+   "vendor": "caesars",
+   "modelProbability": 0.6398510921004212,
+   "evPercent": 18.20977803211172,
+   "foundAt": "2026-11-11T04:09:24.346Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 5,
+   "valueAtPick": 2,
+   "projection": 3.051142595465633,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 551,
+ "calls": 562,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
@@ -2295,7 +2461,8 @@
    "end-q3"
   ],
   "21718079": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
