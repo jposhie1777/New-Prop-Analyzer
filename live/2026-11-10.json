@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T04:32:57.413Z",
+ "updatedAt": "2026-11-11T04:36:57.629Z",
  "state": "running",
  "games": [
   {
@@ -28,22 +28,22 @@
    "gameId": 21718078,
    "matchup": "MIA @ UTA",
    "status": "4th Qtr",
-   "homeScore": 103,
-   "visitorScore": 110
+   "homeScore": 107,
+   "visitorScore": 112
   },
   {
    "gameId": 21718079,
    "matchup": "ORL @ SAC",
    "status": "3rd Qtr",
-   "homeScore": 59,
-   "visitorScore": 61
+   "homeScore": 65,
+   "visitorScore": 68
   },
   {
    "gameId": 21718080,
    "matchup": "OKC @ POR",
    "status": "1st Qtr",
-   "homeScore": 20,
-   "visitorScore": 19
+   "homeScore": 22,
+   "visitorScore": 21
   }
  ],
  "picks": [
@@ -1728,7 +1728,7 @@
    "scoreMargin": 10,
    "valueAtPick": 12,
    "projection": 21.28166031980144,
-   "latestValue": 22,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Over",
@@ -2172,7 +2172,7 @@
    "scoreMargin": 20,
    "valueAtPick": 12,
    "projection": 15.462885030442894,
-   "latestValue": 13,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -2344,7 +2344,7 @@
    "scoreMargin": 5,
    "valueAtPick": 19,
    "projection": 32.00599816213981,
-   "latestValue": 19,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -2410,7 +2410,7 @@
    "scoreMargin": -5,
    "valueAtPick": 3,
    "projection": 5.210342708526854,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -2444,7 +2444,7 @@
    "scoreMargin": 5,
    "valueAtPick": 2,
    "projection": 3.5002182707939404,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -2489,7 +2489,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 30,
+ "calls": 38,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
