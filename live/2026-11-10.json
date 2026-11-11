@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T03:30:23.274Z",
+ "updatedAt": "2026-11-11T03:34:23.118Z",
  "state": "running",
  "games": [
   {
@@ -21,7 +21,7 @@
    "gameId": 21718076,
    "matchup": "LAC @ PHX",
    "status": "3rd Qtr",
-   "homeScore": 78,
+   "homeScore": 83,
    "visitorScore": 56
   },
   {
@@ -35,8 +35,8 @@
    "gameId": 21718079,
    "matchup": "ORL @ SAC",
    "status": "1st Qtr",
-   "homeScore": 18,
-   "visitorScore": 26
+   "homeScore": 20,
+   "visitorScore": 31
   },
   {
    "gameId": 21718080,
@@ -1034,7 +1034,7 @@
    "scoreMargin": 11,
    "valueAtPick": 6,
    "projection": 16.32048100109157,
-   "latestValue": 14,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -1619,7 +1619,7 @@
    "scoreMargin": 17,
    "valueAtPick": 1,
    "projection": 10.63392168901494,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -1833,7 +1833,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 469,
+ "calls": 477,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
