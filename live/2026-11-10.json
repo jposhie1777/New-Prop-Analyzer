@@ -1,21 +1,21 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T02:46:23.552Z",
+ "updatedAt": "2026-11-11T02:50:21.914Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718074,
    "matchup": "MIL @ NYK",
    "status": "4th Qtr",
-   "homeScore": 109,
-   "visitorScore": 83
+   "homeScore": 114,
+   "visitorScore": 85
   },
   {
    "gameId": 21718075,
    "matchup": "BOS @ PHI",
    "status": "3rd Qtr",
-   "homeScore": 76,
-   "visitorScore": 76
+   "homeScore": 79,
+   "visitorScore": 82
   },
   {
    "gameId": 21718076,
@@ -29,7 +29,7 @@
    "matchup": "MIA @ UTA",
    "status": "2nd Qtr",
    "homeScore": 25,
-   "visitorScore": 29
+   "visitorScore": 31
   },
   {
    "gameId": 21718079,
@@ -438,7 +438,7 @@
    "scoreMargin": 7,
    "valueAtPick": 6,
    "projection": 12.575121735382378,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -1211,7 +1211,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 370,
+ "calls": 378,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
