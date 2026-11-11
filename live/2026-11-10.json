@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T03:34:23.118Z",
+ "updatedAt": "2026-11-11T03:38:24.011Z",
  "state": "running",
  "games": [
   {
@@ -21,22 +21,22 @@
    "gameId": 21718076,
    "matchup": "LAC @ PHX",
    "status": "3rd Qtr",
-   "homeScore": 83,
-   "visitorScore": 56
+   "homeScore": 86,
+   "visitorScore": 59
   },
   {
    "gameId": 21718078,
    "matchup": "MIA @ UTA",
-   "status": "2nd Qtr",
-   "homeScore": 54,
+   "status": "3rd Qtr",
+   "homeScore": 57,
    "visitorScore": 64
   },
   {
    "gameId": 21718079,
    "matchup": "ORL @ SAC",
    "status": "1st Qtr",
-   "homeScore": 20,
-   "visitorScore": 31
+   "homeScore": 27,
+   "visitorScore": 34
   },
   {
    "gameId": 21718080,
@@ -1034,7 +1034,7 @@
    "scoreMargin": 11,
    "valueAtPick": 6,
    "projection": 16.32048100109157,
-   "latestValue": 16,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Over",
@@ -1831,9 +1831,174 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718079-85-rebounds",
+   "gameDate": "2026-11-10",
+   "gameId": 21718079,
+   "matchup": "ORL @ SAC",
+   "playerId": 85,
+   "playerName": "Wendell Carter Jr.",
+   "teamAbbreviation": "ORL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 8.5,
+   "americanOdds": 116,
+   "vendor": "fanduel",
+   "modelProbability": 0.5722908656060715,
+   "evPercent": 23.61482697091144,
+   "foundAt": "2026-11-11T03:38:23.028Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 7,
+   "valueAtPick": 2,
+   "projection": 9.093359374999999,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718079-38017688-points_rebounds",
+   "gameDate": "2026-11-10",
+   "gameId": 21718079,
+   "matchup": "ORL @ SAC",
+   "playerId": 38017688,
+   "playerName": "Keegan Murray",
+   "teamAbbreviation": "SAC",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 14.5,
+   "americanOdds": -132,
+   "vendor": "fanduel",
+   "modelProbability": 0.6996532138974699,
+   "evPercent": 22.969352745615936,
+   "foundAt": "2026-11-11T03:38:23.028Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -7,
+   "valueAtPick": 5,
+   "projection": 12.348247586668801,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718079-666656-points",
+   "gameDate": "2026-11-10",
+   "gameId": 21718079,
+   "matchup": "ORL @ SAC",
+   "playerId": 666656,
+   "playerName": "De'Andre Hunter",
+   "teamAbbreviation": "SAC",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 14.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.6560502648951894,
+   "evPercent": 21.20250656538243,
+   "foundAt": "2026-11-11T03:38:23.028Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -7,
+   "valueAtPick": 7,
+   "projection": 16.46584763559249,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718079-324-assists",
+   "gameDate": "2026-11-10",
+   "gameId": 21718079,
+   "matchup": "ORL @ SAC",
+   "playerId": 324,
+   "playerName": "Malik Monk",
+   "teamAbbreviation": "SAC",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": 127,
+   "vendor": "caesars",
+   "modelProbability": 0.5330179041227638,
+   "evPercent": 20.99506423586739,
+   "foundAt": "2026-11-11T03:38:23.028Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -7,
+   "valueAtPick": 0,
+   "projection": 2.344863267336022,
+   "latestValue": 0,
+   "tags": [
+    "Under",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718079-3547249-rebounds",
+   "gameDate": "2026-11-10",
+   "gameId": 21718079,
+   "matchup": "ORL @ SAC",
+   "playerId": 3547249,
+   "playerName": "Precious Achiuwa",
+   "teamAbbreviation": "SAC",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": -125,
+   "vendor": "draftkings",
+   "modelProbability": 0.6597176748984501,
+   "evPercent": 18.749181481721024,
+   "foundAt": "2026-11-11T03:38:23.028Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -7,
+   "valueAtPick": 1,
+   "projection": 5.57691197818782,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 477,
+ "calls": 489,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
@@ -1853,6 +2018,9 @@
   "21718078": [
    "end-q1",
    "halftime"
+  ],
+  "21718079": [
+   "end-q1"
   ]
  }
 }
