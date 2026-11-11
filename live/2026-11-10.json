@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T04:20:56.874Z",
+ "updatedAt": "2026-11-11T04:24:57.106Z",
  "state": "running",
  "games": [
   {
@@ -21,28 +21,28 @@
    "gameId": 21718076,
    "matchup": "LAC @ PHX",
    "status": "4th Qtr",
-   "homeScore": 128,
-   "visitorScore": 97
+   "homeScore": 133,
+   "visitorScore": 107
   },
   {
    "gameId": 21718078,
    "matchup": "MIA @ UTA",
    "status": "4th Qtr",
-   "homeScore": 93,
-   "visitorScore": 101
+   "homeScore": 95,
+   "visitorScore": 105
   },
   {
    "gameId": 21718079,
    "matchup": "ORL @ SAC",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 52,
-   "visitorScore": 57
+   "visitorScore": 59
   },
   {
    "gameId": 21718080,
    "matchup": "OKC @ POR",
    "status": "1st Qtr",
-   "homeScore": 9,
+   "homeScore": 12,
    "visitorScore": 7
   }
  ],
@@ -1101,7 +1101,7 @@
    "scoreMargin": -11,
    "valueAtPick": 0,
    "projection": 6.181761373296822,
-   "latestValue": 9,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -1134,7 +1134,7 @@
    "scoreMargin": -11,
    "valueAtPick": 0,
    "projection": 3.8227157105100704,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -1232,7 +1232,7 @@
    "scoreMargin": 4,
    "valueAtPick": 2,
    "projection": 11.337117856489005,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -1854,7 +1854,7 @@
    "scoreMargin": 7,
    "valueAtPick": 2,
    "projection": 9.093359374999999,
-   "latestValue": 8,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -2120,7 +2120,7 @@
    "scoreMargin": 20,
    "valueAtPick": 12,
    "projection": 15.462885030442894,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -2155,7 +2155,7 @@
    "scoreMargin": -20,
    "valueAtPick": 27,
    "projection": 34.40047747223203,
-   "latestValue": 33,
+   "latestValue": 34,
    "tags": [
     "Best bet",
     "Over",
@@ -2437,7 +2437,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 5,
+ "calls": 13,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
