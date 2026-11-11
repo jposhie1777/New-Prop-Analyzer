@@ -1,14 +1,14 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T02:22:20.064Z",
+ "updatedAt": "2026-11-11T02:26:20.591Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718074,
    "matchup": "MIL @ NYK",
    "status": "4th Qtr",
-   "homeScore": 85,
-   "visitorScore": 72
+   "homeScore": 91,
+   "visitorScore": 74
   },
   {
    "gameId": 21718075,
@@ -21,15 +21,15 @@
    "gameId": 21718076,
    "matchup": "LAC @ PHX",
    "status": "1st Qtr",
-   "homeScore": 8,
-   "visitorScore": 11
+   "homeScore": 15,
+   "visitorScore": 15
   },
   {
    "gameId": 21718078,
    "matchup": "MIA @ UTA",
    "status": "1st Qtr",
-   "homeScore": 12,
-   "visitorScore": 18
+   "homeScore": 14,
+   "visitorScore": 22
   },
   {
    "gameId": 21718079,
@@ -102,7 +102,7 @@
    "scoreMargin": 5,
    "valueAtPick": 5,
    "projection": 21.511987566008923,
-   "latestValue": 11,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -135,7 +135,7 @@
    "scoreMargin": -5,
    "valueAtPick": 2,
    "projection": 13.732300776158766,
-   "latestValue": 16,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -880,7 +880,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 314,
+ "calls": 322,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
