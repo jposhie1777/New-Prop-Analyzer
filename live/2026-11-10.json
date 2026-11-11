@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T05:37:00.084Z",
+ "updatedAt": "2026-11-11T05:41:00.299Z",
  "state": "running",
  "games": [
   {
@@ -42,8 +42,8 @@
    "gameId": 21718080,
    "matchup": "OKC @ POR",
    "status": "3rd Qtr",
-   "homeScore": 67,
-   "visitorScore": 69
+   "homeScore": 72,
+   "visitorScore": 71
   }
  ],
  "picks": [
@@ -2643,7 +2643,7 @@
    "scoreMargin": 1,
    "valueAtPick": 6,
    "projection": 12.65460117950554,
-   "latestValue": 10,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -3105,7 +3105,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 172,
+ "calls": 180,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
