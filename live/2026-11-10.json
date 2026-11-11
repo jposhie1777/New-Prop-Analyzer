@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T04:14:24.803Z",
+ "updatedAt": "2026-11-11T04:18:25.009Z",
  "state": "running",
  "games": [
   {
@@ -21,15 +21,15 @@
    "gameId": 21718076,
    "matchup": "LAC @ PHX",
    "status": "4th Qtr",
-   "homeScore": 124,
+   "homeScore": 125,
    "visitorScore": 95
   },
   {
    "gameId": 21718078,
    "matchup": "MIA @ UTA",
    "status": "4th Qtr",
-   "homeScore": 82,
-   "visitorScore": 99
+   "homeScore": 87,
+   "visitorScore": 101
   },
   {
    "gameId": 21718079,
@@ -41,9 +41,9 @@
   {
    "gameId": 21718080,
    "matchup": "OKC @ POR",
-   "status": "2026-11-11T04:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 5,
+   "visitorScore": 2
   }
  ],
  "picks": [
@@ -1167,7 +1167,7 @@
    "scoreMargin": -4,
    "valueAtPick": 0,
    "projection": 0.33967031250000007,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Over",
     "3PM",
@@ -2437,7 +2437,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 570,
+ "calls": 578,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
