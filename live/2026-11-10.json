@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T04:10:24.715Z",
+ "updatedAt": "2026-11-11T04:14:24.803Z",
  "state": "running",
  "games": [
   {
@@ -21,15 +21,15 @@
    "gameId": 21718076,
    "matchup": "LAC @ PHX",
    "status": "4th Qtr",
-   "homeScore": 115,
-   "visitorScore": 89
+   "homeScore": 124,
+   "visitorScore": 95
   },
   {
    "gameId": 21718078,
    "matchup": "MIA @ UTA",
    "status": "4th Qtr",
-   "homeScore": 75,
-   "visitorScore": 97
+   "homeScore": 82,
+   "visitorScore": 99
   },
   {
    "gameId": 21718079,
@@ -1101,7 +1101,7 @@
    "scoreMargin": -11,
    "valueAtPick": 0,
    "projection": 6.181761373296822,
-   "latestValue": 6,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -1688,7 +1688,7 @@
    "scoreMargin": 10,
    "valueAtPick": 12,
    "projection": 21.28166031980144,
-   "latestValue": 18,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -2155,7 +2155,7 @@
    "scoreMargin": -20,
    "valueAtPick": 27,
    "projection": 34.40047747223203,
-   "latestValue": 27,
+   "latestValue": 32,
    "tags": [
     "Best bet",
     "Over",
@@ -2437,7 +2437,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 562,
+ "calls": 570,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
