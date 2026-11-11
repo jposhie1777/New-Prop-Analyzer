@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T04:02:24.378Z",
+ "updatedAt": "2026-11-11T04:06:24.557Z",
  "state": "running",
  "games": [
   {
@@ -21,22 +21,22 @@
    "gameId": 21718076,
    "matchup": "LAC @ PHX",
    "status": "4th Qtr",
-   "homeScore": 106,
-   "visitorScore": 81
+   "homeScore": 109,
+   "visitorScore": 84
   },
   {
    "gameId": 21718078,
    "matchup": "MIA @ UTA",
-   "status": "3rd Qtr",
-   "homeScore": 70,
-   "visitorScore": 89
+   "status": "4th Qtr",
+   "homeScore": 72,
+   "visitorScore": 92
   },
   {
    "gameId": 21718079,
    "matchup": "ORL @ SAC",
    "status": "2nd Qtr",
-   "homeScore": 43,
-   "visitorScore": 52
+   "homeScore": 50,
+   "visitorScore": 55
   },
   {
    "gameId": 21718080,
@@ -1101,7 +1101,7 @@
    "scoreMargin": -11,
    "valueAtPick": 0,
    "projection": 6.181761373296822,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -1721,7 +1721,7 @@
    "scoreMargin": 10,
    "valueAtPick": 1,
    "projection": 1.3508655991469387,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -1854,7 +1854,7 @@
    "scoreMargin": 7,
    "valueAtPick": 2,
    "projection": 9.093359374999999,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -1986,7 +1986,7 @@
    "scoreMargin": -7,
    "valueAtPick": 1,
    "projection": 5.57691197818782,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Over",
@@ -2097,9 +2097,181 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718078-15-rebounds_assists",
+   "gameDate": "2026-11-10",
+   "gameId": 21718078,
+   "matchup": "MIA @ UTA",
+   "playerId": 15,
+   "playerName": "Giannis Antetokounmpo",
+   "teamAbbreviation": "MIA",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 14.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.6582880560756087,
+   "evPercent": 23.573371929982677,
+   "foundAt": "2026-11-11T04:04:24.109Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 20,
+   "valueAtPick": 12,
+   "projection": 15.462885030442894,
+   "latestValue": 12,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Reb+Ast",
+    "Blowout risk",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718078-1091342427-points_rebounds_assists",
+   "gameDate": "2026-11-10",
+   "gameId": 21718078,
+   "matchup": "MIA @ UTA",
+   "playerId": 1091342427,
+   "playerName": "Darryn Peterson",
+   "teamAbbreviation": "UTA",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 32.5,
+   "americanOdds": -122,
+   "vendor": "fanduel",
+   "modelProbability": 0.6774743001355685,
+   "evPercent": 23.278110352537883,
+   "foundAt": "2026-11-11T04:04:24.109Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -20,
+   "valueAtPick": 27,
+   "projection": 34.40047747223203,
+   "latestValue": 27,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Blowout risk",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718078-1028036986-threes",
+   "gameDate": "2026-11-10",
+   "gameId": 21718078,
+   "matchup": "MIA @ UTA",
+   "playerId": 1028036986,
+   "playerName": "Pelle Larsson",
+   "teamAbbreviation": "MIA",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 160,
+   "vendor": "betmgm",
+   "modelProbability": 0.46894268981251463,
+   "evPercent": 21.92509935125382,
+   "foundAt": "2026-11-11T04:04:24.109Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 20,
+   "valueAtPick": 2,
+   "projection": 2.434799675840285,
+   "latestValue": 2,
+   "tags": [
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718078-377-points",
+   "gameDate": "2026-11-10",
+   "gameId": 21718078,
+   "matchup": "MIA @ UTA",
+   "playerId": 377,
+   "playerName": "Bobby Portis",
+   "teamAbbreviation": "MIA",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": -145,
+   "vendor": "betmgm",
+   "modelProbability": 0.7092058349217344,
+   "evPercent": 19.831330728155127,
+   "foundAt": "2026-11-11T04:04:24.109Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 20,
+   "valueAtPick": 5,
+   "projection": 6.613336354749119,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718078-443-rebounds",
+   "gameDate": "2026-11-10",
+   "gameId": 21718078,
+   "matchup": "MIA @ UTA",
+   "playerId": 443,
+   "playerName": "Klay Thompson",
+   "teamAbbreviation": "MIA",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 0.5,
+   "americanOdds": -140,
+   "vendor": "betmgm",
+   "modelProbability": 0.6939624259228852,
+   "evPercent": 18.96498730106604,
+   "foundAt": "2026-11-11T04:04:24.109Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 20,
+   "valueAtPick": 0,
+   "projection": 0.16038534246899627,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 540,
+ "calls": 551,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
@@ -2119,7 +2291,8 @@
   ],
   "21718078": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718079": [
    "end-q1"
