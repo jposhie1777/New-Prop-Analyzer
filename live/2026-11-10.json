@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T03:14:22.409Z",
+ "updatedAt": "2026-11-11T03:18:22.543Z",
  "state": "running",
  "games": [
   {
@@ -14,8 +14,8 @@
    "gameId": 21718075,
    "matchup": "BOS @ PHI",
    "status": "4th Qtr",
-   "homeScore": 87,
-   "visitorScore": 108
+   "homeScore": 89,
+   "visitorScore": 116
   },
   {
    "gameId": 21718076,
@@ -28,15 +28,15 @@
    "gameId": 21718078,
    "matchup": "MIA @ UTA",
    "status": "2nd Qtr",
-   "homeScore": 45,
-   "visitorScore": 57
+   "homeScore": 49,
+   "visitorScore": 60
   },
   {
    "gameId": 21718079,
    "matchup": "ORL @ SAC",
    "status": "1st Qtr",
-   "homeScore": 7,
-   "visitorScore": 5
+   "homeScore": 9,
+   "visitorScore": 15
   },
   {
    "gameId": 21718080,
@@ -511,7 +511,7 @@
    "scoreMargin": 7,
    "valueAtPick": 0,
    "projection": 3.825860320181822,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -577,7 +577,7 @@
    "scoreMargin": 7,
    "valueAtPick": 4,
    "projection": 16.972650016038152,
-   "latestValue": 33,
+   "latestValue": 36,
    "tags": [
     "Best bet",
     "Under",
@@ -610,7 +610,7 @@
    "scoreMargin": 11,
    "valueAtPick": 17,
    "projection": 33.73230011900911,
-   "latestValue": 30,
+   "latestValue": 31,
    "tags": [
     "Best bet",
     "Under",
@@ -1325,7 +1325,7 @@
    "scoreMargin": 9,
    "valueAtPick": 8,
    "projection": 10.021468098628578,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -1607,7 +1607,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 433,
+ "calls": 441,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
