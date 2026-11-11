@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T03:02:22.025Z",
+ "updatedAt": "2026-11-11T03:06:22.012Z",
  "state": "running",
  "games": [
   {
@@ -15,20 +15,20 @@
    "matchup": "BOS @ PHI",
    "status": "4th Qtr",
    "homeScore": 82,
-   "visitorScore": 100
+   "visitorScore": 105
   },
   {
    "gameId": 21718076,
    "matchup": "LAC @ PHX",
    "status": "2nd Qtr",
-   "homeScore": 58,
+   "homeScore": 64,
    "visitorScore": 47
   },
   {
    "gameId": 21718078,
    "matchup": "MIA @ UTA",
    "status": "2nd Qtr",
-   "homeScore": 32,
+   "homeScore": 34,
    "visitorScore": 49
   },
   {
@@ -478,7 +478,7 @@
    "scoreMargin": 7,
    "valueAtPick": 6,
    "projection": 12.575121735382378,
-   "latestValue": 16,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Over",
@@ -577,7 +577,7 @@
    "scoreMargin": 7,
    "valueAtPick": 4,
    "projection": 16.972650016038152,
-   "latestValue": 25,
+   "latestValue": 30,
    "tags": [
     "Best bet",
     "Under",
@@ -1435,9 +1435,179 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718076-283-points",
+   "gameDate": "2026-11-10",
+   "gameId": 21718076,
+   "matchup": "LAC @ PHX",
+   "playerId": 283,
+   "playerName": "Brook Lopez",
+   "teamAbbreviation": "LAC",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 10.5,
+   "americanOdds": 100,
+   "vendor": "draftkings",
+   "modelProbability": 0.6200377412877004,
+   "evPercent": 24.00754825754008,
+   "foundAt": "2026-11-11T03:05:21.678Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -17,
+   "valueAtPick": 5,
+   "projection": 9.472120793019077,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718076-666581-threes",
+   "gameDate": "2026-11-10",
+   "gameId": 21718076,
+   "matchup": "LAC @ PHX",
+   "playerId": 666581,
+   "playerName": "Darius Garland",
+   "teamAbbreviation": "LAC",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -112,
+   "vendor": "caesars",
+   "modelProbability": 0.6357429330819114,
+   "evPercent": 20.33705519050466,
+   "foundAt": "2026-11-11T03:05:21.678Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -17,
+   "valueAtPick": 1,
+   "projection": 2.0489295634887696,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718076-666908-assists",
+   "gameDate": "2026-11-10",
+   "gameId": 21718076,
+   "matchup": "LAC @ PHX",
+   "playerId": 666908,
+   "playerName": "Max Strus",
+   "teamAbbreviation": "LAC",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 170,
+   "vendor": "draftkings",
+   "modelProbability": 0.4415493842915773,
+   "evPercent": 19.21833375872588,
+   "foundAt": "2026-11-11T03:05:21.678Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -17,
+   "valueAtPick": 2,
+   "projection": 3.2953744369999995,
+   "latestValue": 2,
+   "tags": [
+    "Over",
+    "Assists",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718076-62-points_assists",
+   "gameDate": "2026-11-10",
+   "gameId": 21718076,
+   "matchup": "LAC @ PHX",
+   "playerId": 62,
+   "playerName": "Miles Bridges",
+   "teamAbbreviation": "PHX",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.5951795085644445,
+   "evPercent": 17.86888306864489,
+   "foundAt": "2026-11-11T03:05:21.678Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 17,
+   "valueAtPick": 1,
+   "projection": 10.63392168901494,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718076-1057268513-rebounds",
+   "gameDate": "2026-11-10",
+   "gameId": 21718076,
+   "matchup": "LAC @ PHX",
+   "playerId": 1057268513,
+   "playerName": "Khaman Maluach",
+   "teamAbbreviation": "PHX",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 7.5,
+   "americanOdds": 100,
+   "vendor": "draftkings",
+   "modelProbability": 0.5886699736747403,
+   "evPercent": 17.733994734948055,
+   "foundAt": "2026-11-11T03:05:21.678Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 17,
+   "valueAtPick": 5,
+   "projection": 7.972464771395201,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 406,
+ "calls": 417,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
@@ -1451,7 +1621,8 @@
    "end-q3"
   ],
   "21718076": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718078": [
    "end-q1"
