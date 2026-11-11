@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T05:12:59.113Z",
+ "updatedAt": "2026-11-11T05:16:59.274Z",
  "state": "running",
  "games": [
   {
@@ -36,14 +36,14 @@
    "matchup": "ORL @ SAC",
    "status": "4th Qtr",
    "homeScore": 90,
-   "visitorScore": 99
+   "visitorScore": 101
   },
   {
    "gameId": 21718080,
    "matchup": "OKC @ POR",
    "status": "2nd Qtr",
-   "homeScore": 58,
-   "visitorScore": 57
+   "homeScore": 59,
+   "visitorScore": 59
   }
  ],
  "picks": [
@@ -1934,7 +1934,7 @@
    "scoreMargin": 7,
    "valueAtPick": 2,
    "projection": 9.093359374999999,
-   "latestValue": 10,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Over",
@@ -2537,7 +2537,7 @@
    "scoreMargin": 5,
    "valueAtPick": 2,
    "projection": 3.051142595465633,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -2734,7 +2734,7 @@
    "scoreMargin": 8,
    "valueAtPick": 4,
    "projection": 5.361126083157203,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Under",
     "Reb+Ast",
@@ -2766,7 +2766,7 @@
    "scoreMargin": 8,
    "valueAtPick": 5,
    "projection": 5.848532833221642,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -2877,9 +2877,175 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718080-278-assists",
+   "gameDate": "2026-11-10",
+   "gameId": 21718080,
+   "matchup": "OKC @ POR",
+   "playerId": 278,
+   "playerName": "Damian Lillard",
+   "teamAbbreviation": "POR",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": -110,
+   "vendor": "betmgm",
+   "modelProbability": 0.6539764993161052,
+   "evPercent": 24.850058960347376,
+   "foundAt": "2026-11-11T05:14:59.043Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 0,
+   "valueAtPick": 2,
+   "projection": 4.221875,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718080-56677817-assists",
+   "gameDate": "2026-11-10",
+   "gameId": 21718080,
+   "matchup": "OKC @ POR",
+   "playerId": 56677817,
+   "playerName": "Sidy Cissoko",
+   "teamAbbreviation": "POR",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": 134,
+   "vendor": "fanduel",
+   "modelProbability": 0.5289731277388443,
+   "evPercent": 23.779711890889565,
+   "foundAt": "2026-11-11T05:14:59.043Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 0,
+   "valueAtPick": 1,
+   "projection": 1.4409803273983086,
+   "latestValue": 1,
+   "tags": [
+    "Under",
+    "Assists",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718080-1028027372-threes",
+   "gameDate": "2026-11-10",
+   "gameId": 21718080,
+   "matchup": "OKC @ POR",
+   "playerId": 1028027372,
+   "playerName": "Jared McCain",
+   "teamAbbreviation": "OKC",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": -170,
+   "vendor": "caesars",
+   "modelProbability": 0.7782156108512421,
+   "evPercent": 23.598949958726713,
+   "foundAt": "2026-11-11T05:14:59.043Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 0,
+   "valueAtPick": 2,
+   "projection": 2.691546875916709,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Hot shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718080-175-points_rebounds",
+   "gameDate": "2026-11-10",
+   "gameId": 21718080,
+   "matchup": "OKC @ POR",
+   "playerId": 175,
+   "playerName": "Shai Gilgeous-Alexander",
+   "teamAbbreviation": "OKC",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 45.5,
+   "americanOdds": 100,
+   "vendor": "fanduel",
+   "modelProbability": 0.6083223207342618,
+   "evPercent": 21.664464146852367,
+   "foundAt": "2026-11-11T05:14:59.043Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 0,
+   "valueAtPick": 26,
+   "projection": 47.430326843480145,
+   "latestValue": 26,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718080-1091351965-points_rebounds_assists",
+   "gameDate": "2026-11-10",
+   "gameId": 21718080,
+   "matchup": "OKC @ POR",
+   "playerId": 1091351965,
+   "playerName": "Aday Mara",
+   "teamAbbreviation": "OKC",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 17.5,
+   "americanOdds": -138,
+   "vendor": "fanduel",
+   "modelProbability": 0.7031776297206584,
+   "evPercent": 21.27266367646139,
+   "foundAt": "2026-11-11T05:14:59.043Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 0,
+   "valueAtPick": 11,
+   "projection": 19.916236208829517,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 120,
+ "calls": 131,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
@@ -2908,7 +3074,8 @@
    "end-q3"
   ],
   "21718080": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
