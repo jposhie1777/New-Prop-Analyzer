@@ -1,8 +1,8 @@
 {
  "date": "2026-11-11",
- "state": "waiting",
- "updatedAt": "2026-11-11T23:36:23.750Z",
+ "state": "running",
+ "updatedAt": "2026-11-11T23:50:10.298Z",
  "picks": 0,
  "liveGames": 0,
- "note": "First tip-off 2026-11-12T00:00:00.000Z"
+ "note": null
 }
