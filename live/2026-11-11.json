@@ -1,0 +1,80 @@
+{
+ "date": "2026-11-11",
+ "updatedAt": "2026-11-11T22:36:18.357Z",
+ "state": "waiting",
+ "games": [
+  {
+   "gameId": 21718081,
+   "matchup": "WAS @ IND",
+   "status": "2026-11-12T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718082,
+   "matchup": "CLE @ NYK",
+   "status": "2026-11-12T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718083,
+   "matchup": "BOS @ TOR",
+   "status": "2026-11-12T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718084,
+   "matchup": "SAS @ CHI",
+   "status": "2026-11-12T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718085,
+   "matchup": "DEN @ MEM",
+   "status": "2026-11-12T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718086,
+   "matchup": "LAL @ MIL",
+   "status": "2026-11-12T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718087,
+   "matchup": "BKN @ NOP",
+   "status": "2026-11-12T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718088,
+   "matchup": "ORL @ UTA",
+   "status": "2026-11-12T02:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718089,
+   "matchup": "GSW @ HOU",
+   "status": "2026-11-12T02:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718090,
+   "matchup": "OKC @ POR",
+   "status": "2026-11-12T03:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  }
+ ],
+ "picks": [],
+ "calls": 1,
+ "note": "First tip-off 2026-11-12T00:00:00.000Z"
+}
