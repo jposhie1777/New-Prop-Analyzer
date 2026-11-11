@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "updatedAt": "2026-11-11T01:32:17.944Z",
+ "updatedAt": "2026-11-11T01:36:18.239Z",
  "state": "running",
  "games": [
   {
@@ -15,7 +15,7 @@
    "matchup": "BOS @ PHI",
    "status": "1st Qtr",
    "homeScore": 20,
-   "visitorScore": 23
+   "visitorScore": 26
   },
   {
    "gameId": 21718076,
@@ -201,7 +201,7 @@
    "scoreMargin": 5,
    "valueAtPick": 1,
    "projection": 3.7662973156249993,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -384,7 +384,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 204,
+ "calls": 212,
  "note": null,
  "checkpointsTaken": {
   "21718074": [
