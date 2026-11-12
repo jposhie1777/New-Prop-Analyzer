@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-12T05:12:54.527Z",
+ "updatedAt": "2026-11-12T05:16:54.456Z",
  "state": "running",
  "games": [
   {
@@ -70,7 +70,7 @@
    "gameId": 21718090,
    "matchup": "OKC @ POR",
    "status": "4th Qtr",
-   "homeScore": 99,
+   "homeScore": 102,
    "visitorScore": 99
   }
  ],
@@ -4847,7 +4847,7 @@
    "scoreMargin": -6,
    "valueAtPick": 5,
    "projection": 10.815405505838044,
-   "latestValue": 15,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Under",
@@ -5300,7 +5300,7 @@
    "scoreMargin": -3,
    "valueAtPick": 7,
    "projection": 8.849776627978887,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -5313,7 +5313,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 123,
+ "calls": 131,
  "note": null,
  "checkpointsTaken": {
   "21718081": [
