@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-12T05:04:53.958Z",
+ "updatedAt": "2026-11-12T05:08:54.094Z",
  "state": "running",
  "games": [
   {
@@ -63,15 +63,15 @@
    "gameId": 21718089,
    "matchup": "GSW @ HOU",
    "status": "4th Qtr",
-   "homeScore": 111,
-   "visitorScore": 97
+   "homeScore": 115,
+   "visitorScore": 106
   },
   {
    "gameId": 21718090,
    "matchup": "OKC @ POR",
    "status": "4th Qtr",
-   "homeScore": 90,
-   "visitorScore": 94
+   "homeScore": 95,
+   "visitorScore": 96
   }
  ],
  "picks": [
@@ -3898,7 +3898,7 @@
    "scoreMargin": 15,
    "valueAtPick": 13,
    "projection": 32.23313416839627,
-   "latestValue": 23,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Over",
@@ -4354,7 +4354,7 @@
    "scoreMargin": -4,
    "valueAtPick": 2,
    "projection": 15.215674455417902,
-   "latestValue": 9,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -4841,7 +4841,7 @@
    "scoreMargin": -6,
    "valueAtPick": 9,
    "projection": 15.35204284498511,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -5253,7 +5253,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 106,
+ "calls": 114,
  "note": null,
  "checkpointsTaken": {
   "21718081": [
