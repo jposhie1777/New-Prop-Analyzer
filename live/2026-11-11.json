@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-12T04:11:21.080Z",
+ "updatedAt": "2026-11-12T04:15:21.644Z",
  "state": "running",
  "games": [
   {
@@ -56,15 +56,15 @@
    "gameId": 21718088,
    "matchup": "ORL @ UTA",
    "status": "4th Qtr",
-   "homeScore": 96,
-   "visitorScore": 95
+   "homeScore": 98,
+   "visitorScore": 106
   },
   {
    "gameId": 21718089,
    "matchup": "GSW @ HOU",
    "status": "3rd Qtr",
-   "homeScore": 73,
-   "visitorScore": 65
+   "homeScore": 75,
+   "visitorScore": 67
   },
   {
    "gameId": 21718090,
@@ -3982,7 +3982,7 @@
    "scoreMargin": -15,
    "valueAtPick": 5,
    "projection": 17.65908439035437,
-   "latestValue": 20,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Under",
@@ -4016,7 +4016,7 @@
    "scoreMargin": -15,
    "valueAtPick": 1,
    "projection": 3.7389627796849934,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Over",
     "Assists",
@@ -4049,7 +4049,7 @@
    "scoreMargin": 7,
    "valueAtPick": 5,
    "projection": 8.1530947161602,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -4116,7 +4116,7 @@
    "scoreMargin": 7,
    "valueAtPick": 9,
    "projection": 19.290747328733687,
-   "latestValue": 19,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Under",
@@ -4512,7 +4512,7 @@
    "scoreMargin": -5,
    "valueAtPick": 1,
    "projection": 4.82868627181927,
-   "latestValue": 4,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -4546,7 +4546,7 @@
    "scoreMargin": -2,
    "valueAtPick": 11,
    "projection": 13.206560309898187,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -4680,7 +4680,7 @@
    "scoreMargin": -2,
    "valueAtPick": 6,
    "projection": 7.834017504221013,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -4861,7 +4861,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 697,
+ "calls": 705,
  "note": null,
  "checkpointsTaken": {
   "21718081": [
