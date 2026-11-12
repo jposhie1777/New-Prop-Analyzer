@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-12T01:07:14.848Z",
+ "updatedAt": "2026-11-12T01:11:13.647Z",
  "state": "running",
  "games": [
   {
@@ -14,15 +14,15 @@
    "gameId": 21718082,
    "matchup": "CLE @ NYK",
    "status": "2nd Qtr",
-   "homeScore": 49,
-   "visitorScore": 50
+   "homeScore": 53,
+   "visitorScore": 57
   },
   {
    "gameId": 21718083,
    "matchup": "BOS @ TOR",
    "status": "2nd Qtr",
    "homeScore": 59,
-   "visitorScore": 40
+   "visitorScore": 44
   },
   {
    "gameId": 21718084,
@@ -41,15 +41,15 @@
   {
    "gameId": 21718086,
    "matchup": "LAL @ MIL",
-   "status": "2026-11-12T01:00:00Z",
+   "status": "1st Qtr",
    "homeScore": 0,
    "visitorScore": 0
   },
   {
    "gameId": 21718087,
    "matchup": "BKN @ NOP",
-   "status": "2026-11-12T01:00:00Z",
-   "homeScore": 0,
+   "status": "1st Qtr",
+   "homeScore": 2,
    "visitorScore": 0
   },
   {
@@ -526,7 +526,7 @@
    "scoreMargin": 9,
    "valueAtPick": 13,
    "projection": 26.802702531210677,
-   "latestValue": 13,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -739,7 +739,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 220,
+ "calls": 228,
  "note": null,
  "checkpointsTaken": {
   "21718081": [
