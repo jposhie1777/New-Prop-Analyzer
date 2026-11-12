@@ -1,21 +1,21 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-12T00:44:13.528Z",
+ "updatedAt": "2026-11-12T00:48:12.481Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718081,
    "matchup": "WAS @ IND",
    "status": "2nd Qtr",
-   "homeScore": 29,
-   "visitorScore": 34
+   "homeScore": 33,
+   "visitorScore": 37
   },
   {
    "gameId": 21718082,
    "matchup": "CLE @ NYK",
    "status": "2nd Qtr",
-   "homeScore": 27,
-   "visitorScore": 33
+   "homeScore": 32,
+   "visitorScore": 34
   },
   {
    "gameId": 21718083,
@@ -163,7 +163,7 @@
    "scoreMargin": 1,
    "valueAtPick": 4,
    "projection": 13.4960756829145,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -328,7 +328,7 @@
    "scoreMargin": -10,
    "valueAtPick": 3,
    "projection": 16.032811187086274,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -572,7 +572,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 170,
+ "calls": 178,
  "note": null,
  "checkpointsTaken": {
   "21718081": [
