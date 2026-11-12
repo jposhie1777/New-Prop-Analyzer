@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-12T04:32:52.424Z",
+ "updatedAt": "2026-11-12T04:36:54.479Z",
  "state": "running",
  "games": [
   {
@@ -63,15 +63,15 @@
    "gameId": 21718089,
    "matchup": "GSW @ HOU",
    "status": "3rd Qtr",
-   "homeScore": 84,
-   "visitorScore": 76
+   "homeScore": 85,
+   "visitorScore": 79
   },
   {
    "gameId": 21718090,
    "matchup": "OKC @ POR",
    "status": "3rd Qtr",
-   "homeScore": 68,
-   "visitorScore": 63
+   "homeScore": 74,
+   "visitorScore": 67
   }
  ],
  "picks": [
@@ -4002,7 +4002,7 @@
    "scoreMargin": -15,
    "valueAtPick": 5,
    "projection": 17.65908439035437,
-   "latestValue": 23,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Under",
@@ -4807,7 +4807,7 @@
    "scoreMargin": -6,
    "valueAtPick": 5,
    "projection": 10.815405505838044,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -4841,7 +4841,7 @@
    "scoreMargin": -6,
    "valueAtPick": 9,
    "projection": 15.35204284498511,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -4919,9 +4919,174 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718089-140-rebounds_assists",
+   "gameDate": "2026-11-11",
+   "gameId": 21718089,
+   "matchup": "GSW @ HOU",
+   "playerId": 140,
+   "playerName": "Kevin Durant",
+   "teamAbbreviation": "HOU",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 9.5,
+   "americanOdds": 130,
+   "vendor": "fanduel",
+   "modelProbability": 0.5374685149411603,
+   "evPercent": 23.617758436466872,
+   "foundAt": "2026-11-12T04:36:52.311Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 6,
+   "valueAtPick": 8,
+   "projection": 9.360779706536736,
+   "latestValue": 8,
+   "tags": [
+    "Under",
+    "Reb+Ast",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718089-458-assists",
+   "gameDate": "2026-11-11",
+   "gameId": 21718089,
+   "matchup": "GSW @ HOU",
+   "playerId": 458,
+   "playerName": "Fred VanVleet",
+   "teamAbbreviation": "HOU",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": -130,
+   "vendor": "fanduel",
+   "modelProbability": 0.6886546212597044,
+   "evPercent": 21.838894530563092,
+   "foundAt": "2026-11-12T04:36:52.311Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 6,
+   "valueAtPick": 4,
+   "projection": 4.922244147781796,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718089-38017684-points_rebounds",
+   "gameDate": "2026-11-11",
+   "gameId": 21718089,
+   "matchup": "GSW @ HOU",
+   "playerId": 38017684,
+   "playerName": "Jabari Smith Jr.",
+   "teamAbbreviation": "HOU",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 20.5,
+   "americanOdds": -136,
+   "vendor": "fanduel",
+   "modelProbability": 0.690388336207683,
+   "evPercent": 19.802681871333228,
+   "foundAt": "2026-11-12T04:36:52.311Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 6,
+   "valueAtPick": 13,
+   "projection": 18.700562782666374,
+   "latestValue": 13,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718089-56677858-points",
+   "gameDate": "2026-11-11",
+   "gameId": 21718089,
+   "matchup": "GSW @ HOU",
+   "playerId": 56677858,
+   "playerName": "Brandin Podziemski",
+   "teamAbbreviation": "GSW",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 20.5,
+   "americanOdds": 108,
+   "vendor": "fanduel",
+   "modelProbability": 0.5752055873116677,
+   "evPercent": 19.642762160826898,
+   "foundAt": "2026-11-12T04:36:52.311Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -6,
+   "valueAtPick": 16,
+   "projection": 19.903992340188122,
+   "latestValue": 16,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718089-185-rebounds_assists",
+   "gameDate": "2026-11-11",
+   "gameId": 21718089,
+   "matchup": "GSW @ HOU",
+   "playerId": 185,
+   "playerName": "Draymond Green",
+   "teamAbbreviation": "GSW",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 11.5,
+   "americanOdds": 126,
+   "vendor": "fanduel",
+   "modelProbability": 0.5192160543188804,
+   "evPercent": 17.342828276066967,
+   "foundAt": "2026-11-12T04:36:52.311Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -6,
+   "valueAtPick": 9,
+   "projection": 11.598559839098186,
+   "latestValue": 9,
+   "tags": [
+    "Over",
+    "Reb+Ast",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 30,
+ "calls": 45,
  "note": null,
  "checkpointsTaken": {
   "21718081": [
@@ -4966,7 +5131,8 @@
   ],
   "21718089": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718090": [
    "end-q1",
