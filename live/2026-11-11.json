@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-12T03:07:18.360Z",
+ "updatedAt": "2026-11-12T03:10:21.287Z",
  "state": "running",
  "games": [
   {
@@ -28,7 +28,7 @@
    "gameId": 21718084,
    "matchup": "SAS @ CHI",
    "status": "4th Qtr",
-   "homeScore": 101,
+   "homeScore": 103,
    "visitorScore": 114
   },
   {
@@ -36,7 +36,7 @@
    "matchup": "DEN @ MEM",
    "status": "4th Qtr",
    "homeScore": 101,
-   "visitorScore": 106
+   "visitorScore": 108
   },
   {
    "gameId": 21718086,
@@ -49,22 +49,22 @@
    "gameId": 21718087,
    "matchup": "BKN @ NOP",
    "status": "4th Qtr",
-   "homeScore": 84,
-   "visitorScore": 121
+   "homeScore": 87,
+   "visitorScore": 124
   },
   {
    "gameId": 21718088,
    "matchup": "ORL @ UTA",
    "status": "2nd Qtr",
-   "homeScore": 52,
-   "visitorScore": 57
+   "homeScore": 57,
+   "visitorScore": 61
   },
   {
    "gameId": 21718089,
    "matchup": "GSW @ HOU",
    "status": "1st Qtr",
-   "homeScore": 32,
-   "visitorScore": 18
+   "homeScore": 35,
+   "visitorScore": 20
   },
   {
    "gameId": 21718090,
@@ -1607,7 +1607,7 @@
    "scoreMargin": 12,
    "valueAtPick": 7,
    "projection": 14.627370853036687,
-   "latestValue": 11,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -2498,7 +2498,7 @@
    "scoreMargin": -14,
    "valueAtPick": 4,
    "projection": 8.68979262647461,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -3502,7 +3502,7 @@
    "scoreMargin": 4,
    "valueAtPick": 9,
    "projection": 10.961564637190012,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -3647,9 +3647,180 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718089-140-points_assists",
+   "gameDate": "2026-11-11",
+   "gameId": 21718089,
+   "matchup": "GSW @ HOU",
+   "playerId": 140,
+   "playerName": "Kevin Durant",
+   "teamAbbreviation": "HOU",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 29.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6594394649241119,
+   "evPercent": 24.82247014634975,
+   "foundAt": "2026-11-12T03:10:18.062Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 15,
+   "valueAtPick": 13,
+   "projection": 32.23313416839627,
+   "latestValue": 13,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Blowout risk",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718089-17896062-points_assists",
+   "gameDate": "2026-11-11",
+   "gameId": 21718089,
+   "matchup": "GSW @ HOU",
+   "playerId": 17896062,
+   "playerName": "Alperen Sengun",
+   "teamAbbreviation": "HOU",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 28.5,
+   "americanOdds": -106,
+   "vendor": "fanduel",
+   "modelProbability": 0.6418772146994295,
+   "evPercent": 24.742175686870247,
+   "foundAt": "2026-11-12T03:10:18.062Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 15,
+   "valueAtPick": 11,
+   "projection": 30.962966000481625,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Blowout risk",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718089-185-points_assists",
+   "gameDate": "2026-11-11",
+   "gameId": 21718089,
+   "matchup": "GSW @ HOU",
+   "playerId": 185,
+   "playerName": "Draymond Green",
+   "teamAbbreviation": "GSW",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 15.5,
+   "americanOdds": -122,
+   "vendor": "fanduel",
+   "modelProbability": 0.6830462152241474,
+   "evPercent": 24.292016212918632,
+   "foundAt": "2026-11-12T03:10:18.062Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -15,
+   "valueAtPick": 6,
+   "projection": 13.519483393777811,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718089-1091351802-points",
+   "gameDate": "2026-11-11",
+   "gameId": 21718089,
+   "matchup": "GSW @ HOU",
+   "playerId": 1091351802,
+   "playerName": "Yaxel Lendeborg",
+   "teamAbbreviation": "GSW",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 19.5,
+   "americanOdds": -104,
+   "vendor": "caesars",
+   "modelProbability": 0.6275196308633375,
+   "evPercent": 23.090389130885434,
+   "foundAt": "2026-11-12T03:10:18.062Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -15,
+   "valueAtPick": 5,
+   "projection": 17.65908439035437,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718089-56677858-assists",
+   "gameDate": "2026-11-11",
+   "gameId": 21718089,
+   "matchup": "GSW @ HOU",
+   "playerId": 56677858,
+   "playerName": "Brandin Podziemski",
+   "teamAbbreviation": "GSW",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 124,
+   "vendor": "caesars",
+   "modelProbability": 0.5470022454861158,
+   "evPercent": 22.528502988889933,
+   "foundAt": "2026-11-12T03:10:18.062Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -15,
+   "valueAtPick": 1,
+   "projection": 3.7389627796849934,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "Assists",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 539,
+ "calls": 550,
  "note": null,
  "checkpointsTaken": {
   "21718081": [
@@ -3688,6 +3859,9 @@
    "end-q3"
   ],
   "21718088": [
+   "end-q1"
+  ],
+  "21718089": [
    "end-q1"
   ]
  }
