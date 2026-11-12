@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-12T05:00:54.037Z",
+ "updatedAt": "2026-11-12T05:04:53.958Z",
  "state": "running",
  "games": [
   {
@@ -63,8 +63,8 @@
    "gameId": 21718089,
    "matchup": "GSW @ HOU",
    "status": "4th Qtr",
-   "homeScore": 108,
-   "visitorScore": 93
+   "homeScore": 111,
+   "visitorScore": 97
   },
   {
    "gameId": 21718090,
@@ -3898,7 +3898,7 @@
    "scoreMargin": 15,
    "valueAtPick": 13,
    "projection": 32.23313416839627,
-   "latestValue": 22,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Over",
@@ -4321,7 +4321,7 @@
    "scoreMargin": -4,
    "valueAtPick": 2,
    "projection": 10.383968093975563,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -4774,7 +4774,7 @@
    "scoreMargin": 6,
    "valueAtPick": 6,
    "projection": 11.494630083452066,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -4807,7 +4807,7 @@
    "scoreMargin": -6,
    "valueAtPick": 5,
    "projection": 10.815405505838044,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -4841,7 +4841,7 @@
    "scoreMargin": -6,
    "valueAtPick": 9,
    "projection": 15.35204284498511,
-   "latestValue": 10,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -4942,7 +4942,7 @@
    "scoreMargin": 6,
    "valueAtPick": 8,
    "projection": 9.360779706536736,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Under",
     "Reb+Ast",
@@ -5141,7 +5141,7 @@
    "scoreMargin": 3,
    "valueAtPick": 11,
    "projection": 15.57764945439023,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -5240,7 +5240,7 @@
    "scoreMargin": -3,
    "valueAtPick": 7,
    "projection": 8.849776627978887,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -5253,7 +5253,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 98,
+ "calls": 106,
  "note": null,
  "checkpointsTaken": {
   "21718081": [
