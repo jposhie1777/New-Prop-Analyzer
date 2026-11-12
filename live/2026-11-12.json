@@ -1,0 +1,38 @@
+{
+ "date": "2026-11-12",
+ "updatedAt": "2026-11-12T22:36:55.025Z",
+ "state": "waiting",
+ "games": [
+  {
+   "gameId": 21718091,
+   "matchup": "TOR @ PHI",
+   "status": "2026-11-13T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718092,
+   "matchup": "DET @ WAS",
+   "status": "2026-11-13T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718093,
+   "matchup": "DAL @ MIN",
+   "status": "2026-11-13T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718094,
+   "matchup": "CHA @ PHX",
+   "status": "2026-11-13T02:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  }
+ ],
+ "picks": [],
+ "calls": 1,
+ "note": "First tip-off 2026-11-13T00:00:00.000Z"
+}
