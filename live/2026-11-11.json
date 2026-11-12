@@ -1,28 +1,28 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-12T00:40:13.390Z",
+ "updatedAt": "2026-11-12T00:44:13.528Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718081,
    "matchup": "WAS @ IND",
    "status": "2nd Qtr",
-   "homeScore": 26,
-   "visitorScore": 27
+   "homeScore": 29,
+   "visitorScore": 34
   },
   {
    "gameId": 21718082,
    "matchup": "CLE @ NYK",
-   "status": "1st Qtr",
-   "homeScore": 23,
+   "status": "2nd Qtr",
+   "homeScore": 27,
    "visitorScore": 33
   },
   {
    "gameId": 21718083,
    "matchup": "BOS @ TOR",
-   "status": "1st Qtr",
-   "homeScore": 32,
-   "visitorScore": 26
+   "status": "2nd Qtr",
+   "homeScore": 38,
+   "visitorScore": 29
   },
   {
    "gameId": 21718084,
@@ -229,7 +229,7 @@
    "scoreMargin": -1,
    "valueAtPick": 1,
    "projection": 3.0700213714282096,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -262,7 +262,7 @@
    "scoreMargin": 10,
    "valueAtPick": 1,
    "projection": 5.979362096715858,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -403,15 +403,185 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718083-473-threes",
+   "gameDate": "2026-11-11",
+   "gameId": 21718083,
+   "matchup": "BOS @ TOR",
+   "playerId": 473,
+   "playerName": "Derrick White",
+   "teamAbbreviation": "BOS",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -104,
+   "vendor": "fanduel",
+   "modelProbability": 0.6314009136103426,
+   "evPercent": 23.85171766972105,
+   "foundAt": "2026-11-12T00:44:12.048Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -9,
+   "valueAtPick": 1,
+   "projection": 2.0613480838855542,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718083-3547269-points_assists",
+   "gameDate": "2026-11-11",
+   "gameId": 21718083,
+   "matchup": "BOS @ TOR",
+   "playerId": 3547269,
+   "playerName": "Immanuel Quickley",
+   "teamAbbreviation": "TOR",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 18.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.6548352869472579,
+   "evPercent": 22.92522053220456,
+   "foundAt": "2026-11-12T00:44:12.048Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 9,
+   "valueAtPick": 1,
+   "projection": 16.14833920184843,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718083-1057268940-points_rebounds",
+   "gameDate": "2026-11-11",
+   "gameId": 21718083,
+   "matchup": "BOS @ TOR",
+   "playerId": 1057268940,
+   "playerName": "Collin Murray-Boyles",
+   "teamAbbreviation": "TOR",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 16.5,
+   "americanOdds": 108,
+   "vendor": "fanduel",
+   "modelProbability": 0.5860181535313627,
+   "evPercent": 21.891775934523427,
+   "foundAt": "2026-11-12T00:44:12.048Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 9,
+   "valueAtPick": 4,
+   "projection": 17.72079085991892,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718083-1028029111-points_rebounds",
+   "gameDate": "2026-11-11",
+   "gameId": 21718083,
+   "matchup": "BOS @ TOR",
+   "playerId": 1028029111,
+   "playerName": "Ja'Kobe Walter",
+   "teamAbbreviation": "TOR",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 24.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.658615623507901,
+   "evPercent": 21.676445698917313,
+   "foundAt": "2026-11-12T00:44:12.048Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 9,
+   "valueAtPick": 13,
+   "projection": 26.802702531210677,
+   "latestValue": 13,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718083-666423-points",
+   "gameDate": "2026-11-11",
+   "gameId": 21718083,
+   "matchup": "BOS @ TOR",
+   "playerId": 666423,
+   "playerName": "RJ Barrett",
+   "teamAbbreviation": "TOR",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 20.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6114017748875599,
+   "evPercent": 21.081527967928526,
+   "foundAt": "2026-11-12T00:44:12.048Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 9,
+   "valueAtPick": 4,
+   "projection": 18.770181229714005,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 157,
+ "calls": 170,
  "note": null,
  "checkpointsTaken": {
   "21718081": [
    "end-q1"
   ],
   "21718082": [
+   "end-q1"
+  ],
+  "21718083": [
    "end-q1"
   ]
  }
