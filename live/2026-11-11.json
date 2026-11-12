@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-12T04:40:52.987Z",
+ "updatedAt": "2026-11-12T04:44:52.981Z",
  "state": "running",
  "games": [
   {
@@ -64,14 +64,14 @@
    "matchup": "GSW @ HOU",
    "status": "4th Qtr",
    "homeScore": 88,
-   "visitorScore": 79
+   "visitorScore": 85
   },
   {
    "gameId": 21718090,
    "matchup": "OKC @ POR",
    "status": "3rd Qtr",
-   "homeScore": 77,
-   "visitorScore": 71
+   "homeScore": 84,
+   "visitorScore": 78
   }
  ],
  "picks": [
@@ -3968,7 +3968,7 @@
    "scoreMargin": -15,
    "valueAtPick": 6,
    "projection": 13.519483393777811,
-   "latestValue": 12,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -4519,7 +4519,7 @@
    "scoreMargin": -5,
    "valueAtPick": 3,
    "projection": 7.29732127337713,
-   "latestValue": 3,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -4807,7 +4807,7 @@
    "scoreMargin": -6,
    "valueAtPick": 5,
    "projection": 10.815405505838044,
-   "latestValue": 10,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -4875,7 +4875,7 @@
    "scoreMargin": -6,
    "valueAtPick": 3,
    "projection": 7.865467802347846,
-   "latestValue": 3,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -4909,7 +4909,7 @@
    "scoreMargin": -6,
    "valueAtPick": 0,
    "projection": 2.3516640889485676,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Under",
     "Assists",
@@ -5075,7 +5075,7 @@
    "scoreMargin": -6,
    "valueAtPick": 9,
    "projection": 11.598559839098186,
-   "latestValue": 9,
+   "latestValue": 12,
    "tags": [
     "Over",
     "Reb+Ast",
@@ -5086,7 +5086,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 53,
+ "calls": 61,
  "note": null,
  "checkpointsTaken": {
   "21718081": [
