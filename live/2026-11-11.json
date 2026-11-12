@@ -1,56 +1,56 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-12T01:36:14.656Z",
+ "updatedAt": "2026-11-12T01:40:15.587Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718081,
    "matchup": "WAS @ IND",
    "status": "3rd Qtr",
-   "homeScore": 69,
-   "visitorScore": 66
+   "homeScore": 71,
+   "visitorScore": 68
   },
   {
    "gameId": 21718082,
    "matchup": "CLE @ NYK",
    "status": "3rd Qtr",
-   "homeScore": 62,
+   "homeScore": 64,
    "visitorScore": 69
   },
   {
    "gameId": 21718083,
    "matchup": "BOS @ TOR",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 61,
-   "visitorScore": 54
+   "visitorScore": 56
   },
   {
    "gameId": 21718084,
    "matchup": "SAS @ CHI",
-   "status": "1st Qtr",
-   "homeScore": 41,
+   "status": "2nd Qtr",
+   "homeScore": 46,
    "visitorScore": 29
   },
   {
    "gameId": 21718085,
    "matchup": "DEN @ MEM",
    "status": "2nd Qtr",
-   "homeScore": 24,
-   "visitorScore": 40
+   "homeScore": 28,
+   "visitorScore": 42
   },
   {
    "gameId": 21718086,
    "matchup": "LAL @ MIL",
-   "status": "1st Qtr",
+   "status": "2nd Qtr",
    "homeScore": 28,
-   "visitorScore": 30
+   "visitorScore": 32
   },
   {
    "gameId": 21718087,
    "matchup": "BKN @ NOP",
    "status": "1st Qtr",
-   "homeScore": 21,
-   "visitorScore": 33
+   "homeScore": 25,
+   "visitorScore": 39
   },
   {
    "gameId": 21718088,
@@ -328,7 +328,7 @@
    "scoreMargin": -10,
    "valueAtPick": 3,
    "projection": 16.032811187086274,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -859,7 +859,7 @@
    "scoreMargin": -6,
    "valueAtPick": 3,
    "projection": 6.754250247065736,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Over",
     "Assists",
@@ -1091,7 +1091,7 @@
    "scoreMargin": 11,
    "valueAtPick": 1,
    "projection": 3.0359999999999996,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -1224,7 +1224,7 @@
    "scoreMargin": -11,
    "valueAtPick": 1,
    "projection": 6.8892226151625655,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -1398,9 +1398,176 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718084-1091343852-threes",
+   "gameDate": "2026-11-11",
+   "gameId": 21718084,
+   "matchup": "SAS @ CHI",
+   "playerId": 1091343852,
+   "playerName": "Caleb Wilson",
+   "teamAbbreviation": "CHI",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 114,
+   "vendor": "draftkings",
+   "modelProbability": 0.5805467845179737,
+   "evPercent": 24.23701188684635,
+   "foundAt": "2026-11-12T01:37:14.294Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 12,
+   "valueAtPick": 1,
+   "projection": 2.8509379512484405,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718084-1028025261-rebounds_assists",
+   "gameDate": "2026-11-11",
+   "gameId": 21718084,
+   "matchup": "SAS @ CHI",
+   "playerId": 1028025261,
+   "playerName": "Stephon Castle",
+   "teamAbbreviation": "SAS",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 8.5,
+   "americanOdds": -144,
+   "vendor": "fanduel",
+   "modelProbability": 0.7276304932930273,
+   "evPercent": 23.292944696874063,
+   "foundAt": "2026-11-12T01:37:14.294Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -12,
+   "valueAtPick": 0,
+   "projection": 6.535379041833699,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718084-3547274-points",
+   "gameDate": "2026-11-11",
+   "gameId": 21718084,
+   "matchup": "SAS @ CHI",
+   "playerId": 3547274,
+   "playerName": "Tre Jones",
+   "teamAbbreviation": "CHI",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 13.5,
+   "americanOdds": 104,
+   "vendor": "fanduel",
+   "modelProbability": 0.6012704011045709,
+   "evPercent": 22.659161825332454,
+   "foundAt": "2026-11-12T01:37:14.294Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 12,
+   "valueAtPick": 7,
+   "projection": 14.627370853036687,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718084-1057262518-rebounds_assists",
+   "gameDate": "2026-11-11",
+   "gameId": 21718084,
+   "matchup": "SAS @ CHI",
+   "playerId": 1057262518,
+   "playerName": "Dylan Harper",
+   "teamAbbreviation": "SAS",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 12.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6065432901793848,
+   "evPercent": 22.52174461623573,
+   "foundAt": "2026-11-12T01:37:14.294Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -12,
+   "valueAtPick": 5,
+   "projection": 11.61764283008868,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718084-3547264-points_rebounds",
+   "gameDate": "2026-11-11",
+   "gameId": 21718084,
+   "matchup": "SAS @ CHI",
+   "playerId": 3547264,
+   "playerName": "Jalen Smith",
+   "teamAbbreviation": "CHI",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 27.5,
+   "americanOdds": -136,
+   "vendor": "fanduel",
+   "modelProbability": 0.7032798256167054,
+   "evPercent": 22.039734445251824,
+   "foundAt": "2026-11-12T01:37:14.294Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 12,
+   "valueAtPick": 12,
+   "projection": 24.623413926679603,
+   "latestValue": 14,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 296,
+ "calls": 309,
  "note": null,
  "checkpointsTaken": {
   "21718081": [
@@ -1414,6 +1581,9 @@
   "21718083": [
    "end-q1",
    "halftime"
+  ],
+  "21718084": [
+   "end-q1"
   ],
   "21718085": [
    "end-q1"
