@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-12T03:34:19.521Z",
+ "updatedAt": "2026-11-12T03:37:21.047Z",
  "state": "running",
  "games": [
   {
@@ -49,22 +49,22 @@
    "gameId": 21718087,
    "matchup": "BKN @ NOP",
    "status": "4th Qtr",
-   "homeScore": 104,
-   "visitorScore": 140
+   "homeScore": 111,
+   "visitorScore": 145
   },
   {
    "gameId": 21718088,
    "matchup": "ORL @ UTA",
    "status": "3rd Qtr",
-   "homeScore": 71,
-   "visitorScore": 71
+   "homeScore": 74,
+   "visitorScore": 74
   },
   {
    "gameId": 21718089,
    "matchup": "GSW @ HOU",
    "status": "2nd Qtr",
-   "homeScore": 49,
-   "visitorScore": 48
+   "homeScore": 52,
+   "visitorScore": 49
   },
   {
    "gameId": 21718090,
@@ -1768,7 +1768,7 @@
    "scoreMargin": 14,
    "valueAtPick": 0,
    "projection": 1.2574851707175927,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Over",
@@ -3222,7 +3222,7 @@
    "scoreMargin": 5,
    "valueAtPick": 0,
    "projection": 3.79956263780083,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -3834,7 +3834,7 @@
    "scoreMargin": 15,
    "valueAtPick": 13,
    "projection": 32.23313416839627,
-   "latestValue": 16,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Over",
@@ -4038,7 +4038,7 @@
    "scoreMargin": -7,
    "valueAtPick": 3,
    "projection": 5.115651941509445,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -4072,7 +4072,7 @@
    "scoreMargin": 7,
    "valueAtPick": 9,
    "projection": 19.290747328733687,
-   "latestValue": 13,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Under",
@@ -4148,9 +4148,174 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718090-56677817-assists",
+   "gameDate": "2026-11-11",
+   "gameId": 21718090,
+   "matchup": "OKC @ POR",
+   "playerId": 56677817,
+   "playerName": "Sidy Cissoko",
+   "teamAbbreviation": "POR",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": -158,
+   "vendor": "fanduel",
+   "modelProbability": 0.7539489848966954,
+   "evPercent": 23.113188673004693,
+   "foundAt": "2026-11-12T03:37:19.206Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -4,
+   "valueAtPick": 0,
+   "projection": 0.7652272433790384,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718090-175-rebounds",
+   "gameDate": "2026-11-11",
+   "gameId": 21718090,
+   "matchup": "OKC @ POR",
+   "playerId": 175,
+   "playerName": "Shai Gilgeous-Alexander",
+   "teamAbbreviation": "OKC",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": 120,
+   "vendor": "betmgm",
+   "modelProbability": 0.558268353090038,
+   "evPercent": 22.819037679808375,
+   "foundAt": "2026-11-12T03:37:19.206Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 4,
+   "valueAtPick": 2,
+   "projection": 4.232227882449879,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718090-1028025344-rebounds_assists",
+   "gameDate": "2026-11-11",
+   "gameId": 21718090,
+   "matchup": "OKC @ POR",
+   "playerId": 1028025344,
+   "playerName": "Donovan Clingan",
+   "teamAbbreviation": "POR",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 11.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6193467662249914,
+   "evPercent": 22.654947821027704,
+   "foundAt": "2026-11-12T03:37:19.206Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -4,
+   "valueAtPick": 2,
+   "projection": 10.383968093975563,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718090-278-points",
+   "gameDate": "2026-11-11",
+   "gameId": 21718090,
+   "matchup": "OKC @ POR",
+   "playerId": 278,
+   "playerName": "Damian Lillard",
+   "teamAbbreviation": "POR",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 17.5,
+   "americanOdds": -115,
+   "vendor": "betmgm",
+   "modelProbability": 0.6535972915475423,
+   "evPercent": 22.19427624584487,
+   "foundAt": "2026-11-12T03:37:19.206Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -4,
+   "valueAtPick": 2,
+   "projection": 15.215674455417902,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718090-1091351965-points",
+   "gameDate": "2026-11-11",
+   "gameId": 21718090,
+   "matchup": "OKC @ POR",
+   "playerId": 1091351965,
+   "playerName": "Aday Mara",
+   "teamAbbreviation": "OKC",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 7.5,
+   "americanOdds": -105,
+   "vendor": "draftkings",
+   "modelProbability": 0.6210682099709828,
+   "evPercent": 21.256174327668063,
+   "foundAt": "2026-11-12T03:37:19.206Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 4,
+   "valueAtPick": 1,
+   "projection": 8.87617652663129,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 605,
+ "calls": 616,
  "note": null,
  "checkpointsTaken": {
   "21718081": [
@@ -4193,6 +4358,9 @@
    "halftime"
   ],
   "21718089": [
+   "end-q1"
+  ],
+  "21718090": [
    "end-q1"
   ]
  }
