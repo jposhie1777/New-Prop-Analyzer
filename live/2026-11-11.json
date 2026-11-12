@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-12T03:51:20.252Z",
+ "updatedAt": "2026-11-12T03:55:20.388Z",
  "state": "running",
  "games": [
   {
@@ -56,8 +56,8 @@
    "gameId": 21718088,
    "matchup": "ORL @ UTA",
    "status": "3rd Qtr",
-   "homeScore": 83,
-   "visitorScore": 82
+   "homeScore": 84,
+   "visitorScore": 85
   },
   {
    "gameId": 21718089,
@@ -70,8 +70,8 @@
    "gameId": 21718090,
    "matchup": "OKC @ POR",
    "status": "2nd Qtr",
-   "homeScore": 39,
-   "visitorScore": 41
+   "homeScore": 41,
+   "visitorScore": 43
   }
  ],
  "picks": [
@@ -4182,7 +4182,7 @@
    "scoreMargin": -7,
    "valueAtPick": 3,
    "projection": 6.199389265891202,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -4314,7 +4314,7 @@
    "scoreMargin": -4,
    "valueAtPick": 2,
    "projection": 15.215674455417902,
-   "latestValue": 2,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -4525,7 +4525,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 649,
+ "calls": 657,
  "note": null,
  "checkpointsTaken": {
   "21718081": [
