@@ -1,14 +1,14 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-12T01:15:14.489Z",
+ "updatedAt": "2026-11-12T01:24:15.569Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718081,
    "matchup": "WAS @ IND",
-   "status": "2nd Qtr",
-   "homeScore": 55,
-   "visitorScore": 50
+   "status": "3rd Qtr",
+   "homeScore": 58,
+   "visitorScore": 52
   },
   {
    "gameId": 21718082,
@@ -21,36 +21,36 @@
    "gameId": 21718083,
    "matchup": "BOS @ TOR",
    "status": "2nd Qtr",
-   "homeScore": 59,
-   "visitorScore": 53
+   "homeScore": 61,
+   "visitorScore": 54
   },
   {
    "gameId": 21718084,
    "matchup": "SAS @ CHI",
    "status": "1st Qtr",
-   "homeScore": 12,
-   "visitorScore": 14
+   "homeScore": 23,
+   "visitorScore": 23
   },
   {
    "gameId": 21718085,
    "matchup": "DEN @ MEM",
    "status": "1st Qtr",
-   "homeScore": 7,
-   "visitorScore": 11
+   "homeScore": 16,
+   "visitorScore": 23
   },
   {
    "gameId": 21718086,
    "matchup": "LAL @ MIL",
    "status": "1st Qtr",
-   "homeScore": 7,
-   "visitorScore": 6
+   "homeScore": 15,
+   "visitorScore": 19
   },
   {
    "gameId": 21718087,
    "matchup": "BKN @ NOP",
    "status": "1st Qtr",
-   "homeScore": 5,
-   "visitorScore": 9
+   "homeScore": 10,
+   "visitorScore": 20
   },
   {
    "gameId": 21718088,
@@ -163,7 +163,7 @@
    "scoreMargin": 1,
    "valueAtPick": 4,
    "projection": 13.4960756829145,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -693,7 +693,7 @@
    "scoreMargin": 5,
    "valueAtPick": 0,
    "projection": 0.29258573624035494,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Under",
@@ -901,9 +901,176 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718083-666423-assists",
+   "gameDate": "2026-11-11",
+   "gameId": 21718083,
+   "matchup": "BOS @ TOR",
+   "playerId": 666423,
+   "playerName": "RJ Barrett",
+   "teamAbbreviation": "TOR",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 7.5,
+   "americanOdds": -125,
+   "vendor": "draftkings",
+   "modelProbability": 0.6925929451574099,
+   "evPercent": 24.666730128333782,
+   "foundAt": "2026-11-12T01:24:13.766Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 7,
+   "valueAtPick": 6,
+   "projection": 8.466255516559272,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718083-1057268940-rebounds",
+   "gameDate": "2026-11-11",
+   "gameId": 21718083,
+   "matchup": "BOS @ TOR",
+   "playerId": 1057268940,
+   "playerName": "Collin Murray-Boyles",
+   "teamAbbreviation": "TOR",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": 120,
+   "vendor": "betmgm",
+   "modelProbability": 0.5657041096767155,
+   "evPercent": 24.45490412887741,
+   "foundAt": "2026-11-12T01:24:13.766Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 7,
+   "valueAtPick": 2,
+   "projection": 4.840968243886259,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Foul trouble",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718083-473-steals",
+   "gameDate": "2026-11-11",
+   "gameId": 21718083,
+   "matchup": "BOS @ TOR",
+   "playerId": 473,
+   "playerName": "Derrick White",
+   "teamAbbreviation": "BOS",
+   "propType": "steals",
+   "label": "Steals",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": -115,
+   "vendor": "draftkings",
+   "modelProbability": 0.6575039589144381,
+   "evPercent": 22.924653188351463,
+   "foundAt": "2026-11-12T01:24:13.766Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -7,
+   "valueAtPick": 1,
+   "projection": 1.2500985769078299,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Steals",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718083-3547269-points_rebounds_assists",
+   "gameDate": "2026-11-11",
+   "gameId": 21718083,
+   "matchup": "BOS @ TOR",
+   "playerId": 3547269,
+   "playerName": "Immanuel Quickley",
+   "teamAbbreviation": "TOR",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 27.5,
+   "americanOdds": -146,
+   "vendor": "fanduel",
+   "modelProbability": 0.7209655469282099,
+   "evPercent": 21.47775653721893,
+   "foundAt": "2026-11-12T01:24:13.766Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 7,
+   "valueAtPick": 13,
+   "projection": 24.489131884989582,
+   "latestValue": 13,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718083-434-points",
+   "gameDate": "2026-11-11",
+   "gameId": 21718083,
+   "matchup": "BOS @ TOR",
+   "playerId": 434,
+   "playerName": "Jayson Tatum",
+   "teamAbbreviation": "BOS",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 33.5,
+   "americanOdds": 100,
+   "vendor": "draftkings",
+   "modelProbability": 0.6040252338648868,
+   "evPercent": 20.805046772977363,
+   "foundAt": "2026-11-12T01:24:13.766Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -7,
+   "valueAtPick": 19,
+   "projection": 31.987929104138942,
+   "latestValue": 19,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 240,
+ "calls": 262,
  "note": null,
  "checkpointsTaken": {
   "21718081": [
@@ -915,7 +1082,8 @@
    "halftime"
   ],
   "21718083": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
