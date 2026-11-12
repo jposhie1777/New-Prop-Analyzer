@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-12T01:11:13.647Z",
+ "updatedAt": "2026-11-12T01:15:14.489Z",
  "state": "running",
  "games": [
   {
@@ -15,42 +15,42 @@
    "matchup": "CLE @ NYK",
    "status": "2nd Qtr",
    "homeScore": 53,
-   "visitorScore": 57
+   "visitorScore": 59
   },
   {
    "gameId": 21718083,
    "matchup": "BOS @ TOR",
    "status": "2nd Qtr",
    "homeScore": 59,
-   "visitorScore": 44
+   "visitorScore": 53
   },
   {
    "gameId": 21718084,
    "matchup": "SAS @ CHI",
-   "status": "2026-11-12T01:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 12,
+   "visitorScore": 14
   },
   {
    "gameId": 21718085,
    "matchup": "DEN @ MEM",
-   "status": "2026-11-12T01:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 7,
+   "visitorScore": 11
   },
   {
    "gameId": 21718086,
    "matchup": "LAL @ MIL",
    "status": "1st Qtr",
-   "homeScore": 0,
-   "visitorScore": 0
+   "homeScore": 7,
+   "visitorScore": 6
   },
   {
    "gameId": 21718087,
    "matchup": "BKN @ NOP",
    "status": "1st Qtr",
-   "homeScore": 2,
-   "visitorScore": 0
+   "homeScore": 5,
+   "visitorScore": 9
   },
   {
    "gameId": 21718088,
@@ -737,9 +737,173 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718082-1028028993-threes",
+   "gameDate": "2026-11-11",
+   "gameId": 21718082,
+   "matchup": "CLE @ NYK",
+   "playerId": 1028028993,
+   "playerName": "Jaylon Tyson",
+   "teamAbbreviation": "CLE",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": -110,
+   "vendor": "fanduel",
+   "modelProbability": 0.6487115688292402,
+   "evPercent": 23.844935867400395,
+   "foundAt": "2026-11-12T01:14:13.416Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 6,
+   "valueAtPick": 0,
+   "projection": 0.9795190397158987,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718082-18-rebounds",
+   "gameDate": "2026-11-11",
+   "gameId": 21718082,
+   "matchup": "CLE @ NYK",
+   "playerId": 18,
+   "playerName": "OG Anunoby",
+   "teamAbbreviation": "NYK",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 7.5,
+   "americanOdds": -105,
+   "vendor": "draftkings",
+   "modelProbability": 0.6322196061244234,
+   "evPercent": 23.43335167191123,
+   "foundAt": "2026-11-12T01:14:13.416Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -6,
+   "valueAtPick": 5,
+   "projection": 8.243744589421912,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718082-61-points_assists",
+   "gameDate": "2026-11-11",
+   "gameId": 21718082,
+   "matchup": "CLE @ NYK",
+   "playerId": 61,
+   "playerName": "Mikal Bridges",
+   "teamAbbreviation": "NYK",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 6.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.6633602125553194,
+   "evPercent": 22.552988421236964,
+   "foundAt": "2026-11-12T01:14:13.416Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -6,
+   "valueAtPick": 2,
+   "projection": 5.332624354362392,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718082-73-assists",
+   "gameDate": "2026-11-11",
+   "gameId": 21718082,
+   "matchup": "CLE @ NYK",
+   "playerId": 73,
+   "playerName": "Jalen Brunson",
+   "teamAbbreviation": "NYK",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": 124,
+   "vendor": "fanduel",
+   "modelProbability": 0.542732347438309,
+   "evPercent": 21.572045826181217,
+   "foundAt": "2026-11-12T01:14:13.416Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -6,
+   "valueAtPick": 3,
+   "projection": 6.754250247065736,
+   "latestValue": 3,
+   "tags": [
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718082-9-rebounds",
+   "gameDate": "2026-11-11",
+   "gameId": 21718082,
+   "matchup": "CLE @ NYK",
+   "playerId": 9,
+   "playerName": "Jarrett Allen",
+   "teamAbbreviation": "CLE",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": 120,
+   "vendor": "draftkings",
+   "modelProbability": 0.5509826343307491,
+   "evPercent": 21.216179552764824,
+   "foundAt": "2026-11-12T01:14:13.416Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 6,
+   "valueAtPick": 6,
+   "projection": 9.805657188811637,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 228,
+ "calls": 240,
  "note": null,
  "checkpointsTaken": {
   "21718081": [
@@ -747,7 +911,8 @@
    "halftime"
   ],
   "21718082": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718083": [
    "end-q1"
