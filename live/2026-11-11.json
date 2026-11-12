@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-12T04:19:21.236Z",
+ "updatedAt": "2026-11-12T04:20:21.668Z",
  "state": "running",
  "games": [
   {
@@ -63,7 +63,7 @@
    "gameId": 21718089,
    "matchup": "GSW @ HOU",
    "status": "3rd Qtr",
-   "homeScore": 78,
+   "homeScore": 80,
    "visitorScore": 70
   },
   {
@@ -3878,7 +3878,7 @@
    "scoreMargin": 15,
    "valueAtPick": 13,
    "projection": 32.23313416839627,
-   "latestValue": 19,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Over",
@@ -4861,8 +4861,8 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 713,
- "note": null,
+ "calls": 715,
+ "note": "This run hit its time limit; the next scheduled run continues.",
  "checkpointsTaken": {
   "21718081": [
    "end-q1",
