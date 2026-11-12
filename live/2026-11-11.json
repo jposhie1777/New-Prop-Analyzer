@@ -1,28 +1,28 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-12T00:36:14.464Z",
+ "updatedAt": "2026-11-12T00:40:13.390Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718081,
    "matchup": "WAS @ IND",
-   "status": "1st Qtr",
+   "status": "2nd Qtr",
    "homeScore": 26,
-   "visitorScore": 25
+   "visitorScore": 27
   },
   {
    "gameId": 21718082,
    "matchup": "CLE @ NYK",
    "status": "1st Qtr",
-   "homeScore": 16,
-   "visitorScore": 27
+   "homeScore": 23,
+   "visitorScore": 33
   },
   {
    "gameId": 21718083,
    "matchup": "BOS @ TOR",
    "status": "1st Qtr",
-   "homeScore": 27,
-   "visitorScore": 23
+   "homeScore": 32,
+   "visitorScore": 26
   },
   {
    "gameId": 21718084,
@@ -239,12 +239,179 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718082-17896076-rebounds",
+   "gameDate": "2026-11-11",
+   "gameId": 21718082,
+   "matchup": "CLE @ NYK",
+   "playerId": 17896076,
+   "playerName": "Evan Mobley",
+   "teamAbbreviation": "CLE",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 6.5,
+   "americanOdds": 115,
+   "vendor": "betmgm",
+   "modelProbability": 0.5756674370700618,
+   "evPercent": 23.768498970063302,
+   "foundAt": "2026-11-12T00:39:11.870Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 10,
+   "valueAtPick": 1,
+   "projection": 5.979362096715858,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718082-61-rebounds",
+   "gameDate": "2026-11-11",
+   "gameId": 21718082,
+   "matchup": "CLE @ NYK",
+   "playerId": 61,
+   "playerName": "Mikal Bridges",
+   "teamAbbreviation": "NYK",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -154,
+   "vendor": "fanduel",
+   "modelProbability": 0.7486036847067257,
+   "evPercent": 23.47099734773268,
+   "foundAt": "2026-11-12T00:39:11.870Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -10,
+   "valueAtPick": 0,
+   "projection": 1.497395274256437,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718082-18-points_assists",
+   "gameDate": "2026-11-11",
+   "gameId": 21718082,
+   "matchup": "CLE @ NYK",
+   "playerId": 18,
+   "playerName": "OG Anunoby",
+   "teamAbbreviation": "NYK",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 18.5,
+   "americanOdds": -122,
+   "vendor": "fanduel",
+   "modelProbability": 0.673871598816207,
+   "evPercent": 22.6225368337688,
+   "foundAt": "2026-11-12T00:39:11.870Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -10,
+   "valueAtPick": 3,
+   "projection": 16.032811187086274,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718082-414-threes",
+   "gameDate": "2026-11-11",
+   "gameId": 21718082,
+   "matchup": "CLE @ NYK",
+   "playerId": 414,
+   "playerName": "Landry Shamet",
+   "teamAbbreviation": "NYK",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": 116,
+   "vendor": "fanduel",
+   "modelProbability": 0.5615392795622085,
+   "evPercent": 21.29248438543705,
+   "foundAt": "2026-11-12T00:39:11.870Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -10,
+   "valueAtPick": 1,
+   "projection": 2.2778583890413318,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718082-322-threes",
+   "gameDate": "2026-11-11",
+   "gameId": 21718082,
+   "matchup": "CLE @ NYK",
+   "playerId": 322,
+   "playerName": "Donovan Mitchell",
+   "teamAbbreviation": "CLE",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": 145,
+   "vendor": "caesars",
+   "modelProbability": 0.49499898169653833,
+   "evPercent": 21.27475051565191,
+   "foundAt": "2026-11-12T00:39:11.870Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 10,
+   "valueAtPick": 0,
+   "projection": 1.519608125,
+   "latestValue": 0,
+   "tags": [
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 144,
+ "calls": 157,
  "note": null,
  "checkpointsTaken": {
   "21718081": [
+   "end-q1"
+  ],
+  "21718082": [
    "end-q1"
   ]
  }
