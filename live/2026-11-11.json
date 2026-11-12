@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-12T02:30:19.319Z",
+ "updatedAt": "2026-11-12T02:34:17.064Z",
  "state": "running",
  "games": [
   {
@@ -14,50 +14,50 @@
    "gameId": 21718082,
    "matchup": "CLE @ NYK",
    "status": "4th Qtr",
-   "homeScore": 103,
-   "visitorScore": 106
+   "homeScore": 104,
+   "visitorScore": 110
   },
   {
    "gameId": 21718083,
    "matchup": "BOS @ TOR",
    "status": "4th Qtr",
-   "homeScore": 89,
-   "visitorScore": 90
+   "homeScore": 93,
+   "visitorScore": 94
   },
   {
    "gameId": 21718084,
    "matchup": "SAS @ CHI",
    "status": "3rd Qtr",
-   "homeScore": 76,
-   "visitorScore": 74
+   "homeScore": 80,
+   "visitorScore": 76
   },
   {
    "gameId": 21718085,
    "matchup": "DEN @ MEM",
    "status": "3rd Qtr",
-   "homeScore": 64,
-   "visitorScore": 72
+   "homeScore": 69,
+   "visitorScore": 74
   },
   {
    "gameId": 21718086,
    "matchup": "LAL @ MIL",
    "status": "3rd Qtr",
-   "homeScore": 57,
-   "visitorScore": 69
+   "homeScore": 60,
+   "visitorScore": 77
   },
   {
    "gameId": 21718087,
    "matchup": "BKN @ NOP",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 66,
-   "visitorScore": 83
+   "visitorScore": 86
   },
   {
    "gameId": 21718088,
    "matchup": "ORL @ UTA",
    "status": "1st Qtr",
-   "homeScore": 21,
-   "visitorScore": 24
+   "homeScore": 24,
+   "visitorScore": 25
   },
   {
    "gameId": 21718089,
@@ -348,7 +348,7 @@
    "scoreMargin": -10,
    "valueAtPick": 3,
    "projection": 16.032811187086274,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -580,7 +580,7 @@
    "scoreMargin": 9,
    "valueAtPick": 4,
    "projection": 18.770181229714005,
-   "latestValue": 8,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -931,7 +931,7 @@
    "scoreMargin": 6,
    "valueAtPick": 6,
    "projection": 9.805657188811637,
-   "latestValue": 13,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -1098,7 +1098,7 @@
    "scoreMargin": -7,
    "valueAtPick": 19,
    "projection": 31.987929104138942,
-   "latestValue": 22,
+   "latestValue": 24,
    "tags": [
     "Best bet",
     "Under",
@@ -1363,7 +1363,7 @@
    "scoreMargin": -2,
    "valueAtPick": 5,
    "projection": 14.535035157401332,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -1561,7 +1561,7 @@
    "scoreMargin": -12,
    "valueAtPick": 5,
    "projection": 11.61764283008868,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -1760,7 +1760,7 @@
    "scoreMargin": 14,
    "valueAtPick": 9,
    "projection": 21.190536828918965,
-   "latestValue": 11,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -2145,7 +2145,7 @@
    "scoreMargin": -5,
    "valueAtPick": 13,
    "projection": 15.374364287261573,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -2480,7 +2480,7 @@
    "scoreMargin": -13,
    "valueAtPick": 3,
    "projection": 6.928189570587369,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -2811,7 +2811,7 @@
    "scoreMargin": 17,
    "valueAtPick": 7,
    "projection": 13.024658495834968,
-   "latestValue": 7,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -2880,7 +2880,7 @@
    "scoreMargin": 17,
    "valueAtPick": 5,
    "projection": 9.712773069058175,
-   "latestValue": 5,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -2914,7 +2914,7 @@
    "scoreMargin": 17,
    "valueAtPick": 22,
    "projection": 39.805479146043325,
-   "latestValue": 22,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Over",
@@ -2948,7 +2948,7 @@
    "scoreMargin": 17,
    "valueAtPick": 8,
    "projection": 14.433086813417766,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -2961,7 +2961,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 443,
+ "calls": 451,
  "note": null,
  "checkpointsTaken": {
   "21718081": [
