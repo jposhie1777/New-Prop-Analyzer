@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-12T02:49:17.650Z",
+ "updatedAt": "2026-11-12T02:52:18.902Z",
  "state": "running",
  "games": [
   {
@@ -28,43 +28,43 @@
    "gameId": 21718084,
    "matchup": "SAS @ CHI",
    "status": "4th Qtr",
-   "homeScore": 89,
-   "visitorScore": 90
+   "homeScore": 91,
+   "visitorScore": 94
   },
   {
    "gameId": 21718085,
    "matchup": "DEN @ MEM",
    "status": "3rd Qtr",
-   "homeScore": 83,
-   "visitorScore": 88
+   "homeScore": 86,
+   "visitorScore": 90
   },
   {
    "gameId": 21718086,
    "matchup": "LAL @ MIL",
    "status": "3rd Qtr",
-   "homeScore": 72,
-   "visitorScore": 92
+   "homeScore": 73,
+   "visitorScore": 94
   },
   {
    "gameId": 21718087,
    "matchup": "BKN @ NOP",
    "status": "3rd Qtr",
    "homeScore": 77,
-   "visitorScore": 102
+   "visitorScore": 104
   },
   {
    "gameId": 21718088,
    "matchup": "ORL @ UTA",
    "status": "2nd Qtr",
-   "homeScore": 40,
-   "visitorScore": 37
+   "homeScore": 41,
+   "visitorScore": 38
   },
   {
    "gameId": 21718089,
    "matchup": "GSW @ HOU",
    "status": "1st Qtr",
-   "homeScore": 16,
-   "visitorScore": 7
+   "homeScore": 19,
+   "visitorScore": 10
   },
   {
    "gameId": 21718090,
@@ -1211,7 +1211,7 @@
    "scoreMargin": 11,
    "valueAtPick": 1,
    "projection": 3.0359999999999996,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -1508,7 +1508,7 @@
    "scoreMargin": -2,
    "valueAtPick": 12,
    "projection": 30.57052671500611,
-   "latestValue": 27,
+   "latestValue": 28,
    "tags": [
     "Best bet",
     "Over",
@@ -1574,7 +1574,7 @@
    "scoreMargin": -12,
    "valueAtPick": 0,
    "projection": 6.535379041833699,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -1641,7 +1641,7 @@
    "scoreMargin": -12,
    "valueAtPick": 5,
    "projection": 11.61764283008868,
-   "latestValue": 12,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -1674,7 +1674,7 @@
    "scoreMargin": 12,
    "valueAtPick": 12,
    "projection": 24.623413926679603,
-   "latestValue": 19,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Under",
@@ -2566,7 +2566,7 @@
    "scoreMargin": 14,
    "valueAtPick": 21,
    "projection": 30.086146081509575,
-   "latestValue": 22,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Under",
@@ -2600,7 +2600,7 @@
    "scoreMargin": -13,
    "valueAtPick": 3,
    "projection": 6.928189570587369,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -2665,7 +2665,7 @@
    "scoreMargin": 13,
    "valueAtPick": 5,
    "projection": 11.070824039630985,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -2832,7 +2832,7 @@
    "scoreMargin": 11,
    "valueAtPick": 22,
    "projection": 38.42439784762521,
-   "latestValue": 28,
+   "latestValue": 31,
    "tags": [
     "Best bet",
     "Under",
@@ -3410,9 +3410,43 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718086-56677785-points",
+   "gameDate": "2026-11-11",
+   "gameId": 21718086,
+   "matchup": "LAL @ MIL",
+   "playerId": 56677785,
+   "playerName": "Jaime Jaquez Jr.",
+   "teamAbbreviation": "MIL",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 25.5,
+   "americanOdds": -143,
+   "vendor": "caesars",
+   "modelProbability": 0.7143772595635252,
+   "evPercent": 21.39417767408154,
+   "foundAt": "2026-11-12T02:52:17.387Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -21,
+   "valueAtPick": 21,
+   "projection": 23.9524766263408,
+   "latestValue": 21,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 491,
+ "calls": 501,
  "note": null,
  "checkpointsTaken": {
   "21718081": [
@@ -3441,7 +3475,8 @@
   ],
   "21718086": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718087": [
    "end-q1",
