@@ -1,13 +1,13 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-12T01:52:15.349Z",
+ "updatedAt": "2026-11-12T01:55:17.144Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718081,
    "matchup": "WAS @ IND",
    "status": "4th Qtr",
-   "homeScore": 85,
+   "homeScore": 87,
    "visitorScore": 77
   },
   {
@@ -22,21 +22,21 @@
    "matchup": "BOS @ TOR",
    "status": "3rd Qtr",
    "homeScore": 67,
-   "visitorScore": 68
+   "visitorScore": 71
   },
   {
    "gameId": 21718084,
    "matchup": "SAS @ CHI",
    "status": "2nd Qtr",
-   "homeScore": 60,
-   "visitorScore": 42
+   "homeScore": 66,
+   "visitorScore": 46
   },
   {
    "gameId": 21718085,
    "matchup": "DEN @ MEM",
    "status": "2nd Qtr",
-   "homeScore": 39,
-   "visitorScore": 47
+   "homeScore": 41,
+   "visitorScore": 51
   },
   {
    "gameId": 21718086,
@@ -50,7 +50,7 @@
    "matchup": "BKN @ NOP",
    "status": "2nd Qtr",
    "homeScore": 37,
-   "visitorScore": 49
+   "visitorScore": 53
   },
   {
    "gameId": 21718088,
@@ -891,7 +891,7 @@
    "scoreMargin": 6,
    "valueAtPick": 6,
    "projection": 9.805657188811637,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -1025,7 +1025,7 @@
    "scoreMargin": 7,
    "valueAtPick": 13,
    "projection": 24.489131884989582,
-   "latestValue": 17,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Under",
@@ -1753,7 +1753,7 @@
    "scoreMargin": 0,
    "valueAtPick": 26,
    "projection": 34.06192191836816,
-   "latestValue": 28,
+   "latestValue": 29,
    "tags": [
     "Best bet",
     "Under",
@@ -1885,7 +1885,7 @@
    "scoreMargin": 0,
    "valueAtPick": 16,
    "projection": 18.54979191473064,
-   "latestValue": 17,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -1897,7 +1897,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 342,
+ "calls": 348,
  "note": null,
  "checkpointsTaken": {
   "21718081": [
