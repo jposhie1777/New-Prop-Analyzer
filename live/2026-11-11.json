@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-12T04:07:21.415Z",
+ "updatedAt": "2026-11-12T04:11:21.080Z",
  "state": "running",
  "games": [
   {
@@ -56,15 +56,15 @@
    "gameId": 21718088,
    "matchup": "ORL @ UTA",
    "status": "4th Qtr",
-   "homeScore": 93,
-   "visitorScore": 93
+   "homeScore": 96,
+   "visitorScore": 95
   },
   {
    "gameId": 21718089,
    "matchup": "GSW @ HOU",
    "status": "3rd Qtr",
-   "homeScore": 67,
-   "visitorScore": 62
+   "homeScore": 73,
+   "visitorScore": 65
   },
   {
    "gameId": 21718090,
@@ -4512,7 +4512,7 @@
    "scoreMargin": -5,
    "valueAtPick": 1,
    "projection": 4.82868627181927,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -4861,7 +4861,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 689,
+ "calls": 697,
  "note": null,
  "checkpointsTaken": {
   "21718081": [
