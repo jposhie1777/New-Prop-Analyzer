@@ -1,21 +1,21 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-12T01:28:14.460Z",
+ "updatedAt": "2026-11-12T01:32:18.990Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718081,
    "matchup": "WAS @ IND",
    "status": "3rd Qtr",
-   "homeScore": 62,
-   "visitorScore": 54
+   "homeScore": 65,
+   "visitorScore": 56
   },
   {
    "gameId": 21718082,
    "matchup": "CLE @ NYK",
-   "status": "2nd Qtr",
-   "homeScore": 53,
-   "visitorScore": 59
+   "status": "3rd Qtr",
+   "homeScore": 58,
+   "visitorScore": 65
   },
   {
    "gameId": 21718083,
@@ -28,29 +28,29 @@
    "gameId": 21718084,
    "matchup": "SAS @ CHI",
    "status": "1st Qtr",
-   "homeScore": 27,
+   "homeScore": 33,
    "visitorScore": 23
   },
   {
    "gameId": 21718085,
    "matchup": "DEN @ MEM",
    "status": "1st Qtr",
-   "homeScore": 19,
-   "visitorScore": 30
+   "homeScore": 24,
+   "visitorScore": 35
   },
   {
    "gameId": 21718086,
    "matchup": "LAL @ MIL",
    "status": "1st Qtr",
-   "homeScore": 20,
-   "visitorScore": 26
+   "homeScore": 26,
+   "visitorScore": 28
   },
   {
    "gameId": 21718087,
    "matchup": "BKN @ NOP",
    "status": "1st Qtr",
-   "homeScore": 14,
-   "visitorScore": 23
+   "homeScore": 19,
+   "visitorScore": 31
   },
   {
    "gameId": 21718088,
@@ -394,7 +394,7 @@
    "scoreMargin": 10,
    "valueAtPick": 0,
    "projection": 1.519608125,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Under",
     "3PM",
@@ -593,7 +593,7 @@
    "scoreMargin": -5,
    "valueAtPick": 5,
    "projection": 16.63101629223291,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -660,7 +660,7 @@
    "scoreMargin": 5,
    "valueAtPick": 19,
    "projection": 31.779270712973585,
-   "latestValue": 24,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Over",
@@ -826,7 +826,7 @@
    "scoreMargin": -6,
    "valueAtPick": 2,
    "projection": 5.332624354362392,
-   "latestValue": 2,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -859,7 +859,7 @@
    "scoreMargin": -6,
    "valueAtPick": 3,
    "projection": 6.754250247065736,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Over",
     "Assists",
@@ -891,7 +891,7 @@
    "scoreMargin": 6,
    "valueAtPick": 6,
    "projection": 9.805657188811637,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -1068,9 +1068,175 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718085-125-assists",
+   "gameDate": "2026-11-11",
+   "gameId": 21718085,
+   "matchup": "DEN @ MEM",
+   "playerId": 125,
+   "playerName": "DeMar DeRozan",
+   "teamAbbreviation": "DEN",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 100,
+   "vendor": "betmgm",
+   "modelProbability": 0.62066353676863,
+   "evPercent": 24.13270735372599,
+   "foundAt": "2026-11-12T01:32:14.101Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 11,
+   "valueAtPick": 1,
+   "projection": 3.0359999999999996,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718085-1028048549-rebounds",
+   "gameDate": "2026-11-11",
+   "gameId": 21718085,
+   "matchup": "DEN @ MEM",
+   "playerId": 1028048549,
+   "playerName": "Cam Spencer",
+   "teamAbbreviation": "MEM",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -141,
+   "vendor": "betrivers",
+   "modelProbability": 0.721301889320767,
+   "evPercent": 23.286351295251674,
+   "foundAt": "2026-11-12T01:32:14.101Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -11,
+   "valueAtPick": 0,
+   "projection": 1.5942234237063297,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718085-1028039105-points",
+   "gameDate": "2026-11-11",
+   "gameId": 21718085,
+   "matchup": "DEN @ MEM",
+   "playerId": 1028039105,
+   "playerName": "Jaylen Wells",
+   "teamAbbreviation": "MEM",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 15.5,
+   "americanOdds": -106,
+   "vendor": "caesars",
+   "modelProbability": 0.6283583770376828,
+   "evPercent": 22.114929877134593,
+   "foundAt": "2026-11-12T01:32:14.101Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -11,
+   "valueAtPick": 8,
+   "projection": 17.06876254976892,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718085-666679-points_rebounds_assists",
+   "gameDate": "2026-11-11",
+   "gameId": 21718085,
+   "matchup": "DEN @ MEM",
+   "playerId": 666679,
+   "playerName": "Cameron Johnson",
+   "teamAbbreviation": "DEN",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 18.5,
+   "americanOdds": -106,
+   "vendor": "betrivers",
+   "modelProbability": 0.6282272665798637,
+   "evPercent": 22.08944992023767,
+   "foundAt": "2026-11-12T01:32:14.101Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 11,
+   "valueAtPick": 8,
+   "projection": 20.235556210743784,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718085-1028025754-rebounds",
+   "gameDate": "2026-11-11",
+   "gameId": 21718085,
+   "matchup": "DEN @ MEM",
+   "playerId": 1028025754,
+   "playerName": "Zach Edey",
+   "teamAbbreviation": "MEM",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": 105,
+   "vendor": "caesars",
+   "modelProbability": 0.5815426886747276,
+   "evPercent": 19.216251178319155,
+   "foundAt": "2026-11-12T01:32:14.101Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -11,
+   "valueAtPick": 1,
+   "projection": 6.8892226151625655,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 270,
+ "calls": 283,
  "note": null,
  "checkpointsTaken": {
   "21718081": [
@@ -1084,6 +1250,9 @@
   "21718083": [
    "end-q1",
    "halftime"
+  ],
+  "21718085": [
+   "end-q1"
   ]
  }
 }
