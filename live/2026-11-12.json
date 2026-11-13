@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "updatedAt": "2026-11-13T04:19:25.444Z",
+ "updatedAt": "2026-11-13T04:21:25.475Z",
  "state": "running",
  "games": [
   {
@@ -28,7 +28,7 @@
    "gameId": 21718094,
    "matchup": "CHA @ PHX",
    "status": "4th Qtr",
-   "homeScore": 94,
+   "homeScore": 97,
    "visitorScore": 91
   }
  ],
@@ -2056,8 +2056,8 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 641,
- "note": null,
+ "calls": 645,
+ "note": "This run hit its time limit; the next scheduled run continues.",
  "checkpointsTaken": {
   "21718091": [
    "end-q1",
