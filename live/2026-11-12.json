@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "updatedAt": "2026-11-13T03:51:24.636Z",
+ "updatedAt": "2026-11-13T03:55:24.625Z",
  "state": "running",
  "games": [
   {
@@ -27,8 +27,8 @@
   {
    "gameId": 21718094,
    "matchup": "CHA @ PHX",
-   "status": "3rd Qtr",
-   "homeScore": 72,
+   "status": "4th Qtr",
+   "homeScore": 77,
    "visitorScore": 76
   }
  ],
@@ -1913,7 +1913,7 @@
    "scoreMargin": -4,
    "valueAtPick": 10,
    "projection": 13.635783269361243,
-   "latestValue": 10,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -2056,7 +2056,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 585,
+ "calls": 593,
  "note": null,
  "checkpointsTaken": {
   "21718091": [
