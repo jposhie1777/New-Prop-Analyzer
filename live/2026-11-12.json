@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "updatedAt": "2026-11-13T03:04:22.386Z",
+ "updatedAt": "2026-11-13T03:08:22.750Z",
  "state": "running",
  "games": [
   {
@@ -14,22 +14,22 @@
    "gameId": 21718092,
    "matchup": "DET @ WAS",
    "status": "OT2",
-   "homeScore": 134,
-   "visitorScore": 137
+   "homeScore": 139,
+   "visitorScore": 142
   },
   {
    "gameId": 21718093,
    "matchup": "DAL @ MIN",
    "status": "4th Qtr",
-   "homeScore": 112,
-   "visitorScore": 75
+   "homeScore": 122,
+   "visitorScore": 81
   },
   {
    "gameId": 21718094,
    "matchup": "CHA @ PHX",
    "status": "2nd Qtr",
-   "homeScore": 53,
-   "visitorScore": 47
+   "homeScore": 55,
+   "visitorScore": 50
   }
  ],
  "picks": [
@@ -55,7 +55,7 @@
    "scoreMargin": -1,
    "valueAtPick": 10,
    "projection": 15.14477709643003,
-   "latestValue": 28,
+   "latestValue": 30,
    "tags": [
     "Best bet",
     "Under",
@@ -122,7 +122,7 @@
    "scoreMargin": -1,
    "valueAtPick": 3,
    "projection": 14.775375661423482,
-   "latestValue": 35,
+   "latestValue": 36,
    "tags": [
     "Best bet",
     "Under",
@@ -474,7 +474,7 @@
    "scoreMargin": -3,
    "valueAtPick": 2,
    "projection": 4.509047747318817,
-   "latestValue": 7,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -893,7 +893,7 @@
    "scoreMargin": 8,
    "valueAtPick": 1,
    "projection": 4.453124054741101,
-   "latestValue": 7,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -926,7 +926,7 @@
    "scoreMargin": -4,
    "valueAtPick": 5,
    "projection": 6.241351543051966,
-   "latestValue": 9,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -1447,7 +1447,7 @@
    "scoreMargin": 6,
    "valueAtPick": 7,
    "projection": 24.005503345449576,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -1480,7 +1480,7 @@
    "scoreMargin": -6,
    "valueAtPick": 2,
    "projection": 4.787836597674724,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -1622,9 +1622,173 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718094-17895966-points_assists",
+   "gameDate": "2026-11-12",
+   "gameId": 21718094,
+   "matchup": "CHA @ PHX",
+   "playerId": 17895966,
+   "playerName": "Jalen Green",
+   "teamAbbreviation": "PHX",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 18.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6185326153882496,
+   "evPercent": 24.9435883084264,
+   "foundAt": "2026-11-13T03:08:22.363Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 5,
+   "valueAtPick": 10,
+   "projection": 19.94239074823568,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718094-351-points",
+   "gameDate": "2026-11-12",
+   "gameId": 21718094,
+   "matchup": "CHA @ PHX",
+   "playerId": 351,
+   "playerName": "Royce O'Neale",
+   "teamAbbreviation": "CHA",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": -124,
+   "vendor": "caesars",
+   "modelProbability": 0.6909924572406887,
+   "evPercent": 24.824443888640534,
+   "foundAt": "2026-11-13T03:08:22.363Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -5,
+   "valueAtPick": 2,
+   "projection": 4.297692634908915,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718094-1028036515-rebounds",
+   "gameDate": "2026-11-12",
+   "gameId": 21718094,
+   "matchup": "CHA @ PHX",
+   "playerId": 1028036515,
+   "playerName": "Oso Ighodaro",
+   "teamAbbreviation": "PHX",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": 138,
+   "vendor": "fanduel",
+   "modelProbability": 0.5240678582900871,
+   "evPercent": 24.72815027304072,
+   "foundAt": "2026-11-13T03:08:22.363Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 5,
+   "valueAtPick": 3,
+   "projection": 5.6194582533150435,
+   "latestValue": 3,
+   "tags": [
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718094-38017725-points",
+   "gameDate": "2026-11-12",
+   "gameId": 21718094,
+   "matchup": "CHA @ PHX",
+   "playerId": 38017725,
+   "playerName": "Moussa Diabate",
+   "teamAbbreviation": "CHA",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": 110,
+   "vendor": "fanduel",
+   "modelProbability": 0.5851013299888836,
+   "evPercent": 22.87127929766557,
+   "foundAt": "2026-11-13T03:08:22.363Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -5,
+   "valueAtPick": 2,
+   "projection": 4.916119740053354,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718094-8-assists",
+   "gameDate": "2026-11-12",
+   "gameId": 21718094,
+   "matchup": "CHA @ PHX",
+   "playerId": 8,
+   "playerName": "Grayson Allen",
+   "teamAbbreviation": "CHA",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -130,
+   "vendor": "fanatics",
+   "modelProbability": 0.6934480896904243,
+   "evPercent": 22.68696971445967,
+   "foundAt": "2026-11-13T03:08:22.363Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -5,
+   "valueAtPick": 0,
+   "projection": 1.695063210745623,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 483,
+ "calls": 494,
  "note": null,
  "checkpointsTaken": {
   "21718091": [
@@ -1643,7 +1807,8 @@
    "end-q3"
   ],
   "21718094": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
