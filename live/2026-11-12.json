@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "updatedAt": "2026-11-13T02:52:21.968Z",
+ "updatedAt": "2026-11-13T02:56:22.477Z",
  "state": "running",
  "games": [
   {
@@ -13,23 +13,23 @@
   {
    "gameId": 21718092,
    "matchup": "DET @ WAS",
-   "status": "OT1",
-   "homeScore": 130,
+   "status": "OT2",
+   "homeScore": 132,
    "visitorScore": 132
   },
   {
    "gameId": 21718093,
    "matchup": "DAL @ MIN",
    "status": "4th Qtr",
-   "homeScore": 106,
+   "homeScore": 108,
    "visitorScore": 72
   },
   {
    "gameId": 21718094,
    "matchup": "CHA @ PHX",
    "status": "2nd Qtr",
-   "homeScore": 48,
-   "visitorScore": 31
+   "homeScore": 50,
+   "visitorScore": 40
   }
  ],
  "picks": [
@@ -508,7 +508,7 @@
    "scoreMargin": -3,
    "valueAtPick": 4,
    "projection": 14.73697614067511,
-   "latestValue": 15,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -1312,7 +1312,7 @@
    "scoreMargin": 15,
    "valueAtPick": 11,
    "projection": 24.8162223217182,
-   "latestValue": 16,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Over",
@@ -1447,7 +1447,7 @@
    "scoreMargin": 6,
    "valueAtPick": 7,
    "projection": 24.005503345449576,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -1513,7 +1513,7 @@
    "scoreMargin": -6,
    "valueAtPick": 2,
    "projection": 3.637948122985131,
-   "latestValue": 2,
+   "latestValue": 4,
    "tags": [
     "Over",
     "Assists",
@@ -1624,7 +1624,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 459,
+ "calls": 467,
  "note": null,
  "checkpointsTaken": {
   "21718091": [
