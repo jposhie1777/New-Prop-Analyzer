@@ -1,21 +1,21 @@
 {
  "date": "2026-11-12",
- "updatedAt": "2026-11-12T23:50:14.447Z",
+ "updatedAt": "2026-11-13T00:36:17.338Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718091,
    "matchup": "TOR @ PHI",
-   "status": "2026-11-13T00:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 16,
+   "visitorScore": 33
   },
   {
    "gameId": 21718092,
    "matchup": "DET @ WAS",
-   "status": "2026-11-13T00:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "2nd Qtr",
+   "homeScore": 32,
+   "visitorScore": 33
   },
   {
    "gameId": 21718093,
@@ -32,7 +32,179 @@
    "visitorScore": 0
   }
  ],
- "picks": [],
- "calls": 59,
- "note": null
+ "picks": [
+  {
+   "pickId": "21718092-1028028405-points",
+   "gameDate": "2026-11-12",
+   "gameId": 21718092,
+   "matchup": "DET @ WAS",
+   "playerId": 1028028405,
+   "playerName": "Alexandre Sarr",
+   "teamAbbreviation": "WAS",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 16.5,
+   "americanOdds": -109,
+   "vendor": "caesars",
+   "modelProbability": 0.6464061745982268,
+   "evPercent": 23.9439362303022,
+   "foundAt": "2026-11-13T00:36:16.027Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -1,
+   "valueAtPick": 10,
+   "projection": 15.14477709643003,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718092-221-threes",
+   "gameDate": "2026-11-12",
+   "gameId": 21718092,
+   "matchup": "DET @ WAS",
+   "playerId": 221,
+   "playerName": "Kevin Huerter",
+   "teamAbbreviation": "DET",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": -104,
+   "vendor": "caesars",
+   "modelProbability": 0.6314763720948452,
+   "evPercent": 23.866519141681188,
+   "foundAt": "2026-11-13T00:36:16.027Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 1,
+   "valueAtPick": 1,
+   "projection": 1.9053837835334329,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718092-490-points",
+   "gameDate": "2026-11-12",
+   "gameId": 21718092,
+   "matchup": "DET @ WAS",
+   "playerId": 490,
+   "playerName": "Trae Young",
+   "teamAbbreviation": "WAS",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 16.5,
+   "americanOdds": -103,
+   "vendor": "caesars",
+   "modelProbability": 0.6239875716714632,
+   "evPercent": 22.980074805152473,
+   "foundAt": "2026-11-13T00:36:16.027Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -1,
+   "valueAtPick": 3,
+   "projection": 14.775375661423482,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718092-1028240128-assists",
+   "gameDate": "2026-11-12",
+   "gameId": 21718092,
+   "matchup": "DET @ WAS",
+   "playerId": 1028240128,
+   "playerName": "Daniss Jenkins",
+   "teamAbbreviation": "DET",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": -124,
+   "vendor": "caesars",
+   "modelProbability": 0.670940328027887,
+   "evPercent": 21.20212377277957,
+   "foundAt": "2026-11-13T00:36:16.027Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 1,
+   "valueAtPick": 0,
+   "projection": 3.4893166483499862,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718092-1028026060-threes",
+   "gameDate": "2026-11-12",
+   "gameId": 21718092,
+   "matchup": "DET @ WAS",
+   "playerId": 1028026060,
+   "playerName": "KyShawn George",
+   "teamAbbreviation": "WAS",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -108,
+   "vendor": "caesars",
+   "modelProbability": 0.6228222052477912,
+   "evPercent": 19.950943232907935,
+   "foundAt": "2026-11-13T00:36:16.027Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -1,
+   "valueAtPick": 1,
+   "projection": 2.0862119407367707,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  }
+ ],
+ "calls": 156,
+ "note": null,
+ "checkpointsTaken": {
+  "21718092": [
+   "end-q1"
+  ]
+ }
 }
