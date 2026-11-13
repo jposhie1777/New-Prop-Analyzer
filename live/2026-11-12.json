@@ -1,28 +1,28 @@
 {
  "date": "2026-11-12",
- "updatedAt": "2026-11-13T01:27:18.458Z",
+ "updatedAt": "2026-11-13T01:31:19.063Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718091,
    "matchup": "TOR @ PHI",
    "status": "3rd Qtr",
-   "homeScore": 70,
+   "homeScore": 72,
    "visitorScore": 69
   },
   {
    "gameId": 21718092,
    "matchup": "DET @ WAS",
    "status": "3rd Qtr",
-   "homeScore": 64,
-   "visitorScore": 72
+   "homeScore": 68,
+   "visitorScore": 75
   },
   {
    "gameId": 21718093,
    "matchup": "DAL @ MIN",
    "status": "1st Qtr",
-   "homeScore": 19,
-   "visitorScore": 22
+   "homeScore": 21,
+   "visitorScore": 24
   },
   {
    "gameId": 21718094,
@@ -55,7 +55,7 @@
    "scoreMargin": -1,
    "valueAtPick": 10,
    "projection": 15.14477709643003,
-   "latestValue": 14,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Under",
@@ -488,7 +488,7 @@
    "scoreMargin": -3,
    "valueAtPick": 4,
    "projection": 14.73697614067511,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -521,7 +521,7 @@
    "scoreMargin": -3,
    "valueAtPick": 10,
    "projection": 17.209790702160493,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -700,7 +700,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 268,
+ "calls": 276,
  "note": null,
  "checkpointsTaken": {
   "21718091": [
