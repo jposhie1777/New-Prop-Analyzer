@@ -1,28 +1,28 @@
 {
  "date": "2026-11-12",
- "updatedAt": "2026-11-13T01:35:19.071Z",
+ "updatedAt": "2026-11-13T01:39:19.479Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718091,
    "matchup": "TOR @ PHI",
    "status": "3rd Qtr",
-   "homeScore": 76,
-   "visitorScore": 74
+   "homeScore": 79,
+   "visitorScore": 76
   },
   {
    "gameId": 21718092,
    "matchup": "DET @ WAS",
    "status": "3rd Qtr",
-   "homeScore": 75,
-   "visitorScore": 80
+   "homeScore": 84,
+   "visitorScore": 90
   },
   {
    "gameId": 21718093,
    "matchup": "DAL @ MIN",
    "status": "1st Qtr",
-   "homeScore": 31,
-   "visitorScore": 24
+   "homeScore": 34,
+   "visitorScore": 26
   },
   {
    "gameId": 21718094,
@@ -122,7 +122,7 @@
    "scoreMargin": -1,
    "valueAtPick": 3,
    "projection": 14.775375661423482,
-   "latestValue": 14,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -221,7 +221,7 @@
    "scoreMargin": 9,
    "valueAtPick": 3,
    "projection": 14.646835484720771,
-   "latestValue": 3,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -422,7 +422,7 @@
    "scoreMargin": -3,
    "valueAtPick": 2,
    "projection": 2.6818366567251886,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Under",
     "3PM",
@@ -454,7 +454,7 @@
    "scoreMargin": -3,
    "valueAtPick": 2,
    "projection": 4.509047747318817,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -621,7 +621,7 @@
    "scoreMargin": 0,
    "valueAtPick": 21,
    "projection": 35.5187992033717,
-   "latestValue": 32,
+   "latestValue": 33,
    "tags": [
     "Best bet",
     "Under",
@@ -698,9 +698,174 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718093-666747-assists",
+   "gameDate": "2026-11-12",
+   "gameId": 21718093,
+   "matchup": "DAL @ MIN",
+   "playerId": 666747,
+   "playerName": "Caleb Martin",
+   "teamAbbreviation": "DAL",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": -135,
+   "vendor": "draftkings",
+   "modelProbability": 0.7104894337457972,
+   "evPercent": 23.677790318712844,
+   "foundAt": "2026-11-13T01:39:18.714Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -8,
+   "valueAtPick": 2,
+   "projection": 3.262109375,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Already 60%+ of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718093-3547293-points_assists",
+   "gameDate": "2026-11-12",
+   "gameId": 21718093,
+   "matchup": "DAL @ MIN",
+   "playerId": 3547293,
+   "playerName": "Naji Marshall",
+   "teamAbbreviation": "DAL",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 15.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6022970833648276,
+   "evPercent": 21.66401083969518,
+   "foundAt": "2026-11-13T01:39:18.714Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -8,
+   "valueAtPick": 6,
+   "projection": 14.362796970732953,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718093-176-rebounds",
+   "gameDate": "2026-11-12",
+   "gameId": 21718093,
+   "matchup": "DAL @ MIN",
+   "playerId": 176,
+   "playerName": "Rudy Gobert",
+   "teamAbbreviation": "MIN",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 10.5,
+   "americanOdds": 100,
+   "vendor": "betmgm",
+   "modelProbability": 0.605421931949195,
+   "evPercent": 21.084386389839004,
+   "foundAt": "2026-11-13T01:39:18.714Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 8,
+   "valueAtPick": 3,
+   "projection": 11.450458311172195,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718093-3547239-assists",
+   "gameDate": "2026-11-12",
+   "gameId": 21718093,
+   "matchup": "DAL @ MIN",
+   "playerId": 3547239,
+   "playerName": "LaMelo Ball",
+   "teamAbbreviation": "MIN",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 7.5,
+   "americanOdds": -105,
+   "vendor": "draftkings",
+   "modelProbability": 0.6101673182980654,
+   "evPercent": 19.12790500105086,
+   "foundAt": "2026-11-13T01:39:18.714Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 8,
+   "valueAtPick": 3,
+   "projection": 8.28646936278668,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718093-1057271099-points",
+   "gameDate": "2026-11-12",
+   "gameId": 21718093,
+   "matchup": "DAL @ MIN",
+   "playerId": 1057271099,
+   "playerName": "Joan Beringer",
+   "teamAbbreviation": "MIN",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6264498462695997,
+   "evPercent": 18.57800661531708,
+   "foundAt": "2026-11-13T01:39:18.714Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 8,
+   "valueAtPick": 1,
+   "projection": 4.453124054741101,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 284,
+ "calls": 296,
  "note": null,
  "checkpointsTaken": {
   "21718091": [
@@ -710,6 +875,9 @@
   "21718092": [
    "end-q1",
    "halftime"
+  ],
+  "21718093": [
+   "end-q1"
   ]
  }
 }
