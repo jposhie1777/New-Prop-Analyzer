@@ -1,14 +1,14 @@
 {
  "date": "2026-11-12",
- "updatedAt": "2026-11-13T01:10:17.889Z",
+ "updatedAt": "2026-11-13T01:23:18.622Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718091,
    "matchup": "TOR @ PHI",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 60,
-   "visitorScore": 60
+   "visitorScore": 62
   },
   {
    "gameId": 21718092,
@@ -20,9 +20,9 @@
   {
    "gameId": 21718093,
    "matchup": "DAL @ MIN",
-   "status": "2026-11-13T01:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 12,
+   "visitorScore": 15
   },
   {
    "gameId": 21718094,
@@ -354,7 +354,7 @@
    "scoreMargin": 9,
    "valueAtPick": 10,
    "projection": 24.24948386550387,
-   "latestValue": 18,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -554,7 +554,7 @@
    "scoreMargin": 0,
    "valueAtPick": 7,
    "projection": 10.212039075790944,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -700,7 +700,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 234,
+ "calls": 260,
  "note": null,
  "checkpointsTaken": {
   "21718091": [
