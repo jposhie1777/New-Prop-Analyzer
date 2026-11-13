@@ -1,20 +1,20 @@
 {
  "date": "2026-11-12",
- "updatedAt": "2026-11-13T00:44:16.650Z",
+ "updatedAt": "2026-11-13T00:48:17.260Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718091,
    "matchup": "TOR @ PHI",
    "status": "2nd Qtr",
-   "homeScore": 27,
+   "homeScore": 31,
    "visitorScore": 33
   },
   {
    "gameId": 21718092,
    "matchup": "DET @ WAS",
    "status": "2nd Qtr",
-   "homeScore": 39,
+   "homeScore": 44,
    "visitorScore": 44
   },
   {
@@ -122,7 +122,7 @@
    "scoreMargin": -1,
    "valueAtPick": 3,
    "projection": 14.775375661423482,
-   "latestValue": 3,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -367,7 +367,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 176,
+ "calls": 184,
  "note": null,
  "checkpointsTaken": {
   "21718091": [
