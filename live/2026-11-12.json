@@ -1,27 +1,27 @@
 {
  "date": "2026-11-12",
- "updatedAt": "2026-11-13T02:03:19.941Z",
+ "updatedAt": "2026-11-13T02:07:20.266Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718091,
    "matchup": "TOR @ PHI",
    "status": "4th Qtr",
-   "homeScore": 103,
-   "visitorScore": 94
+   "homeScore": 107,
+   "visitorScore": 96
   },
   {
    "gameId": 21718092,
    "matchup": "DET @ WAS",
    "status": "4th Qtr",
-   "homeScore": 95,
-   "visitorScore": 98
+   "homeScore": 103,
+   "visitorScore": 102
   },
   {
    "gameId": 21718093,
    "matchup": "DAL @ MIN",
    "status": "2nd Qtr",
-   "homeScore": 61,
+   "homeScore": 67,
    "visitorScore": 52
   },
   {
@@ -122,7 +122,7 @@
    "scoreMargin": -1,
    "valueAtPick": 3,
    "projection": 14.775375661423482,
-   "latestValue": 20,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Under",
@@ -354,7 +354,7 @@
    "scoreMargin": 9,
    "valueAtPick": 10,
    "projection": 24.24948386550387,
-   "latestValue": 26,
+   "latestValue": 28,
    "tags": [
     "Best bet",
     "Under",
@@ -454,7 +454,7 @@
    "scoreMargin": -3,
    "valueAtPick": 2,
    "projection": 4.509047747318817,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -621,7 +621,7 @@
    "scoreMargin": 0,
    "valueAtPick": 21,
    "projection": 35.5187992033717,
-   "latestValue": 44,
+   "latestValue": 46,
    "tags": [
     "Best bet",
     "Under",
@@ -820,7 +820,7 @@
    "scoreMargin": 8,
    "valueAtPick": 3,
    "projection": 8.28646936278668,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -886,7 +886,7 @@
    "scoreMargin": -4,
    "valueAtPick": 5,
    "projection": 6.241351543051966,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -1194,9 +1194,179 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718093-666747-points_assists",
+   "gameDate": "2026-11-12",
+   "gameId": 21718093,
+   "matchup": "DAL @ MIN",
+   "playerId": 666747,
+   "playerName": "Caleb Martin",
+   "teamAbbreviation": "DAL",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 12.5,
+   "americanOdds": -154,
+   "vendor": "fanduel",
+   "modelProbability": 0.7568842508123859,
+   "evPercent": 24.83675305606883,
+   "foundAt": "2026-11-13T02:06:19.915Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -15,
+   "valueAtPick": 11,
+   "projection": 14.4660024033375,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718093-17895983-points_rebounds_assists",
+   "gameDate": "2026-11-12",
+   "gameId": 21718093,
+   "matchup": "DAL @ MIN",
+   "playerId": 17895983,
+   "playerName": "Ayo Dosunmu",
+   "teamAbbreviation": "MIN",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 23.5,
+   "americanOdds": 110,
+   "vendor": "fanduel",
+   "modelProbability": 0.5923099855383402,
+   "evPercent": 24.385096963051467,
+   "foundAt": "2026-11-13T02:06:19.915Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 15,
+   "valueAtPick": 11,
+   "projection": 24.8162223217182,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718093-666577-points",
+   "gameDate": "2026-11-12",
+   "gameId": 21718093,
+   "matchup": "DAL @ MIN",
+   "playerId": 666577,
+   "playerName": "Daniel Gafford",
+   "teamAbbreviation": "DAL",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": 100,
+   "vendor": "draftkings",
+   "modelProbability": 0.6204113742389936,
+   "evPercent": 24.082274847798722,
+   "foundAt": "2026-11-13T02:06:19.915Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -15,
+   "valueAtPick": 3,
+   "projection": 6.398985335825641,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718093-228-assists",
+   "gameDate": "2026-11-12",
+   "gameId": 21718093,
+   "matchup": "DAL @ MIN",
+   "playerId": 228,
+   "playerName": "Kyrie Irving",
+   "teamAbbreviation": "DAL",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": -138,
+   "vendor": "fanduel",
+   "modelProbability": 0.713563017817942,
+   "evPercent": 23.06376684106537,
+   "foundAt": "2026-11-13T02:06:19.915Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -15,
+   "valueAtPick": 3,
+   "projection": 5.614755317030846,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718093-17896067-rebounds",
+   "gameDate": "2026-11-12",
+   "gameId": 21718093,
+   "matchup": "DAL @ MIN",
+   "playerId": 17896067,
+   "playerName": "Santi Aldama",
+   "teamAbbreviation": "DAL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": 131,
+   "vendor": "caesars",
+   "modelProbability": 0.5256765968198964,
+   "evPercent": 21.431293865396086,
+   "foundAt": "2026-11-13T02:06:19.915Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -15,
+   "valueAtPick": 1,
+   "projection": 2.4066030362757243,
+   "latestValue": 1,
+   "tags": [
+    "Under",
+    "Rebounds",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 350,
+ "calls": 361,
  "note": null,
  "checkpointsTaken": {
   "21718091": [
@@ -1210,7 +1380,8 @@
    "end-q3"
   ],
   "21718093": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
