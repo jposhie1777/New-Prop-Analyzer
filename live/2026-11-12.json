@@ -1,27 +1,27 @@
 {
  "date": "2026-11-12",
- "updatedAt": "2026-11-13T01:31:19.063Z",
+ "updatedAt": "2026-11-13T01:35:19.071Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718091,
    "matchup": "TOR @ PHI",
    "status": "3rd Qtr",
-   "homeScore": 72,
-   "visitorScore": 69
+   "homeScore": 76,
+   "visitorScore": 74
   },
   {
    "gameId": 21718092,
    "matchup": "DET @ WAS",
    "status": "3rd Qtr",
-   "homeScore": 68,
-   "visitorScore": 75
+   "homeScore": 75,
+   "visitorScore": 80
   },
   {
    "gameId": 21718093,
    "matchup": "DAL @ MIN",
    "status": "1st Qtr",
-   "homeScore": 21,
+   "homeScore": 31,
    "visitorScore": 24
   },
   {
@@ -55,7 +55,7 @@
    "scoreMargin": -1,
    "valueAtPick": 10,
    "projection": 15.14477709643003,
-   "latestValue": 16,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Under",
@@ -122,7 +122,7 @@
    "scoreMargin": -1,
    "valueAtPick": 3,
    "projection": 14.775375661423482,
-   "latestValue": 12,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -287,7 +287,7 @@
    "scoreMargin": 9,
    "valueAtPick": 8,
    "projection": 22.51039923298638,
-   "latestValue": 17,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Under",
@@ -454,7 +454,7 @@
    "scoreMargin": -3,
    "valueAtPick": 2,
    "projection": 4.509047747318817,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -488,7 +488,7 @@
    "scoreMargin": -3,
    "valueAtPick": 4,
    "projection": 14.73697614067511,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -588,7 +588,7 @@
    "scoreMargin": 0,
    "valueAtPick": 4,
    "projection": 8.504193701057012,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -621,7 +621,7 @@
    "scoreMargin": 0,
    "valueAtPick": 21,
    "projection": 35.5187992033717,
-   "latestValue": 27,
+   "latestValue": 32,
    "tags": [
     "Best bet",
     "Under",
@@ -700,7 +700,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 276,
+ "calls": 284,
  "note": null,
  "checkpointsTaken": {
   "21718091": [
