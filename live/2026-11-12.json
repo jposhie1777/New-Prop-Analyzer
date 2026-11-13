@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "updatedAt": "2026-11-13T02:44:21.510Z",
+ "updatedAt": "2026-11-13T02:48:21.684Z",
  "state": "running",
  "games": [
   {
@@ -14,22 +14,22 @@
    "gameId": 21718092,
    "matchup": "DET @ WAS",
    "status": "OT1",
-   "homeScore": 128,
-   "visitorScore": 123
+   "homeScore": 130,
+   "visitorScore": 127
   },
   {
    "gameId": 21718093,
    "matchup": "DAL @ MIN",
-   "status": "3rd Qtr",
-   "homeScore": 101,
-   "visitorScore": 65
+   "status": "4th Qtr",
+   "homeScore": 103,
+   "visitorScore": 69
   },
   {
    "gameId": 21718094,
    "matchup": "CHA @ PHX",
    "status": "2nd Qtr",
-   "homeScore": 38,
-   "visitorScore": 29
+   "homeScore": 44,
+   "visitorScore": 31
   }
  ],
  "picks": [
@@ -508,7 +508,7 @@
    "scoreMargin": -3,
    "valueAtPick": 4,
    "projection": 14.73697614067511,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -794,7 +794,7 @@
    "scoreMargin": -8,
    "valueAtPick": 6,
    "projection": 14.362796970732953,
-   "latestValue": 13,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Under",
@@ -1588,9 +1588,43 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718093-290-points",
+   "gameDate": "2026-11-12",
+   "gameId": 21718093,
+   "matchup": "DAL @ MIN",
+   "playerId": 290,
+   "playerName": "Trey Lyles",
+   "teamAbbreviation": "MIN",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.6538535211800522,
+   "evPercent": 22.740924151343144,
+   "foundAt": "2026-11-13T02:46:21.454Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 34,
+   "valueAtPick": 2,
+   "projection": 2.902125923114359,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 440,
+ "calls": 451,
  "note": null,
  "checkpointsTaken": {
   "21718091": [
@@ -1605,7 +1639,8 @@
   ],
   "21718093": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718094": [
    "end-q1"
