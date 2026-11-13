@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "updatedAt": "2026-11-13T03:08:22.750Z",
+ "updatedAt": "2026-11-13T03:12:22.877Z",
  "state": "running",
  "games": [
   {
@@ -14,15 +14,15 @@
    "gameId": 21718092,
    "matchup": "DET @ WAS",
    "status": "OT2",
-   "homeScore": 139,
+   "homeScore": 140,
    "visitorScore": 142
   },
   {
    "gameId": 21718093,
    "matchup": "DAL @ MIN",
    "status": "4th Qtr",
-   "homeScore": 122,
-   "visitorScore": 81
+   "homeScore": 127,
+   "visitorScore": 85
   },
   {
    "gameId": 21718094,
@@ -122,7 +122,7 @@
    "scoreMargin": -1,
    "valueAtPick": 3,
    "projection": 14.775375661423482,
-   "latestValue": 36,
+   "latestValue": 37,
    "tags": [
     "Best bet",
     "Under",
@@ -1788,7 +1788,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 494,
+ "calls": 502,
  "note": null,
  "checkpointsTaken": {
   "21718091": [
