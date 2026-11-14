@@ -1,0 +1,45 @@
+{
+ "date": "2026-11-14",
+ "updatedAt": "2026-11-14T22:35:58.723Z",
+ "state": "waiting",
+ "games": [
+  {
+   "gameId": 21718104,
+   "matchup": "DEN @ NOP",
+   "status": "2026-11-15T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718105,
+   "matchup": "DAL @ CLE",
+   "status": "2026-11-15T00:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718106,
+   "matchup": "DET @ MIA",
+   "status": "2026-11-15T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718107,
+   "matchup": "BKN @ MEM",
+   "status": "2026-11-15T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718108,
+   "matchup": "CHI @ MIN",
+   "status": "2026-11-15T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  }
+ ],
+ "picks": [],
+ "calls": 1,
+ "note": "First tip-off 2026-11-15T00:00:00.000Z"
+}
