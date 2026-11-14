@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T03:49:16.946Z",
+ "updatedAt": "2026-11-14T03:53:17.544Z",
  "state": "running",
  "games": [
   {
@@ -42,29 +42,29 @@
    "gameId": 21718100,
    "matchup": "UTA @ HOU",
    "status": "4th Qtr",
-   "homeScore": 109,
+   "homeScore": 111,
    "visitorScore": 107
   },
   {
    "gameId": 21718101,
    "matchup": "GSW @ SAS",
    "status": "2nd Qtr",
-   "homeScore": 60,
+   "homeScore": 63,
    "visitorScore": 33
   },
   {
    "gameId": 21718102,
    "matchup": "POR @ SAC",
    "status": "2nd Qtr",
-   "homeScore": 35,
-   "visitorScore": 38
+   "homeScore": 37,
+   "visitorScore": 44
   },
   {
    "gameId": 21718103,
    "matchup": "OKC @ LAC",
    "status": "1st Qtr",
-   "homeScore": 17,
-   "visitorScore": 14
+   "homeScore": 20,
+   "visitorScore": 16
   }
  ],
  "picks": [
@@ -3555,7 +3555,7 @@
    "scoreMargin": -9,
    "valueAtPick": 17,
    "projection": 41.29266195025742,
-   "latestValue": 21,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Over",
@@ -3622,7 +3622,7 @@
    "scoreMargin": 9,
    "valueAtPick": 1,
    "projection": 3.33133815475911,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Under",
     "Rebounds",
@@ -3697,9 +3697,181 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718101-56677822-rebounds",
+   "gameDate": "2026-11-13",
+   "gameId": 21718101,
+   "matchup": "GSW @ SAS",
+   "playerId": 56677822,
+   "playerName": "Victor Wembanyama",
+   "teamAbbreviation": "SAS",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 13.5,
+   "americanOdds": -120,
+   "vendor": "caesars",
+   "modelProbability": 0.6719824748458431,
+   "evPercent": 23.196787055071244,
+   "foundAt": "2026-11-14T03:53:16.649Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 30,
+   "valueAtPick": 10,
+   "projection": 14.677844382019043,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718101-56677858-rebounds",
+   "gameDate": "2026-11-13",
+   "gameId": 21718101,
+   "matchup": "GSW @ SAS",
+   "playerId": 56677858,
+   "playerName": "Brandin Podziemski",
+   "teamAbbreviation": "GSW",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 130,
+   "vendor": "fanatics",
+   "modelProbability": 0.531430252866042,
+   "evPercent": 22.228958159189638,
+   "foundAt": "2026-11-14T03:53:16.649Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -30,
+   "valueAtPick": 1,
+   "projection": 3.6571877182033523,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718101-1091351802-points",
+   "gameDate": "2026-11-13",
+   "gameId": 21718101,
+   "matchup": "GSW @ SAS",
+   "playerId": 1091351802,
+   "playerName": "Yaxel Lendeborg",
+   "teamAbbreviation": "GSW",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 12.5,
+   "americanOdds": -118,
+   "vendor": "caesars",
+   "modelProbability": 0.6560624225944267,
+   "evPercent": 21.204752648800863,
+   "foundAt": "2026-11-14T03:53:16.649Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -30,
+   "valueAtPick": 3,
+   "projection": 10.724058737841112,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718101-666682-rebounds",
+   "gameDate": "2026-11-13",
+   "gameId": 21718101,
+   "matchup": "GSW @ SAS",
+   "playerId": 666682,
+   "playerName": "Keldon Johnson",
+   "teamAbbreviation": "SAS",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": -121,
+   "vendor": "caesars",
+   "modelProbability": 0.6613236304783165,
+   "evPercent": 20.787208541907386,
+   "foundAt": "2026-11-14T03:53:16.649Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 30,
+   "valueAtPick": 2,
+   "projection": 4.26578125,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718101-185-rebounds",
+   "gameDate": "2026-11-13",
+   "gameId": 21718101,
+   "matchup": "GSW @ SAS",
+   "playerId": 185,
+   "playerName": "Draymond Green",
+   "teamAbbreviation": "GSW",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": -127,
+   "vendor": "caesars",
+   "modelProbability": 0.6708201103734529,
+   "evPercent": 19.902492169113238,
+   "foundAt": "2026-11-14T03:53:16.649Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -30,
+   "valueAtPick": 3,
+   "projection": 5.324252584274781,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 604,
+ "calls": 616,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
@@ -3733,7 +3905,8 @@
    "end-q3"
   ],
   "21718101": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718102": [
    "end-q1"
