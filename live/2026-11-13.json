@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T03:37:17.688Z",
+ "updatedAt": "2026-11-14T03:41:16.525Z",
  "state": "running",
  "games": [
   {
@@ -21,48 +21,48 @@
    "gameId": 21718097,
    "matchup": "CLE @ MIA",
    "status": "4th Qtr",
-   "homeScore": 124,
-   "visitorScore": 114
+   "homeScore": 128,
+   "visitorScore": 115
   },
   {
    "gameId": 21718098,
    "matchup": "ATL @ CHI",
    "status": "OT1",
-   "homeScore": 115,
-   "visitorScore": 113
+   "homeScore": 123,
+   "visitorScore": 117
   },
   {
    "gameId": 21718099,
    "matchup": "MEM @ NOP",
    "status": "4th Qtr",
-   "homeScore": 109,
-   "visitorScore": 137
+   "homeScore": 111,
+   "visitorScore": 142
   },
   {
    "gameId": 21718100,
    "matchup": "UTA @ HOU",
    "status": "4th Qtr",
-   "homeScore": 99,
-   "visitorScore": 91
+   "homeScore": 102,
+   "visitorScore": 94
   },
   {
    "gameId": 21718101,
    "matchup": "GSW @ SAS",
    "status": "2nd Qtr",
-   "homeScore": 48,
-   "visitorScore": 23
+   "homeScore": 52,
+   "visitorScore": 25
   },
   {
    "gameId": 21718102,
    "matchup": "POR @ SAC",
    "status": "2nd Qtr",
-   "homeScore": 25,
+   "homeScore": 27,
    "visitorScore": 34
   },
   {
    "gameId": 21718103,
    "matchup": "OKC @ LAC",
-   "status": "2026-11-14T03:30:00Z",
+   "status": "1st Qtr",
    "homeScore": 0,
    "visitorScore": 0
   }
@@ -870,7 +870,7 @@
    "scoreMargin": 9,
    "valueAtPick": 1,
    "projection": 6.375709149625001,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -903,7 +903,7 @@
    "scoreMargin": 9,
    "valueAtPick": 10,
    "projection": 26.3446295373119,
-   "latestValue": 29,
+   "latestValue": 32,
    "tags": [
     "Best bet",
     "Over",
@@ -1235,7 +1235,7 @@
    "scoreMargin": 2,
    "valueAtPick": 7,
    "projection": 27.16416254502994,
-   "latestValue": 35,
+   "latestValue": 37,
    "tags": [
     "Best bet",
     "Under",
@@ -1268,7 +1268,7 @@
    "scoreMargin": -2,
    "valueAtPick": 6,
    "projection": 24.265963912238863,
-   "latestValue": 21,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Under",
@@ -1769,7 +1769,7 @@
    "scoreMargin": -7,
    "valueAtPick": 7,
    "projection": 18.51468046201008,
-   "latestValue": 17,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -1967,7 +1967,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 8.95608225759797,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -2529,7 +2529,7 @@
    "scoreMargin": -1,
    "valueAtPick": 18,
    "projection": 24.42280062988884,
-   "latestValue": 23,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Under",
@@ -2563,7 +2563,7 @@
    "scoreMargin": 1,
    "valueAtPick": 5,
    "projection": 6.402001363415129,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -2695,7 +2695,7 @@
    "scoreMargin": 2,
    "valueAtPick": 19,
    "projection": 23.482535864837843,
-   "latestValue": 35,
+   "latestValue": 37,
    "tags": [
     "Best bet",
     "Under",
@@ -2762,7 +2762,7 @@
    "scoreMargin": 2,
    "valueAtPick": 0,
    "projection": 0.8518299661624203,
-   "latestValue": 3,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -2931,7 +2931,7 @@
    "scoreMargin": -19,
    "valueAtPick": 11,
    "projection": 14.681144677213945,
-   "latestValue": 17,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Under",
@@ -3070,7 +3070,7 @@
    "scoreMargin": 24,
    "valueAtPick": 15,
    "projection": 31.286296229137225,
-   "latestValue": 19,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Over",
@@ -3105,7 +3105,7 @@
    "scoreMargin": -24,
    "valueAtPick": 1,
    "projection": 2.831946494497604,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Over",
@@ -3342,7 +3342,7 @@
    "scoreMargin": -3,
    "valueAtPick": 3,
    "projection": 3.7906652094923468,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -3519,7 +3519,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 577,
+ "calls": 585,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
