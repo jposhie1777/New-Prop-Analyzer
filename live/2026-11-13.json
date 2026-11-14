@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T04:40:45.407Z",
+ "updatedAt": "2026-11-14T04:44:45.388Z",
  "state": "running",
  "games": [
   {
@@ -49,22 +49,22 @@
    "gameId": 21718101,
    "matchup": "GSW @ SAS",
    "status": "4th Qtr",
-   "homeScore": 99,
-   "visitorScore": 62
+   "homeScore": 105,
+   "visitorScore": 69
   },
   {
    "gameId": 21718102,
    "matchup": "POR @ SAC",
    "status": "3rd Qtr",
-   "homeScore": 70,
-   "visitorScore": 79
+   "homeScore": 75,
+   "visitorScore": 86
   },
   {
    "gameId": 21718103,
    "matchup": "OKC @ LAC",
    "status": "2nd Qtr",
-   "homeScore": 55,
-   "visitorScore": 42
+   "homeScore": 57,
+   "visitorScore": 44
   }
  ],
  "picks": [
@@ -3393,7 +3393,7 @@
    "scoreMargin": -24,
    "valueAtPick": 2,
    "projection": 3.6890741320857927,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Over",
     "Rebounds",
@@ -3615,7 +3615,7 @@
    "scoreMargin": -9,
    "valueAtPick": 17,
    "projection": 41.29266195025742,
-   "latestValue": 26,
+   "latestValue": 29,
    "tags": [
     "Best bet",
     "Over",
@@ -4118,7 +4118,7 @@
    "scoreMargin": -11,
    "valueAtPick": 10,
    "projection": 16.929869824364914,
-   "latestValue": 12,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -4331,9 +4331,177 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718103-139-points",
+   "gameDate": "2026-11-13",
+   "gameId": 21718103,
+   "matchup": "OKC @ LAC",
+   "playerId": 139,
+   "playerName": "Kris Dunn",
+   "teamAbbreviation": "LAC",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": 110,
+   "vendor": "draftkings",
+   "modelProbability": 0.5951285378795977,
+   "evPercent": 24.976992954715538,
+   "foundAt": "2026-11-14T04:42:45.041Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 13,
+   "valueAtPick": 2,
+   "projection": 5.18324364848094,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718103-666908-points_rebounds",
+   "gameDate": "2026-11-13",
+   "gameId": 21718103,
+   "matchup": "OKC @ LAC",
+   "playerId": 666908,
+   "playerName": "Max Strus",
+   "teamAbbreviation": "LAC",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": -120,
+   "vendor": "fanduel",
+   "modelProbability": 0.6755144542880935,
+   "evPercent": 23.84431661948383,
+   "foundAt": "2026-11-14T04:42:45.041Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 13,
+   "valueAtPick": 4,
+   "projection": 11.374695204777716,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718103-480-rebounds_assists",
+   "gameDate": "2026-11-13",
+   "gameId": 21718103,
+   "matchup": "OKC @ LAC",
+   "playerId": 480,
+   "playerName": "Kenrich Williams",
+   "teamAbbreviation": "OKC",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": -122,
+   "vendor": "fanduel",
+   "modelProbability": 0.6799702356916197,
+   "evPercent": 23.732288789786548,
+   "foundAt": "2026-11-14T04:42:45.041Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -13,
+   "valueAtPick": 7,
+   "projection": 10.630545003662665,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Reb+Ast",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718103-201-points_assists",
+   "gameDate": "2026-11-13",
+   "gameId": 21718103,
+   "matchup": "OKC @ LAC",
+   "playerId": 201,
+   "playerName": "Isaiah Hartenstein",
+   "teamAbbreviation": "OKC",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 13.5,
+   "americanOdds": -108,
+   "vendor": "fanduel",
+   "modelProbability": 0.6394912032744352,
+   "evPercent": 23.16126877878013,
+   "foundAt": "2026-11-14T04:42:45.041Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -13,
+   "valueAtPick": 8,
+   "projection": 14.925175370466267,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Foul trouble",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718103-89-points_rebounds",
+   "gameDate": "2026-11-13",
+   "gameId": 21718103,
+   "matchup": "OKC @ LAC",
+   "playerId": 89,
+   "playerName": "Alex Caruso",
+   "teamAbbreviation": "OKC",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 6.5,
+   "americanOdds": -122,
+   "vendor": "fanduel",
+   "modelProbability": 0.6744299493348105,
+   "evPercent": 22.724138321580266,
+   "foundAt": "2026-11-14T04:42:45.041Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -13,
+   "valueAtPick": 0,
+   "projection": 4.971034541249238,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 52,
+ "calls": 65,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
@@ -4376,7 +4544,8 @@
    "halftime"
   ],
   "21718103": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
