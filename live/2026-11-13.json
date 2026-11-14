@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T04:20:44.401Z",
+ "updatedAt": "2026-11-14T04:24:44.571Z",
  "state": "running",
  "games": [
   {
@@ -49,8 +49,8 @@
    "gameId": 21718101,
    "matchup": "GSW @ SAS",
    "status": "3rd Qtr",
-   "homeScore": 78,
-   "visitorScore": 45
+   "homeScore": 84,
+   "visitorScore": 47
   },
   {
    "gameId": 21718102,
@@ -63,8 +63,8 @@
    "gameId": 21718103,
    "matchup": "OKC @ LAC",
    "status": "2nd Qtr",
-   "homeScore": 41,
-   "visitorScore": 33
+   "homeScore": 43,
+   "visitorScore": 38
   }
  ],
  "picks": [
@@ -3290,7 +3290,7 @@
    "scoreMargin": 24,
    "valueAtPick": 15,
    "projection": 31.286296229137225,
-   "latestValue": 30,
+   "latestValue": 35,
    "tags": [
     "Best bet",
     "Over",
@@ -3325,7 +3325,7 @@
    "scoreMargin": -24,
    "valueAtPick": 1,
    "projection": 2.831946494497604,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -4052,7 +4052,7 @@
    "scoreMargin": -6,
    "valueAtPick": 10,
    "projection": 24.06195519314514,
-   "latestValue": 10,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -4265,7 +4265,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 5,
+ "calls": 13,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
