@@ -1,41 +1,41 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T01:52:11.830Z",
+ "updatedAt": "2026-11-14T01:55:13.121Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718095,
    "matchup": "NYK @ IND",
    "status": "3rd Qtr",
-   "homeScore": 80,
-   "visitorScore": 69
+   "homeScore": 83,
+   "visitorScore": 71
   },
   {
    "gameId": 21718096,
    "matchup": "MIL @ ORL",
    "status": "4th Qtr",
-   "homeScore": 84,
-   "visitorScore": 72
+   "homeScore": 87,
+   "visitorScore": 74
   },
   {
    "gameId": 21718097,
    "matchup": "CLE @ MIA",
    "status": "2nd Qtr",
    "homeScore": 43,
-   "visitorScore": 39
+   "visitorScore": 42
   },
   {
    "gameId": 21718098,
    "matchup": "ATL @ CHI",
    "status": "2nd Qtr",
-   "homeScore": 46,
-   "visitorScore": 35
+   "homeScore": 51,
+   "visitorScore": 41
   },
   {
    "gameId": 21718099,
    "matchup": "MEM @ NOP",
    "status": "2nd Qtr",
-   "homeScore": 39,
+   "homeScore": 43,
    "visitorScore": 48
   },
   {
@@ -489,7 +489,7 @@
    "scoreMargin": 15,
    "valueAtPick": 8,
    "projection": 16.271491651306466,
-   "latestValue": 9,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -790,7 +790,7 @@
    "scoreMargin": 9,
    "valueAtPick": 1,
    "projection": 6.375709149625001,
-   "latestValue": 2,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -1399,7 +1399,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 314,
+ "calls": 320,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
