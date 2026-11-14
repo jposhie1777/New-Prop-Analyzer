@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T05:32:47.354Z",
+ "updatedAt": "2026-11-14T05:36:47.506Z",
  "state": "running",
  "games": [
   {
@@ -63,8 +63,8 @@
    "gameId": 21718103,
    "matchup": "OKC @ LAC",
    "status": "4th Qtr",
-   "homeScore": 85,
-   "visitorScore": 88
+   "homeScore": 91,
+   "visitorScore": 93
   }
  ],
  "picks": [
@@ -4045,7 +4045,7 @@
    "scoreMargin": 6,
    "valueAtPick": 2,
    "projection": 3.286218561921296,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -4112,7 +4112,7 @@
    "scoreMargin": -6,
    "valueAtPick": 10,
    "projection": 24.06195519314514,
-   "latestValue": 34,
+   "latestValue": 40,
    "tags": [
     "Best bet",
     "Under",
@@ -4542,7 +4542,7 @@
    "scoreMargin": -13,
    "valueAtPick": 8,
    "projection": 14.925175370466267,
-   "latestValue": 20,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Over",
@@ -4805,7 +4805,7 @@
    "scoreMargin": -2,
    "valueAtPick": 14,
    "projection": 19.376992385448602,
-   "latestValue": 14,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Over",
@@ -4871,7 +4871,7 @@
    "scoreMargin": 2,
    "valueAtPick": 27,
    "projection": 30.28857901264732,
-   "latestValue": 28,
+   "latestValue": 34,
    "tags": [
     "Best bet",
     "Under",
@@ -4952,7 +4952,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 172,
+ "calls": 180,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
