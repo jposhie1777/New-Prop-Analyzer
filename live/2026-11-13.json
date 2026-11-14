@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T04:08:18.067Z",
+ "updatedAt": "2026-11-14T04:12:19.050Z",
  "state": "running",
  "games": [
   {
@@ -41,30 +41,30 @@
   {
    "gameId": 21718100,
    "matchup": "UTA @ HOU",
-   "status": "4th Qtr",
-   "homeScore": 123,
+   "status": "Final",
+   "homeScore": 125,
    "visitorScore": 118
   },
   {
    "gameId": 21718101,
    "matchup": "GSW @ SAS",
-   "status": "2nd Qtr",
-   "homeScore": 63,
-   "visitorScore": 33
+   "status": "3rd Qtr",
+   "homeScore": 69,
+   "visitorScore": 43
   },
   {
    "gameId": 21718102,
    "matchup": "POR @ SAC",
    "status": "2nd Qtr",
-   "homeScore": 52,
-   "visitorScore": 59
+   "homeScore": 53,
+   "visitorScore": 64
   },
   {
    "gameId": 21718103,
    "matchup": "OKC @ LAC",
    "status": "1st Qtr",
-   "homeScore": 31,
-   "visitorScore": 26
+   "homeScore": 33,
+   "visitorScore": 27
   }
  ],
  "picks": [
@@ -1948,7 +1948,7 @@
    "scoreMargin": 0,
    "valueAtPick": 10,
    "projection": 27.36484754360202,
-   "latestValue": 20,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Over",
@@ -1956,7 +1956,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 22,
+    "gradedAt": "2026-11-14T04:12:19.050Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1989,7 +1993,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 5,
+    "gradedAt": "2026-11-14T04:12:19.050Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -2022,7 +2030,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 3,
+    "gradedAt": "2026-11-14T04:12:19.050Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -2055,7 +2067,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 13,
+    "gradedAt": "2026-11-14T04:12:19.050Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -2088,7 +2104,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 9,
+    "gradedAt": "2026-11-14T04:12:19.050Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -2492,7 +2512,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 27,
+    "gradedAt": "2026-11-14T04:12:19.050Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2525,7 +2549,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 2,
+    "gradedAt": "2026-11-14T04:12:19.050Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2557,7 +2585,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 2,
+    "gradedAt": "2026-11-14T04:12:19.050Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2590,7 +2622,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 8,
+    "gradedAt": "2026-11-14T04:12:19.050Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2624,7 +2660,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 3,
+    "gradedAt": "2026-11-14T04:12:19.050Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -3250,7 +3290,7 @@
    "scoreMargin": 24,
    "valueAtPick": 15,
    "projection": 31.286296229137225,
-   "latestValue": 22,
+   "latestValue": 24,
    "tags": [
     "Best bet",
     "Over",
@@ -3394,7 +3434,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 2,
+    "gradedAt": "2026-11-14T04:12:19.050Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3429,7 +3473,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 5,
+    "gradedAt": "2026-11-14T04:12:19.050Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3462,7 +3510,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 2,
+    "gradedAt": "2026-11-14T04:12:19.050Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3497,7 +3549,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 19,
+    "gradedAt": "2026-11-14T04:12:19.050Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3530,7 +3586,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 4,
+    "gradedAt": "2026-11-14T04:12:19.050Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3588,7 +3648,7 @@
    "scoreMargin": 9,
    "valueAtPick": 7,
    "projection": 16.974178280129802,
-   "latestValue": 12,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -3720,7 +3780,7 @@
    "scoreMargin": 30,
    "valueAtPick": 10,
    "projection": 14.677844382019043,
-   "latestValue": 10,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Over",
@@ -3869,9 +3929,175 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718103-480-rebounds",
+   "gameDate": "2026-11-13",
+   "gameId": 21718103,
+   "matchup": "OKC @ LAC",
+   "playerId": 480,
+   "playerName": "Kenrich Williams",
+   "teamAbbreviation": "OKC",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": 120,
+   "vendor": "betmgm",
+   "modelProbability": 0.5655561791187477,
+   "evPercent": 24.422359406124492,
+   "foundAt": "2026-11-14T04:12:17.510Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -6,
+   "valueAtPick": 3,
+   "projection": 6.89851288315743,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718103-283-assists",
+   "gameDate": "2026-11-13",
+   "gameId": 21718103,
+   "matchup": "OKC @ LAC",
+   "playerId": 283,
+   "playerName": "Brook Lopez",
+   "teamAbbreviation": "LAC",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": -135,
+   "vendor": "draftkings",
+   "modelProbability": 0.7146350724498088,
+   "evPercent": 24.399438537559305,
+   "foundAt": "2026-11-14T04:12:17.510Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 6,
+   "valueAtPick": 2,
+   "projection": 3.286218561921296,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718103-175-assists",
+   "gameDate": "2026-11-13",
+   "gameId": 21718103,
+   "matchup": "OKC @ LAC",
+   "playerId": 175,
+   "playerName": "Shai Gilgeous-Alexander",
+   "teamAbbreviation": "OKC",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": -105,
+   "vendor": "betmgm",
+   "modelProbability": 0.6323908054564897,
+   "evPercent": 23.466776303409898,
+   "foundAt": "2026-11-14T04:12:17.510Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -6,
+   "valueAtPick": 0,
+   "projection": 3.704154279921567,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718103-201-points_rebounds_assists",
+   "gameDate": "2026-11-13",
+   "gameId": 21718103,
+   "matchup": "OKC @ LAC",
+   "playerId": 201,
+   "playerName": "Isaiah Hartenstein",
+   "teamAbbreviation": "OKC",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 26.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.6659296959015688,
+   "evPercent": 23.027689581815245,
+   "foundAt": "2026-11-14T04:12:17.510Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -6,
+   "valueAtPick": 10,
+   "projection": 24.06195519314514,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718103-666908-points",
+   "gameDate": "2026-11-13",
+   "gameId": 21718103,
+   "matchup": "OKC @ LAC",
+   "playerId": 666908,
+   "playerName": "Max Strus",
+   "teamAbbreviation": "LAC",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": -108,
+   "vendor": "fanduel",
+   "modelProbability": 0.6386699649712494,
+   "evPercent": 23.003104364833217,
+   "foundAt": "2026-11-14T04:12:17.510Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 6,
+   "valueAtPick": 3,
+   "projection": 11.107361197183247,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 646,
+ "calls": 660,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
@@ -3909,6 +4135,9 @@
    "halftime"
   ],
   "21718102": [
+   "end-q1"
+  ],
+  "21718103": [
    "end-q1"
   ]
  }
