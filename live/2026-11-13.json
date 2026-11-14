@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T03:12:15.169Z",
+ "updatedAt": "2026-11-14T03:15:16.703Z",
  "state": "running",
  "games": [
   {
@@ -21,8 +21,8 @@
    "gameId": 21718097,
    "matchup": "CLE @ MIA",
    "status": "4th Qtr",
-   "homeScore": 105,
-   "visitorScore": 96
+   "homeScore": 110,
+   "visitorScore": 99
   },
   {
    "gameId": 21718098,
@@ -43,21 +43,21 @@
    "matchup": "UTA @ HOU",
    "status": "3rd Qtr",
    "homeScore": 72,
-   "visitorScore": 69
+   "visitorScore": 80
   },
   {
    "gameId": 21718101,
    "matchup": "GSW @ SAS",
    "status": "1st Qtr",
    "homeScore": 36,
-   "visitorScore": 13
+   "visitorScore": 15
   },
   {
    "gameId": 21718102,
    "matchup": "POR @ SAC",
    "status": "1st Qtr",
-   "homeScore": 0,
-   "visitorScore": 0
+   "homeScore": 6,
+   "visitorScore": 5
   },
   {
    "gameId": 21718103,
@@ -2330,7 +2330,7 @@
    "scoreMargin": 3,
    "valueAtPick": 7,
    "projection": 16.425473639279943,
-   "latestValue": 15,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Under",
@@ -2397,7 +2397,7 @@
    "scoreMargin": -10,
    "valueAtPick": 1,
    "projection": 2.4400795552059495,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Under",
     "Rebounds",
@@ -2695,7 +2695,7 @@
    "scoreMargin": 2,
    "valueAtPick": 19,
    "projection": 23.482535864837843,
-   "latestValue": 29,
+   "latestValue": 31,
    "tags": [
     "Best bet",
     "Under",
@@ -2729,7 +2729,7 @@
    "scoreMargin": 2,
    "valueAtPick": 2,
    "projection": 2.857288021965924,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -3015,7 +3015,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 513,
+ "calls": 519,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
