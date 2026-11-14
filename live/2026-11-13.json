@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T03:00:17.257Z",
+ "updatedAt": "2026-11-14T03:04:14.973Z",
  "state": "running",
  "games": [
   {
@@ -21,36 +21,36 @@
    "gameId": 21718097,
    "matchup": "CLE @ MIA",
    "status": "4th Qtr",
-   "homeScore": 92,
-   "visitorScore": 91
+   "homeScore": 99,
+   "visitorScore": 93
   },
   {
    "gameId": 21718098,
    "matchup": "ATL @ CHI",
    "status": "4th Qtr",
-   "homeScore": 98,
-   "visitorScore": 90
+   "homeScore": 99,
+   "visitorScore": 92
   },
   {
    "gameId": 21718099,
    "matchup": "MEM @ NOP",
    "status": "3rd Qtr",
    "homeScore": 86,
-   "visitorScore": 103
+   "visitorScore": 105
   },
   {
    "gameId": 21718100,
    "matchup": "UTA @ HOU",
-   "status": "2nd Qtr",
-   "homeScore": 63,
-   "visitorScore": 53
+   "status": "3rd Qtr",
+   "homeScore": 65,
+   "visitorScore": 56
   },
   {
    "gameId": 21718101,
    "matchup": "GSW @ SAS",
    "status": "1st Qtr",
-   "homeScore": 23,
-   "visitorScore": 5
+   "homeScore": 26,
+   "visitorScore": 8
   },
   {
    "gameId": 21718102,
@@ -1769,7 +1769,7 @@
    "scoreMargin": -7,
    "valueAtPick": 7,
    "projection": 18.51468046201008,
-   "latestValue": 15,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -1967,7 +1967,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 8.95608225759797,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -2363,7 +2363,7 @@
    "scoreMargin": -10,
    "valueAtPick": 4,
    "projection": 11.400535870991398,
-   "latestValue": 4,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -2529,7 +2529,7 @@
    "scoreMargin": -1,
    "valueAtPick": 18,
    "projection": 24.42280062988884,
-   "latestValue": 18,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Under",
@@ -2563,7 +2563,7 @@
    "scoreMargin": 1,
    "valueAtPick": 5,
    "projection": 6.402001363415129,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -2597,7 +2597,7 @@
    "scoreMargin": 1,
    "valueAtPick": 2,
    "projection": 2.398414961011536,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Over",
     "Assists",
@@ -2695,7 +2695,7 @@
    "scoreMargin": 2,
    "valueAtPick": 19,
    "projection": 23.482535864837843,
-   "latestValue": 19,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Under",
@@ -2762,7 +2762,7 @@
    "scoreMargin": 2,
    "valueAtPick": 0,
    "projection": 0.8518299661624203,
-   "latestValue": 0,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -2839,9 +2839,183 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718099-3547256-rebounds_assists",
+   "gameDate": "2026-11-13",
+   "gameId": 21718099,
+   "matchup": "MEM @ NOP",
+   "playerId": 3547256,
+   "playerName": "Saddiq Bey",
+   "teamAbbreviation": "NOP",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 9.5,
+   "americanOdds": 130,
+   "vendor": "fanduel",
+   "modelProbability": 0.5379070493204365,
+   "evPercent": 23.7186213437004,
+   "foundAt": "2026-11-14T03:03:14.516Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -19,
+   "valueAtPick": 8,
+   "projection": 9.359225803134244,
+   "latestValue": 8,
+   "tags": [
+    "Under",
+    "Reb+Ast",
+    "Blowout risk",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718099-182-points",
+   "gameDate": "2026-11-13",
+   "gameId": 21718099,
+   "matchup": "MEM @ NOP",
+   "playerId": 182,
+   "playerName": "Jerami Grant",
+   "teamAbbreviation": "MEM",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 21.5,
+   "americanOdds": -132,
+   "vendor": "fanduel",
+   "modelProbability": 0.6924719708253401,
+   "evPercent": 21.7071948723325,
+   "foundAt": "2026-11-14T03:03:14.516Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 19,
+   "valueAtPick": 20,
+   "projection": 22.850424385185647,
+   "latestValue": 20,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718099-1057274415-points_rebounds_assists",
+   "gameDate": "2026-11-13",
+   "gameId": 21718099,
+   "matchup": "MEM @ NOP",
+   "playerId": 1057274415,
+   "playerName": "Derik Queen",
+   "teamAbbreviation": "NOP",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 15.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6108050135650329,
+   "evPercent": 20.963345823663392,
+   "foundAt": "2026-11-14T03:03:14.516Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -19,
+   "valueAtPick": 11,
+   "projection": 14.681144677213945,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718099-1028039105-points",
+   "gameDate": "2026-11-13",
+   "gameId": 21718099,
+   "matchup": "MEM @ NOP",
+   "playerId": 1028039105,
+   "playerName": "Jaylen Wells",
+   "teamAbbreviation": "MEM",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 7.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6230290014883524,
+   "evPercent": 17.930489567438123,
+   "foundAt": "2026-11-14T03:03:14.516Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 19,
+   "valueAtPick": 6,
+   "projection": 8.247420753070843,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718099-1057267077-points_assists",
+   "gameDate": "2026-11-13",
+   "gameId": 21718099,
+   "matchup": "MEM @ NOP",
+   "playerId": 1057267077,
+   "playerName": "Jeremiah Fears",
+   "teamAbbreviation": "NOP",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 25.5,
+   "americanOdds": -132,
+   "vendor": "fanduel",
+   "modelProbability": 0.6593522093285493,
+   "evPercent": 15.886145881987446,
+   "foundAt": "2026-11-14T03:03:14.516Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -19,
+   "valueAtPick": 22,
+   "projection": 26.875254192509416,
+   "latestValue": 22,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Blowout risk",
+    "Foul trouble",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 485,
+ "calls": 497,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
@@ -2866,7 +3040,8 @@
   ],
   "21718099": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718100": [
    "end-q1",
