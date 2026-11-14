@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T05:04:46.189Z",
+ "updatedAt": "2026-11-14T05:08:46.305Z",
  "state": "running",
  "games": [
   {
@@ -56,15 +56,15 @@
    "gameId": 21718102,
    "matchup": "POR @ SAC",
    "status": "4th Qtr",
-   "homeScore": 82,
+   "homeScore": 84,
    "visitorScore": 100
   },
   {
    "gameId": 21718103,
    "matchup": "OKC @ LAC",
    "status": "3rd Qtr",
-   "homeScore": 58,
-   "visitorScore": 57
+   "homeScore": 63,
+   "visitorScore": 63
   }
  ],
  "picks": [
@@ -3635,7 +3635,7 @@
    "scoreMargin": -9,
    "valueAtPick": 17,
    "projection": 41.29266195025742,
-   "latestValue": 31,
+   "latestValue": 32,
    "tags": [
     "Best bet",
     "Over",
@@ -4092,7 +4092,7 @@
    "scoreMargin": -6,
    "valueAtPick": 10,
    "projection": 24.06195519314514,
-   "latestValue": 21,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Under",
@@ -4469,7 +4469,7 @@
    "scoreMargin": -13,
    "valueAtPick": 7,
    "projection": 10.630545003662665,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -4724,7 +4724,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 111,
+ "calls": 119,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
