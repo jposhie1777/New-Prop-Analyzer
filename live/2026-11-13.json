@@ -1,28 +1,28 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T02:10:16.893Z",
+ "updatedAt": "2026-11-14T02:14:12.717Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718095,
    "matchup": "NYK @ IND",
    "status": "4th Qtr",
-   "homeScore": 89,
-   "visitorScore": 87
+   "homeScore": 95,
+   "visitorScore": 89
   },
   {
    "gameId": 21718096,
    "matchup": "MIL @ ORL",
    "status": "4th Qtr",
-   "homeScore": 92,
-   "visitorScore": 80
+   "homeScore": 94,
+   "visitorScore": 82
   },
   {
    "gameId": 21718097,
    "matchup": "CLE @ MIA",
    "status": "2nd Qtr",
    "homeScore": 54,
-   "visitorScore": 54
+   "visitorScore": 57
   },
   {
    "gameId": 21718098,
@@ -41,9 +41,9 @@
   {
    "gameId": 21718100,
    "matchup": "UTA @ HOU",
-   "status": "1st Qtr",
+   "status": "2nd Qtr",
    "homeScore": 27,
-   "visitorScore": 27
+   "visitorScore": 31
   },
   {
    "gameId": 21718101,
@@ -454,7 +454,7 @@
    "scoreMargin": -15,
    "valueAtPick": 1,
    "projection": 5.489545532018993,
-   "latestValue": 12,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -557,7 +557,7 @@
    "scoreMargin": 15,
    "valueAtPick": 5,
    "projection": 7.9260206088364376,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -657,7 +657,7 @@
    "scoreMargin": 9,
    "valueAtPick": 6,
    "projection": 16.260738926960954,
-   "latestValue": 9,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -989,7 +989,7 @@
    "scoreMargin": -7,
    "valueAtPick": 8,
    "projection": 22.255082231873814,
-   "latestValue": 20,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Under",
@@ -1320,7 +1320,7 @@
    "scoreMargin": -12,
    "valueAtPick": 12,
    "projection": 14.753733887872443,
-   "latestValue": 15,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Over",
@@ -1486,7 +1486,7 @@
    "scoreMargin": 1,
    "valueAtPick": 0,
    "projection": 0.4903570393355789,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Over",
     "3PM",
@@ -1781,7 +1781,7 @@
    "scoreMargin": 0,
    "valueAtPick": 4,
    "projection": 8.649516357122426,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -1847,7 +1847,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 8.95608225759797,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -1880,7 +1880,7 @@
    "scoreMargin": 0,
    "valueAtPick": 5,
    "projection": 14.78691599494002,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -1890,9 +1890,172 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718099-1057266649-rebounds",
+   "gameDate": "2026-11-13",
+   "gameId": 21718099,
+   "matchup": "MEM @ NOP",
+   "playerId": 1057266649,
+   "playerName": "Cedric Coward",
+   "teamAbbreviation": "MEM",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": 124,
+   "vendor": "fanduel",
+   "modelProbability": 0.5551599863933281,
+   "evPercent": 24.355836952105502,
+   "foundAt": "2026-11-14T02:11:12.188Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 12,
+   "valueAtPick": 2,
+   "projection": 5.832000000000001,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718099-666676-assists",
+   "gameDate": "2026-11-13",
+   "gameId": 21718099,
+   "matchup": "MEM @ NOP",
+   "playerId": 666676,
+   "playerName": "Ty Jerome",
+   "teamAbbreviation": "MEM",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 8.5,
+   "americanOdds": 126,
+   "vendor": "fanduel",
+   "modelProbability": 0.5498486450220071,
+   "evPercent": 24.2657937749736,
+   "foundAt": "2026-11-14T02:11:12.188Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 12,
+   "valueAtPick": 6,
+   "projection": 8.754212630208333,
+   "latestValue": 6,
+   "tags": [
+    "Over",
+    "Assists",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718099-1091339280-assists",
+   "gameDate": "2026-11-13",
+   "gameId": 21718099,
+   "matchup": "MEM @ NOP",
+   "playerId": 1091339280,
+   "playerName": "Cameron Boozer",
+   "teamAbbreviation": "MEM",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": 124,
+   "vendor": "fanduel",
+   "modelProbability": 0.5470435864315109,
+   "evPercent": 22.537763360658445,
+   "foundAt": "2026-11-14T02:11:12.188Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 12,
+   "valueAtPick": 3,
+   "projection": 5.739183582024793,
+   "latestValue": 3,
+   "tags": [
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718099-3547267-points_rebounds_assists",
+   "gameDate": "2026-11-13",
+   "gameId": 21718099,
+   "matchup": "MEM @ NOP",
+   "playerId": 3547267,
+   "playerName": "Isaiah Stewart",
+   "teamAbbreviation": "MEM",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 15.5,
+   "americanOdds": -136,
+   "vendor": "fanduel",
+   "modelProbability": 0.7027211717200943,
+   "evPercent": 21.94279156319283,
+   "foundAt": "2026-11-14T02:11:12.188Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 12,
+   "valueAtPick": 9,
+   "projection": 17.909330797594208,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718099-1028048549-threes",
+   "gameDate": "2026-11-13",
+   "gameId": 21718099,
+   "matchup": "MEM @ NOP",
+   "playerId": 1028048549,
+   "playerName": "Cam Spencer",
+   "teamAbbreviation": "MEM",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 114,
+   "vendor": "draftkings",
+   "modelProbability": 0.566950173314839,
+   "evPercent": 21.327337089375533,
+   "foundAt": "2026-11-14T02:11:12.188Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 12,
+   "valueAtPick": 2,
+   "projection": 2.6758925314965967,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 363,
+ "calls": 375,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
@@ -1913,7 +2076,8 @@
    "halftime"
   ],
   "21718099": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718100": [
    "end-q1"
