@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T05:20:46.929Z",
+ "updatedAt": "2026-11-14T05:24:47.033Z",
  "state": "running",
  "games": [
   {
@@ -56,15 +56,15 @@
    "gameId": 21718102,
    "matchup": "POR @ SAC",
    "status": "4th Qtr",
-   "homeScore": 103,
-   "visitorScore": 115
+   "homeScore": 105,
+   "visitorScore": 116
   },
   {
    "gameId": 21718103,
    "matchup": "OKC @ LAC",
-   "status": "3rd Qtr",
-   "homeScore": 77,
-   "visitorScore": 79
+   "status": "4th Qtr",
+   "homeScore": 82,
+   "visitorScore": 84
   }
  ],
  "picks": [
@@ -4292,7 +4292,7 @@
    "scoreMargin": -11,
    "valueAtPick": 14,
    "projection": 18.878578183877575,
-   "latestValue": 16,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -4605,7 +4605,7 @@
    "scoreMargin": -15,
    "valueAtPick": 4,
    "projection": 5.754648985624831,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -4639,7 +4639,7 @@
    "scoreMargin": 15,
    "valueAtPick": 8,
    "projection": 10.068363119617594,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -4710,7 +4710,7 @@
    "scoreMargin": 15,
    "valueAtPick": 29,
    "projection": 34.73146520949063,
-   "latestValue": 34,
+   "latestValue": 35,
    "tags": [
     "Best bet",
     "Under",
@@ -4722,9 +4722,177 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718103-1091343544-points_rebounds",
+   "gameDate": "2026-11-13",
+   "gameId": 21718103,
+   "matchup": "OKC @ LAC",
+   "playerId": 1091343544,
+   "playerName": "Keaton Wagler",
+   "teamAbbreviation": "LAC",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 18.5,
+   "americanOdds": 108,
+   "vendor": "fanduel",
+   "modelProbability": 0.598466645460093,
+   "evPercent": 24.48106225569935,
+   "foundAt": "2026-11-14T05:23:46.729Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -2,
+   "valueAtPick": 14,
+   "projection": 19.376992385448602,
+   "latestValue": 14,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718103-666609-threes",
+   "gameDate": "2026-11-13",
+   "gameId": 21718103,
+   "matchup": "OKC @ LAC",
+   "playerId": 666609,
+   "playerName": "Rui Hachimura",
+   "teamAbbreviation": "LAC",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 148,
+   "vendor": "fanduel",
+   "modelProbability": 0.49558511260001514,
+   "evPercent": 22.905107924803758,
+   "foundAt": "2026-11-14T05:23:46.729Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -2,
+   "valueAtPick": 1,
+   "projection": 1.4901689077369045,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "3PM",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718103-201-points_rebounds",
+   "gameDate": "2026-11-13",
+   "gameId": 21718103,
+   "matchup": "OKC @ LAC",
+   "playerId": 201,
+   "playerName": "Isaiah Hartenstein",
+   "teamAbbreviation": "OKC",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 31.5,
+   "americanOdds": -122,
+   "vendor": "fanduel",
+   "modelProbability": 0.6702055311783581,
+   "evPercent": 21.95543272261926,
+   "foundAt": "2026-11-14T05:23:46.729Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 2,
+   "valueAtPick": 27,
+   "projection": 30.28857901264732,
+   "latestValue": 27,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Foul trouble",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718103-666908-points_rebounds_assists",
+   "gameDate": "2026-11-13",
+   "gameId": 21718103,
+   "matchup": "OKC @ LAC",
+   "playerId": 666908,
+   "playerName": "Max Strus",
+   "teamAbbreviation": "LAC",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 11.5,
+   "americanOdds": -128,
+   "vendor": "fanduel",
+   "modelProbability": 0.6793909588040983,
+   "evPercent": 21.01651453698001,
+   "foundAt": "2026-11-14T05:23:46.729Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -2,
+   "valueAtPick": 7,
+   "projection": 10.229892327361489,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718103-283-points",
+   "gameDate": "2026-11-13",
+   "gameId": 21718103,
+   "matchup": "OKC @ LAC",
+   "playerId": 283,
+   "playerName": "Brook Lopez",
+   "teamAbbreviation": "LAC",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 17.5,
+   "americanOdds": 116,
+   "vendor": "fanduel",
+   "modelProbability": 0.5595914746910791,
+   "evPercent": 20.871758533273077,
+   "foundAt": "2026-11-14T05:23:46.729Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -2,
+   "valueAtPick": 15,
+   "projection": 17.906584080889413,
+   "latestValue": 15,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 143,
+ "calls": 155,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
@@ -4769,7 +4937,8 @@
   ],
   "21718103": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ]
  }
 }
