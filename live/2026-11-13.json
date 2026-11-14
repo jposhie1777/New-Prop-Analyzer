@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T01:19:10.445Z",
+ "updatedAt": "2026-11-14T01:23:10.548Z",
  "state": "running",
  "games": [
   {
@@ -14,29 +14,29 @@
    "gameId": 21718096,
    "matchup": "MIL @ ORL",
    "status": "3rd Qtr",
-   "homeScore": 52,
-   "visitorScore": 37
+   "homeScore": 58,
+   "visitorScore": 40
   },
   {
    "gameId": 21718097,
    "matchup": "CLE @ MIA",
    "status": "1st Qtr",
-   "homeScore": 14,
-   "visitorScore": 9
+   "homeScore": 15,
+   "visitorScore": 11
   },
   {
    "gameId": 21718098,
    "matchup": "ATL @ CHI",
    "status": "1st Qtr",
-   "homeScore": 14,
-   "visitorScore": 9
+   "homeScore": 18,
+   "visitorScore": 11
   },
   {
    "gameId": 21718099,
    "matchup": "MEM @ NOP",
    "status": "1st Qtr",
    "homeScore": 13,
-   "visitorScore": 14
+   "visitorScore": 17
   },
   {
    "gameId": 21718100,
@@ -189,7 +189,7 @@
    "scoreMargin": -8,
    "valueAtPick": 0,
    "projection": 0.8674180114746093,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Under",
@@ -222,7 +222,7 @@
    "scoreMargin": 8,
    "valueAtPick": 0,
    "projection": 3.5478624058593753,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Over",
     "Rebounds",
@@ -454,7 +454,7 @@
    "scoreMargin": -15,
    "valueAtPick": 1,
    "projection": 5.489545532018993,
-   "latestValue": 1,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -737,7 +737,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 229,
+ "calls": 237,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
