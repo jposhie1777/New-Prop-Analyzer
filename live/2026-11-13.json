@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T04:44:45.388Z",
+ "updatedAt": "2026-11-14T04:48:45.579Z",
  "state": "running",
  "games": [
   {
@@ -49,15 +49,15 @@
    "gameId": 21718101,
    "matchup": "GSW @ SAS",
    "status": "4th Qtr",
-   "homeScore": 105,
-   "visitorScore": 69
+   "homeScore": 113,
+   "visitorScore": 77
   },
   {
    "gameId": 21718102,
    "matchup": "POR @ SAC",
    "status": "3rd Qtr",
    "homeScore": 75,
-   "visitorScore": 86
+   "visitorScore": 89
   },
   {
    "gameId": 21718103,
@@ -3884,7 +3884,7 @@
    "scoreMargin": 30,
    "valueAtPick": 2,
    "projection": 4.26578125,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -4321,7 +4321,7 @@
    "scoreMargin": 37,
    "valueAtPick": 9,
    "projection": 11.962890207182554,
-   "latestValue": 9,
+   "latestValue": 12,
    "tags": [
     "Over",
     "Points",
@@ -4501,7 +4501,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 65,
+ "calls": 73,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
