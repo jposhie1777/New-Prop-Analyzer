@@ -1,21 +1,21 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T01:00:12.020Z",
+ "updatedAt": "2026-11-14T01:08:10.126Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718095,
    "matchup": "NYK @ IND",
    "status": "2nd Qtr",
-   "homeScore": 44,
-   "visitorScore": 35
+   "homeScore": 48,
+   "visitorScore": 38
   },
   {
    "gameId": 21718096,
    "matchup": "MIL @ ORL",
    "status": "2nd Qtr",
-   "homeScore": 45,
-   "visitorScore": 30
+   "homeScore": 52,
+   "visitorScore": 36
   },
   {
    "gameId": 21718097,
@@ -320,7 +320,7 @@
    "scoreMargin": -1,
    "valueAtPick": 5,
    "projection": 26.500128484856333,
-   "latestValue": 13,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -398,7 +398,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 183,
+ "calls": 199,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
