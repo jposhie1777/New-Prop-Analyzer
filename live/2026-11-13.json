@@ -1,21 +1,21 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-13T23:50:06.370Z",
+ "updatedAt": "2026-11-14T00:35:10.346Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718095,
    "matchup": "NYK @ IND",
-   "status": "2026-11-14T00:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 24,
+   "visitorScore": 23
   },
   {
    "gameId": 21718096,
    "matchup": "MIL @ ORL",
-   "status": "2026-11-14T00:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 23,
+   "visitorScore": 15
   },
   {
    "gameId": 21718097,
@@ -67,7 +67,177 @@
    "visitorScore": 0
   }
  ],
- "picks": [],
- "calls": 31,
- "note": null
+ "picks": [
+  {
+   "pickId": "21718096-1091349754-assists",
+   "gameDate": "2026-11-13",
+   "gameId": 21718096,
+   "matchup": "MIL @ ORL",
+   "playerId": 1091349754,
+   "playerName": "Brayden Burries",
+   "teamAbbreviation": "MIL",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": -141,
+   "vendor": "betrivers",
+   "modelProbability": 0.7275480933206961,
+   "evPercent": 24.353964886728917,
+   "foundAt": "2026-11-14T00:35:08.210Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -8,
+   "valueAtPick": 1,
+   "projection": 3.721078673583001,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718096-56677827-rebounds",
+   "gameDate": "2026-11-13",
+   "gameId": 21718096,
+   "matchup": "MIL @ ORL",
+   "playerId": 56677827,
+   "playerName": "Anthony Black",
+   "teamAbbreviation": "ORL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": 118,
+   "vendor": "fanduel",
+   "modelProbability": 0.5704263817972368,
+   "evPercent": 24.352951231797615,
+   "foundAt": "2026-11-14T00:35:08.210Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 8,
+   "valueAtPick": 1,
+   "projection": 4.116925,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718096-38017716-rebounds",
+   "gameDate": "2026-11-13",
+   "gameId": 21718096,
+   "matchup": "MIL @ ORL",
+   "playerId": 38017716,
+   "playerName": "Ousmane Dieng",
+   "teamAbbreviation": "MIL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 122,
+   "vendor": "fanduel",
+   "modelProbability": 0.5594736637987485,
+   "evPercent": 24.20315336332215,
+   "foundAt": "2026-11-14T00:35:08.210Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -8,
+   "valueAtPick": 0,
+   "projection": 2.8065040368380045,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718096-265-threes",
+   "gameDate": "2026-11-13",
+   "gameId": 21718096,
+   "matchup": "MIL @ ORL",
+   "playerId": 265,
+   "playerName": "Kyle Kuzma",
+   "teamAbbreviation": "MIL",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": -134,
+   "vendor": "betrivers",
+   "modelProbability": 0.7037755781212771,
+   "evPercent": 22.89812334356629,
+   "foundAt": "2026-11-14T00:35:08.210Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -8,
+   "valueAtPick": 0,
+   "projection": 0.8674180114746093,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718096-3547287-rebounds",
+   "gameDate": "2026-11-13",
+   "gameId": 21718096,
+   "matchup": "MIL @ ORL",
+   "playerId": 3547287,
+   "playerName": "Desmond Bane",
+   "teamAbbreviation": "ORL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 140,
+   "vendor": "fanduel",
+   "modelProbability": 0.508290324471026,
+   "evPercent": 21.98967787304622,
+   "foundAt": "2026-11-14T00:35:08.210Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 8,
+   "valueAtPick": 0,
+   "projection": 3.5478624058593753,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  }
+ ],
+ "calls": 128,
+ "note": null,
+ "checkpointsTaken": {
+  "21718096": [
+   "end-q1"
+  ]
+ }
 }
