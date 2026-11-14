@@ -1,49 +1,49 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T01:48:11.842Z",
+ "updatedAt": "2026-11-14T01:52:11.830Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718095,
    "matchup": "NYK @ IND",
    "status": "3rd Qtr",
-   "homeScore": 76,
-   "visitorScore": 67
+   "homeScore": 80,
+   "visitorScore": 69
   },
   {
    "gameId": 21718096,
    "matchup": "MIL @ ORL",
-   "status": "3rd Qtr",
-   "homeScore": 82,
-   "visitorScore": 69
+   "status": "4th Qtr",
+   "homeScore": 84,
+   "visitorScore": 72
   },
   {
    "gameId": 21718097,
    "matchup": "CLE @ MIA",
    "status": "2nd Qtr",
    "homeScore": 43,
-   "visitorScore": 38
+   "visitorScore": 39
   },
   {
    "gameId": 21718098,
    "matchup": "ATL @ CHI",
    "status": "2nd Qtr",
    "homeScore": 46,
-   "visitorScore": 33
+   "visitorScore": 35
   },
   {
    "gameId": 21718099,
    "matchup": "MEM @ NOP",
    "status": "2nd Qtr",
-   "homeScore": 33,
-   "visitorScore": 42
+   "homeScore": 39,
+   "visitorScore": 48
   },
   {
    "gameId": 21718100,
    "matchup": "UTA @ HOU",
    "status": "1st Qtr",
-   "homeScore": 11,
-   "visitorScore": 6
+   "homeScore": 15,
+   "visitorScore": 15
   },
   {
    "gameId": 21718101,
@@ -353,7 +353,7 @@
    "scoreMargin": 1,
    "valueAtPick": 0,
    "projection": 6.468490586056643,
-   "latestValue": 0,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -790,7 +790,7 @@
    "scoreMargin": 9,
    "valueAtPick": 1,
    "projection": 6.375709149625001,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -989,7 +989,7 @@
    "scoreMargin": -7,
    "valueAtPick": 8,
    "projection": 22.255082231873814,
-   "latestValue": 10,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -1231,9 +1231,175 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718096-666633-assists",
+   "gameDate": "2026-11-13",
+   "gameId": 21718096,
+   "matchup": "MIL @ ORL",
+   "playerId": 666633,
+   "playerName": "Tyler Herro",
+   "teamAbbreviation": "MIL",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": 130,
+   "vendor": "fanduel",
+   "modelProbability": 0.5388557358894499,
+   "evPercent": 23.93681925457347,
+   "foundAt": "2026-11-14T01:50:11.472Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -12,
+   "valueAtPick": 1,
+   "projection": 1.4224730185704013,
+   "latestValue": 1,
+   "tags": [
+    "Under",
+    "Assists",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718096-56677785-rebounds",
+   "gameDate": "2026-11-13",
+   "gameId": 21718096,
+   "matchup": "MIL @ ORL",
+   "playerId": 56677785,
+   "playerName": "Jaime Jaquez Jr.",
+   "teamAbbreviation": "MIL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": -138,
+   "vendor": "fanduel",
+   "modelProbability": 0.7174399794731103,
+   "evPercent": 23.732402256956718,
+   "foundAt": "2026-11-14T01:50:11.472Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -12,
+   "valueAtPick": 2,
+   "projection": 2.851108540625,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718096-265-points_rebounds_assists",
+   "gameDate": "2026-11-13",
+   "gameId": 21718096,
+   "matchup": "MIL @ ORL",
+   "playerId": 265,
+   "playerName": "Kyle Kuzma",
+   "teamAbbreviation": "MIL",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 13.5,
+   "americanOdds": -128,
+   "vendor": "fanduel",
+   "modelProbability": 0.6908190565599097,
+   "evPercent": 23.052144449733913,
+   "foundAt": "2026-11-14T01:50:11.472Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -12,
+   "valueAtPick": 12,
+   "projection": 14.753733887872443,
+   "latestValue": 12,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718096-1091349754-points_rebounds_assists",
+   "gameDate": "2026-11-13",
+   "gameId": 21718096,
+   "matchup": "MIL @ ORL",
+   "playerId": 1091349754,
+   "playerName": "Brayden Burries",
+   "teamAbbreviation": "MIL",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 15.5,
+   "americanOdds": -106,
+   "vendor": "fanduel",
+   "modelProbability": 0.6284691962675794,
+   "evPercent": 22.136466444454108,
+   "foundAt": "2026-11-14T01:50:11.472Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -12,
+   "valueAtPick": 10,
+   "projection": 14.451154144358508,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718096-1028025497-points",
+   "gameDate": "2026-11-13",
+   "gameId": 21718096,
+   "matchup": "MIL @ ORL",
+   "playerId": 1028025497,
+   "playerName": "Tristan Da Silva",
+   "teamAbbreviation": "ORL",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 11.5,
+   "americanOdds": -140,
+   "vendor": "fanduel",
+   "modelProbability": 0.6978800385279722,
+   "evPercent": 19.636578033366668,
+   "foundAt": "2026-11-14T01:50:11.472Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 12,
+   "valueAtPick": 10,
+   "projection": 12.90520934424942,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 302,
+ "calls": 314,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
@@ -1242,7 +1408,8 @@
   ],
   "21718096": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718097": [
    "end-q1"
