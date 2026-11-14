@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T04:12:19.050Z",
+ "updatedAt": "2026-11-14T04:16:18.652Z",
  "state": "running",
  "games": [
   {
@@ -49,7 +49,7 @@
    "gameId": 21718101,
    "matchup": "GSW @ SAS",
    "status": "3rd Qtr",
-   "homeScore": 69,
+   "homeScore": 76,
    "visitorScore": 43
   },
   {
@@ -62,9 +62,9 @@
   {
    "gameId": 21718103,
    "matchup": "OKC @ LAC",
-   "status": "1st Qtr",
-   "homeScore": 33,
-   "visitorScore": 27
+   "status": "2nd Qtr",
+   "homeScore": 35,
+   "visitorScore": 31
   }
  ],
  "picks": [
@@ -3290,7 +3290,7 @@
    "scoreMargin": 24,
    "valueAtPick": 15,
    "projection": 31.286296229137225,
-   "latestValue": 24,
+   "latestValue": 29,
    "tags": [
     "Best bet",
     "Over",
@@ -3393,7 +3393,7 @@
    "scoreMargin": -24,
    "valueAtPick": 2,
    "projection": 3.6890741320857927,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Over",
     "Rebounds",
@@ -3780,7 +3780,7 @@
    "scoreMargin": 30,
    "valueAtPick": 10,
    "projection": 14.677844382019043,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -3815,7 +3815,7 @@
    "scoreMargin": -30,
    "valueAtPick": 1,
    "projection": 3.6571877182033523,
-   "latestValue": 1,
+   "latestValue": 3,
    "tags": [
     "Over",
     "Rebounds",
@@ -3952,7 +3952,7 @@
    "scoreMargin": -6,
    "valueAtPick": 3,
    "projection": 6.89851288315743,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -4097,7 +4097,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 660,
+ "calls": 668,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
