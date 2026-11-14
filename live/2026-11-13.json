@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T02:38:13.838Z",
+ "updatedAt": "2026-11-14T02:42:13.908Z",
  "state": "running",
  "games": [
   {
@@ -8,7 +8,7 @@
    "matchup": "NYK @ IND",
    "status": "4th Qtr",
    "homeScore": 106,
-   "visitorScore": 102
+   "visitorScore": 104
   },
   {
    "gameId": 21718096,
@@ -21,29 +21,29 @@
    "gameId": 21718097,
    "matchup": "CLE @ MIA",
    "status": "3rd Qtr",
-   "homeScore": 74,
-   "visitorScore": 69
+   "homeScore": 78,
+   "visitorScore": 71
   },
   {
    "gameId": 21718098,
    "matchup": "ATL @ CHI",
    "status": "3rd Qtr",
-   "homeScore": 72,
-   "visitorScore": 68
+   "homeScore": 75,
+   "visitorScore": 74
   },
   {
    "gameId": 21718099,
    "matchup": "MEM @ NOP",
    "status": "3rd Qtr",
-   "homeScore": 70,
+   "homeScore": 74,
    "visitorScore": 80
   },
   {
    "gameId": 21718100,
    "matchup": "UTA @ HOU",
    "status": "2nd Qtr",
-   "homeScore": 54,
-   "visitorScore": 46
+   "homeScore": 56,
+   "visitorScore": 47
   },
   {
    "gameId": 21718101,
@@ -930,7 +930,7 @@
    "scoreMargin": 9,
    "valueAtPick": 11,
    "projection": 22.104944335068797,
-   "latestValue": 12,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -1029,7 +1029,7 @@
    "scoreMargin": -7,
    "valueAtPick": 8,
    "projection": 22.255082231873814,
-   "latestValue": 27,
+   "latestValue": 30,
    "tags": [
     "Best bet",
     "Under",
@@ -1128,7 +1128,7 @@
    "scoreMargin": -2,
    "valueAtPick": 2,
    "projection": 10.3006530790249,
-   "latestValue": 7,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -1808,7 +1808,7 @@
    "scoreMargin": 0,
    "valueAtPick": 10,
    "projection": 27.36484754360202,
-   "latestValue": 13,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -2270,7 +2270,7 @@
    "scoreMargin": 3,
    "valueAtPick": 7,
    "projection": 16.425473639279943,
-   "latestValue": 12,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -2282,7 +2282,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 428,
+ "calls": 436,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
