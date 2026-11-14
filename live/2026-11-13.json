@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T01:34:11.117Z",
+ "updatedAt": "2026-11-14T01:37:12.968Z",
  "state": "running",
  "games": [
   {
@@ -8,35 +8,35 @@
    "matchup": "NYK @ IND",
    "status": "3rd Qtr",
    "homeScore": 61,
-   "visitorScore": 49
+   "visitorScore": 52
   },
   {
    "gameId": 21718096,
    "matchup": "MIL @ ORL",
    "status": "3rd Qtr",
    "homeScore": 65,
-   "visitorScore": 53
+   "visitorScore": 55
   },
   {
    "gameId": 21718097,
    "matchup": "CLE @ MIA",
    "status": "1st Qtr",
-   "homeScore": 20,
-   "visitorScore": 22
+   "homeScore": 22,
+   "visitorScore": 24
   },
   {
    "gameId": 21718098,
    "matchup": "ATL @ CHI",
    "status": "1st Qtr",
-   "homeScore": 31,
-   "visitorScore": 23
+   "homeScore": 33,
+   "visitorScore": 24
   },
   {
    "gameId": 21718099,
    "matchup": "MEM @ NOP",
    "status": "1st Qtr",
-   "homeScore": 23,
-   "visitorScore": 31
+   "homeScore": 25,
+   "visitorScore": 35
   },
   {
    "gameId": 21718100,
@@ -454,7 +454,7 @@
    "scoreMargin": -15,
    "valueAtPick": 1,
    "projection": 5.489545532018993,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -691,7 +691,7 @@
    "scoreMargin": -9,
    "valueAtPick": 8,
    "projection": 19.286513471569265,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -735,9 +735,174 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718098-38017677-threes",
+   "gameDate": "2026-11-13",
+   "gameId": 21718098,
+   "matchup": "ATL @ CHI",
+   "playerId": 38017677,
+   "playerName": "Dyson Daniels",
+   "teamAbbreviation": "ATL",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": 165,
+   "vendor": "draftkings",
+   "modelProbability": 0.46373724664514815,
+   "evPercent": 22.890370360964262,
+   "foundAt": "2026-11-14T01:37:10.872Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -9,
+   "valueAtPick": 0,
+   "projection": 0.42473050598958334,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718098-666508-rebounds_assists",
+   "gameDate": "2026-11-13",
+   "gameId": 21718098,
+   "matchup": "ATL @ CHI",
+   "playerId": 666508,
+   "playerName": "Nicolas Claxton",
+   "teamAbbreviation": "CHI",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.648829456858787,
+   "evPercent": 22.81414719112753,
+   "foundAt": "2026-11-14T01:37:10.872Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 9,
+   "valueAtPick": 1,
+   "projection": 6.375709149625001,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718098-380-points",
+   "gameDate": "2026-11-13",
+   "gameId": 21718098,
+   "matchup": "ATL @ CHI",
+   "playerId": 380,
+   "playerName": "Norman Powell",
+   "teamAbbreviation": "CHI",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 23.5,
+   "americanOdds": -121,
+   "vendor": "caesars",
+   "modelProbability": 0.6708863716668717,
+   "evPercent": 22.5337918498997,
+   "foundAt": "2026-11-14T01:37:10.872Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 9,
+   "valueAtPick": 10,
+   "projection": 26.3446295373119,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718098-666400-threes",
+   "gameDate": "2026-11-13",
+   "gameId": 21718098,
+   "matchup": "ATL @ CHI",
+   "playerId": 666400,
+   "playerName": "Nickeil Alexander-Walker",
+   "teamAbbreviation": "ATL",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": 110,
+   "vendor": "betmgm",
+   "modelProbability": 0.5777375401669516,
+   "evPercent": 21.324883435059828,
+   "foundAt": "2026-11-14T01:37:10.872Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -9,
+   "valueAtPick": 0,
+   "projection": 2.1363013778039064,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718098-3547248-points_rebounds_assists",
+   "gameDate": "2026-11-13",
+   "gameId": 21718098,
+   "matchup": "ATL @ CHI",
+   "playerId": 3547248,
+   "playerName": "Patrick Williams",
+   "teamAbbreviation": "CHI",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 20.5,
+   "americanOdds": -110,
+   "vendor": "fanduel",
+   "modelProbability": 0.6245939189344942,
+   "evPercent": 19.24065725113071,
+   "foundAt": "2026-11-14T01:37:10.872Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 9,
+   "valueAtPick": 11,
+   "projection": 22.104944335068797,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 259,
+ "calls": 270,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
@@ -747,6 +912,9 @@
   "21718096": [
    "end-q1",
    "halftime"
+  ],
+  "21718098": [
+   "end-q1"
   ]
  }
 }
