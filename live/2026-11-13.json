@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T03:15:16.703Z",
+ "updatedAt": "2026-11-14T03:19:15.523Z",
  "state": "running",
  "games": [
   {
@@ -21,42 +21,42 @@
    "gameId": 21718097,
    "matchup": "CLE @ MIA",
    "status": "4th Qtr",
-   "homeScore": 110,
-   "visitorScore": 99
+   "homeScore": 114,
+   "visitorScore": 103
   },
   {
    "gameId": 21718098,
    "matchup": "ATL @ CHI",
    "status": "4th Qtr",
-   "homeScore": 106,
-   "visitorScore": 103
+   "homeScore": 110,
+   "visitorScore": 108
   },
   {
    "gameId": 21718099,
    "matchup": "MEM @ NOP",
    "status": "4th Qtr",
-   "homeScore": 96,
-   "visitorScore": 115
+   "homeScore": 101,
+   "visitorScore": 120
   },
   {
    "gameId": 21718100,
    "matchup": "UTA @ HOU",
    "status": "3rd Qtr",
-   "homeScore": 72,
-   "visitorScore": 80
+   "homeScore": 82,
+   "visitorScore": 87
   },
   {
    "gameId": 21718101,
    "matchup": "GSW @ SAS",
-   "status": "1st Qtr",
-   "homeScore": 36,
-   "visitorScore": 15
+   "status": "2nd Qtr",
+   "homeScore": 38,
+   "visitorScore": 14
   },
   {
    "gameId": 21718102,
    "matchup": "POR @ SAC",
    "status": "1st Qtr",
-   "homeScore": 6,
+   "homeScore": 10,
    "visitorScore": 5
   },
   {
@@ -903,7 +903,7 @@
    "scoreMargin": 9,
    "valueAtPick": 10,
    "projection": 26.3446295373119,
-   "latestValue": 20,
+   "latestValue": 24,
    "tags": [
     "Best bet",
     "Over",
@@ -1069,7 +1069,7 @@
    "scoreMargin": -7,
    "valueAtPick": 8,
    "projection": 22.255082231873814,
-   "latestValue": 37,
+   "latestValue": 40,
    "tags": [
     "Best bet",
     "Under",
@@ -1102,7 +1102,7 @@
    "scoreMargin": -7,
    "valueAtPick": 11,
    "projection": 34.53164590180472,
-   "latestValue": 26,
+   "latestValue": 28,
    "tags": [
     "Best bet",
     "Over",
@@ -1934,7 +1934,7 @@
    "scoreMargin": 0,
    "valueAtPick": 1,
    "projection": 2.7355433397096682,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -2066,7 +2066,7 @@
    "scoreMargin": 12,
    "valueAtPick": 6,
    "projection": 8.754212630208333,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Over",
     "Assists",
@@ -2363,7 +2363,7 @@
    "scoreMargin": -10,
    "valueAtPick": 4,
    "projection": 11.400535870991398,
-   "latestValue": 10,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -2462,7 +2462,7 @@
    "scoreMargin": -10,
    "valueAtPick": 6,
    "projection": 10.626779202290919,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -2663,7 +2663,7 @@
    "scoreMargin": -1,
    "valueAtPick": 1,
    "projection": 1.265283984910019,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Over",
     "3PM",
@@ -2695,7 +2695,7 @@
    "scoreMargin": 2,
    "valueAtPick": 19,
    "projection": 23.482535864837843,
-   "latestValue": 31,
+   "latestValue": 33,
    "tags": [
     "Best bet",
     "Under",
@@ -3000,7 +3000,7 @@
    "scoreMargin": -19,
    "valueAtPick": 22,
    "projection": 26.875254192509416,
-   "latestValue": 22,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Over",
@@ -3013,9 +3013,179 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718101-161-steals",
+   "gameDate": "2026-11-13",
+   "gameId": 21718101,
+   "matchup": "GSW @ SAS",
+   "playerId": 161,
+   "playerName": "De'Aaron Fox",
+   "teamAbbreviation": "SAS",
+   "propType": "steals",
+   "label": "Steals",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": -145,
+   "vendor": "draftkings",
+   "modelProbability": 0.7396716313762881,
+   "evPercent": 24.978999784269362,
+   "foundAt": "2026-11-14T03:17:15.154Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 24,
+   "valueAtPick": 1,
+   "projection": 2.3346078744247745,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Steals",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718101-1028025261-points_assists",
+   "gameDate": "2026-11-13",
+   "gameId": 21718101,
+   "matchup": "GSW @ SAS",
+   "playerId": 1028025261,
+   "playerName": "Stephon Castle",
+   "teamAbbreviation": "SAS",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 28.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.6755361290998627,
+   "evPercent": 24.80243740997463,
+   "foundAt": "2026-11-14T03:17:15.154Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 24,
+   "valueAtPick": 15,
+   "projection": 31.286296229137225,
+   "latestValue": 15,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Blowout risk",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718101-344-rebounds",
+   "gameDate": "2026-11-13",
+   "gameId": 21718101,
+   "matchup": "GSW @ SAS",
+   "playerId": 344,
+   "playerName": "Georges Niang",
+   "teamAbbreviation": "GSW",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 115,
+   "vendor": "betmgm",
+   "modelProbability": 0.5794871025540227,
+   "evPercent": 24.589727049114884,
+   "foundAt": "2026-11-14T03:17:15.154Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -24,
+   "valueAtPick": 1,
+   "projection": 2.831946494497604,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718101-1057262518-threes",
+   "gameDate": "2026-11-13",
+   "gameId": 21718101,
+   "matchup": "GSW @ SAS",
+   "playerId": 1057262518,
+   "playerName": "Dylan Harper",
+   "teamAbbreviation": "SAS",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": -135,
+   "vendor": "draftkings",
+   "modelProbability": 0.7139705490021615,
+   "evPercent": 24.28376223370958,
+   "foundAt": "2026-11-14T03:17:15.154Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 24,
+   "valueAtPick": 0,
+   "projection": 1.3253644617839457,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718101-1057395872-rebounds",
+   "gameDate": "2026-11-13",
+   "gameId": 21718101,
+   "matchup": "GSW @ SAS",
+   "playerId": 1057395872,
+   "playerName": "Will Richard",
+   "teamAbbreviation": "GSW",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 126,
+   "vendor": "caesars",
+   "modelProbability": 0.547355875630053,
+   "evPercent": 23.702427892391963,
+   "foundAt": "2026-11-14T03:17:15.154Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -24,
+   "valueAtPick": 2,
+   "projection": 3.6890741320857927,
+   "latestValue": 2,
+   "tags": [
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 519,
+ "calls": 532,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
@@ -3046,6 +3216,9 @@
   "21718100": [
    "end-q1",
    "halftime"
+  ],
+  "21718101": [
+   "end-q1"
   ]
  }
 }
