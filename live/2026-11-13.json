@@ -1,13 +1,13 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T02:03:12.230Z",
+ "updatedAt": "2026-11-14T02:07:12.979Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718095,
    "matchup": "NYK @ IND",
-   "status": "3rd Qtr",
-   "homeScore": 85,
+   "status": "4th Qtr",
+   "homeScore": 87,
    "visitorScore": 84
   },
   {
@@ -21,28 +21,28 @@
    "gameId": 21718097,
    "matchup": "CLE @ MIA",
    "status": "2nd Qtr",
-   "homeScore": 47,
+   "homeScore": 50,
    "visitorScore": 52
   },
   {
    "gameId": 21718098,
    "matchup": "ATL @ CHI",
    "status": "2nd Qtr",
-   "homeScore": 56,
-   "visitorScore": 47
+   "homeScore": 60,
+   "visitorScore": 51
   },
   {
    "gameId": 21718099,
    "matchup": "MEM @ NOP",
    "status": "2nd Qtr",
-   "homeScore": 46,
-   "visitorScore": 58
+   "homeScore": 51,
+   "visitorScore": 64
   },
   {
    "gameId": 21718100,
    "matchup": "UTA @ HOU",
    "status": "1st Qtr",
-   "homeScore": 25,
+   "homeScore": 26,
    "visitorScore": 22
   },
   {
@@ -287,7 +287,7 @@
    "scoreMargin": -1,
    "valueAtPick": 0,
    "projection": 5.063016288688253,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -320,7 +320,7 @@
    "scoreMargin": -1,
    "valueAtPick": 5,
    "projection": 26.500128484856333,
-   "latestValue": 17,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -989,7 +989,7 @@
    "scoreMargin": -7,
    "valueAtPick": 8,
    "projection": 22.255082231873814,
-   "latestValue": 14,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -1022,7 +1022,7 @@
    "scoreMargin": -7,
    "valueAtPick": 11,
    "projection": 34.53164590180472,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -1155,7 +1155,7 @@
    "scoreMargin": 2,
    "valueAtPick": 7,
    "projection": 27.16416254502994,
-   "latestValue": 11,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -1397,14 +1397,179 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718095-416-rebounds",
+   "gameDate": "2026-11-13",
+   "gameId": 21718095,
+   "matchup": "NYK @ IND",
+   "playerId": 416,
+   "playerName": "Pascal Siakam",
+   "teamAbbreviation": "IND",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": 100,
+   "vendor": "caesars",
+   "modelProbability": 0.6168187897719206,
+   "evPercent": 23.363757954384123,
+   "foundAt": "2026-11-14T02:04:11.940Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 1,
+   "valueAtPick": 3,
+   "projection": 4.116167824704565,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718095-360-threes",
+   "gameDate": "2026-11-13",
+   "gameId": 21718095,
+   "matchup": "NYK @ IND",
+   "playerId": 360,
+   "playerName": "Kelly Oubre Jr.",
+   "teamAbbreviation": "IND",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 270,
+   "vendor": "fanduel",
+   "modelProbability": 0.3318068529015683,
+   "evPercent": 22.768535573580273,
+   "foundAt": "2026-11-14T02:04:11.940Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 1,
+   "valueAtPick": 1,
+   "projection": 1.1977318569145536,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "3PM",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718095-38017507-threes",
+   "gameDate": "2026-11-13",
+   "gameId": 21718095,
+   "matchup": "NYK @ IND",
+   "playerId": 38017507,
+   "playerName": "Andrew Nembhard",
+   "teamAbbreviation": "IND",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": 145,
+   "vendor": "draftkings",
+   "modelProbability": 0.4956704249307241,
+   "evPercent": 21.439254108027406,
+   "foundAt": "2026-11-14T02:04:11.940Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 1,
+   "valueAtPick": 0,
+   "projection": 0.4903570393355789,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "3PM",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718095-61-assists",
+   "gameDate": "2026-11-13",
+   "gameId": 21718095,
+   "matchup": "NYK @ IND",
+   "playerId": 61,
+   "playerName": "Mikal Bridges",
+   "teamAbbreviation": "NYK",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 160,
+   "vendor": "draftkings",
+   "modelProbability": 0.4642441586968542,
+   "evPercent": 20.703481261182088,
+   "foundAt": "2026-11-14T02:04:11.940Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -1,
+   "valueAtPick": 3,
+   "projection": 3.4281941506478715,
+   "latestValue": 3,
+   "tags": [
+    "Over",
+    "Assists",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718095-414-threes",
+   "gameDate": "2026-11-13",
+   "gameId": 21718095,
+   "matchup": "NYK @ IND",
+   "playerId": 414,
+   "playerName": "Landry Shamet",
+   "teamAbbreviation": "NYK",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 182,
+   "vendor": "fanduel",
+   "modelProbability": 0.4236083978180979,
+   "evPercent": 19.45756818470361,
+   "foundAt": "2026-11-14T02:04:11.940Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -1,
+   "valueAtPick": 1,
+   "projection": 1.3544516064392709,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 336,
+ "calls": 348,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718096": [
    "end-q1",
