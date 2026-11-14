@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T04:32:44.947Z",
+ "updatedAt": "2026-11-14T04:36:45.141Z",
  "state": "running",
  "games": [
   {
@@ -49,22 +49,22 @@
    "gameId": 21718101,
    "matchup": "GSW @ SAS",
    "status": "3rd Qtr",
-   "homeScore": 95,
-   "visitorScore": 52
+   "homeScore": 97,
+   "visitorScore": 60
   },
   {
    "gameId": 21718102,
    "matchup": "POR @ SAC",
    "status": "3rd Qtr",
-   "homeScore": 62,
-   "visitorScore": 72
+   "homeScore": 68,
+   "visitorScore": 77
   },
   {
    "gameId": 21718103,
    "matchup": "OKC @ LAC",
    "status": "2nd Qtr",
-   "homeScore": 48,
-   "visitorScore": 38
+   "homeScore": 52,
+   "visitorScore": 40
   }
  ],
  "picks": [
@@ -3615,7 +3615,7 @@
    "scoreMargin": -9,
    "valueAtPick": 17,
    "projection": 41.29266195025742,
-   "latestValue": 25,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Over",
@@ -4151,7 +4151,7 @@
    "scoreMargin": -11,
    "valueAtPick": 2,
    "projection": 12.54234335093838,
-   "latestValue": 2,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -4185,7 +4185,7 @@
    "scoreMargin": 11,
    "valueAtPick": 5,
    "projection": 7.441912273807365,
-   "latestValue": 6,
+   "latestValue": 5,
    "tags": [
     "Over",
     "Assists",
@@ -4263,9 +4263,77 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718101-185-assists",
+   "gameDate": "2026-11-13",
+   "gameId": 21718101,
+   "matchup": "GSW @ SAS",
+   "playerId": 185,
+   "playerName": "Draymond Green",
+   "teamAbbreviation": "GSW",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": -132,
+   "vendor": "caesars",
+   "modelProbability": 0.6514408020416008,
+   "evPercent": 14.495656116402579,
+   "foundAt": "2026-11-14T04:34:44.721Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -37,
+   "valueAtPick": 3,
+   "projection": 4.019492292794001,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Blowout risk",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718101-666682-points",
+   "gameDate": "2026-11-13",
+   "gameId": 21718101,
+   "matchup": "GSW @ SAS",
+   "playerId": 666682,
+   "playerName": "Keldon Johnson",
+   "teamAbbreviation": "SAS",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 11.5,
+   "americanOdds": -121,
+   "vendor": "caesars",
+   "modelProbability": 0.5671281991861925,
+   "evPercent": 3.5829190249161424,
+   "foundAt": "2026-11-14T04:34:44.721Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 37,
+   "valueAtPick": 9,
+   "projection": 11.962890207182554,
+   "latestValue": 9,
+   "tags": [
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 29,
+ "calls": 44,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
@@ -4300,7 +4368,8 @@
   ],
   "21718101": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718102": [
    "end-q1",
