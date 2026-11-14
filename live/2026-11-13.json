@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T04:00:18.676Z",
+ "updatedAt": "2026-11-14T04:04:17.433Z",
  "state": "running",
  "games": [
   {
@@ -42,8 +42,8 @@
    "gameId": 21718100,
    "matchup": "UTA @ HOU",
    "status": "4th Qtr",
-   "homeScore": 119,
-   "visitorScore": 116
+   "homeScore": 123,
+   "visitorScore": 118
   },
   {
    "gameId": 21718101,
@@ -56,15 +56,15 @@
    "gameId": 21718102,
    "matchup": "POR @ SAC",
    "status": "2nd Qtr",
-   "homeScore": 42,
-   "visitorScore": 52
+   "homeScore": 48,
+   "visitorScore": 55
   },
   {
    "gameId": 21718103,
    "matchup": "OKC @ LAC",
    "status": "1st Qtr",
-   "homeScore": 22,
-   "visitorScore": 20
+   "homeScore": 27,
+   "visitorScore": 24
   }
  ],
  "picks": [
@@ -3487,7 +3487,7 @@
    "scoreMargin": 3,
    "valueAtPick": 15,
    "projection": 18.987728042580258,
-   "latestValue": 17,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Over",
@@ -3555,7 +3555,7 @@
    "scoreMargin": -9,
    "valueAtPick": 17,
    "projection": 41.29266195025742,
-   "latestValue": 24,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Over",
@@ -3588,7 +3588,7 @@
    "scoreMargin": 9,
    "valueAtPick": 7,
    "projection": 16.974178280129802,
-   "latestValue": 9,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -3871,7 +3871,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 630,
+ "calls": 638,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
