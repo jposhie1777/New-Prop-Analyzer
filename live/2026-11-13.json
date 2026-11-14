@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T03:34:16.083Z",
+ "updatedAt": "2026-11-14T03:37:17.688Z",
  "state": "running",
  "games": [
   {
@@ -21,43 +21,43 @@
    "gameId": 21718097,
    "matchup": "CLE @ MIA",
    "status": "4th Qtr",
-   "homeScore": 122,
+   "homeScore": 124,
    "visitorScore": 114
   },
   {
    "gameId": 21718098,
    "matchup": "ATL @ CHI",
    "status": "OT1",
-   "homeScore": 112,
-   "visitorScore": 112
+   "homeScore": 115,
+   "visitorScore": 113
   },
   {
    "gameId": 21718099,
    "matchup": "MEM @ NOP",
    "status": "4th Qtr",
-   "homeScore": 106,
+   "homeScore": 109,
    "visitorScore": 137
   },
   {
    "gameId": 21718100,
    "matchup": "UTA @ HOU",
    "status": "4th Qtr",
-   "homeScore": 92,
+   "homeScore": 99,
    "visitorScore": 91
   },
   {
    "gameId": 21718101,
    "matchup": "GSW @ SAS",
    "status": "2nd Qtr",
-   "homeScore": 46,
-   "visitorScore": 22
+   "homeScore": 48,
+   "visitorScore": 23
   },
   {
    "gameId": 21718102,
    "matchup": "POR @ SAC",
-   "status": "1st Qtr",
+   "status": "2nd Qtr",
    "homeScore": 25,
-   "visitorScore": 28
+   "visitorScore": 34
   },
   {
    "gameId": 21718103,
@@ -870,7 +870,7 @@
    "scoreMargin": 9,
    "valueAtPick": 1,
    "projection": 6.375709149625001,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -903,7 +903,7 @@
    "scoreMargin": 9,
    "valueAtPick": 10,
    "projection": 26.3446295373119,
-   "latestValue": 26,
+   "latestValue": 29,
    "tags": [
     "Best bet",
     "Over",
@@ -1235,7 +1235,7 @@
    "scoreMargin": 2,
    "valueAtPick": 7,
    "projection": 27.16416254502994,
-   "latestValue": 33,
+   "latestValue": 35,
    "tags": [
     "Best bet",
     "Under",
@@ -1967,7 +1967,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 8.95608225759797,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -2630,7 +2630,7 @@
    "scoreMargin": -1,
    "valueAtPick": 14,
    "projection": 18.638749282888924,
-   "latestValue": 18,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -2931,7 +2931,7 @@
    "scoreMargin": -19,
    "valueAtPick": 11,
    "projection": 14.681144677213945,
-   "latestValue": 14,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -3070,7 +3070,7 @@
    "scoreMargin": 24,
    "valueAtPick": 15,
    "projection": 31.286296229137225,
-   "latestValue": 17,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Over",
@@ -3352,9 +3352,174 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718102-406-points_rebounds_assists",
+   "gameDate": "2026-11-13",
+   "gameId": 21718102,
+   "matchup": "POR @ SAC",
+   "playerId": 406,
+   "playerName": "Domantas Sabonis",
+   "teamAbbreviation": "SAC",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 38.5,
+   "americanOdds": -108,
+   "vendor": "fanduel",
+   "modelProbability": 0.6456521838966587,
+   "evPercent": 24.347828009726857,
+   "foundAt": "2026-11-14T03:37:15.927Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -9,
+   "valueAtPick": 17,
+   "projection": 41.29266195025742,
+   "latestValue": 17,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718102-56677850-points",
+   "gameDate": "2026-11-13",
+   "gameId": 21718102,
+   "matchup": "POR @ SAC",
+   "playerId": 56677850,
+   "playerName": "Toumani Camara",
+   "teamAbbreviation": "POR",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 15.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6154152341054677,
+   "evPercent": 24.313877289304475,
+   "foundAt": "2026-11-14T03:37:15.927Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 9,
+   "valueAtPick": 7,
+   "projection": 16.974178280129802,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718102-214-rebounds",
+   "gameDate": "2026-11-13",
+   "gameId": 21718102,
+   "matchup": "POR @ SAC",
+   "playerId": 214,
+   "playerName": "Jrue Holiday",
+   "teamAbbreviation": "POR",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": 130,
+   "vendor": "betmgm",
+   "modelProbability": 0.5359926633722061,
+   "evPercent": 23.278312575607394,
+   "foundAt": "2026-11-14T03:37:15.927Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 9,
+   "valueAtPick": 1,
+   "projection": 3.33133815475911,
+   "latestValue": 1,
+   "tags": [
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718102-278-rebounds",
+   "gameDate": "2026-11-13",
+   "gameId": 21718102,
+   "matchup": "POR @ SAC",
+   "playerId": 278,
+   "playerName": "Damian Lillard",
+   "teamAbbreviation": "POR",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 110,
+   "vendor": "draftkings",
+   "modelProbability": 0.5861471318152263,
+   "evPercent": 23.090897681197518,
+   "foundAt": "2026-11-14T03:37:15.927Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 9,
+   "valueAtPick": 1,
+   "projection": 3.9576606933593745,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718102-1028025344-points_rebounds_assists",
+   "gameDate": "2026-11-13",
+   "gameId": 21718102,
+   "matchup": "POR @ SAC",
+   "playerId": 1028025344,
+   "playerName": "Donovan Clingan",
+   "teamAbbreviation": "POR",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 27.5,
+   "americanOdds": 104,
+   "vendor": "fanduel",
+   "modelProbability": 0.5880466287624977,
+   "evPercent": 19.96151226754954,
+   "foundAt": "2026-11-14T03:37:15.927Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 9,
+   "valueAtPick": 9,
+   "projection": 29.009587045398508,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 566,
+ "calls": 577,
  "note": null,
  "checkpointsTaken": {
   "21718095": [
@@ -3388,6 +3553,9 @@
    "end-q3"
   ],
   "21718101": [
+   "end-q1"
+  ],
+  "21718102": [
    "end-q1"
   ]
  }
