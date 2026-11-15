@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-15T23:52:10.016Z",
+ "updatedAt": "2026-11-15T23:56:06.683Z",
  "state": "running",
  "games": [
   {
@@ -22,20 +22,20 @@
    "matchup": "CHA @ LAC",
    "status": "4th Qtr",
    "homeScore": 113,
-   "visitorScore": 99
+   "visitorScore": 105
   },
   {
    "gameId": 21718112,
    "matchup": "SAS @ UTA",
    "status": "4th Qtr",
-   "homeScore": 86,
+   "homeScore": 89,
    "visitorScore": 85
   },
   {
    "gameId": 21718113,
    "matchup": "DAL @ BOS",
    "status": "2nd Qtr",
-   "homeScore": 61,
+   "homeScore": 62,
    "visitorScore": 35
   },
   {
@@ -43,7 +43,7 @@
    "matchup": "NYK @ TOR",
    "status": "2nd Qtr",
    "homeScore": 28,
-   "visitorScore": 34
+   "visitorScore": 36
   },
   {
    "gameId": 21718115,
@@ -1419,7 +1419,7 @@
    "scoreMargin": 1,
    "valueAtPick": 3,
    "projection": 5.594449111867582,
-   "latestValue": 3,
+   "latestValue": 5,
    "tags": [
     "Over",
     "Points",
@@ -2492,7 +2492,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 197,
+ "calls": 205,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
