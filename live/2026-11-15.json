@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-15T22:12:19.398Z",
+ "updatedAt": "2026-11-15T22:16:20.550Z",
  "state": "running",
  "games": [
   {
@@ -14,22 +14,22 @@
    "gameId": 21718110,
    "matchup": "LAL @ PHX",
    "status": "2nd Qtr",
-   "homeScore": 51,
+   "homeScore": 54,
    "visitorScore": 64
   },
   {
    "gameId": 21718111,
    "matchup": "CHA @ LAC",
    "status": "2nd Qtr",
-   "homeScore": 25,
-   "visitorScore": 24
+   "homeScore": 30,
+   "visitorScore": 30
   },
   {
    "gameId": 21718112,
    "matchup": "SAS @ UTA",
    "status": "1st Qtr",
-   "homeScore": 3,
-   "visitorScore": 2
+   "homeScore": 5,
+   "visitorScore": 6
   },
   {
    "gameId": 21718113,
@@ -956,9 +956,175 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718110-38017727-points",
+   "gameDate": "2026-11-15",
+   "gameId": 21718110,
+   "matchup": "LAL @ PHX",
+   "playerId": 38017727,
+   "playerName": "Collin Gillespie",
+   "teamAbbreviation": "PHX",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 11.5,
+   "americanOdds": 114,
+   "vendor": "draftkings",
+   "modelProbability": 0.5831859708811694,
+   "evPercent": 24.801797768570232,
+   "foundAt": "2026-11-15T22:16:19.272Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -10,
+   "valueAtPick": 8,
+   "projection": 12.183356140235889,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718110-66-points",
+   "gameDate": "2026-11-15",
+   "gameId": 21718110,
+   "matchup": "LAL @ PHX",
+   "playerId": 66,
+   "playerName": "Dillon Brooks",
+   "teamAbbreviation": "PHX",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": 100,
+   "vendor": "draftkings",
+   "modelProbability": 0.6228205759663066,
+   "evPercent": 24.564115193261316,
+   "foundAt": "2026-11-15T22:16:19.272Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -10,
+   "valueAtPick": 1,
+   "projection": 6.348944933341221,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718110-38017705-points_rebounds",
+   "gameDate": "2026-11-15",
+   "gameId": 21718110,
+   "matchup": "LAL @ PHX",
+   "playerId": 38017705,
+   "playerName": "Walker Kessler",
+   "teamAbbreviation": "LAL",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 29.5,
+   "americanOdds": -122,
+   "vendor": "fanduel",
+   "modelProbability": 0.681173895486692,
+   "evPercent": 23.95131540823412,
+   "foundAt": "2026-11-15T22:16:19.272Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 10,
+   "valueAtPick": 18,
+   "projection": 32.190745700571014,
+   "latestValue": 18,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718110-17895966-points",
+   "gameDate": "2026-11-15",
+   "gameId": 21718110,
+   "matchup": "LAL @ PHX",
+   "playerId": 17895966,
+   "playerName": "Jalen Green",
+   "teamAbbreviation": "PHX",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 12.5,
+   "americanOdds": -106,
+   "vendor": "fanduel",
+   "modelProbability": 0.6233414858578357,
+   "evPercent": 21.139949138409577,
+   "foundAt": "2026-11-15T22:16:19.272Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -10,
+   "valueAtPick": 7,
+   "projection": 13.803887407196349,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718110-413-points",
+   "gameDate": "2026-11-15",
+   "gameId": 21718110,
+   "matchup": "LAL @ PHX",
+   "playerId": 413,
+   "playerName": "Collin Sexton",
+   "teamAbbreviation": "LAL",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 17.5,
+   "americanOdds": -130,
+   "vendor": "caesars",
+   "modelProbability": 0.6806893912242649,
+   "evPercent": 20.429661524293017,
+   "foundAt": "2026-11-15T22:16:19.272Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 10,
+   "valueAtPick": 10,
+   "projection": 15.714347002174232,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 586,
+ "calls": 598,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
@@ -967,7 +1133,8 @@
    "end-q3"
   ],
   "21718110": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718111": [
    "end-q1"
