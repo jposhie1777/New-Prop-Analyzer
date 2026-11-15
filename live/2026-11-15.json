@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-15T23:12:06.606Z",
+ "updatedAt": "2026-11-15T23:15:09.028Z",
  "state": "running",
  "games": [
   {
@@ -14,15 +14,15 @@
    "gameId": 21718110,
    "matchup": "LAL @ PHX",
    "status": "4th Qtr",
-   "homeScore": 92,
-   "visitorScore": 109
+   "homeScore": 94,
+   "visitorScore": 114
   },
   {
    "gameId": 21718111,
    "matchup": "CHA @ LAC",
    "status": "3rd Qtr",
-   "homeScore": 57,
-   "visitorScore": 70
+   "homeScore": 64,
+   "visitorScore": 73
   },
   {
    "gameId": 21718112,
@@ -35,15 +35,15 @@
    "gameId": 21718113,
    "matchup": "DAL @ BOS",
    "status": "1st Qtr",
-   "homeScore": 2,
-   "visitorScore": 0
+   "homeScore": 11,
+   "visitorScore": 2
   },
   {
    "gameId": 21718114,
    "matchup": "NYK @ TOR",
-   "status": "2026-11-15T23:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 4,
+   "visitorScore": 2
   },
   {
    "gameId": 21718115,
@@ -684,7 +684,7 @@
    "scoreMargin": 9,
    "valueAtPick": 2,
    "projection": 11.392254641449988,
-   "latestValue": 10,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -717,7 +717,7 @@
    "scoreMargin": 9,
    "valueAtPick": 2,
    "projection": 8.4699721173251,
-   "latestValue": 13,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -750,7 +750,7 @@
    "scoreMargin": 9,
    "valueAtPick": 1,
    "projection": 5.873073667175,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -1046,7 +1046,7 @@
    "scoreMargin": 10,
    "valueAtPick": 18,
    "projection": 32.190745700571014,
-   "latestValue": 22,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Over",
@@ -1112,7 +1112,7 @@
    "scoreMargin": 10,
    "valueAtPick": 10,
    "projection": 15.714347002174232,
-   "latestValue": 13,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -1796,7 +1796,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 98,
+ "calls": 104,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
