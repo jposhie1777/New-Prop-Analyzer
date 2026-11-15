@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "updatedAt": "2026-11-15T02:48:21.008Z",
+ "updatedAt": "2026-11-15T02:52:21.206Z",
  "state": "running",
  "games": [
   {
@@ -14,29 +14,29 @@
    "gameId": 21718105,
    "matchup": "DAL @ CLE",
    "status": "4th Qtr",
-   "homeScore": 116,
-   "visitorScore": 100
+   "homeScore": 122,
+   "visitorScore": 106
   },
   {
    "gameId": 21718106,
    "matchup": "DET @ MIA",
    "status": "3rd Qtr",
-   "homeScore": 79,
-   "visitorScore": 74
+   "homeScore": 84,
+   "visitorScore": 76
   },
   {
    "gameId": 21718107,
    "matchup": "BKN @ MEM",
    "status": "3rd Qtr",
-   "homeScore": 93,
-   "visitorScore": 77
+   "homeScore": 96,
+   "visitorScore": 78
   },
   {
    "gameId": 21718108,
    "matchup": "CHI @ MIN",
-   "status": "3rd Qtr",
-   "homeScore": 77,
-   "visitorScore": 86
+   "status": "4th Qtr",
+   "homeScore": 80,
+   "visitorScore": 88
   }
  ],
  "picks": [
@@ -381,7 +381,7 @@
    "scoreMargin": 0,
    "valueAtPick": 9,
    "projection": 17.176185723327986,
-   "latestValue": 17,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -633,7 +633,7 @@
    "scoreMargin": -12,
    "valueAtPick": 4,
    "projection": 21.18088280651847,
-   "latestValue": 16,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Under",
@@ -700,7 +700,7 @@
    "scoreMargin": 12,
    "valueAtPick": 3,
    "projection": 7.21037973642067,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -766,7 +766,7 @@
    "scoreMargin": 21,
    "valueAtPick": 2,
    "projection": 4.849395866989216,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -905,7 +905,7 @@
    "scoreMargin": 21,
    "valueAtPick": 15,
    "projection": 25.263038239542766,
-   "latestValue": 23,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Under",
@@ -1599,7 +1599,7 @@
    "scoreMargin": -13,
    "valueAtPick": 5,
    "projection": 16.20763064419497,
-   "latestValue": 19,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Under",
@@ -1666,7 +1666,7 @@
    "scoreMargin": 17,
    "valueAtPick": 12,
    "projection": 18.48465397302631,
-   "latestValue": 14,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -1838,7 +1838,7 @@
    "scoreMargin": 8,
    "valueAtPick": 5,
    "projection": 8.04506793562148,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -2036,7 +2036,7 @@
    "scoreMargin": -14,
    "valueAtPick": 5,
    "projection": 5.635280480697546,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -2104,7 +2104,7 @@
    "scoreMargin": 14,
    "valueAtPick": 18,
    "projection": 23.03422089263401,
-   "latestValue": 19,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Over",
@@ -2115,9 +2115,176 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718108-380-points_rebounds",
+   "gameDate": "2026-11-14",
+   "gameId": 21718108,
+   "matchup": "CHI @ MIN",
+   "playerId": 380,
+   "playerName": "Norman Powell",
+   "teamAbbreviation": "CHI",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 27.5,
+   "americanOdds": -122,
+   "vendor": "fanduel",
+   "modelProbability": 0.6865379162183953,
+   "evPercent": 24.927391311871936,
+   "foundAt": "2026-11-15T02:50:20.822Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 8,
+   "valueAtPick": 20,
+   "projection": 25.734730912775028,
+   "latestValue": 20,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718108-17553979-threes",
+   "gameDate": "2026-11-14",
+   "gameId": 21718108,
+   "matchup": "CHI @ MIN",
+   "playerId": 17553979,
+   "playerName": "Jonathan Kuminga",
+   "teamAbbreviation": "MIN",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": 240,
+   "vendor": "fanduel",
+   "modelProbability": 0.3656240537291252,
+   "evPercent": 24.312178267902574,
+   "foundAt": "2026-11-15T02:50:20.822Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -8,
+   "valueAtPick": 0,
+   "projection": 0.26129736274933846,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "3PM",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718108-3547239-assists",
+   "gameDate": "2026-11-14",
+   "gameId": 21718108,
+   "matchup": "CHI @ MIN",
+   "playerId": 3547239,
+   "playerName": "LaMelo Ball",
+   "teamAbbreviation": "MIN",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": 134,
+   "vendor": "fanduel",
+   "modelProbability": 0.5303864017958231,
+   "evPercent": 24.110418020222603,
+   "foundAt": "2026-11-15T02:50:20.822Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -8,
+   "valueAtPick": 5,
+   "projection": 6.6185984375,
+   "latestValue": 5,
+   "tags": [
+    "Over",
+    "Assists",
+    "Foul trouble",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718108-176-assists",
+   "gameDate": "2026-11-14",
+   "gameId": 21718108,
+   "matchup": "CHI @ MIN",
+   "playerId": 176,
+   "playerName": "Rudy Gobert",
+   "teamAbbreviation": "MIN",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": 112,
+   "vendor": "fanduel",
+   "modelProbability": 0.5800403999097808,
+   "evPercent": 22.968564780873546,
+   "foundAt": "2026-11-15T02:50:20.822Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -8,
+   "valueAtPick": 4,
+   "projection": 4.707786001329938,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718108-3547247-rebounds_assists",
+   "gameDate": "2026-11-14",
+   "gameId": 21718108,
+   "matchup": "CHI @ MIN",
+   "playerId": 3547247,
+   "playerName": "Isaac Okoro",
+   "teamAbbreviation": "CHI",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": -130,
+   "vendor": "fanduel",
+   "modelProbability": 0.6901097453289396,
+   "evPercent": 22.09633955819701,
+   "foundAt": "2026-11-15T02:50:20.822Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 8,
+   "valueAtPick": 6,
+   "projection": 7.185453983861002,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Reb+Ast",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 456,
+ "calls": 467,
  "note": null,
  "checkpointsTaken": {
   "21718104": [
@@ -2140,7 +2307,8 @@
   ],
   "21718108": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ]
  }
 }
