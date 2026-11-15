@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-15T22:16:20.550Z",
+ "updatedAt": "2026-11-15T22:18:19.963Z",
  "state": "running",
  "games": [
   {
@@ -21,15 +21,15 @@
    "gameId": 21718111,
    "matchup": "CHA @ LAC",
    "status": "2nd Qtr",
-   "homeScore": 30,
-   "visitorScore": 30
+   "homeScore": 35,
+   "visitorScore": 32
   },
   {
    "gameId": 21718112,
    "matchup": "SAS @ UTA",
    "status": "1st Qtr",
-   "homeScore": 5,
-   "visitorScore": 6
+   "homeScore": 8,
+   "visitorScore": 8
   },
   {
    "gameId": 21718113,
@@ -816,7 +816,7 @@
    "scoreMargin": 1,
    "valueAtPick": 0,
    "projection": 1.3301331762979196,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Over",
     "3PM",
@@ -1124,8 +1124,8 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 598,
- "note": null,
+ "calls": 602,
+ "note": "This run hit its time limit; the next scheduled run continues.",
  "checkpointsTaken": {
   "21718109": [
    "end-q1",
