@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-15T23:34:07.987Z",
+ "updatedAt": "2026-11-15T23:37:11.037Z",
  "state": "running",
  "games": [
   {
@@ -15,20 +15,20 @@
    "matchup": "LAL @ PHX",
    "status": "4th Qtr",
    "homeScore": 116,
-   "visitorScore": 122
+   "visitorScore": 124
   },
   {
    "gameId": 21718111,
    "matchup": "CHA @ LAC",
    "status": "4th Qtr",
-   "homeScore": 93,
+   "homeScore": 98,
    "visitorScore": 90
   },
   {
    "gameId": 21718112,
    "matchup": "SAS @ UTA",
    "status": "3rd Qtr",
-   "homeScore": 70,
+   "homeScore": 72,
    "visitorScore": 79
   },
   {
@@ -43,7 +43,7 @@
    "matchup": "NYK @ TOR",
    "status": "1st Qtr",
    "homeScore": 17,
-   "visitorScore": 14
+   "visitorScore": 23
   },
   {
    "gameId": 21718115,
@@ -1412,7 +1412,7 @@
    "scoreMargin": -1,
    "valueAtPick": 0,
    "projection": 0.3166846000525,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Under",
@@ -1884,7 +1884,7 @@
    "scoreMargin": 1,
    "valueAtPick": 8,
    "projection": 9.81970262171362,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -1918,7 +1918,7 @@
    "scoreMargin": -1,
    "valueAtPick": 3,
    "projection": 3.6853505885416666,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Under",
     "Rebounds",
@@ -1928,9 +1928,179 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718113-3547276-rebounds",
+   "gameDate": "2026-11-15",
+   "gameId": 21718113,
+   "matchup": "DAL @ BOS",
+   "playerId": 3547276,
+   "playerName": "Payton Pritchard",
+   "teamAbbreviation": "BOS",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 126,
+   "vendor": "fanduel",
+   "modelProbability": 0.552645098596756,
+   "evPercent": 24.89779228286686,
+   "foundAt": "2026-11-15T23:37:05.158Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 33,
+   "valueAtPick": 0,
+   "projection": 2.7692890531249996,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718113-56677864-points_rebounds",
+   "gameDate": "2026-11-15",
+   "gameId": 21718113,
+   "matchup": "DAL @ BOS",
+   "playerId": 56677864,
+   "playerName": "Jordan Walsh",
+   "teamAbbreviation": "BOS",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 13.5,
+   "americanOdds": -144,
+   "vendor": "fanduel",
+   "modelProbability": 0.7353393915717293,
+   "evPercent": 24.599174682987467,
+   "foundAt": "2026-11-15T23:37:05.158Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 33,
+   "valueAtPick": 9,
+   "projection": 16.029296436150855,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718113-1028028244-points",
+   "gameDate": "2026-11-15",
+   "gameId": 21718113,
+   "matchup": "DAL @ BOS",
+   "playerId": 1028028244,
+   "playerName": "Zaccharie Risacher",
+   "teamAbbreviation": "DAL",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 7.5,
+   "americanOdds": -129,
+   "vendor": "betrivers",
+   "modelProbability": 0.7015114335122159,
+   "evPercent": 24.53187463123834,
+   "foundAt": "2026-11-15T23:37:05.158Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -33,
+   "valueAtPick": 3,
+   "projection": 9.672483176976268,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718113-3547293-threes",
+   "gameDate": "2026-11-15",
+   "gameId": 21718113,
+   "matchup": "DAL @ BOS",
+   "playerId": 3547293,
+   "playerName": "Naji Marshall",
+   "teamAbbreviation": "DAL",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 0.5,
+   "americanOdds": 140,
+   "vendor": "betrivers",
+   "modelProbability": 0.5155866201636333,
+   "evPercent": 23.740788839272,
+   "foundAt": "2026-11-15T23:37:05.158Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -33,
+   "valueAtPick": 0,
+   "projection": 0.46614489876760573,
+   "latestValue": 0,
+   "tags": [
+    "Under",
+    "3PM",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718113-666950-points_rebounds",
+   "gameDate": "2026-11-15",
+   "gameId": 21718113,
+   "matchup": "DAL @ BOS",
+   "playerId": 666950,
+   "playerName": "P.J. Washington",
+   "teamAbbreviation": "DAL",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 14.5,
+   "americanOdds": -120,
+   "vendor": "fanduel",
+   "modelProbability": 0.6743511653672546,
+   "evPercent": 23.631046983996697,
+   "foundAt": "2026-11-15T23:37:05.158Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -33,
+   "valueAtPick": 3,
+   "projection": 17.07116002255367,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 146,
+ "calls": 157,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
@@ -1951,6 +2121,9 @@
   "21718112": [
    "end-q1",
    "halftime"
+  ],
+  "21718113": [
+   "end-q1"
   ]
  }
 }
