@@ -1,21 +1,21 @@
 {
  "date": "2026-11-14",
- "updatedAt": "2026-11-15T00:50:16.237Z",
+ "updatedAt": "2026-11-15T00:57:16.108Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718104,
    "matchup": "DEN @ NOP",
    "status": "2nd Qtr",
-   "homeScore": 36,
-   "visitorScore": 40
+   "homeScore": 39,
+   "visitorScore": 44
   },
   {
    "gameId": 21718105,
    "matchup": "DAL @ CLE",
    "status": "1st Qtr",
-   "homeScore": 13,
-   "visitorScore": 12
+   "homeScore": 23,
+   "visitorScore": 23
   },
   {
    "gameId": 21718106,
@@ -196,7 +196,7 @@
    "scoreMargin": -6,
    "valueAtPick": 11,
    "projection": 32.69074707649349,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -208,7 +208,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 182,
+ "calls": 196,
  "note": null,
  "checkpointsTaken": {
   "21718104": [
