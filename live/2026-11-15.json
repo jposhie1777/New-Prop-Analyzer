@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-15T22:36:12.034Z",
+ "updatedAt": "2026-11-15T22:40:04.189Z",
  "state": "running",
  "games": [
   {
@@ -14,22 +14,22 @@
    "gameId": 21718110,
    "matchup": "LAL @ PHX",
    "status": "3rd Qtr",
-   "homeScore": 54,
-   "visitorScore": 72
+   "homeScore": 59,
+   "visitorScore": 77
   },
   {
    "gameId": 21718111,
    "matchup": "CHA @ LAC",
    "status": "2nd Qtr",
    "homeScore": 51,
-   "visitorScore": 49
+   "visitorScore": 52
   },
   {
    "gameId": 21718112,
    "matchup": "SAS @ UTA",
-   "status": "1st Qtr",
-   "homeScore": 33,
-   "visitorScore": 31
+   "status": "2nd Qtr",
+   "homeScore": 38,
+   "visitorScore": 33
   },
   {
    "gameId": 21718113,
@@ -651,7 +651,7 @@
    "scoreMargin": -9,
    "valueAtPick": 1,
    "projection": 5.3408212235787165,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -684,7 +684,7 @@
    "scoreMargin": 9,
    "valueAtPick": 2,
    "projection": 11.392254641449988,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -717,7 +717,7 @@
    "scoreMargin": 9,
    "valueAtPick": 2,
    "projection": 8.4699721173251,
-   "latestValue": 10,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -750,7 +750,7 @@
    "scoreMargin": 9,
    "valueAtPick": 1,
    "projection": 5.873073667175,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -947,7 +947,7 @@
    "scoreMargin": -1,
    "valueAtPick": 1,
    "projection": 3.7175338676452645,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Over",
     "Assists",
@@ -1046,7 +1046,7 @@
    "scoreMargin": 10,
    "valueAtPick": 18,
    "projection": 32.190745700571014,
-   "latestValue": 18,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -1145,7 +1145,7 @@
    "scoreMargin": -2,
    "valueAtPick": 5,
    "projection": 19.43230689455342,
-   "latestValue": 5,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -1288,9 +1288,177 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718111-667378-points_rebounds_assists",
+   "gameDate": "2026-11-15",
+   "gameId": 21718111,
+   "matchup": "CHA @ LAC",
+   "playerId": 667378,
+   "playerName": "Naz Reid",
+   "teamAbbreviation": "CHA",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 26.5,
+   "americanOdds": -128,
+   "vendor": "fanduel",
+   "modelProbability": 0.6984537166983799,
+   "evPercent": 24.4120682868989,
+   "foundAt": "2026-11-15T22:39:02.839Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 1,
+   "valueAtPick": 15,
+   "projection": 29.503046921675807,
+   "latestValue": 15,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Foul trouble",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718111-8-threes",
+   "gameDate": "2026-11-15",
+   "gameId": 21718111,
+   "matchup": "CHA @ LAC",
+   "playerId": 8,
+   "playerName": "Grayson Allen",
+   "teamAbbreviation": "CHA",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": -120,
+   "vendor": "betmgm",
+   "modelProbability": 0.6728781639545576,
+   "evPercent": 23.360996725002224,
+   "foundAt": "2026-11-15T22:39:02.839Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 1,
+   "valueAtPick": 2,
+   "projection": 2.9469809398824878,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718111-1057384362-points",
+   "gameDate": "2026-11-15",
+   "gameId": 21718111,
+   "matchup": "CHA @ LAC",
+   "playerId": 1057384362,
+   "playerName": "Ryan Kalkbrenner",
+   "teamAbbreviation": "CHA",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": 135,
+   "vendor": "draftkings",
+   "modelProbability": 0.5147037633629922,
+   "evPercent": 20.955384390303156,
+   "foundAt": "2026-11-15T22:39:02.839Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 1,
+   "valueAtPick": 3,
+   "projection": 5.594449111867582,
+   "latestValue": 3,
+   "tags": [
+    "Over",
+    "Points",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718111-283-threes",
+   "gameDate": "2026-11-15",
+   "gameId": 21718111,
+   "matchup": "CHA @ LAC",
+   "playerId": 283,
+   "playerName": "Brook Lopez",
+   "teamAbbreviation": "LAC",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 0.5,
+   "americanOdds": 100,
+   "vendor": "draftkings",
+   "modelProbability": 0.6013054056359884,
+   "evPercent": 20.261081127197688,
+   "foundAt": "2026-11-15T22:39:02.839Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -1,
+   "valueAtPick": 0,
+   "projection": 0.3166846000525,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718111-1091343544-rebounds",
+   "gameDate": "2026-11-15",
+   "gameId": 21718111,
+   "matchup": "CHA @ LAC",
+   "playerId": 1091343544,
+   "playerName": "Keaton Wagler",
+   "teamAbbreviation": "LAC",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -125,
+   "vendor": "betmgm",
+   "modelProbability": 0.6662089348025781,
+   "evPercent": 19.91760826446407,
+   "foundAt": "2026-11-15T22:39:02.839Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -1,
+   "valueAtPick": 1,
+   "projection": 1.980130615234375,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 12,
+ "calls": 25,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
@@ -1303,7 +1471,8 @@
    "halftime"
   ],
   "21718111": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718112": [
    "end-q1"
