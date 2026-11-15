@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "updatedAt": "2026-11-15T03:32:22.879Z",
+ "updatedAt": "2026-11-15T03:36:23.239Z",
  "state": "running",
  "games": [
   {
@@ -21,8 +21,8 @@
    "gameId": 21718106,
    "matchup": "DET @ MIA",
    "status": "4th Qtr",
-   "homeScore": 121,
-   "visitorScore": 104
+   "homeScore": 124,
+   "visitorScore": 110
   },
   {
    "gameId": 21718107,
@@ -1958,7 +1958,7 @@
    "scoreMargin": 8,
    "valueAtPick": 5,
    "projection": 8.04506793562148,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -2056,7 +2056,7 @@
    "scoreMargin": -8,
    "valueAtPick": 1,
    "projection": 2.5460989583333333,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Over",
     "Assists",
@@ -2655,7 +2655,7 @@
    "scoreMargin": -17,
    "valueAtPick": 6,
    "projection": 10.806215505098557,
-   "latestValue": 15,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Over",
@@ -2807,7 +2807,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 556,
+ "calls": 564,
  "note": null,
  "checkpointsTaken": {
   "21718104": [
