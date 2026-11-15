@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-15T22:02:19.372Z",
+ "updatedAt": "2026-11-15T22:08:20.415Z",
  "state": "running",
  "games": [
   {
@@ -14,15 +14,15 @@
    "gameId": 21718110,
    "matchup": "LAL @ PHX",
    "status": "2nd Qtr",
-   "homeScore": 39,
-   "visitorScore": 54
+   "homeScore": 47,
+   "visitorScore": 61
   },
   {
    "gameId": 21718111,
    "matchup": "CHA @ LAC",
    "status": "1st Qtr",
-   "homeScore": 18,
-   "visitorScore": 20
+   "homeScore": 22,
+   "visitorScore": 21
   },
   {
    "gameId": 21718112,
@@ -793,9 +793,172 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718111-1091343544-threes",
+   "gameDate": "2026-11-15",
+   "gameId": 21718111,
+   "matchup": "CHA @ LAC",
+   "playerId": 1091343544,
+   "playerName": "Keaton Wagler",
+   "teamAbbreviation": "LAC",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 175,
+   "vendor": "draftkings",
+   "modelProbability": 0.45379551240760896,
+   "evPercent": 24.793765912092457,
+   "foundAt": "2026-11-15T22:08:18.981Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 1,
+   "valueAtPick": 0,
+   "projection": 1.3301331762979196,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718111-56677828-threes",
+   "gameDate": "2026-11-15",
+   "gameId": 21718111,
+   "matchup": "CHA @ LAC",
+   "playerId": 56677828,
+   "playerName": "Gradey Dick",
+   "teamAbbreviation": "LAC",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 0.5,
+   "americanOdds": 120,
+   "vendor": "draftkings",
+   "modelProbability": 0.5635960042136383,
+   "evPercent": 23.99112092700044,
+   "foundAt": "2026-11-15T22:08:18.981Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 1,
+   "valueAtPick": 0,
+   "projection": 0.3755196132330247,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718111-38017725-assists",
+   "gameDate": "2026-11-15",
+   "gameId": 21718111,
+   "matchup": "CHA @ LAC",
+   "playerId": 38017725,
+   "playerName": "Moussa Diabate",
+   "teamAbbreviation": "CHA",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": -135,
+   "vendor": "betmgm",
+   "modelProbability": 0.7063311196380289,
+   "evPercent": 22.9539356406939,
+   "foundAt": "2026-11-15T22:08:18.981Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -1,
+   "valueAtPick": 0,
+   "projection": 0.878173828125,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718111-666956-assists",
+   "gameDate": "2026-11-15",
+   "gameId": 21718111,
+   "matchup": "CHA @ LAC",
+   "playerId": 666956,
+   "playerName": "Coby White",
+   "teamAbbreviation": "CHA",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 110,
+   "vendor": "fanduel",
+   "modelProbability": 0.5779202099334424,
+   "evPercent": 21.363244086022902,
+   "foundAt": "2026-11-15T22:08:18.981Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -1,
+   "valueAtPick": 0,
+   "projection": 2.910013419425,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718111-8-assists",
+   "gameDate": "2026-11-15",
+   "gameId": 21718111,
+   "matchup": "CHA @ LAC",
+   "playerId": 8,
+   "playerName": "Grayson Allen",
+   "teamAbbreviation": "CHA",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 120,
+   "vendor": "fanduel",
+   "modelProbability": 0.5429721381629635,
+   "evPercent": 19.45387039585198,
+   "foundAt": "2026-11-15T22:08:18.981Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -1,
+   "valueAtPick": 1,
+   "projection": 3.7175338676452645,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 561,
+ "calls": 578,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
@@ -804,6 +967,9 @@
    "end-q3"
   ],
   "21718110": [
+   "end-q1"
+  ],
+  "21718111": [
    "end-q1"
   ]
  }
