@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-15T22:18:19.963Z",
+ "updatedAt": "2026-11-15T22:36:12.034Z",
  "state": "running",
  "games": [
   {
@@ -13,23 +13,23 @@
   {
    "gameId": 21718110,
    "matchup": "LAL @ PHX",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 54,
-   "visitorScore": 64
+   "visitorScore": 72
   },
   {
    "gameId": 21718111,
    "matchup": "CHA @ LAC",
    "status": "2nd Qtr",
-   "homeScore": 35,
-   "visitorScore": 32
+   "homeScore": 51,
+   "visitorScore": 49
   },
   {
    "gameId": 21718112,
    "matchup": "SAS @ UTA",
    "status": "1st Qtr",
-   "homeScore": 8,
-   "visitorScore": 8
+   "homeScore": 33,
+   "visitorScore": 31
   },
   {
    "gameId": 21718113,
@@ -717,7 +717,7 @@
    "scoreMargin": 9,
    "valueAtPick": 2,
    "projection": 8.4699721173251,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -881,7 +881,7 @@
    "scoreMargin": -1,
    "valueAtPick": 0,
    "projection": 0.878173828125,
-   "latestValue": 0,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -947,7 +947,7 @@
    "scoreMargin": -1,
    "valueAtPick": 1,
    "projection": 3.7175338676452645,
-   "latestValue": 1,
+   "latestValue": 3,
    "tags": [
     "Over",
     "Assists",
@@ -1122,10 +1122,176 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718112-1028025261-points_assists",
+   "gameDate": "2026-11-15",
+   "gameId": 21718112,
+   "matchup": "SAS @ UTA",
+   "playerId": 1028025261,
+   "playerName": "Stephon Castle",
+   "teamAbbreviation": "SAS",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 22.5,
+   "americanOdds": -130,
+   "vendor": "fanduel",
+   "modelProbability": 0.7027933815871199,
+   "evPercent": 24.34036751156736,
+   "foundAt": "2026-11-15T22:36:02.725Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -2,
+   "valueAtPick": 5,
+   "projection": 19.43230689455342,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718112-1057260888-threes",
+   "gameDate": "2026-11-15",
+   "gameId": 21718112,
+   "matchup": "SAS @ UTA",
+   "playerId": 1057260888,
+   "playerName": "Airious Bailey",
+   "teamAbbreviation": "UTA",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -110,
+   "vendor": "betmgm",
+   "modelProbability": 0.6501961846129387,
+   "evPercent": 24.128362517015578,
+   "foundAt": "2026-11-15T22:36:02.725Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 2,
+   "valueAtPick": 1,
+   "projection": 2.0083669133125106,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718112-56677834-rebounds",
+   "gameDate": "2026-11-15",
+   "gameId": 21718112,
+   "matchup": "SAS @ UTA",
+   "playerId": 56677834,
+   "playerName": "Keyonte George",
+   "teamAbbreviation": "UTA",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": 121,
+   "vendor": "caesars",
+   "modelProbability": 0.5582030387529611,
+   "evPercent": 23.362871564404397,
+   "foundAt": "2026-11-15T22:36:02.725Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 2,
+   "valueAtPick": 1,
+   "projection": 3.2325131031250005,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718112-56677842-threes",
+   "gameDate": "2026-11-15",
+   "gameId": 21718112,
+   "matchup": "SAS @ UTA",
+   "playerId": 56677842,
+   "playerName": "Brice Sensabaugh",
+   "teamAbbreviation": "UTA",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": 106,
+   "vendor": "caesars",
+   "modelProbability": 0.5967529952294557,
+   "evPercent": 22.931117017267866,
+   "foundAt": "2026-11-15T22:36:02.725Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 2,
+   "valueAtPick": 0,
+   "projection": 1.164587469951923,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718112-3547246-steals",
+   "gameDate": "2026-11-15",
+   "gameId": 21718112,
+   "matchup": "SAS @ UTA",
+   "playerId": 3547246,
+   "playerName": "Devin Vassell",
+   "teamAbbreviation": "SAS",
+   "propType": "steals",
+   "label": "Steals",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": -145,
+   "vendor": "draftkings",
+   "modelProbability": 0.713655163772152,
+   "evPercent": 20.58311387874292,
+   "foundAt": "2026-11-15T22:36:02.725Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -2,
+   "valueAtPick": 1,
+   "projection": 2.19296448588248,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Steals",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 602,
- "note": "This run hit its time limit; the next scheduled run continues.",
+ "calls": 12,
+ "note": null,
  "checkpointsTaken": {
   "21718109": [
    "end-q1",
@@ -1137,6 +1303,9 @@
    "halftime"
   ],
   "21718111": [
+   "end-q1"
+  ],
+  "21718112": [
    "end-q1"
   ]
  }
