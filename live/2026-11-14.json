@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "updatedAt": "2026-11-15T02:08:19.472Z",
+ "updatedAt": "2026-11-15T02:12:20.121Z",
  "state": "running",
  "games": [
   {
@@ -8,21 +8,21 @@
    "matchup": "DEN @ NOP",
    "status": "4th Qtr",
    "homeScore": 87,
-   "visitorScore": 97
+   "visitorScore": 102
   },
   {
    "gameId": 21718105,
    "matchup": "DAL @ CLE",
    "status": "3rd Qtr",
-   "homeScore": 86,
-   "visitorScore": 72
+   "homeScore": 92,
+   "visitorScore": 74
   },
   {
    "gameId": 21718106,
    "matchup": "DET @ MIA",
    "status": "2nd Qtr",
-   "homeScore": 53,
-   "visitorScore": 49
+   "homeScore": 55,
+   "visitorScore": 53
   },
   {
    "gameId": 21718107,
@@ -229,7 +229,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 7.076036377480426,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -328,7 +328,7 @@
    "scoreMargin": 0,
    "valueAtPick": 5,
    "projection": 21.89618063176575,
-   "latestValue": 10,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -394,7 +394,7 @@
    "scoreMargin": 5,
    "valueAtPick": 10,
    "projection": 18.75090722742002,
-   "latestValue": 13,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Under",
@@ -760,7 +760,7 @@
    "scoreMargin": -21,
    "valueAtPick": 15,
    "projection": 30.332136853047277,
-   "latestValue": 19,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Under",
@@ -795,7 +795,7 @@
    "scoreMargin": 21,
    "valueAtPick": 20,
    "projection": 28.668946495898773,
-   "latestValue": 20,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Under",
@@ -1171,7 +1171,7 @@
    "scoreMargin": 2,
    "valueAtPick": 9,
    "projection": 15.906892262387078,
-   "latestValue": 11,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -1269,7 +1269,7 @@
    "scoreMargin": 4,
    "valueAtPick": 7,
    "projection": 9.434824331019797,
-   "latestValue": 8,
+   "latestValue": 11,
    "tags": [
     "Over",
     "Reb+Ast",
@@ -1549,9 +1549,181 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718107-1057275262-threes",
+   "gameDate": "2026-11-14",
+   "gameId": 21718107,
+   "matchup": "BKN @ MEM",
+   "playerId": 1057275262,
+   "playerName": "Nolan Traoré",
+   "teamAbbreviation": "BKN",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": 116,
+   "vendor": "fanduel",
+   "modelProbability": 0.5742069670265852,
+   "evPercent": 24.028704877742424,
+   "foundAt": "2026-11-15T02:09:18.924Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -17,
+   "valueAtPick": 0,
+   "projection": 0.6983924914248535,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718107-1057266649-points",
+   "gameDate": "2026-11-14",
+   "gameId": 21718107,
+   "matchup": "BKN @ MEM",
+   "playerId": 1057266649,
+   "playerName": "Cedric Coward",
+   "teamAbbreviation": "MEM",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 16.5,
+   "americanOdds": -130,
+   "vendor": "betmgm",
+   "modelProbability": 0.6879270803186595,
+   "evPercent": 21.7101757486859,
+   "foundAt": "2026-11-15T02:09:18.924Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 17,
+   "valueAtPick": 12,
+   "projection": 18.48465397302631,
+   "latestValue": 12,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718107-1028048549-rebounds",
+   "gameDate": "2026-11-14",
+   "gameId": 21718107,
+   "matchup": "BKN @ MEM",
+   "playerId": 1028048549,
+   "playerName": "Cam Spencer",
+   "teamAbbreviation": "MEM",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": 125,
+   "vendor": "betmgm",
+   "modelProbability": 0.5404932541952467,
+   "evPercent": 21.610982193930518,
+   "foundAt": "2026-11-15T02:09:18.924Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 17,
+   "valueAtPick": 1,
+   "projection": 2.355271664542799,
+   "latestValue": 1,
+   "tags": [
+    "Under",
+    "Rebounds",
+    "Blowout risk",
+    "Hot shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718107-387-assists",
+   "gameDate": "2026-11-14",
+   "gameId": 21718107,
+   "matchup": "BKN @ MEM",
+   "playerId": 387,
+   "playerName": "Julius Randle",
+   "teamAbbreviation": "BKN",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": -120,
+   "vendor": "betmgm",
+   "modelProbability": 0.6595923901158978,
+   "evPercent": 20.92527152124792,
+   "foundAt": "2026-11-15T02:09:18.924Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -17,
+   "valueAtPick": 2,
+   "projection": 4.255333208491885,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718107-17896038-points_assists",
+   "gameDate": "2026-11-14",
+   "gameId": 21718107,
+   "matchup": "BKN @ MEM",
+   "playerId": 17896038,
+   "playerName": "Day'Ron Sharpe",
+   "teamAbbreviation": "BKN",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 15.5,
+   "americanOdds": -120,
+   "vendor": "fanduel",
+   "modelProbability": 0.6514187807655436,
+   "evPercent": 19.426776473683006,
+   "foundAt": "2026-11-15T02:09:18.924Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -17,
+   "valueAtPick": 10,
+   "projection": 17.069167883361743,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Blowout risk",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 366,
+ "calls": 377,
  "note": null,
  "checkpointsTaken": {
   "21718104": [
@@ -1567,7 +1739,8 @@
    "end-q1"
   ],
   "21718107": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718108": [
    "end-q1",
