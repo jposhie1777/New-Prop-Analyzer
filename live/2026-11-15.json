@@ -1,14 +1,14 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-15T19:09:12.857Z",
+ "updatedAt": "2026-11-15T19:25:13.825Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718109,
    "matchup": "IND @ PHI",
-   "status": "2nd Qtr",
-   "homeScore": 58,
-   "visitorScore": 57
+   "status": "3rd Qtr",
+   "homeScore": 61,
+   "visitorScore": 60
   },
   {
    "gameId": 21718110,
@@ -256,7 +256,7 @@
    "scoreMargin": 1,
    "valueAtPick": 3,
    "projection": 4.815191835983146,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -402,7 +402,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 205,
+ "calls": 237,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
