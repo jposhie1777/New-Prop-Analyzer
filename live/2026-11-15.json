@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-15T23:26:06.394Z",
+ "updatedAt": "2026-11-15T23:30:09.834Z",
  "state": "running",
  "games": [
   {
@@ -14,36 +14,36 @@
    "gameId": 21718110,
    "matchup": "LAL @ PHX",
    "status": "4th Qtr",
-   "homeScore": 108,
-   "visitorScore": 117
+   "homeScore": 114,
+   "visitorScore": 120
   },
   {
    "gameId": 21718111,
    "matchup": "CHA @ LAC",
-   "status": "3rd Qtr",
-   "homeScore": 84,
-   "visitorScore": 83
+   "status": "4th Qtr",
+   "homeScore": 86,
+   "visitorScore": 85
   },
   {
    "gameId": 21718112,
    "matchup": "SAS @ UTA",
    "status": "3rd Qtr",
-   "homeScore": 67,
-   "visitorScore": 67
+   "homeScore": 70,
+   "visitorScore": 69
   },
   {
    "gameId": 21718113,
    "matchup": "DAL @ BOS",
    "status": "1st Qtr",
-   "homeScore": 28,
-   "visitorScore": 6
+   "homeScore": 34,
+   "visitorScore": 9
   },
   {
    "gameId": 21718114,
    "matchup": "NYK @ TOR",
    "status": "1st Qtr",
    "homeScore": 13,
-   "visitorScore": 9
+   "visitorScore": 13
   },
   {
    "gameId": 21718115,
@@ -881,7 +881,7 @@
    "scoreMargin": -1,
    "valueAtPick": 0,
    "projection": 0.878173828125,
-   "latestValue": 3,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -1311,7 +1311,7 @@
    "scoreMargin": 1,
    "valueAtPick": 15,
    "projection": 29.503046921675807,
-   "latestValue": 15,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Over",
@@ -1548,7 +1548,7 @@
    "scoreMargin": 24,
    "valueAtPick": 7,
    "projection": 7.955643625995281,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -1794,9 +1794,143 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718111-666609-points",
+   "gameDate": "2026-11-15",
+   "gameId": 21718111,
+   "matchup": "CHA @ LAC",
+   "playerId": 666609,
+   "playerName": "Rui Hachimura",
+   "teamAbbreviation": "LAC",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 6.5,
+   "americanOdds": -105,
+   "vendor": "draftkings",
+   "modelProbability": 0.6005930366232454,
+   "evPercent": 17.258640483586007,
+   "foundAt": "2026-11-15T23:27:04.729Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 1,
+   "valueAtPick": 4,
+   "projection": 5.935916180187464,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718111-666581-threes",
+   "gameDate": "2026-11-15",
+   "gameId": 21718111,
+   "matchup": "CHA @ LAC",
+   "playerId": 666581,
+   "playerName": "Darius Garland",
+   "teamAbbreviation": "LAC",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 135,
+   "vendor": "draftkings",
+   "modelProbability": 0.48814599018327054,
+   "evPercent": 14.714307693068584,
+   "foundAt": "2026-11-15T23:27:04.729Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 1,
+   "valueAtPick": 2,
+   "projection": 2.4740380831830904,
+   "latestValue": 2,
+   "tags": [
+    "Over",
+    "3PM",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718111-283-rebounds_assists",
+   "gameDate": "2026-11-15",
+   "gameId": 21718111,
+   "matchup": "CHA @ LAC",
+   "playerId": 283,
+   "playerName": "Brook Lopez",
+   "teamAbbreviation": "LAC",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.5740838727896672,
+   "evPercent": 13.69111990540468,
+   "foundAt": "2026-11-15T23:27:04.729Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 1,
+   "valueAtPick": 8,
+   "projection": 9.81970262171362,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Reb+Ast",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718111-8-rebounds",
+   "gameDate": "2026-11-15",
+   "gameId": 21718111,
+   "matchup": "CHA @ LAC",
+   "playerId": 8,
+   "playerName": "Grayson Allen",
+   "teamAbbreviation": "CHA",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": 165,
+   "vendor": "betmgm",
+   "modelProbability": 0.42735505319770795,
+   "evPercent": 13.249089097392597,
+   "foundAt": "2026-11-15T23:27:04.729Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -1,
+   "valueAtPick": 3,
+   "projection": 3.6853505885416666,
+   "latestValue": 3,
+   "tags": [
+    "Under",
+    "Rebounds",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 126,
+ "calls": 138,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
@@ -1811,7 +1945,8 @@
   ],
   "21718111": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718112": [
    "end-q1",
