@@ -1,41 +1,41 @@
 {
  "date": "2026-11-14",
- "updatedAt": "2026-11-15T02:20:20.002Z",
+ "updatedAt": "2026-11-15T02:24:20.173Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718104,
    "matchup": "DEN @ NOP",
    "status": "4th Qtr",
-   "homeScore": 96,
+   "homeScore": 100,
    "visitorScore": 109
   },
   {
    "gameId": 21718105,
    "matchup": "DAL @ CLE",
    "status": "3rd Qtr",
-   "homeScore": 97,
-   "visitorScore": 85
+   "homeScore": 105,
+   "visitorScore": 90
   },
   {
    "gameId": 21718106,
    "matchup": "DET @ MIA",
    "status": "2nd Qtr",
-   "homeScore": 66,
+   "homeScore": 68,
    "visitorScore": 60
   },
   {
    "gameId": 21718107,
    "matchup": "BKN @ MEM",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 71,
    "visitorScore": 54
   },
   {
    "gameId": 21718108,
    "matchup": "CHI @ MIN",
-   "status": "2nd Qtr",
-   "homeScore": 45,
+   "status": "3rd Qtr",
+   "homeScore": 49,
    "visitorScore": 58
   }
  ],
@@ -62,7 +62,7 @@
    "scoreMargin": -6,
    "valueAtPick": 4,
    "projection": 22.70046956135737,
-   "latestValue": 23,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Under",
@@ -229,7 +229,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 7.076036377480426,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -593,7 +593,7 @@
    "scoreMargin": -12,
    "valueAtPick": 4,
    "projection": 21.18088280651847,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -726,7 +726,7 @@
    "scoreMargin": 21,
    "valueAtPick": 2,
    "projection": 4.849395866989216,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -1269,7 +1269,7 @@
    "scoreMargin": 4,
    "valueAtPick": 7,
    "projection": 9.434824331019797,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Over",
     "Reb+Ast",
@@ -1337,7 +1337,7 @@
    "scoreMargin": 4,
    "valueAtPick": 6,
    "projection": 7.3622747034914715,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Over",
     "Rebounds",
@@ -1370,7 +1370,7 @@
    "scoreMargin": -4,
    "valueAtPick": 4,
    "projection": 4.898184031433235,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -1404,7 +1404,7 @@
    "scoreMargin": -13,
    "valueAtPick": 12,
    "projection": 26.504057343301206,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -1439,7 +1439,7 @@
    "scoreMargin": -13,
    "valueAtPick": 9,
    "projection": 16.12931848120268,
-   "latestValue": 9,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -1505,7 +1505,7 @@
    "scoreMargin": -13,
    "valueAtPick": 4,
    "projection": 9.141570389695794,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -1539,7 +1539,7 @@
    "scoreMargin": -13,
    "valueAtPick": 5,
    "projection": 16.20763064419497,
-   "latestValue": 5,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -1721,9 +1721,174 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718106-1091463429-points_assists",
+   "gameDate": "2026-11-14",
+   "gameId": 21718106,
+   "matchup": "DET @ MIA",
+   "playerId": 1091463429,
+   "playerName": "Ryan Conwell",
+   "teamAbbreviation": "MIA",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": -132,
+   "vendor": "fanduel",
+   "modelProbability": 0.7061330956625926,
+   "evPercent": 24.10824105584961,
+   "foundAt": "2026-11-15T02:21:19.520Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 8,
+   "valueAtPick": 3,
+   "projection": 8.41281650454595,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Foul trouble",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718106-15-assists",
+   "gameDate": "2026-11-14",
+   "gameId": 21718106,
+   "matchup": "DET @ MIA",
+   "playerId": 15,
+   "playerName": "Giannis Antetokounmpo",
+   "teamAbbreviation": "MIA",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 7.5,
+   "americanOdds": 104,
+   "vendor": "fanduel",
+   "modelProbability": 0.6008179874518496,
+   "evPercent": 22.566869440177317,
+   "foundAt": "2026-11-15T02:21:19.520Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 8,
+   "valueAtPick": 5,
+   "projection": 8.04506793562148,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718106-397-threes",
+   "gameDate": "2026-11-14",
+   "gameId": 21718106,
+   "matchup": "DET @ MIA",
+   "playerId": 397,
+   "playerName": "Duncan Robinson",
+   "teamAbbreviation": "DET",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.6576437657554433,
+   "evPercent": 21.496899097192056,
+   "foundAt": "2026-11-15T02:21:19.520Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -8,
+   "valueAtPick": 2,
+   "projection": 4.277525404326624,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718106-4-assists",
+   "gameDate": "2026-11-14",
+   "gameId": 21718106,
+   "matchup": "DET @ MIA",
+   "playerId": 4,
+   "playerName": "Bam Adebayo",
+   "teamAbbreviation": "MIA",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 120,
+   "vendor": "draftkings",
+   "modelProbability": 0.5482578913412901,
+   "evPercent": 20.61673609508383,
+   "foundAt": "2026-11-15T02:21:19.520Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 8,
+   "valueAtPick": 2,
+   "projection": 3.69291187210083,
+   "latestValue": 2,
+   "tags": [
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718106-221-assists",
+   "gameDate": "2026-11-14",
+   "gameId": 21718106,
+   "matchup": "DET @ MIA",
+   "playerId": 221,
+   "playerName": "Kevin Huerter",
+   "teamAbbreviation": "DET",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 135,
+   "vendor": "draftkings",
+   "modelProbability": 0.512094761704999,
+   "evPercent": 20.342269000674772,
+   "foundAt": "2026-11-15T02:21:19.520Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -8,
+   "valueAtPick": 1,
+   "projection": 2.5460989583333333,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "Assists",
+    "Hot shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 393,
+ "calls": 404,
  "note": null,
  "checkpointsTaken": {
   "21718104": [
@@ -1736,7 +1901,8 @@
    "halftime"
   ],
   "21718106": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718107": [
    "end-q1",
