@@ -1,42 +1,42 @@
 {
  "date": "2026-11-14",
- "updatedAt": "2026-11-15T01:25:17.391Z",
+ "updatedAt": "2026-11-15T01:29:17.415Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718104,
    "matchup": "DEN @ NOP",
    "status": "3rd Qtr",
-   "homeScore": 51,
-   "visitorScore": 56
+   "homeScore": 57,
+   "visitorScore": 66
   },
   {
    "gameId": 21718105,
    "matchup": "DAL @ CLE",
    "status": "2nd Qtr",
-   "homeScore": 52,
-   "visitorScore": 46
+   "homeScore": 57,
+   "visitorScore": 48
   },
   {
    "gameId": 21718106,
    "matchup": "DET @ MIA",
    "status": "1st Qtr",
-   "homeScore": 18,
-   "visitorScore": 14
+   "homeScore": 22,
+   "visitorScore": 16
   },
   {
    "gameId": 21718107,
    "matchup": "BKN @ MEM",
    "status": "1st Qtr",
-   "homeScore": 21,
-   "visitorScore": 11
+   "homeScore": 32,
+   "visitorScore": 17
   },
   {
    "gameId": 21718108,
    "matchup": "CHI @ MIN",
    "status": "1st Qtr",
-   "homeScore": 10,
-   "visitorScore": 20
+   "homeScore": 12,
+   "visitorScore": 22
   }
  ],
  "picks": [
@@ -162,7 +162,7 @@
    "scoreMargin": 6,
    "valueAtPick": 3,
    "projection": 14.113968713089161,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -196,7 +196,7 @@
    "scoreMargin": -6,
    "valueAtPick": 11,
    "projection": 32.69074707649349,
-   "latestValue": 15,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -394,7 +394,7 @@
    "scoreMargin": 5,
    "valueAtPick": 10,
    "projection": 18.75090722742002,
-   "latestValue": 11,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -527,7 +527,7 @@
    "scoreMargin": 5,
    "valueAtPick": 5,
    "projection": 12.29247354993208,
-   "latestValue": 5,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -540,7 +540,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 259,
+ "calls": 267,
  "note": null,
  "checkpointsTaken": {
   "21718104": [
