@@ -1,42 +1,42 @@
 {
  "date": "2026-11-14",
- "updatedAt": "2026-11-15T01:29:17.415Z",
+ "updatedAt": "2026-11-15T01:33:17.736Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718104,
    "matchup": "DEN @ NOP",
    "status": "3rd Qtr",
-   "homeScore": 57,
-   "visitorScore": 66
+   "homeScore": 60,
+   "visitorScore": 72
   },
   {
    "gameId": 21718105,
    "matchup": "DAL @ CLE",
    "status": "2nd Qtr",
-   "homeScore": 57,
-   "visitorScore": 48
+   "homeScore": 66,
+   "visitorScore": 49
   },
   {
    "gameId": 21718106,
    "matchup": "DET @ MIA",
    "status": "1st Qtr",
-   "homeScore": 22,
-   "visitorScore": 16
+   "homeScore": 25,
+   "visitorScore": 25
   },
   {
    "gameId": 21718107,
    "matchup": "BKN @ MEM",
    "status": "1st Qtr",
-   "homeScore": 32,
-   "visitorScore": 17
+   "homeScore": 35,
+   "visitorScore": 19
   },
   {
    "gameId": 21718108,
    "matchup": "CHI @ MIN",
    "status": "1st Qtr",
-   "homeScore": 12,
-   "visitorScore": 22
+   "homeScore": 15,
+   "visitorScore": 29
   }
  ],
  "picks": [
@@ -162,7 +162,7 @@
    "scoreMargin": 6,
    "valueAtPick": 3,
    "projection": 14.113968713089161,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -196,7 +196,7 @@
    "scoreMargin": -6,
    "valueAtPick": 11,
    "projection": 32.69074707649349,
-   "latestValue": 16,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Over",
@@ -229,7 +229,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 7.076036377480426,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -361,7 +361,7 @@
    "scoreMargin": 0,
    "valueAtPick": 9,
    "projection": 17.176185723327986,
-   "latestValue": 9,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -527,7 +527,7 @@
    "scoreMargin": 5,
    "valueAtPick": 5,
    "projection": 12.29247354993208,
-   "latestValue": 7,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -540,7 +540,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 267,
+ "calls": 275,
  "note": null,
  "checkpointsTaken": {
   "21718104": [
