@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "updatedAt": "2026-11-15T03:16:22.565Z",
+ "updatedAt": "2026-11-15T03:20:22.510Z",
  "state": "running",
  "games": [
   {
@@ -21,22 +21,22 @@
    "gameId": 21718106,
    "matchup": "DET @ MIA",
    "status": "4th Qtr",
-   "homeScore": 105,
-   "visitorScore": 91
+   "homeScore": 107,
+   "visitorScore": 96
   },
   {
    "gameId": 21718107,
    "matchup": "BKN @ MEM",
    "status": "4th Qtr",
-   "homeScore": 117,
-   "visitorScore": 96
+   "homeScore": 119,
+   "visitorScore": 106
   },
   {
    "gameId": 21718108,
    "matchup": "CHI @ MIN",
    "status": "4th Qtr",
-   "homeScore": 98,
-   "visitorScore": 111
+   "homeScore": 102,
+   "visitorScore": 113
   }
  ],
  "picks": [
@@ -653,7 +653,7 @@
    "scoreMargin": -12,
    "valueAtPick": 4,
    "projection": 21.18088280651847,
-   "latestValue": 19,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Under",
@@ -1048,7 +1048,7 @@
    "scoreMargin": -15,
    "valueAtPick": 7,
    "projection": 20.746961924781623,
-   "latestValue": 13,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Over",
@@ -1083,7 +1083,7 @@
    "scoreMargin": -15,
    "valueAtPick": 3,
    "projection": 11.57555815408411,
-   "latestValue": 13,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -1251,7 +1251,7 @@
    "scoreMargin": 2,
    "valueAtPick": 9,
    "projection": 15.906892262387078,
-   "latestValue": 18,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -1639,7 +1639,7 @@
    "scoreMargin": -13,
    "valueAtPick": 5,
    "projection": 16.20763064419497,
-   "latestValue": 22,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Under",
@@ -1809,7 +1809,7 @@
    "scoreMargin": -17,
    "valueAtPick": 10,
    "projection": 17.069167883361743,
-   "latestValue": 19,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -2535,7 +2535,7 @@
    "scoreMargin": -17,
    "valueAtPick": 6,
    "projection": 10.806215505098557,
-   "latestValue": 10,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Over",
@@ -2687,7 +2687,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 522,
+ "calls": 530,
  "note": null,
  "checkpointsTaken": {
   "21718104": [
