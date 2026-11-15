@@ -1,41 +1,41 @@
 {
  "date": "2026-11-14",
- "updatedAt": "2026-11-15T01:33:17.736Z",
+ "updatedAt": "2026-11-15T01:36:19.383Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718104,
    "matchup": "DEN @ NOP",
    "status": "3rd Qtr",
-   "homeScore": 60,
+   "homeScore": 62,
    "visitorScore": 72
   },
   {
    "gameId": 21718105,
    "matchup": "DAL @ CLE",
    "status": "2nd Qtr",
-   "homeScore": 66,
-   "visitorScore": 49
+   "homeScore": 68,
+   "visitorScore": 50
   },
   {
    "gameId": 21718106,
    "matchup": "DET @ MIA",
    "status": "1st Qtr",
-   "homeScore": 25,
-   "visitorScore": 25
+   "homeScore": 27,
+   "visitorScore": 28
   },
   {
    "gameId": 21718107,
    "matchup": "BKN @ MEM",
    "status": "1st Qtr",
-   "homeScore": 35,
-   "visitorScore": 19
+   "homeScore": 36,
+   "visitorScore": 22
   },
   {
    "gameId": 21718108,
    "matchup": "CHI @ MIN",
    "status": "1st Qtr",
-   "homeScore": 15,
+   "homeScore": 17,
    "visitorScore": 29
   }
  ],
@@ -62,7 +62,7 @@
    "scoreMargin": -6,
    "valueAtPick": 4,
    "projection": 22.70046956135737,
-   "latestValue": 9,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -229,7 +229,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 7.076036377480426,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -328,7 +328,7 @@
    "scoreMargin": 0,
    "valueAtPick": 5,
    "projection": 21.89618063176575,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -538,9 +538,174 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718108-3547239-threes",
+   "gameDate": "2026-11-14",
+   "gameId": 21718108,
+   "matchup": "CHI @ MIN",
+   "playerId": 3547239,
+   "playerName": "LaMelo Ball",
+   "teamAbbreviation": "MIN",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": 130,
+   "vendor": "caesars",
+   "modelProbability": 0.5375654306837772,
+   "evPercent": 23.64004905726873,
+   "foundAt": "2026-11-15T01:36:17.432Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -12,
+   "valueAtPick": 0,
+   "projection": 2.3178308948647106,
+   "latestValue": 0,
+   "tags": [
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718108-17895983-points_assists",
+   "gameDate": "2026-11-14",
+   "gameId": 21718108,
+   "matchup": "CHI @ MIN",
+   "playerId": 17895983,
+   "playerName": "Ayo Dosunmu",
+   "teamAbbreviation": "MIN",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 23.5,
+   "americanOdds": -110,
+   "vendor": "fanduel",
+   "modelProbability": 0.6439074776110363,
+   "evPercent": 22.927791180288757,
+   "foundAt": "2026-11-15T01:36:17.432Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -12,
+   "valueAtPick": 4,
+   "projection": 21.18088280651847,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718108-1028025177-points_rebounds_assists",
+   "gameDate": "2026-11-14",
+   "gameId": 21718108,
+   "matchup": "CHI @ MIN",
+   "playerId": 1028025177,
+   "playerName": "Matas Buzelis",
+   "teamAbbreviation": "CHI",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 24.5,
+   "americanOdds": -122,
+   "vendor": "fanduel",
+   "modelProbability": 0.6754649707254341,
+   "evPercent": 22.91247827954621,
+   "foundAt": "2026-11-15T01:36:17.432Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 12,
+   "valueAtPick": 6,
+   "projection": 21.760261779883145,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718108-102-rebounds",
+   "gameDate": "2026-11-14",
+   "gameId": 21718108,
+   "matchup": "CHI @ MIN",
+   "playerId": 102,
+   "playerName": "Zach Collins",
+   "teamAbbreviation": "CHI",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": 100,
+   "vendor": "draftkings",
+   "modelProbability": 0.6114672000304409,
+   "evPercent": 22.293440006088172,
+   "foundAt": "2026-11-15T01:36:17.432Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 12,
+   "valueAtPick": 3,
+   "projection": 7.21037973642067,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718108-1057271099-rebounds",
+   "gameDate": "2026-11-14",
+   "gameId": 21718108,
+   "matchup": "CHI @ MIN",
+   "playerId": 1057271099,
+   "playerName": "Joan Beringer",
+   "teamAbbreviation": "MIN",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 6.5,
+   "americanOdds": 106,
+   "vendor": "fanduel",
+   "modelProbability": 0.582274274718473,
+   "evPercent": 19.94850059200546,
+   "foundAt": "2026-11-15T01:36:17.432Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -12,
+   "valueAtPick": 2,
+   "projection": 5.99252726927894,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 275,
+ "calls": 285,
  "note": null,
  "checkpointsTaken": {
   "21718104": [
@@ -548,6 +713,9 @@
    "halftime"
   ],
   "21718105": [
+   "end-q1"
+  ],
+  "21718108": [
    "end-q1"
   ]
  }
