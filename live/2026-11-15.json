@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-15T23:04:07.323Z",
+ "updatedAt": "2026-11-15T23:08:05.378Z",
  "state": "running",
  "games": [
   {
@@ -14,15 +14,15 @@
    "gameId": 21718110,
    "matchup": "LAL @ PHX",
    "status": "4th Qtr",
-   "homeScore": 80,
-   "visitorScore": 104
+   "homeScore": 86,
+   "visitorScore": 106
   },
   {
    "gameId": 21718111,
    "matchup": "CHA @ LAC",
    "status": "3rd Qtr",
    "homeScore": 52,
-   "visitorScore": 59
+   "visitorScore": 61
   },
   {
    "gameId": 21718112,
@@ -1277,7 +1277,7 @@
    "scoreMargin": -2,
    "valueAtPick": 1,
    "projection": 2.19296448588248,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Over",
@@ -1796,7 +1796,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 82,
+ "calls": 90,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
