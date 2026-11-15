@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "updatedAt": "2026-11-15T02:56:21.453Z",
+ "updatedAt": "2026-11-15T03:00:24.793Z",
  "state": "running",
  "games": [
   {
@@ -14,29 +14,29 @@
    "gameId": 21718105,
    "matchup": "DAL @ CLE",
    "status": "4th Qtr",
-   "homeScore": 124,
-   "visitorScore": 112
+   "homeScore": 127,
+   "visitorScore": 117
   },
   {
    "gameId": 21718106,
    "matchup": "DET @ MIA",
    "status": "3rd Qtr",
-   "homeScore": 86,
-   "visitorScore": 76
+   "homeScore": 90,
+   "visitorScore": 78
   },
   {
    "gameId": 21718107,
    "matchup": "BKN @ MEM",
-   "status": "3rd Qtr",
-   "homeScore": 103,
-   "visitorScore": 81
+   "status": "4th Qtr",
+   "homeScore": 107,
+   "visitorScore": 84
   },
   {
    "gameId": 21718108,
    "matchup": "CHI @ MIN",
    "status": "4th Qtr",
-   "homeScore": 82,
-   "visitorScore": 92
+   "homeScore": 88,
+   "visitorScore": 99
   }
  ],
  "picks": [
@@ -348,7 +348,7 @@
    "scoreMargin": 0,
    "valueAtPick": 5,
    "projection": 21.89618063176575,
-   "latestValue": 15,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Under",
@@ -381,7 +381,7 @@
    "scoreMargin": 0,
    "valueAtPick": 9,
    "projection": 17.176185723327986,
-   "latestValue": 19,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Under",
@@ -666,7 +666,7 @@
    "scoreMargin": 12,
    "valueAtPick": 6,
    "projection": 21.760261779883145,
-   "latestValue": 28,
+   "latestValue": 29,
    "tags": [
     "Best bet",
     "Under",
@@ -700,7 +700,7 @@
    "scoreMargin": 12,
    "valueAtPick": 3,
    "projection": 7.21037973642067,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -733,7 +733,7 @@
    "scoreMargin": -12,
    "valueAtPick": 2,
    "projection": 5.99252726927894,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -800,7 +800,7 @@
    "scoreMargin": -21,
    "valueAtPick": 15,
    "projection": 30.332136853047277,
-   "latestValue": 29,
+   "latestValue": 32,
    "tags": [
     "Best bet",
     "Under",
@@ -835,7 +835,7 @@
    "scoreMargin": 21,
    "valueAtPick": 20,
    "projection": 28.668946495898773,
-   "latestValue": 25,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Under",
@@ -905,7 +905,7 @@
    "scoreMargin": 21,
    "valueAtPick": 15,
    "projection": 25.263038239542766,
-   "latestValue": 25,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Under",
@@ -940,7 +940,7 @@
    "scoreMargin": -15,
    "valueAtPick": 0,
    "projection": 0.3310381510416667,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -1111,7 +1111,7 @@
    "scoreMargin": -2,
    "valueAtPick": 6,
    "projection": 14.281640702149886,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -1211,7 +1211,7 @@
    "scoreMargin": 2,
    "valueAtPick": 9,
    "projection": 15.906892262387078,
-   "latestValue": 16,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Over",
@@ -1464,7 +1464,7 @@
    "scoreMargin": -13,
    "valueAtPick": 12,
    "projection": 26.504057343301206,
-   "latestValue": 15,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Over",
@@ -1532,7 +1532,7 @@
    "scoreMargin": -13,
    "valueAtPick": 2,
    "projection": 6.0089697465375815,
-   "latestValue": 3,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -1804,7 +1804,7 @@
    "scoreMargin": 8,
    "valueAtPick": 3,
    "projection": 8.41281650454595,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -2070,7 +2070,7 @@
    "scoreMargin": 14,
    "valueAtPick": 21,
    "projection": 26.194069391188215,
-   "latestValue": 21,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Over",
@@ -2104,7 +2104,7 @@
    "scoreMargin": 14,
    "valueAtPick": 18,
    "projection": 23.03422089263401,
-   "latestValue": 21,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Over",
@@ -2138,7 +2138,7 @@
    "scoreMargin": 8,
    "valueAtPick": 20,
    "projection": 25.734730912775028,
-   "latestValue": 22,
+   "latestValue": 27,
    "tags": [
     "Best bet",
     "Under",
@@ -2271,7 +2271,7 @@
    "scoreMargin": 8,
    "valueAtPick": 6,
    "projection": 7.185453983861002,
-   "latestValue": 6,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -2282,9 +2282,179 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718107-1028048549-points_rebounds",
+   "gameDate": "2026-11-14",
+   "gameId": 21718107,
+   "matchup": "BKN @ MEM",
+   "playerId": 1028048549,
+   "playerName": "Cam Spencer",
+   "teamAbbreviation": "MEM",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 18.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.6726205411897648,
+   "evPercent": 24.263794897770108,
+   "foundAt": "2026-11-15T02:57:21.139Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 19,
+   "valueAtPick": 16,
+   "projection": 17.633312681101554,
+   "latestValue": 18,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718107-1057275262-rebounds",
+   "gameDate": "2026-11-14",
+   "gameId": 21718107,
+   "matchup": "BKN @ MEM",
+   "playerId": 1057275262,
+   "playerName": "Nolan Traoré",
+   "teamAbbreviation": "BKN",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 178,
+   "vendor": "fanduel",
+   "modelProbability": 0.43993701326621115,
+   "evPercent": 22.302489688006723,
+   "foundAt": "2026-11-15T02:57:21.139Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -19,
+   "valueAtPick": 1,
+   "projection": 1.3852990532427523,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718107-1057266649-threes",
+   "gameDate": "2026-11-14",
+   "gameId": 21718107,
+   "matchup": "BKN @ MEM",
+   "playerId": 1057266649,
+   "playerName": "Cedric Coward",
+   "teamAbbreviation": "MEM",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": 225,
+   "vendor": "fanduel",
+   "modelProbability": 0.3635170723141432,
+   "evPercent": 18.143048502096537,
+   "foundAt": "2026-11-15T02:57:21.139Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 19,
+   "valueAtPick": 4,
+   "projection": 4.257400087803791,
+   "latestValue": 4,
+   "tags": [
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718107-387-threes",
+   "gameDate": "2026-11-14",
+   "gameId": 21718107,
+   "matchup": "BKN @ MEM",
+   "playerId": 387,
+   "playerName": "Julius Randle",
+   "teamAbbreviation": "BKN",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 165,
+   "vendor": "betmgm",
+   "modelProbability": 0.44579402661405076,
+   "evPercent": 18.135417052723458,
+   "foundAt": "2026-11-15T02:57:21.139Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -19,
+   "valueAtPick": 3,
+   "projection": 3.391756719301867,
+   "latestValue": 3,
+   "tags": [
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718107-1057266813-rebounds",
+   "gameDate": "2026-11-14",
+   "gameId": 21718107,
+   "matchup": "BKN @ MEM",
+   "playerId": 1057266813,
+   "playerName": "Egor Demin",
+   "teamAbbreviation": "BKN",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": 105,
+   "vendor": "betmgm",
+   "modelProbability": 0.5666546906998795,
+   "evPercent": 16.164211593475297,
+   "foundAt": "2026-11-15T02:57:21.139Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -19,
+   "valueAtPick": 1,
+   "projection": 1.3744110713719988,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 475,
+ "calls": 486,
  "note": null,
  "checkpointsTaken": {
   "21718104": [
@@ -2303,7 +2473,8 @@
   ],
   "21718107": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718108": [
    "end-q1",
