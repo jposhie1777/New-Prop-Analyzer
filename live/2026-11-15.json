@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-16T00:34:07.828Z",
+ "updatedAt": "2026-11-16T00:38:08.046Z",
  "state": "running",
  "games": [
   {
@@ -35,22 +35,22 @@
    "gameId": 21718113,
    "matchup": "DAL @ BOS",
    "status": "3rd Qtr",
-   "homeScore": 99,
-   "visitorScore": 63
+   "homeScore": 101,
+   "visitorScore": 66
   },
   {
    "gameId": 21718114,
    "matchup": "NYK @ TOR",
    "status": "3rd Qtr",
    "homeScore": 52,
-   "visitorScore": 51
+   "visitorScore": 53
   },
   {
    "gameId": 21718115,
    "matchup": "HOU @ WAS",
-   "status": "1st Qtr",
-   "homeScore": 29,
-   "visitorScore": 32
+   "status": "2nd Qtr",
+   "homeScore": 31,
+   "visitorScore": 36
   },
   {
    "gameId": 21718116,
@@ -2343,7 +2343,7 @@
    "scoreMargin": 6,
    "valueAtPick": 5,
    "projection": 15.406884156358553,
-   "latestValue": 11,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -2664,7 +2664,7 @@
    "scoreMargin": 30,
    "valueAtPick": 14,
    "projection": 25.03408688310855,
-   "latestValue": 33,
+   "latestValue": 35,
    "tags": [
     "Best bet",
     "Over",
@@ -2943,9 +2943,176 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718115-1028026060-threes",
+   "gameDate": "2026-11-15",
+   "gameId": 21718115,
+   "matchup": "HOU @ WAS",
+   "playerId": 1028026060,
+   "playerName": "KyShawn George",
+   "teamAbbreviation": "WAS",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": 105,
+   "vendor": "betmgm",
+   "modelProbability": 0.6088297404329315,
+   "evPercent": 24.810096788750947,
+   "foundAt": "2026-11-16T00:36:07.514Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -5,
+   "valueAtPick": 1,
+   "projection": 2.1277360197802055,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718115-1028028405-assists",
+   "gameDate": "2026-11-15",
+   "gameId": 21718115,
+   "matchup": "HOU @ WAS",
+   "playerId": 1028028405,
+   "playerName": "Alexandre Sarr",
+   "teamAbbreviation": "WAS",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": -129,
+   "vendor": "betrivers",
+   "modelProbability": 0.6989431320293962,
+   "evPercent": 24.07595134475329,
+   "foundAt": "2026-11-16T00:36:07.514Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -5,
+   "valueAtPick": 1,
+   "projection": 2.1976236076539033,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Already 60%+ of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718115-38017684-rebounds",
+   "gameDate": "2026-11-15",
+   "gameId": 21718115,
+   "matchup": "HOU @ WAS",
+   "playerId": 38017684,
+   "playerName": "Jabari Smith Jr.",
+   "teamAbbreviation": "HOU",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": 117,
+   "vendor": "caesars",
+   "modelProbability": 0.5672251732439222,
+   "evPercent": 23.08786259393112,
+   "foundAt": "2026-11-16T00:36:07.514Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 5,
+   "valueAtPick": 2,
+   "projection": 6.961108205283572,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718115-56677825-points",
+   "gameDate": "2026-11-15",
+   "gameId": 21718115,
+   "matchup": "HOU @ WAS",
+   "playerId": 56677825,
+   "playerName": "Amen Thompson",
+   "teamAbbreviation": "HOU",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 21.5,
+   "americanOdds": 108,
+   "vendor": "fanduel",
+   "modelProbability": 0.5776965632338653,
+   "evPercent": 20.16088515264398,
+   "foundAt": "2026-11-16T00:36:07.514Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 5,
+   "valueAtPick": 9,
+   "projection": 22.65192089861675,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718115-117-rebounds_assists",
+   "gameDate": "2026-11-15",
+   "gameId": 21718115,
+   "matchup": "HOU @ WAS",
+   "playerId": 117,
+   "playerName": "Anthony Davis",
+   "teamAbbreviation": "WAS",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 12.5,
+   "americanOdds": 100,
+   "vendor": "betmgm",
+   "modelProbability": 0.5979818590397881,
+   "evPercent": 19.596371807957613,
+   "foundAt": "2026-11-16T00:36:07.514Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -5,
+   "valueAtPick": 4,
+   "projection": 13.468800567243331,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Reb+Ast",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 291,
+ "calls": 304,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
@@ -2975,6 +3142,9 @@
   "21718114": [
    "end-q1",
    "halftime"
+  ],
+  "21718115": [
+   "end-q1"
   ]
  }
 }
