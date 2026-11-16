@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-16T01:20:09.980Z",
+ "updatedAt": "2026-11-16T01:24:09.717Z",
  "state": "running",
  "games": [
   {
@@ -42,22 +42,22 @@
    "gameId": 21718114,
    "matchup": "NYK @ TOR",
    "status": "4th Qtr",
-   "homeScore": 86,
-   "visitorScore": 81
+   "homeScore": 88,
+   "visitorScore": 86
   },
   {
    "gameId": 21718115,
    "matchup": "HOU @ WAS",
    "status": "3rd Qtr",
-   "homeScore": 56,
-   "visitorScore": 75
+   "homeScore": 58,
+   "visitorScore": 80
   },
   {
    "gameId": 21718116,
    "matchup": "ATL @ MIL",
    "status": "1st Qtr",
-   "homeScore": 18,
-   "visitorScore": 9
+   "homeScore": 22,
+   "visitorScore": 13
   },
   {
    "gameId": 21718117,
@@ -2874,7 +2874,7 @@
    "scoreMargin": 4,
    "valueAtPick": 13,
    "projection": 28.431741422394712,
-   "latestValue": 31,
+   "latestValue": 36,
    "tags": [
     "Best bet",
     "Under",
@@ -2973,7 +2973,7 @@
    "scoreMargin": -4,
    "valueAtPick": 12,
    "projection": 18.999085163580773,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -3106,7 +3106,7 @@
    "scoreMargin": 5,
    "valueAtPick": 9,
    "projection": 22.65192089861675,
-   "latestValue": 19,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -3173,7 +3173,7 @@
    "scoreMargin": 7,
    "valueAtPick": 14,
    "projection": 18.140516275040653,
-   "latestValue": 16,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Under",
@@ -3239,7 +3239,7 @@
    "scoreMargin": -7,
    "valueAtPick": 24,
    "projection": 29.565731137519254,
-   "latestValue": 25,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Under",
@@ -3337,7 +3337,7 @@
    "scoreMargin": -19,
    "valueAtPick": 5,
    "projection": 13.43946962692079,
-   "latestValue": 5,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -3440,7 +3440,7 @@
    "scoreMargin": 19,
    "valueAtPick": 9,
    "projection": 13.21780909247181,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -3489,7 +3489,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 401,
+ "calls": 409,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
