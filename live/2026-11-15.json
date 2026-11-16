@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-16T04:13:16.521Z",
+ "updatedAt": "2026-11-16T04:20:16.974Z",
  "state": "running",
  "games": [
   {
@@ -63,8 +63,8 @@
    "gameId": 21718117,
    "matchup": "OKC @ SAC",
    "status": "4th Qtr",
-   "homeScore": 99,
-   "visitorScore": 120
+   "homeScore": 101,
+   "visitorScore": 125
   }
  ],
  "picks": [
@@ -4646,8 +4646,8 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 780,
- "note": null,
+ "calls": 794,
+ "note": "This run hit its time limit; the next scheduled run continues.",
  "checkpointsTaken": {
   "21718109": [
    "end-q1",
