@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-16T00:30:10.116Z",
+ "updatedAt": "2026-11-16T00:34:07.828Z",
  "state": "running",
  "games": [
   {
@@ -35,22 +35,22 @@
    "gameId": 21718113,
    "matchup": "DAL @ BOS",
    "status": "3rd Qtr",
-   "homeScore": 91,
-   "visitorScore": 57
+   "homeScore": 99,
+   "visitorScore": 63
   },
   {
    "gameId": 21718114,
    "matchup": "NYK @ TOR",
    "status": "3rd Qtr",
-   "homeScore": 43,
-   "visitorScore": 49
+   "homeScore": 52,
+   "visitorScore": 51
   },
   {
    "gameId": 21718115,
    "matchup": "HOU @ WAS",
    "status": "1st Qtr",
-   "homeScore": 23,
-   "visitorScore": 27
+   "homeScore": 29,
+   "visitorScore": 32
   },
   {
    "gameId": 21718116,
@@ -2175,7 +2175,7 @@
    "scoreMargin": -33,
    "valueAtPick": 3,
    "projection": 9.672483176976268,
-   "latestValue": 9,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Over",
@@ -2277,7 +2277,7 @@
    "scoreMargin": -6,
    "valueAtPick": 1,
    "projection": 3.803104931640625,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -2376,7 +2376,7 @@
    "scoreMargin": -6,
    "valueAtPick": 3,
    "projection": 16.378909151800272,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -2629,7 +2629,7 @@
    "scoreMargin": -30,
    "valueAtPick": 5,
    "projection": 14.594125973142697,
-   "latestValue": 10,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -2664,7 +2664,7 @@
    "scoreMargin": 30,
    "valueAtPick": 14,
    "projection": 25.03408688310855,
-   "latestValue": 24,
+   "latestValue": 33,
    "tags": [
     "Best bet",
     "Over",
@@ -2834,7 +2834,7 @@
    "scoreMargin": 4,
    "valueAtPick": 13,
    "projection": 28.431741422394712,
-   "latestValue": 14,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Under",
@@ -2867,7 +2867,7 @@
    "scoreMargin": -4,
    "valueAtPick": 9,
    "projection": 21.881465026014574,
-   "latestValue": 9,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Under",
@@ -2945,7 +2945,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 283,
+ "calls": 291,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
