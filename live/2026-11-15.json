@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-16T02:16:11.872Z",
+ "updatedAt": "2026-11-16T02:21:12.182Z",
  "state": "running",
  "games": [
   {
@@ -49,22 +49,22 @@
    "gameId": 21718115,
    "matchup": "HOU @ WAS",
    "status": "4th Qtr",
-   "homeScore": 101,
+   "homeScore": 102,
    "visitorScore": 132
   },
   {
    "gameId": 21718116,
    "matchup": "ATL @ MIL",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 53,
-   "visitorScore": 55
+   "visitorScore": 57
   },
   {
    "gameId": 21718117,
    "matchup": "OKC @ SAC",
    "status": "1st Qtr",
    "homeScore": 4,
-   "visitorScore": 13
+   "visitorScore": 15
   }
  ],
  "picks": [
@@ -3839,7 +3839,7 @@
    "scoreMargin": 2,
    "valueAtPick": 10,
    "projection": 17.635254244588957,
-   "latestValue": 10,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -3884,7 +3884,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 527,
+ "calls": 537,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
