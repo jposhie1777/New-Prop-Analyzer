@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-16T03:08:14.024Z",
+ "updatedAt": "2026-11-16T03:12:14.038Z",
  "state": "running",
  "games": [
   {
@@ -56,15 +56,15 @@
    "gameId": 21718116,
    "matchup": "ATL @ MIL",
    "status": "4th Qtr",
-   "homeScore": 95,
-   "visitorScore": 102
+   "homeScore": 97,
+   "visitorScore": 104
   },
   {
    "gameId": 21718117,
    "matchup": "OKC @ SAC",
    "status": "2nd Qtr",
    "homeScore": 50,
-   "visitorScore": 61
+   "visitorScore": 62
   }
  ],
  "picks": [
@@ -3678,7 +3678,7 @@
    "scoreMargin": -19,
    "valueAtPick": 7,
    "projection": 29.30704865537289,
-   "latestValue": 26,
+   "latestValue": 28,
    "tags": [
     "Best bet",
     "Under",
@@ -3747,7 +3747,7 @@
    "scoreMargin": 19,
    "valueAtPick": 4,
    "projection": 20.52949241376808,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -4243,7 +4243,7 @@
    "scoreMargin": 7,
    "valueAtPick": 11,
    "projection": 14.248731944569538,
-   "latestValue": 13,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -4254,9 +4254,174 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718117-324-assists",
+   "gameDate": "2026-11-15",
+   "gameId": 21718117,
+   "matchup": "OKC @ SAC",
+   "playerId": 324,
+   "playerName": "Malik Monk",
+   "teamAbbreviation": "SAC",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": 135,
+   "vendor": "caesars",
+   "modelProbability": 0.5278988659994557,
+   "evPercent": 24.056233509872094,
+   "foundAt": "2026-11-16T03:09:13.585Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -12,
+   "valueAtPick": 4,
+   "projection": 5.39878926125,
+   "latestValue": 4,
+   "tags": [
+    "Under",
+    "Assists",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718117-201-points_rebounds_assists",
+   "gameDate": "2026-11-15",
+   "gameId": 21718117,
+   "matchup": "OKC @ SAC",
+   "playerId": 201,
+   "playerName": "Isaiah Hartenstein",
+   "teamAbbreviation": "OKC",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 21.5,
+   "americanOdds": -106,
+   "vendor": "fanduel",
+   "modelProbability": 0.6375652353657117,
+   "evPercent": 23.904187250317577,
+   "foundAt": "2026-11-16T03:09:13.585Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 12,
+   "valueAtPick": 10,
+   "projection": 19.826751870419876,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718117-1028037477-rebounds_assists",
+   "gameDate": "2026-11-15",
+   "gameId": 21718117,
+   "matchup": "OKC @ SAC",
+   "playerId": 1028037477,
+   "playerName": "Ajay Mitchell",
+   "teamAbbreviation": "OKC",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": -178,
+   "vendor": "fanduel",
+   "modelProbability": 0.7797666744266482,
+   "evPercent": 21.783783983487748,
+   "foundAt": "2026-11-16T03:09:13.585Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 12,
+   "valueAtPick": 2,
+   "projection": 4.086235244652366,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718117-175-assists",
+   "gameDate": "2026-11-15",
+   "gameId": 21718117,
+   "matchup": "OKC @ SAC",
+   "playerId": 175,
+   "playerName": "Shai Gilgeous-Alexander",
+   "teamAbbreviation": "OKC",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": 117,
+   "vendor": "caesars",
+   "modelProbability": 0.5497850127559344,
+   "evPercent": 19.30334776803775,
+   "foundAt": "2026-11-16T03:09:13.585Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 12,
+   "valueAtPick": 0,
+   "projection": 2.269532874045551,
+   "latestValue": 0,
+   "tags": [
+    "Under",
+    "Assists",
+    "Hot shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718117-1028027372-rebounds_assists",
+   "gameDate": "2026-11-15",
+   "gameId": 21718117,
+   "matchup": "OKC @ SAC",
+   "playerId": 1028027372,
+   "playerName": "Jared McCain",
+   "teamAbbreviation": "OKC",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -146,
+   "vendor": "fanduel",
+   "modelProbability": 0.7011202971399594,
+   "evPercent": 18.13396787426713,
+   "foundAt": "2026-11-16T03:09:13.585Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 12,
+   "valueAtPick": 0,
+   "projection": 1.6420973794765839,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 641,
+ "calls": 653,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
@@ -4300,7 +4465,8 @@
    "end-q3"
   ],
   "21718117": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
