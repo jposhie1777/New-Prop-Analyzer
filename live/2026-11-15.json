@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-16T01:44:10.463Z",
+ "updatedAt": "2026-11-16T01:48:10.629Z",
  "state": "running",
  "games": [
   {
@@ -49,15 +49,15 @@
    "gameId": 21718115,
    "matchup": "HOU @ WAS",
    "status": "3rd Qtr",
-   "homeScore": 75,
-   "visitorScore": 102
+   "homeScore": 77,
+   "visitorScore": 106
   },
   {
    "gameId": 21718116,
    "matchup": "ATL @ MIL",
    "status": "2nd Qtr",
-   "homeScore": 43,
-   "visitorScore": 28
+   "homeScore": 46,
+   "visitorScore": 33
   },
   {
    "gameId": 21718117,
@@ -3475,7 +3475,7 @@
    "scoreMargin": 19,
    "valueAtPick": 10,
    "projection": 14.80047533200511,
-   "latestValue": 10,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -3660,7 +3660,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 454,
+ "calls": 462,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
