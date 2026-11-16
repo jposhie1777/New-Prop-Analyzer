@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-16T03:00:15.410Z",
+ "updatedAt": "2026-11-16T03:04:13.769Z",
  "state": "running",
  "games": [
   {
@@ -64,7 +64,7 @@
    "matchup": "OKC @ SAC",
    "status": "2nd Qtr",
    "homeScore": 50,
-   "visitorScore": 53
+   "visitorScore": 59
   }
  ],
  "picks": [
@@ -4012,7 +4012,7 @@
    "scoreMargin": 8,
    "valueAtPick": 5,
    "projection": 16.259538116015626,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -4256,7 +4256,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 625,
+ "calls": 633,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
