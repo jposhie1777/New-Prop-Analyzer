@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-16T02:57:13.456Z",
+ "updatedAt": "2026-11-16T03:00:15.410Z",
  "state": "running",
  "games": [
   {
@@ -56,15 +56,15 @@
    "gameId": 21718116,
    "matchup": "ATL @ MIL",
    "status": "4th Qtr",
-   "homeScore": 89,
-   "visitorScore": 94
+   "homeScore": 92,
+   "visitorScore": 97
   },
   {
    "gameId": 21718117,
    "matchup": "OKC @ SAC",
    "status": "2nd Qtr",
-   "homeScore": 47,
-   "visitorScore": 47
+   "homeScore": 50,
+   "visitorScore": 53
   }
  ],
  "picks": [
@@ -3678,7 +3678,7 @@
    "scoreMargin": -19,
    "valueAtPick": 7,
    "projection": 29.30704865537289,
-   "latestValue": 25,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Under",
@@ -4243,7 +4243,7 @@
    "scoreMargin": 7,
    "valueAtPick": 11,
    "projection": 14.248731944569538,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -4256,7 +4256,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 619,
+ "calls": 625,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
