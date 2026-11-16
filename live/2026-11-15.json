@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-16T00:04:06.651Z",
+ "updatedAt": "2026-11-16T00:08:06.666Z",
  "state": "running",
  "games": [
   {
@@ -29,7 +29,7 @@
    "matchup": "SAS @ UTA",
    "status": "4th Qtr",
    "homeScore": 96,
-   "visitorScore": 92
+   "visitorScore": 94
   },
   {
    "gameId": 21718113,
@@ -43,7 +43,7 @@
    "matchup": "NYK @ TOR",
    "status": "2nd Qtr",
    "homeScore": 40,
-   "visitorScore": 38
+   "visitorScore": 41
   },
   {
    "gameId": 21718115,
@@ -1850,7 +1850,7 @@
    "scoreMargin": -3,
    "valueAtPick": 10,
    "projection": 18.31944336091771,
-   "latestValue": 13,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -2435,7 +2435,7 @@
    "scoreMargin": 0,
    "valueAtPick": 14,
    "projection": 18.47007442742021,
-   "latestValue": 15,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -2720,7 +2720,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 226,
+ "calls": 234,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
