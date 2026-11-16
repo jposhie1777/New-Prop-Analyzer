@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-16T02:45:14.023Z",
+ "updatedAt": "2026-11-16T02:49:13.149Z",
  "state": "running",
  "games": [
   {
@@ -56,15 +56,15 @@
    "gameId": 21718116,
    "matchup": "ATL @ MIL",
    "status": "3rd Qtr",
-   "homeScore": 78,
-   "visitorScore": 84
+   "homeScore": 80,
+   "visitorScore": 87
   },
   {
    "gameId": 21718117,
    "matchup": "OKC @ SAC",
    "status": "2nd Qtr",
-   "homeScore": 36,
-   "visitorScore": 37
+   "homeScore": 39,
+   "visitorScore": 40
   }
  ],
  "picks": [
@@ -3610,7 +3610,7 @@
    "scoreMargin": -19,
    "valueAtPick": 1,
    "projection": 9.991940132514612,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -3979,7 +3979,7 @@
    "scoreMargin": -8,
    "valueAtPick": 4,
    "projection": 16.004198393915367,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -4088,9 +4088,175 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718116-666400-points_assists",
+   "gameDate": "2026-11-15",
+   "gameId": 21718116,
+   "matchup": "ATL @ MIL",
+   "playerId": 666400,
+   "playerName": "Nickeil Alexander-Walker",
+   "teamAbbreviation": "ATL",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 25.5,
+   "americanOdds": -106,
+   "vendor": "fanduel",
+   "modelProbability": 0.6405109243450375,
+   "evPercent": 24.476651334978982,
+   "foundAt": "2026-11-16T02:48:12.725Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 7,
+   "valueAtPick": 19,
+   "projection": 24.249678819809628,
+   "latestValue": 19,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718116-303-points_assists",
+   "gameDate": "2026-11-15",
+   "gameId": 21718116,
+   "matchup": "ATL @ MIL",
+   "playerId": 303,
+   "playerName": "CJ McCollum",
+   "teamAbbreviation": "ATL",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 17.5,
+   "americanOdds": -108,
+   "vendor": "fanduel",
+   "modelProbability": 0.6426419005787755,
+   "evPercent": 23.76806974109751,
+   "foundAt": "2026-11-16T02:48:12.725Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 7,
+   "valueAtPick": 13,
+   "projection": 16.46769717806442,
+   "latestValue": 13,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718116-1028029127-points",
+   "gameDate": "2026-11-15",
+   "gameId": 21718116,
+   "matchup": "ATL @ MIL",
+   "playerId": 1028029127,
+   "playerName": "Kel'el Ware",
+   "teamAbbreviation": "MIL",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": -135,
+   "vendor": "draftkings",
+   "modelProbability": 0.7043790737033574,
+   "evPercent": 22.614135052065908,
+   "foundAt": "2026-11-16T02:48:12.725Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -7,
+   "valueAtPick": 4,
+   "projection": 6.9728168129497305,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718116-3547244-rebounds",
+   "gameDate": "2026-11-15",
+   "gameId": 21718116,
+   "matchup": "ATL @ MIL",
+   "playerId": 3547244,
+   "playerName": "Onyeka Okongwu",
+   "teamAbbreviation": "ATL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 11.5,
+   "americanOdds": 125,
+   "vendor": "caesars",
+   "modelProbability": 0.5426192818598172,
+   "evPercent": 22.08933841845888,
+   "foundAt": "2026-11-16T02:48:12.725Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 7,
+   "valueAtPick": 9,
+   "projection": 11.715666634034463,
+   "latestValue": 9,
+   "tags": [
+    "Over",
+    "Rebounds",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718116-17896040-rebounds_assists",
+   "gameDate": "2026-11-15",
+   "gameId": 21718116,
+   "matchup": "ATL @ MIL",
+   "playerId": 17896040,
+   "playerName": "Jalen Johnson",
+   "teamAbbreviation": "ATL",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 15.5,
+   "americanOdds": -138,
+   "vendor": "fanduel",
+   "modelProbability": 0.707850965834297,
+   "evPercent": 22.078644832291804,
+   "foundAt": "2026-11-16T02:48:12.725Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 7,
+   "valueAtPick": 11,
+   "projection": 14.248731944569538,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 591,
+ "calls": 603,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
@@ -4130,7 +4296,8 @@
   ],
   "21718116": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718117": [
    "end-q1"
