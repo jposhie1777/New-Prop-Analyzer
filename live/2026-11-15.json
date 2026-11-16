@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-16T00:57:09.721Z",
+ "updatedAt": "2026-11-16T01:00:16.361Z",
  "state": "running",
  "games": [
   {
@@ -36,21 +36,21 @@
    "matchup": "DAL @ BOS",
    "status": "4th Qtr",
    "homeScore": 126,
-   "visitorScore": 88
+   "visitorScore": 90
   },
   {
    "gameId": 21718114,
    "matchup": "NYK @ TOR",
    "status": "3rd Qtr",
    "homeScore": 74,
-   "visitorScore": 64
+   "visitorScore": 67
   },
   {
    "gameId": 21718115,
    "matchup": "HOU @ WAS",
    "status": "2nd Qtr",
-   "homeScore": 48,
-   "visitorScore": 65
+   "homeScore": 50,
+   "visitorScore": 71
   },
   {
    "gameId": 21718116,
@@ -2900,7 +2900,7 @@
    "scoreMargin": 4,
    "valueAtPick": 8,
    "projection": 18.57039502926844,
-   "latestValue": 19,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Under",
@@ -3032,7 +3032,7 @@
    "scoreMargin": 5,
    "valueAtPick": 2,
    "projection": 6.961108205283572,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -3112,7 +3112,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 346,
+ "calls": 352,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
