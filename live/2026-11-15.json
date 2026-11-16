@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-16T02:53:13.383Z",
+ "updatedAt": "2026-11-16T02:57:13.456Z",
  "state": "running",
  "games": [
   {
@@ -56,15 +56,15 @@
    "gameId": 21718116,
    "matchup": "ATL @ MIL",
    "status": "4th Qtr",
-   "homeScore": 84,
-   "visitorScore": 87
+   "homeScore": 89,
+   "visitorScore": 94
   },
   {
    "gameId": 21718117,
    "matchup": "OKC @ SAC",
    "status": "2nd Qtr",
-   "homeScore": 41,
-   "visitorScore": 42
+   "homeScore": 47,
+   "visitorScore": 47
   }
  ],
  "picks": [
@@ -3610,7 +3610,7 @@
    "scoreMargin": -19,
    "valueAtPick": 1,
    "projection": 9.991940132514612,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -3678,7 +3678,7 @@
    "scoreMargin": -19,
    "valueAtPick": 7,
    "projection": 29.30704865537289,
-   "latestValue": 24,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Under",
@@ -3747,7 +3747,7 @@
    "scoreMargin": 19,
    "valueAtPick": 4,
    "projection": 20.52949241376808,
-   "latestValue": 13,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -3912,7 +3912,7 @@
    "scoreMargin": 2,
    "valueAtPick": 0,
    "projection": 4.482498477851755,
-   "latestValue": 5,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -4211,7 +4211,7 @@
    "scoreMargin": 7,
    "valueAtPick": 9,
    "projection": 11.715666634034463,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Over",
     "Rebounds",
@@ -4243,7 +4243,7 @@
    "scoreMargin": 7,
    "valueAtPick": 11,
    "projection": 14.248731944569538,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -4256,7 +4256,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 611,
+ "calls": 619,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
