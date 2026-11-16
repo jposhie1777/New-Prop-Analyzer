@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-16T04:05:16.158Z",
+ "updatedAt": "2026-11-16T04:09:16.295Z",
  "state": "running",
  "games": [
   {
@@ -63,8 +63,8 @@
    "gameId": 21718117,
    "matchup": "OKC @ SAC",
    "status": "4th Qtr",
-   "homeScore": 86,
-   "visitorScore": 113
+   "homeScore": 94,
+   "visitorScore": 118
   }
  ],
  "picks": [
@@ -4019,7 +4019,7 @@
    "scoreMargin": -8,
    "valueAtPick": 4,
    "projection": 16.004198393915367,
-   "latestValue": 17,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Under",
@@ -4337,7 +4337,7 @@
    "scoreMargin": -12,
    "valueAtPick": 4,
    "projection": 5.39878926125,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Under",
     "Assists",
@@ -4535,7 +4535,7 @@
    "scoreMargin": 14,
    "valueAtPick": 10,
    "projection": 12.19823201828125,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -4646,7 +4646,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 764,
+ "calls": 772,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
