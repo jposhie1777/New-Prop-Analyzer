@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-16T01:12:09.318Z",
+ "updatedAt": "2026-11-16T01:16:09.866Z",
  "state": "running",
  "games": [
   {
@@ -56,8 +56,8 @@
    "gameId": 21718116,
    "matchup": "ATL @ MIL",
    "status": "1st Qtr",
-   "homeScore": 3,
-   "visitorScore": 2
+   "homeScore": 10,
+   "visitorScore": 8
   },
   {
    "gameId": 21718117,
@@ -2874,7 +2874,7 @@
    "scoreMargin": 4,
    "valueAtPick": 13,
    "projection": 28.431741422394712,
-   "latestValue": 27,
+   "latestValue": 28,
    "tags": [
     "Best bet",
     "Under",
@@ -3489,7 +3489,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 385,
+ "calls": 393,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
