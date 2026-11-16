@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "updatedAt": "2026-11-16T03:49:15.454Z",
+ "updatedAt": "2026-11-16T03:53:15.688Z",
  "state": "running",
  "games": [
   {
@@ -62,9 +62,9 @@
   {
    "gameId": 21718117,
    "matchup": "OKC @ SAC",
-   "status": "3rd Qtr",
-   "homeScore": 80,
-   "visitorScore": 94
+   "status": "4th Qtr",
+   "homeScore": 82,
+   "visitorScore": 96
   }
  ],
  "picks": [
@@ -4118,7 +4118,7 @@
    "scoreMargin": -8,
    "valueAtPick": 5,
    "projection": 13.350379918770349,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -4402,7 +4402,7 @@
    "scoreMargin": 12,
    "valueAtPick": 2,
    "projection": 4.086235244652366,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -4479,9 +4479,174 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718117-89-points_rebounds_assists",
+   "gameDate": "2026-11-15",
+   "gameId": 21718117,
+   "matchup": "OKC @ SAC",
+   "playerId": 89,
+   "playerName": "Alex Caruso",
+   "teamAbbreviation": "OKC",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 16.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.669605789828595,
+   "evPercent": 23.706832358164153,
+   "foundAt": "2026-11-16T03:50:15.149Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 14,
+   "valueAtPick": 13,
+   "projection": 15.456854320964824,
+   "latestValue": 13,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718117-1091351965-rebounds",
+   "gameDate": "2026-11-15",
+   "gameId": 21718117,
+   "matchup": "OKC @ SAC",
+   "playerId": 1091351965,
+   "playerName": "Aday Mara",
+   "teamAbbreviation": "OKC",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 11.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6499409076508131,
+   "evPercent": 23.024528948189626,
+   "foundAt": "2026-11-16T03:50:15.149Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 14,
+   "valueAtPick": 10,
+   "projection": 12.19823201828125,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718117-201-points",
+   "gameDate": "2026-11-15",
+   "gameId": 21718117,
+   "matchup": "OKC @ SAC",
+   "playerId": 201,
+   "playerName": "Isaiah Hartenstein",
+   "teamAbbreviation": "OKC",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": 124,
+   "vendor": "fanduel",
+   "modelProbability": 0.5380875086239708,
+   "evPercent": 20.531601931769483,
+   "foundAt": "2026-11-16T03:50:15.149Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 14,
+   "valueAtPick": 3,
+   "projection": 4.32493825458956,
+   "latestValue": 3,
+   "tags": [
+    "Under",
+    "Points",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718117-1028037477-rebounds",
+   "gameDate": "2026-11-15",
+   "gameId": 21718117,
+   "matchup": "OKC @ SAC",
+   "playerId": 1028037477,
+   "playerName": "Ajay Mitchell",
+   "teamAbbreviation": "OKC",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": 130,
+   "vendor": "betmgm",
+   "modelProbability": 0.5176095576329429,
+   "evPercent": 19.050198255576856,
+   "foundAt": "2026-11-16T03:50:15.149Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 14,
+   "valueAtPick": 3,
+   "projection": 3.46325416234375,
+   "latestValue": 3,
+   "tags": [
+    "Under",
+    "Rebounds",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718117-480-points",
+   "gameDate": "2026-11-15",
+   "gameId": 21718117,
+   "matchup": "OKC @ SAC",
+   "playerId": 480,
+   "playerName": "Kenrich Williams",
+   "teamAbbreviation": "OKC",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 10.5,
+   "americanOdds": -130,
+   "vendor": "fanduel",
+   "modelProbability": 0.666356939848989,
+   "evPercent": 17.893920127128826,
+   "foundAt": "2026-11-16T03:50:15.149Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 14,
+   "valueAtPick": 10,
+   "projection": 11.270800185587657,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 728,
+ "calls": 740,
  "note": null,
  "checkpointsTaken": {
   "21718109": [
@@ -4526,7 +4691,8 @@
   ],
   "21718117": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ]
  }
 }
