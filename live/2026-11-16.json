@@ -1,47 +1,47 @@
 {
  "date": "2026-11-16",
- "updatedAt": "2026-11-17T02:22:17.738Z",
+ "updatedAt": "2026-11-17T02:26:17.876Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718118,
    "matchup": "ORL @ BOS",
    "status": "4th Qtr",
-   "homeScore": 99,
-   "visitorScore": 106
+   "homeScore": 103,
+   "visitorScore": 110
   },
   {
    "gameId": 21718119,
    "matchup": "CHI @ CLE",
    "status": "4th Qtr",
-   "homeScore": 116,
-   "visitorScore": 105
+   "homeScore": 121,
+   "visitorScore": 113
   },
   {
    "gameId": 21718120,
    "matchup": "MEM @ WAS",
    "status": "4th Qtr",
-   "homeScore": 112,
-   "visitorScore": 131
+   "homeScore": 116,
+   "visitorScore": 136
   },
   {
    "gameId": 21718121,
    "matchup": "PHI @ BKN",
    "status": "3rd Qtr",
-   "homeScore": 81,
-   "visitorScore": 91
+   "homeScore": 85,
+   "visitorScore": 94
   },
   {
    "gameId": 21718122,
    "matchup": "HOU @ MIA",
-   "status": "3rd Qtr",
-   "homeScore": 99,
-   "visitorScore": 79
+   "status": "4th Qtr",
+   "homeScore": 101,
+   "visitorScore": 81
   },
   {
    "gameId": 21718123,
    "matchup": "POR @ MIN",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 59,
    "visitorScore": 51
   },
@@ -56,8 +56,8 @@
    "gameId": 21718125,
    "matchup": "PHX @ DEN",
    "status": "1st Qtr",
-   "homeScore": 10,
-   "visitorScore": 10
+   "homeScore": 14,
+   "visitorScore": 14
   }
  ],
  "picks": [
@@ -83,7 +83,7 @@
    "scoreMargin": -6,
    "valueAtPick": 0,
    "projection": 3.198299766681536,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -280,7 +280,7 @@
    "scoreMargin": -3,
    "valueAtPick": 1,
    "projection": 3.2320990937098664,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -313,7 +313,7 @@
    "scoreMargin": 3,
    "valueAtPick": 1,
    "projection": 16.371020664825426,
-   "latestValue": 10,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -577,7 +577,7 @@
    "scoreMargin": 9,
    "valueAtPick": 9,
    "projection": 23.607514780408877,
-   "latestValue": 33,
+   "latestValue": 35,
    "tags": [
     "Best bet",
     "Over",
@@ -676,7 +676,7 @@
    "scoreMargin": 9,
    "valueAtPick": 5,
    "projection": 8.309524143513194,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Under",
     "Assists",
@@ -805,7 +805,7 @@
    "scoreMargin": 9,
    "valueAtPick": 2,
    "projection": 4.228363541666667,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -970,7 +970,7 @@
    "scoreMargin": 7,
    "valueAtPick": 9,
    "projection": 34.50790478879762,
-   "latestValue": 19,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Over",
@@ -1003,7 +1003,7 @@
    "scoreMargin": -7,
    "valueAtPick": 2,
    "projection": 13.990507583678424,
-   "latestValue": 9,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Over",
@@ -1768,7 +1768,7 @@
    "scoreMargin": 16,
    "valueAtPick": 2,
    "projection": 4.298201268629821,
-   "latestValue": 7,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -1802,7 +1802,7 @@
    "scoreMargin": 16,
    "valueAtPick": 9,
    "projection": 15.129409760730912,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -1870,7 +1870,7 @@
    "scoreMargin": 16,
    "valueAtPick": 4,
    "projection": 11.753554960373439,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -2076,7 +2076,7 @@
    "scoreMargin": 9,
    "valueAtPick": 22,
    "projection": 31.5782325034822,
-   "latestValue": 35,
+   "latestValue": 38,
    "tags": [
     "Best bet",
     "Over",
@@ -2109,7 +2109,7 @@
    "scoreMargin": 9,
    "valueAtPick": 17,
    "projection": 21.876922664861986,
-   "latestValue": 18,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -2407,7 +2407,7 @@
    "scoreMargin": 2,
    "valueAtPick": 8,
    "projection": 10.745908014496536,
-   "latestValue": 16,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -2889,9 +2889,180 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718122-17896062-rebounds_assists",
+   "gameDate": "2026-11-16",
+   "gameId": 21718122,
+   "matchup": "HOU @ MIA",
+   "playerId": 17896062,
+   "playerName": "Alperen Sengun",
+   "teamAbbreviation": "HOU",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 11.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6269730364608911,
+   "evPercent": 24.16524839715686,
+   "foundAt": "2026-11-17T02:24:17.405Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -20,
+   "valueAtPick": 9,
+   "projection": 12.239603370274612,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Reb+Ast",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718122-15-points_rebounds_assists",
+   "gameDate": "2026-11-16",
+   "gameId": 21718122,
+   "matchup": "HOU @ MIA",
+   "playerId": 15,
+   "playerName": "Giannis Antetokounmpo",
+   "teamAbbreviation": "MIA",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 45.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6541997970926703,
+   "evPercent": 23.830675878255448,
+   "foundAt": "2026-11-17T02:24:17.405Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 20,
+   "valueAtPick": 39,
+   "projection": 47.225389401981296,
+   "latestValue": 39,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718122-1028028519-assists",
+   "gameDate": "2026-11-16",
+   "gameId": 21718122,
+   "matchup": "HOU @ MIA",
+   "playerId": 1028028519,
+   "playerName": "Reed Sheppard",
+   "teamAbbreviation": "HOU",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": 162,
+   "vendor": "fanduel",
+   "modelProbability": 0.4641035771876792,
+   "evPercent": 21.595137223171946,
+   "foundAt": "2026-11-17T02:24:17.405Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -20,
+   "valueAtPick": 1,
+   "projection": 1.5842035352844637,
+   "latestValue": 1,
+   "tags": [
+    "Under",
+    "Assists",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718122-458-assists",
+   "gameDate": "2026-11-16",
+   "gameId": 21718122,
+   "matchup": "HOU @ MIA",
+   "playerId": 458,
+   "playerName": "Fred VanVleet",
+   "teamAbbreviation": "HOU",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": -125,
+   "vendor": "fanduel",
+   "modelProbability": 0.6633683603708371,
+   "evPercent": 19.40630486675068,
+   "foundAt": "2026-11-17T02:24:17.405Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -20,
+   "valueAtPick": 6,
+   "projection": 7.020955331147109,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Blowout risk",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718122-38017695-threes",
+   "gameDate": "2026-11-16",
+   "gameId": 21718122,
+   "matchup": "HOU @ MIA",
+   "playerId": 38017695,
+   "playerName": "Tari Eason",
+   "teamAbbreviation": "HOU",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": 235,
+   "vendor": "fanduel",
+   "modelProbability": 0.355036591526088,
+   "evPercent": 18.937258161239477,
+   "foundAt": "2026-11-17T02:24:17.405Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -20,
+   "valueAtPick": 0,
+   "projection": 0.24163490144509103,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 420,
+ "calls": 431,
  "note": null,
  "checkpointsTaken": {
   "21718118": [
@@ -2915,7 +3086,8 @@
   ],
   "21718122": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718123": [
    "end-q1",
