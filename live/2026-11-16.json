@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "updatedAt": "2026-11-17T03:22:20.366Z",
+ "updatedAt": "2026-11-17T03:26:20.826Z",
  "state": "running",
  "games": [
   {
@@ -42,15 +42,15 @@
    "gameId": 21718123,
    "matchup": "POR @ MIN",
    "status": "4th Qtr",
-   "homeScore": 105,
-   "visitorScore": 92
+   "homeScore": 106,
+   "visitorScore": 96
   },
   {
    "gameId": 21718124,
    "matchup": "GSW @ NOP",
    "status": "4th Qtr",
-   "homeScore": 113,
-   "visitorScore": 85
+   "homeScore": 115,
+   "visitorScore": 92
   },
   {
    "gameId": 21718125,
@@ -1661,7 +1661,7 @@
    "scoreMargin": -24,
    "valueAtPick": 0,
    "projection": 8.319220870596416,
-   "latestValue": 11,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -4022,7 +4022,7 @@
    "scoreMargin": -28,
    "valueAtPick": 8,
    "projection": 10.352933734345882,
-   "latestValue": 8,
+   "latestValue": 11,
    "tags": [
     "Over",
     "Points",
@@ -4202,7 +4202,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 564,
+ "calls": 572,
  "note": null,
  "checkpointsTaken": {
   "21718118": [
