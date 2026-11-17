@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "updatedAt": "2026-11-17T04:10:22.438Z",
+ "updatedAt": "2026-11-17T04:14:22.444Z",
  "state": "running",
  "games": [
   {
@@ -56,8 +56,8 @@
    "gameId": 21718125,
    "matchup": "PHX @ DEN",
    "status": "4th Qtr",
-   "homeScore": 88,
-   "visitorScore": 104
+   "homeScore": 93,
+   "visitorScore": 109
   }
  ],
  "picks": [
@@ -3731,7 +3731,7 @@
    "scoreMargin": 4,
    "valueAtPick": 2,
    "projection": 11.030019708001312,
-   "latestValue": 6,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -3764,7 +3764,7 @@
    "scoreMargin": 4,
    "valueAtPick": 1,
    "projection": 6.817971874043738,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -4276,7 +4276,7 @@
    "scoreMargin": 3,
    "valueAtPick": 0,
    "projection": 0.9934525937542742,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Over",
@@ -4309,7 +4309,7 @@
    "scoreMargin": -3,
    "valueAtPick": 30,
    "projection": 56.7712298690707,
-   "latestValue": 47,
+   "latestValue": 49,
    "tags": [
     "Best bet",
     "Over",
@@ -4343,7 +4343,7 @@
    "scoreMargin": 8,
    "valueAtPick": 17,
    "projection": 20.44713185664684,
-   "latestValue": 17,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Over",
@@ -4377,7 +4377,7 @@
    "scoreMargin": 8,
    "valueAtPick": 7,
    "projection": 8.934452903650966,
-   "latestValue": 7,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -4477,7 +4477,7 @@
    "scoreMargin": -8,
    "valueAtPick": 8,
    "projection": 11.87773536229782,
-   "latestValue": 8,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -4489,7 +4489,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 665,
+ "calls": 673,
  "note": null,
  "checkpointsTaken": {
   "21718118": [
