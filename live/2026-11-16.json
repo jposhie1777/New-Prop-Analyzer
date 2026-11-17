@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "updatedAt": "2026-11-17T00:49:14.010Z",
+ "updatedAt": "2026-11-17T00:53:13.976Z",
  "state": "running",
  "games": [
   {
@@ -14,7 +14,7 @@
    "gameId": 21718119,
    "matchup": "CHI @ CLE",
    "status": "2nd Qtr",
-   "homeScore": 39,
+   "homeScore": 46,
    "visitorScore": 40
   },
   {
@@ -22,20 +22,20 @@
    "matchup": "MEM @ WAS",
    "status": "2nd Qtr",
    "homeScore": 46,
-   "visitorScore": 39
+   "visitorScore": 45
   },
   {
    "gameId": 21718121,
    "matchup": "PHI @ BKN",
    "status": "1st Qtr",
-   "homeScore": 11,
-   "visitorScore": 15
+   "homeScore": 13,
+   "visitorScore": 17
   },
   {
    "gameId": 21718122,
    "matchup": "HOU @ MIA",
    "status": "1st Qtr",
-   "homeScore": 6,
+   "homeScore": 9,
    "visitorScore": 2
   },
   {
@@ -412,7 +412,7 @@
    "scoreMargin": -2,
    "valueAtPick": 0,
    "projection": 10.731460470320918,
-   "latestValue": 0,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -556,7 +556,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 188,
+ "calls": 196,
  "note": null,
  "checkpointsTaken": {
   "21718118": [
