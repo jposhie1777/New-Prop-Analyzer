@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "updatedAt": "2026-11-17T01:01:14.513Z",
+ "updatedAt": "2026-11-17T01:05:14.700Z",
  "state": "running",
  "games": [
   {
@@ -8,35 +8,35 @@
    "matchup": "ORL @ BOS",
    "status": "2nd Qtr",
    "homeScore": 38,
-   "visitorScore": 41
+   "visitorScore": 46
   },
   {
    "gameId": 21718119,
    "matchup": "CHI @ CLE",
-   "status": "2nd Qtr",
-   "homeScore": 50,
-   "visitorScore": 46
+   "status": "3rd Qtr",
+   "homeScore": 57,
+   "visitorScore": 48
   },
   {
    "gameId": 21718120,
    "matchup": "MEM @ WAS",
    "status": "2nd Qtr",
-   "homeScore": 58,
+   "homeScore": 60,
    "visitorScore": 55
   },
   {
    "gameId": 21718121,
    "matchup": "PHI @ BKN",
    "status": "1st Qtr",
-   "homeScore": 22,
-   "visitorScore": 26
+   "homeScore": 23,
+   "visitorScore": 30
   },
   {
    "gameId": 21718122,
    "matchup": "HOU @ MIA",
    "status": "1st Qtr",
-   "homeScore": 18,
-   "visitorScore": 10
+   "homeScore": 21,
+   "visitorScore": 12
   },
   {
    "gameId": 21718123,
@@ -214,7 +214,7 @@
    "scoreMargin": 6,
    "valueAtPick": 3,
    "projection": 8.663448359347488,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -554,16 +554,180 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718119-322-points",
+   "gameDate": "2026-11-16",
+   "gameId": 21718119,
+   "matchup": "CHI @ CLE",
+   "playerId": 322,
+   "playerName": "Donovan Mitchell",
+   "teamAbbreviation": "CLE",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 21.5,
+   "americanOdds": -105,
+   "vendor": "betmgm",
+   "modelProbability": 0.6355820903902634,
+   "evPercent": 24.089836695241896,
+   "foundAt": "2026-11-17T01:04:14.129Z",
+   "clockLabel": "Halftime",
+   "period": 3,
+   "scoreMargin": 9,
+   "valueAtPick": 9,
+   "projection": 23.607514780408877,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718119-3547264-points_assists",
+   "gameDate": "2026-11-16",
+   "gameId": 21718119,
+   "matchup": "CHI @ CLE",
+   "playerId": 3547264,
+   "playerName": "Jalen Smith",
+   "teamAbbreviation": "CHI",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 19.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.6465459586861244,
+   "evPercent": 21.36915364809704,
+   "foundAt": "2026-11-17T01:04:14.129Z",
+   "clockLabel": "Halftime",
+   "period": 3,
+   "scoreMargin": -9,
+   "valueAtPick": 12,
+   "projection": 18.092456414179875,
+   "latestValue": 12,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718119-1091467074-threes",
+   "gameDate": "2026-11-16",
+   "gameId": 21718119,
+   "matchup": "CHI @ CLE",
+   "playerId": 1091467074,
+   "playerName": "Meleek Thomas",
+   "teamAbbreviation": "CLE",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 155,
+   "vendor": "betmgm",
+   "modelProbability": 0.47249904940535914,
+   "evPercent": 20.487257598366583,
+   "foundAt": "2026-11-17T01:04:14.129Z",
+   "clockLabel": "Halftime",
+   "period": 3,
+   "scoreMargin": 9,
+   "valueAtPick": 1,
+   "projection": 2.39655192317534,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "3PM",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718119-192-assists",
+   "gameDate": "2026-11-16",
+   "gameId": 21718119,
+   "matchup": "CHI @ CLE",
+   "playerId": 192,
+   "playerName": "James Harden",
+   "teamAbbreviation": "CLE",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 8.5,
+   "americanOdds": 125,
+   "vendor": "betmgm",
+   "modelProbability": 0.5341206221235683,
+   "evPercent": 20.17713997780286,
+   "foundAt": "2026-11-17T01:04:14.129Z",
+   "clockLabel": "Halftime",
+   "period": 3,
+   "scoreMargin": 9,
+   "valueAtPick": 5,
+   "projection": 8.309524143513194,
+   "latestValue": 5,
+   "tags": [
+    "Under",
+    "Assists",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718119-3547247-rebounds",
+   "gameDate": "2026-11-16",
+   "gameId": 21718119,
+   "matchup": "CHI @ CLE",
+   "playerId": 3547247,
+   "playerName": "Isaac Okoro",
+   "teamAbbreviation": "CHI",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 140,
+   "vendor": "betmgm",
+   "modelProbability": 0.49875054422114273,
+   "evPercent": 19.70013061307425,
+   "foundAt": "2026-11-17T01:04:14.129Z",
+   "clockLabel": "Halftime",
+   "period": 3,
+   "scoreMargin": -9,
+   "valueAtPick": 2,
+   "projection": 3.4953173039596273,
+   "latestValue": 2,
+   "tags": [
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 212,
+ "calls": 223,
  "note": null,
  "checkpointsTaken": {
   "21718118": [
    "end-q1"
   ],
   "21718119": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718120": [
    "end-q1"
