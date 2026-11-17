@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "updatedAt": "2026-11-17T03:50:21.473Z",
+ "updatedAt": "2026-11-17T03:54:21.560Z",
  "state": "running",
  "games": [
   {
@@ -56,8 +56,8 @@
    "gameId": 21718125,
    "matchup": "PHX @ DEN",
    "status": "3rd Qtr",
-   "homeScore": 77,
-   "visitorScore": 83
+   "homeScore": 79,
+   "visitorScore": 90
   }
  ],
  "picks": [
@@ -3665,7 +3665,7 @@
    "scoreMargin": -4,
    "valueAtPick": 0,
    "projection": 12.998317255570528,
-   "latestValue": 12,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -3764,7 +3764,7 @@
    "scoreMargin": 4,
    "valueAtPick": 1,
    "projection": 6.817971874043738,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -4176,7 +4176,7 @@
    "scoreMargin": 3,
    "valueAtPick": 7,
    "projection": 17.55327178311039,
-   "latestValue": 15,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -4322,7 +4322,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 622,
+ "calls": 630,
  "note": null,
  "checkpointsTaken": {
   "21718118": [
