@@ -1,40 +1,40 @@
 {
  "date": "2026-11-16",
- "updatedAt": "2026-11-17T00:38:13.432Z",
+ "updatedAt": "2026-11-17T00:42:13.588Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718118,
    "matchup": "ORL @ BOS",
-   "status": "1st Qtr",
-   "homeScore": 17,
-   "visitorScore": 20
+   "status": "2nd Qtr",
+   "homeScore": 21,
+   "visitorScore": 23
   },
   {
    "gameId": 21718119,
    "matchup": "CHI @ CLE",
    "status": "2nd Qtr",
-   "homeScore": 28,
-   "visitorScore": 31
+   "homeScore": 32,
+   "visitorScore": 38
   },
   {
    "gameId": 21718120,
    "matchup": "MEM @ WAS",
-   "status": "1st Qtr",
-   "homeScore": 35,
-   "visitorScore": 33
+   "status": "2nd Qtr",
+   "homeScore": 37,
+   "visitorScore": 37
   },
   {
    "gameId": 21718121,
    "matchup": "PHI @ BKN",
-   "status": "2026-11-17T00:30:00Z",
+   "status": "1st Qtr",
    "homeScore": 0,
-   "visitorScore": 0
+   "visitorScore": 4
   },
   {
    "gameId": 21718122,
    "matchup": "HOU @ MIA",
-   "status": "2026-11-17T00:30:00Z",
+   "status": "1st Qtr",
    "homeScore": 0,
    "visitorScore": 0
   },
@@ -182,7 +182,7 @@
    "scoreMargin": 6,
    "valueAtPick": 0,
    "projection": 0.4871572721354167,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Under",
     "3PM",
@@ -379,7 +379,7 @@
    "scoreMargin": -3,
    "valueAtPick": 1,
    "projection": 12.21229394814581,
-   "latestValue": 1,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -389,15 +389,183 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718120-182-points",
+   "gameDate": "2026-11-16",
+   "gameId": 21718120,
+   "matchup": "MEM @ WAS",
+   "playerId": 182,
+   "playerName": "Jerami Grant",
+   "teamAbbreviation": "MEM",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": 110,
+   "vendor": "fanduel",
+   "modelProbability": 0.5934141686776768,
+   "evPercent": 24.616975422312137,
+   "foundAt": "2026-11-17T00:39:13.184Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -2,
+   "valueAtPick": 0,
+   "projection": 10.731460470320918,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718120-1091340077-threes",
+   "gameDate": "2026-11-16",
+   "gameId": 21718120,
+   "matchup": "MEM @ WAS",
+   "playerId": 1091340077,
+   "playerName": "AJ Dybantsa",
+   "teamAbbreviation": "WAS",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": -135,
+   "vendor": "draftkings",
+   "modelProbability": 0.7135399841715551,
+   "evPercent": 24.208812059492924,
+   "foundAt": "2026-11-17T00:39:13.184Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 2,
+   "valueAtPick": 1,
+   "projection": 2.32268188133909,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718120-1057266649-threes",
+   "gameDate": "2026-11-16",
+   "gameId": 21718120,
+   "matchup": "MEM @ WAS",
+   "playerId": 1057266649,
+   "playerName": "Cedric Coward",
+   "teamAbbreviation": "MEM",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": -125,
+   "vendor": "betmgm",
+   "modelProbability": 0.6809167848323676,
+   "evPercent": 22.56502126982618,
+   "foundAt": "2026-11-17T00:39:13.184Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -2,
+   "valueAtPick": 0,
+   "projection": 0.9258503683683518,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718120-1028048549-points",
+   "gameDate": "2026-11-16",
+   "gameId": 21718120,
+   "matchup": "MEM @ WAS",
+   "playerId": 1028048549,
+   "playerName": "Cam Spencer",
+   "teamAbbreviation": "MEM",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 11.5,
+   "americanOdds": -125,
+   "vendor": "betmgm",
+   "modelProbability": 0.6775496438573596,
+   "evPercent": 21.95893589432474,
+   "foundAt": "2026-11-17T00:39:13.184Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -2,
+   "valueAtPick": 4,
+   "projection": 13.794082459856057,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718120-56677844-points",
+   "gameDate": "2026-11-16",
+   "gameId": 21718120,
+   "matchup": "MEM @ WAS",
+   "playerId": 56677844,
+   "playerName": "Bilal Coulibaly",
+   "teamAbbreviation": "WAS",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": -110,
+   "vendor": "draftkings",
+   "modelProbability": 0.619010162891581,
+   "evPercent": 18.17466746112,
+   "foundAt": "2026-11-17T00:39:13.184Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 2,
+   "valueAtPick": 5,
+   "projection": 10.64459132904332,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 162,
+ "calls": 174,
  "note": null,
  "checkpointsTaken": {
   "21718118": [
    "end-q1"
   ],
   "21718119": [
+   "end-q1"
+  ],
+  "21718120": [
    "end-q1"
   ]
  }
