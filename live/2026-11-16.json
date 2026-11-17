@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "updatedAt": "2026-11-17T01:16:18.114Z",
+ "updatedAt": "2026-11-17T01:20:15.673Z",
  "state": "running",
  "games": [
   {
@@ -28,28 +28,28 @@
    "gameId": 21718121,
    "matchup": "PHI @ BKN",
    "status": "2nd Qtr",
-   "homeScore": 28,
-   "visitorScore": 45
+   "homeScore": 30,
+   "visitorScore": 48
   },
   {
    "gameId": 21718122,
    "matchup": "HOU @ MIA",
    "status": "2nd Qtr",
-   "homeScore": 29,
-   "visitorScore": 18
+   "homeScore": 35,
+   "visitorScore": 24
   },
   {
    "gameId": 21718123,
    "matchup": "POR @ MIN",
    "status": "1st Qtr",
-   "homeScore": 2,
-   "visitorScore": 7
+   "homeScore": 4,
+   "visitorScore": 12
   },
   {
    "gameId": 21718124,
    "matchup": "GSW @ NOP",
    "status": "1st Qtr",
-   "homeScore": 11,
+   "homeScore": 13,
    "visitorScore": 2
   },
   {
@@ -708,7 +708,7 @@
    "scoreMargin": -9,
    "valueAtPick": 2,
    "projection": 3.4953173039596273,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Over",
     "Rebounds",
@@ -1003,7 +1003,7 @@
    "scoreMargin": -7,
    "valueAtPick": 2,
    "projection": 13.990507583678424,
-   "latestValue": 2,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -1036,7 +1036,7 @@
    "scoreMargin": 7,
    "valueAtPick": 8,
    "projection": 17.37864467377699,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -1069,7 +1069,7 @@
    "scoreMargin": 14,
    "valueAtPick": 2,
    "projection": 3.870635236375,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -1379,7 +1379,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 259,
+ "calls": 267,
  "note": null,
  "checkpointsTaken": {
   "21718118": [
