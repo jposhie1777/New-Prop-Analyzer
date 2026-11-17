@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "updatedAt": "2026-11-17T04:20:23.144Z",
+ "updatedAt": "2026-11-17T04:20:50.204Z",
  "state": "running",
  "games": [
   {
@@ -56,7 +56,7 @@
    "gameId": 21718125,
    "matchup": "PHX @ DEN",
    "status": "4th Qtr",
-   "homeScore": 102,
+   "homeScore": 103,
    "visitorScore": 111
   }
  ],
@@ -4489,8 +4489,8 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 685,
- "note": "This run hit its time limit; the next scheduled run continues.",
+ "calls": 5,
+ "note": null,
  "checkpointsTaken": {
   "21718118": [
    "end-q1",
