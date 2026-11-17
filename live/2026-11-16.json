@@ -1,42 +1,42 @@
 {
  "date": "2026-11-16",
- "updatedAt": "2026-11-17T02:14:17.529Z",
+ "updatedAt": "2026-11-17T02:18:20.674Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718118,
    "matchup": "ORL @ BOS",
    "status": "4th Qtr",
-   "homeScore": 88,
-   "visitorScore": 92
+   "homeScore": 96,
+   "visitorScore": 102
   },
   {
    "gameId": 21718119,
    "matchup": "CHI @ CLE",
    "status": "4th Qtr",
-   "homeScore": 112,
-   "visitorScore": 97
+   "homeScore": 113,
+   "visitorScore": 100
   },
   {
    "gameId": 21718120,
    "matchup": "MEM @ WAS",
    "status": "4th Qtr",
-   "homeScore": 104,
-   "visitorScore": 117
+   "homeScore": 107,
+   "visitorScore": 123
   },
   {
    "gameId": 21718121,
    "matchup": "PHI @ BKN",
    "status": "3rd Qtr",
-   "homeScore": 70,
-   "visitorScore": 89
+   "homeScore": 78,
+   "visitorScore": 91
   },
   {
    "gameId": 21718122,
    "matchup": "HOU @ MIA",
    "status": "3rd Qtr",
-   "homeScore": 83,
-   "visitorScore": 66
+   "homeScore": 90,
+   "visitorScore": 71
   },
   {
    "gameId": 21718123,
@@ -49,15 +49,15 @@
    "gameId": 21718124,
    "matchup": "GSW @ NOP",
    "status": "2nd Qtr",
-   "homeScore": 60,
+   "homeScore": 61,
    "visitorScore": 36
   },
   {
    "gameId": 21718125,
    "matchup": "PHX @ DEN",
    "status": "1st Qtr",
-   "homeScore": 2,
-   "visitorScore": 2
+   "homeScore": 8,
+   "visitorScore": 8
   }
  ],
  "picks": [
@@ -116,7 +116,7 @@
    "scoreMargin": 6,
    "valueAtPick": 5,
    "projection": 15.19681151827353,
-   "latestValue": 16,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Over",
@@ -313,7 +313,7 @@
    "scoreMargin": 3,
    "valueAtPick": 1,
    "projection": 16.371020664825426,
-   "latestValue": 7,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -577,7 +577,7 @@
    "scoreMargin": 9,
    "valueAtPick": 9,
    "projection": 23.607514780408877,
-   "latestValue": 28,
+   "latestValue": 30,
    "tags": [
     "Best bet",
     "Over",
@@ -805,7 +805,7 @@
    "scoreMargin": 9,
    "valueAtPick": 2,
    "projection": 4.228363541666667,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -937,7 +937,7 @@
    "scoreMargin": 7,
    "valueAtPick": 13,
    "projection": 31.792605051192833,
-   "latestValue": 26,
+   "latestValue": 28,
    "tags": [
     "Best bet",
     "Over",
@@ -1167,7 +1167,7 @@
    "scoreMargin": 14,
    "valueAtPick": 6,
    "projection": 10.474943703529313,
-   "latestValue": 11,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -1266,7 +1266,7 @@
    "scoreMargin": 10,
    "valueAtPick": 19,
    "projection": 31.566637513579956,
-   "latestValue": 25,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Over",
@@ -1300,7 +1300,7 @@
    "scoreMargin": -10,
    "valueAtPick": 5,
    "projection": 8.856259080780582,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -1768,7 +1768,7 @@
    "scoreMargin": 16,
    "valueAtPick": 2,
    "projection": 4.298201268629821,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -1802,7 +1802,7 @@
    "scoreMargin": 16,
    "valueAtPick": 9,
    "projection": 15.129409760730912,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -1939,7 +1939,7 @@
    "scoreMargin": -19,
    "valueAtPick": 5,
    "projection": 10.371384656096467,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -2076,7 +2076,7 @@
    "scoreMargin": 9,
    "valueAtPick": 22,
    "projection": 31.5782325034822,
-   "latestValue": 30,
+   "latestValue": 32,
    "tags": [
     "Best bet",
     "Over",
@@ -2407,7 +2407,7 @@
    "scoreMargin": 2,
    "valueAtPick": 8,
    "projection": 10.745908014496536,
-   "latestValue": 14,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Under",
@@ -2718,9 +2718,180 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718124-1057267077-points_assists",
+   "gameDate": "2026-11-16",
+   "gameId": 21718124,
+   "matchup": "GSW @ NOP",
+   "playerId": 1057267077,
+   "playerName": "Jeremiah Fears",
+   "teamAbbreviation": "NOP",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 27.5,
+   "americanOdds": 104,
+   "vendor": "fanduel",
+   "modelProbability": 0.6049322407897213,
+   "evPercent": 23.406177121103156,
+   "foundAt": "2026-11-17T02:15:17.023Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 25,
+   "valueAtPick": 18,
+   "projection": 28.828135622494734,
+   "latestValue": 18,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718124-57875092-points",
+   "gameDate": "2026-11-16",
+   "gameId": 21718124,
+   "matchup": "GSW @ NOP",
+   "playerId": 57875092,
+   "playerName": "Gui Santos",
+   "teamAbbreviation": "GSW",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": -110,
+   "vendor": "fanduel",
+   "modelProbability": 0.6458528495493325,
+   "evPercent": 23.299180368508953,
+   "foundAt": "2026-11-17T02:15:17.023Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -25,
+   "valueAtPick": 4,
+   "projection": 6.549722978987878,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718124-3547256-points",
+   "gameDate": "2026-11-16",
+   "gameId": 21718124,
+   "matchup": "GSW @ NOP",
+   "playerId": 3547256,
+   "playerName": "Saddiq Bey",
+   "teamAbbreviation": "NOP",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 29.5,
+   "americanOdds": -105,
+   "vendor": "draftkings",
+   "modelProbability": 0.6259580654139408,
+   "evPercent": 22.210860390340837,
+   "foundAt": "2026-11-17T02:15:17.023Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 25,
+   "valueAtPick": 21,
+   "projection": 28.135413875328886,
+   "latestValue": 21,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718124-666848-threes",
+   "gameDate": "2026-11-16",
+   "gameId": 21718124,
+   "matchup": "GSW @ NOP",
+   "playerId": 666848,
+   "playerName": "Jordan Poole",
+   "teamAbbreviation": "NOP",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": 152,
+   "vendor": "fanduel",
+   "modelProbability": 0.48479532488349686,
+   "evPercent": 22.168421870641208,
+   "foundAt": "2026-11-17T02:15:17.023Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 25,
+   "valueAtPick": 1,
+   "projection": 1.5353932051762813,
+   "latestValue": 1,
+   "tags": [
+    "Under",
+    "3PM",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718124-1028027567-assists",
+   "gameDate": "2026-11-16",
+   "gameId": 21718124,
+   "matchup": "GSW @ NOP",
+   "playerId": 1028027567,
+   "playerName": "Yves Missi",
+   "teamAbbreviation": "NOP",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 116,
+   "vendor": "fanduel",
+   "modelProbability": 0.5644721272320818,
+   "evPercent": 21.925979482129687,
+   "foundAt": "2026-11-17T02:15:17.023Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 25,
+   "valueAtPick": 1,
+   "projection": 1.6614062500000002,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Blowout risk",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 401,
+ "calls": 412,
  "note": null,
  "checkpointsTaken": {
   "21718118": [
@@ -2751,7 +2922,8 @@
    "halftime"
   ],
   "21718124": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
