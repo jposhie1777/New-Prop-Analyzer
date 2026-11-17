@@ -1,14 +1,14 @@
 {
  "date": "2026-11-16",
- "updatedAt": "2026-11-17T00:53:13.976Z",
+ "updatedAt": "2026-11-17T00:57:14.108Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718118,
    "matchup": "ORL @ BOS",
    "status": "2nd Qtr",
-   "homeScore": 31,
-   "visitorScore": 31
+   "homeScore": 35,
+   "visitorScore": 37
   },
   {
    "gameId": 21718119,
@@ -21,22 +21,22 @@
    "gameId": 21718120,
    "matchup": "MEM @ WAS",
    "status": "2nd Qtr",
-   "homeScore": 46,
-   "visitorScore": 45
+   "homeScore": 50,
+   "visitorScore": 50
   },
   {
    "gameId": 21718121,
    "matchup": "PHI @ BKN",
    "status": "1st Qtr",
-   "homeScore": 13,
-   "visitorScore": 17
+   "homeScore": 15,
+   "visitorScore": 19
   },
   {
    "gameId": 21718122,
    "matchup": "HOU @ MIA",
    "status": "1st Qtr",
-   "homeScore": 9,
-   "visitorScore": 2
+   "homeScore": 12,
+   "visitorScore": 9
   },
   {
    "gameId": 21718123,
@@ -149,7 +149,7 @@
    "scoreMargin": -6,
    "valueAtPick": 1,
    "projection": 5.872530177974999,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -247,7 +247,7 @@
    "scoreMargin": -3,
    "valueAtPick": 0,
    "projection": 1.8515889138987125,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Under",
@@ -556,7 +556,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 196,
+ "calls": 204,
  "note": null,
  "checkpointsTaken": {
   "21718118": [
