@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "updatedAt": "2026-11-17T01:13:14.852Z",
+ "updatedAt": "2026-11-17T01:16:18.114Z",
  "state": "running",
  "games": [
   {
@@ -28,29 +28,29 @@
    "gameId": 21718121,
    "matchup": "PHI @ BKN",
    "status": "2nd Qtr",
-   "homeScore": 27,
-   "visitorScore": 38
+   "homeScore": 28,
+   "visitorScore": 45
   },
   {
    "gameId": 21718122,
    "matchup": "HOU @ MIA",
    "status": "2nd Qtr",
    "homeScore": 29,
-   "visitorScore": 15
+   "visitorScore": 18
   },
   {
    "gameId": 21718123,
    "matchup": "POR @ MIN",
    "status": "1st Qtr",
    "homeScore": 2,
-   "visitorScore": 0
+   "visitorScore": 7
   },
   {
    "gameId": 21718124,
    "matchup": "GSW @ NOP",
    "status": "1st Qtr",
-   "homeScore": 2,
-   "visitorScore": 0
+   "homeScore": 11,
+   "visitorScore": 2
   },
   {
    "gameId": 21718125,
@@ -1036,7 +1036,7 @@
    "scoreMargin": 7,
    "valueAtPick": 8,
    "projection": 17.37864467377699,
-   "latestValue": 8,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -1379,7 +1379,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 253,
+ "calls": 259,
  "note": null,
  "checkpointsTaken": {
   "21718118": [
