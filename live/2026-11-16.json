@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "updatedAt": "2026-11-17T03:10:20.156Z",
+ "updatedAt": "2026-11-17T03:14:20.874Z",
  "state": "running",
  "games": [
   {
@@ -27,9 +27,9 @@
   {
    "gameId": 21718121,
    "matchup": "PHI @ BKN",
-   "status": "4th Qtr",
+   "status": "Final",
    "homeScore": 123,
-   "visitorScore": 131
+   "visitorScore": 135
   },
   {
    "gameId": 21718122,
@@ -42,22 +42,22 @@
    "gameId": 21718123,
    "matchup": "POR @ MIN",
    "status": "4th Qtr",
-   "homeScore": 98,
-   "visitorScore": 79
+   "homeScore": 100,
+   "visitorScore": 82
   },
   {
    "gameId": 21718124,
    "matchup": "GSW @ NOP",
    "status": "4th Qtr",
-   "homeScore": 102,
-   "visitorScore": 75
+   "homeScore": 107,
+   "visitorScore": 78
   },
   {
    "gameId": 21718125,
    "matchup": "PHX @ DEN",
    "status": "2nd Qtr",
    "homeScore": 53,
-   "visitorScore": 54
+   "visitorScore": 56
   }
  ],
  "picks": [
@@ -1012,7 +1012,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 5,
+    "gradedAt": "2026-11-17T03:14:20.874Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1045,7 +1049,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 37,
+    "gradedAt": "2026-11-17T03:14:20.874Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1070,7 +1078,7 @@
    "scoreMargin": 7,
    "valueAtPick": 9,
    "projection": 34.50790478879762,
-   "latestValue": 32,
+   "latestValue": 34,
    "tags": [
     "Best bet",
     "Over",
@@ -1078,7 +1086,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 34,
+    "gradedAt": "2026-11-17T03:14:20.874Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1111,7 +1123,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 15,
+    "gradedAt": "2026-11-17T03:14:20.874Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1136,7 +1152,7 @@
    "scoreMargin": 7,
    "valueAtPick": 8,
    "projection": 17.37864467377699,
-   "latestValue": 18,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Over",
@@ -1144,7 +1160,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 19,
+    "gradedAt": "2026-11-17T03:14:20.874Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -2074,7 +2094,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 2,
+    "gradedAt": "2026-11-17T03:14:20.874Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2109,7 +2133,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 11,
+    "gradedAt": "2026-11-17T03:14:20.874Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2143,7 +2171,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 6,
+    "gradedAt": "2026-11-17T03:14:20.874Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2177,7 +2209,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 3,
+    "gradedAt": "2026-11-17T03:14:20.874Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2211,7 +2247,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 1,
+    "gradedAt": "2026-11-17T03:14:20.874Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2995,7 +3035,7 @@
    "scoreMargin": -25,
    "valueAtPick": 4,
    "projection": 6.549722978987878,
-   "latestValue": 8,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -3331,7 +3371,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 4,
+    "gradedAt": "2026-11-17T03:14:20.874Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3365,7 +3409,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 42,
+    "gradedAt": "2026-11-17T03:14:20.874Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3399,7 +3447,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 48,
+    "gradedAt": "2026-11-17T03:14:20.874Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3432,7 +3484,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 9,
+    "gradedAt": "2026-11-17T03:14:20.874Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3467,7 +3523,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 34,
+    "gradedAt": "2026-11-17T03:14:20.874Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3525,7 +3585,7 @@
    "scoreMargin": -4,
    "valueAtPick": 0,
    "projection": 12.998317255570528,
-   "latestValue": 3,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -3973,9 +4033,176 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718125-57-points_rebounds",
+   "gameDate": "2026-11-16",
+   "gameId": 21718125,
+   "matchup": "PHX @ DEN",
+   "playerId": 57,
+   "playerName": "Devin Booker",
+   "teamAbbreviation": "PHX",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 20.5,
+   "americanOdds": -144,
+   "vendor": "fanduel",
+   "modelProbability": 0.7251174851749802,
+   "evPercent": 22.86712943242719,
+   "foundAt": "2026-11-17T03:14:19.632Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 3,
+   "valueAtPick": 7,
+   "projection": 17.55327178311039,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718125-17895966-threes",
+   "gameDate": "2026-11-16",
+   "gameId": 21718125,
+   "matchup": "PHX @ DEN",
+   "playerId": 17895966,
+   "playerName": "Jalen Green",
+   "teamAbbreviation": "PHX",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 106,
+   "vendor": "fanduel",
+   "modelProbability": 0.593750852299892,
+   "evPercent": 22.312675573777764,
+   "foundAt": "2026-11-17T03:14:19.632Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 3,
+   "valueAtPick": 1,
+   "projection": 1.762884612231717,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718125-177-rebounds_assists",
+   "gameDate": "2026-11-16",
+   "gameId": 21718125,
+   "matchup": "PHX @ DEN",
+   "playerId": 177,
+   "playerName": "Aaron Gordon",
+   "teamAbbreviation": "DEN",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": -106,
+   "vendor": "fanduel",
+   "modelProbability": 0.6155837245249419,
+   "evPercent": 19.632308728432115,
+   "foundAt": "2026-11-17T03:14:19.632Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -3,
+   "valueAtPick": 0,
+   "projection": 2.8684079413064025,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718125-62-threes",
+   "gameDate": "2026-11-16",
+   "gameId": 21718125,
+   "matchup": "PHX @ DEN",
+   "playerId": 62,
+   "playerName": "Miles Bridges",
+   "teamAbbreviation": "PHX",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": -120,
+   "vendor": "draftkings",
+   "modelProbability": 0.6517962024629453,
+   "evPercent": 19.49597045153999,
+   "foundAt": "2026-11-17T03:14:19.632Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 3,
+   "valueAtPick": 0,
+   "projection": 0.9934525937542742,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718125-246-points_rebounds_assists",
+   "gameDate": "2026-11-16",
+   "gameId": 21718125,
+   "matchup": "PHX @ DEN",
+   "playerId": 246,
+   "playerName": "Nikola Jokic",
+   "teamAbbreviation": "DEN",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 54.5,
+   "americanOdds": -106,
+   "vendor": "fanduel",
+   "modelProbability": 0.6138787264096353,
+   "evPercent": 19.300960038098935,
+   "foundAt": "2026-11-17T03:14:19.632Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -3,
+   "valueAtPick": 30,
+   "projection": 56.7712298690707,
+   "latestValue": 30,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 536,
+ "calls": 548,
  "note": null,
  "checkpointsTaken": {
   "21718118": [
@@ -4014,7 +4241,8 @@
    "end-q3"
   ],
   "21718125": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
