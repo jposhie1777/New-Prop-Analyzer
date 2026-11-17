@@ -1,56 +1,56 @@
 {
  "date": "2026-11-16",
- "updatedAt": "2026-11-17T01:32:16.046Z",
+ "updatedAt": "2026-11-17T01:36:16.656Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718118,
    "matchup": "ORL @ BOS",
    "status": "3rd Qtr",
-   "homeScore": 52,
-   "visitorScore": 55
+   "homeScore": 57,
+   "visitorScore": 60
   },
   {
    "gameId": 21718119,
    "matchup": "CHI @ CLE",
    "status": "3rd Qtr",
-   "homeScore": 72,
-   "visitorScore": 61
+   "homeScore": 74,
+   "visitorScore": 66
   },
   {
    "gameId": 21718120,
    "matchup": "MEM @ WAS",
    "status": "3rd Qtr",
-   "homeScore": 73,
-   "visitorScore": 71
+   "homeScore": 77,
+   "visitorScore": 76
   },
   {
    "gameId": 21718121,
    "matchup": "PHI @ BKN",
    "status": "2nd Qtr",
-   "homeScore": 43,
-   "visitorScore": 63
+   "homeScore": 45,
+   "visitorScore": 64
   },
   {
    "gameId": 21718122,
    "matchup": "HOU @ MIA",
    "status": "2nd Qtr",
    "homeScore": 54,
-   "visitorScore": 35
+   "visitorScore": 37
   },
   {
    "gameId": 21718123,
    "matchup": "POR @ MIN",
    "status": "1st Qtr",
-   "homeScore": 14,
-   "visitorScore": 19
+   "homeScore": 24,
+   "visitorScore": 24
   },
   {
    "gameId": 21718124,
    "matchup": "GSW @ NOP",
    "status": "1st Qtr",
-   "homeScore": 26,
-   "visitorScore": 7
+   "homeScore": 35,
+   "visitorScore": 9
   },
   {
    "gameId": 21718125,
@@ -116,7 +116,7 @@
    "scoreMargin": 6,
    "valueAtPick": 5,
    "projection": 15.19681151827353,
-   "latestValue": 7,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -937,7 +937,7 @@
    "scoreMargin": 7,
    "valueAtPick": 13,
    "projection": 31.792605051192833,
-   "latestValue": 19,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -1365,7 +1365,7 @@
    "scoreMargin": -10,
    "valueAtPick": 6,
    "projection": 10.404856057907592,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -1379,7 +1379,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 291,
+ "calls": 299,
  "note": null,
  "checkpointsTaken": {
   "21718118": [
