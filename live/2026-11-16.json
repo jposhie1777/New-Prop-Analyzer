@@ -1,12 +1,12 @@
 {
  "date": "2026-11-16",
- "updatedAt": "2026-11-17T01:55:20.327Z",
+ "updatedAt": "2026-11-17T01:59:16.706Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718118,
    "matchup": "ORL @ BOS",
-   "status": "3rd Qtr",
+   "status": "4th Qtr",
    "homeScore": 77,
    "visitorScore": 75
   },
@@ -14,15 +14,15 @@
    "gameId": 21718119,
    "matchup": "CHI @ CLE",
    "status": "4th Qtr",
-   "homeScore": 92,
-   "visitorScore": 81
+   "homeScore": 95,
+   "visitorScore": 88
   },
   {
    "gameId": 21718120,
    "matchup": "MEM @ WAS",
    "status": "4th Qtr",
-   "homeScore": 89,
-   "visitorScore": 101
+   "homeScore": 91,
+   "visitorScore": 105
   },
   {
    "gameId": 21718121,
@@ -34,23 +34,23 @@
   {
    "gameId": 21718122,
    "matchup": "HOU @ MIA",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 62,
-   "visitorScore": 46
+   "visitorScore": 48
   },
   {
    "gameId": 21718123,
    "matchup": "POR @ MIN",
    "status": "2nd Qtr",
    "homeScore": 41,
-   "visitorScore": 42
+   "visitorScore": 45
   },
   {
    "gameId": 21718124,
    "matchup": "GSW @ NOP",
    "status": "2nd Qtr",
    "homeScore": 47,
-   "visitorScore": 21
+   "visitorScore": 28
   },
   {
    "gameId": 21718125,
@@ -214,7 +214,7 @@
    "scoreMargin": 6,
    "valueAtPick": 3,
    "projection": 8.663448359347488,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -577,7 +577,7 @@
    "scoreMargin": 9,
    "valueAtPick": 9,
    "projection": 23.607514780408877,
-   "latestValue": 21,
+   "latestValue": 24,
    "tags": [
     "Best bet",
     "Over",
@@ -708,7 +708,7 @@
    "scoreMargin": -9,
    "valueAtPick": 2,
    "projection": 3.4953173039596273,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Over",
     "Rebounds",
@@ -1300,7 +1300,7 @@
    "scoreMargin": -10,
    "valueAtPick": 5,
    "projection": 8.856259080780582,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -1501,7 +1501,7 @@
    "scoreMargin": -24,
    "valueAtPick": 0,
    "projection": 8.319220870596416,
-   "latestValue": 3,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -1667,7 +1667,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 25.147543966676544,
-   "latestValue": 6,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -2076,7 +2076,7 @@
    "scoreMargin": 9,
    "valueAtPick": 22,
    "projection": 31.5782325034822,
-   "latestValue": 23,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Over",
@@ -2175,7 +2175,7 @@
    "scoreMargin": -9,
    "valueAtPick": 15,
    "projection": 18.780133571110124,
-   "latestValue": 15,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -2240,7 +2240,7 @@
    "scoreMargin": -14,
    "valueAtPick": 19,
    "projection": 24.734901923720557,
-   "latestValue": 21,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Under",
@@ -2339,7 +2339,7 @@
    "scoreMargin": 14,
    "valueAtPick": 3,
    "projection": 3.8086522669299754,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -2384,14 +2384,182 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718118-3547276-points",
+   "gameDate": "2026-11-16",
+   "gameId": 21718118,
+   "matchup": "ORL @ BOS",
+   "playerId": 3547276,
+   "playerName": "Payton Pritchard",
+   "teamAbbreviation": "BOS",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 11.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6125999788063341,
+   "evPercent": 23.745195718879497,
+   "foundAt": "2026-11-17T01:56:16.300Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 2,
+   "valueAtPick": 8,
+   "projection": 10.745908014496536,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718118-56677827-points",
+   "gameDate": "2026-11-16",
+   "gameId": 21718118,
+   "matchup": "ORL @ BOS",
+   "playerId": 56677827,
+   "playerName": "Anthony Black",
+   "teamAbbreviation": "ORL",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 15.5,
+   "americanOdds": -122,
+   "vendor": "caesars",
+   "modelProbability": 0.6608752762611485,
+   "evPercent": 20.257632237684398,
+   "foundAt": "2026-11-17T01:56:16.300Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -2,
+   "valueAtPick": 13,
+   "projection": 16.78352034011282,
+   "latestValue": 13,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718118-172-rebounds_assists",
+   "gameDate": "2026-11-16",
+   "gameId": 21718118,
+   "matchup": "ORL @ BOS",
+   "playerId": 172,
+   "playerName": "Paul George",
+   "teamAbbreviation": "BOS",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 11.5,
+   "americanOdds": -158,
+   "vendor": "fanduel",
+   "modelProbability": 0.7282395416646341,
+   "evPercent": 18.915064398402293,
+   "foundAt": "2026-11-17T01:56:16.300Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 2,
+   "valueAtPick": 9,
+   "projection": 10.54261608378212,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718118-434-rebounds_assists",
+   "gameDate": "2026-11-16",
+   "gameId": 21718118,
+   "matchup": "ORL @ BOS",
+   "playerId": 434,
+   "playerName": "Jayson Tatum",
+   "teamAbbreviation": "BOS",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 18.5,
+   "americanOdds": -132,
+   "vendor": "fanduel",
+   "modelProbability": 0.674694133303272,
+   "evPercent": 18.582605247241734,
+   "foundAt": "2026-11-17T01:56:16.300Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 2,
+   "valueAtPick": 15,
+   "projection": 17.577391365407486,
+   "latestValue": 15,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Foul trouble",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718118-473-rebounds_assists",
+   "gameDate": "2026-11-16",
+   "gameId": 21718118,
+   "matchup": "ORL @ BOS",
+   "playerId": 473,
+   "playerName": "Derrick White",
+   "teamAbbreviation": "BOS",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": 112,
+   "vendor": "fanduel",
+   "modelProbability": 0.5568317830497408,
+   "evPercent": 18.048338006545062,
+   "foundAt": "2026-11-17T01:56:16.300Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 2,
+   "valueAtPick": 4,
+   "projection": 5.293705078125,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 357,
+ "calls": 368,
  "note": null,
  "checkpointsTaken": {
   "21718118": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718119": [
    "end-q1",
