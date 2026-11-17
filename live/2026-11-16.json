@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "updatedAt": "2026-11-17T02:38:18.558Z",
+ "updatedAt": "2026-11-17T02:42:18.503Z",
  "state": "running",
  "games": [
   {
@@ -28,36 +28,36 @@
    "gameId": 21718121,
    "matchup": "PHI @ BKN",
    "status": "4th Qtr",
-   "homeScore": 95,
-   "visitorScore": 105
+   "homeScore": 101,
+   "visitorScore": 106
   },
   {
    "gameId": 21718122,
    "matchup": "HOU @ MIA",
    "status": "4th Qtr",
-   "homeScore": 115,
-   "visitorScore": 92
+   "homeScore": 117,
+   "visitorScore": 97
   },
   {
    "gameId": 21718123,
    "matchup": "POR @ MIN",
    "status": "3rd Qtr",
-   "homeScore": 68,
+   "homeScore": 71,
    "visitorScore": 58
   },
   {
    "gameId": 21718124,
    "matchup": "GSW @ NOP",
    "status": "3rd Qtr",
-   "homeScore": 73,
-   "visitorScore": 52
+   "homeScore": 75,
+   "visitorScore": 54
   },
   {
    "gameId": 21718125,
    "matchup": "PHX @ DEN",
    "status": "2nd Qtr",
-   "homeScore": 26,
-   "visitorScore": 22
+   "homeScore": 29,
+   "visitorScore": 29
   }
  ],
  "picks": [
@@ -1990,7 +1990,7 @@
    "scoreMargin": 16,
    "valueAtPick": 4,
    "projection": 11.753554960373439,
-   "latestValue": 14,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -2921,7 +2921,7 @@
    "scoreMargin": 25,
    "valueAtPick": 18,
    "projection": 28.828135622494734,
-   "latestValue": 23,
+   "latestValue": 24,
    "tags": [
     "Best bet",
     "Over",
@@ -3330,7 +3330,7 @@
    "scoreMargin": 10,
    "valueAtPick": 44,
    "projection": 53.47238767038786,
-   "latestValue": 44,
+   "latestValue": 45,
    "tags": [
     "Best bet",
     "Over",
@@ -3397,7 +3397,7 @@
    "scoreMargin": -10,
    "valueAtPick": 27,
    "projection": 30.808451933040317,
-   "latestValue": 27,
+   "latestValue": 29,
    "tags": [
     "Best bet",
     "Under",
@@ -3576,7 +3576,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 465,
+ "calls": 473,
  "note": null,
  "checkpointsTaken": {
   "21718118": [
