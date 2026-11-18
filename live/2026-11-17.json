@@ -1,20 +1,20 @@
 {
  "date": "2026-11-17",
- "updatedAt": "2026-11-18T01:17:12.718Z",
+ "updatedAt": "2026-11-18T01:21:12.828Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718126,
    "matchup": "NYK @ TOR",
    "status": "2nd Qtr",
-   "homeScore": 36,
-   "visitorScore": 29
+   "homeScore": 41,
+   "visitorScore": 35
   },
   {
    "gameId": 21718127,
    "matchup": "POR @ MIN",
    "status": "1st Qtr",
-   "homeScore": 4,
+   "homeScore": 8,
    "visitorScore": 5
   },
   {
@@ -22,7 +22,7 @@
    "matchup": "DET @ SAS",
    "status": "1st Qtr",
    "homeScore": 8,
-   "visitorScore": 2
+   "visitorScore": 4
   },
   {
    "gameId": 21718129,
@@ -95,7 +95,7 @@
    "scoreMargin": -6,
    "valueAtPick": 2,
    "projection": 12.484099604988483,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -128,7 +128,7 @@
    "scoreMargin": -6,
    "valueAtPick": 7,
    "projection": 14.230790544666142,
-   "latestValue": 7,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -206,7 +206,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 172,
+ "calls": 180,
  "note": null,
  "checkpointsTaken": {
   "21718126": [
