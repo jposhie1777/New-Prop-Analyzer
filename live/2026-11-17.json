@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "updatedAt": "2026-11-18T04:10:19.337Z",
+ "updatedAt": "2026-11-18T04:19:19.804Z",
  "state": "running",
  "games": [
   {
@@ -27,16 +27,16 @@
   {
    "gameId": 21718129,
    "matchup": "CHA @ LAL",
-   "status": "2026-11-18T04:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 8,
+   "visitorScore": 12
   },
   {
    "gameId": 21718130,
    "matchup": "UTA @ LAC",
    "status": "2nd Qtr",
-   "homeScore": 29,
-   "visitorScore": 41
+   "homeScore": 37,
+   "visitorScore": 44
   }
  ],
  "picks": [
@@ -1735,7 +1735,7 @@
    "scoreMargin": -6,
    "valueAtPick": 0,
    "projection": 4.745985700219845,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Under",
@@ -1879,7 +1879,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 551,
+ "calls": 569,
  "note": null,
  "checkpointsTaken": {
   "21718126": [
