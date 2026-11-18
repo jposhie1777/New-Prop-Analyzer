@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "updatedAt": "2026-11-18T05:12:54.276Z",
+ "updatedAt": "2026-11-18T05:16:54.741Z",
  "state": "running",
  "games": [
   {
@@ -28,15 +28,15 @@
    "gameId": 21718129,
    "matchup": "CHA @ LAL",
    "status": "2nd Qtr",
-   "homeScore": 54,
-   "visitorScore": 62
+   "homeScore": 59,
+   "visitorScore": 66
   },
   {
    "gameId": 21718130,
    "matchup": "UTA @ LAC",
    "status": "3rd Qtr",
-   "homeScore": 81,
-   "visitorScore": 86
+   "homeScore": 83,
+   "visitorScore": 88
   }
  ],
  "picks": [
@@ -1801,7 +1801,7 @@
    "scoreMargin": -6,
    "valueAtPick": 4,
    "projection": 10.951506947522528,
-   "latestValue": 15,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -1933,7 +1933,7 @@
    "scoreMargin": 4,
    "valueAtPick": 3,
    "projection": 10.834672105778012,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -2208,9 +2208,174 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718129-667378-points",
+   "gameDate": "2026-11-17",
+   "gameId": 21718129,
+   "matchup": "CHA @ LAL",
+   "playerId": 667378,
+   "playerName": "Naz Reid",
+   "teamAbbreviation": "CHA",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 28.5,
+   "americanOdds": -110,
+   "vendor": "draftkings",
+   "modelProbability": 0.6522679985622621,
+   "evPercent": 24.523890634613686,
+   "foundAt": "2026-11-18T05:16:54.039Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 7,
+   "valueAtPick": 19,
+   "projection": 26.764967932132308,
+   "latestValue": 19,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718129-17895858-rebounds_assists",
+   "gameDate": "2026-11-17",
+   "gameId": 21718129,
+   "matchup": "CHA @ LAL",
+   "playerId": 17895858,
+   "playerName": "Quentin Grimes",
+   "teamAbbreviation": "LAL",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": 130,
+   "vendor": "fanduel",
+   "modelProbability": 0.5370126652991762,
+   "evPercent": 23.512913018810533,
+   "foundAt": "2026-11-18T05:16:54.039Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -7,
+   "valueAtPick": 3,
+   "projection": 6.727610475,
+   "latestValue": 3,
+   "tags": [
+    "Over",
+    "Reb+Ast",
+    "Hot shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718129-1057384362-points",
+   "gameDate": "2026-11-17",
+   "gameId": 21718129,
+   "matchup": "CHA @ LAL",
+   "playerId": 1057384362,
+   "playerName": "Ryan Kalkbrenner",
+   "teamAbbreviation": "CHA",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 7.5,
+   "americanOdds": -120,
+   "vendor": "fanduel",
+   "modelProbability": 0.6651910021586609,
+   "evPercent": 21.951683729087847,
+   "foundAt": "2026-11-18T05:16:54.039Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 7,
+   "valueAtPick": 6,
+   "projection": 8.592795799974759,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718129-1057384156-points_rebounds",
+   "gameDate": "2026-11-17",
+   "gameId": 21718129,
+   "matchup": "CHA @ LAL",
+   "playerId": 1057384156,
+   "playerName": "Sion James",
+   "teamAbbreviation": "CHA",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.5964850382693266,
+   "evPercent": 20.489977730403975,
+   "foundAt": "2026-11-18T05:16:54.039Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 7,
+   "valueAtPick": 0,
+   "projection": 5.357419327163295,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718129-666923-points",
+   "gameDate": "2026-11-17",
+   "gameId": 21718129,
+   "matchup": "CHA @ LAL",
+   "playerId": 666923,
+   "playerName": "Matisse Thybulle",
+   "teamAbbreviation": "LAL",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": 120,
+   "vendor": "fanduel",
+   "modelProbability": 0.5437850879815841,
+   "evPercent": 19.632719355948502,
+   "foundAt": "2026-11-18T05:16:54.039Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -7,
+   "valueAtPick": 6,
+   "projection": 9.84291048504502,
+   "latestValue": 6,
+   "tags": [
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 116,
+ "calls": 127,
  "note": null,
  "checkpointsTaken": {
   "21718126": [
@@ -2229,7 +2394,8 @@
    "end-q3"
   ],
   "21718129": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718130": [
    "end-q1",
