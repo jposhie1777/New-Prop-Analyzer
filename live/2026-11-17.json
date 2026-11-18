@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "updatedAt": "2026-11-18T01:38:13.485Z",
+ "updatedAt": "2026-11-18T01:42:13.614Z",
  "state": "running",
  "games": [
   {
@@ -13,8 +13,8 @@
   {
    "gameId": 21718127,
    "matchup": "POR @ MIN",
-   "status": "1st Qtr",
-   "homeScore": 28,
+   "status": "2nd Qtr",
+   "homeScore": 29,
    "visitorScore": 17
   },
   {
@@ -22,7 +22,7 @@
    "matchup": "DET @ SAS",
    "status": "1st Qtr",
    "homeScore": 31,
-   "visitorScore": 23
+   "visitorScore": 26
   },
   {
    "gameId": 21718129,
@@ -370,14 +370,183 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718127-56677747-points_assists",
+   "gameDate": "2026-11-17",
+   "gameId": 21718127,
+   "matchup": "POR @ MIN",
+   "playerId": 56677747,
+   "playerName": "Scoot Henderson",
+   "teamAbbreviation": "POR",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 11.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.6689764604642743,
+   "evPercent": 23.590566424755743,
+   "foundAt": "2026-11-18T01:39:13.219Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -12,
+   "valueAtPick": 0,
+   "projection": 9.461064412419647,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718127-3547259-rebounds",
+   "gameDate": "2026-11-17",
+   "gameId": 21718127,
+   "matchup": "POR @ MIN",
+   "playerId": 3547259,
+   "playerName": "Jaden McDaniels",
+   "teamAbbreviation": "MIN",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": 100,
+   "vendor": "betmgm",
+   "modelProbability": 0.6114923823306029,
+   "evPercent": 22.298476466120576,
+   "foundAt": "2026-11-18T01:39:13.219Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 12,
+   "valueAtPick": 2,
+   "projection": 6.210559774410161,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718127-214-rebounds",
+   "gameDate": "2026-11-17",
+   "gameId": 21718127,
+   "matchup": "POR @ MIN",
+   "playerId": 214,
+   "playerName": "Jrue Holiday",
+   "teamAbbreviation": "POR",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": 130,
+   "vendor": "draftkings",
+   "modelProbability": 0.5220363228473073,
+   "evPercent": 20.06835425488067,
+   "foundAt": "2026-11-18T01:39:13.219Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -12,
+   "valueAtPick": 0,
+   "projection": 2.3954172839506165,
+   "latestValue": 0,
+   "tags": [
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718127-17896031-threes",
+   "gameDate": "2026-11-17",
+   "gameId": 21718127,
+   "matchup": "POR @ MIN",
+   "playerId": 17896031,
+   "playerName": "Nah'Shon Hyland",
+   "teamAbbreviation": "MIN",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -130,
+   "vendor": "draftkings",
+   "modelProbability": 0.6749692309994786,
+   "evPercent": 19.41763317683083,
+   "foundAt": "2026-11-18T01:39:13.219Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 12,
+   "valueAtPick": 1,
+   "projection": 1.9414539164353817,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718127-56677817-points",
+   "gameDate": "2026-11-17",
+   "gameId": 21718127,
+   "matchup": "POR @ MIN",
+   "playerId": 56677817,
+   "playerName": "Sidy Cissoko",
+   "teamAbbreviation": "POR",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": 110,
+   "vendor": "fanatics",
+   "modelProbability": 0.5684298358656728,
+   "evPercent": 19.370265531791286,
+   "foundAt": "2026-11-18T01:39:13.219Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -12,
+   "valueAtPick": 0,
+   "projection": 4.893472084049833,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 217,
+ "calls": 229,
  "note": null,
  "checkpointsTaken": {
   "21718126": [
    "end-q1",
    "halftime"
+  ],
+  "21718127": [
+   "end-q1"
   ]
  }
 }
