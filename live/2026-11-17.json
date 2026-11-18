@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "updatedAt": "2026-11-18T03:41:17.967Z",
+ "updatedAt": "2026-11-18T04:06:19.883Z",
  "state": "running",
  "games": [
   {
@@ -34,9 +34,9 @@
   {
    "gameId": 21718130,
    "matchup": "UTA @ LAC",
-   "status": "2026-11-18T03:30:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 29,
+   "visitorScore": 35
   }
  ],
  "picks": [
@@ -1712,9 +1712,174 @@
     "gradedAt": "2026-11-18T03:38:17.859Z"
    },
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718130-1091343544-rebounds_assists",
+   "gameDate": "2026-11-17",
+   "gameId": 21718130,
+   "matchup": "UTA @ LAC",
+   "playerId": 1091343544,
+   "playerName": "Keaton Wagler",
+   "teamAbbreviation": "LAC",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": 104,
+   "vendor": "fanduel",
+   "modelProbability": 0.6074865742253465,
+   "evPercent": 23.92726114197068,
+   "foundAt": "2026-11-18T04:06:18.850Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -6,
+   "valueAtPick": 0,
+   "projection": 4.745985700219845,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718130-666581-points",
+   "gameDate": "2026-11-17",
+   "gameId": 21718130,
+   "matchup": "UTA @ LAC",
+   "playerId": 666581,
+   "playerName": "Darius Garland",
+   "teamAbbreviation": "LAC",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 31.5,
+   "americanOdds": -106,
+   "vendor": "fanduel",
+   "modelProbability": 0.6345360198011669,
+   "evPercent": 23.315490640604143,
+   "foundAt": "2026-11-18T04:06:18.850Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -6,
+   "valueAtPick": 13,
+   "projection": 34.00705820393113,
+   "latestValue": 13,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718130-666609-points",
+   "gameDate": "2026-11-17",
+   "gameId": 21718130,
+   "matchup": "UTA @ LAC",
+   "playerId": 666609,
+   "playerName": "Rui Hachimura",
+   "teamAbbreviation": "LAC",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 12.5,
+   "americanOdds": -110,
+   "vendor": "draftkings",
+   "modelProbability": 0.6440257643886658,
+   "evPercent": 22.95037320147255,
+   "foundAt": "2026-11-18T04:06:18.850Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -6,
+   "valueAtPick": 4,
+   "projection": 10.951506947522528,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718130-356-points_rebounds",
+   "gameDate": "2026-11-17",
+   "gameId": 21718130,
+   "matchup": "UTA @ LAC",
+   "playerId": 356,
+   "playerName": "Josh Okogie",
+   "teamAbbreviation": "UTA",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": -106,
+   "vendor": "fanduel",
+   "modelProbability": 0.6308081622622586,
+   "evPercent": 22.59102021323138,
+   "foundAt": "2026-11-18T04:06:18.850Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 6,
+   "valueAtPick": 0,
+   "projection": 6.235181856495857,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718130-1091342427-rebounds_assists",
+   "gameDate": "2026-11-17",
+   "gameId": 21718130,
+   "matchup": "UTA @ LAC",
+   "playerId": 1091342427,
+   "playerName": "Darryn Peterson",
+   "teamAbbreviation": "UTA",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 8.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.61843846122281,
+   "evPercent": 22.47506781079178,
+   "foundAt": "2026-11-18T04:06:18.850Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 6,
+   "valueAtPick": 2,
+   "projection": 7.5954197348548265,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 489,
+ "calls": 543,
  "note": null,
  "checkpointsTaken": {
   "21718126": [
@@ -1731,6 +1896,9 @@
    "end-q1",
    "halftime",
    "end-q3"
+  ],
+  "21718130": [
+   "end-q1"
   ]
  }
 }
