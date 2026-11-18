@@ -1,14 +1,14 @@
 {
  "date": "2026-11-17",
- "updatedAt": "2026-11-18T02:21:16.789Z",
+ "updatedAt": "2026-11-18T02:25:15.623Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718126,
    "matchup": "NYK @ TOR",
-   "status": "3rd Qtr",
-   "homeScore": 83,
-   "visitorScore": 80
+   "status": "4th Qtr",
+   "homeScore": 86,
+   "visitorScore": 82
   },
   {
    "gameId": 21718127,
@@ -95,7 +95,7 @@
    "scoreMargin": -6,
    "valueAtPick": 2,
    "projection": 12.484099604988483,
-   "latestValue": 11,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -1122,7 +1122,7 @@
    "scoreMargin": -3,
    "valueAtPick": 8,
    "projection": 10.226509402299826,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Under",
     "Pts+Reb",
@@ -1200,7 +1200,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 320,
+ "calls": 328,
  "note": null,
  "checkpointsTaken": {
   "21718126": [
