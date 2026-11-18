@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "updatedAt": "2026-11-18T01:42:13.614Z",
+ "updatedAt": "2026-11-18T01:45:14.894Z",
  "state": "running",
  "games": [
   {
@@ -15,13 +15,13 @@
    "matchup": "POR @ MIN",
    "status": "2nd Qtr",
    "homeScore": 29,
-   "visitorScore": 17
+   "visitorScore": 22
   },
   {
    "gameId": 21718128,
    "matchup": "DET @ SAS",
    "status": "1st Qtr",
-   "homeScore": 31,
+   "homeScore": 33,
    "visitorScore": 26
   },
   {
@@ -536,9 +536,175 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718128-17896075-points_assists",
+   "gameDate": "2026-11-17",
+   "gameId": 21718128,
+   "matchup": "DET @ SAS",
+   "playerId": 17896075,
+   "playerName": "Cade Cunningham",
+   "teamAbbreviation": "DET",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 29.5,
+   "americanOdds": 104,
+   "vendor": "fanduel",
+   "modelProbability": 0.6045527735694485,
+   "evPercent": 23.328765808167496,
+   "foundAt": "2026-11-18T01:44:13.400Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -7,
+   "valueAtPick": 5,
+   "projection": 27.588820691399476,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718128-3547246-rebounds",
+   "gameDate": "2026-11-17",
+   "gameId": 21718128,
+   "matchup": "DET @ SAS",
+   "playerId": 3547246,
+   "playerName": "Devin Vassell",
+   "teamAbbreviation": "SAS",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": 120,
+   "vendor": "draftkings",
+   "modelProbability": 0.5534409856128493,
+   "evPercent": 21.75701683482685,
+   "foundAt": "2026-11-18T01:44:13.400Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 7,
+   "valueAtPick": 3,
+   "projection": 5.773597133954931,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718128-1028240128-threes",
+   "gameDate": "2026-11-17",
+   "gameId": 21718128,
+   "matchup": "DET @ SAS",
+   "playerId": 1028240128,
+   "playerName": "Daniss Jenkins",
+   "teamAbbreviation": "DET",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": -105,
+   "vendor": "betmgm",
+   "modelProbability": 0.6229501224169814,
+   "evPercent": 21.623595329029712,
+   "foundAt": "2026-11-18T01:44:13.400Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -7,
+   "valueAtPick": 0,
+   "projection": 1.0858379404727405,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718128-1057262518-rebounds",
+   "gameDate": "2026-11-17",
+   "gameId": 21718128,
+   "matchup": "DET @ SAS",
+   "playerId": 1057262518,
+   "playerName": "Dylan Harper",
+   "teamAbbreviation": "SAS",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": -105,
+   "vendor": "draftkings",
+   "modelProbability": 0.611490400713198,
+   "evPercent": 19.38622109162438,
+   "foundAt": "2026-11-18T01:44:13.400Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 7,
+   "valueAtPick": 1,
+   "projection": 5.2105456066743825,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718128-38017649-threes",
+   "gameDate": "2026-11-17",
+   "gameId": 21718128,
+   "matchup": "DET @ SAS",
+   "playerId": 38017649,
+   "playerName": "Julian Champagnie",
+   "teamAbbreviation": "SAS",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": 110,
+   "vendor": "draftkings",
+   "modelProbability": 0.5637401763452989,
+   "evPercent": 18.385437032512787,
+   "foundAt": "2026-11-18T01:44:13.400Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 7,
+   "valueAtPick": 3,
+   "projection": 4.270509131351767,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 229,
+ "calls": 239,
  "note": null,
  "checkpointsTaken": {
   "21718126": [
@@ -546,6 +712,9 @@
    "halftime"
   ],
   "21718127": [
+   "end-q1"
+  ],
+  "21718128": [
    "end-q1"
   ]
  }
