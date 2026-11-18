@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "updatedAt": "2026-11-18T02:53:16.395Z",
+ "updatedAt": "2026-11-18T02:57:17.921Z",
  "state": "running",
  "games": [
   {
@@ -8,21 +8,21 @@
    "matchup": "NYK @ TOR",
    "status": "4th Qtr",
    "homeScore": 102,
-   "visitorScore": 108
+   "visitorScore": 111
   },
   {
    "gameId": 21718127,
    "matchup": "POR @ MIN",
    "status": "3rd Qtr",
-   "homeScore": 66,
-   "visitorScore": 67
+   "homeScore": 71,
+   "visitorScore": 76
   },
   {
    "gameId": 21718128,
    "matchup": "DET @ SAS",
    "status": "3rd Qtr",
-   "homeScore": 70,
-   "visitorScore": 77
+   "homeScore": 72,
+   "visitorScore": 78
   },
   {
    "gameId": 21718129,
@@ -128,7 +128,7 @@
    "scoreMargin": -6,
    "valueAtPick": 7,
    "projection": 14.230790544666142,
-   "latestValue": 14,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Over",
@@ -161,7 +161,7 @@
    "scoreMargin": -6,
    "valueAtPick": 10,
    "projection": 29.016150135177657,
-   "latestValue": 31,
+   "latestValue": 32,
    "tags": [
     "Best bet",
     "Under",
@@ -393,7 +393,7 @@
    "scoreMargin": -12,
    "valueAtPick": 0,
    "projection": 9.461064412419647,
-   "latestValue": 0,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -461,7 +461,7 @@
    "scoreMargin": -12,
    "valueAtPick": 0,
    "projection": 2.3954172839506165,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Under",
     "Rebounds",
@@ -892,7 +892,7 @@
    "scoreMargin": -1,
    "valueAtPick": 12,
    "projection": 20.960169366241047,
-   "latestValue": 14,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Over",
@@ -1024,7 +1024,7 @@
    "scoreMargin": 1,
    "valueAtPick": 0,
    "projection": 0.7405009652980133,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Over",
@@ -1090,7 +1090,7 @@
    "scoreMargin": -3,
    "valueAtPick": 1,
    "projection": 1.1357465146050105,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Over",
     "3PM",
@@ -1198,9 +1198,174 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718128-666604-points",
+   "gameDate": "2026-11-17",
+   "gameId": 21718128,
+   "matchup": "DET @ SAS",
+   "playerId": 666604,
+   "playerName": "Javonte Green",
+   "teamAbbreviation": "DET",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": 106,
+   "vendor": "fanduel",
+   "modelProbability": 0.6065010841184948,
+   "evPercent": 24.93922332840992,
+   "foundAt": "2026-11-18T02:57:16.190Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 6,
+   "valueAtPick": 6,
+   "projection": 6.9100007216642165,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718128-101-threes",
+   "gameDate": "2026-11-17",
+   "gameId": 21718128,
+   "matchup": "DET @ SAS",
+   "playerId": 101,
+   "playerName": "John Collins",
+   "teamAbbreviation": "DET",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 310,
+   "vendor": "fanduel",
+   "modelProbability": 0.3023602199118073,
+   "evPercent": 23.96769016384097,
+   "foundAt": "2026-11-18T02:57:16.190Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 6,
+   "valueAtPick": 1,
+   "projection": 1.1402604586252467,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718128-3547246-rebounds_assists",
+   "gameDate": "2026-11-17",
+   "gameId": 21718128,
+   "matchup": "DET @ SAS",
+   "playerId": 3547246,
+   "playerName": "Devin Vassell",
+   "teamAbbreviation": "SAS",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": 140,
+   "vendor": "fanduel",
+   "modelProbability": 0.5114040004500087,
+   "evPercent": 22.73696010800208,
+   "foundAt": "2026-11-18T02:57:16.190Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -6,
+   "valueAtPick": 8,
+   "projection": 9.54509146926937,
+   "latestValue": 8,
+   "tags": [
+    "Over",
+    "Reb+Ast",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718128-38017649-rebounds",
+   "gameDate": "2026-11-17",
+   "gameId": 21718128,
+   "matchup": "DET @ SAS",
+   "playerId": 38017649,
+   "playerName": "Julian Champagnie",
+   "teamAbbreviation": "SAS",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 6.5,
+   "americanOdds": -150,
+   "vendor": "caesars",
+   "modelProbability": 0.731363580988109,
+   "evPercent": 21.89393016468484,
+   "foundAt": "2026-11-18T02:57:16.190Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -6,
+   "valueAtPick": 5,
+   "projection": 5.817825704127537,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Foul trouble",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718128-1028025261-threes",
+   "gameDate": "2026-11-17",
+   "gameId": 21718128,
+   "matchup": "DET @ SAS",
+   "playerId": 1028025261,
+   "playerName": "Stephon Castle",
+   "teamAbbreviation": "SAS",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 225,
+   "vendor": "fanduel",
+   "modelProbability": 0.37410813136243937,
+   "evPercent": 21.585142692792793,
+   "foundAt": "2026-11-18T02:57:16.190Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -6,
+   "valueAtPick": 1,
+   "projection": 1.2769160321951243,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "3PM",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 384,
+ "calls": 395,
  "note": null,
  "checkpointsTaken": {
   "21718126": [
@@ -1214,7 +1379,8 @@
   ],
   "21718128": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ]
  }
 }
