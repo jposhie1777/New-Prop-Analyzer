@@ -1,28 +1,28 @@
 {
  "date": "2026-11-17",
- "updatedAt": "2026-11-18T02:41:16.056Z",
+ "updatedAt": "2026-11-18T02:45:16.723Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718126,
    "matchup": "NYK @ TOR",
    "status": "4th Qtr",
-   "homeScore": 95,
-   "visitorScore": 93
+   "homeScore": 98,
+   "visitorScore": 98
   },
   {
    "gameId": 21718127,
    "matchup": "POR @ MIN",
    "status": "3rd Qtr",
-   "homeScore": 54,
-   "visitorScore": 60
+   "homeScore": 58,
+   "visitorScore": 65
   },
   {
    "gameId": 21718128,
    "matchup": "DET @ SAS",
    "status": "3rd Qtr",
-   "homeScore": 64,
-   "visitorScore": 63
+   "homeScore": 66,
+   "visitorScore": 70
   },
   {
    "gameId": 21718129,
@@ -95,7 +95,7 @@
    "scoreMargin": -6,
    "valueAtPick": 2,
    "projection": 12.484099604988483,
-   "latestValue": 13,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Under",
@@ -260,7 +260,7 @@
    "scoreMargin": -4,
    "valueAtPick": 14,
    "projection": 23.75660597792823,
-   "latestValue": 21,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Under",
@@ -559,7 +559,7 @@
    "scoreMargin": -7,
    "valueAtPick": 5,
    "projection": 27.588820691399476,
-   "latestValue": 23,
+   "latestValue": 28,
    "tags": [
     "Best bet",
     "Under",
@@ -758,7 +758,7 @@
    "scoreMargin": -1,
    "valueAtPick": 17,
    "projection": 23.058432619787467,
-   "latestValue": 18,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -825,7 +825,7 @@
    "scoreMargin": -1,
    "valueAtPick": 2,
    "projection": 3.8835162322816643,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -892,7 +892,7 @@
    "scoreMargin": -1,
    "valueAtPick": 12,
    "projection": 20.960169366241047,
-   "latestValue": 12,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -1200,7 +1200,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 360,
+ "calls": 368,
  "note": null,
  "checkpointsTaken": {
   "21718126": [
