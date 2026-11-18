@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "updatedAt": "2026-11-18T06:35:57.501Z",
+ "updatedAt": "2026-11-18T06:39:57.674Z",
  "state": "running",
  "games": [
   {
@@ -28,8 +28,8 @@
    "gameId": 21718129,
    "matchup": "CHA @ LAL",
    "status": "4th Qtr",
-   "homeScore": 106,
-   "visitorScore": 110
+   "homeScore": 111,
+   "visitorScore": 111
   },
   {
    "gameId": 21718130,
@@ -2205,7 +2205,7 @@
    "scoreMargin": -4,
    "valueAtPick": 8,
    "projection": 20.42697087619206,
-   "latestValue": 46,
+   "latestValue": 51,
    "tags": [
     "Best bet",
     "Under",
@@ -2623,7 +2623,7 @@
    "scoreMargin": -13,
    "valueAtPick": 34,
    "projection": 40.92604999674935,
-   "latestValue": 39,
+   "latestValue": 41,
    "tags": [
     "Best bet",
     "Under",
@@ -2658,7 +2658,7 @@
    "scoreMargin": 13,
    "valueAtPick": 17,
    "projection": 20.082383159548062,
-   "latestValue": 25,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Under",
@@ -2770,7 +2770,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 292,
+ "calls": 300,
  "note": null,
  "checkpointsTaken": {
   "21718126": [
