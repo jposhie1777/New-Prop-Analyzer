@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "updatedAt": "2026-11-18T02:57:17.921Z",
+ "updatedAt": "2026-11-18T03:01:17.093Z",
  "state": "running",
  "games": [
   {
@@ -14,15 +14,15 @@
    "gameId": 21718127,
    "matchup": "POR @ MIN",
    "status": "3rd Qtr",
-   "homeScore": 71,
-   "visitorScore": 76
+   "homeScore": 77,
+   "visitorScore": 78
   },
   {
    "gameId": 21718128,
    "matchup": "DET @ SAS",
-   "status": "3rd Qtr",
+   "status": "4th Qtr",
    "homeScore": 72,
-   "visitorScore": 78
+   "visitorScore": 80
   },
   {
    "gameId": 21718129,
@@ -925,7 +925,7 @@
    "scoreMargin": 1,
    "valueAtPick": 16,
    "projection": 28.437837097082625,
-   "latestValue": 16,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Over",
@@ -1365,7 +1365,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 395,
+ "calls": 403,
  "note": null,
  "checkpointsTaken": {
   "21718126": [
