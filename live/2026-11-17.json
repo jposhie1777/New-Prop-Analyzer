@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "updatedAt": "2026-11-18T03:05:16.900Z",
+ "updatedAt": "2026-11-18T03:09:16.865Z",
  "state": "running",
  "games": [
   {
@@ -14,15 +14,15 @@
    "gameId": 21718127,
    "matchup": "POR @ MIN",
    "status": "4th Qtr",
-   "homeScore": 79,
-   "visitorScore": 79
+   "homeScore": 82,
+   "visitorScore": 83
   },
   {
    "gameId": 21718128,
    "matchup": "DET @ SAS",
    "status": "4th Qtr",
-   "homeScore": 73,
-   "visitorScore": 82
+   "homeScore": 75,
+   "visitorScore": 86
   },
   {
    "gameId": 21718129,
@@ -433,7 +433,7 @@
    "scoreMargin": -12,
    "valueAtPick": 0,
    "projection": 9.461064412419647,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -501,7 +501,7 @@
    "scoreMargin": -12,
    "valueAtPick": 0,
    "projection": 2.3954172839506165,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Under",
     "Rebounds",
@@ -899,7 +899,7 @@
    "scoreMargin": 1,
    "valueAtPick": 6,
    "projection": 11.660238794863027,
-   "latestValue": 6,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -965,7 +965,7 @@
    "scoreMargin": 1,
    "valueAtPick": 16,
    "projection": 28.437837097082625,
-   "latestValue": 19,
+   "latestValue": 24,
    "tags": [
     "Best bet",
     "Over",
@@ -1031,7 +1031,7 @@
    "scoreMargin": -1,
    "valueAtPick": 16,
    "projection": 30.135557318053436,
-   "latestValue": 27,
+   "latestValue": 28,
    "tags": [
     "Best bet",
     "Under",
@@ -1446,7 +1446,7 @@
    "scoreMargin": 0,
    "valueAtPick": 10,
    "projection": 13.55092500234313,
-   "latestValue": 10,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -1547,7 +1547,7 @@
    "scoreMargin": 0,
    "valueAtPick": 7,
    "projection": 8.665150952659355,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -1594,7 +1594,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 415,
+ "calls": 423,
  "note": null,
  "checkpointsTaken": {
   "21718126": [
