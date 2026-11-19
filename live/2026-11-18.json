@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "updatedAt": "2026-11-19T02:56:19.887Z",
+ "updatedAt": "2026-11-19T03:00:20.626Z",
  "state": "running",
  "games": [
   {
@@ -43,21 +43,21 @@
    "matchup": "WAS @ TOR",
    "status": "4th Qtr",
    "homeScore": 99,
-   "visitorScore": 102
+   "visitorScore": 103
   },
   {
    "gameId": 21718137,
    "matchup": "DET @ NOP",
-   "status": "3rd Qtr",
+   "status": "4th Qtr",
    "homeScore": 86,
-   "visitorScore": 92
+   "visitorScore": 96
   },
   {
    "gameId": 21718138,
    "matchup": "ATL @ OKC",
    "status": "4th Qtr",
    "homeScore": 92,
-   "visitorScore": 94
+   "visitorScore": 97
   },
   {
    "gameId": 21718139,
@@ -69,9 +69,9 @@
   {
    "gameId": 21718140,
    "matchup": "GSW @ DAL",
-   "status": "3rd Qtr",
+   "status": "4th Qtr",
    "homeScore": 95,
-   "visitorScore": 72
+   "visitorScore": 74
   },
   {
    "gameId": 21718141,
@@ -2408,7 +2408,7 @@
    "scoreMargin": 2,
    "valueAtPick": 2,
    "projection": 4.692896244034838,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Over",
     "Assists",
@@ -2473,7 +2473,7 @@
    "scoreMargin": -10,
    "valueAtPick": 8,
    "projection": 35.27057853946126,
-   "latestValue": 19,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -2506,7 +2506,7 @@
    "scoreMargin": 10,
    "valueAtPick": 8,
    "projection": 26.81897680120693,
-   "latestValue": 25,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Over",
@@ -3500,7 +3500,7 @@
    "scoreMargin": -13,
    "valueAtPick": 4,
    "projection": 10.297871903167312,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -3632,7 +3632,7 @@
    "scoreMargin": -7,
    "valueAtPick": 1,
    "projection": 4.033992355772438,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -3698,7 +3698,7 @@
    "scoreMargin": -13,
    "valueAtPick": 8,
    "projection": 20.778456686757607,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -4096,7 +4096,7 @@
    "scoreMargin": -1,
    "valueAtPick": 34,
    "projection": 40.68455257665607,
-   "latestValue": 40,
+   "latestValue": 41,
    "tags": [
     "Best bet",
     "Under",
@@ -4396,7 +4396,7 @@
    "scoreMargin": 0,
    "valueAtPick": 24,
    "projection": 28.782847401902085,
-   "latestValue": 25,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Under",
@@ -4562,7 +4562,7 @@
    "scoreMargin": 6,
    "valueAtPick": 13,
    "projection": 15.901021272528444,
-   "latestValue": 13,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -4573,9 +4573,114 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718140-1091351802-rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718140,
+   "matchup": "GSW @ DAL",
+   "playerId": 1091351802,
+   "playerName": "Yaxel Lendeborg",
+   "teamAbbreviation": "GSW",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": -148,
+   "vendor": "caesars",
+   "modelProbability": 0.6832940622869621,
+   "evPercent": 14.497923950788238,
+   "foundAt": "2026-11-19T02:58:15.219Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -20,
+   "valueAtPick": 2,
+   "projection": 2.9358660552522307,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718140-1057262088-points",
+   "gameDate": "2026-11-18",
+   "gameId": 21718140,
+   "matchup": "GSW @ DAL",
+   "playerId": 1057262088,
+   "playerName": "Cooper Flagg",
+   "teamAbbreviation": "DAL",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 32.5,
+   "americanOdds": -140,
+   "vendor": "betmgm",
+   "modelProbability": 0.6569100671970652,
+   "evPercent": 12.613154376639768,
+   "foundAt": "2026-11-19T02:58:15.219Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 20,
+   "valueAtPick": 29,
+   "projection": 33.92645106022256,
+   "latestValue": 29,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Foul trouble",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718140-56677858-points",
+   "gameDate": "2026-11-18",
+   "gameId": 21718140,
+   "matchup": "GSW @ DAL",
+   "playerId": 56677858,
+   "playerName": "Brandin Podziemski",
+   "teamAbbreviation": "GSW",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 11.5,
+   "americanOdds": -120,
+   "vendor": "betmgm",
+   "modelProbability": 0.5773479944549178,
+   "evPercent": 5.847132316734949,
+   "foundAt": "2026-11-19T02:58:15.219Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -20,
+   "valueAtPick": 8,
+   "projection": 12.130758071035014,
+   "latestValue": 8,
+   "tags": [
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 526,
+ "calls": 538,
  "note": null,
  "checkpointsTaken": {
   "21718131": [
@@ -4620,7 +4725,8 @@
   ],
   "21718140": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ]
  }
 }
