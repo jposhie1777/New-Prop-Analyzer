@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "updatedAt": "2026-11-19T04:29:47.445Z",
+ "updatedAt": "2026-11-19T04:33:48.247Z",
  "state": "running",
  "games": [
   {
@@ -63,8 +63,8 @@
    "gameId": 21718139,
    "matchup": "BOS @ DEN",
    "status": "3rd Qtr",
-   "homeScore": 69,
-   "visitorScore": 67
+   "homeScore": 77,
+   "visitorScore": 74
   },
   {
    "gameId": 21718140,
@@ -78,14 +78,14 @@
    "matchup": "UTA @ LAL",
    "status": "3rd Qtr",
    "homeScore": 54,
-   "visitorScore": 56
+   "visitorScore": 62
   },
   {
    "gameId": 21718142,
    "matchup": "PHX @ SAC",
    "status": "3rd Qtr",
    "homeScore": 74,
-   "visitorScore": 87
+   "visitorScore": 89
   }
  ],
  "picks": [
@@ -4999,7 +4999,7 @@
    "scoreMargin": -6,
    "valueAtPick": 4,
    "projection": 13.32044893139713,
-   "latestValue": 13,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -5032,7 +5032,7 @@
    "scoreMargin": -6,
    "valueAtPick": 9,
    "projection": 32.85543555901008,
-   "latestValue": 23,
+   "latestValue": 28,
    "tags": [
     "Best bet",
     "Under",
@@ -5065,7 +5065,7 @@
    "scoreMargin": -6,
    "valueAtPick": 1,
    "projection": 3.0571451822916664,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Over",
@@ -5197,7 +5197,7 @@
    "scoreMargin": 5,
    "valueAtPick": 1,
    "projection": 3.2291570379791343,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -5395,7 +5395,7 @@
    "scoreMargin": -5,
    "valueAtPick": 4,
    "projection": 8.154839631569345,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -5528,7 +5528,7 @@
    "scoreMargin": -12,
    "valueAtPick": 10,
    "projection": 21.232346079926977,
-   "latestValue": 12,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -5907,7 +5907,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 21,
+ "calls": 29,
  "note": null,
  "checkpointsTaken": {
   "21718131": [
