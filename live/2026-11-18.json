@@ -1,14 +1,14 @@
 {
  "date": "2026-11-18",
- "updatedAt": "2026-11-19T01:15:14.719Z",
+ "updatedAt": "2026-11-19T01:19:12.297Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718131,
    "matchup": "MEM @ CLE",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 72,
-   "visitorScore": 70
+   "visitorScore": 71
   },
   {
    "gameId": 21718132,
@@ -21,8 +21,8 @@
    "gameId": 21718133,
    "matchup": "MIL @ MIA",
    "status": "2nd Qtr",
-   "homeScore": 61,
-   "visitorScore": 38
+   "homeScore": 66,
+   "visitorScore": 42
   },
   {
    "gameId": 21718134,
@@ -42,21 +42,21 @@
    "gameId": 21718136,
    "matchup": "WAS @ TOR",
    "status": "2nd Qtr",
-   "homeScore": 25,
-   "visitorScore": 32
+   "homeScore": 31,
+   "visitorScore": 37
   },
   {
    "gameId": 21718137,
    "matchup": "DET @ NOP",
    "status": "1st Qtr",
-   "homeScore": 2,
-   "visitorScore": 5
+   "homeScore": 7,
+   "visitorScore": 8
   },
   {
    "gameId": 21718138,
    "matchup": "ATL @ OKC",
    "status": "1st Qtr",
-   "homeScore": 5,
+   "homeScore": 12,
    "visitorScore": 5
   },
   {
@@ -70,7 +70,7 @@
    "gameId": 21718140,
    "matchup": "GSW @ DAL",
    "status": "1st Qtr",
-   "homeScore": 6,
+   "homeScore": 15,
    "visitorScore": 6
   },
   {
@@ -1210,7 +1210,7 @@
    "scoreMargin": -6,
    "valueAtPick": 0,
    "projection": 4.011566162109375,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Over",
@@ -1417,13 +1417,180 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718131-208-points_rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718131,
+   "matchup": "MEM @ CLE",
+   "playerId": 208,
+   "playerName": "Mario Hezonja",
+   "teamAbbreviation": "CLE",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 23.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.6620088199219765,
+   "evPercent": 24.27183110816049,
+   "foundAt": "2026-11-19T01:16:11.327Z",
+   "clockLabel": "Halftime",
+   "period": 3,
+   "scoreMargin": 1,
+   "valueAtPick": 16,
+   "projection": 25.448356220027932,
+   "latestValue": 16,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718131-1057395754-assists",
+   "gameDate": "2026-11-18",
+   "gameId": 21718131,
+   "matchup": "MEM @ CLE",
+   "playerId": 1057395754,
+   "playerName": "Tyrese Proctor",
+   "teamAbbreviation": "CLE",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 105,
+   "vendor": "draftkings",
+   "modelProbability": 0.6051194461325857,
+   "evPercent": 24.04948645718006,
+   "foundAt": "2026-11-19T01:16:11.327Z",
+   "clockLabel": "Halftime",
+   "period": 3,
+   "scoreMargin": 1,
+   "valueAtPick": 1,
+   "projection": 2.9559221974392687,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718131-322-points_rebounds_assists",
+   "gameDate": "2026-11-18",
+   "gameId": 21718131,
+   "matchup": "MEM @ CLE",
+   "playerId": 322,
+   "playerName": "Donovan Mitchell",
+   "teamAbbreviation": "CLE",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 34.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6117766679166415,
+   "evPercent": 23.57888691916159,
+   "foundAt": "2026-11-19T01:16:11.327Z",
+   "clockLabel": "Halftime",
+   "period": 3,
+   "scoreMargin": 1,
+   "valueAtPick": 16,
+   "projection": 36.44727756341545,
+   "latestValue": 16,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718131-192-rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718131,
+   "matchup": "MEM @ CLE",
+   "playerId": 192,
+   "playerName": "James Harden",
+   "teamAbbreviation": "CLE",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": -155,
+   "vendor": "betmgm",
+   "modelProbability": 0.7510695614491423,
+   "evPercent": 23.563056883568567,
+   "foundAt": "2026-11-19T01:16:11.327Z",
+   "clockLabel": "Halftime",
+   "period": 3,
+   "scoreMargin": 1,
+   "valueAtPick": 1,
+   "projection": 2.4887284407416947,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718131-1028048549-assists",
+   "gameDate": "2026-11-18",
+   "gameId": 21718131,
+   "matchup": "MEM @ CLE",
+   "playerId": 1028048549,
+   "playerName": "Cam Spencer",
+   "teamAbbreviation": "MEM",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 7.5,
+   "americanOdds": 110,
+   "vendor": "draftkings",
+   "modelProbability": 0.5742209440134082,
+   "evPercent": 20.58639824281572,
+   "foundAt": "2026-11-19T01:16:11.327Z",
+   "clockLabel": "Halftime",
+   "period": 3,
+   "scoreMargin": -1,
+   "valueAtPick": 4,
+   "projection": 7.955030803906837,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Hot shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 244,
+ "calls": 256,
  "note": null,
  "checkpointsTaken": {
   "21718131": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718132": [
    "end-q1",
