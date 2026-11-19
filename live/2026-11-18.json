@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "updatedAt": "2026-11-19T03:57:18.187Z",
+ "updatedAt": "2026-11-19T04:00:25.807Z",
  "state": "running",
  "games": [
   {
@@ -84,8 +84,8 @@
    "gameId": 21718142,
    "matchup": "PHX @ SAC",
    "status": "2nd Qtr",
-   "homeScore": 52,
-   "visitorScore": 62
+   "homeScore": 60,
+   "visitorScore": 65
   }
  ],
  "picks": [
@@ -5098,7 +5098,7 @@
    "scoreMargin": 5,
    "valueAtPick": 5,
    "projection": 19.4998741644154,
-   "latestValue": 10,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -5571,9 +5571,176 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718142-406-points_rebounds_assists",
+   "gameDate": "2026-11-18",
+   "gameId": 21718142,
+   "matchup": "PHX @ SAC",
+   "playerId": 406,
+   "playerName": "Domantas Sabonis",
+   "teamAbbreviation": "SAC",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 37.5,
+   "americanOdds": -108,
+   "vendor": "fanduel",
+   "modelProbability": 0.6465795272386523,
+   "evPercent": 24.5264274681849,
+   "foundAt": "2026-11-19T04:00:17.931Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -5,
+   "valueAtPick": 22,
+   "projection": 35.41116924736798,
+   "latestValue": 22,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718142-3547249-points",
+   "gameDate": "2026-11-18",
+   "gameId": 21718142,
+   "matchup": "PHX @ SAC",
+   "playerId": 3547249,
+   "playerName": "Precious Achiuwa",
+   "teamAbbreviation": "SAC",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": -134,
+   "vendor": "caesars",
+   "modelProbability": 0.7114136026531148,
+   "evPercent": 24.23192762748423,
+   "foundAt": "2026-11-19T04:00:17.931Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -5,
+   "valueAtPick": 0,
+   "projection": 2.971381336204478,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718142-38017688-rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718142,
+   "matchup": "PHX @ SAC",
+   "playerId": 38017688,
+   "playerName": "Keegan Murray",
+   "teamAbbreviation": "SAC",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": -155,
+   "vendor": "betmgm",
+   "modelProbability": 0.7515234702093688,
+   "evPercent": 23.637732195734863,
+   "foundAt": "2026-11-19T04:00:17.931Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -5,
+   "valueAtPick": 3,
+   "projection": 4.487134309216476,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718142-66-threes",
+   "gameDate": "2026-11-18",
+   "gameId": 21718142,
+   "matchup": "PHX @ SAC",
+   "playerId": 66,
+   "playerName": "Dillon Brooks",
+   "teamAbbreviation": "PHX",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": -120,
+   "vendor": "draftkings",
+   "modelProbability": 0.6732344548110842,
+   "evPercent": 23.42631671536546,
+   "foundAt": "2026-11-19T04:00:17.931Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 5,
+   "valueAtPick": 3,
+   "projection": 4.096348859226369,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718142-1091338860-assists",
+   "gameDate": "2026-11-18",
+   "gameId": 21718142,
+   "matchup": "PHX @ SAC",
+   "playerId": 1091338860,
+   "playerName": "Darius Acuff Jr.",
+   "teamAbbreviation": "SAC",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": 120,
+   "vendor": "caesars",
+   "modelProbability": 0.5584652222497883,
+   "evPercent": 22.862348894953442,
+   "foundAt": "2026-11-19T04:00:17.931Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -5,
+   "valueAtPick": 2,
+   "projection": 5.1793433559792526,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Hot shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 675,
+ "calls": 685,
  "note": null,
  "checkpointsTaken": {
   "21718131": [
@@ -5629,7 +5796,8 @@
    "end-q1"
   ],
   "21718142": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
