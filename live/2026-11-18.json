@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "updatedAt": "2026-11-19T02:45:17.052Z",
+ "updatedAt": "2026-11-19T02:49:16.220Z",
  "state": "running",
  "games": [
   {
@@ -21,8 +21,8 @@
    "gameId": 21718133,
    "matchup": "MIL @ MIA",
    "status": "4th Qtr",
-   "homeScore": 130,
-   "visitorScore": 112
+   "homeScore": 135,
+   "visitorScore": 114
   },
   {
    "gameId": 21718134,
@@ -36,42 +36,42 @@
    "matchup": "CHI @ BKN",
    "status": "4th Qtr",
    "homeScore": 107,
-   "visitorScore": 135
+   "visitorScore": 137
   },
   {
    "gameId": 21718136,
    "matchup": "WAS @ TOR",
    "status": "4th Qtr",
-   "homeScore": 88,
-   "visitorScore": 97
+   "homeScore": 90,
+   "visitorScore": 100
   },
   {
    "gameId": 21718137,
    "matchup": "DET @ NOP",
    "status": "3rd Qtr",
-   "homeScore": 77,
-   "visitorScore": 82
+   "homeScore": 78,
+   "visitorScore": 85
   },
   {
    "gameId": 21718138,
    "matchup": "ATL @ OKC",
-   "status": "3rd Qtr",
-   "homeScore": 79,
+   "status": "4th Qtr",
+   "homeScore": 83,
    "visitorScore": 83
   },
   {
    "gameId": 21718139,
    "matchup": "BOS @ DEN",
-   "status": "2026-11-19T02:30:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 2,
+   "visitorScore": 8
   },
   {
    "gameId": 21718140,
    "matchup": "GSW @ DAL",
    "status": "3rd Qtr",
-   "homeScore": 84,
-   "visitorScore": 60
+   "homeScore": 92,
+   "visitorScore": 64
   },
   {
    "gameId": 21718141,
@@ -2426,7 +2426,7 @@
    "scoreMargin": 10,
    "valueAtPick": 8,
    "projection": 26.81897680120693,
-   "latestValue": 21,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Over",
@@ -2459,7 +2459,7 @@
    "scoreMargin": 10,
    "valueAtPick": 11,
    "projection": 33.28988347556522,
-   "latestValue": 30,
+   "latestValue": 35,
    "tags": [
     "Best bet",
     "Over",
@@ -3684,7 +3684,7 @@
    "scoreMargin": 13,
    "valueAtPick": 2,
    "projection": 2.8407666015624997,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -3992,7 +3992,7 @@
    "scoreMargin": -1,
    "valueAtPick": 34,
    "projection": 40.68455257665607,
-   "latestValue": 37,
+   "latestValue": 39,
    "tags": [
     "Best bet",
     "Under",
@@ -4138,9 +4138,173 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718138-175-rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718138,
+   "matchup": "ATL @ OKC",
+   "playerId": 175,
+   "playerName": "Shai Gilgeous-Alexander",
+   "teamAbbreviation": "OKC",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": 172,
+   "vendor": "fanduel",
+   "modelProbability": 0.45596043250057705,
+   "evPercent": 24.021237640156954,
+   "foundAt": "2026-11-19T02:47:14.819Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": 0,
+   "valueAtPick": 3,
+   "projection": 3.605219034375,
+   "latestValue": 3,
+   "tags": [
+    "Under",
+    "Rebounds",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718138-38017706-rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718138,
+   "matchup": "ATL @ OKC",
+   "playerId": 38017706,
+   "playerName": "Jaylin Williams",
+   "teamAbbreviation": "OKC",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -192,
+   "vendor": "fanduel",
+   "modelProbability": 0.8093429485153927,
+   "evPercent": 23.087573420049324,
+   "foundAt": "2026-11-19T02:47:14.819Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": 0,
+   "valueAtPick": 1,
+   "projection": 1.6421826327449365,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718138-17896078-points",
+   "gameDate": "2026-11-18",
+   "gameId": 21718138,
+   "matchup": "ATL @ OKC",
+   "playerId": 17896078,
+   "playerName": "Aaron Wiggins",
+   "teamAbbreviation": "ATL",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 10.5,
+   "americanOdds": -125,
+   "vendor": "draftkings",
+   "modelProbability": 0.6832100549298467,
+   "evPercent": 22.97780988737239,
+   "foundAt": "2026-11-19T02:47:14.819Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": 0,
+   "valueAtPick": 8,
+   "projection": 12.020300417872178,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718138-1028037477-points",
+   "gameDate": "2026-11-18",
+   "gameId": 21718138,
+   "matchup": "ATL @ OKC",
+   "playerId": 1028037477,
+   "playerName": "Ajay Mitchell",
+   "teamAbbreviation": "OKC",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 13.5,
+   "americanOdds": -115,
+   "vendor": "caesars",
+   "modelProbability": 0.6478180900098507,
+   "evPercent": 21.113816827928588,
+   "foundAt": "2026-11-19T02:47:14.819Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": 0,
+   "valueAtPick": 11,
+   "projection": 14.653614783031507,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718138-201-points_rebounds_assists",
+   "gameDate": "2026-11-18",
+   "gameId": 21718138,
+   "matchup": "ATL @ OKC",
+   "playerId": 201,
+   "playerName": "Isaiah Hartenstein",
+   "teamAbbreviation": "OKC",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 29.5,
+   "americanOdds": 104,
+   "vendor": "fanduel",
+   "modelProbability": 0.5855934870597934,
+   "evPercent": 19.461071360197856,
+   "foundAt": "2026-11-19T02:47:14.819Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": 0,
+   "valueAtPick": 24,
+   "projection": 28.782847401902085,
+   "latestValue": 24,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 494,
+ "calls": 506,
  "note": null,
  "checkpointsTaken": {
   "21718131": [
@@ -4179,7 +4343,8 @@
   ],
   "21718138": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718140": [
    "end-q1",
