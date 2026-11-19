@@ -1,49 +1,49 @@
 {
  "date": "2026-11-18",
- "updatedAt": "2026-11-19T02:10:18.669Z",
+ "updatedAt": "2026-11-19T02:14:19.977Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718131,
    "matchup": "MEM @ CLE",
    "status": "4th Qtr",
-   "homeScore": 112,
-   "visitorScore": 113
+   "homeScore": 117,
+   "visitorScore": 116
   },
   {
    "gameId": 21718132,
    "matchup": "HOU @ IND",
    "status": "4th Qtr",
-   "homeScore": 94,
-   "visitorScore": 108
+   "homeScore": 97,
+   "visitorScore": 112
   },
   {
    "gameId": 21718133,
    "matchup": "MIL @ MIA",
    "status": "3rd Qtr",
-   "homeScore": 95,
-   "visitorScore": 75
+   "homeScore": 103,
+   "visitorScore": 80
   },
   {
    "gameId": 21718134,
    "matchup": "PHI @ ORL",
    "status": "4th Qtr",
-   "homeScore": 104,
-   "visitorScore": 102
+   "homeScore": 106,
+   "visitorScore": 107
   },
   {
    "gameId": 21718135,
    "matchup": "CHI @ BKN",
    "status": "3rd Qtr",
-   "homeScore": 68,
-   "visitorScore": 101
+   "homeScore": 70,
+   "visitorScore": 107
   },
   {
    "gameId": 21718136,
    "matchup": "WAS @ TOR",
    "status": "3rd Qtr",
-   "homeScore": 69,
-   "visitorScore": 68
+   "homeScore": 70,
+   "visitorScore": 73
   },
   {
    "gameId": 21718137,
@@ -70,8 +70,8 @@
    "gameId": 21718140,
    "matchup": "GSW @ DAL",
    "status": "2nd Qtr",
-   "homeScore": 60,
-   "visitorScore": 47
+   "homeScore": 62,
+   "visitorScore": 49
   },
   {
    "gameId": 21718141,
@@ -111,7 +111,7 @@
    "scoreMargin": -7,
    "valueAtPick": 0,
    "projection": 0.9317068761067709,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Under",
@@ -639,7 +639,7 @@
    "scoreMargin": 11,
    "valueAtPick": 3,
    "projection": 10.611891833602863,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -672,7 +672,7 @@
    "scoreMargin": -11,
    "valueAtPick": 4,
    "projection": 14.482355358736081,
-   "latestValue": 12,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -805,7 +805,7 @@
    "scoreMargin": 16,
    "valueAtPick": 7,
    "projection": 10.814137752509083,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -873,7 +873,7 @@
    "scoreMargin": -16,
    "valueAtPick": 1,
    "projection": 3.1366809165385625,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Over",
@@ -1009,7 +1009,7 @@
    "scoreMargin": 16,
    "valueAtPick": 3,
    "projection": 13.735285427450183,
-   "latestValue": 15,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -1341,7 +1341,7 @@
    "scoreMargin": 5,
    "valueAtPick": 0,
    "projection": 1.5626077466498323,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Under",
@@ -1374,7 +1374,7 @@
    "scoreMargin": -5,
    "valueAtPick": 16,
    "projection": 27.15989938783352,
-   "latestValue": 22,
+   "latestValue": 24,
    "tags": [
     "Best bet",
     "Under",
@@ -1539,7 +1539,7 @@
    "scoreMargin": 1,
    "valueAtPick": 1,
    "projection": 2.4887284407416947,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -1709,7 +1709,7 @@
    "scoreMargin": 26,
    "valueAtPick": 1,
    "projection": 1.4765692672218333,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Under",
     "3PM",
@@ -1844,7 +1844,7 @@
    "scoreMargin": 25,
    "valueAtPick": 0,
    "projection": 2.49395878586361,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -2273,7 +2273,7 @@
    "scoreMargin": -10,
    "valueAtPick": 8,
    "projection": 35.27057853946126,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -2339,7 +2339,7 @@
    "scoreMargin": 10,
    "valueAtPick": 11,
    "projection": 33.28988347556522,
-   "latestValue": 21,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Over",
@@ -2639,7 +2639,7 @@
    "scoreMargin": 17,
    "valueAtPick": 7,
    "projection": 8.171774175922337,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -2740,7 +2740,7 @@
    "scoreMargin": -17,
    "valueAtPick": 2,
    "projection": 2.93645728515625,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -2808,7 +2808,7 @@
    "scoreMargin": -5,
    "valueAtPick": 14,
    "projection": 16.769681889425847,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -2842,7 +2842,7 @@
    "scoreMargin": -5,
    "valueAtPick": 16,
    "projection": 19.86670037513569,
-   "latestValue": 26,
+   "latestValue": 27,
    "tags": [
     "Best bet",
     "Under",
@@ -3042,7 +3042,7 @@
    "scoreMargin": -1,
    "valueAtPick": 23,
    "projection": 27.780180653626005,
-   "latestValue": 25,
+   "latestValue": 29,
    "tags": [
     "Best bet",
     "Under",
@@ -3415,9 +3415,175 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718140-56677858-points_rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718140,
+   "matchup": "GSW @ DAL",
+   "playerId": 56677858,
+   "playerName": "Brandin Podziemski",
+   "teamAbbreviation": "GSW",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 19.5,
+   "americanOdds": 110,
+   "vendor": "fanduel",
+   "modelProbability": 0.5932142547701901,
+   "evPercent": 24.57499350173993,
+   "foundAt": "2026-11-19T02:12:13.501Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -13,
+   "valueAtPick": 8,
+   "projection": 20.778456686757607,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718140-17896067-points_rebounds_assists",
+   "gameDate": "2026-11-18",
+   "gameId": 21718140,
+   "matchup": "GSW @ DAL",
+   "playerId": 17896067,
+   "playerName": "Santi Aldama",
+   "teamAbbreviation": "DAL",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 6.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6580090230585788,
+   "evPercent": 24.551707936088118,
+   "foundAt": "2026-11-19T02:12:13.501Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 13,
+   "valueAtPick": 0,
+   "projection": 5.105226205508491,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718140-1057262088-threes",
+   "gameDate": "2026-11-18",
+   "gameId": 21718140,
+   "matchup": "GSW @ DAL",
+   "playerId": 1057262088,
+   "playerName": "Cooper Flagg",
+   "teamAbbreviation": "DAL",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6151972841081967,
+   "evPercent": 24.269851389855734,
+   "foundAt": "2026-11-19T02:12:13.501Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 13,
+   "valueAtPick": 2,
+   "projection": 2.8407666015624997,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718140-1091351802-points_assists",
+   "gameDate": "2026-11-18",
+   "gameId": 21718140,
+   "matchup": "GSW @ DAL",
+   "playerId": 1091351802,
+   "playerName": "Yaxel Lendeborg",
+   "teamAbbreviation": "GSW",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 24.5,
+   "americanOdds": -108,
+   "vendor": "fanduel",
+   "modelProbability": 0.6334498822426399,
+   "evPercent": 21.997755098582505,
+   "foundAt": "2026-11-19T02:12:13.501Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -13,
+   "valueAtPick": 12,
+   "projection": 26.467044051466495,
+   "latestValue": 12,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718140-1028028244-threes",
+   "gameDate": "2026-11-18",
+   "gameId": 21718140,
+   "matchup": "GSW @ DAL",
+   "playerId": 1028028244,
+   "playerName": "Zaccharie Risacher",
+   "teamAbbreviation": "DAL",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": 200,
+   "vendor": "draftkings",
+   "modelProbability": 0.4057396973966041,
+   "evPercent": 21.721909218981228,
+   "foundAt": "2026-11-19T02:12:13.501Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 13,
+   "valueAtPick": 0,
+   "projection": 0.3269489583333334,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "3PM",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 405,
+ "calls": 417,
  "note": null,
  "checkpointsTaken": {
   "21718131": [
@@ -3456,7 +3622,8 @@
    "halftime"
   ],
   "21718140": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
