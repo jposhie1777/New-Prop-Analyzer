@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "updatedAt": "2026-11-19T02:07:15.677Z",
+ "updatedAt": "2026-11-19T02:10:18.669Z",
  "state": "running",
  "games": [
   {
@@ -8,49 +8,49 @@
    "matchup": "MEM @ CLE",
    "status": "4th Qtr",
    "homeScore": 112,
-   "visitorScore": 108
+   "visitorScore": 113
   },
   {
    "gameId": 21718132,
    "matchup": "HOU @ IND",
    "status": "4th Qtr",
-   "homeScore": 87,
-   "visitorScore": 106
+   "homeScore": 94,
+   "visitorScore": 108
   },
   {
    "gameId": 21718133,
    "matchup": "MIL @ MIA",
    "status": "3rd Qtr",
-   "homeScore": 93,
-   "visitorScore": 65
+   "homeScore": 95,
+   "visitorScore": 75
   },
   {
    "gameId": 21718134,
    "matchup": "PHI @ ORL",
    "status": "4th Qtr",
    "homeScore": 104,
-   "visitorScore": 98
+   "visitorScore": 102
   },
   {
    "gameId": 21718135,
    "matchup": "CHI @ BKN",
    "status": "3rd Qtr",
-   "homeScore": 66,
-   "visitorScore": 97
+   "homeScore": 68,
+   "visitorScore": 101
   },
   {
    "gameId": 21718136,
    "matchup": "WAS @ TOR",
    "status": "3rd Qtr",
-   "homeScore": 63,
-   "visitorScore": 66
+   "homeScore": 69,
+   "visitorScore": 68
   },
   {
    "gameId": 21718137,
    "matchup": "DET @ NOP",
    "status": "2nd Qtr",
-   "homeScore": 55,
-   "visitorScore": 60
+   "homeScore": 60,
+   "visitorScore": 67
   },
   {
    "gameId": 21718138,
@@ -573,7 +573,7 @@
    "scoreMargin": -13,
    "valueAtPick": 1,
    "projection": 5.929697514681209,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -672,7 +672,7 @@
    "scoreMargin": -11,
    "valueAtPick": 4,
    "projection": 14.482355358736081,
-   "latestValue": 4,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -1844,7 +1844,7 @@
    "scoreMargin": 25,
    "valueAtPick": 0,
    "projection": 2.49395878586361,
-   "latestValue": 1,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -1945,7 +1945,7 @@
    "scoreMargin": 2,
    "valueAtPick": 3,
    "projection": 6.282971797907904,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -2439,7 +2439,7 @@
    "scoreMargin": 0,
    "valueAtPick": 3,
    "projection": 12.201890831051298,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -2539,7 +2539,7 @@
    "scoreMargin": 0,
    "valueAtPick": 3,
    "projection": 24.862153907273743,
-   "latestValue": 13,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Under",
@@ -2842,7 +2842,7 @@
    "scoreMargin": -5,
    "valueAtPick": 16,
    "projection": 19.86670037513569,
-   "latestValue": 22,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Under",
@@ -3250,9 +3250,174 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718137-221-rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718137,
+   "matchup": "DET @ NOP",
+   "playerId": 221,
+   "playerName": "Kevin Huerter",
+   "teamAbbreviation": "DET",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6185334910371436,
+   "evPercent": 24.943765189503008,
+   "foundAt": "2026-11-19T02:10:13.416Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 7,
+   "valueAtPick": 0,
+   "projection": 1.111224869139736,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718137-666969-points_assists",
+   "gameDate": "2026-11-18",
+   "gameId": 21718137,
+   "matchup": "DET @ NOP",
+   "playerId": 666969,
+   "playerName": "Zion Williamson",
+   "teamAbbreviation": "NOP",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 23.5,
+   "americanOdds": -120,
+   "vendor": "fanduel",
+   "modelProbability": 0.6725004350299262,
+   "evPercent": 23.291746422153146,
+   "foundAt": "2026-11-19T02:10:13.416Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -7,
+   "valueAtPick": 13,
+   "projection": 25.937407636340765,
+   "latestValue": 13,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718137-3547256-rebounds_assists",
+   "gameDate": "2026-11-18",
+   "gameId": 21718137,
+   "matchup": "DET @ NOP",
+   "playerId": 3547256,
+   "playerName": "Saddiq Bey",
+   "teamAbbreviation": "NOP",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.5957628496737559,
+   "evPercent": 20.344095634098693,
+   "foundAt": "2026-11-19T02:10:13.416Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -7,
+   "valueAtPick": 4,
+   "projection": 6.969956590217814,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718137-1057274415-rebounds_assists",
+   "gameDate": "2026-11-18",
+   "gameId": 21718137,
+   "matchup": "DET @ NOP",
+   "playerId": 1057274415,
+   "playerName": "Derik Queen",
+   "teamAbbreviation": "NOP",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": 106,
+   "vendor": "fanduel",
+   "modelProbability": 0.5834976658956117,
+   "evPercent": 20.200519174496012,
+   "foundAt": "2026-11-19T02:10:13.416Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -7,
+   "valueAtPick": 1,
+   "projection": 4.033992355772438,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718137-1057267077-threes",
+   "gameDate": "2026-11-18",
+   "gameId": 21718137,
+   "matchup": "DET @ NOP",
+   "playerId": 1057267077,
+   "playerName": "Jeremiah Fears",
+   "teamAbbreviation": "NOP",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": -108,
+   "vendor": "fanduel",
+   "modelProbability": 0.6144028630842763,
+   "evPercent": 18.329440297712484,
+   "foundAt": "2026-11-19T02:10:13.416Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -7,
+   "valueAtPick": 1,
+   "projection": 1.8377392963497896,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 395,
+ "calls": 405,
  "note": null,
  "checkpointsTaken": {
   "21718131": [
@@ -3283,7 +3448,8 @@
    "halftime"
   ],
   "21718137": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718138": [
    "end-q1",
