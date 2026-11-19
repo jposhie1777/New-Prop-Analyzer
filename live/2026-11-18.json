@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "updatedAt": "2026-11-19T04:45:48.826Z",
+ "updatedAt": "2026-11-19T04:49:48.081Z",
  "state": "running",
  "games": [
   {
@@ -63,8 +63,8 @@
    "gameId": 21718139,
    "matchup": "BOS @ DEN",
    "status": "4th Qtr",
-   "homeScore": 84,
-   "visitorScore": 84
+   "homeScore": 86,
+   "visitorScore": 90
   },
   {
    "gameId": 21718140,
@@ -84,7 +84,7 @@
    "gameId": 21718142,
    "matchup": "PHX @ SAC",
    "status": "4th Qtr",
-   "homeScore": 84,
+   "homeScore": 86,
    "visitorScore": 99
   }
  ],
@@ -4966,7 +4966,7 @@
    "scoreMargin": 6,
    "valueAtPick": 6,
    "projection": 19.675696881533867,
-   "latestValue": 9,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -5164,7 +5164,7 @@
    "scoreMargin": -5,
    "valueAtPick": 4,
    "projection": 10.083498766997064,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -5231,7 +5231,7 @@
    "scoreMargin": -5,
    "valueAtPick": 0,
    "projection": 2.658111273444308,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Over",
     "Rebounds",
@@ -5460,7 +5460,7 @@
    "scoreMargin": 12,
    "valueAtPick": 10,
    "projection": 22.626962013571852,
-   "latestValue": 10,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -5727,7 +5727,7 @@
    "scoreMargin": -5,
    "valueAtPick": 2,
    "projection": 5.1793433559792526,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -5761,7 +5761,7 @@
    "scoreMargin": -2,
    "valueAtPick": 4,
    "projection": 5.91748120803833,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -6130,7 +6130,7 @@
    "scoreMargin": -15,
    "valueAtPick": 6,
    "projection": 8.617454966818528,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Over",
     "Reb+Ast",
@@ -6246,7 +6246,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 65,
+ "calls": 73,
  "note": null,
  "checkpointsTaken": {
   "21718131": [
