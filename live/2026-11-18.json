@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "updatedAt": "2026-11-19T04:41:47.976Z",
+ "updatedAt": "2026-11-19T04:45:48.826Z",
  "state": "running",
  "games": [
   {
@@ -63,8 +63,8 @@
    "gameId": 21718139,
    "matchup": "BOS @ DEN",
    "status": "4th Qtr",
-   "homeScore": 80,
-   "visitorScore": 82
+   "homeScore": 84,
+   "visitorScore": 84
   },
   {
    "gameId": 21718140,
@@ -77,15 +77,15 @@
    "gameId": 21718141,
    "matchup": "UTA @ LAL",
    "status": "3rd Qtr",
-   "homeScore": 63,
-   "visitorScore": 64
+   "homeScore": 72,
+   "visitorScore": 69
   },
   {
    "gameId": 21718142,
    "matchup": "PHX @ SAC",
-   "status": "3rd Qtr",
-   "homeScore": 77,
-   "visitorScore": 96
+   "status": "4th Qtr",
+   "homeScore": 84,
+   "visitorScore": 99
   }
  ],
  "picks": [
@@ -4933,7 +4933,7 @@
    "scoreMargin": -6,
    "valueAtPick": 1,
    "projection": 11.156554830199006,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -5231,7 +5231,7 @@
    "scoreMargin": -5,
    "valueAtPick": 0,
    "projection": 2.658111273444308,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Over",
     "Rebounds",
@@ -5362,7 +5362,7 @@
    "scoreMargin": 5,
    "valueAtPick": 2,
    "projection": 11.293512036310466,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -5660,7 +5660,7 @@
    "scoreMargin": -5,
    "valueAtPick": 3,
    "projection": 4.487134309216476,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -5828,7 +5828,7 @@
    "scoreMargin": -2,
    "valueAtPick": 3,
    "projection": 7.009527783431713,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -6073,9 +6073,180 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718142-18678058-points_rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718142,
+   "matchup": "PHX @ SAC",
+   "playerId": 18678058,
+   "playerName": "Jordan Goodwin",
+   "teamAbbreviation": "PHX",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 9.5,
+   "americanOdds": -132,
+   "vendor": "fanduel",
+   "modelProbability": 0.7091306914505016,
+   "evPercent": 24.63509122463361,
+   "foundAt": "2026-11-19T04:45:47.629Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": 15,
+   "valueAtPick": 6,
+   "projection": 8.247574665150115,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718142-1091338860-rebounds_assists",
+   "gameDate": "2026-11-18",
+   "gameId": 21718142,
+   "matchup": "PHX @ SAC",
+   "playerId": 1091338860,
+   "playerName": "Darius Acuff Jr.",
+   "teamAbbreviation": "SAC",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 8.5,
+   "americanOdds": 138,
+   "vendor": "fanduel",
+   "modelProbability": 0.5228135733605768,
+   "evPercent": 24.429630459817275,
+   "foundAt": "2026-11-19T04:45:47.629Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": -15,
+   "valueAtPick": 6,
+   "projection": 8.617454966818528,
+   "latestValue": 6,
+   "tags": [
+    "Over",
+    "Reb+Ast",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718142-406-points_rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718142,
+   "matchup": "PHX @ SAC",
+   "playerId": 406,
+   "playerName": "Domantas Sabonis",
+   "teamAbbreviation": "SAC",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 25.5,
+   "americanOdds": -122,
+   "vendor": "fanduel",
+   "modelProbability": 0.6789057076595484,
+   "evPercent": 23.53857959050798,
+   "foundAt": "2026-11-19T04:45:47.629Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": -15,
+   "valueAtPick": 21,
+   "projection": 27.263568744618688,
+   "latestValue": 21,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718142-38017727-points",
+   "gameDate": "2026-11-18",
+   "gameId": 21718142,
+   "matchup": "PHX @ SAC",
+   "playerId": 38017727,
+   "playerName": "Collin Gillespie",
+   "teamAbbreviation": "PHX",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 11.5,
+   "americanOdds": 110,
+   "vendor": "draftkings",
+   "modelProbability": 0.575418712393207,
+   "evPercent": 20.837929602573467,
+   "foundAt": "2026-11-19T04:45:47.629Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": 15,
+   "valueAtPick": 9,
+   "projection": 12.026252052729776,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718142-268-threes",
+   "gameDate": "2026-11-18",
+   "gameId": 21718142,
+   "matchup": "PHX @ SAC",
+   "playerId": 268,
+   "playerName": "Zach LaVine",
+   "teamAbbreviation": "SAC",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 108,
+   "vendor": "fanduel",
+   "modelProbability": 0.5761490691763469,
+   "evPercent": 19.83900638868017,
+   "foundAt": "2026-11-19T04:45:47.629Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": -15,
+   "valueAtPick": 2,
+   "projection": 2.7045429393736033,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 52,
+ "calls": 65,
  "note": null,
  "checkpointsTaken": {
   "21718131": [
@@ -6134,7 +6305,8 @@
   ],
   "21718142": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ]
  }
 }
