@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "updatedAt": "2026-11-19T01:49:13.365Z",
+ "updatedAt": "2026-11-19T01:52:16.992Z",
  "state": "running",
  "games": [
   {
@@ -15,49 +15,49 @@
    "matchup": "HOU @ IND",
    "status": "3rd Qtr",
    "homeScore": 76,
-   "visitorScore": 86
+   "visitorScore": 93
   },
   {
    "gameId": 21718133,
    "matchup": "MIL @ MIA",
    "status": "3rd Qtr",
-   "homeScore": 74,
+   "homeScore": 80,
    "visitorScore": 50
   },
   {
    "gameId": 21718134,
    "matchup": "PHI @ ORL",
    "status": "3rd Qtr",
-   "homeScore": 88,
-   "visitorScore": 87
+   "homeScore": 97,
+   "visitorScore": 92
   },
   {
    "gameId": 21718135,
    "matchup": "CHI @ BKN",
-   "status": "2nd Qtr",
-   "homeScore": 51,
-   "visitorScore": 76
+   "status": "3rd Qtr",
+   "homeScore": 57,
+   "visitorScore": 78
   },
   {
    "gameId": 21718136,
    "matchup": "WAS @ TOR",
-   "status": "2nd Qtr",
-   "homeScore": 47,
+   "status": "3rd Qtr",
+   "homeScore": 49,
    "visitorScore": 49
   },
   {
    "gameId": 21718137,
    "matchup": "DET @ NOP",
    "status": "2nd Qtr",
-   "homeScore": 42,
+   "homeScore": 44,
    "visitorScore": 44
   },
   {
    "gameId": 21718138,
    "matchup": "ATL @ OKC",
    "status": "2nd Qtr",
-   "homeScore": 35,
-   "visitorScore": 48
+   "homeScore": 41,
+   "visitorScore": 52
   },
   {
    "gameId": 21718139,
@@ -71,7 +71,7 @@
    "matchup": "GSW @ DAL",
    "status": "2nd Qtr",
    "homeScore": 47,
-   "visitorScore": 34
+   "visitorScore": 36
   },
   {
    "gameId": 21718141,
@@ -144,7 +144,7 @@
    "scoreMargin": 7,
    "valueAtPick": 7,
    "projection": 17.432450353401574,
-   "latestValue": 7,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -342,7 +342,7 @@
    "scoreMargin": 11,
    "valueAtPick": 6,
    "projection": 19.224989539290995,
-   "latestValue": 20,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Under",
@@ -375,7 +375,7 @@
    "scoreMargin": -11,
    "valueAtPick": 1,
    "projection": 2.8646738545384105,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Over",
@@ -540,7 +540,7 @@
    "scoreMargin": -13,
    "valueAtPick": 0,
    "projection": 3.941272813548898,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -705,7 +705,7 @@
    "scoreMargin": 11,
    "valueAtPick": 10,
    "projection": 21.661930617733695,
-   "latestValue": 10,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Over",
@@ -805,7 +805,7 @@
    "scoreMargin": 16,
    "valueAtPick": 7,
    "projection": 10.814137752509083,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -839,7 +839,7 @@
    "scoreMargin": -16,
    "valueAtPick": 9,
    "projection": 12.968179490462406,
-   "latestValue": 13,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -975,7 +975,7 @@
    "scoreMargin": -16,
    "valueAtPick": 4,
    "projection": 16.277058079922547,
-   "latestValue": 9,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -1709,7 +1709,7 @@
    "scoreMargin": 26,
    "valueAtPick": 1,
    "projection": 1.4765692672218333,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Under",
     "3PM",
@@ -2075,7 +2075,7 @@
    "scoreMargin": -2,
    "valueAtPick": 4,
    "projection": 8.266934364597159,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -2175,7 +2175,7 @@
    "scoreMargin": 2,
    "valueAtPick": 3,
    "projection": 8.953303188472809,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -2582,9 +2582,179 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718132-3547243-points",
+   "gameDate": "2026-11-18",
+   "gameId": 21718132,
+   "matchup": "HOU @ IND",
+   "playerId": 3547243,
+   "playerName": "Obi Toppin",
+   "teamAbbreviation": "IND",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": -140,
+   "vendor": "draftkings",
+   "modelProbability": 0.7251658053748886,
+   "evPercent": 24.314138064266633,
+   "foundAt": "2026-11-19T01:52:12.755Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -17,
+   "valueAtPick": 3,
+   "projection": 4.3815229466672365,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718132-56677825-rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718132,
+   "matchup": "HOU @ IND",
+   "playerId": 56677825,
+   "playerName": "Amen Thompson",
+   "teamAbbreviation": "HOU",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 8.5,
+   "americanOdds": 105,
+   "vendor": "draftkings",
+   "modelProbability": 0.5979279949444982,
+   "evPercent": 22.575238963622123,
+   "foundAt": "2026-11-19T01:52:12.755Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 17,
+   "valueAtPick": 7,
+   "projection": 8.171774175922337,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718132-1028028519-points",
+   "gameDate": "2026-11-18",
+   "gameId": 21718132,
+   "matchup": "HOU @ IND",
+   "playerId": 1028028519,
+   "playerName": "Reed Sheppard",
+   "teamAbbreviation": "HOU",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 16.5,
+   "americanOdds": 128,
+   "vendor": "fanduel",
+   "modelProbability": 0.528002667347637,
+   "evPercent": 20.38460815526124,
+   "foundAt": "2026-11-19T01:52:12.755Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 17,
+   "valueAtPick": 14,
+   "projection": 16.32945735384191,
+   "latestValue": 14,
+   "tags": [
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718132-493-assists",
+   "gameDate": "2026-11-18",
+   "gameId": 21718132,
+   "matchup": "HOU @ IND",
+   "playerId": 493,
+   "playerName": "Ivica Zubac",
+   "teamAbbreviation": "IND",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 260,
+   "vendor": "fanduel",
+   "modelProbability": 0.33200648436101154,
+   "evPercent": 19.522334369964156,
+   "foundAt": "2026-11-19T01:52:12.755Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -17,
+   "valueAtPick": 3,
+   "projection": 3.209095448014629,
+   "latestValue": 3,
+   "tags": [
+    "Over",
+    "Assists",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718132-3547250-rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718132,
+   "matchup": "HOU @ IND",
+   "playerId": 3547250,
+   "playerName": "Aaron Nesmith",
+   "teamAbbreviation": "IND",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": -120,
+   "vendor": "betmgm",
+   "modelProbability": 0.6438888388276529,
+   "evPercent": 18.046287118403036,
+   "foundAt": "2026-11-19T01:52:12.755Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -17,
+   "valueAtPick": 2,
+   "projection": 2.93645728515625,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 343,
+ "calls": 353,
  "note": null,
  "checkpointsTaken": {
   "21718131": [
@@ -2593,7 +2763,8 @@
   ],
   "21718132": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718133": [
    "end-q1",
