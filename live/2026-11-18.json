@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "updatedAt": "2026-11-19T03:15:19.932Z",
+ "updatedAt": "2026-11-19T03:19:16.426Z",
  "state": "running",
  "games": [
   {
@@ -49,43 +49,43 @@
    "gameId": 21718137,
    "matchup": "DET @ NOP",
    "status": "4th Qtr",
-   "homeScore": 96,
-   "visitorScore": 112
+   "homeScore": 101,
+   "visitorScore": 117
   },
   {
    "gameId": 21718138,
    "matchup": "ATL @ OKC",
-   "status": "4th Qtr",
+   "status": "Final",
    "homeScore": 112,
-   "visitorScore": 116
+   "visitorScore": 117
   },
   {
    "gameId": 21718139,
    "matchup": "BOS @ DEN",
    "status": "1st Qtr",
-   "homeScore": 22,
-   "visitorScore": 27
+   "homeScore": 24,
+   "visitorScore": 30
   },
   {
    "gameId": 21718140,
    "matchup": "GSW @ DAL",
    "status": "4th Qtr",
    "homeScore": 109,
-   "visitorScore": 86
+   "visitorScore": 88
   },
   {
    "gameId": 21718141,
    "matchup": "UTA @ LAL",
    "status": "1st Qtr",
-   "homeScore": 6,
-   "visitorScore": 9
+   "homeScore": 8,
+   "visitorScore": 11
   },
   {
    "gameId": 21718142,
    "matchup": "PHX @ SAC",
    "status": "1st Qtr",
-   "homeScore": 8,
-   "visitorScore": 9
+   "homeScore": 9,
+   "visitorScore": 14
   }
  ],
  "picks": [
@@ -2357,7 +2357,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 3,
+    "gradedAt": "2026-11-19T03:18:17.129Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -2390,7 +2394,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 6,
+    "gradedAt": "2026-11-19T03:18:17.129Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -2423,7 +2431,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 10,
+    "gradedAt": "2026-11-19T03:18:17.129Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -2455,7 +2467,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 7,
+    "gradedAt": "2026-11-19T03:18:17.129Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -2488,7 +2504,11 @@
     "Already 60%+ of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 1,
+    "gradedAt": "2026-11-19T03:18:17.129Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -2779,7 +2799,7 @@
    "scoreMargin": 0,
    "valueAtPick": 3,
    "projection": 24.862153907273743,
-   "latestValue": 27,
+   "latestValue": 30,
    "tags": [
     "Best bet",
     "Under",
@@ -3416,7 +3436,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 10,
+    "gradedAt": "2026-11-19T03:18:17.129Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -3449,7 +3473,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 14,
+    "gradedAt": "2026-11-19T03:18:17.129Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -3482,7 +3510,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 5,
+    "gradedAt": "2026-11-19T03:18:17.129Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -3515,7 +3547,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 19,
+    "gradedAt": "2026-11-19T03:18:17.129Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -3548,7 +3584,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 21,
+    "gradedAt": "2026-11-19T03:18:17.129Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -3606,7 +3646,7 @@
    "scoreMargin": -7,
    "valueAtPick": 13,
    "projection": 25.937407636340765,
-   "latestValue": 21,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Over",
@@ -3639,7 +3679,7 @@
    "scoreMargin": -7,
    "valueAtPick": 4,
    "projection": 6.969956590217814,
-   "latestValue": 10,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -3738,7 +3778,7 @@
    "scoreMargin": -13,
    "valueAtPick": 8,
    "projection": 20.778456686757607,
-   "latestValue": 14,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -4332,7 +4372,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 5,
+    "gradedAt": "2026-11-19T03:18:17.129Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -4365,7 +4409,11 @@
     "Under 60% of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 1,
+    "gradedAt": "2026-11-19T03:18:17.129Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -4398,7 +4446,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 14,
+    "gradedAt": "2026-11-19T03:18:17.129Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -4431,7 +4483,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 13,
+    "gradedAt": "2026-11-19T03:18:17.129Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -4456,7 +4512,7 @@
    "scoreMargin": 0,
    "valueAtPick": 24,
    "projection": 28.782847401902085,
-   "latestValue": 28,
+   "latestValue": 29,
    "tags": [
     "Best bet",
     "Under",
@@ -4464,7 +4520,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 29,
+    "gradedAt": "2026-11-19T03:18:17.129Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -4489,7 +4549,7 @@
    "scoreMargin": -6,
    "valueAtPick": 11,
    "projection": 15.45937128154014,
-   "latestValue": 12,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Under",
@@ -4588,7 +4648,7 @@
    "scoreMargin": 6,
    "valueAtPick": 17,
    "projection": 20.321548573548284,
-   "latestValue": 20,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Under",
@@ -4738,9 +4798,174 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718139-666679-points_rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718139,
+   "matchup": "BOS @ DEN",
+   "playerId": 666679,
+   "playerName": "Cameron Johnson",
+   "teamAbbreviation": "DEN",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 13.5,
+   "americanOdds": -122,
+   "vendor": "fanduel",
+   "modelProbability": 0.6861126840883316,
+   "evPercent": 24.850013006237393,
+   "foundAt": "2026-11-19T03:17:16.013Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -6,
+   "valueAtPick": 1,
+   "projection": 11.156554830199006,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718139-172-points_rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718139,
+   "matchup": "BOS @ DEN",
+   "playerId": 172,
+   "playerName": "Paul George",
+   "teamAbbreviation": "BOS",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 22.5,
+   "americanOdds": -125,
+   "vendor": "fanduel",
+   "modelProbability": 0.692723432188925,
+   "evPercent": 24.690217794006486,
+   "foundAt": "2026-11-19T03:17:16.013Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 6,
+   "valueAtPick": 6,
+   "projection": 19.675696881533867,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718139-38017709-points",
+   "gameDate": "2026-11-18",
+   "gameId": 21718139,
+   "matchup": "BOS @ DEN",
+   "playerId": 38017709,
+   "playerName": "Christian Braun",
+   "teamAbbreviation": "DEN",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 11.5,
+   "americanOdds": -108,
+   "vendor": "fanduel",
+   "modelProbability": 0.6461275089538516,
+   "evPercent": 24.43937209481588,
+   "foundAt": "2026-11-19T03:17:16.013Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -6,
+   "valueAtPick": 4,
+   "projection": 13.32044893139713,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718139-246-points_rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718139,
+   "matchup": "BOS @ DEN",
+   "playerId": 246,
+   "playerName": "Nikola Jokic",
+   "teamAbbreviation": "DEN",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 35.5,
+   "americanOdds": -106,
+   "vendor": "fanduel",
+   "modelProbability": 0.6394627552811645,
+   "evPercent": 24.272950554641405,
+   "foundAt": "2026-11-19T03:17:16.013Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -6,
+   "valueAtPick": 9,
+   "projection": 32.85543555901008,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718139-125-assists",
+   "gameDate": "2026-11-18",
+   "gameId": 21718139,
+   "matchup": "BOS @ DEN",
+   "playerId": 125,
+   "playerName": "DeMar DeRozan",
+   "teamAbbreviation": "DEN",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6246431474030154,
+   "evPercent": 23.703838995499126,
+   "foundAt": "2026-11-19T03:17:16.013Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -6,
+   "valueAtPick": 1,
+   "projection": 3.0571451822916664,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 569,
+ "calls": 583,
  "note": null,
  "checkpointsTaken": {
   "21718131": [
@@ -4782,6 +5007,9 @@
    "end-q1",
    "halftime",
    "end-q3"
+  ],
+  "21718139": [
+   "end-q1"
   ],
   "21718140": [
    "end-q1",
