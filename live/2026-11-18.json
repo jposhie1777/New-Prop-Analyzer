@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "updatedAt": "2026-11-19T03:38:17.291Z",
+ "updatedAt": "2026-11-19T03:42:17.553Z",
  "state": "running",
  "games": [
   {
@@ -63,8 +63,8 @@
    "gameId": 21718139,
    "matchup": "BOS @ DEN",
    "status": "2nd Qtr",
-   "homeScore": 34,
-   "visitorScore": 49
+   "homeScore": 41,
+   "visitorScore": 53
   },
   {
    "gameId": 21718140,
@@ -77,15 +77,15 @@
    "gameId": 21718141,
    "matchup": "UTA @ LAL",
    "status": "1st Qtr",
-   "homeScore": 30,
-   "visitorScore": 26
+   "homeScore": 34,
+   "visitorScore": 29
   },
   {
    "gameId": 21718142,
    "matchup": "PHX @ SAC",
    "status": "2nd Qtr",
-   "homeScore": 31,
-   "visitorScore": 36
+   "homeScore": 35,
+   "visitorScore": 43
   }
  ],
  "picks": [
@@ -5032,7 +5032,7 @@
    "scoreMargin": -6,
    "valueAtPick": 9,
    "projection": 32.85543555901008,
-   "latestValue": 10,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -5240,9 +5240,174 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718141-17895858-rebounds_assists",
+   "gameDate": "2026-11-18",
+   "gameId": 21718141,
+   "matchup": "UTA @ LAL",
+   "playerId": 17895858,
+   "playerName": "Quentin Grimes",
+   "teamAbbreviation": "LAL",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 7.5,
+   "americanOdds": -110,
+   "vendor": "fanduel",
+   "modelProbability": 0.6527896140857596,
+   "evPercent": 24.623471780008654,
+   "foundAt": "2026-11-19T03:41:17.067Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 5,
+   "valueAtPick": 3,
+   "projection": 8.688969988905324,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Reb+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718141-1091342427-threes",
+   "gameDate": "2026-11-18",
+   "gameId": 21718141,
+   "matchup": "UTA @ LAL",
+   "playerId": 1091342427,
+   "playerName": "Darryn Peterson",
+   "teamAbbreviation": "UTA",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 160,
+   "vendor": "betmgm",
+   "modelProbability": 0.4769765281338362,
+   "evPercent": 24.01389731479742,
+   "foundAt": "2026-11-19T03:41:17.067Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -5,
+   "valueAtPick": 0,
+   "projection": 1.4129094885807207,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "3PM",
+    "Foul trouble",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718141-38017728-points_assists",
+   "gameDate": "2026-11-18",
+   "gameId": 21718141,
+   "matchup": "UTA @ LAL",
+   "playerId": 38017728,
+   "playerName": "Jake LaRavia",
+   "teamAbbreviation": "LAL",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 11.5,
+   "americanOdds": -122,
+   "vendor": "fanduel",
+   "modelProbability": 0.6701493251548165,
+   "evPercent": 21.945205069155136,
+   "foundAt": "2026-11-19T03:41:17.067Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 5,
+   "valueAtPick": 5,
+   "projection": 10.00590212389048,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718141-38017705-rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718141,
+   "matchup": "UTA @ LAL",
+   "playerId": 38017705,
+   "playerName": "Walker Kessler",
+   "teamAbbreviation": "LAL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 10.5,
+   "americanOdds": 105,
+   "vendor": "betmgm",
+   "modelProbability": 0.5842912385175258,
+   "evPercent": 19.779703896092784,
+   "foundAt": "2026-11-19T03:41:17.067Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 5,
+   "valueAtPick": 2,
+   "projection": 11.293512036310466,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718141-666626-points",
+   "gameDate": "2026-11-18",
+   "gameId": 21718141,
+   "matchup": "UTA @ LAL",
+   "playerId": 666626,
+   "playerName": "Jaxson Hayes",
+   "teamAbbreviation": "UTA",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 9.5,
+   "americanOdds": -125,
+   "vendor": "draftkings",
+   "modelProbability": 0.6608900367633475,
+   "evPercent": 18.96020661740254,
+   "foundAt": "2026-11-19T03:41:17.067Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -5,
+   "valueAtPick": 4,
+   "projection": 8.154839631569345,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 628,
+ "calls": 641,
  "note": null,
  "checkpointsTaken": {
   "21718131": [
@@ -5292,6 +5457,9 @@
    "end-q1",
    "halftime",
    "end-q3"
+  ],
+  "21718141": [
+   "end-q1"
   ],
   "21718142": [
    "end-q1"
