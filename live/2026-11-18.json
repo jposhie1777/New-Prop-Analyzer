@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "updatedAt": "2026-11-19T04:17:19.071Z",
+ "updatedAt": "2026-11-19T04:21:19.425Z",
  "state": "running",
  "games": [
   {
@@ -63,7 +63,7 @@
    "gameId": 21718139,
    "matchup": "BOS @ DEN",
    "status": "3rd Qtr",
-   "homeScore": 57,
+   "homeScore": 59,
    "visitorScore": 67
   },
   {
@@ -84,8 +84,8 @@
    "gameId": 21718142,
    "matchup": "PHX @ SAC",
    "status": "3rd Qtr",
-   "homeScore": 62,
-   "visitorScore": 69
+   "homeScore": 68,
+   "visitorScore": 75
   }
  ],
  "picks": [
@@ -5032,7 +5032,7 @@
    "scoreMargin": -6,
    "valueAtPick": 9,
    "projection": 32.85543555901008,
-   "latestValue": 19,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Under",
@@ -5098,7 +5098,7 @@
    "scoreMargin": 5,
    "valueAtPick": 5,
    "projection": 19.4998741644154,
-   "latestValue": 15,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -5131,7 +5131,7 @@
    "scoreMargin": 5,
    "valueAtPick": 4,
    "projection": 11.319555375278593,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -5594,7 +5594,7 @@
    "scoreMargin": -5,
    "valueAtPick": 22,
    "projection": 35.41116924736798,
-   "latestValue": 25,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Under",
@@ -5727,7 +5727,7 @@
    "scoreMargin": -5,
    "valueAtPick": 2,
    "projection": 5.1793433559792526,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -5907,8 +5907,8 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 723,
- "note": null,
+ "calls": 731,
+ "note": "This run hit its time limit; the next scheduled run continues.",
  "checkpointsTaken": {
   "21718131": [
    "end-q1",
