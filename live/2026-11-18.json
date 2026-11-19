@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "updatedAt": "2026-11-19T04:13:19.018Z",
+ "updatedAt": "2026-11-19T04:17:19.071Z",
  "state": "running",
  "games": [
   {
@@ -63,8 +63,8 @@
    "gameId": 21718139,
    "matchup": "BOS @ DEN",
    "status": "3rd Qtr",
-   "homeScore": 55,
-   "visitorScore": 65
+   "homeScore": 57,
+   "visitorScore": 67
   },
   {
    "gameId": 21718140,
@@ -84,8 +84,8 @@
    "gameId": 21718142,
    "matchup": "PHX @ SAC",
    "status": "3rd Qtr",
-   "homeScore": 60,
-   "visitorScore": 65
+   "homeScore": 62,
+   "visitorScore": 69
   }
  ],
  "picks": [
@@ -4933,7 +4933,7 @@
    "scoreMargin": -6,
    "valueAtPick": 1,
    "projection": 11.156554830199006,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -5098,7 +5098,7 @@
    "scoreMargin": 5,
    "valueAtPick": 5,
    "projection": 19.4998741644154,
-   "latestValue": 13,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -5131,7 +5131,7 @@
    "scoreMargin": 5,
    "valueAtPick": 4,
    "projection": 11.319555375278593,
-   "latestValue": 5,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -5594,7 +5594,7 @@
    "scoreMargin": -5,
    "valueAtPick": 22,
    "projection": 35.41116924736798,
-   "latestValue": 22,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Under",
@@ -5738,9 +5738,176 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718141-38017728-rebounds_assists",
+   "gameDate": "2026-11-18",
+   "gameId": 21718141,
+   "matchup": "UTA @ LAL",
+   "playerId": 38017728,
+   "playerName": "Jake LaRavia",
+   "teamAbbreviation": "LAL",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 6.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6298803218333184,
+   "evPercent": 24.74100491208855,
+   "foundAt": "2026-11-19T04:14:18.652Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -2,
+   "valueAtPick": 4,
+   "projection": 5.91748120803833,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718141-17896027-points",
+   "gameDate": "2026-11-18",
+   "gameId": 21718141,
+   "matchup": "UTA @ LAL",
+   "playerId": 17896027,
+   "playerName": "Ziaire Williams",
+   "teamAbbreviation": "LAL",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": -140,
+   "vendor": "fanduel",
+   "modelProbability": 0.7189798943350544,
+   "evPercent": 23.253696171723615,
+   "foundAt": "2026-11-19T04:14:18.652Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -2,
+   "valueAtPick": 7,
+   "projection": 11.444226096839344,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718141-132-rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718141,
+   "matchup": "UTA @ LAL",
+   "playerId": 132,
+   "playerName": "Luka Doncic",
+   "teamAbbreviation": "LAL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": 110,
+   "vendor": "fanatics",
+   "modelProbability": 0.582429872179887,
+   "evPercent": 22.310273157776273,
+   "foundAt": "2026-11-19T04:14:18.652Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -2,
+   "valueAtPick": 3,
+   "projection": 7.009527783431713,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718141-1057260888-threes",
+   "gameDate": "2026-11-18",
+   "gameId": 21718141,
+   "matchup": "UTA @ LAL",
+   "playerId": 1057260888,
+   "playerName": "Airious Bailey",
+   "teamAbbreviation": "UTA",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 0.5,
+   "americanOdds": 148,
+   "vendor": "fanduel",
+   "modelProbability": 0.4926344213753454,
+   "evPercent": 22.17333650108566,
+   "foundAt": "2026-11-19T04:14:18.652Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 2,
+   "valueAtPick": 0,
+   "projection": 0.5168426862649999,
+   "latestValue": 0,
+   "tags": [
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718141-38017705-points",
+   "gameDate": "2026-11-18",
+   "gameId": 21718141,
+   "matchup": "UTA @ LAL",
+   "playerId": 38017705,
+   "playerName": "Walker Kessler",
+   "teamAbbreviation": "LAL",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 9.5,
+   "americanOdds": -110,
+   "vendor": "caesars",
+   "modelProbability": 0.6352799228326442,
+   "evPercent": 21.280712540777547,
+   "foundAt": "2026-11-19T04:14:18.652Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -2,
+   "valueAtPick": 2,
+   "projection": 8.137124236267063,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 711,
+ "calls": 723,
  "note": null,
  "checkpointsTaken": {
   "21718131": [
@@ -5793,7 +5960,8 @@
    "end-q3"
   ],
   "21718141": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718142": [
    "end-q1",
