@@ -1,14 +1,14 @@
 {
  "date": "2026-11-18",
- "updatedAt": "2026-11-19T01:11:14.630Z",
+ "updatedAt": "2026-11-19T01:15:14.719Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718131,
    "matchup": "MEM @ CLE",
    "status": "2nd Qtr",
-   "homeScore": 68,
-   "visitorScore": 67
+   "homeScore": 72,
+   "visitorScore": 70
   },
   {
    "gameId": 21718132,
@@ -21,43 +21,43 @@
    "gameId": 21718133,
    "matchup": "MIL @ MIA",
    "status": "2nd Qtr",
-   "homeScore": 55,
-   "visitorScore": 36
+   "homeScore": 61,
+   "visitorScore": 38
   },
   {
    "gameId": 21718134,
    "matchup": "PHI @ ORL",
    "status": "2nd Qtr",
    "homeScore": 69,
-   "visitorScore": 62
+   "visitorScore": 64
   },
   {
    "gameId": 21718135,
    "matchup": "CHI @ BKN",
    "status": "2nd Qtr",
-   "homeScore": 27,
-   "visitorScore": 45
+   "homeScore": 32,
+   "visitorScore": 55
   },
   {
    "gameId": 21718136,
    "matchup": "WAS @ TOR",
-   "status": "1st Qtr",
-   "homeScore": 23,
-   "visitorScore": 29
+   "status": "2nd Qtr",
+   "homeScore": 25,
+   "visitorScore": 32
   },
   {
    "gameId": 21718137,
    "matchup": "DET @ NOP",
-   "status": "2026-11-19T01:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 2,
+   "visitorScore": 5
   },
   {
    "gameId": 21718138,
    "matchup": "ATL @ OKC",
    "status": "1st Qtr",
-   "homeScore": 0,
-   "visitorScore": 0
+   "homeScore": 5,
+   "visitorScore": 5
   },
   {
    "gameId": 21718139,
@@ -69,9 +69,9 @@
   {
    "gameId": 21718140,
    "matchup": "GSW @ DAL",
-   "status": "2026-11-19T01:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 6,
+   "visitorScore": 6
   },
   {
    "gameId": 21718141,
@@ -507,7 +507,7 @@
    "scoreMargin": 13,
    "valueAtPick": 5,
    "projection": 16.14236980800736,
-   "latestValue": 10,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Over",
@@ -975,7 +975,7 @@
    "scoreMargin": -16,
    "valueAtPick": 4,
    "projection": 16.277058079922547,
-   "latestValue": 4,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -1009,7 +1009,7 @@
    "scoreMargin": 16,
    "valueAtPick": 3,
    "projection": 13.735285427450183,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -1077,7 +1077,7 @@
    "scoreMargin": 16,
    "valueAtPick": 2,
    "projection": 4.045205052761825,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -1253,9 +1253,173 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718134-3547287-assists",
+   "gameDate": "2026-11-18",
+   "gameId": 21718134,
+   "matchup": "PHI @ ORL",
+   "playerId": 3547287,
+   "playerName": "Desmond Bane",
+   "teamAbbreviation": "ORL",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": 145,
+   "vendor": "draftkings",
+   "modelProbability": 0.5099561886796238,
+   "evPercent": 24.93926622650784,
+   "foundAt": "2026-11-19T01:14:11.228Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 5,
+   "valueAtPick": 3,
+   "projection": 4.537844510067114,
+   "latestValue": 3,
+   "tags": [
+    "Over",
+    "Assists",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718134-1028025497-threes",
+   "gameDate": "2026-11-18",
+   "gameId": 21718134,
+   "matchup": "PHI @ ORL",
+   "playerId": 1028025497,
+   "playerName": "Tristan Da Silva",
+   "teamAbbreviation": "ORL",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 178,
+   "vendor": "fanduel",
+   "modelProbability": 0.4463026492293688,
+   "evPercent": 24.07213648576454,
+   "foundAt": "2026-11-19T01:14:11.228Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 5,
+   "valueAtPick": 1,
+   "projection": 2.304354008962922,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "3PM",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718134-56677827-rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718134,
+   "matchup": "PHI @ ORL",
+   "playerId": 56677827,
+   "playerName": "Anthony Black",
+   "teamAbbreviation": "ORL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -145,
+   "vendor": "draftkings",
+   "modelProbability": 0.7301623687439771,
+   "evPercent": 23.372262305016832,
+   "foundAt": "2026-11-19T01:14:11.228Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 5,
+   "valueAtPick": 0,
+   "projection": 1.5626077466498323,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718134-145-points",
+   "gameDate": "2026-11-18",
+   "gameId": 21718134,
+   "matchup": "PHI @ ORL",
+   "playerId": 145,
+   "playerName": "Joel Embiid",
+   "teamAbbreviation": "PHI",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 29.5,
+   "americanOdds": -120,
+   "vendor": "fanduel",
+   "modelProbability": 0.6701750894974445,
+   "evPercent": 22.865433074531506,
+   "foundAt": "2026-11-19T01:14:11.228Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -5,
+   "valueAtPick": 16,
+   "projection": 27.15989938783352,
+   "latestValue": 16,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718134-419-points",
+   "gameDate": "2026-11-18",
+   "gameId": 21718134,
+   "matchup": "PHI @ ORL",
+   "playerId": 419,
+   "playerName": "Anfernee Simons",
+   "teamAbbreviation": "PHI",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 11.5,
+   "americanOdds": -132,
+   "vendor": "caesars",
+   "modelProbability": 0.6794105108622036,
+   "evPercent": 19.41154433335699,
+   "foundAt": "2026-11-19T01:14:11.228Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -5,
+   "valueAtPick": 8,
+   "projection": 13.188563231751068,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 232,
+ "calls": 244,
  "note": null,
  "checkpointsTaken": {
   "21718131": [
@@ -1269,7 +1433,8 @@
    "end-q1"
   ],
   "21718134": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718135": [
    "end-q1"
