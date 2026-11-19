@@ -1,13 +1,13 @@
 {
  "date": "2026-11-18",
- "updatedAt": "2026-11-19T00:45:12.555Z",
+ "updatedAt": "2026-11-19T00:49:10.697Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718131,
    "matchup": "MEM @ CLE",
    "status": "2nd Qtr",
-   "homeScore": 43,
+   "homeScore": 48,
    "visitorScore": 41
   },
   {
@@ -21,29 +21,29 @@
    "gameId": 21718133,
    "matchup": "MIL @ MIA",
    "status": "1st Qtr",
-   "homeScore": 32,
-   "visitorScore": 21
+   "homeScore": 34,
+   "visitorScore": 23
   },
   {
    "gameId": 21718134,
    "matchup": "PHI @ ORL",
    "status": "2nd Qtr",
-   "homeScore": 48,
-   "visitorScore": 33
+   "homeScore": 51,
+   "visitorScore": 41
   },
   {
    "gameId": 21718135,
    "matchup": "CHI @ BKN",
    "status": "1st Qtr",
-   "homeScore": 4,
-   "visitorScore": 9
+   "homeScore": 6,
+   "visitorScore": 12
   },
   {
    "gameId": 21718136,
    "matchup": "WAS @ TOR",
    "status": "1st Qtr",
-   "homeScore": 0,
-   "visitorScore": 5
+   "homeScore": 5,
+   "visitorScore": 11
   },
   {
    "gameId": 21718137,
@@ -474,7 +474,7 @@
    "scoreMargin": -13,
    "valueAtPick": 1,
    "projection": 5.924368067948972,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -507,7 +507,7 @@
    "scoreMargin": 13,
    "valueAtPick": 5,
    "projection": 16.14236980800736,
-   "latestValue": 8,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Over",
@@ -583,15 +583,183 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718133-1028036986-threes",
+   "gameDate": "2026-11-18",
+   "gameId": 21718133,
+   "matchup": "MIL @ MIA",
+   "playerId": 1028036986,
+   "playerName": "Pelle Larsson",
+   "teamAbbreviation": "MIA",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": -110,
+   "vendor": "draftkings",
+   "modelProbability": 0.6545659434398651,
+   "evPercent": 24.96258920215606,
+   "foundAt": "2026-11-19T00:48:10.307Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 11,
+   "valueAtPick": 0,
+   "projection": 1.0061436975704223,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718133-475-points_rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718133,
+   "matchup": "MIL @ MIA",
+   "playerId": 475,
+   "playerName": "Andrew Wiggins",
+   "teamAbbreviation": "MIA",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 12.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.6740950747615966,
+   "evPercent": 24.536208727142416,
+   "foundAt": "2026-11-19T00:48:10.307Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 11,
+   "valueAtPick": 3,
+   "projection": 10.611891833602863,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718133-1028029127-points_rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718133,
+   "matchup": "MIL @ MIA",
+   "playerId": 1028029127,
+   "playerName": "Kel'el Ware",
+   "teamAbbreviation": "MIL",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 17.5,
+   "americanOdds": -144,
+   "vendor": "fanduel",
+   "modelProbability": 0.7305822678663865,
+   "evPercent": 23.79310649958215,
+   "foundAt": "2026-11-19T00:48:10.307Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -11,
+   "valueAtPick": 4,
+   "projection": 14.482355358736081,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718133-443-points_assists",
+   "gameDate": "2026-11-18",
+   "gameId": 21718133,
+   "matchup": "MIL @ MIA",
+   "playerId": 443,
+   "playerName": "Klay Thompson",
+   "teamAbbreviation": "MIA",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 19.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.6618211461528037,
+   "evPercent": 22.26865242484002,
+   "foundAt": "2026-11-19T00:48:10.307Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 11,
+   "valueAtPick": 10,
+   "projection": 21.661930617733695,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718133-666633-assists",
+   "gameDate": "2026-11-18",
+   "gameId": 21718133,
+   "matchup": "MIL @ MIA",
+   "playerId": 666633,
+   "playerName": "Tyler Herro",
+   "teamAbbreviation": "MIL",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": -105,
+   "vendor": "draftkings",
+   "modelProbability": 0.6210709510003629,
+   "evPercent": 21.25670948102323,
+   "foundAt": "2026-11-19T00:48:10.307Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -11,
+   "valueAtPick": 2,
+   "projection": 5.171280859375,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 161,
+ "calls": 174,
  "note": null,
  "checkpointsTaken": {
   "21718131": [
    "end-q1"
   ],
   "21718132": [
+   "end-q1"
+  ],
+  "21718133": [
    "end-q1"
   ],
   "21718134": [
