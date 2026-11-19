@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "updatedAt": "2026-11-19T04:33:48.247Z",
+ "updatedAt": "2026-11-19T04:37:47.728Z",
  "state": "running",
  "games": [
   {
@@ -63,8 +63,8 @@
    "gameId": 21718139,
    "matchup": "BOS @ DEN",
    "status": "3rd Qtr",
-   "homeScore": 77,
-   "visitorScore": 74
+   "homeScore": 80,
+   "visitorScore": 80
   },
   {
    "gameId": 21718140,
@@ -77,7 +77,7 @@
    "gameId": 21718141,
    "matchup": "UTA @ LAL",
    "status": "3rd Qtr",
-   "homeScore": 54,
+   "homeScore": 58,
    "visitorScore": 62
   },
   {
@@ -85,7 +85,7 @@
    "matchup": "PHX @ SAC",
    "status": "3rd Qtr",
    "homeScore": 74,
-   "visitorScore": 89
+   "visitorScore": 92
   }
  ],
  "picks": [
@@ -5032,7 +5032,7 @@
    "scoreMargin": -6,
    "valueAtPick": 9,
    "projection": 32.85543555901008,
-   "latestValue": 28,
+   "latestValue": 29,
    "tags": [
     "Best bet",
     "Under",
@@ -5329,7 +5329,7 @@
    "scoreMargin": 5,
    "valueAtPick": 5,
    "projection": 10.00590212389048,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -5362,7 +5362,7 @@
    "scoreMargin": 5,
    "valueAtPick": 2,
    "projection": 11.293512036310466,
-   "latestValue": 4,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -5761,7 +5761,7 @@
    "scoreMargin": -2,
    "valueAtPick": 4,
    "projection": 5.91748120803833,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -5894,7 +5894,7 @@
    "scoreMargin": -2,
    "valueAtPick": 2,
    "projection": 8.137124236267063,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -5905,9 +5905,177 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718139-177-assists",
+   "gameDate": "2026-11-18",
+   "gameId": 21718139,
+   "matchup": "BOS @ DEN",
+   "playerId": 177,
+   "playerName": "Aaron Gordon",
+   "teamAbbreviation": "DEN",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 174,
+   "vendor": "fanduel",
+   "modelProbability": 0.4532139937134124,
+   "evPercent": 24.18063427747501,
+   "foundAt": "2026-11-19T04:36:47.330Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 0,
+   "valueAtPick": 2,
+   "projection": 2.4081773699004208,
+   "latestValue": 2,
+   "tags": [
+    "Over",
+    "Assists",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718139-1091463040-rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718139,
+   "matchup": "BOS @ DEN",
+   "playerId": 1091463040,
+   "playerName": "Trevon Brazile",
+   "teamAbbreviation": "DEN",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 6.5,
+   "americanOdds": 121,
+   "vendor": "caesars",
+   "modelProbability": 0.5610002156293309,
+   "evPercent": 23.981047654082133,
+   "foundAt": "2026-11-19T04:36:47.330Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 0,
+   "valueAtPick": 6,
+   "projection": 6.651495782762671,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718139-335-threes",
+   "gameDate": "2026-11-18",
+   "gameId": 21718139,
+   "matchup": "BOS @ DEN",
+   "playerId": 335,
+   "playerName": "Jamal Murray",
+   "teamAbbreviation": "DEN",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": -104,
+   "vendor": "fanduel",
+   "modelProbability": 0.6308536156495028,
+   "evPercent": 23.74436306971017,
+   "foundAt": "2026-11-19T04:36:47.330Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 0,
+   "valueAtPick": 2,
+   "projection": 2.902818480977972,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718139-434-rebounds_assists",
+   "gameDate": "2026-11-18",
+   "gameId": 21718139,
+   "matchup": "BOS @ DEN",
+   "playerId": 434,
+   "playerName": "Jayson Tatum",
+   "teamAbbreviation": "BOS",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 13.5,
+   "americanOdds": -162,
+   "vendor": "fanduel",
+   "modelProbability": 0.7557914152815028,
+   "evPercent": 22.232932594909727,
+   "foundAt": "2026-11-19T04:36:47.330Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 0,
+   "valueAtPick": 10,
+   "projection": 12.196978772122886,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718139-246-rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718139,
+   "matchup": "BOS @ DEN",
+   "playerId": 246,
+   "playerName": "Nikola Jokic",
+   "teamAbbreviation": "DEN",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": -106,
+   "vendor": "fanduel",
+   "modelProbability": 0.6289431367483633,
+   "evPercent": 22.228571858644198,
+   "foundAt": "2026-11-19T04:36:47.330Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 0,
+   "valueAtPick": 5,
+   "projection": 6.939658659034668,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Foul trouble",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 29,
+ "calls": 44,
  "note": null,
  "checkpointsTaken": {
   "21718131": [
@@ -5952,7 +6120,8 @@
   ],
   "21718139": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718140": [
    "end-q1",
