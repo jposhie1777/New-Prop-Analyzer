@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "updatedAt": "2026-11-19T03:34:17.538Z",
+ "updatedAt": "2026-11-19T03:38:17.291Z",
  "state": "running",
  "games": [
   {
@@ -64,7 +64,7 @@
    "matchup": "BOS @ DEN",
    "status": "2nd Qtr",
    "homeScore": 34,
-   "visitorScore": 45
+   "visitorScore": 49
   },
   {
    "gameId": 21718140,
@@ -77,15 +77,15 @@
    "gameId": 21718141,
    "matchup": "UTA @ LAL",
    "status": "1st Qtr",
-   "homeScore": 20,
-   "visitorScore": 23
+   "homeScore": 30,
+   "visitorScore": 26
   },
   {
    "gameId": 21718142,
    "matchup": "PHX @ SAC",
-   "status": "1st Qtr",
-   "homeScore": 30,
-   "visitorScore": 33
+   "status": "2nd Qtr",
+   "homeScore": 31,
+   "visitorScore": 36
   }
  ],
  "picks": [
@@ -5032,7 +5032,7 @@
    "scoreMargin": -6,
    "valueAtPick": 9,
    "projection": 32.85543555901008,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -5075,9 +5075,174 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718142-17895966-points_rebounds_assists",
+   "gameDate": "2026-11-18",
+   "gameId": 21718142,
+   "matchup": "PHX @ SAC",
+   "playerId": 17895966,
+   "playerName": "Jalen Green",
+   "teamAbbreviation": "PHX",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 17.5,
+   "americanOdds": -104,
+   "vendor": "fanduel",
+   "modelProbability": 0.6354425412634779,
+   "evPercent": 24.644498478605282,
+   "foundAt": "2026-11-19T03:37:16.916Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 5,
+   "valueAtPick": 5,
+   "projection": 19.4998741644154,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718142-1028036515-points_rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718142,
+   "matchup": "PHX @ SAC",
+   "playerId": 1028036515,
+   "playerName": "Oso Ighodaro",
+   "teamAbbreviation": "PHX",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 13.5,
+   "americanOdds": -130,
+   "vendor": "fanduel",
+   "modelProbability": 0.7024365160443171,
+   "evPercent": 24.27722976168687,
+   "foundAt": "2026-11-19T03:37:16.916Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 5,
+   "valueAtPick": 4,
+   "projection": 11.319555375278593,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718142-38017688-points",
+   "gameDate": "2026-11-18",
+   "gameId": 21718142,
+   "matchup": "PHX @ SAC",
+   "playerId": 38017688,
+   "playerName": "Keegan Murray",
+   "teamAbbreviation": "SAC",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 11.5,
+   "americanOdds": -108,
+   "vendor": "caesars",
+   "modelProbability": 0.6409728285829408,
+   "evPercent": 23.44661883819601,
+   "foundAt": "2026-11-19T03:37:16.916Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -5,
+   "valueAtPick": 4,
+   "projection": 10.083498766997064,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718142-57-rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718142,
+   "matchup": "PHX @ SAC",
+   "playerId": 57,
+   "playerName": "Devin Booker",
+   "teamAbbreviation": "PHX",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": 119,
+   "vendor": "caesars",
+   "modelProbability": 0.5589720068446067,
+   "evPercent": 22.41486949896887,
+   "foundAt": "2026-11-19T03:37:16.916Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 5,
+   "valueAtPick": 1,
+   "projection": 3.2291570379791343,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718142-268-rebounds",
+   "gameDate": "2026-11-18",
+   "gameId": 21718142,
+   "matchup": "PHX @ SAC",
+   "playerId": 268,
+   "playerName": "Zach LaVine",
+   "teamAbbreviation": "SAC",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 130,
+   "vendor": "draftkings",
+   "modelProbability": 0.5316090534616686,
+   "evPercent": 22.27008229618377,
+   "foundAt": "2026-11-19T03:37:16.916Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -5,
+   "valueAtPick": 0,
+   "projection": 2.658111273444308,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 615,
+ "calls": 628,
  "note": null,
  "checkpointsTaken": {
   "21718131": [
@@ -5127,6 +5292,9 @@
    "end-q1",
    "halftime",
    "end-q3"
+  ],
+  "21718142": [
+   "end-q1"
   ]
  }
 }
