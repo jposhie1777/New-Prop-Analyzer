@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "updatedAt": "2026-11-19T04:00:25.807Z",
+ "updatedAt": "2026-11-19T04:09:18.792Z",
  "state": "running",
  "games": [
   {
@@ -62,9 +62,9 @@
   {
    "gameId": 21718139,
    "matchup": "BOS @ DEN",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 49,
-   "visitorScore": 61
+   "visitorScore": 63
   },
   {
    "gameId": 21718140,
@@ -77,8 +77,8 @@
    "gameId": 21718141,
    "matchup": "UTA @ LAL",
    "status": "2nd Qtr",
-   "homeScore": 43,
-   "visitorScore": 43
+   "homeScore": 50,
+   "visitorScore": 54
   },
   {
    "gameId": 21718142,
@@ -5362,7 +5362,7 @@
    "scoreMargin": 5,
    "valueAtPick": 2,
    "projection": 11.293512036310466,
-   "latestValue": 2,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -5740,7 +5740,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 685,
+ "calls": 703,
  "note": null,
  "checkpointsTaken": {
   "21718131": [
