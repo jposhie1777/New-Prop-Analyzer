@@ -1,21 +1,21 @@
 {
  "date": "2026-11-19",
- "updatedAt": "2026-11-20T03:17:16.942Z",
+ "updatedAt": "2026-11-20T03:21:17.132Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718143,
    "matchup": "GSW @ MEM",
    "status": "4th Qtr",
-   "homeScore": 115,
-   "visitorScore": 85
+   "homeScore": 121,
+   "visitorScore": 87
   },
   {
    "gameId": 21718144,
    "matchup": "POR @ MIL",
    "status": "4th Qtr",
-   "homeScore": 108,
-   "visitorScore": 110
+   "homeScore": 110,
+   "visitorScore": 112
   },
   {
    "gameId": 21718145,
@@ -28,8 +28,8 @@
    "gameId": 21718146,
    "matchup": "LAC @ SAS",
    "status": "4th Qtr",
-   "homeScore": 114,
-   "visitorScore": 104
+   "homeScore": 118,
+   "visitorScore": 106
   }
  ],
  "picks": [
@@ -88,7 +88,7 @@
    "scoreMargin": 3,
    "valueAtPick": 10,
    "projection": 37.094388132446596,
-   "latestValue": 36,
+   "latestValue": 39,
    "tags": [
     "Best bet",
     "Under",
@@ -188,7 +188,7 @@
    "scoreMargin": 3,
    "valueAtPick": 13,
    "projection": 33.55512170093985,
-   "latestValue": 33,
+   "latestValue": 35,
    "tags": [
     "Best bet",
     "Under",
@@ -588,7 +588,7 @@
    "scoreMargin": -7,
    "valueAtPick": 14,
    "projection": 24.922104444543805,
-   "latestValue": 27,
+   "latestValue": 29,
    "tags": [
     "Best bet",
     "Over",
@@ -856,7 +856,7 @@
    "scoreMargin": 15,
    "valueAtPick": 1,
    "projection": 2.408503452915469,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Over",
     "Rebounds",
@@ -1154,7 +1154,7 @@
    "scoreMargin": -8,
    "valueAtPick": 9,
    "projection": 14.586092592283752,
-   "latestValue": 14,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -1187,7 +1187,7 @@
    "scoreMargin": -8,
    "valueAtPick": 11,
    "projection": 17.100214961825813,
-   "latestValue": 16,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Over",
@@ -2035,7 +2035,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 411,
+ "calls": 419,
  "note": null,
  "checkpointsTaken": {
   "21718143": [
