@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "updatedAt": "2026-11-20T03:30:18.474Z",
+ "updatedAt": "2026-11-20T03:40:41.615Z",
  "state": "done",
  "games": [
   {
@@ -2275,8 +2275,8 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 440,
- "note": "All games are final and graded.",
+ "calls": 1,
+ "note": "All games are final.",
  "checkpointsTaken": {
   "21718143": [
    "end-q1",
