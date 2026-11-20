@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "updatedAt": "2026-11-20T02:46:15.717Z",
+ "updatedAt": "2026-11-20T02:50:16.303Z",
  "state": "running",
  "games": [
   {
@@ -15,21 +15,21 @@
    "matchup": "POR @ MIL",
    "status": "3rd Qtr",
    "homeScore": 70,
-   "visitorScore": 77
+   "visitorScore": 82
   },
   {
    "gameId": 21718145,
    "matchup": "NYK @ MIN",
-   "status": "3rd Qtr",
-   "homeScore": 76,
-   "visitorScore": 90
+   "status": "4th Qtr",
+   "homeScore": 78,
+   "visitorScore": 94
   },
   {
    "gameId": 21718146,
    "matchup": "LAC @ SAS",
    "status": "3rd Qtr",
-   "homeScore": 86,
-   "visitorScore": 87
+   "homeScore": 92,
+   "visitorScore": 88
   }
  ],
  "picks": [
@@ -88,7 +88,7 @@
    "scoreMargin": 3,
    "valueAtPick": 10,
    "projection": 37.094388132446596,
-   "latestValue": 31,
+   "latestValue": 32,
    "tags": [
     "Best bet",
     "Under",
@@ -122,7 +122,7 @@
    "scoreMargin": -3,
    "valueAtPick": 3,
    "projection": 14.36662679118672,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -155,7 +155,7 @@
    "scoreMargin": 3,
    "valueAtPick": 3,
    "projection": 16.198053403131205,
-   "latestValue": 7,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -255,7 +255,7 @@
    "scoreMargin": 3,
    "valueAtPick": 9,
    "projection": 29.15712151384024,
-   "latestValue": 26,
+   "latestValue": 30,
    "tags": [
     "Best bet",
     "Under",
@@ -288,7 +288,7 @@
    "scoreMargin": 3,
    "valueAtPick": 6,
    "projection": 16.197118088119524,
-   "latestValue": 23,
+   "latestValue": 24,
    "tags": [
     "Best bet",
     "Over",
@@ -1220,7 +1220,7 @@
    "scoreMargin": 2,
    "valueAtPick": 19,
    "projection": 33.40573182225219,
-   "latestValue": 24,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Under",
@@ -1320,7 +1320,7 @@
    "scoreMargin": 2,
    "valueAtPick": 7,
    "projection": 14.048175043058716,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -1364,9 +1364,174 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718145-3547239-points_rebounds_assists",
+   "gameDate": "2026-11-19",
+   "gameId": 21718145,
+   "matchup": "NYK @ MIN",
+   "playerId": 3547239,
+   "playerName": "LaMelo Ball",
+   "teamAbbreviation": "MIN",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 30.5,
+   "americanOdds": 100,
+   "vendor": "fanduel",
+   "modelProbability": 0.6217611043902807,
+   "evPercent": 24.35222087805613,
+   "foundAt": "2026-11-20T02:47:15.587Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -12,
+   "valueAtPick": 24,
+   "projection": 31.81472824375463,
+   "latestValue": 24,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718145-17895983-rebounds_assists",
+   "gameDate": "2026-11-19",
+   "gameId": 21718145,
+   "matchup": "NYK @ MIN",
+   "playerId": 17895983,
+   "playerName": "Ayo Dosunmu",
+   "teamAbbreviation": "MIN",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 8.5,
+   "americanOdds": -140,
+   "vendor": "fanduel",
+   "modelProbability": 0.7250481855698901,
+   "evPercent": 24.29397466912404,
+   "foundAt": "2026-11-20T02:47:15.587Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -12,
+   "valueAtPick": 7,
+   "projection": 9.760483878813343,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Reb+Ast",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718145-3547259-threes",
+   "gameDate": "2026-11-19",
+   "gameId": 21718145,
+   "matchup": "NYK @ MIN",
+   "playerId": 3547259,
+   "playerName": "Jaden McDaniels",
+   "teamAbbreviation": "MIN",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 250,
+   "vendor": "fanduel",
+   "modelProbability": 0.3518317793664232,
+   "evPercent": 23.141122778248114,
+   "foundAt": "2026-11-20T02:47:15.587Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -12,
+   "valueAtPick": 3,
+   "projection": 3.2356428226335203,
+   "latestValue": 3,
+   "tags": [
+    "Over",
+    "3PM",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718145-18-points",
+   "gameDate": "2026-11-19",
+   "gameId": 21718145,
+   "matchup": "NYK @ MIN",
+   "playerId": 18,
+   "playerName": "OG Anunoby",
+   "teamAbbreviation": "NYK",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 18.5,
+   "americanOdds": 100,
+   "vendor": "fanduel",
+   "modelProbability": 0.6054801669944007,
+   "evPercent": 21.09603339888013,
+   "foundAt": "2026-11-20T02:47:15.587Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 12,
+   "valueAtPick": 15,
+   "projection": 19.391873264391695,
+   "latestValue": 15,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718145-1028028501-assists",
+   "gameDate": "2026-11-19",
+   "gameId": 21718145,
+   "matchup": "NYK @ MIN",
+   "playerId": 1028028501,
+   "playerName": "Terrence Shannon Jr.",
+   "teamAbbreviation": "MIN",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": 155,
+   "vendor": "betmgm",
+   "modelProbability": 0.4724597079124231,
+   "evPercent": 20.477225517667886,
+   "foundAt": "2026-11-20T02:47:15.587Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -12,
+   "valueAtPick": 3,
+   "projection": 3.5634065783780695,
+   "latestValue": 3,
+   "tags": [
+    "Under",
+    "Assists",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 337,
+ "calls": 348,
  "note": null,
  "checkpointsTaken": {
   "21718143": [
@@ -1379,7 +1544,8 @@
   ],
   "21718145": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718146": [
    "end-q1",
