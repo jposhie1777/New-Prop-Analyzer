@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "updatedAt": "2026-11-20T02:07:15.576Z",
+ "updatedAt": "2026-11-20T02:11:16.337Z",
  "state": "running",
  "games": [
   {
@@ -8,14 +8,14 @@
    "matchup": "GSW @ MEM",
    "status": "2nd Qtr",
    "homeScore": 55,
-   "visitorScore": 46
+   "visitorScore": 47
   },
   {
    "gameId": 21718144,
    "matchup": "POR @ MIL",
    "status": "2nd Qtr",
-   "homeScore": 55,
-   "visitorScore": 47
+   "homeScore": 56,
+   "visitorScore": 55
   },
   {
    "gameId": 21718145,
@@ -255,7 +255,7 @@
    "scoreMargin": 3,
    "valueAtPick": 9,
    "projection": 29.15712151384024,
-   "latestValue": 17,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Under",
@@ -288,7 +288,7 @@
    "scoreMargin": 3,
    "valueAtPick": 6,
    "projection": 16.197118088119524,
-   "latestValue": 14,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -322,7 +322,7 @@
    "scoreMargin": 3,
    "valueAtPick": 3,
    "projection": 6.627474240066299,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -588,7 +588,7 @@
    "scoreMargin": -7,
    "valueAtPick": 14,
    "projection": 24.922104444543805,
-   "latestValue": 15,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -866,9 +866,173 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718146-3547246-threes",
+   "gameDate": "2026-11-19",
+   "gameId": 21718146,
+   "matchup": "LAC @ SAS",
+   "playerId": 3547246,
+   "playerName": "Devin Vassell",
+   "teamAbbreviation": "SAS",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 0.5,
+   "americanOdds": 175,
+   "vendor": "betmgm",
+   "modelProbability": 0.45144603877688155,
+   "evPercent": 24.147660663642423,
+   "foundAt": "2026-11-20T02:08:14.059Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 3,
+   "valueAtPick": 0,
+   "projection": 0.6221056211834985,
+   "latestValue": 0,
+   "tags": [
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718146-666581-rebounds",
+   "gameDate": "2026-11-19",
+   "gameId": 21718146,
+   "matchup": "LAC @ SAS",
+   "playerId": 666581,
+   "playerName": "Darius Garland",
+   "teamAbbreviation": "LAC",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": -111,
+   "vendor": "betmgm",
+   "modelProbability": 0.6457582243267841,
+   "evPercent": 22.75223903869501,
+   "foundAt": "2026-11-20T02:08:14.059Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -3,
+   "valueAtPick": 0,
+   "projection": 1.034924876251707,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718146-283-points",
+   "gameDate": "2026-11-19",
+   "gameId": 21718146,
+   "matchup": "LAC @ SAS",
+   "playerId": 283,
+   "playerName": "Brook Lopez",
+   "teamAbbreviation": "LAC",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 10.5,
+   "americanOdds": -115,
+   "vendor": "draftkings",
+   "modelProbability": 0.6502796195008971,
+   "evPercent": 21.574015819732928,
+   "foundAt": "2026-11-20T02:08:14.059Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -3,
+   "valueAtPick": 5,
+   "projection": 9.236092284129043,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718146-1091343544-points",
+   "gameDate": "2026-11-19",
+   "gameId": 21718146,
+   "matchup": "LAC @ SAS",
+   "playerId": 1091343544,
+   "playerName": "Keaton Wagler",
+   "teamAbbreviation": "LAC",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": -104,
+   "vendor": "fanduel",
+   "modelProbability": 0.6195080608148902,
+   "evPercent": 21.51888885215154,
+   "foundAt": "2026-11-20T02:08:14.059Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -3,
+   "valueAtPick": 5,
+   "projection": 10.650089787463783,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718146-666609-threes",
+   "gameDate": "2026-11-19",
+   "gameId": 21718146,
+   "matchup": "LAC @ SAS",
+   "playerId": 666609,
+   "playerName": "Rui Hachimura",
+   "teamAbbreviation": "LAC",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": 126,
+   "vendor": "fanduel",
+   "modelProbability": 0.5286082825388229,
+   "evPercent": 19.465471853773963,
+   "foundAt": "2026-11-20T02:08:14.059Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -3,
+   "valueAtPick": 1,
+   "projection": 1.4396184452601706,
+   "latestValue": 1,
+   "tags": [
+    "Under",
+    "3PM",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 250,
+ "calls": 261,
  "note": null,
  "checkpointsTaken": {
   "21718143": [
@@ -882,7 +1046,8 @@
    "halftime"
   ],
   "21718146": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
