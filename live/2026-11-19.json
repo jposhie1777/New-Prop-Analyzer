@@ -1,7 +1,7 @@
 {
  "date": "2026-11-19",
- "updatedAt": "2026-11-20T00:36:36.836Z",
- "state": "waiting",
+ "updatedAt": "2026-11-20T00:50:11.102Z",
+ "state": "running",
  "games": [
   {
    "gameId": 21718143,
@@ -33,6 +33,6 @@
   }
  ],
  "picks": [],
- "calls": 1,
- "note": "First tip-off 2026-11-20T01:00:00.000Z"
+ "calls": 76,
+ "note": null
 }
