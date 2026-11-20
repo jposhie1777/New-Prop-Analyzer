@@ -1,38 +1,211 @@
 {
  "date": "2026-11-19",
- "updatedAt": "2026-11-20T00:50:11.102Z",
+ "updatedAt": "2026-11-20T01:35:14.867Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718143,
    "matchup": "GSW @ MEM",
-   "status": "2026-11-20T01:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 29,
+   "visitorScore": 20
   },
   {
    "gameId": 21718144,
    "matchup": "POR @ MIL",
-   "status": "2026-11-20T01:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 21,
+   "visitorScore": 21
   },
   {
    "gameId": 21718145,
    "matchup": "NYK @ MIN",
-   "status": "2026-11-20T01:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 26,
+   "visitorScore": 32
   },
   {
    "gameId": 21718146,
    "matchup": "LAC @ SAS",
-   "status": "2026-11-20T01:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 24,
+   "visitorScore": 21
   }
  ],
- "picks": [],
- "calls": 76,
- "note": null
+ "picks": [
+  {
+   "pickId": "21718146-666908-points",
+   "gameDate": "2026-11-19",
+   "gameId": 21718146,
+   "matchup": "LAC @ SAS",
+   "playerId": 666908,
+   "playerName": "Max Strus",
+   "teamAbbreviation": "LAC",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 11.5,
+   "americanOdds": -120,
+   "vendor": "draftkings",
+   "modelProbability": 0.6789175834177357,
+   "evPercent": 24.468223626584873,
+   "foundAt": "2026-11-20T01:35:12.745Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -3,
+   "valueAtPick": 6,
+   "projection": 13.52789563841782,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718146-56677822-points_rebounds",
+   "gameDate": "2026-11-19",
+   "gameId": 21718146,
+   "matchup": "LAC @ SAS",
+   "playerId": 56677822,
+   "playerName": "Victor Wembanyama",
+   "teamAbbreviation": "SAS",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 41.5,
+   "americanOdds": -138,
+   "vendor": "fanduel",
+   "modelProbability": 0.7116078646919033,
+   "evPercent": 22.726573765705062,
+   "foundAt": "2026-11-20T01:35:12.745Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 3,
+   "valueAtPick": 10,
+   "projection": 37.094388132446596,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718146-1091343544-points_rebounds",
+   "gameDate": "2026-11-19",
+   "gameId": 21718146,
+   "matchup": "LAC @ SAS",
+   "playerId": 1091343544,
+   "playerName": "Keaton Wagler",
+   "teamAbbreviation": "LAC",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 12.5,
+   "americanOdds": -110,
+   "vendor": "fanduel",
+   "modelProbability": 0.6424708729693119,
+   "evPercent": 22.653530294141365,
+   "foundAt": "2026-11-20T01:35:12.745Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -3,
+   "valueAtPick": 3,
+   "projection": 14.36662679118672,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718146-161-points_assists",
+   "gameDate": "2026-11-19",
+   "gameId": 21718146,
+   "matchup": "LAC @ SAS",
+   "playerId": 161,
+   "playerName": "De'Aaron Fox",
+   "teamAbbreviation": "SAS",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 19.5,
+   "americanOdds": -146,
+   "vendor": "fanduel",
+   "modelProbability": 0.7255168019733764,
+   "evPercent": 22.244611839349737,
+   "foundAt": "2026-11-20T01:35:12.745Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 3,
+   "valueAtPick": 3,
+   "projection": 16.198053403131205,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718146-1028025261-points_rebounds_assists",
+   "gameDate": "2026-11-19",
+   "gameId": 21718146,
+   "matchup": "LAC @ SAS",
+   "playerId": 1028025261,
+   "playerName": "Stephon Castle",
+   "teamAbbreviation": "SAS",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 36.5,
+   "americanOdds": -120,
+   "vendor": "fanduel",
+   "modelProbability": 0.6657819289097717,
+   "evPercent": 22.060020300124815,
+   "foundAt": "2026-11-20T01:35:12.745Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 3,
+   "valueAtPick": 13,
+   "projection": 33.55512170093985,
+   "latestValue": 13,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  }
+ ],
+ "calls": 171,
+ "note": null,
+ "checkpointsTaken": {
+  "21718146": [
+   "end-q1"
+  ]
+ }
 }
