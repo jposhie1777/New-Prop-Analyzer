@@ -1,35 +1,35 @@
 {
  "date": "2026-11-19",
- "updatedAt": "2026-11-20T01:51:13.673Z",
+ "updatedAt": "2026-11-20T01:55:14.314Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718143,
    "matchup": "GSW @ MEM",
    "status": "2nd Qtr",
-   "homeScore": 45,
-   "visitorScore": 29
+   "homeScore": 49,
+   "visitorScore": 32
   },
   {
    "gameId": 21718144,
    "matchup": "POR @ MIL",
    "status": "2nd Qtr",
-   "homeScore": 34,
+   "homeScore": 39,
    "visitorScore": 38
   },
   {
    "gameId": 21718145,
    "matchup": "NYK @ MIN",
    "status": "2nd Qtr",
-   "homeScore": 39,
-   "visitorScore": 47
+   "homeScore": 43,
+   "visitorScore": 52
   },
   {
    "gameId": 21718146,
    "matchup": "LAC @ SAS",
    "status": "2nd Qtr",
-   "homeScore": 45,
-   "visitorScore": 31
+   "homeScore": 49,
+   "visitorScore": 42
   }
  ],
  "picks": [
@@ -188,7 +188,7 @@
    "scoreMargin": 3,
    "valueAtPick": 13,
    "projection": 33.55512170093985,
-   "latestValue": 16,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -288,7 +288,7 @@
    "scoreMargin": 3,
    "valueAtPick": 6,
    "projection": 16.197118088119524,
-   "latestValue": 15,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Over",
@@ -588,7 +588,7 @@
    "scoreMargin": -7,
    "valueAtPick": 14,
    "projection": 24.922104444543805,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -699,7 +699,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 215,
+ "calls": 223,
  "note": null,
  "checkpointsTaken": {
   "21718143": [
