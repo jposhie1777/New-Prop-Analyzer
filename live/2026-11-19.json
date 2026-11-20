@@ -1,28 +1,28 @@
 {
  "date": "2026-11-19",
- "updatedAt": "2026-11-20T02:50:16.303Z",
+ "updatedAt": "2026-11-20T02:54:16.059Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718143,
    "matchup": "GSW @ MEM",
    "status": "3rd Qtr",
-   "homeScore": 88,
-   "visitorScore": 70
+   "homeScore": 92,
+   "visitorScore": 73
   },
   {
    "gameId": 21718144,
    "matchup": "POR @ MIL",
    "status": "3rd Qtr",
-   "homeScore": 70,
-   "visitorScore": 82
+   "homeScore": 82,
+   "visitorScore": 86
   },
   {
    "gameId": 21718145,
    "matchup": "NYK @ MIN",
    "status": "4th Qtr",
-   "homeScore": 78,
-   "visitorScore": 94
+   "homeScore": 85,
+   "visitorScore": 96
   },
   {
    "gameId": 21718146,
@@ -222,7 +222,7 @@
    "scoreMargin": -3,
    "valueAtPick": 5,
    "projection": 20.558642305574036,
-   "latestValue": 5,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -288,7 +288,7 @@
    "scoreMargin": 3,
    "valueAtPick": 6,
    "projection": 16.197118088119524,
-   "latestValue": 24,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Over",
@@ -421,7 +421,7 @@
    "scoreMargin": -7,
    "valueAtPick": 1,
    "projection": 1.3744016748715753,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -588,7 +588,7 @@
    "scoreMargin": -7,
    "valueAtPick": 14,
    "projection": 24.922104444543805,
-   "latestValue": 18,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Over",
@@ -788,7 +788,7 @@
    "scoreMargin": -15,
    "valueAtPick": 2,
    "projection": 3.7011957805459765,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -1154,7 +1154,7 @@
    "scoreMargin": -8,
    "valueAtPick": 9,
    "projection": 14.586092592283752,
-   "latestValue": 9,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -1286,7 +1286,7 @@
    "scoreMargin": 2,
    "valueAtPick": 21,
    "projection": 26.927116090178302,
-   "latestValue": 21,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Under",
@@ -1387,7 +1387,7 @@
    "scoreMargin": -12,
    "valueAtPick": 24,
    "projection": 31.81472824375463,
-   "latestValue": 24,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Over",
@@ -1531,7 +1531,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 348,
+ "calls": 356,
  "note": null,
  "checkpointsTaken": {
   "21718143": [
