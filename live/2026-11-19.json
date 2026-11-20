@@ -1,35 +1,35 @@
 {
  "date": "2026-11-19",
- "updatedAt": "2026-11-20T01:47:13.762Z",
+ "updatedAt": "2026-11-20T01:51:13.673Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718143,
    "matchup": "GSW @ MEM",
    "status": "2nd Qtr",
-   "homeScore": 41,
+   "homeScore": 45,
    "visitorScore": 29
   },
   {
    "gameId": 21718144,
    "matchup": "POR @ MIL",
    "status": "2nd Qtr",
-   "homeScore": 27,
-   "visitorScore": 35
+   "homeScore": 34,
+   "visitorScore": 38
   },
   {
    "gameId": 21718145,
    "matchup": "NYK @ MIN",
    "status": "2nd Qtr",
-   "homeScore": 35,
-   "visitorScore": 40
+   "homeScore": 39,
+   "visitorScore": 47
   },
   {
    "gameId": 21718146,
    "matchup": "LAC @ SAS",
    "status": "2nd Qtr",
-   "homeScore": 40,
-   "visitorScore": 28
+   "homeScore": 45,
+   "visitorScore": 31
   }
  ],
  "picks": [
@@ -88,7 +88,7 @@
    "scoreMargin": 3,
    "valueAtPick": 10,
    "projection": 37.094388132446596,
-   "latestValue": 16,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Under",
@@ -122,7 +122,7 @@
    "scoreMargin": -3,
    "valueAtPick": 3,
    "projection": 14.36662679118672,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -188,7 +188,7 @@
    "scoreMargin": 3,
    "valueAtPick": 13,
    "projection": 33.55512170093985,
-   "latestValue": 17,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Under",
@@ -288,7 +288,7 @@
    "scoreMargin": 3,
    "valueAtPick": 6,
    "projection": 16.197118088119524,
-   "latestValue": 13,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -388,7 +388,7 @@
    "scoreMargin": 7,
    "valueAtPick": 13,
    "projection": 41.01594565056253,
-   "latestValue": 19,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Under",
@@ -520,7 +520,7 @@
    "scoreMargin": 7,
    "valueAtPick": 6,
    "projection": 11.533315114159599,
-   "latestValue": 6,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Over",
@@ -699,7 +699,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 207,
+ "calls": 215,
  "note": null,
  "checkpointsTaken": {
   "21718143": [
