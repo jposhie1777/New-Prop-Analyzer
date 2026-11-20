@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "updatedAt": "2026-11-20T02:19:14.732Z",
+ "updatedAt": "2026-11-20T02:23:14.880Z",
  "state": "running",
  "games": [
   {
@@ -21,15 +21,15 @@
    "gameId": 21718145,
    "matchup": "NYK @ MIN",
    "status": "3rd Qtr",
-   "homeScore": 50,
-   "visitorScore": 65
+   "homeScore": 59,
+   "visitorScore": 71
   },
   {
    "gameId": 21718146,
    "matchup": "LAC @ SAS",
-   "status": "2nd Qtr",
-   "homeScore": 57,
-   "visitorScore": 54
+   "status": "3rd Qtr",
+   "homeScore": 59,
+   "visitorScore": 57
   }
  ],
  "picks": [
@@ -188,7 +188,7 @@
    "scoreMargin": 3,
    "valueAtPick": 13,
    "projection": 33.55512170093985,
-   "latestValue": 20,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Under",
@@ -388,7 +388,7 @@
    "scoreMargin": 7,
    "valueAtPick": 13,
    "projection": 41.01594565056253,
-   "latestValue": 27,
+   "latestValue": 30,
    "tags": [
     "Best bet",
     "Under",
@@ -520,7 +520,7 @@
    "scoreMargin": 7,
    "valueAtPick": 6,
    "projection": 11.533315114159599,
-   "latestValue": 9,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Over",
@@ -720,7 +720,7 @@
    "scoreMargin": 15,
    "valueAtPick": 10,
    "projection": 15.84044301275705,
-   "latestValue": 10,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -755,7 +755,7 @@
    "scoreMargin": -15,
    "valueAtPick": 1,
    "projection": 1.3270725574712643,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Over",
     "Steals",
@@ -822,7 +822,7 @@
    "scoreMargin": 15,
    "valueAtPick": 25,
    "projection": 43.317459760188626,
-   "latestValue": 25,
+   "latestValue": 27,
    "tags": [
     "Best bet",
     "Over",
@@ -856,7 +856,7 @@
    "scoreMargin": 15,
    "valueAtPick": 1,
    "projection": 2.408503452915469,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Over",
     "Rebounds",
@@ -1366,7 +1366,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 283,
+ "calls": 291,
  "note": null,
  "checkpointsTaken": {
   "21718143": [
