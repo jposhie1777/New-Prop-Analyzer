@@ -1,0 +1,73 @@
+{
+ "date": "2026-11-20",
+ "updatedAt": "2026-11-20T22:36:25.828Z",
+ "state": "waiting",
+ "games": [
+  {
+   "gameId": 21718147,
+   "matchup": "CHA @ ATL",
+   "status": "2026-11-21T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718148,
+   "matchup": "ORL @ BKN",
+   "status": "2026-11-21T00:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718149,
+   "matchup": "IND @ CLE",
+   "status": "2026-11-21T00:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718150,
+   "matchup": "TOR @ DET",
+   "status": "2026-11-21T00:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718151,
+   "matchup": "WAS @ CHI",
+   "status": "2026-11-21T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718152,
+   "matchup": "NOP @ OKC",
+   "status": "2026-11-21T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718153,
+   "matchup": "PHX @ UTA",
+   "status": "2026-11-21T02:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718154,
+   "matchup": "HOU @ DEN",
+   "status": "2026-11-21T03:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718155,
+   "matchup": "SAC @ LAL",
+   "status": "2026-11-21T03:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  }
+ ],
+ "picks": [],
+ "calls": 1,
+ "note": "First tip-off 2026-11-21T00:00:00.000Z"
+}
