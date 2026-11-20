@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "updatedAt": "2026-11-20T02:15:16.910Z",
+ "updatedAt": "2026-11-20T02:19:14.732Z",
  "state": "running",
  "games": [
   {
@@ -20,7 +20,7 @@
   {
    "gameId": 21718145,
    "matchup": "NYK @ MIN",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 50,
    "visitorScore": 65
   },
@@ -188,7 +188,7 @@
    "scoreMargin": 3,
    "valueAtPick": 13,
    "projection": 33.55512170093985,
-   "latestValue": 19,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Under",
@@ -1366,7 +1366,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 275,
+ "calls": 283,
  "note": null,
  "checkpointsTaken": {
   "21718143": [
