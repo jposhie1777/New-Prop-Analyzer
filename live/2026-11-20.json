@@ -1,13 +1,13 @@
 {
  "date": "2026-11-20",
- "updatedAt": "2026-11-21T01:52:12.563Z",
+ "updatedAt": "2026-11-21T01:56:13.392Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718147,
    "matchup": "CHA @ ATL",
    "status": "4th Qtr",
-   "homeScore": 89,
+   "homeScore": 95,
    "visitorScore": 80
   },
   {
@@ -20,8 +20,8 @@
   {
    "gameId": 21718149,
    "matchup": "IND @ CLE",
-   "status": "2nd Qtr",
-   "homeScore": 62,
+   "status": "3rd Qtr",
+   "homeScore": 65,
    "visitorScore": 61
   },
   {
@@ -29,14 +29,14 @@
    "matchup": "TOR @ DET",
    "status": "3rd Qtr",
    "homeScore": 48,
-   "visitorScore": 54
+   "visitorScore": 56
   },
   {
    "gameId": 21718151,
    "matchup": "WAS @ CHI",
    "status": "2nd Qtr",
-   "homeScore": 46,
-   "visitorScore": 37
+   "homeScore": 51,
+   "visitorScore": 40
   },
   {
    "gameId": 21718152,
@@ -123,7 +123,7 @@
    "scoreMargin": 8,
    "valueAtPick": 1,
    "projection": 5.861620980521285,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -321,7 +321,7 @@
    "scoreMargin": -1,
    "valueAtPick": 18,
    "projection": 30.606378764593064,
-   "latestValue": 21,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Over",
@@ -1510,7 +1510,7 @@
    "scoreMargin": 1,
    "valueAtPick": 7,
    "projection": 11.697931784341359,
-   "latestValue": 7,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -1885,7 +1885,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 326,
+ "calls": 334,
  "note": null,
  "checkpointsTaken": {
   "21718147": [
