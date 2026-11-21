@@ -1,0 +1,52 @@
+{
+ "date": "2026-11-21",
+ "updatedAt": "2026-11-21T16:34:48.245Z",
+ "state": "waiting",
+ "games": [
+  {
+   "gameId": 21718156,
+   "matchup": "MIL @ PHI",
+   "status": "2026-11-21T18:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718157,
+   "matchup": "POR @ NYK",
+   "status": "2026-11-22T00:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718158,
+   "matchup": "LAC @ DAL",
+   "status": "2026-11-22T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718159,
+   "matchup": "MEM @ MIN",
+   "status": "2026-11-22T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718160,
+   "matchup": "NOP @ SAS",
+   "status": "2026-11-22T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718161,
+   "matchup": "BOS @ SAC",
+   "status": "2026-11-22T03:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  }
+ ],
+ "picks": [],
+ "calls": 1,
+ "note": "First tip-off 2026-11-21T18:00:00.000Z"
+}
