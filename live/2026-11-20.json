@@ -1,49 +1,49 @@
 {
  "date": "2026-11-20",
- "updatedAt": "2026-11-21T01:30:15.870Z",
+ "updatedAt": "2026-11-21T01:34:11.989Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718147,
    "matchup": "CHA @ ATL",
    "status": "3rd Qtr",
-   "homeScore": 63,
-   "visitorScore": 62
+   "homeScore": 76,
+   "visitorScore": 69
   },
   {
    "gameId": 21718148,
    "matchup": "ORL @ BKN",
    "status": "2nd Qtr",
-   "homeScore": 41,
-   "visitorScore": 44
+   "homeScore": 44,
+   "visitorScore": 49
   },
   {
    "gameId": 21718149,
    "matchup": "IND @ CLE",
    "status": "2nd Qtr",
-   "homeScore": 55,
-   "visitorScore": 55
+   "homeScore": 58,
+   "visitorScore": 59
   },
   {
    "gameId": 21718150,
    "matchup": "TOR @ DET",
    "status": "2nd Qtr",
-   "homeScore": 42,
-   "visitorScore": 49
+   "homeScore": 44,
+   "visitorScore": 54
   },
   {
    "gameId": 21718151,
    "matchup": "WAS @ CHI",
    "status": "1st Qtr",
-   "homeScore": 19,
-   "visitorScore": 18
+   "homeScore": 26,
+   "visitorScore": 22
   },
   {
    "gameId": 21718152,
    "matchup": "NOP @ OKC",
    "status": "1st Qtr",
-   "homeScore": 20,
-   "visitorScore": 29
+   "homeScore": 25,
+   "visitorScore": 31
   },
   {
    "gameId": 21718153,
@@ -288,7 +288,7 @@
    "scoreMargin": -1,
    "valueAtPick": 9,
    "projection": 18.325348557033937,
-   "latestValue": 14,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Under",
@@ -321,7 +321,7 @@
    "scoreMargin": -1,
    "valueAtPick": 18,
    "projection": 30.606378764593064,
-   "latestValue": 19,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Over",
@@ -618,7 +618,7 @@
    "scoreMargin": -13,
    "valueAtPick": 0,
    "projection": 10.069883808502725,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -717,7 +717,7 @@
    "scoreMargin": -13,
    "valueAtPick": 4,
    "projection": 13.560334501225519,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -893,7 +893,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 256,
+ "calls": 264,
  "note": null,
  "checkpointsTaken": {
   "21718147": [
