@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "updatedAt": "2026-11-21T02:45:20.703Z",
+ "updatedAt": "2026-11-21T02:49:16.145Z",
  "state": "running",
  "games": [
   {
@@ -14,43 +14,43 @@
    "gameId": 21718148,
    "matchup": "ORL @ BKN",
    "status": "4th Qtr",
-   "homeScore": 98,
-   "visitorScore": 95
+   "homeScore": 100,
+   "visitorScore": 98
   },
   {
    "gameId": 21718149,
    "matchup": "IND @ CLE",
    "status": "4th Qtr",
-   "homeScore": 115,
-   "visitorScore": 105
+   "homeScore": 117,
+   "visitorScore": 107
   },
   {
    "gameId": 21718150,
    "matchup": "TOR @ DET",
    "status": "4th Qtr",
-   "homeScore": 85,
+   "homeScore": 88,
    "visitorScore": 91
   },
   {
    "gameId": 21718151,
    "matchup": "WAS @ CHI",
-   "status": "3rd Qtr",
-   "homeScore": 69,
+   "status": "4th Qtr",
+   "homeScore": 75,
    "visitorScore": 75
   },
   {
    "gameId": 21718152,
    "matchup": "NOP @ OKC",
    "status": "3rd Qtr",
-   "homeScore": 90,
-   "visitorScore": 96
+   "homeScore": 92,
+   "visitorScore": 98
   },
   {
    "gameId": 21718153,
    "matchup": "PHX @ UTA",
    "status": "1st Qtr",
-   "homeScore": 0,
-   "visitorScore": 0
+   "homeScore": 4,
+   "visitorScore": 8
   },
   {
    "gameId": 21718154,
@@ -625,7 +625,7 @@
    "scoreMargin": 13,
    "valueAtPick": 1,
    "projection": 3.016940930312719,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Over",
@@ -790,7 +790,7 @@
    "scoreMargin": -3,
    "valueAtPick": 1,
    "projection": 1.9504240825119017,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -1250,7 +1250,7 @@
    "scoreMargin": -3,
    "valueAtPick": 4,
    "projection": 8.012144184693469,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -1382,7 +1382,7 @@
    "scoreMargin": 6,
    "valueAtPick": 18,
    "projection": 33.6820896305564,
-   "latestValue": 31,
+   "latestValue": 32,
    "tags": [
     "Best bet",
     "Under",
@@ -1550,7 +1550,7 @@
    "scoreMargin": 1,
    "valueAtPick": 7,
    "projection": 11.697931784341359,
-   "latestValue": 13,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -2031,7 +2031,7 @@
    "scoreMargin": 8,
    "valueAtPick": 2,
    "projection": 5.15697315518279,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -2262,7 +2262,7 @@
    "scoreMargin": -8,
    "valueAtPick": 5,
    "projection": 9.837782157750889,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -2501,7 +2501,7 @@
    "scoreMargin": -5,
    "valueAtPick": 15,
    "projection": 20.502278702489708,
-   "latestValue": 18,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -2870,7 +2870,7 @@
    "scoreMargin": -6,
    "valueAtPick": 7,
    "projection": 9.7126957322833,
-   "latestValue": 7,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -2948,9 +2948,176 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718152-1028037477-points_assists",
+   "gameDate": "2026-11-20",
+   "gameId": 21718152,
+   "matchup": "NOP @ OKC",
+   "playerId": 1028037477,
+   "playerName": "Ajay Mitchell",
+   "teamAbbreviation": "OKC",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 15.5,
+   "americanOdds": -136,
+   "vendor": "fanduel",
+   "modelProbability": 0.7199791799699014,
+   "evPercent": 24.93756358301229,
+   "foundAt": "2026-11-21T02:49:14.606Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -6,
+   "valueAtPick": 9,
+   "projection": 13.603646870857649,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Foul trouble",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718152-1057274415-points",
+   "gameDate": "2026-11-20",
+   "gameId": 21718152,
+   "matchup": "NOP @ OKC",
+   "playerId": 1057274415,
+   "playerName": "Derik Queen",
+   "teamAbbreviation": "NOP",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": 110,
+   "vendor": "draftkings",
+   "modelProbability": 0.5810999056996724,
+   "evPercent": 22.030980196931218,
+   "foundAt": "2026-11-21T02:49:14.606Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 6,
+   "valueAtPick": 7,
+   "projection": 10.070564232293485,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718152-480-rebounds",
+   "gameDate": "2026-11-20",
+   "gameId": 21718152,
+   "matchup": "NOP @ OKC",
+   "playerId": 480,
+   "playerName": "Kenrich Williams",
+   "teamAbbreviation": "OKC",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -154,
+   "vendor": "draftkings",
+   "modelProbability": 0.73651441544701,
+   "evPercent": 21.477052937363993,
+   "foundAt": "2026-11-21T02:49:14.606Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -6,
+   "valueAtPick": 1,
+   "projection": 1.805684239520651,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718152-175-rebounds_assists",
+   "gameDate": "2026-11-20",
+   "gameId": 21718152,
+   "matchup": "NOP @ OKC",
+   "playerId": 175,
+   "playerName": "Shai Gilgeous-Alexander",
+   "teamAbbreviation": "OKC",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 8.5,
+   "americanOdds": 118,
+   "vendor": "fanduel",
+   "modelProbability": 0.5251102366750751,
+   "evPercent": 14.474031595166359,
+   "foundAt": "2026-11-21T02:49:14.606Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -6,
+   "valueAtPick": 7,
+   "projection": 8.405263272183516,
+   "latestValue": 7,
+   "tags": [
+    "Under",
+    "Reb+Ast",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718152-18677986-threes",
+   "gameDate": "2026-11-20",
+   "gameId": 21718152,
+   "matchup": "NOP @ OKC",
+   "playerId": 18677986,
+   "playerName": "Trey Murphy III",
+   "teamAbbreviation": "NOP",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 142,
+   "vendor": "fanduel",
+   "modelProbability": 0.4648252647207083,
+   "evPercent": 12.487714062411403,
+   "foundAt": "2026-11-21T02:49:14.606Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 6,
+   "valueAtPick": 3,
+   "projection": 3.426815845848434,
+   "latestValue": 3,
+   "tags": [
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 457,
+ "calls": 469,
  "note": null,
  "checkpointsTaken": {
   "21718147": [
@@ -2980,7 +3147,8 @@
   ],
   "21718152": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ]
  }
 }
