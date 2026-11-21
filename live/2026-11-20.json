@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "updatedAt": "2026-11-21T02:42:14.772Z",
+ "updatedAt": "2026-11-21T02:45:20.703Z",
  "state": "running",
  "games": [
   {
@@ -15,35 +15,35 @@
    "matchup": "ORL @ BKN",
    "status": "4th Qtr",
    "homeScore": 98,
-   "visitorScore": 93
+   "visitorScore": 95
   },
   {
    "gameId": 21718149,
    "matchup": "IND @ CLE",
    "status": "4th Qtr",
-   "homeScore": 113,
-   "visitorScore": 96
+   "homeScore": 115,
+   "visitorScore": 105
   },
   {
    "gameId": 21718150,
    "matchup": "TOR @ DET",
    "status": "4th Qtr",
-   "homeScore": 83,
-   "visitorScore": 89
+   "homeScore": 85,
+   "visitorScore": 91
   },
   {
    "gameId": 21718151,
    "matchup": "WAS @ CHI",
    "status": "3rd Qtr",
-   "homeScore": 67,
-   "visitorScore": 73
+   "homeScore": 69,
+   "visitorScore": 75
   },
   {
    "gameId": 21718152,
    "matchup": "NOP @ OKC",
    "status": "3rd Qtr",
-   "homeScore": 83,
-   "visitorScore": 94
+   "homeScore": 90,
+   "visitorScore": 96
   },
   {
    "gameId": 21718153,
@@ -493,7 +493,7 @@
    "scoreMargin": 0,
    "valueAtPick": 3,
    "projection": 21.083276965284448,
-   "latestValue": 14,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Under",
@@ -987,7 +987,7 @@
    "scoreMargin": 7,
    "valueAtPick": 2,
    "projection": 6.925492502845629,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -1119,7 +1119,7 @@
    "scoreMargin": 3,
    "valueAtPick": 12,
    "projection": 30.44907955216132,
-   "latestValue": 24,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Over",
@@ -1250,7 +1250,7 @@
    "scoreMargin": -3,
    "valueAtPick": 4,
    "projection": 8.012144184693469,
-   "latestValue": 9,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -2735,7 +2735,7 @@
    "scoreMargin": 3,
    "valueAtPick": 5,
    "projection": 6.9559999999999995,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -2779,9 +2779,178 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718151-490-points_rebounds_assists",
+   "gameDate": "2026-11-20",
+   "gameId": 21718151,
+   "matchup": "WAS @ CHI",
+   "playerId": 490,
+   "playerName": "Trae Young",
+   "teamAbbreviation": "WAS",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 24.5,
+   "americanOdds": -152,
+   "vendor": "fanduel",
+   "modelProbability": 0.7525213588881479,
+   "evPercent": 24.760120026192943,
+   "foundAt": "2026-11-21T02:45:14.445Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 6,
+   "valueAtPick": 16,
+   "projection": 21.970968889103094,
+   "latestValue": 16,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718151-1028026060-threes",
+   "gameDate": "2026-11-20",
+   "gameId": 21718151,
+   "matchup": "WAS @ CHI",
+   "playerId": 1028026060,
+   "playerName": "KyShawn George",
+   "teamAbbreviation": "WAS",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 110,
+   "vendor": "draftkings",
+   "modelProbability": 0.5822289890974751,
+   "evPercent": 22.268087710469775,
+   "foundAt": "2026-11-21T02:45:14.445Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 6,
+   "valueAtPick": 1,
+   "projection": 1.7241585808909161,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718151-1028025177-points",
+   "gameDate": "2026-11-20",
+   "gameId": 21718151,
+   "matchup": "WAS @ CHI",
+   "playerId": 1028025177,
+   "playerName": "Matas Buzelis",
+   "teamAbbreviation": "CHI",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 10.5,
+   "americanOdds": -105,
+   "vendor": "draftkings",
+   "modelProbability": 0.618111882584886,
+   "evPercent": 20.678986599906324,
+   "foundAt": "2026-11-21T02:45:14.445Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -6,
+   "valueAtPick": 7,
+   "projection": 9.7126957322833,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718151-117-points_assists",
+   "gameDate": "2026-11-20",
+   "gameId": 21718151,
+   "matchup": "WAS @ CHI",
+   "playerId": 117,
+   "playerName": "Anthony Davis",
+   "teamAbbreviation": "WAS",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 38.5,
+   "americanOdds": -106,
+   "vendor": "fanduel",
+   "modelProbability": 0.6190496838975678,
+   "evPercent": 20.305881964999028,
+   "foundAt": "2026-11-21T02:45:14.445Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 6,
+   "valueAtPick": 32,
+   "projection": 37.429320951113226,
+   "latestValue": 32,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718151-210-points",
+   "gameDate": "2026-11-20",
+   "gameId": 21718151,
+   "matchup": "WAS @ CHI",
+   "playerId": 210,
+   "playerName": "Buddy Hield",
+   "teamAbbreviation": "CHI",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 14.5,
+   "americanOdds": -140,
+   "vendor": "draftkings",
+   "modelProbability": 0.6917745412242983,
+   "evPercent": 18.589921352736848,
+   "foundAt": "2026-11-21T02:45:14.445Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -6,
+   "valueAtPick": 12,
+   "projection": 13.518300522629906,
+   "latestValue": 12,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 447,
+ "calls": 457,
  "note": null,
  "checkpointsTaken": {
   "21718147": [
@@ -2806,7 +2975,8 @@
   ],
   "21718151": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718152": [
    "end-q1",
