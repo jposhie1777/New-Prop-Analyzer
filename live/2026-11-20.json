@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "updatedAt": "2026-11-21T02:30:17.962Z",
+ "updatedAt": "2026-11-21T02:34:14.664Z",
  "state": "running",
  "games": [
   {
@@ -13,37 +13,37 @@
   {
    "gameId": 21718148,
    "matchup": "ORL @ BKN",
-   "status": "3rd Qtr",
-   "homeScore": 86,
-   "visitorScore": 89
+   "status": "4th Qtr",
+   "homeScore": 88,
+   "visitorScore": 91
   },
   {
    "gameId": 21718149,
    "matchup": "IND @ CLE",
    "status": "4th Qtr",
    "homeScore": 109,
-   "visitorScore": 88
+   "visitorScore": 90
   },
   {
    "gameId": 21718150,
    "matchup": "TOR @ DET",
    "status": "4th Qtr",
-   "homeScore": 72,
-   "visitorScore": 77
+   "homeScore": 77,
+   "visitorScore": 81
   },
   {
    "gameId": 21718151,
    "matchup": "WAS @ CHI",
    "status": "3rd Qtr",
    "homeScore": 62,
-   "visitorScore": 61
+   "visitorScore": 67
   },
   {
    "gameId": 21718152,
    "matchup": "NOP @ OKC",
    "status": "3rd Qtr",
-   "homeScore": 70,
-   "visitorScore": 80
+   "homeScore": 72,
+   "visitorScore": 82
   },
   {
    "gameId": 21718153,
@@ -790,7 +790,7 @@
    "scoreMargin": -3,
    "valueAtPick": 1,
    "projection": 1.9504240825119017,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -954,7 +954,7 @@
    "scoreMargin": -7,
    "valueAtPick": 1,
    "projection": 3.595347890818589,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -1315,7 +1315,7 @@
    "scoreMargin": -6,
    "valueAtPick": 3,
    "projection": 10.30758259016349,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -1348,7 +1348,7 @@
    "scoreMargin": -6,
    "valueAtPick": 22,
    "projection": 41.478098110714726,
-   "latestValue": 28,
+   "latestValue": 29,
    "tags": [
     "Best bet",
     "Under",
@@ -1382,7 +1382,7 @@
    "scoreMargin": 6,
    "valueAtPick": 18,
    "projection": 33.6820896305564,
-   "latestValue": 28,
+   "latestValue": 31,
    "tags": [
     "Best bet",
     "Under",
@@ -1416,7 +1416,7 @@
    "scoreMargin": -6,
    "valueAtPick": 2,
    "projection": 3.4824044161494343,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Under",
     "Rebounds",
@@ -1448,7 +1448,7 @@
    "scoreMargin": -1,
    "valueAtPick": 9,
    "projection": 19.315156270646195,
-   "latestValue": 19,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Under",
@@ -1867,7 +1867,7 @@
    "scoreMargin": -1,
    "valueAtPick": 13,
    "projection": 21.136884957754305,
-   "latestValue": 18,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Under",
@@ -2162,7 +2162,7 @@
    "scoreMargin": 8,
    "valueAtPick": 10,
    "projection": 16.487083675691327,
-   "latestValue": 17,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Under",
@@ -2467,7 +2467,7 @@
    "scoreMargin": -5,
    "valueAtPick": 24,
    "projection": 31.655308179173446,
-   "latestValue": 24,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Under",
@@ -2501,7 +2501,7 @@
    "scoreMargin": -5,
    "valueAtPick": 15,
    "projection": 20.502278702489708,
-   "latestValue": 15,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -2535,7 +2535,7 @@
    "scoreMargin": 5,
    "valueAtPick": 25,
    "projection": 31.35452413867374,
-   "latestValue": 25,
+   "latestValue": 27,
    "tags": [
     "Best bet",
     "Under",
@@ -2569,7 +2569,7 @@
    "scoreMargin": 5,
    "valueAtPick": 12,
    "projection": 15.612006572401258,
-   "latestValue": 12,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -2603,7 +2603,7 @@
    "scoreMargin": -5,
    "valueAtPick": 4,
    "projection": 6.101267647165062,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -2613,9 +2613,175 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718148-462-rebounds",
+   "gameDate": "2026-11-20",
+   "gameId": 21718148,
+   "matchup": "ORL @ BKN",
+   "playerId": 462,
+   "playerName": "Moritz Wagner",
+   "teamAbbreviation": "BKN",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": -105,
+   "vendor": "draftkings",
+   "modelProbability": 0.6319242924054221,
+   "evPercent": 23.375695183915756,
+   "foundAt": "2026-11-21T02:33:13.906Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -3,
+   "valueAtPick": 3,
+   "projection": 3.8883047599830585,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718148-1057266813-points",
+   "gameDate": "2026-11-20",
+   "gameId": 21718148,
+   "matchup": "ORL @ BKN",
+   "playerId": 1057266813,
+   "playerName": "Egor Demin",
+   "teamAbbreviation": "BKN",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": -140,
+   "vendor": "draftkings",
+   "modelProbability": 0.7094902000092191,
+   "evPercent": 21.62689143015186,
+   "foundAt": "2026-11-21T02:33:13.906Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -3,
+   "valueAtPick": 4,
+   "projection": 7.027397979279821,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718148-375-assists",
+   "gameDate": "2026-11-20",
+   "gameId": 21718148,
+   "matchup": "ORL @ BKN",
+   "playerId": 375,
+   "playerName": "Michael Porter Jr.",
+   "teamAbbreviation": "BKN",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": 182,
+   "vendor": "fanduel",
+   "modelProbability": 0.42406408949464214,
+   "evPercent": 19.58607323748909,
+   "foundAt": "2026-11-21T02:33:13.906Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -3,
+   "valueAtPick": 5,
+   "projection": 5.359586821875,
+   "latestValue": 5,
+   "tags": [
+    "Over",
+    "Assists",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718148-85-rebounds",
+   "gameDate": "2026-11-20",
+   "gameId": 21718148,
+   "matchup": "ORL @ BKN",
+   "playerId": 85,
+   "playerName": "Wendell Carter Jr.",
+   "teamAbbreviation": "ORL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": -110,
+   "vendor": "betmgm",
+   "modelProbability": 0.624803781321186,
+   "evPercent": 19.280721888590048,
+   "foundAt": "2026-11-21T02:33:13.906Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 3,
+   "valueAtPick": 5,
+   "projection": 6.9559999999999995,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718148-17896026-threes",
+   "gameDate": "2026-11-20",
+   "gameId": 21718148,
+   "matchup": "ORL @ BKN",
+   "playerId": 17896026,
+   "playerName": "Franz Wagner",
+   "teamAbbreviation": "ORL",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -140,
+   "vendor": "betmgm",
+   "modelProbability": 0.6950140108501413,
+   "evPercent": 19.145259002881374,
+   "foundAt": "2026-11-21T02:33:13.906Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 3,
+   "valueAtPick": 2,
+   "projection": 2.1454803361253973,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 419,
+ "calls": 431,
  "note": null,
  "checkpointsTaken": {
   "21718147": [
@@ -2625,7 +2791,8 @@
   ],
   "21718148": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718149": [
    "end-q1",
