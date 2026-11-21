@@ -1,14 +1,14 @@
 {
  "date": "2026-11-20",
- "updatedAt": "2026-11-21T01:48:13.146Z",
+ "updatedAt": "2026-11-21T01:52:12.563Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718147,
    "matchup": "CHA @ ATL",
-   "status": "3rd Qtr",
-   "homeScore": 87,
-   "visitorScore": 76
+   "status": "4th Qtr",
+   "homeScore": 89,
+   "visitorScore": 80
   },
   {
    "gameId": 21718148,
@@ -27,7 +27,7 @@
   {
    "gameId": 21718150,
    "matchup": "TOR @ DET",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 48,
    "visitorScore": 54
   },
@@ -35,15 +35,15 @@
    "gameId": 21718151,
    "matchup": "WAS @ CHI",
    "status": "2nd Qtr",
-   "homeScore": 44,
-   "visitorScore": 31
+   "homeScore": 46,
+   "visitorScore": 37
   },
   {
    "gameId": 21718152,
    "matchup": "NOP @ OKC",
    "status": "2nd Qtr",
-   "homeScore": 40,
-   "visitorScore": 41
+   "homeScore": 47,
+   "visitorScore": 51
   },
   {
    "gameId": 21718153,
@@ -123,7 +123,7 @@
    "scoreMargin": 8,
    "valueAtPick": 1,
    "projection": 5.861620980521285,
-   "latestValue": 5,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -1079,7 +1079,7 @@
    "scoreMargin": 3,
    "valueAtPick": 12,
    "projection": 30.44907955216132,
-   "latestValue": 11,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -1145,7 +1145,7 @@
    "scoreMargin": 3,
    "valueAtPick": 1,
    "projection": 4.251952818426635,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Under",
     "Rebounds",
@@ -1885,7 +1885,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 318,
+ "calls": 326,
  "note": null,
  "checkpointsTaken": {
   "21718147": [
