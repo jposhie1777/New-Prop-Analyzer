@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "updatedAt": "2026-11-21T02:19:13.877Z",
+ "updatedAt": "2026-11-21T02:23:13.955Z",
  "state": "running",
  "games": [
   {
@@ -15,35 +15,35 @@
    "matchup": "ORL @ BKN",
    "status": "3rd Qtr",
    "homeScore": 76,
-   "visitorScore": 78
+   "visitorScore": 82
   },
   {
    "gameId": 21718149,
    "matchup": "IND @ CLE",
-   "status": "3rd Qtr",
-   "homeScore": 100,
-   "visitorScore": 80
+   "status": "4th Qtr",
+   "homeScore": 105,
+   "visitorScore": 83
   },
   {
    "gameId": 21718150,
    "matchup": "TOR @ DET",
    "status": "3rd Qtr",
-   "homeScore": 67,
-   "visitorScore": 72
+   "homeScore": 70,
+   "visitorScore": 73
   },
   {
    "gameId": 21718151,
    "matchup": "WAS @ CHI",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 60,
-   "visitorScore": 52
+   "visitorScore": 56
   },
   {
    "gameId": 21718152,
    "matchup": "NOP @ OKC",
-   "status": "2nd Qtr",
-   "homeScore": 56,
-   "visitorScore": 64
+   "status": "3rd Qtr",
+   "homeScore": 63,
+   "visitorScore": 67
   },
   {
    "gameId": 21718153,
@@ -724,7 +724,7 @@
    "scoreMargin": -13,
    "valueAtPick": 1,
    "projection": 8.420491292662215,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Under",
@@ -1217,7 +1217,7 @@
    "scoreMargin": -3,
    "valueAtPick": 0,
    "projection": 10.666926808478632,
-   "latestValue": 0,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -1250,7 +1250,7 @@
    "scoreMargin": -3,
    "valueAtPick": 4,
    "projection": 8.012144184693469,
-   "latestValue": 6,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -1382,7 +1382,7 @@
    "scoreMargin": 6,
    "valueAtPick": 18,
    "projection": 33.6820896305564,
-   "latestValue": 24,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Under",
@@ -1834,7 +1834,7 @@
    "scoreMargin": 1,
    "valueAtPick": 8,
    "projection": 14.661645425227402,
-   "latestValue": 9,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -2162,7 +2162,7 @@
    "scoreMargin": 8,
    "valueAtPick": 10,
    "projection": 16.487083675691327,
-   "latestValue": 10,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -2272,9 +2272,181 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718149-38017507-points",
+   "gameDate": "2026-11-20",
+   "gameId": 21718149,
+   "matchup": "IND @ CLE",
+   "playerId": 38017507,
+   "playerName": "Andrew Nembhard",
+   "teamAbbreviation": "IND",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 13.5,
+   "americanOdds": 100,
+   "vendor": "fanduel",
+   "modelProbability": 0.6247493156880292,
+   "evPercent": 24.94986313760583,
+   "foundAt": "2026-11-21T02:21:13.392Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -22,
+   "valueAtPick": 11,
+   "projection": 14.437770292858753,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718149-192-rebounds",
+   "gameDate": "2026-11-20",
+   "gameId": 21718149,
+   "matchup": "IND @ CLE",
+   "playerId": 192,
+   "playerName": "James Harden",
+   "teamAbbreviation": "CLE",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": 107,
+   "vendor": "caesars",
+   "modelProbability": 0.6023492696748926,
+   "evPercent": 24.686298822702767,
+   "foundAt": "2026-11-21T02:21:13.392Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 22,
+   "valueAtPick": 5,
+   "projection": 5.780184494628906,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718149-9-points_assists",
+   "gameDate": "2026-11-20",
+   "gameId": 21718149,
+   "matchup": "IND @ CLE",
+   "playerId": 9,
+   "playerName": "Jarrett Allen",
+   "teamAbbreviation": "CLE",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 11.5,
+   "americanOdds": -138,
+   "vendor": "fanduel",
+   "modelProbability": 0.715517866963773,
+   "evPercent": 23.400907490853594,
+   "foundAt": "2026-11-21T02:21:13.392Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 22,
+   "valueAtPick": 10,
+   "projection": 12.994880337009263,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Blowout risk",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718149-3547250-threes",
+   "gameDate": "2026-11-20",
+   "gameId": 21718149,
+   "matchup": "IND @ CLE",
+   "playerId": 3547250,
+   "playerName": "Aaron Nesmith",
+   "teamAbbreviation": "IND",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": 174,
+   "vendor": "fanduel",
+   "modelProbability": 0.44694085562311725,
+   "evPercent": 22.461794440734128,
+   "foundAt": "2026-11-21T02:21:13.392Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -22,
+   "valueAtPick": 0,
+   "projection": 0.39378650232712764,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718149-322-rebounds_assists",
+   "gameDate": "2026-11-20",
+   "gameId": 21718149,
+   "matchup": "IND @ CLE",
+   "playerId": 322,
+   "playerName": "Donovan Mitchell",
+   "teamAbbreviation": "CLE",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": 124,
+   "vendor": "fanduel",
+   "modelProbability": 0.5419988452340778,
+   "evPercent": 21.40774133243344,
+   "foundAt": "2026-11-21T02:21:13.392Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 22,
+   "valueAtPick": 4,
+   "projection": 5.344806287808,
+   "latestValue": 4,
+   "tags": [
+    "Under",
+    "Reb+Ast",
+    "Blowout risk",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 389,
+ "calls": 401,
  "note": null,
  "checkpointsTaken": {
   "21718147": [
@@ -2288,7 +2460,8 @@
   ],
   "21718149": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718150": [
    "end-q1",
