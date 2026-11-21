@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "updatedAt": "2026-11-21T03:43:17.006Z",
+ "updatedAt": "2026-11-21T03:47:17.237Z",
  "state": "running",
  "games": [
   {
@@ -56,15 +56,15 @@
    "gameId": 21718154,
    "matchup": "HOU @ DEN",
    "status": "2nd Qtr",
-   "homeScore": 33,
-   "visitorScore": 36
+   "homeScore": 40,
+   "visitorScore": 41
   },
   {
    "gameId": 21718155,
    "matchup": "SAC @ LAL",
    "status": "2nd Qtr",
-   "homeScore": 28,
-   "visitorScore": 28
+   "homeScore": 34,
+   "visitorScore": 32
   }
  ],
  "picks": [
@@ -3802,7 +3802,7 @@
    "scoreMargin": 0,
    "valueAtPick": 4,
    "projection": 19.754918754563967,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -3901,7 +3901,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 17.138731294008593,
-   "latestValue": 2,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -4082,7 +4082,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 601,
+ "calls": 609,
  "note": null,
  "checkpointsTaken": {
   "21718147": [
