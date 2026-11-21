@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "updatedAt": "2026-11-21T04:57:45.841Z",
+ "updatedAt": "2026-11-21T05:01:46.010Z",
  "state": "running",
  "games": [
   {
@@ -49,22 +49,22 @@
    "gameId": 21718153,
    "matchup": "PHX @ UTA",
    "status": "4th Qtr",
-   "homeScore": 98,
-   "visitorScore": 105
+   "homeScore": 101,
+   "visitorScore": 108
   },
   {
    "gameId": 21718154,
    "matchup": "HOU @ DEN",
    "status": "3rd Qtr",
    "homeScore": 99,
-   "visitorScore": 100
+   "visitorScore": 102
   },
   {
    "gameId": 21718155,
    "matchup": "SAC @ LAL",
    "status": "4th Qtr",
-   "homeScore": 94,
-   "visitorScore": 89
+   "homeScore": 96,
+   "visitorScore": 91
   }
  ],
  "picks": [
@@ -4202,7 +4202,7 @@
    "scoreMargin": 8,
    "valueAtPick": 4,
    "projection": 5.512559197622921,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Under",
     "Rebounds",
@@ -4436,7 +4436,7 @@
    "scoreMargin": 13,
    "valueAtPick": 27,
    "projection": 34.38567028253766,
-   "latestValue": 29,
+   "latestValue": 31,
    "tags": [
     "Best bet",
     "Over",
@@ -4749,9 +4749,177 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718154-56677825-points_rebounds",
+   "gameDate": "2026-11-20",
+   "gameId": 21718154,
+   "matchup": "HOU @ DEN",
+   "playerId": 56677825,
+   "playerName": "Amen Thompson",
+   "teamAbbreviation": "HOU",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 27.5,
+   "americanOdds": 100,
+   "vendor": "fanduel",
+   "modelProbability": 0.6244363808379856,
+   "evPercent": 24.887276167597115,
+   "foundAt": "2026-11-21T04:59:45.568Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 3,
+   "valueAtPick": 22,
+   "projection": 26.48174394214281,
+   "latestValue": 22,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718154-17896062-points_rebounds_assists",
+   "gameDate": "2026-11-20",
+   "gameId": 21718154,
+   "matchup": "HOU @ DEN",
+   "playerId": 17896062,
+   "playerName": "Alperen Sengun",
+   "teamAbbreviation": "HOU",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 50.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.6556586141401424,
+   "evPercent": 23.079774935079357,
+   "foundAt": "2026-11-21T04:59:45.568Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 3,
+   "valueAtPick": 40,
+   "projection": 48.70709015454489,
+   "latestValue": 40,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718154-38017695-rebounds",
+   "gameDate": "2026-11-20",
+   "gameId": 21718154,
+   "matchup": "HOU @ DEN",
+   "playerId": 38017695,
+   "playerName": "Tari Eason",
+   "teamAbbreviation": "HOU",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": -125,
+   "vendor": "draftkings",
+   "modelProbability": 0.6828503327244376,
+   "evPercent": 22.913059890398777,
+   "foundAt": "2026-11-21T04:59:45.568Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 3,
+   "valueAtPick": 4,
+   "projection": 4.936999192368477,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718154-38017684-assists",
+   "gameDate": "2026-11-20",
+   "gameId": 21718154,
+   "matchup": "HOU @ DEN",
+   "playerId": 38017684,
+   "playerName": "Jabari Smith Jr.",
+   "teamAbbreviation": "HOU",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 205,
+   "vendor": "fanduel",
+   "modelProbability": 0.40294355206356913,
+   "evPercent": 22.89778337938857,
+   "foundAt": "2026-11-21T04:59:45.568Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 3,
+   "valueAtPick": 2,
+   "projection": 2.3279381935412027,
+   "latestValue": 2,
+   "tags": [
+    "Over",
+    "Assists",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718154-177-points",
+   "gameDate": "2026-11-20",
+   "gameId": 21718154,
+   "matchup": "HOU @ DEN",
+   "playerId": 177,
+   "playerName": "Aaron Gordon",
+   "teamAbbreviation": "DEN",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 16.5,
+   "americanOdds": 114,
+   "vendor": "draftkings",
+   "modelProbability": 0.5655417440097884,
+   "evPercent": 21.025933218094693,
+   "foundAt": "2026-11-21T04:59:45.568Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -3,
+   "valueAtPick": 14,
+   "projection": 16.950937143534734,
+   "latestValue": 14,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 89,
+ "calls": 102,
  "note": null,
  "checkpointsTaken": {
   "21718147": [
@@ -4791,7 +4959,8 @@
   ],
   "21718154": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718155": [
    "end-q1",
