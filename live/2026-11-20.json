@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "updatedAt": "2026-11-21T04:15:18.744Z",
+ "updatedAt": "2026-11-21T04:19:18.647Z",
  "state": "running",
  "games": [
   {
@@ -50,14 +50,14 @@
    "matchup": "PHX @ UTA",
    "status": "3rd Qtr",
    "homeScore": 70,
-   "visitorScore": 80
+   "visitorScore": 83
   },
   {
    "gameId": 21718154,
    "matchup": "HOU @ DEN",
    "status": "2nd Qtr",
-   "homeScore": 60,
-   "visitorScore": 59
+   "homeScore": 62,
+   "visitorScore": 60
   },
   {
    "gameId": 21718155,
@@ -3668,7 +3668,7 @@
    "scoreMargin": -2,
    "valueAtPick": 8,
    "projection": 20.954838686018157,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -4246,9 +4246,176 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718154-125-points",
+   "gameDate": "2026-11-20",
+   "gameId": 21718154,
+   "matchup": "HOU @ DEN",
+   "playerId": 125,
+   "playerName": "DeMar DeRozan",
+   "teamAbbreviation": "DEN",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 13.5,
+   "americanOdds": -115,
+   "vendor": "draftkings",
+   "modelProbability": 0.6548284106885546,
+   "evPercent": 22.424441998294988,
+   "foundAt": "2026-11-21T04:16:18.179Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 2,
+   "valueAtPick": 9,
+   "projection": 15.059917071527707,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718154-56677825-points",
+   "gameDate": "2026-11-20",
+   "gameId": 21718154,
+   "matchup": "HOU @ DEN",
+   "playerId": 56677825,
+   "playerName": "Amen Thompson",
+   "teamAbbreviation": "HOU",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 16.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6032559706114868,
+   "evPercent": 21.857706063520332,
+   "foundAt": "2026-11-21T04:16:18.179Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -2,
+   "valueAtPick": 10,
+   "projection": 17.651823425204928,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718154-17896062-rebounds",
+   "gameDate": "2026-11-20",
+   "gameId": 21718154,
+   "matchup": "HOU @ DEN",
+   "playerId": 17896062,
+   "playerName": "Alperen Sengun",
+   "teamAbbreviation": "HOU",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 9.5,
+   "americanOdds": 117,
+   "vendor": "caesars",
+   "modelProbability": 0.5512553375117969,
+   "evPercent": 19.62240824005992,
+   "foundAt": "2026-11-21T04:16:18.179Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -2,
+   "valueAtPick": 5,
+   "projection": 9.178015882779803,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718154-177-points_rebounds_assists",
+   "gameDate": "2026-11-20",
+   "gameId": 21718154,
+   "matchup": "HOU @ DEN",
+   "playerId": 177,
+   "playerName": "Aaron Gordon",
+   "teamAbbreviation": "DEN",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 17.5,
+   "americanOdds": -132,
+   "vendor": "fanduel",
+   "modelProbability": 0.6798152594053379,
+   "evPercent": 19.482681956089685,
+   "foundAt": "2026-11-21T04:16:18.179Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 2,
+   "valueAtPick": 11,
+   "projection": 19.57472428442685,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718154-38017709-threes",
+   "gameDate": "2026-11-20",
+   "gameId": 21718154,
+   "matchup": "HOU @ DEN",
+   "playerId": 38017709,
+   "playerName": "Christian Braun",
+   "teamAbbreviation": "DEN",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 100,
+   "vendor": "draftkings",
+   "modelProbability": 0.5966080855458755,
+   "evPercent": 19.321617109175104,
+   "foundAt": "2026-11-21T04:16:18.179Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 2,
+   "valueAtPick": 2,
+   "projection": 2.7728139723784677,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 669,
+ "calls": 681,
  "note": null,
  "checkpointsTaken": {
   "21718147": [
@@ -4286,7 +4453,8 @@
    "halftime"
   ],
   "21718154": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718155": [
    "end-q1",
