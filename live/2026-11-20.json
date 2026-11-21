@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "updatedAt": "2026-11-21T05:05:46.231Z",
+ "updatedAt": "2026-11-21T05:09:46.342Z",
  "state": "running",
  "games": [
   {
@@ -56,15 +56,15 @@
    "gameId": 21718154,
    "matchup": "HOU @ DEN",
    "status": "4th Qtr",
-   "homeScore": 103,
-   "visitorScore": 106
+   "homeScore": 108,
+   "visitorScore": 108
   },
   {
    "gameId": 21718155,
    "matchup": "SAC @ LAL",
    "status": "4th Qtr",
    "homeScore": 101,
-   "visitorScore": 96
+   "visitorScore": 99
   }
  ],
  "picks": [
@@ -3721,7 +3721,7 @@
    "scoreMargin": 2,
    "valueAtPick": 8,
    "projection": 20.449874205817505,
-   "latestValue": 19,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Over",
@@ -4309,7 +4309,7 @@
    "scoreMargin": 2,
    "valueAtPick": 9,
    "projection": 15.059917071527707,
-   "latestValue": 11,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -4376,7 +4376,7 @@
    "scoreMargin": -2,
    "valueAtPick": 5,
    "projection": 9.178015882779803,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -4798,7 +4798,7 @@
    "scoreMargin": 2,
    "valueAtPick": 2,
    "projection": 2.8806619301863097,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -4866,7 +4866,7 @@
    "scoreMargin": 3,
    "valueAtPick": 40,
    "projection": 48.70709015454489,
-   "latestValue": 42,
+   "latestValue": 44,
    "tags": [
     "Best bet",
     "Under",
@@ -4899,7 +4899,7 @@
    "scoreMargin": 3,
    "valueAtPick": 4,
    "projection": 4.936999192368477,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -4979,7 +4979,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 111,
+ "calls": 119,
  "note": null,
  "checkpointsTaken": {
   "21718147": [
