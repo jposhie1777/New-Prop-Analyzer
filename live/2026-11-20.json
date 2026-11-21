@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "updatedAt": "2026-11-21T04:11:18.227Z",
+ "updatedAt": "2026-11-21T04:15:18.744Z",
  "state": "running",
  "games": [
   {
@@ -49,15 +49,15 @@
    "gameId": 21718153,
    "matchup": "PHX @ UTA",
    "status": "3rd Qtr",
-   "homeScore": 65,
-   "visitorScore": 77
+   "homeScore": 70,
+   "visitorScore": 80
   },
   {
    "gameId": 21718154,
    "matchup": "HOU @ DEN",
    "status": "2nd Qtr",
    "homeScore": 60,
-   "visitorScore": 57
+   "visitorScore": 59
   },
   {
    "gameId": 21718155,
@@ -3471,7 +3471,7 @@
    "scoreMargin": -3,
    "valueAtPick": 0,
    "projection": 3.8699270879157783,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Over",
     "Points",
@@ -4002,7 +4002,7 @@
    "scoreMargin": -12,
    "valueAtPick": 8,
    "projection": 22.995428310888045,
-   "latestValue": 14,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -4248,7 +4248,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 661,
+ "calls": 669,
  "note": null,
  "checkpointsTaken": {
   "21718147": [
