@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "updatedAt": "2026-11-21T05:29:47.291Z",
+ "updatedAt": "2026-11-21T05:33:47.423Z",
  "state": "running",
  "games": [
   {
@@ -56,8 +56,8 @@
    "gameId": 21718154,
    "matchup": "HOU @ DEN",
    "status": "4th Qtr",
-   "homeScore": 122,
-   "visitorScore": 117
+   "homeScore": 124,
+   "visitorScore": 119
   },
   {
    "gameId": 21718155,
@@ -3755,7 +3755,7 @@
    "scoreMargin": -2,
    "valueAtPick": 8,
    "projection": 36.708998434957124,
-   "latestValue": 37,
+   "latestValue": 39,
    "tags": [
     "Best bet",
     "Under",
@@ -4926,7 +4926,7 @@
    "scoreMargin": 3,
    "valueAtPick": 40,
    "projection": 48.70709015454489,
-   "latestValue": 47,
+   "latestValue": 49,
    "tags": [
     "Best bet",
     "Under",
@@ -5039,7 +5039,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 160,
+ "calls": 168,
  "note": null,
  "checkpointsTaken": {
   "21718147": [
