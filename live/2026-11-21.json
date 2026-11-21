@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "updatedAt": "2026-11-21T20:37:16.477Z",
+ "updatedAt": "2026-11-21T22:19:20.583Z",
  "state": "running",
  "games": [
   {
@@ -605,8 +605,8 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 403,
- "note": null,
+ "calls": 607,
+ "note": "This run hit its time limit; the next scheduled run continues.",
  "checkpointsTaken": {
   "21718156": [
    "end-q1",
