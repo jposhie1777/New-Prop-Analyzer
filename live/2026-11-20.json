@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "updatedAt": "2026-11-21T04:45:45.360Z",
+ "updatedAt": "2026-11-21T04:49:45.421Z",
  "state": "running",
  "games": [
   {
@@ -56,13 +56,13 @@
    "gameId": 21718154,
    "matchup": "HOU @ DEN",
    "status": "3rd Qtr",
-   "homeScore": 85,
-   "visitorScore": 86
+   "homeScore": 93,
+   "visitorScore": 92
   },
   {
    "gameId": 21718155,
    "matchup": "SAC @ LAL",
-   "status": "3rd Qtr",
+   "status": "4th Qtr",
    "homeScore": 82,
    "visitorScore": 84
   }
@@ -3568,7 +3568,7 @@
    "scoreMargin": 3,
    "valueAtPick": 0,
    "projection": 2.800723069725,
-   "latestValue": 5,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -3602,7 +3602,7 @@
    "scoreMargin": 2,
    "valueAtPick": 5,
    "projection": 17.94134436488371,
-   "latestValue": 15,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Over",
@@ -3668,7 +3668,7 @@
    "scoreMargin": -2,
    "valueAtPick": 8,
    "projection": 20.954838686018157,
-   "latestValue": 12,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -3735,7 +3735,7 @@
    "scoreMargin": -2,
    "valueAtPick": 8,
    "projection": 36.708998434957124,
-   "latestValue": 19,
+   "latestValue": 24,
    "tags": [
     "Best bet",
     "Under",
@@ -3968,7 +3968,7 @@
    "scoreMargin": 12,
    "valueAtPick": 1,
    "projection": 2.810403625894696,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -4369,7 +4369,7 @@
    "scoreMargin": 2,
    "valueAtPick": 11,
    "projection": 19.57472428442685,
-   "latestValue": 14,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Over",
@@ -4581,9 +4581,177 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718155-38017705-rebounds_assists",
+   "gameDate": "2026-11-20",
+   "gameId": 21718155,
+   "matchup": "SAC @ LAL",
+   "playerId": 38017705,
+   "playerName": "Walker Kessler",
+   "teamAbbreviation": "LAL",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 8.5,
+   "americanOdds": -174,
+   "vendor": "fanduel",
+   "modelProbability": 0.7682363183233686,
+   "evPercent": 20.975144379656886,
+   "foundAt": "2026-11-21T04:47:45.011Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -2,
+   "valueAtPick": 5,
+   "projection": 7.139489171364604,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Foul trouble",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718155-132-rebounds_assists",
+   "gameDate": "2026-11-20",
+   "gameId": 21718155,
+   "matchup": "SAC @ LAL",
+   "playerId": 132,
+   "playerName": "Luka Doncic",
+   "teamAbbreviation": "LAL",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 15.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.6397246351349704,
+   "evPercent": 20.088659577968127,
+   "foundAt": "2026-11-21T04:47:45.011Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -2,
+   "valueAtPick": 12,
+   "projection": 14.747618597229838,
+   "latestValue": 12,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718155-38017688-threes",
+   "gameDate": "2026-11-20",
+   "gameId": 21718155,
+   "matchup": "SAC @ LAL",
+   "playerId": 38017688,
+   "playerName": "Keegan Murray",
+   "teamAbbreviation": "SAC",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -150,
+   "vendor": "betmgm",
+   "modelProbability": 0.7180056273722322,
+   "evPercent": 19.667604562038687,
+   "foundAt": "2026-11-21T04:47:45.011Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 2,
+   "valueAtPick": 2,
+   "projection": 2.099046166044153,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718155-666923-rebounds",
+   "gameDate": "2026-11-20",
+   "gameId": 21718155,
+   "matchup": "SAC @ LAL",
+   "playerId": 666923,
+   "playerName": "Matisse Thybulle",
+   "teamAbbreviation": "LAL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 120,
+   "vendor": "betmgm",
+   "modelProbability": 0.5432970411713021,
+   "evPercent": 19.52534905768646,
+   "foundAt": "2026-11-21T04:47:45.011Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -2,
+   "valueAtPick": 1,
+   "projection": 1.6032713466818058,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "Rebounds",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718155-268-assists",
+   "gameDate": "2026-11-20",
+   "gameId": 21718155,
+   "matchup": "SAC @ LAL",
+   "playerId": 268,
+   "playerName": "Zach LaVine",
+   "teamAbbreviation": "SAC",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.6299618644890574,
+   "evPercent": 16.382785134419088,
+   "foundAt": "2026-11-21T04:47:45.011Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 2,
+   "valueAtPick": 2,
+   "projection": 2.8806619301863097,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 60,
+ "calls": 73,
  "note": null,
  "checkpointsTaken": {
   "21718147": [
@@ -4627,7 +4795,8 @@
   ],
   "21718155": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ]
  }
 }
