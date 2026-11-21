@@ -1,13 +1,13 @@
 {
  "date": "2026-11-21",
- "updatedAt": "2026-11-21T19:49:14.663Z",
+ "updatedAt": "2026-11-21T19:53:14.906Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718156,
    "matchup": "MIL @ PHI",
-   "status": "3rd Qtr",
-   "homeScore": 98,
+   "status": "4th Qtr",
+   "homeScore": 101,
    "visitorScore": 92
   },
   {
@@ -102,7 +102,7 @@
    "scoreMargin": -1,
    "valueAtPick": 2,
    "projection": 8.010253324341713,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -545,7 +545,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 306,
+ "calls": 314,
  "note": null,
  "checkpointsTaken": {
   "21718156": [
