@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "updatedAt": "2026-11-21T02:23:13.955Z",
+ "updatedAt": "2026-11-21T02:27:15.056Z",
  "state": "running",
  "games": [
   {
@@ -14,36 +14,36 @@
    "gameId": 21718148,
    "matchup": "ORL @ BKN",
    "status": "3rd Qtr",
-   "homeScore": 76,
-   "visitorScore": 82
+   "homeScore": 83,
+   "visitorScore": 84
   },
   {
    "gameId": 21718149,
    "matchup": "IND @ CLE",
    "status": "4th Qtr",
-   "homeScore": 105,
-   "visitorScore": 83
+   "homeScore": 107,
+   "visitorScore": 86
   },
   {
    "gameId": 21718150,
    "matchup": "TOR @ DET",
    "status": "3rd Qtr",
-   "homeScore": 70,
-   "visitorScore": 73
+   "homeScore": 72,
+   "visitorScore": 77
   },
   {
    "gameId": 21718151,
    "matchup": "WAS @ CHI",
    "status": "3rd Qtr",
    "homeScore": 60,
-   "visitorScore": 56
+   "visitorScore": 58
   },
   {
    "gameId": 21718152,
    "matchup": "NOP @ OKC",
    "status": "3rd Qtr",
-   "homeScore": 63,
-   "visitorScore": 67
+   "homeScore": 68,
+   "visitorScore": 74
   },
   {
    "gameId": 21718153,
@@ -692,7 +692,7 @@
    "scoreMargin": -13,
    "valueAtPick": 2,
    "projection": 5.641357421874999,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Over",
     "Assists",
@@ -724,7 +724,7 @@
    "scoreMargin": -13,
    "valueAtPick": 1,
    "projection": 8.420491292662215,
-   "latestValue": 2,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -1119,7 +1119,7 @@
    "scoreMargin": 3,
    "valueAtPick": 12,
    "projection": 30.44907955216132,
-   "latestValue": 20,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Over",
@@ -1217,7 +1217,7 @@
    "scoreMargin": -3,
    "valueAtPick": 0,
    "projection": 10.666926808478632,
-   "latestValue": 5,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -1315,7 +1315,7 @@
    "scoreMargin": -6,
    "valueAtPick": 3,
    "projection": 10.30758259016349,
-   "latestValue": 4,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -1382,7 +1382,7 @@
    "scoreMargin": 6,
    "valueAtPick": 18,
    "projection": 33.6820896305564,
-   "latestValue": 25,
+   "latestValue": 28,
    "tags": [
     "Best bet",
     "Under",
@@ -1802,7 +1802,7 @@
    "scoreMargin": -1,
    "valueAtPick": 0,
    "projection": 0.2817042549070248,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Over",
     "3PM",
@@ -1834,7 +1834,7 @@
    "scoreMargin": 1,
    "valueAtPick": 8,
    "projection": 14.661645425227402,
-   "latestValue": 11,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -1900,7 +1900,7 @@
    "scoreMargin": -1,
    "valueAtPick": 3,
    "projection": 8.915106906606624,
-   "latestValue": 9,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -2162,7 +2162,7 @@
    "scoreMargin": 8,
    "valueAtPick": 10,
    "projection": 16.487083675691327,
-   "latestValue": 13,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -2295,7 +2295,7 @@
    "scoreMargin": -22,
    "valueAtPick": 11,
    "projection": 14.437770292858753,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -2444,9 +2444,178 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718150-17896075-points_assists",
+   "gameDate": "2026-11-20",
+   "gameId": 21718150,
+   "matchup": "TOR @ DET",
+   "playerId": 17896075,
+   "playerName": "Cade Cunningham",
+   "teamAbbreviation": "DET",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 34.5,
+   "americanOdds": -152,
+   "vendor": "fanduel",
+   "modelProbability": 0.7510945590138425,
+   "evPercent": 24.52357162597916,
+   "foundAt": "2026-11-21T02:27:13.657Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -5,
+   "valueAtPick": 24,
+   "projection": 31.655308179173446,
+   "latestValue": 24,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718150-1028240128-points_rebounds_assists",
+   "gameDate": "2026-11-20",
+   "gameId": 21718150,
+   "matchup": "TOR @ DET",
+   "playerId": 1028240128,
+   "playerName": "Daniss Jenkins",
+   "teamAbbreviation": "DET",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 22.5,
+   "americanOdds": -136,
+   "vendor": "fanduel",
+   "modelProbability": 0.7127936650645309,
+   "evPercent": 23.69066540825684,
+   "foundAt": "2026-11-21T02:27:13.657Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -5,
+   "valueAtPick": 15,
+   "projection": 20.502278702489708,
+   "latestValue": 15,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Foul trouble",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718150-17896055-points_assists",
+   "gameDate": "2026-11-20",
+   "gameId": 21718150,
+   "matchup": "TOR @ DET",
+   "playerId": 17896055,
+   "playerName": "Scottie Barnes",
+   "teamAbbreviation": "TOR",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 33.5,
+   "americanOdds": -136,
+   "vendor": "fanduel",
+   "modelProbability": 0.7126696665226995,
+   "evPercent": 23.669148014233144,
+   "foundAt": "2026-11-21T02:27:13.657Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 5,
+   "valueAtPick": 25,
+   "projection": 31.35452413867374,
+   "latestValue": 25,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718150-3547269-points",
+   "gameDate": "2026-11-20",
+   "gameId": 21718150,
+   "matchup": "TOR @ DET",
+   "playerId": 3547269,
+   "playerName": "Immanuel Quickley",
+   "teamAbbreviation": "TOR",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 16.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6155247752522774,
+   "evPercent": 21.898043726431425,
+   "foundAt": "2026-11-21T02:27:13.657Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 5,
+   "valueAtPick": 12,
+   "projection": 15.612006572401258,
+   "latestValue": 12,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718150-221-rebounds_assists",
+   "gameDate": "2026-11-20",
+   "gameId": 21718150,
+   "matchup": "TOR @ DET",
+   "playerId": 221,
+   "playerName": "Kevin Huerter",
+   "teamAbbreviation": "DET",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": -110,
+   "vendor": "fanduel",
+   "modelProbability": 0.6281279690509074,
+   "evPercent": 19.915339546082333,
+   "foundAt": "2026-11-21T02:27:13.657Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -5,
+   "valueAtPick": 4,
+   "projection": 6.101267647165062,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Reb+Ast",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 401,
+ "calls": 413,
  "note": null,
  "checkpointsTaken": {
   "21718147": [
@@ -2465,7 +2634,8 @@
   ],
   "21718150": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718151": [
    "end-q1",
