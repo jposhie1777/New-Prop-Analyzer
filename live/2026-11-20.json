@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "updatedAt": "2026-11-21T04:21:44.449Z",
+ "updatedAt": "2026-11-21T04:25:44.629Z",
  "state": "running",
  "games": [
   {
@@ -49,7 +49,7 @@
    "gameId": 21718153,
    "matchup": "PHX @ UTA",
    "status": "3rd Qtr",
-   "homeScore": 70,
+   "homeScore": 72,
    "visitorScore": 83
   },
   {
@@ -62,9 +62,9 @@
   {
    "gameId": 21718155,
    "matchup": "SAC @ LAL",
-   "status": "2nd Qtr",
-   "homeScore": 54,
-   "visitorScore": 62
+   "status": "3rd Qtr",
+   "homeScore": 62,
+   "visitorScore": 67
   }
  ],
  "picks": [
@@ -3802,7 +3802,7 @@
    "scoreMargin": 0,
    "valueAtPick": 4,
    "projection": 19.754918754563967,
-   "latestValue": 10,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -3901,7 +3901,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 17.138731294008593,
-   "latestValue": 7,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -4168,7 +4168,7 @@
    "scoreMargin": -8,
    "valueAtPick": 0,
    "projection": 4.143864360465117,
-   "latestValue": 0,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Over",
@@ -4415,7 +4415,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 5,
+ "calls": 13,
  "note": null,
  "checkpointsTaken": {
   "21718147": [
