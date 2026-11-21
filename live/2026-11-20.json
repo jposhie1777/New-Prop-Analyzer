@@ -1,28 +1,28 @@
 {
  "date": "2026-11-20",
- "updatedAt": "2026-11-21T00:38:10.715Z",
+ "updatedAt": "2026-11-21T00:42:09.673Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718147,
    "matchup": "CHA @ ATL",
-   "status": "1st Qtr",
-   "homeScore": 23,
-   "visitorScore": 31
+   "status": "2nd Qtr",
+   "homeScore": 32,
+   "visitorScore": 33
   },
   {
    "gameId": 21718148,
    "matchup": "ORL @ BKN",
-   "status": "2026-11-21T00:30:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 2,
+   "visitorScore": 5
   },
   {
    "gameId": 21718149,
    "matchup": "IND @ CLE",
-   "status": "2026-11-21T00:30:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 2,
+   "visitorScore": 2
   },
   {
    "gameId": 21718150,
@@ -156,7 +156,7 @@
    "scoreMargin": -8,
    "valueAtPick": 2,
    "projection": 7.071859777180866,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -234,7 +234,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 133,
+ "calls": 141,
  "note": null,
  "checkpointsTaken": {
   "21718147": [
