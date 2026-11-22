@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "updatedAt": "2026-11-22T23:49:02.888Z",
+ "updatedAt": "2026-11-22T23:58:03.373Z",
  "state": "running",
  "games": [
   {
@@ -14,8 +14,8 @@
    "gameId": 21718163,
    "matchup": "OKC @ MIA",
    "status": "2nd Qtr",
-   "homeScore": 46,
-   "visitorScore": 38
+   "homeScore": 57,
+   "visitorScore": 47
   },
   {
    "gameId": 21718165,
@@ -448,7 +448,7 @@
    "scoreMargin": 12,
    "valueAtPick": 14,
    "projection": 38.14048822486506,
-   "latestValue": 19,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Over",
@@ -546,7 +546,7 @@
    "scoreMargin": -12,
    "valueAtPick": 4,
    "projection": 15.866477136947298,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -590,7 +590,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 162,
+ "calls": 180,
  "note": null,
  "checkpointsTaken": {
   "21718162": [
