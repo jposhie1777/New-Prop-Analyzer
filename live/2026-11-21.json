@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "updatedAt": "2026-11-22T04:04:13.791Z",
+ "updatedAt": "2026-11-22T04:08:14.628Z",
  "state": "running",
  "games": [
   {
@@ -42,8 +42,8 @@
    "gameId": 21718161,
    "matchup": "BOS @ SAC",
    "status": "2nd Qtr",
-   "homeScore": 39,
-   "visitorScore": 49
+   "homeScore": 41,
+   "visitorScore": 54
   }
  ],
  "picks": [
@@ -2953,7 +2953,7 @@
    "scoreMargin": 2,
    "valueAtPick": 1,
    "projection": 13.788287252932667,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Over",
@@ -2987,7 +2987,7 @@
    "scoreMargin": 2,
    "valueAtPick": 7,
    "projection": 26.194283179465277,
-   "latestValue": 10,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -3031,9 +3031,176 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718161-17553967-blocks",
+   "gameDate": "2026-11-21",
+   "gameId": 21718161,
+   "matchup": "BOS @ SAC",
+   "playerId": 17553967,
+   "playerName": "Neemias Queta",
+   "teamAbbreviation": "BOS",
+   "propType": "blocks",
+   "label": "Blocks",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": -105,
+   "vendor": "draftkings",
+   "modelProbability": 0.6236743859049207,
+   "evPercent": 21.76499915286547,
+   "foundAt": "2026-11-22T04:08:13.565Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 13,
+   "valueAtPick": 2,
+   "projection": 2.839129252527174,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Blocks",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718161-406-assists",
+   "gameDate": "2026-11-21",
+   "gameId": 21718161,
+   "matchup": "BOS @ SAC",
+   "playerId": 406,
+   "playerName": "Domantas Sabonis",
+   "teamAbbreviation": "SAC",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": -185,
+   "vendor": "betmgm",
+   "modelProbability": 0.7887005616589522,
+   "evPercent": 21.502518958271022,
+   "foundAt": "2026-11-22T04:08:13.565Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -13,
+   "valueAtPick": 3,
+   "projection": 4.357563735669158,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718161-1091338860-threes",
+   "gameDate": "2026-11-21",
+   "gameId": 21718161,
+   "matchup": "BOS @ SAC",
+   "playerId": 1091338860,
+   "playerName": "Darius Acuff Jr.",
+   "teamAbbreviation": "SAC",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": -135,
+   "vendor": "betmgm",
+   "modelProbability": 0.6954681393126763,
+   "evPercent": 21.06297239887327,
+   "foundAt": "2026-11-22T04:08:13.565Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -13,
+   "valueAtPick": 0,
+   "projection": 0.8883798172785615,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718161-3547249-points",
+   "gameDate": "2026-11-21",
+   "gameId": 21718161,
+   "matchup": "BOS @ SAC",
+   "playerId": 3547249,
+   "playerName": "Precious Achiuwa",
+   "teamAbbreviation": "SAC",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": -108,
+   "vendor": "fanduel",
+   "modelProbability": 0.6217103052135109,
+   "evPercent": 19.736799522602098,
+   "foundAt": "2026-11-22T04:08:13.565Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -13,
+   "valueAtPick": 5,
+   "projection": 6.832553344686577,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718161-3547276-rebounds",
+   "gameDate": "2026-11-21",
+   "gameId": 21718161,
+   "matchup": "BOS @ SAC",
+   "playerId": 3547276,
+   "playerName": "Payton Pritchard",
+   "teamAbbreviation": "BOS",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 5.5,
+   "americanOdds": 120,
+   "vendor": "draftkings",
+   "modelProbability": 0.5348005492967369,
+   "evPercent": 17.656120845282143,
+   "foundAt": "2026-11-22T04:08:13.565Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 13,
+   "valueAtPick": 4,
+   "projection": 5.374782580564931,
+   "latestValue": 4,
+   "tags": [
+    "Under",
+    "Rebounds",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 503,
+ "calls": 514,
  "note": null,
  "checkpointsTaken": {
   "21718156": [
@@ -3062,7 +3229,8 @@
    "end-q3"
   ],
   "21718161": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
