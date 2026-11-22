@@ -1,7 +1,7 @@
 {
  "date": "2026-11-21",
- "updatedAt": "2026-11-22T00:06:14.293Z",
- "state": "waiting",
+ "updatedAt": "2026-11-22T00:20:05.573Z",
+ "state": "running",
  "games": [
   {
    "gameId": 21718156,
@@ -605,8 +605,8 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 1,
- "note": "First tip-off 2026-11-22T00:30:00.000Z",
+ "calls": 6,
+ "note": null,
  "checkpointsTaken": {
   "21718156": [
    "end-q1",
