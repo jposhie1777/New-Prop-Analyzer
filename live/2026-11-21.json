@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "updatedAt": "2026-11-22T02:17:12.407Z",
+ "updatedAt": "2026-11-22T02:21:10.162Z",
  "state": "running",
  "games": [
   {
@@ -13,9 +13,9 @@
   {
    "gameId": 21718157,
    "matchup": "POR @ NYK",
-   "status": "3rd Qtr",
-   "homeScore": 81,
-   "visitorScore": 72
+   "status": "4th Qtr",
+   "homeScore": 86,
+   "visitorScore": 76
   },
   {
    "gameId": 21718158,
@@ -27,9 +27,9 @@
   {
    "gameId": 21718159,
    "matchup": "MEM @ MIN",
-   "status": "2nd Qtr",
+   "status": "3rd Qtr",
    "homeScore": 56,
-   "visitorScore": 46
+   "visitorScore": 48
   },
   {
    "gameId": 21718160,
@@ -997,7 +997,7 @@
    "scoreMargin": -23,
    "valueAtPick": 15,
    "projection": 24.611738638754584,
-   "latestValue": 21,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Under",
@@ -1496,7 +1496,7 @@
    "scoreMargin": -10,
    "valueAtPick": 16,
    "projection": 26.4271582540826,
-   "latestValue": 16,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Over",
@@ -2003,7 +2003,7 @@
    "scoreMargin": -9,
    "valueAtPick": 6,
    "projection": 7.2607085629111845,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -2115,7 +2115,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 272,
+ "calls": 280,
  "note": null,
  "checkpointsTaken": {
   "21718156": [
