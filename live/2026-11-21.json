@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "updatedAt": "2026-11-22T02:10:09.548Z",
+ "updatedAt": "2026-11-22T02:14:09.459Z",
  "state": "running",
  "games": [
   {
@@ -14,8 +14,8 @@
    "gameId": 21718157,
    "matchup": "POR @ NYK",
    "status": "3rd Qtr",
-   "homeScore": 75,
-   "visitorScore": 64
+   "homeScore": 78,
+   "visitorScore": 69
   },
   {
    "gameId": 21718158,
@@ -35,7 +35,7 @@
    "gameId": 21718160,
    "matchup": "NOP @ SAS",
    "status": "2nd Qtr",
-   "homeScore": 58,
+   "homeScore": 61,
    "visitorScore": 45
   },
   {
@@ -963,7 +963,7 @@
    "scoreMargin": -23,
    "valueAtPick": 2,
    "projection": 3.3929047005314263,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Under",
     "Rebounds",
@@ -1065,7 +1065,7 @@
    "scoreMargin": -23,
    "valueAtPick": 6,
    "projection": 12.022418674539832,
-   "latestValue": 7,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -1365,7 +1365,7 @@
    "scoreMargin": 3,
    "valueAtPick": 6,
    "projection": 17.394394259152286,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -1773,9 +1773,182 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718160-1028027567-rebounds",
+   "gameDate": "2026-11-21",
+   "gameId": 21718160,
+   "matchup": "NOP @ SAS",
+   "playerId": 1028027567,
+   "playerName": "Yves Missi",
+   "teamAbbreviation": "NOP",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 9.5,
+   "americanOdds": -110,
+   "vendor": "draftkings",
+   "modelProbability": 0.6481985754406854,
+   "evPercent": 23.74700076594902,
+   "foundAt": "2026-11-22T02:13:08.618Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -16,
+   "valueAtPick": 6,
+   "projection": 8.73120792017805,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718160-17896024-points_rebounds",
+   "gameDate": "2026-11-21",
+   "gameId": 21718160,
+   "matchup": "NOP @ SAS",
+   "playerId": 17896024,
+   "playerName": "Herbert Jones",
+   "teamAbbreviation": "NOP",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": 100,
+   "vendor": "fanduel",
+   "modelProbability": 0.6147173371708397,
+   "evPercent": 22.94346743416793,
+   "foundAt": "2026-11-22T02:13:08.618Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -16,
+   "valueAtPick": 5,
+   "projection": 10.54112678522202,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Blowout risk",
+    "Foul trouble",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718160-1028025261-rebounds_assists",
+   "gameDate": "2026-11-21",
+   "gameId": 21718160,
+   "matchup": "NOP @ SAS",
+   "playerId": 1028025261,
+   "playerName": "Stephon Castle",
+   "teamAbbreviation": "SAS",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": 100,
+   "vendor": "fanduel",
+   "modelProbability": 0.6136445150506598,
+   "evPercent": 22.72890301013195,
+   "foundAt": "2026-11-22T02:13:08.618Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 16,
+   "valueAtPick": 3,
+   "projection": 6.78682800612486,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Blowout risk",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718160-666848-points",
+   "gameDate": "2026-11-21",
+   "gameId": 21718160,
+   "matchup": "NOP @ SAS",
+   "playerId": 666848,
+   "playerName": "Jordan Poole",
+   "teamAbbreviation": "NOP",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 18.5,
+   "americanOdds": -110,
+   "vendor": "draftkings",
+   "modelProbability": 0.6290713838401749,
+   "evPercent": 20.09544600585158,
+   "foundAt": "2026-11-22T02:13:08.618Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -16,
+   "valueAtPick": 13,
+   "projection": 17.400875490180677,
+   "latestValue": 13,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718160-38017649-points",
+   "gameDate": "2026-11-21",
+   "gameId": 21718160,
+   "matchup": "NOP @ SAS",
+   "playerId": 38017649,
+   "playerName": "Julian Champagnie",
+   "teamAbbreviation": "SAS",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 13.5,
+   "americanOdds": -105,
+   "vendor": "caesars",
+   "modelProbability": 0.6119787393604399,
+   "evPercent": 19.481563398943024,
+   "foundAt": "2026-11-22T02:13:08.618Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 16,
+   "valueAtPick": 9,
+   "projection": 12.637047618970414,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 252,
+ "calls": 263,
  "note": null,
  "checkpointsTaken": {
   "21718156": [
@@ -1796,7 +1969,8 @@
    "halftime"
   ],
   "21718160": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
