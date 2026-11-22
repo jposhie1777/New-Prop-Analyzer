@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "updatedAt": "2026-11-22T01:32:07.692Z",
+ "updatedAt": "2026-11-22T01:35:09.740Z",
  "state": "running",
  "games": [
   {
@@ -14,28 +14,28 @@
    "gameId": 21718157,
    "matchup": "POR @ NYK",
    "status": "2nd Qtr",
-   "homeScore": 61,
+   "homeScore": 66,
    "visitorScore": 40
   },
   {
    "gameId": 21718158,
    "matchup": "LAC @ DAL",
    "status": "1st Qtr",
-   "homeScore": 20,
-   "visitorScore": 20
+   "homeScore": 23,
+   "visitorScore": 26
   },
   {
    "gameId": 21718159,
    "matchup": "MEM @ MIN",
    "status": "1st Qtr",
-   "homeScore": 23,
-   "visitorScore": 32
+   "homeScore": 28,
+   "visitorScore": 34
   },
   {
    "gameId": 21718160,
    "matchup": "NOP @ SAS",
    "status": "1st Qtr",
-   "homeScore": 23,
+   "homeScore": 30,
    "visitorScore": 26
   },
   {
@@ -661,7 +661,7 @@
    "scoreMargin": 17,
    "valueAtPick": 5,
    "projection": 17.48126249322798,
-   "latestValue": 8,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -774,9 +774,175 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718159-17896031-points",
+   "gameDate": "2026-11-21",
+   "gameId": 21718159,
+   "matchup": "MEM @ MIN",
+   "playerId": 17896031,
+   "playerName": "Nah'Shon Hyland",
+   "teamAbbreviation": "MIN",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 10.5,
+   "americanOdds": -105,
+   "vendor": "betmgm",
+   "modelProbability": 0.6237957927516291,
+   "evPercent": 21.78870239436568,
+   "foundAt": "2026-11-22T01:35:07.037Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -6,
+   "valueAtPick": 3,
+   "projection": 9.245959270398329,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718159-1057266649-points",
+   "gameDate": "2026-11-21",
+   "gameId": 21718159,
+   "matchup": "MEM @ MIN",
+   "playerId": 1057266649,
+   "playerName": "Cedric Coward",
+   "teamAbbreviation": "MEM",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 20.5,
+   "americanOdds": -130,
+   "vendor": "draftkings",
+   "modelProbability": 0.6861924076437348,
+   "evPercent": 21.40327212158384,
+   "foundAt": "2026-11-22T01:35:07.037Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 6,
+   "valueAtPick": 11,
+   "projection": 23.19438162647934,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718159-1028048549-assists",
+   "gameDate": "2026-11-21",
+   "gameId": 21718159,
+   "matchup": "MEM @ MIN",
+   "playerId": 1028048549,
+   "playerName": "Cam Spencer",
+   "teamAbbreviation": "MEM",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": -125,
+   "vendor": "betmgm",
+   "modelProbability": 0.6742754751391149,
+   "evPercent": 21.36958552504069,
+   "foundAt": "2026-11-22T01:35:07.037Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 6,
+   "valueAtPick": 3,
+   "projection": 6.470936414930556,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718159-666676-assists",
+   "gameDate": "2026-11-21",
+   "gameId": 21718159,
+   "matchup": "MEM @ MIN",
+   "playerId": 666676,
+   "playerName": "Ty Jerome",
+   "teamAbbreviation": "MEM",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": 105,
+   "vendor": "draftkings",
+   "modelProbability": 0.5917520185180842,
+   "evPercent": 21.309163796207265,
+   "foundAt": "2026-11-22T01:35:07.037Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 6,
+   "valueAtPick": 1,
+   "projection": 5.0725924487912595,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718159-56677824-points",
+   "gameDate": "2026-11-21",
+   "gameId": 21718159,
+   "matchup": "MEM @ MIN",
+   "playerId": 56677824,
+   "playerName": "Taylor Hendricks",
+   "teamAbbreviation": "MEM",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 7.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.636696194089863,
+   "evPercent": 19.520162750202363,
+   "foundAt": "2026-11-22T01:35:07.037Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 6,
+   "valueAtPick": 2,
+   "projection": 8.968044262022728,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 155,
+ "calls": 165,
  "note": null,
  "checkpointsTaken": {
   "21718156": [
@@ -785,6 +951,9 @@
    "end-q3"
   ],
   "21718157": [
+   "end-q1"
+  ],
+  "21718159": [
    "end-q1"
   ]
  }
