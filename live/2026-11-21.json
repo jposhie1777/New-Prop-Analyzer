@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "updatedAt": "2026-11-22T02:03:08.677Z",
+ "updatedAt": "2026-11-22T02:06:10.056Z",
  "state": "running",
  "games": [
   {
@@ -14,22 +14,22 @@
    "gameId": 21718157,
    "matchup": "POR @ NYK",
    "status": "3rd Qtr",
-   "homeScore": 68,
-   "visitorScore": 56
+   "homeScore": 72,
+   "visitorScore": 59
   },
   {
    "gameId": 21718158,
    "matchup": "LAC @ DAL",
    "status": "2nd Qtr",
-   "homeScore": 47,
+   "homeScore": 49,
    "visitorScore": 44
   },
   {
    "gameId": 21718159,
    "matchup": "MEM @ MIN",
    "status": "2nd Qtr",
-   "homeScore": 54,
-   "visitorScore": 45
+   "homeScore": 56,
+   "visitorScore": 46
   },
   {
    "gameId": 21718160,
@@ -930,7 +930,7 @@
    "scoreMargin": 6,
    "valueAtPick": 2,
    "projection": 8.968044262022728,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -1265,7 +1265,7 @@
    "scoreMargin": -3,
    "valueAtPick": 4,
    "projection": 24.72026354176596,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -1440,9 +1440,175 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718159-1028048549-points_rebounds",
+   "gameDate": "2026-11-21",
+   "gameId": 21718159,
+   "matchup": "MEM @ MIN",
+   "playerId": 1028048549,
+   "playerName": "Cam Spencer",
+   "teamAbbreviation": "MEM",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 10.5,
+   "americanOdds": -106,
+   "vendor": "fanduel",
+   "modelProbability": 0.6425846892382339,
+   "evPercent": 24.879666021769985,
+   "foundAt": "2026-11-22T02:05:08.317Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -10,
+   "valueAtPick": 4,
+   "projection": 9.232471385056446,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718159-1057266649-points_assists",
+   "gameDate": "2026-11-21",
+   "gameId": 21718159,
+   "matchup": "MEM @ MIN",
+   "playerId": 1057266649,
+   "playerName": "Cedric Coward",
+   "teamAbbreviation": "MEM",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 24.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6530334481431275,
+   "evPercent": 23.60990268423484,
+   "foundAt": "2026-11-22T02:05:08.317Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -10,
+   "valueAtPick": 16,
+   "projection": 26.4271582540826,
+   "latestValue": 16,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718159-56677824-points_rebounds",
+   "gameDate": "2026-11-21",
+   "gameId": 21718159,
+   "matchup": "MEM @ MIN",
+   "playerId": 56677824,
+   "playerName": "Taylor Hendricks",
+   "teamAbbreviation": "MEM",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 16.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.607302732216947,
+   "evPercent": 22.6751519078233,
+   "foundAt": "2026-11-22T02:05:08.317Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -10,
+   "valueAtPick": 10,
+   "projection": 17.641552888573013,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718159-3547259-threes",
+   "gameDate": "2026-11-21",
+   "gameId": 21718159,
+   "matchup": "MEM @ MIN",
+   "playerId": 3547259,
+   "playerName": "Jaden McDaniels",
+   "teamAbbreviation": "MIN",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": 120,
+   "vendor": "draftkings",
+   "modelProbability": 0.5538733236402955,
+   "evPercent": 21.85213120086502,
+   "foundAt": "2026-11-22T02:05:08.317Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 10,
+   "valueAtPick": 1,
+   "projection": 1.3923444163494172,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718159-3547239-rebounds",
+   "gameDate": "2026-11-21",
+   "gameId": 21718159,
+   "matchup": "MEM @ MIN",
+   "playerId": 3547239,
+   "playerName": "LaMelo Ball",
+   "teamAbbreviation": "MIN",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": 100,
+   "vendor": "draftkings",
+   "modelProbability": 0.6091000915608522,
+   "evPercent": 21.82001831217044,
+   "foundAt": "2026-11-22T02:05:08.317Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 10,
+   "valueAtPick": 3,
+   "projection": 4.97605844351638,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 232,
+ "calls": 241,
  "note": null,
  "checkpointsTaken": {
   "21718156": [
@@ -1458,7 +1624,8 @@
    "end-q1"
   ],
   "21718159": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718160": [
    "end-q1"
