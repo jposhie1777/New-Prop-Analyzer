@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "updatedAt": "2026-11-22T02:42:10.637Z",
+ "updatedAt": "2026-11-22T02:45:12.478Z",
  "state": "running",
  "games": [
   {
@@ -21,22 +21,22 @@
    "gameId": 21718158,
    "matchup": "LAC @ DAL",
    "status": "3rd Qtr",
-   "homeScore": 63,
-   "visitorScore": 63
+   "homeScore": 68,
+   "visitorScore": 66
   },
   {
    "gameId": 21718159,
    "matchup": "MEM @ MIN",
    "status": "3rd Qtr",
-   "homeScore": 74,
-   "visitorScore": 60
+   "homeScore": 79,
+   "visitorScore": 62
   },
   {
    "gameId": 21718160,
    "matchup": "NOP @ SAS",
    "status": "3rd Qtr",
-   "homeScore": 72,
-   "visitorScore": 56
+   "homeScore": 78,
+   "visitorScore": 60
   },
   {
    "gameId": 21718161,
@@ -897,7 +897,7 @@
    "scoreMargin": 6,
    "valueAtPick": 1,
    "projection": 5.0725924487912595,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Best bet",
     "Over",
@@ -1167,7 +1167,7 @@
    "scoreMargin": -3,
    "valueAtPick": 1,
    "projection": 14.112419483959544,
-   "latestValue": 15,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -1265,7 +1265,7 @@
    "scoreMargin": -3,
    "valueAtPick": 4,
    "projection": 24.72026354176596,
-   "latestValue": 12,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -1332,7 +1332,7 @@
    "scoreMargin": 3,
    "valueAtPick": 3,
    "projection": 14.59530464736848,
-   "latestValue": 11,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -1730,7 +1730,7 @@
    "scoreMargin": -8,
    "valueAtPick": 17,
    "projection": 24.864299147226728,
-   "latestValue": 24,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Under",
@@ -1900,7 +1900,7 @@
    "scoreMargin": -16,
    "valueAtPick": 13,
    "projection": 17.400875490180677,
-   "latestValue": 13,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -2115,7 +2115,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 322,
+ "calls": 328,
  "note": null,
  "checkpointsTaken": {
   "21718156": [
