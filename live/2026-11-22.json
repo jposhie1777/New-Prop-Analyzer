@@ -1,14 +1,14 @@
 {
  "date": "2026-11-22",
- "updatedAt": "2026-11-22T21:22:14.850Z",
+ "updatedAt": "2026-11-22T21:30:17.439Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718162,
    "matchup": "DET @ ATL",
    "status": "2nd Qtr",
-   "homeScore": 40,
-   "visitorScore": 34
+   "homeScore": 46,
+   "visitorScore": 42
   },
   {
    "gameId": 21718163,
@@ -209,7 +209,7 @@
    "scoreMargin": 3,
    "valueAtPick": 8,
    "projection": 24.794227747213583,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -221,7 +221,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 176,
+ "calls": 192,
  "note": null,
  "checkpointsTaken": {
   "21718162": [
