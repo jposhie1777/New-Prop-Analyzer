@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "updatedAt": "2026-11-22T01:06:09.642Z",
+ "updatedAt": "2026-11-22T01:10:07.097Z",
  "state": "running",
  "games": [
   {
@@ -13,9 +13,9 @@
   {
    "gameId": 21718157,
    "matchup": "POR @ NYK",
-   "status": "1st Qtr",
-   "homeScore": 40,
-   "visitorScore": 23
+   "status": "2nd Qtr",
+   "homeScore": 42,
+   "visitorScore": 25
   },
   {
    "gameId": 21718158,
@@ -729,7 +729,7 @@
    "scoreMargin": 17,
    "valueAtPick": 3,
    "projection": 11.856566656690303,
-   "latestValue": 3,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -776,7 +776,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 103,
+ "calls": 111,
  "note": null,
  "checkpointsTaken": {
   "21718156": [
