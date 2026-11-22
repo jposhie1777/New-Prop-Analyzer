@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "updatedAt": "2026-11-22T04:08:14.628Z",
+ "updatedAt": "2026-11-22T04:12:14.105Z",
  "state": "running",
  "games": [
   {
@@ -2987,7 +2987,7 @@
    "scoreMargin": 2,
    "valueAtPick": 7,
    "projection": 26.194283179465277,
-   "latestValue": 12,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Over",
@@ -3200,7 +3200,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 514,
+ "calls": 522,
  "note": null,
  "checkpointsTaken": {
   "21718156": [
