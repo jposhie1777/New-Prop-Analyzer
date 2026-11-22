@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "updatedAt": "2026-11-22T03:56:13.333Z",
+ "updatedAt": "2026-11-22T04:00:14.288Z",
  "state": "running",
  "games": [
   {
@@ -42,8 +42,8 @@
    "gameId": 21718161,
    "matchup": "BOS @ SAC",
    "status": "2nd Qtr",
-   "homeScore": 35,
-   "visitorScore": 45
+   "homeScore": 39,
+   "visitorScore": 47
   }
  ],
  "picks": [
@@ -2887,7 +2887,7 @@
    "scoreMargin": -2,
    "valueAtPick": 3,
    "projection": 6.156438521256436,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -3020,7 +3020,7 @@
    "scoreMargin": 2,
    "valueAtPick": 3,
    "projection": 19.65972130102597,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -3033,7 +3033,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 487,
+ "calls": 495,
  "note": null,
  "checkpointsTaken": {
   "21718156": [
