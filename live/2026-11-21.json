@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "updatedAt": "2026-11-22T03:15:13.384Z",
+ "updatedAt": "2026-11-22T03:19:11.938Z",
  "state": "running",
  "games": [
   {
@@ -21,7 +21,7 @@
    "gameId": 21718158,
    "matchup": "LAC @ DAL",
    "status": "4th Qtr",
-   "homeScore": 91,
+   "homeScore": 95,
    "visitorScore": 88
   },
   {
@@ -42,8 +42,8 @@
    "gameId": 21718161,
    "matchup": "BOS @ SAC",
    "status": "1st Qtr",
-   "homeScore": 0,
-   "visitorScore": 7
+   "homeScore": 4,
+   "visitorScore": 14
   }
  ],
  "picks": [
@@ -1227,7 +1227,7 @@
    "scoreMargin": -3,
    "valueAtPick": 1,
    "projection": 14.112419483959544,
-   "latestValue": 19,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Over",
@@ -2463,7 +2463,7 @@
    "scoreMargin": 4,
    "valueAtPick": 10,
    "projection": 11.180042612447302,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -2746,7 +2746,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 399,
+ "calls": 407,
  "note": null,
  "checkpointsTaken": {
   "21718156": [
