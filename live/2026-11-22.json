@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "updatedAt": "2026-11-22T22:18:17.203Z",
+ "updatedAt": "2026-11-22T22:19:17.215Z",
  "state": "running",
  "games": [
   {
@@ -8,7 +8,7 @@
    "matchup": "DET @ ATL",
    "status": "3rd Qtr",
    "homeScore": 74,
-   "visitorScore": 83
+   "visitorScore": 85
   },
   {
    "gameId": 21718163,
@@ -387,8 +387,8 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 291,
- "note": null,
+ "calls": 293,
+ "note": "This run hit its time limit; the next scheduled run continues.",
  "checkpointsTaken": {
   "21718162": [
    "end-q1",
