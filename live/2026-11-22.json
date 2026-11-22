@@ -1,0 +1,59 @@
+{
+ "date": "2026-11-22",
+ "updatedAt": "2026-11-22T16:34:34.938Z",
+ "state": "waiting",
+ "games": [
+  {
+   "gameId": 21718162,
+   "matchup": "DET @ ATL",
+   "status": "2026-11-22T20:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718163,
+   "matchup": "OKC @ MIA",
+   "status": "2026-11-22T23:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718165,
+   "matchup": "ORL @ WAS",
+   "status": "2026-11-23T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718166,
+   "matchup": "DEN @ CHI",
+   "status": "2026-11-23T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718167,
+   "matchup": "DAL @ UTA",
+   "status": "2026-11-23T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718169,
+   "matchup": "IND @ NYK",
+   "status": "2026-11-23T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718170,
+   "matchup": "BOS @ GSW",
+   "status": "2026-11-23T01:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  }
+ ],
+ "picks": [],
+ "calls": 1,
+ "note": "First tip-off 2026-11-22T20:30:00.000Z"
+}
