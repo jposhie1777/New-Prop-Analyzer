@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "updatedAt": "2026-11-22T03:30:13.985Z",
+ "updatedAt": "2026-11-22T03:37:13.423Z",
  "state": "running",
  "games": [
   {
@@ -42,8 +42,8 @@
    "gameId": 21718161,
    "matchup": "BOS @ SAC",
    "status": "1st Qtr",
-   "homeScore": 13,
-   "visitorScore": 18
+   "homeScore": 25,
+   "visitorScore": 27
   }
  ],
  "picks": [
@@ -2864,9 +2864,176 @@
     "gradedAt": "2026-11-22T03:26:12.297Z"
    },
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718161-666656-rebounds",
+   "gameDate": "2026-11-21",
+   "gameId": 21718161,
+   "matchup": "BOS @ SAC",
+   "playerId": 666656,
+   "playerName": "De'Andre Hunter",
+   "teamAbbreviation": "SAC",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": 102,
+   "vendor": "caesars",
+   "modelProbability": 0.6187449141006203,
+   "evPercent": 24.986472648325297,
+   "foundAt": "2026-11-22T03:37:12.200Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -2,
+   "valueAtPick": 3,
+   "projection": 6.156438521256436,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718161-38017688-threes",
+   "gameDate": "2026-11-21",
+   "gameId": 21718161,
+   "matchup": "BOS @ SAC",
+   "playerId": 38017688,
+   "playerName": "Keegan Murray",
+   "teamAbbreviation": "SAC",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": -162,
+   "vendor": "caesars",
+   "modelProbability": 0.7726555087044272,
+   "evPercent": 24.960335358370344,
+   "foundAt": "2026-11-22T03:37:12.200Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -2,
+   "valueAtPick": 0,
+   "projection": 0.704038195457488,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718161-1028028434-points_rebounds_assists",
+   "gameDate": "2026-11-21",
+   "gameId": 21718161,
+   "matchup": "BOS @ SAC",
+   "playerId": 1028028434,
+   "playerName": "Baylor Scheierman",
+   "teamAbbreviation": "BOS",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 11.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.6634619138596856,
+   "evPercent": 24.544604882432196,
+   "foundAt": "2026-11-22T03:37:12.200Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 2,
+   "valueAtPick": 1,
+   "projection": 13.788287252932667,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718161-17553967-points_rebounds_assists",
+   "gameDate": "2026-11-21",
+   "gameId": 21718161,
+   "matchup": "BOS @ SAC",
+   "playerId": 17553967,
+   "playerName": "Neemias Queta",
+   "teamAbbreviation": "BOS",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 24.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6006374753780042,
+   "evPercent": 21.328770026356846,
+   "foundAt": "2026-11-22T03:37:12.200Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 2,
+   "valueAtPick": 7,
+   "projection": 26.194283179465277,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718161-172-points",
+   "gameDate": "2026-11-21",
+   "gameId": 21718161,
+   "matchup": "BOS @ SAC",
+   "playerId": 172,
+   "playerName": "Paul George",
+   "teamAbbreviation": "BOS",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 21.5,
+   "americanOdds": -105,
+   "vendor": "caesars",
+   "modelProbability": 0.6115872363292554,
+   "evPercent": 19.405127092854624,
+   "foundAt": "2026-11-22T03:37:12.200Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 2,
+   "valueAtPick": 3,
+   "projection": 19.65972130102597,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 431,
+ "calls": 449,
  "note": null,
  "checkpointsTaken": {
   "21718156": [
@@ -2893,6 +3060,9 @@
    "end-q1",
    "halftime",
    "end-q3"
+  ],
+  "21718161": [
+   "end-q1"
   ]
  }
 }
