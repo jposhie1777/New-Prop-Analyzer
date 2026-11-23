@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "updatedAt": "2026-11-23T00:36:08.735Z",
+ "updatedAt": "2026-11-23T00:40:05.982Z",
  "state": "running",
  "games": [
   {
@@ -14,29 +14,29 @@
    "gameId": 21718163,
    "matchup": "OKC @ MIA",
    "status": "3rd Qtr",
-   "homeScore": 80,
-   "visitorScore": 65
+   "homeScore": 84,
+   "visitorScore": 68
   },
   {
    "gameId": 21718165,
    "matchup": "ORL @ WAS",
-   "status": "1st Qtr",
+   "status": "2nd Qtr",
    "homeScore": 38,
-   "visitorScore": 21
+   "visitorScore": 23
   },
   {
    "gameId": 21718166,
    "matchup": "DEN @ CHI",
    "status": "2nd Qtr",
-   "homeScore": 37,
-   "visitorScore": 36
+   "homeScore": 41,
+   "visitorScore": 38
   },
   {
    "gameId": 21718167,
    "matchup": "DAL @ UTA",
-   "status": "1st Qtr",
-   "homeScore": 35,
-   "visitorScore": 33
+   "status": "2nd Qtr",
+   "homeScore": 37,
+   "visitorScore": 35
   },
   {
    "gameId": 21718169,
@@ -644,7 +644,7 @@
    "scoreMargin": 13,
    "valueAtPick": 10,
    "projection": 17.350679901344716,
-   "latestValue": 13,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -710,7 +710,7 @@
    "scoreMargin": -13,
    "valueAtPick": 8,
    "projection": 14.9954646294463,
-   "latestValue": 8,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Over",
@@ -873,7 +873,7 @@
    "scoreMargin": -2,
    "valueAtPick": 4,
    "projection": 17.17138682093659,
-   "latestValue": 7,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -972,7 +972,7 @@
    "scoreMargin": 2,
    "valueAtPick": 4,
    "projection": 22.94738855247848,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -1083,9 +1083,179 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718165-56677827-rebounds_assists",
+   "gameDate": "2026-11-22",
+   "gameId": 21718165,
+   "matchup": "ORL @ WAS",
+   "playerId": 56677827,
+   "playerName": "Anthony Black",
+   "teamAbbreviation": "ORL",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 9.5,
+   "americanOdds": -105,
+   "vendor": "betmgm",
+   "modelProbability": 0.6398143468069317,
+   "evPercent": 24.916134376591437,
+   "foundAt": "2026-11-23T00:37:04.600Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -17,
+   "valueAtPick": 2,
+   "projection": 8.354992547007933,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718165-490-points_rebounds_assists",
+   "gameDate": "2026-11-22",
+   "gameId": 21718165,
+   "matchup": "ORL @ WAS",
+   "playerId": 490,
+   "playerName": "Trae Young",
+   "teamAbbreviation": "WAS",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 26.5,
+   "americanOdds": 104,
+   "vendor": "fanduel",
+   "modelProbability": 0.5999200002476718,
+   "evPercent": 22.383680050525044,
+   "foundAt": "2026-11-23T00:37:04.600Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 17,
+   "valueAtPick": 8,
+   "projection": 28.22657806215804,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718165-117-rebounds",
+   "gameDate": "2026-11-22",
+   "gameId": 21718165,
+   "matchup": "ORL @ WAS",
+   "playerId": 117,
+   "playerName": "Anthony Davis",
+   "teamAbbreviation": "WAS",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 11.5,
+   "americanOdds": -102,
+   "vendor": "caesars",
+   "modelProbability": 0.6127915565055431,
+   "evPercent": 21.356759229529132,
+   "foundAt": "2026-11-23T00:37:04.600Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 17,
+   "valueAtPick": 3,
+   "projection": 10.537888682591735,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718165-17896026-points",
+   "gameDate": "2026-11-22",
+   "gameId": 21718165,
+   "matchup": "ORL @ WAS",
+   "playerId": 17896026,
+   "playerName": "Franz Wagner",
+   "teamAbbreviation": "ORL",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 26.5,
+   "americanOdds": -115,
+   "vendor": "betmgm",
+   "modelProbability": 0.6490667520690458,
+   "evPercent": 21.347262343343342,
+   "foundAt": "2026-11-23T00:37:04.600Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": -17,
+   "valueAtPick": 4,
+   "projection": 23.79123573175118,
+   "latestValue": 6,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Blowout risk",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718165-1028026060-threes",
+   "gameDate": "2026-11-22",
+   "gameId": 21718165,
+   "matchup": "ORL @ WAS",
+   "playerId": 1028026060,
+   "playerName": "KyShawn George",
+   "teamAbbreviation": "WAS",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": -152,
+   "vendor": "caesars",
+   "modelProbability": 0.7310311483027845,
+   "evPercent": 21.197269323882683,
+   "foundAt": "2026-11-23T00:37:04.600Z",
+   "clockLabel": "End of Q1",
+   "period": 2,
+   "scoreMargin": 17,
+   "valueAtPick": 1,
+   "projection": 2.4367957838469563,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 267,
+ "calls": 279,
  "note": null,
  "checkpointsTaken": {
   "21718162": [
@@ -1096,6 +1266,9 @@
   "21718163": [
    "end-q1",
    "halftime"
+  ],
+  "21718165": [
+   "end-q1"
   ],
   "21718166": [
    "end-q1"
