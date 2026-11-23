@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "updatedAt": "2026-11-23T03:30:15.083Z",
+ "updatedAt": "2026-11-23T03:34:12.053Z",
  "state": "running",
  "games": [
   {
@@ -43,7 +43,7 @@
    "matchup": "IND @ NYK",
    "status": "4th Qtr",
    "homeScore": 112,
-   "visitorScore": 100
+   "visitorScore": 106
   },
   {
    "gameId": 21718170,
@@ -3291,7 +3291,7 @@
    "scoreMargin": -2,
    "valueAtPick": 31,
    "projection": 46.592160903833026,
-   "latestValue": 35,
+   "latestValue": 36,
    "tags": [
     "Best bet",
     "Under",
@@ -3671,7 +3671,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 664,
+ "calls": 672,
  "note": null,
  "checkpointsTaken": {
   "21718162": [
