@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "updatedAt": "2026-11-23T03:38:12.297Z",
+ "updatedAt": "2026-11-23T03:45:13.821Z",
  "state": "running",
  "games": [
   {
@@ -49,7 +49,7 @@
    "gameId": 21718170,
    "matchup": "BOS @ GSW",
    "status": "4th Qtr",
-   "homeScore": 83,
+   "homeScore": 88,
    "visitorScore": 86
   }
  ],
@@ -3264,7 +3264,7 @@
    "scoreMargin": 2,
    "valueAtPick": 4,
    "projection": 6.831037746611111,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -3731,7 +3731,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 681,
+ "calls": 695,
  "note": null,
  "checkpointsTaken": {
   "21718162": [
