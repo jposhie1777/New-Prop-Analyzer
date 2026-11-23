@@ -1,0 +1,80 @@
+{
+ "date": "2026-11-23",
+ "updatedAt": "2026-11-23T22:36:33.155Z",
+ "state": "waiting",
+ "games": [
+  {
+   "gameId": 21718171,
+   "matchup": "MEM @ CHA",
+   "status": "2026-11-24T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718172,
+   "matchup": "POR @ PHI",
+   "status": "2026-11-24T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718173,
+   "matchup": "OKC @ IND",
+   "status": "2026-11-24T00:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718174,
+   "matchup": "MIL @ TOR",
+   "status": "2026-11-24T00:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718175,
+   "matchup": "BKN @ MIN",
+   "status": "2026-11-24T00:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718176,
+   "matchup": "CLE @ CHI",
+   "status": "2026-11-24T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718177,
+   "matchup": "PHX @ NOP",
+   "status": "2026-11-24T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718178,
+   "matchup": "LAC @ HOU",
+   "status": "2026-11-24T01:30:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718179,
+   "matchup": "UTA @ LAL",
+   "status": "2026-11-24T03:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718180,
+   "matchup": "SAS @ SAC",
+   "status": "2026-11-24T03:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  }
+ ],
+ "picks": [],
+ "calls": 1,
+ "note": "First tip-off 2026-11-24T00:00:00.000Z"
+}
