@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "updatedAt": "2026-11-23T00:28:04.902Z",
+ "updatedAt": "2026-11-23T00:33:06.558Z",
  "state": "running",
  "games": [
   {
@@ -14,29 +14,29 @@
    "gameId": 21718163,
    "matchup": "OKC @ MIA",
    "status": "3rd Qtr",
-   "homeScore": 76,
-   "visitorScore": 63
+   "homeScore": 78,
+   "visitorScore": 65
   },
   {
    "gameId": 21718165,
    "matchup": "ORL @ WAS",
    "status": "1st Qtr",
-   "homeScore": 24,
+   "homeScore": 32,
    "visitorScore": 17
   },
   {
    "gameId": 21718166,
    "matchup": "DEN @ CHI",
    "status": "1st Qtr",
-   "homeScore": 25,
-   "visitorScore": 31
+   "homeScore": 31,
+   "visitorScore": 33
   },
   {
    "gameId": 21718167,
    "matchup": "DAL @ UTA",
    "status": "1st Qtr",
-   "homeScore": 24,
-   "visitorScore": 23
+   "homeScore": 27,
+   "visitorScore": 31
   },
   {
    "gameId": 21718169,
@@ -448,7 +448,7 @@
    "scoreMargin": 12,
    "valueAtPick": 14,
    "projection": 38.14048822486506,
-   "latestValue": 37,
+   "latestValue": 38,
    "tags": [
     "Best bet",
     "Over",
@@ -644,7 +644,7 @@
    "scoreMargin": 13,
    "valueAtPick": 10,
    "projection": 17.350679901344716,
-   "latestValue": 10,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -753,9 +753,172 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718166-125-threes",
+   "gameDate": "2026-11-22",
+   "gameId": 21718166,
+   "matchup": "DEN @ CHI",
+   "playerId": 125,
+   "playerName": "DeMar DeRozan",
+   "teamAbbreviation": "DEN",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": 185,
+   "vendor": "draftkings",
+   "modelProbability": 0.4325591407746068,
+   "evPercent": 23.279355120762936,
+   "foundAt": "2026-11-23T00:33:04.407Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 2,
+   "valueAtPick": 0,
+   "projection": 0.3690634374999999,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718166-38017709-points_rebounds_assists",
+   "gameDate": "2026-11-22",
+   "gameId": 21718166,
+   "matchup": "DEN @ CHI",
+   "playerId": 38017709,
+   "playerName": "Christian Braun",
+   "teamAbbreviation": "DEN",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 20.5,
+   "americanOdds": -115,
+   "vendor": "betrivers",
+   "modelProbability": 0.6588993314914566,
+   "evPercent": 23.185527191881008,
+   "foundAt": "2026-11-23T00:33:04.407Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 2,
+   "valueAtPick": 7,
+   "projection": 22.98256046120005,
+   "latestValue": 7,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718166-3547247-rebounds",
+   "gameDate": "2026-11-22",
+   "gameId": 21718166,
+   "matchup": "DEN @ CHI",
+   "playerId": 3547247,
+   "playerName": "Isaac Okoro",
+   "teamAbbreviation": "CHI",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 135,
+   "vendor": "draftkings",
+   "modelProbability": 0.5223940096759395,
+   "evPercent": 22.762592273845783,
+   "foundAt": "2026-11-23T00:33:04.407Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -2,
+   "valueAtPick": 0,
+   "projection": 2.6109607781250004,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718166-3547264-points_rebounds",
+   "gameDate": "2026-11-22",
+   "gameId": 21718166,
+   "matchup": "DEN @ CHI",
+   "playerId": 3547264,
+   "playerName": "Jalen Smith",
+   "teamAbbreviation": "CHI",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "under",
+   "line": 19.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.6638798030973148,
+   "evPercent": 22.648980572215784,
+   "foundAt": "2026-11-23T00:33:04.407Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -2,
+   "valueAtPick": 4,
+   "projection": 17.17138682093659,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Reb",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718166-3547248-points_rebounds",
+   "gameDate": "2026-11-22",
+   "gameId": 21718166,
+   "matchup": "DEN @ CHI",
+   "playerId": 3547248,
+   "playerName": "Patrick Williams",
+   "teamAbbreviation": "CHI",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 11.5,
+   "americanOdds": 110,
+   "vendor": "fanduel",
+   "modelProbability": 0.58198769401301,
+   "evPercent": 22.217415742732104,
+   "foundAt": "2026-11-23T00:33:04.407Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -2,
+   "valueAtPick": 3,
+   "projection": 12.465767777033431,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 243,
+ "calls": 257,
  "note": null,
  "checkpointsTaken": {
   "21718162": [
@@ -766,6 +929,9 @@
   "21718163": [
    "end-q1",
    "halftime"
+  ],
+  "21718166": [
+   "end-q1"
   ]
  }
 }
