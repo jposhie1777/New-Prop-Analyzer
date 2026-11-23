@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "updatedAt": "2026-11-23T00:33:06.558Z",
+ "updatedAt": "2026-11-23T00:36:08.735Z",
  "state": "running",
  "games": [
   {
@@ -14,29 +14,29 @@
    "gameId": 21718163,
    "matchup": "OKC @ MIA",
    "status": "3rd Qtr",
-   "homeScore": 78,
+   "homeScore": 80,
    "visitorScore": 65
   },
   {
    "gameId": 21718165,
    "matchup": "ORL @ WAS",
    "status": "1st Qtr",
-   "homeScore": 32,
-   "visitorScore": 17
+   "homeScore": 38,
+   "visitorScore": 21
   },
   {
    "gameId": 21718166,
    "matchup": "DEN @ CHI",
-   "status": "1st Qtr",
-   "homeScore": 31,
-   "visitorScore": 33
+   "status": "2nd Qtr",
+   "homeScore": 37,
+   "visitorScore": 36
   },
   {
    "gameId": 21718167,
    "matchup": "DAL @ UTA",
    "status": "1st Qtr",
-   "homeScore": 27,
-   "visitorScore": 31
+   "homeScore": 35,
+   "visitorScore": 33
   },
   {
    "gameId": 21718169,
@@ -513,7 +513,7 @@
    "scoreMargin": -12,
    "valueAtPick": 2,
    "projection": 8.320684175365045,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -611,7 +611,7 @@
    "scoreMargin": -13,
    "valueAtPick": 12,
    "projection": 24.098019175328325,
-   "latestValue": 15,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Under",
@@ -644,7 +644,7 @@
    "scoreMargin": 13,
    "valueAtPick": 10,
    "projection": 17.350679901344716,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -873,7 +873,7 @@
    "scoreMargin": -2,
    "valueAtPick": 4,
    "projection": 17.17138682093659,
-   "latestValue": 4,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -916,9 +916,176 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718167-1028028244-points",
+   "gameDate": "2026-11-22",
+   "gameId": 21718167,
+   "matchup": "DAL @ UTA",
+   "playerId": 1028028244,
+   "playerName": "Zaccharie Risacher",
+   "teamAbbreviation": "DAL",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 8.5,
+   "americanOdds": -108,
+   "vendor": "betrivers",
+   "modelProbability": 0.6489082169410654,
+   "evPercent": 24.974915855316304,
+   "foundAt": "2026-11-23T00:36:04.548Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -2,
+   "valueAtPick": 3,
+   "projection": 10.123263039353098,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718167-1091342427-points_rebounds_assists",
+   "gameDate": "2026-11-22",
+   "gameId": 21718167,
+   "matchup": "DAL @ UTA",
+   "playerId": 1091342427,
+   "playerName": "Darryn Peterson",
+   "teamAbbreviation": "UTA",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 26.5,
+   "americanOdds": -130,
+   "vendor": "fanduel",
+   "modelProbability": 0.7047657402173895,
+   "evPercent": 24.689323269230435,
+   "foundAt": "2026-11-23T00:36:04.548Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 2,
+   "valueAtPick": 4,
+   "projection": 22.94738855247848,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718167-1057260888-points_rebounds",
+   "gameDate": "2026-11-22",
+   "gameId": 21718167,
+   "matchup": "DAL @ UTA",
+   "playerId": 1057260888,
+   "playerName": "Airious Bailey",
+   "teamAbbreviation": "UTA",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 19.5,
+   "americanOdds": -111,
+   "vendor": "betmgm",
+   "modelProbability": 0.6543089667538774,
+   "evPercent": 24.377650436998334,
+   "foundAt": "2026-11-23T00:36:04.548Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 2,
+   "valueAtPick": 8,
+   "projection": 21.73091288979296,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718167-1091341156-points",
+   "gameDate": "2026-11-22",
+   "gameId": 21718167,
+   "matchup": "DAL @ UTA",
+   "playerId": 1091341156,
+   "playerName": "Morez Johnson",
+   "teamAbbreviation": "DAL",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 9.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.6381116741264838,
+   "evPercent": 19.7858756693575,
+   "foundAt": "2026-11-23T00:36:04.548Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -2,
+   "valueAtPick": 5,
+   "projection": 8.455095478303047,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718167-3547293-assists",
+   "gameDate": "2026-11-22",
+   "gameId": 21718167,
+   "matchup": "DAL @ UTA",
+   "playerId": 3547293,
+   "playerName": "Naji Marshall",
+   "teamAbbreviation": "DAL",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 102,
+   "vendor": "betrivers",
+   "modelProbability": 0.5745434907038973,
+   "evPercent": 16.05778512218725,
+   "foundAt": "2026-11-23T00:36:04.548Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -2,
+   "valueAtPick": 1,
+   "projection": 3.8907284185801716,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 257,
+ "calls": 267,
  "note": null,
  "checkpointsTaken": {
   "21718162": [
@@ -931,6 +1098,9 @@
    "halftime"
   ],
   "21718166": [
+   "end-q1"
+  ],
+  "21718167": [
    "end-q1"
   ]
  }
