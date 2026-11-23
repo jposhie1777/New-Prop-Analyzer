@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "updatedAt": "2026-11-23T01:34:07.107Z",
+ "updatedAt": "2026-11-23T01:37:11.179Z",
  "state": "running",
  "games": [
   {
@@ -21,29 +21,29 @@
    "gameId": 21718165,
    "matchup": "ORL @ WAS",
    "status": "3rd Qtr",
-   "homeScore": 76,
-   "visitorScore": 60
+   "homeScore": 79,
+   "visitorScore": 63
   },
   {
    "gameId": 21718166,
    "matchup": "DEN @ CHI",
    "status": "3rd Qtr",
    "homeScore": 88,
-   "visitorScore": 91
+   "visitorScore": 98
   },
   {
    "gameId": 21718167,
    "matchup": "DAL @ UTA",
    "status": "3rd Qtr",
-   "homeScore": 62,
+   "homeScore": 64,
    "visitorScore": 80
   },
   {
    "gameId": 21718169,
    "matchup": "IND @ NYK",
    "status": "1st Qtr",
-   "homeScore": 21,
-   "visitorScore": 23
+   "homeScore": 26,
+   "visitorScore": 26
   },
   {
    "gameId": 21718170,
@@ -848,7 +848,7 @@
    "scoreMargin": 2,
    "valueAtPick": 7,
    "projection": 22.98256046120005,
-   "latestValue": 17,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Over",
@@ -1180,7 +1180,7 @@
    "scoreMargin": 17,
    "valueAtPick": 8,
    "projection": 28.22657806215804,
-   "latestValue": 20,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Over",
@@ -1509,7 +1509,7 @@
    "scoreMargin": 2,
    "valueAtPick": 0,
    "projection": 0.5316543880236992,
-   "latestValue": 0,
+   "latestValue": 2,
    "tags": [
     "Under",
     "3PM",
@@ -1541,7 +1541,7 @@
    "scoreMargin": 2,
    "valueAtPick": 5,
    "projection": 8.271909893804583,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -1608,7 +1608,7 @@
    "scoreMargin": 2,
    "valueAtPick": 2,
    "projection": 9.113012068476245,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -1983,9 +1983,173 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718169-1028036898-rebounds_assists",
+   "gameDate": "2026-11-22",
+   "gameId": 21718169,
+   "matchup": "IND @ NYK",
+   "playerId": 1028036898,
+   "playerName": "Tyler Kolek",
+   "teamAbbreviation": "NYK",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 4.5,
+   "americanOdds": 114,
+   "vendor": "fanduel",
+   "modelProbability": 0.582842402178231,
+   "evPercent": 24.72827406614142,
+   "foundAt": "2026-11-23T01:37:06.946Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 0,
+   "valueAtPick": 0,
+   "projection": 3.9711054366690663,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718169-61-threes",
+   "gameDate": "2026-11-22",
+   "gameId": 21718169,
+   "matchup": "IND @ NYK",
+   "playerId": 61,
+   "playerName": "Mikal Bridges",
+   "teamAbbreviation": "NYK",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 182,
+   "vendor": "fanduel",
+   "modelProbability": 0.4421860105968336,
+   "evPercent": 24.69645498830708,
+   "foundAt": "2026-11-23T01:37:06.946Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 0,
+   "valueAtPick": 0,
+   "projection": 1.2903842630514706,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718169-202-assists",
+   "gameDate": "2026-11-22",
+   "gameId": 21718169,
+   "matchup": "IND @ NYK",
+   "playerId": 202,
+   "playerName": "Josh Hart",
+   "teamAbbreviation": "NYK",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": 119,
+   "vendor": "caesars",
+   "modelProbability": 0.5590716050086844,
+   "evPercent": 22.436681496901876,
+   "foundAt": "2026-11-23T01:37:06.946Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 0,
+   "valueAtPick": 3,
+   "projection": 5.804296875,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718169-73-rebounds",
+   "gameDate": "2026-11-22",
+   "gameId": 21718169,
+   "matchup": "IND @ NYK",
+   "playerId": 73,
+   "playerName": "Jalen Brunson",
+   "teamAbbreviation": "NYK",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 130,
+   "vendor": "betrivers",
+   "modelProbability": 0.531103417215351,
+   "evPercent": 22.153785959530726,
+   "foundAt": "2026-11-23T01:37:06.946Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 0,
+   "valueAtPick": 1,
+   "projection": 3.655500421538474,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "Rebounds",
+    "Cold shooter",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718169-447-threes",
+   "gameDate": "2026-11-22",
+   "gameId": 21718169,
+   "matchup": "IND @ NYK",
+   "playerId": 447,
+   "playerName": "Karl-Anthony Towns",
+   "teamAbbreviation": "NYK",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -124,
+   "vendor": "caesars",
+   "modelProbability": 0.6574393442174349,
+   "evPercent": 18.76323637476243,
+   "foundAt": "2026-11-23T01:37:06.946Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 0,
+   "valueAtPick": 1,
+   "projection": 1.9884717660260884,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 400,
+ "calls": 410,
  "note": null,
  "checkpointsTaken": {
   "21718162": [
@@ -2009,6 +2173,9 @@
   "21718167": [
    "end-q1",
    "halftime"
+  ],
+  "21718169": [
+   "end-q1"
   ]
  }
 }
