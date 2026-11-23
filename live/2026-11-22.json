@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "updatedAt": "2026-11-23T03:15:13.401Z",
+ "updatedAt": "2026-11-23T03:19:11.695Z",
  "state": "running",
  "games": [
   {
@@ -42,15 +42,15 @@
    "gameId": 21718169,
    "matchup": "IND @ NYK",
    "status": "4th Qtr",
-   "homeScore": 98,
-   "visitorScore": 87
+   "homeScore": 102,
+   "visitorScore": 91
   },
   {
    "gameId": 21718170,
    "matchup": "BOS @ GSW",
-   "status": "3rd Qtr",
-   "homeScore": 64,
-   "visitorScore": 73
+   "status": "4th Qtr",
+   "homeScore": 69,
+   "visitorScore": 75
   }
  ],
  "picks": [
@@ -2191,7 +2191,7 @@
    "scoreMargin": 0,
    "valueAtPick": 3,
    "projection": 5.804296875,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -3092,7 +3092,7 @@
    "scoreMargin": -4,
    "valueAtPick": 0,
    "projection": 5.42480454683908,
-   "latestValue": 4,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -3325,7 +3325,7 @@
    "scoreMargin": -2,
    "valueAtPick": 2,
    "projection": 4.562173363970588,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -3358,7 +3358,7 @@
    "scoreMargin": -11,
    "valueAtPick": 15,
    "projection": 18.46432049234833,
-   "latestValue": 19,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Under",
@@ -3460,7 +3460,7 @@
    "scoreMargin": -11,
    "valueAtPick": 4,
    "projection": 7.122039001711993,
-   "latestValue": 6,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -3494,7 +3494,7 @@
    "scoreMargin": -11,
    "valueAtPick": 23,
    "projection": 30.11221491758748,
-   "latestValue": 23,
+   "latestValue": 24,
    "tags": [
     "Best bet",
     "Over",
@@ -3504,9 +3504,174 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718170-17553967-assists",
+   "gameDate": "2026-11-22",
+   "gameId": 21718170,
+   "matchup": "BOS @ GSW",
+   "playerId": 17553967,
+   "playerName": "Neemias Queta",
+   "teamAbbreviation": "BOS",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": 150,
+   "vendor": "draftkings",
+   "modelProbability": 0.49742156991297826,
+   "evPercent": 24.355392478244564,
+   "foundAt": "2026-11-23T03:17:11.001Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 6,
+   "valueAtPick": 4,
+   "projection": 4.49444320377515,
+   "latestValue": 4,
+   "tags": [
+    "Over",
+    "Assists",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718170-434-points",
+   "gameDate": "2026-11-22",
+   "gameId": 21718170,
+   "matchup": "BOS @ GSW",
+   "playerId": 434,
+   "playerName": "Jayson Tatum",
+   "teamAbbreviation": "BOS",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 30.5,
+   "americanOdds": 100,
+   "vendor": "betmgm",
+   "modelProbability": 0.6199703807144523,
+   "evPercent": 23.994076142890464,
+   "foundAt": "2026-11-23T03:17:11.001Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 6,
+   "valueAtPick": 26,
+   "projection": 29.580774057430954,
+   "latestValue": 26,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718170-185-points",
+   "gameDate": "2026-11-22",
+   "gameId": 21718170,
+   "matchup": "BOS @ GSW",
+   "playerId": 185,
+   "playerName": "Draymond Green",
+   "teamAbbreviation": "GSW",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": 154,
+   "vendor": "draftkings",
+   "modelProbability": 0.4877393984220516,
+   "evPercent": 23.885807199201103,
+   "foundAt": "2026-11-23T03:17:11.001Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -6,
+   "valueAtPick": 9,
+   "projection": 9.466603389668633,
+   "latestValue": 9,
+   "tags": [
+    "Over",
+    "Points",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718170-473-rebounds",
+   "gameDate": "2026-11-22",
+   "gameId": 21718170,
+   "matchup": "BOS @ GSW",
+   "playerId": 473,
+   "playerName": "Derrick White",
+   "teamAbbreviation": "BOS",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": 108,
+   "vendor": "fanduel",
+   "modelProbability": 0.5895337410850734,
+   "evPercent": 22.623018145695273,
+   "foundAt": "2026-11-23T03:17:11.001Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 6,
+   "valueAtPick": 3,
+   "projection": 3.3388899905819978,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718170-3547276-points",
+   "gameDate": "2026-11-22",
+   "gameId": 21718170,
+   "matchup": "BOS @ GSW",
+   "playerId": 3547276,
+   "playerName": "Payton Pritchard",
+   "teamAbbreviation": "BOS",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 9.5,
+   "americanOdds": -130,
+   "vendor": "draftkings",
+   "modelProbability": 0.6606063117833068,
+   "evPercent": 16.876501315508108,
+   "foundAt": "2026-11-23T03:17:11.001Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 6,
+   "valueAtPick": 5,
+   "projection": 8.302894809842606,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 631,
+ "calls": 642,
  "note": null,
  "checkpointsTaken": {
   "21718162": [
@@ -3541,7 +3706,8 @@
   ],
   "21718170": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ]
  }
 }
