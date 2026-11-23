@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "updatedAt": "2026-11-23T01:12:07.043Z",
+ "updatedAt": "2026-11-23T01:15:09.937Z",
  "state": "running",
  "games": [
   {
@@ -14,8 +14,8 @@
    "gameId": 21718163,
    "matchup": "OKC @ MIA",
    "status": "4th Qtr",
-   "homeScore": 116,
-   "visitorScore": 98
+   "homeScore": 119,
+   "visitorScore": 104
   },
   {
    "gameId": 21718165,
@@ -42,8 +42,8 @@
    "gameId": 21718169,
    "matchup": "IND @ NYK",
    "status": "1st Qtr",
-   "homeScore": 2,
-   "visitorScore": 2
+   "homeScore": 5,
+   "visitorScore": 4
   },
   {
    "gameId": 21718170,
@@ -448,7 +448,7 @@
    "scoreMargin": 12,
    "valueAtPick": 14,
    "projection": 38.14048822486506,
-   "latestValue": 48,
+   "latestValue": 49,
    "tags": [
     "Best bet",
     "Over",
@@ -644,7 +644,7 @@
    "scoreMargin": 13,
    "valueAtPick": 10,
    "projection": 17.350679901344716,
-   "latestValue": 20,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Over",
@@ -1925,7 +1925,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 355,
+ "calls": 361,
  "note": null,
  "checkpointsTaken": {
   "21718162": [
