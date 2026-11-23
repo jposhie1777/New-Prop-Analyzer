@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "updatedAt": "2026-11-23T03:04:10.823Z",
+ "updatedAt": "2026-11-23T03:08:10.914Z",
  "state": "running",
  "games": [
   {
@@ -42,15 +42,15 @@
    "gameId": 21718169,
    "matchup": "IND @ NYK",
    "status": "4th Qtr",
-   "homeScore": 89,
-   "visitorScore": 80
+   "homeScore": 92,
+   "visitorScore": 84
   },
   {
    "gameId": 21718170,
    "matchup": "BOS @ GSW",
    "status": "3rd Qtr",
-   "homeScore": 53,
-   "visitorScore": 58
+   "homeScore": 56,
+   "visitorScore": 61
   }
  ],
  "picks": [
@@ -2126,7 +2126,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 3.9711054366690663,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -2159,7 +2159,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 1.2903842630514706,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Over",
     "3PM",
@@ -2993,7 +2993,7 @@
    "scoreMargin": -7,
    "valueAtPick": 0,
    "projection": 4.649121025390625,
-   "latestValue": 0,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -3092,7 +3092,7 @@
    "scoreMargin": -4,
    "valueAtPick": 0,
    "projection": 5.42480454683908,
-   "latestValue": 2,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -3190,7 +3190,7 @@
    "scoreMargin": 2,
    "valueAtPick": 0,
    "projection": 4.173521340364315,
-   "latestValue": 0,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -3325,7 +3325,7 @@
    "scoreMargin": -2,
    "valueAtPick": 2,
    "projection": 4.562173363970588,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -3393,7 +3393,7 @@
    "scoreMargin": -11,
    "valueAtPick": 20,
    "projection": 27.39874341188983,
-   "latestValue": 20,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Over",
@@ -3460,7 +3460,7 @@
    "scoreMargin": -11,
    "valueAtPick": 4,
    "projection": 7.122039001711993,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -3506,7 +3506,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 609,
+ "calls": 617,
  "note": null,
  "checkpointsTaken": {
   "21718162": [
