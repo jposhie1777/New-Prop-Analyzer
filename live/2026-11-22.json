@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "updatedAt": "2026-11-23T01:27:07.137Z",
+ "updatedAt": "2026-11-23T01:30:13.136Z",
  "state": "running",
  "games": [
   {
@@ -22,7 +22,7 @@
    "matchup": "ORL @ WAS",
    "status": "3rd Qtr",
    "homeScore": 67,
-   "visitorScore": 57
+   "visitorScore": 60
   },
   {
    "gameId": 21718166,
@@ -36,13 +36,13 @@
    "matchup": "DAL @ UTA",
    "status": "3rd Qtr",
    "homeScore": 62,
-   "visitorScore": 72
+   "visitorScore": 77
   },
   {
    "gameId": 21718169,
    "matchup": "IND @ NYK",
    "status": "1st Qtr",
-   "homeScore": 16,
+   "homeScore": 18,
    "visitorScore": 15
   },
   {
@@ -1045,7 +1045,7 @@
    "scoreMargin": 2,
    "valueAtPick": 8,
    "projection": 21.73091288979296,
-   "latestValue": 12,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Over",
@@ -1575,7 +1575,7 @@
    "scoreMargin": -2,
    "valueAtPick": 15,
    "projection": 25.647201496888783,
-   "latestValue": 16,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -1674,7 +1674,7 @@
    "scoreMargin": 7,
    "valueAtPick": 2,
    "projection": 4.724700222544184,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Over",
     "Assists",
@@ -1771,7 +1771,7 @@
    "scoreMargin": -7,
    "valueAtPick": 2,
    "projection": 5.892249362401659,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -1805,7 +1805,7 @@
    "scoreMargin": -7,
    "valueAtPick": 20,
    "projection": 35.555160224183425,
-   "latestValue": 24,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Under",
@@ -1985,7 +1985,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 386,
+ "calls": 392,
  "note": null,
  "checkpointsTaken": {
   "21718162": [
