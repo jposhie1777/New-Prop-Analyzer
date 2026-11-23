@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "updatedAt": "2026-11-23T02:19:09.293Z",
+ "updatedAt": "2026-11-23T02:23:09.076Z",
  "state": "running",
  "games": [
   {
@@ -28,14 +28,14 @@
    "gameId": 21718166,
    "matchup": "DEN @ CHI",
    "status": "4th Qtr",
-   "homeScore": 126,
-   "visitorScore": 130
+   "homeScore": 131,
+   "visitorScore": 131
   },
   {
    "gameId": 21718167,
    "matchup": "DAL @ UTA",
    "status": "4th Qtr",
-   "homeScore": 112,
+   "homeScore": 114,
    "visitorScore": 114
   },
   {
@@ -49,8 +49,8 @@
    "gameId": 21718170,
    "matchup": "BOS @ GSW",
    "status": "2nd Qtr",
-   "homeScore": 34,
-   "visitorScore": 26
+   "homeScore": 35,
+   "visitorScore": 28
   }
  ],
  "picks": [
@@ -1595,7 +1595,7 @@
    "scoreMargin": -2,
    "valueAtPick": 15,
    "projection": 25.647201496888783,
-   "latestValue": 24,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Under",
@@ -2774,7 +2774,7 @@
    "scoreMargin": -7,
    "valueAtPick": 11,
    "projection": 32.72719422920525,
-   "latestValue": 11,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -3049,7 +3049,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 511,
+ "calls": 519,
  "note": null,
  "checkpointsTaken": {
   "21718162": [
