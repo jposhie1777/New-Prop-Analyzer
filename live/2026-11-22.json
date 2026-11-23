@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "updatedAt": "2026-11-23T03:12:11.181Z",
+ "updatedAt": "2026-11-23T03:15:13.401Z",
  "state": "running",
  "games": [
   {
@@ -42,15 +42,15 @@
    "gameId": 21718169,
    "matchup": "IND @ NYK",
    "status": "4th Qtr",
-   "homeScore": 95,
-   "visitorScore": 86
+   "homeScore": 98,
+   "visitorScore": 87
   },
   {
    "gameId": 21718170,
    "matchup": "BOS @ GSW",
    "status": "3rd Qtr",
-   "homeScore": 62,
-   "visitorScore": 68
+   "homeScore": 64,
+   "visitorScore": 73
   }
  ],
  "picks": [
@@ -2159,7 +2159,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 1.2903842630514706,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Over",
     "3PM",
@@ -2894,7 +2894,7 @@
    "scoreMargin": -7,
    "valueAtPick": 11,
    "projection": 32.72719422920525,
-   "latestValue": 28,
+   "latestValue": 31,
    "tags": [
     "Best bet",
     "Under",
@@ -2960,7 +2960,7 @@
    "scoreMargin": -7,
    "valueAtPick": 0,
    "projection": 7.103013276376906,
-   "latestValue": 1,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -3224,7 +3224,7 @@
    "scoreMargin": 2,
    "valueAtPick": 4,
    "projection": 6.831037746611111,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Over",
@@ -3291,7 +3291,7 @@
    "scoreMargin": -2,
    "valueAtPick": 31,
    "projection": 46.592160903833026,
-   "latestValue": 33,
+   "latestValue": 35,
    "tags": [
     "Best bet",
     "Under",
@@ -3325,7 +3325,7 @@
    "scoreMargin": -2,
    "valueAtPick": 2,
    "projection": 4.562173363970588,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -3358,7 +3358,7 @@
    "scoreMargin": -11,
    "valueAtPick": 15,
    "projection": 18.46432049234833,
-   "latestValue": 18,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -3506,7 +3506,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 625,
+ "calls": 631,
  "note": null,
  "checkpointsTaken": {
   "21718162": [
