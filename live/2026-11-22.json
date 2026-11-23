@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "updatedAt": "2026-11-23T03:23:11.515Z",
+ "updatedAt": "2026-11-23T03:27:11.893Z",
  "state": "running",
  "games": [
   {
@@ -42,14 +42,14 @@
    "gameId": 21718169,
    "matchup": "IND @ NYK",
    "status": "4th Qtr",
-   "homeScore": 106,
-   "visitorScore": 93
+   "homeScore": 110,
+   "visitorScore": 97
   },
   {
    "gameId": 21718170,
    "matchup": "BOS @ GSW",
    "status": "4th Qtr",
-   "homeScore": 77,
+   "homeScore": 81,
    "visitorScore": 79
   }
  ],
@@ -3393,7 +3393,7 @@
    "scoreMargin": -11,
    "valueAtPick": 20,
    "projection": 27.39874341188983,
-   "latestValue": 22,
+   "latestValue": 24,
    "tags": [
     "Best bet",
     "Over",
@@ -3671,7 +3671,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 650,
+ "calls": 658,
  "note": null,
  "checkpointsTaken": {
   "21718162": [
