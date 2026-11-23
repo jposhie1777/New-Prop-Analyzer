@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "updatedAt": "2026-11-23T02:38:09.847Z",
+ "updatedAt": "2026-11-23T02:42:09.992Z",
  "state": "running",
  "games": [
   {
@@ -27,9 +27,9 @@
   {
    "gameId": 21718166,
    "matchup": "DEN @ CHI",
-   "status": "OT1",
-   "homeScore": 142,
-   "visitorScore": 147
+   "status": "Final",
+   "homeScore": 145,
+   "visitorScore": 151
   },
   {
    "gameId": 21718167,
@@ -42,8 +42,8 @@
    "gameId": 21718169,
    "matchup": "IND @ NYK",
    "status": "3rd Qtr",
-   "homeScore": 67,
-   "visitorScore": 61
+   "homeScore": 69,
+   "visitorScore": 64
   },
   {
    "gameId": 21718170,
@@ -823,7 +823,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 0,
+    "gradedAt": "2026-11-23T02:41:10.164Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -856,7 +860,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 32,
+    "gradedAt": "2026-11-23T02:41:10.164Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -888,7 +896,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 1,
+    "gradedAt": "2026-11-23T02:41:10.164Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -921,7 +933,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 30,
+    "gradedAt": "2026-11-23T02:41:10.164Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -954,7 +970,11 @@
     "Under 60% of line",
     "End of Q1"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 4,
+    "gradedAt": "2026-11-23T02:41:10.164Z"
+   },
    "checkpoint": "end-q1"
   },
   {
@@ -1556,7 +1576,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 3,
+    "gradedAt": "2026-11-23T02:41:10.164Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -1590,7 +1614,11 @@
     "Already 60%+ of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 7,
+    "gradedAt": "2026-11-23T02:41:10.164Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -1623,7 +1651,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 29,
+    "gradedAt": "2026-11-23T02:41:10.164Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -1656,7 +1688,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 5,
+    "gradedAt": "2026-11-23T02:41:10.164Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -1689,7 +1725,11 @@
     "Under 60% of line",
     "Halftime"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 4,
+    "gradedAt": "2026-11-23T02:41:10.164Z"
+   },
    "checkpoint": "halftime"
   },
   {
@@ -2258,7 +2298,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 11,
+    "gradedAt": "2026-11-23T02:41:10.164Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -2291,7 +2335,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 26,
+    "gradedAt": "2026-11-23T02:41:10.164Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -2325,7 +2373,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 40,
+    "gradedAt": "2026-11-23T02:41:10.164Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -2359,7 +2411,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "loss",
+    "actual": 5,
+    "gradedAt": "2026-11-23T02:41:10.164Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -2394,7 +2450,11 @@
     "Already 60%+ of line",
     "End of Q3"
    ],
-   "result": null,
+   "result": {
+    "status": "win",
+    "actual": 8,
+    "gradedAt": "2026-11-23T02:41:10.164Z"
+   },
    "checkpoint": "end-q3"
   },
   {
@@ -3277,7 +3337,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 553,
+ "calls": 562,
  "note": null,
  "checkpointsTaken": {
   "21718162": [
