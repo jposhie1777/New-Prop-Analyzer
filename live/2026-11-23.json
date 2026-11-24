@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "updatedAt": "2026-11-24T05:29:53.565Z",
+ "updatedAt": "2026-11-24T05:33:53.719Z",
  "state": "running",
  "games": [
   {
@@ -63,8 +63,8 @@
    "gameId": 21718179,
    "matchup": "UTA @ LAL",
    "status": "4th Qtr",
-   "homeScore": 105,
-   "visitorScore": 90
+   "homeScore": 107,
+   "visitorScore": 92
   },
   {
    "gameId": 21718180,
@@ -4751,7 +4751,7 @@
    "scoreMargin": 10,
    "valueAtPick": 2,
    "projection": 10.786922997091207,
-   "latestValue": 9,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -5134,7 +5134,7 @@
    "scoreMargin": 11,
    "valueAtPick": 7,
    "projection": 17.660730739344707,
-   "latestValue": 19,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Under",
@@ -5461,7 +5461,7 @@
    "scoreMargin": -1,
    "valueAtPick": 2,
    "projection": 5.686780662549567,
-   "latestValue": 2,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -5606,7 +5606,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 155,
+ "calls": 163,
  "note": null,
  "checkpointsTaken": {
   "21718171": [
