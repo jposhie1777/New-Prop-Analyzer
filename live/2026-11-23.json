@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "updatedAt": "2026-11-24T01:22:17.755Z",
+ "updatedAt": "2026-11-24T01:26:16.954Z",
  "state": "running",
  "games": [
   {
@@ -8,7 +8,7 @@
    "matchup": "MEM @ CHA",
    "status": "3rd Qtr",
    "homeScore": 62,
-   "visitorScore": 62
+   "visitorScore": 67
   },
   {
    "gameId": 21718172,
@@ -21,36 +21,36 @@
    "gameId": 21718173,
    "matchup": "OKC @ IND",
    "status": "2nd Qtr",
-   "homeScore": 41,
-   "visitorScore": 38
+   "homeScore": 43,
+   "visitorScore": 40
   },
   {
    "gameId": 21718174,
    "matchup": "MIL @ TOR",
    "status": "2nd Qtr",
-   "homeScore": 38,
+   "homeScore": 39,
    "visitorScore": 37
   },
   {
    "gameId": 21718175,
    "matchup": "BKN @ MIN",
    "status": "2nd Qtr",
-   "homeScore": 52,
-   "visitorScore": 47
+   "homeScore": 56,
+   "visitorScore": 53
   },
   {
    "gameId": 21718176,
    "matchup": "CLE @ CHI",
    "status": "1st Qtr",
-   "homeScore": 10,
-   "visitorScore": 13
+   "homeScore": 14,
+   "visitorScore": 18
   },
   {
    "gameId": 21718177,
    "matchup": "PHX @ NOP",
    "status": "1st Qtr",
-   "homeScore": 12,
-   "visitorScore": 12
+   "homeScore": 13,
+   "visitorScore": 20
   },
   {
    "gameId": 21718178,
@@ -97,7 +97,7 @@
    "scoreMargin": -4,
    "valueAtPick": 1,
    "projection": 3.5165725380714177,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Over",
     "Assists",
@@ -460,7 +460,7 @@
    "scoreMargin": -2,
    "valueAtPick": 1,
    "projection": 3.521437916917543,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Over",
     "Rebounds",
@@ -592,7 +592,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 6.077387900378037,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -724,7 +724,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 2.411030496875,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Best bet",
     "Under",
@@ -1222,7 +1222,7 @@
    "scoreMargin": 13,
    "valueAtPick": 10,
    "projection": 25.90652894514842,
-   "latestValue": 14,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Over",
@@ -1234,7 +1234,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 269,
+ "calls": 277,
  "note": null,
  "checkpointsTaken": {
   "21718171": [
