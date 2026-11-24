@@ -1,62 +1,62 @@
 {
  "date": "2026-11-23",
- "updatedAt": "2026-11-24T01:52:21.759Z",
+ "updatedAt": "2026-11-24T01:56:21.326Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718171,
    "matchup": "MEM @ CHA",
-   "status": "3rd Qtr",
-   "homeScore": 82,
-   "visitorScore": 89
+   "status": "4th Qtr",
+   "homeScore": 85,
+   "visitorScore": 91
   },
   {
    "gameId": 21718172,
    "matchup": "POR @ PHI",
-   "status": "3rd Qtr",
+   "status": "4th Qtr",
    "homeScore": 92,
-   "visitorScore": 101
+   "visitorScore": 107
   },
   {
    "gameId": 21718173,
    "matchup": "OKC @ IND",
    "status": "3rd Qtr",
-   "homeScore": 68,
-   "visitorScore": 56
+   "homeScore": 70,
+   "visitorScore": 58
   },
   {
    "gameId": 21718174,
    "matchup": "MIL @ TOR",
-   "status": "2nd Qtr",
-   "homeScore": 53,
-   "visitorScore": 49
+   "status": "3rd Qtr",
+   "homeScore": 55,
+   "visitorScore": 55
   },
   {
    "gameId": 21718175,
    "matchup": "BKN @ MIN",
-   "status": "2nd Qtr",
-   "homeScore": 74,
-   "visitorScore": 61
+   "status": "3rd Qtr",
+   "homeScore": 76,
+   "visitorScore": 65
   },
   {
    "gameId": 21718176,
    "matchup": "CLE @ CHI",
    "status": "2nd Qtr",
-   "homeScore": 47,
+   "homeScore": 54,
    "visitorScore": 38
   },
   {
    "gameId": 21718177,
    "matchup": "PHX @ NOP",
    "status": "2nd Qtr",
-   "homeScore": 47,
-   "visitorScore": 48
+   "homeScore": 49,
+   "visitorScore": 52
   },
   {
    "gameId": 21718178,
    "matchup": "LAC @ HOU",
    "status": "1st Qtr",
-   "homeScore": 12,
+   "homeScore": 16,
    "visitorScore": 11
   },
   {
@@ -129,7 +129,7 @@
    "scoreMargin": 4,
    "valueAtPick": 0,
    "projection": 14.47570538681448,
-   "latestValue": 10,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -426,7 +426,7 @@
    "scoreMargin": 2,
    "valueAtPick": 2,
    "projection": 3.9885330907572873,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -757,7 +757,7 @@
    "scoreMargin": 0,
    "valueAtPick": 11,
    "projection": 17.599815136775227,
-   "latestValue": 18,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Over",
@@ -889,7 +889,7 @@
    "scoreMargin": 0,
    "valueAtPick": 7,
    "projection": 26.14688402084825,
-   "latestValue": 13,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -1188,7 +1188,7 @@
    "scoreMargin": 13,
    "valueAtPick": 2,
    "projection": 4.034558000915778,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -1222,7 +1222,7 @@
    "scoreMargin": 13,
    "valueAtPick": 10,
    "projection": 25.90652894514842,
-   "latestValue": 23,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Over",
@@ -1354,7 +1354,7 @@
    "scoreMargin": 5,
    "valueAtPick": 9,
    "projection": 20.296689167154923,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -1419,7 +1419,7 @@
    "scoreMargin": -4,
    "valueAtPick": 7,
    "projection": 18.241394294747963,
-   "latestValue": 7,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -1750,7 +1750,7 @@
    "scoreMargin": -4,
    "valueAtPick": 5,
    "projection": 20.821477085619957,
-   "latestValue": 5,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -2225,14 +2225,179 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718171-666956-assists",
+   "gameDate": "2026-11-23",
+   "gameId": 21718171,
+   "matchup": "MEM @ CHA",
+   "playerId": 666956,
+   "playerName": "Coby White",
+   "teamAbbreviation": "CHA",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": 164,
+   "vendor": "fanduel",
+   "modelProbability": 0.45716932107310476,
+   "evPercent": 20.692700763299634,
+   "foundAt": "2026-11-24T01:53:17.714Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": -7,
+   "valueAtPick": 1,
+   "projection": 1.6020513111091246,
+   "latestValue": 1,
+   "tags": [
+    "Under",
+    "Assists",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718171-1028039105-threes",
+   "gameDate": "2026-11-23",
+   "gameId": 21718171,
+   "matchup": "MEM @ CHA",
+   "playerId": 1028039105,
+   "playerName": "Jaylen Wells",
+   "teamAbbreviation": "MEM",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 210,
+   "vendor": "fanduel",
+   "modelProbability": 0.38498667430963174,
+   "evPercent": 19.345869035985853,
+   "foundAt": "2026-11-24T01:53:17.714Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": 7,
+   "valueAtPick": 2,
+   "projection": 2.296780355224314,
+   "latestValue": 2,
+   "tags": [
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718171-1028048549-points_assists",
+   "gameDate": "2026-11-23",
+   "gameId": 21718171,
+   "matchup": "MEM @ CHA",
+   "playerId": 1028048549,
+   "playerName": "Cam Spencer",
+   "teamAbbreviation": "MEM",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 23.5,
+   "americanOdds": -106,
+   "vendor": "fanduel",
+   "modelProbability": 0.6042266283406958,
+   "evPercent": 17.425174941682407,
+   "foundAt": "2026-11-24T01:53:17.714Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": 7,
+   "valueAtPick": 21,
+   "projection": 24.2191812489709,
+   "latestValue": 21,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718171-667378-threes",
+   "gameDate": "2026-11-23",
+   "gameId": 21718171,
+   "matchup": "MEM @ CHA",
+   "playerId": 667378,
+   "playerName": "Naz Reid",
+   "teamAbbreviation": "CHA",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 2.5,
+   "americanOdds": 114,
+   "vendor": "fanduel",
+   "modelProbability": 0.5357753636773301,
+   "evPercent": 14.655927826948624,
+   "foundAt": "2026-11-24T01:53:17.714Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": -7,
+   "valueAtPick": 2,
+   "projection": 2.587318514946444,
+   "latestValue": 2,
+   "tags": [
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718171-666676-threes",
+   "gameDate": "2026-11-23",
+   "gameId": 21718171,
+   "matchup": "MEM @ CHA",
+   "playerId": 666676,
+   "playerName": "Ty Jerome",
+   "teamAbbreviation": "MEM",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": -136,
+   "vendor": "fanduel",
+   "modelProbability": 0.6483273184895302,
+   "evPercent": 12.503858208477304,
+   "foundAt": "2026-11-24T01:53:17.714Z",
+   "clockLabel": "End of Q3",
+   "period": 4,
+   "scoreMargin": 7,
+   "valueAtPick": 5,
+   "projection": 5.977797960427708,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 355,
+ "calls": 367,
  "note": null,
  "checkpointsTaken": {
   "21718171": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718172": [
    "end-q1",
