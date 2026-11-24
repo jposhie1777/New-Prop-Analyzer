@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "updatedAt": "2026-11-24T03:14:21.072Z",
+ "updatedAt": "2026-11-24T03:18:21.757Z",
  "state": "running",
  "games": [
   {
@@ -42,36 +42,36 @@
    "gameId": 21718176,
    "matchup": "CLE @ CHI",
    "status": "4th Qtr",
-   "homeScore": 116,
-   "visitorScore": 104
+   "homeScore": 120,
+   "visitorScore": 105
   },
   {
    "gameId": 21718177,
    "matchup": "PHX @ NOP",
    "status": "4th Qtr",
-   "homeScore": 98,
-   "visitorScore": 99
+   "homeScore": 100,
+   "visitorScore": 101
   },
   {
    "gameId": 21718178,
    "matchup": "LAC @ HOU",
    "status": "3rd Qtr",
-   "homeScore": 83,
-   "visitorScore": 71
+   "homeScore": 85,
+   "visitorScore": 75
   },
   {
    "gameId": 21718179,
    "matchup": "UTA @ LAL",
    "status": "1st Qtr",
-   "homeScore": 2,
-   "visitorScore": 2
+   "homeScore": 9,
+   "visitorScore": 4
   },
   {
    "gameId": 21718180,
    "matchup": "SAS @ SAC",
    "status": "1st Qtr",
-   "homeScore": 4,
-   "visitorScore": 3
+   "homeScore": 8,
+   "visitorScore": 8
   }
  ],
  "picks": [
@@ -1764,7 +1764,7 @@
    "scoreMargin": 3,
    "valueAtPick": 9,
    "projection": 20.099166804111704,
-   "latestValue": 16,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Over",
@@ -3123,7 +3123,7 @@
    "scoreMargin": 22,
    "valueAtPick": 3,
    "projection": 4.33990030131996,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Over",
@@ -3854,7 +3854,7 @@
    "scoreMargin": 4,
    "valueAtPick": 3,
    "projection": 6.895326944667589,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -3987,7 +3987,7 @@
    "scoreMargin": -4,
    "valueAtPick": 25,
    "projection": 35.32104462636673,
-   "latestValue": 34,
+   "latestValue": 35,
    "tags": [
     "Best bet",
     "Under",
@@ -4020,7 +4020,7 @@
    "scoreMargin": 4,
    "valueAtPick": 10,
    "projection": 14.098040643186168,
-   "latestValue": 18,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -4121,7 +4121,7 @@
    "scoreMargin": 4,
    "valueAtPick": 19,
    "projection": 24.548746521961373,
-   "latestValue": 21,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Under",
@@ -4154,7 +4154,7 @@
    "scoreMargin": -4,
    "valueAtPick": 18,
    "projection": 22.436028006819704,
-   "latestValue": 20,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Over",
@@ -4187,7 +4187,7 @@
    "scoreMargin": -4,
    "valueAtPick": 20,
    "projection": 25.112123897322135,
-   "latestValue": 20,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Over",
@@ -4197,9 +4197,174 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718178-140-points",
+   "gameDate": "2026-11-23",
+   "gameId": 21718178,
+   "matchup": "LAC @ HOU",
+   "playerId": 140,
+   "playerName": "Kevin Durant",
+   "teamAbbreviation": "HOU",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 21.5,
+   "americanOdds": -134,
+   "vendor": "caesars",
+   "modelProbability": 0.7095564642542651,
+   "evPercent": 23.907621369774645,
+   "foundAt": "2026-11-24T03:18:20.966Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 10,
+   "valueAtPick": 20,
+   "projection": 23.02811399245058,
+   "latestValue": 20,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718178-666581-threes",
+   "gameDate": "2026-11-23",
+   "gameId": 21718178,
+   "matchup": "LAC @ HOU",
+   "playerId": 666581,
+   "playerName": "Darius Garland",
+   "teamAbbreviation": "LAC",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": 118,
+   "vendor": "fanduel",
+   "modelProbability": 0.5682805261189343,
+   "evPercent": 23.885154693927667,
+   "foundAt": "2026-11-24T03:18:20.966Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -10,
+   "valueAtPick": 4,
+   "projection": 4.679961212885637,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718178-17896062-points_assists",
+   "gameDate": "2026-11-23",
+   "gameId": 21718178,
+   "matchup": "LAC @ HOU",
+   "playerId": 17896062,
+   "playerName": "Alperen Sengun",
+   "teamAbbreviation": "HOU",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 26.5,
+   "americanOdds": -128,
+   "vendor": "fanduel",
+   "modelProbability": 0.6835534098498941,
+   "evPercent": 21.757951129512378,
+   "foundAt": "2026-11-24T03:18:20.966Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 10,
+   "valueAtPick": 19,
+   "projection": 24.76124022964402,
+   "latestValue": 19,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718178-227-assists",
+   "gameDate": "2026-11-23",
+   "gameId": 21718178,
+   "matchup": "LAC @ HOU",
+   "playerId": 227,
+   "playerName": "Brandon Ingram",
+   "teamAbbreviation": "LAC",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": 154,
+   "vendor": "draftkings",
+   "modelProbability": 0.4735445081958145,
+   "evPercent": 20.280305081736884,
+   "foundAt": "2026-11-24T03:18:20.966Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -10,
+   "valueAtPick": 4,
+   "projection": 4.4458218019228966,
+   "latestValue": 4,
+   "tags": [
+    "Over",
+    "Assists",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718178-458-threes",
+   "gameDate": "2026-11-23",
+   "gameId": 21718178,
+   "matchup": "LAC @ HOU",
+   "playerId": 458,
+   "playerName": "Fred VanVleet",
+   "teamAbbreviation": "HOU",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 1.5,
+   "americanOdds": 134,
+   "vendor": "fanduel",
+   "modelProbability": 0.5112672983985926,
+   "evPercent": 19.636547825270668,
+   "foundAt": "2026-11-24T03:18:20.966Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 10,
+   "valueAtPick": 1,
+   "projection": 1.5259937374098378,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 565,
+ "calls": 577,
  "note": null,
  "checkpointsTaken": {
   "21718171": [
@@ -4239,7 +4404,8 @@
   ],
   "21718178": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ]
  }
 }
