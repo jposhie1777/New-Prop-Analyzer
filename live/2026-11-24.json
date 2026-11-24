@@ -1,0 +1,31 @@
+{
+ "date": "2026-11-24",
+ "updatedAt": "2026-11-24T22:36:53.177Z",
+ "state": "waiting",
+ "games": [
+  {
+   "gameId": 21718181,
+   "matchup": "DET @ ORL",
+   "status": "2026-11-25T00:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718182,
+   "matchup": "BOS @ WAS",
+   "status": "2026-11-25T01:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  },
+  {
+   "gameId": 21718183,
+   "matchup": "DAL @ DEN",
+   "status": "2026-11-25T03:00:00Z",
+   "homeScore": 0,
+   "visitorScore": 0
+  }
+ ],
+ "picks": [],
+ "calls": 1,
+ "note": "First tip-off 2026-11-25T00:00:00.000Z"
+}
