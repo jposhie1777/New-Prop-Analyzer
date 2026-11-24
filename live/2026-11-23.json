@@ -1,41 +1,41 @@
 {
  "date": "2026-11-23",
- "updatedAt": "2026-11-24T02:15:24.675Z",
+ "updatedAt": "2026-11-24T02:19:23.492Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718171,
    "matchup": "MEM @ CHA",
    "status": "4th Qtr",
-   "homeScore": 98,
-   "visitorScore": 105
+   "homeScore": 101,
+   "visitorScore": 111
   },
   {
    "gameId": 21718172,
    "matchup": "POR @ PHI",
    "status": "4th Qtr",
    "homeScore": 102,
-   "visitorScore": 118
+   "visitorScore": 124
   },
   {
    "gameId": 21718173,
    "matchup": "OKC @ IND",
    "status": "3rd Qtr",
-   "homeScore": 94,
-   "visitorScore": 87
+   "homeScore": 96,
+   "visitorScore": 91
   },
   {
    "gameId": 21718174,
    "matchup": "MIL @ TOR",
    "status": "3rd Qtr",
-   "homeScore": 77,
-   "visitorScore": 79
+   "homeScore": 79,
+   "visitorScore": 81
   },
   {
    "gameId": 21718175,
    "matchup": "BKN @ MIN",
    "status": "3rd Qtr",
-   "homeScore": 101,
+   "homeScore": 103,
    "visitorScore": 80
   },
   {
@@ -56,8 +56,8 @@
    "gameId": 21718178,
    "matchup": "LAC @ HOU",
    "status": "2nd Qtr",
-   "homeScore": 34,
-   "visitorScore": 27
+   "homeScore": 37,
+   "visitorScore": 29
   },
   {
    "gameId": 21718179,
@@ -228,7 +228,7 @@
    "scoreMargin": 4,
    "valueAtPick": 4,
    "projection": 12.416684658083174,
-   "latestValue": 10,
+   "latestValue": 13,
    "tags": [
     "Best bet",
     "Under",
@@ -393,7 +393,7 @@
    "scoreMargin": -2,
    "valueAtPick": 1,
    "projection": 3.7662973156249997,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -559,7 +559,7 @@
    "scoreMargin": -2,
    "valueAtPick": 12,
    "projection": 23.494908980618092,
-   "latestValue": 19,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Over",
@@ -956,7 +956,7 @@
    "scoreMargin": 0,
    "valueAtPick": 13,
    "projection": 20.27594822569819,
-   "latestValue": 19,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -1056,7 +1056,7 @@
    "scoreMargin": 0,
    "valueAtPick": 3,
    "projection": 5.582632636962076,
-   "latestValue": 7,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -2378,7 +2378,7 @@
    "scoreMargin": 7,
    "valueAtPick": 5,
    "projection": 5.977797960427708,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Over",
@@ -2478,7 +2478,7 @@
    "scoreMargin": 10,
    "valueAtPick": 10,
    "projection": 31.865306138596782,
-   "latestValue": 10,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -2894,9 +2894,175 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718173-1028037477-points",
+   "gameDate": "2026-11-23",
+   "gameId": 21718173,
+   "matchup": "OKC @ IND",
+   "playerId": 1028037477,
+   "playerName": "Ajay Mitchell",
+   "teamAbbreviation": "OKC",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 13.5,
+   "americanOdds": -113,
+   "vendor": "caesars",
+   "modelProbability": 0.6467798106513165,
+   "evPercent": 21.915132450203913,
+   "foundAt": "2026-11-24T02:18:18.792Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -5,
+   "valueAtPick": 9,
+   "projection": 12.395993752220882,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718173-493-points_rebounds",
+   "gameDate": "2026-11-23",
+   "gameId": 21718173,
+   "matchup": "OKC @ IND",
+   "playerId": 493,
+   "playerName": "Ivica Zubac",
+   "teamAbbreviation": "IND",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 31.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.6538056017618975,
+   "evPercent": 20.78781456279124,
+   "foundAt": "2026-11-24T02:18:18.792Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 5,
+   "valueAtPick": 26,
+   "projection": 33.09853267964057,
+   "latestValue": 26,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Cold shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718173-38017507-points_assists",
+   "gameDate": "2026-11-23",
+   "gameId": 21718173,
+   "matchup": "OKC @ IND",
+   "playerId": 38017507,
+   "playerName": "Andrew Nembhard",
+   "teamAbbreviation": "IND",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 13.5,
+   "americanOdds": 106,
+   "vendor": "fanduel",
+   "modelProbability": 0.5836003168653048,
+   "evPercent": 20.2216652742528,
+   "foundAt": "2026-11-24T02:18:18.792Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 5,
+   "valueAtPick": 8,
+   "projection": 12.798645345446976,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718173-44477085-points",
+   "gameDate": "2026-11-23",
+   "gameId": 21718173,
+   "matchup": "OKC @ IND",
+   "playerId": 44477085,
+   "playerName": "Quenton Jackson",
+   "teamAbbreviation": "IND",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 11.5,
+   "americanOdds": 114,
+   "vendor": "draftkings",
+   "modelProbability": 0.5606011169494182,
+   "evPercent": 19.96863902717547,
+   "foundAt": "2026-11-24T02:18:18.792Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 5,
+   "valueAtPick": 9,
+   "projection": 11.914057201352707,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718173-360-threes",
+   "gameDate": "2026-11-23",
+   "gameId": 21718173,
+   "matchup": "OKC @ IND",
+   "playerId": 360,
+   "playerName": "Kelly Oubre Jr.",
+   "teamAbbreviation": "IND",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 210,
+   "vendor": "draftkings",
+   "modelProbability": 0.38650900826155965,
+   "evPercent": 19.817792561083493,
+   "foundAt": "2026-11-24T02:18:18.792Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 5,
+   "valueAtPick": 3,
+   "projection": 3.2995465889139703,
+   "latestValue": 3,
+   "tags": [
+    "Over",
+    "3PM",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 418,
+ "calls": 430,
  "note": null,
  "checkpointsTaken": {
   "21718171": [
@@ -2911,7 +3077,8 @@
   ],
   "21718173": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718174": [
    "end-q1",
