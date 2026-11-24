@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "updatedAt": "2026-11-24T00:59:16.195Z",
+ "updatedAt": "2026-11-24T01:02:17.873Z",
  "state": "running",
  "games": [
   {
@@ -8,20 +8,20 @@
    "matchup": "MEM @ CHA",
    "status": "2nd Qtr",
    "homeScore": 55,
-   "visitorScore": 55
+   "visitorScore": 57
   },
   {
    "gameId": 21718172,
    "matchup": "POR @ PHI",
    "status": "2nd Qtr",
-   "homeScore": 52,
-   "visitorScore": 55
+   "homeScore": 58,
+   "visitorScore": 58
   },
   {
    "gameId": 21718173,
    "matchup": "OKC @ IND",
    "status": "1st Qtr",
-   "homeScore": 18,
+   "homeScore": 23,
    "visitorScore": 19
   },
   {
@@ -35,8 +35,8 @@
    "gameId": 21718175,
    "matchup": "BKN @ MIN",
    "status": "1st Qtr",
-   "homeScore": 25,
-   "visitorScore": 15
+   "homeScore": 28,
+   "visitorScore": 18
   },
   {
    "gameId": 21718176,
@@ -228,7 +228,7 @@
    "scoreMargin": 4,
    "valueAtPick": 4,
    "projection": 12.416684658083174,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -360,7 +360,7 @@
    "scoreMargin": 2,
    "valueAtPick": 2,
    "projection": 10.592081487225638,
-   "latestValue": 5,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -405,7 +405,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 200,
+ "calls": 206,
  "note": null,
  "checkpointsTaken": {
   "21718171": [
