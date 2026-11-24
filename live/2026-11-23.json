@@ -1,42 +1,42 @@
 {
  "date": "2026-11-23",
- "updatedAt": "2026-11-24T00:47:15.347Z",
+ "updatedAt": "2026-11-24T00:51:15.239Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718171,
    "matchup": "MEM @ CHA",
    "status": "2nd Qtr",
-   "homeScore": 35,
-   "visitorScore": 42
+   "homeScore": 41,
+   "visitorScore": 45
   },
   {
    "gameId": 21718172,
    "matchup": "POR @ PHI",
    "status": "2nd Qtr",
-   "homeScore": 46,
-   "visitorScore": 41
+   "homeScore": 50,
+   "visitorScore": 51
   },
   {
    "gameId": 21718173,
    "matchup": "OKC @ IND",
    "status": "1st Qtr",
-   "homeScore": 2,
-   "visitorScore": 5
+   "homeScore": 4,
+   "visitorScore": 10
   },
   {
    "gameId": 21718174,
    "matchup": "MIL @ TOR",
    "status": "1st Qtr",
-   "homeScore": 14,
-   "visitorScore": 7
+   "homeScore": 18,
+   "visitorScore": 14
   },
   {
    "gameId": 21718175,
    "matchup": "BKN @ MIN",
    "status": "1st Qtr",
-   "homeScore": 10,
-   "visitorScore": 5
+   "homeScore": 13,
+   "visitorScore": 9
   },
   {
    "gameId": 21718176,
@@ -261,7 +261,7 @@
    "scoreMargin": 2,
    "valueAtPick": 5,
    "projection": 16.59141219612743,
-   "latestValue": 7,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -294,7 +294,7 @@
    "scoreMargin": -2,
    "valueAtPick": 1,
    "projection": 4.9835262174577935,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -405,7 +405,7 @@
    "checkpoint": "end-q1"
   }
  ],
- "calls": 176,
+ "calls": 184,
  "note": null,
  "checkpointsTaken": {
   "21718171": [
