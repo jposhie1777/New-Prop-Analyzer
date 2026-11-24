@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "updatedAt": "2026-11-24T02:54:22.918Z",
+ "updatedAt": "2026-11-24T02:58:20.598Z",
  "state": "running",
  "games": [
   {
@@ -29,26 +29,26 @@
    "matchup": "MIL @ TOR",
    "status": "4th Qtr",
    "homeScore": 104,
-   "visitorScore": 109
+   "visitorScore": 110
   },
   {
    "gameId": 21718175,
    "matchup": "BKN @ MIN",
    "status": "4th Qtr",
-   "homeScore": 136,
-   "visitorScore": 114
+   "homeScore": 139,
+   "visitorScore": 116
   },
   {
    "gameId": 21718176,
    "matchup": "CLE @ CHI",
-   "status": "3rd Qtr",
-   "homeScore": 93,
-   "visitorScore": 89
+   "status": "4th Qtr",
+   "homeScore": 98,
+   "visitorScore": 93
   },
   {
    "gameId": 21718177,
    "matchup": "PHX @ NOP",
-   "status": "3rd Qtr",
+   "status": "4th Qtr",
    "homeScore": 83,
    "visitorScore": 79
   },
@@ -56,8 +56,8 @@
    "gameId": 21718178,
    "matchup": "LAC @ HOU",
    "status": "3rd Qtr",
-   "homeScore": 51,
-   "visitorScore": 49
+   "homeScore": 63,
+   "visitorScore": 60
   },
   {
    "gameId": 21718179,
@@ -1903,7 +1903,7 @@
    "scoreMargin": -4,
    "valueAtPick": 2,
    "projection": 12.68622957931414,
-   "latestValue": 11,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Under",
@@ -2638,7 +2638,7 @@
    "scoreMargin": 10,
    "valueAtPick": 10,
    "projection": 31.865306138596782,
-   "latestValue": 17,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Over",
@@ -2671,7 +2671,7 @@
    "scoreMargin": -10,
    "valueAtPick": 0,
    "projection": 1.180883237472649,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -2871,7 +2871,7 @@
    "scoreMargin": 2,
    "valueAtPick": 7,
    "projection": 12.517730918370328,
-   "latestValue": 10,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -3043,7 +3043,7 @@
    "scoreMargin": 22,
    "valueAtPick": 3,
    "projection": 4.33990030131996,
-   "latestValue": 5,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -3297,7 +3297,7 @@
    "scoreMargin": 5,
    "valueAtPick": 18,
    "projection": 21.976436615929444,
-   "latestValue": 21,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Under",
@@ -3535,7 +3535,7 @@
    "scoreMargin": 24,
    "valueAtPick": 11,
    "projection": 15.098389405634514,
-   "latestValue": 15,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -3604,7 +3604,7 @@
    "scoreMargin": 4,
    "valueAtPick": 11,
    "projection": 22.011715170271266,
-   "latestValue": 12,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -3637,7 +3637,7 @@
    "scoreMargin": 4,
    "valueAtPick": 0,
    "projection": 0.24477515628269508,
-   "latestValue": 0,
+   "latestValue": 1,
    "tags": [
     "Over",
     "3PM",
@@ -3669,7 +3669,7 @@
    "scoreMargin": -4,
    "valueAtPick": 9,
    "projection": 13.451550508499807,
-   "latestValue": 9,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -3734,7 +3734,7 @@
    "scoreMargin": 4,
    "valueAtPick": 3,
    "projection": 6.895326944667589,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Under",
@@ -3800,7 +3800,7 @@
    "scoreMargin": -4,
    "valueAtPick": 4,
    "projection": 6.260583510284437,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -3833,7 +3833,7 @@
    "scoreMargin": 4,
    "valueAtPick": 6,
    "projection": 11.534002283893972,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -3867,7 +3867,7 @@
    "scoreMargin": -4,
    "valueAtPick": 25,
    "projection": 35.32104462636673,
-   "latestValue": 25,
+   "latestValue": 27,
    "tags": [
     "Best bet",
     "Under",
@@ -3900,7 +3900,7 @@
    "scoreMargin": 4,
    "valueAtPick": 10,
    "projection": 14.098040643186168,
-   "latestValue": 10,
+   "latestValue": 12,
    "tags": [
     "Best bet",
     "Over",
@@ -3912,9 +3912,174 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718177-18678058-rebounds_assists",
+   "gameDate": "2026-11-23",
+   "gameId": 21718177,
+   "matchup": "PHX @ NOP",
+   "playerId": 18678058,
+   "playerName": "Jordan Goodwin",
+   "teamAbbreviation": "PHX",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 5.5,
+   "americanOdds": 104,
+   "vendor": "fanduel",
+   "modelProbability": 0.6107127721494208,
+   "evPercent": 24.585405518481828,
+   "foundAt": "2026-11-24T02:55:20.145Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -4,
+   "valueAtPick": 4,
+   "projection": 6.005211819675894,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Reb+Ast",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718177-3547256-points_rebounds_assists",
+   "gameDate": "2026-11-23",
+   "gameId": 21718177,
+   "matchup": "PHX @ NOP",
+   "playerId": 3547256,
+   "playerName": "Saddiq Bey",
+   "teamAbbreviation": "NOP",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 21.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.6579748755192709,
+   "evPercent": 23.5145818957228,
+   "foundAt": "2026-11-24T02:55:20.145Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 4,
+   "valueAtPick": 15,
+   "projection": 20.10550655034056,
+   "latestValue": 15,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718177-666969-points_rebounds_assists",
+   "gameDate": "2026-11-23",
+   "gameId": 21718177,
+   "matchup": "PHX @ NOP",
+   "playerId": 666969,
+   "playerName": "Zion Williamson",
+   "teamAbbreviation": "NOP",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "under",
+   "line": 25.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6049872892397825,
+   "evPercent": 22.207432426436057,
+   "foundAt": "2026-11-24T02:55:20.145Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 4,
+   "valueAtPick": 19,
+   "projection": 24.548746521961373,
+   "latestValue": 19,
+   "tags": [
+    "Best bet",
+    "Under",
+    "PRA",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718177-17895966-points",
+   "gameDate": "2026-11-23",
+   "gameId": 21718177,
+   "matchup": "PHX @ NOP",
+   "playerId": 17895966,
+   "playerName": "Jalen Green",
+   "teamAbbreviation": "PHX",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 21.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6100322439200884,
+   "evPercent": 20.81030712927241,
+   "foundAt": "2026-11-24T02:55:20.145Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -4,
+   "valueAtPick": 18,
+   "projection": 22.436028006819704,
+   "latestValue": 18,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718177-57-points_rebounds",
+   "gameDate": "2026-11-23",
+   "gameId": 21718177,
+   "matchup": "PHX @ NOP",
+   "playerId": 57,
+   "playerName": "Devin Booker",
+   "teamAbbreviation": "PHX",
+   "propType": "points_rebounds",
+   "label": "Pts+Reb",
+   "side": "over",
+   "line": 23.5,
+   "americanOdds": -130,
+   "vendor": "fanduel",
+   "modelProbability": 0.6808750421912477,
+   "evPercent": 20.462507464605363,
+   "foundAt": "2026-11-24T02:55:20.145Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -4,
+   "valueAtPick": 20,
+   "projection": 25.112123897322135,
+   "latestValue": 20,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Reb",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 519,
+ "calls": 531,
  "note": null,
  "checkpointsTaken": {
   "21718171": [
@@ -3949,7 +4114,8 @@
   ],
   "21718177": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718178": [
    "end-q1",
