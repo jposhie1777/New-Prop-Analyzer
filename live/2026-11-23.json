@@ -1,21 +1,21 @@
 {
  "date": "2026-11-23",
- "updatedAt": "2026-11-23T23:50:12.742Z",
+ "updatedAt": "2026-11-24T00:34:15.812Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718171,
    "matchup": "MEM @ CHA",
-   "status": "2026-11-24T00:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 32,
+   "visitorScore": 28
   },
   {
    "gameId": 21718172,
    "matchup": "POR @ PHI",
-   "status": "2026-11-24T00:00:00Z",
-   "homeScore": 0,
-   "visitorScore": 0
+   "status": "1st Qtr",
+   "homeScore": 28,
+   "visitorScore": 26
   },
   {
    "gameId": 21718173,
@@ -74,7 +74,177 @@
    "visitorScore": 0
   }
  ],
- "picks": [],
- "calls": 50,
- "note": null
+ "picks": [
+  {
+   "pickId": "21718171-1057266649-assists",
+   "gameDate": "2026-11-23",
+   "gameId": 21718171,
+   "matchup": "MEM @ CHA",
+   "playerId": 1057266649,
+   "playerName": "Cedric Coward",
+   "teamAbbreviation": "MEM",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 146,
+   "vendor": "fanduel",
+   "modelProbability": 0.5034085608397619,
+   "evPercent": 23.838505966581437,
+   "foundAt": "2026-11-24T00:34:14.337Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -4,
+   "valueAtPick": 1,
+   "projection": 3.5165725380714177,
+   "latestValue": 1,
+   "tags": [
+    "Over",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718171-56677823-points",
+   "gameDate": "2026-11-23",
+   "gameId": 21718171,
+   "matchup": "MEM @ CHA",
+   "playerId": 56677823,
+   "playerName": "Brandon Miller",
+   "teamAbbreviation": "CHA",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 16.5,
+   "americanOdds": -105,
+   "vendor": "draftkings",
+   "modelProbability": 0.630998051428221,
+   "evPercent": 23.19485765979552,
+   "foundAt": "2026-11-24T00:34:14.337Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 4,
+   "valueAtPick": 0,
+   "projection": 14.47570538681448,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718171-1057384156-assists",
+   "gameDate": "2026-11-23",
+   "gameId": 21718171,
+   "matchup": "MEM @ CHA",
+   "playerId": 1057384156,
+   "playerName": "Sion James",
+   "teamAbbreviation": "CHA",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 3.5,
+   "americanOdds": -154,
+   "vendor": "draftkings",
+   "modelProbability": 0.7448597406981774,
+   "evPercent": 22.85348969956953,
+   "foundAt": "2026-11-24T00:34:14.337Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 4,
+   "valueAtPick": 1,
+   "projection": 2.5105763946449833,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Assists",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718171-1028048549-rebounds_assists",
+   "gameDate": "2026-11-23",
+   "gameId": 21718171,
+   "matchup": "MEM @ CHA",
+   "playerId": 1028048549,
+   "playerName": "Cam Spencer",
+   "teamAbbreviation": "MEM",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 8.5,
+   "americanOdds": -136,
+   "vendor": "fanduel",
+   "modelProbability": 0.7023188205251533,
+   "evPercent": 21.872971797011886,
+   "foundAt": "2026-11-24T00:34:14.337Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -4,
+   "valueAtPick": 1,
+   "projection": 6.867673688886107,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718171-38017725-rebounds_assists",
+   "gameDate": "2026-11-23",
+   "gameId": 21718171,
+   "matchup": "MEM @ CHA",
+   "playerId": 38017725,
+   "playerName": "Moussa Diabate",
+   "teamAbbreviation": "CHA",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 13.5,
+   "americanOdds": -104,
+   "vendor": "fanduel",
+   "modelProbability": 0.615730720157903,
+   "evPercent": 20.777948954050206,
+   "foundAt": "2026-11-24T00:34:14.337Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 4,
+   "valueAtPick": 4,
+   "projection": 12.416684658083174,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  }
+ ],
+ "calls": 145,
+ "note": null,
+ "checkpointsTaken": {
+  "21718171": [
+   "end-q1"
+  ]
+ }
 }
