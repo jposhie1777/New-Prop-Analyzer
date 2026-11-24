@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "updatedAt": "2026-11-24T05:13:52.802Z",
+ "updatedAt": "2026-11-24T05:17:53.035Z",
  "state": "running",
  "games": [
   {
@@ -63,15 +63,15 @@
    "gameId": 21718179,
    "matchup": "UTA @ LAL",
    "status": "4th Qtr",
-   "homeScore": 93,
-   "visitorScore": 80
+   "homeScore": 95,
+   "visitorScore": 84
   },
   {
    "gameId": 21718180,
    "matchup": "SAS @ SAC",
    "status": "4th Qtr",
-   "homeScore": 97,
-   "visitorScore": 113
+   "homeScore": 101,
+   "visitorScore": 116
   }
  ],
  "picks": [
@@ -4631,7 +4631,7 @@
    "scoreMargin": 9,
    "valueAtPick": 7,
    "projection": 18.926922873092053,
-   "latestValue": 22,
+   "latestValue": 23,
    "tags": [
     "Best bet",
     "Over",
@@ -4731,7 +4731,7 @@
    "scoreMargin": 10,
    "valueAtPick": 2,
    "projection": 10.786922997091207,
-   "latestValue": 7,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Over",
@@ -5028,7 +5028,7 @@
    "scoreMargin": 9,
    "valueAtPick": 12,
    "projection": 20.46326752648594,
-   "latestValue": 26,
+   "latestValue": 29,
    "tags": [
     "Best bet",
     "Over",
@@ -5094,7 +5094,7 @@
    "scoreMargin": 11,
    "valueAtPick": 7,
    "projection": 17.660730739344707,
-   "latestValue": 14,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -5367,7 +5367,7 @@
    "scoreMargin": 18,
    "valueAtPick": 23,
    "projection": 25.88642441760317,
-   "latestValue": 26,
+   "latestValue": 27,
    "tags": [
     "Best bet",
     "Over",
@@ -5546,7 +5546,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 122,
+ "calls": 130,
  "note": null,
  "checkpointsTaken": {
   "21718171": [
