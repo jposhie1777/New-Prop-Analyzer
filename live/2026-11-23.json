@@ -1,56 +1,56 @@
 {
  "date": "2026-11-23",
- "updatedAt": "2026-11-24T01:30:20.555Z",
+ "updatedAt": "2026-11-24T01:34:19.100Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718171,
    "matchup": "MEM @ CHA",
    "status": "3rd Qtr",
-   "homeScore": 67,
+   "homeScore": 70,
    "visitorScore": 69
   },
   {
    "gameId": 21718172,
    "matchup": "POR @ PHI",
    "status": "3rd Qtr",
-   "homeScore": 73,
-   "visitorScore": 71
+   "homeScore": 76,
+   "visitorScore": 78
   },
   {
    "gameId": 21718173,
    "matchup": "OKC @ IND",
    "status": "2nd Qtr",
-   "homeScore": 50,
-   "visitorScore": 46
+   "homeScore": 56,
+   "visitorScore": 51
   },
   {
    "gameId": 21718174,
    "matchup": "MIL @ TOR",
    "status": "2nd Qtr",
-   "homeScore": 43,
-   "visitorScore": 41
+   "homeScore": 45,
+   "visitorScore": 42
   },
   {
    "gameId": 21718175,
    "matchup": "BKN @ MIN",
    "status": "2nd Qtr",
-   "homeScore": 60,
-   "visitorScore": 53
+   "homeScore": 64,
+   "visitorScore": 58
   },
   {
    "gameId": 21718176,
    "matchup": "CLE @ CHI",
    "status": "1st Qtr",
-   "homeScore": 16,
-   "visitorScore": 20
+   "homeScore": 22,
+   "visitorScore": 22
   },
   {
    "gameId": 21718177,
    "matchup": "PHX @ NOP",
    "status": "1st Qtr",
-   "homeScore": 16,
-   "visitorScore": 22
+   "homeScore": 28,
+   "visitorScore": 25
   },
   {
    "gameId": 21718178,
@@ -129,7 +129,7 @@
    "scoreMargin": 4,
    "valueAtPick": 0,
    "projection": 14.47570538681448,
-   "latestValue": 5,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -162,7 +162,7 @@
    "scoreMargin": 4,
    "valueAtPick": 1,
    "projection": 2.5105763946449833,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -294,7 +294,7 @@
    "scoreMargin": -2,
    "valueAtPick": 1,
    "projection": 4.9835262174577935,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -559,7 +559,7 @@
    "scoreMargin": -2,
    "valueAtPick": 12,
    "projection": 23.494908980618092,
-   "latestValue": 15,
+   "latestValue": 16,
    "tags": [
     "Best bet",
     "Over",
@@ -625,7 +625,7 @@
    "scoreMargin": 0,
    "valueAtPick": 2,
    "projection": 5.292321096009553,
-   "latestValue": 2,
+   "latestValue": 4,
    "tags": [
     "Best bet",
     "Over",
@@ -658,7 +658,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 7.212343826854718,
-   "latestValue": 2,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -757,7 +757,7 @@
    "scoreMargin": 0,
    "valueAtPick": 11,
    "projection": 17.599815136775227,
-   "latestValue": 17,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Over",
@@ -889,7 +889,7 @@
    "scoreMargin": 0,
    "valueAtPick": 7,
    "projection": 26.14688402084825,
-   "latestValue": 9,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Over",
@@ -922,7 +922,7 @@
    "scoreMargin": 0,
    "valueAtPick": 4,
    "projection": 9.339798982004002,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -956,7 +956,7 @@
    "scoreMargin": 0,
    "valueAtPick": 13,
    "projection": 20.27594822569819,
-   "latestValue": 14,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Over",
@@ -1056,7 +1056,7 @@
    "scoreMargin": 0,
    "valueAtPick": 3,
    "projection": 5.582632636962076,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -1222,7 +1222,7 @@
    "scoreMargin": 13,
    "valueAtPick": 10,
    "projection": 25.90652894514842,
-   "latestValue": 19,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Over",
@@ -1232,9 +1232,173 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718173-1028037477-rebounds",
+   "gameDate": "2026-11-23",
+   "gameId": 21718173,
+   "matchup": "OKC @ IND",
+   "playerId": 1028037477,
+   "playerName": "Ajay Mitchell",
+   "teamAbbreviation": "OKC",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": 140,
+   "vendor": "fanduel",
+   "modelProbability": 0.5180883807562546,
+   "evPercent": 24.341211381501115,
+   "foundAt": "2026-11-24T01:34:16.907Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -5,
+   "valueAtPick": 1,
+   "projection": 2.4335994833460477,
+   "latestValue": 1,
+   "tags": [
+    "Under",
+    "Rebounds",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718173-175-points_rebounds_assists",
+   "gameDate": "2026-11-23",
+   "gameId": 21718173,
+   "matchup": "OKC @ IND",
+   "playerId": 175,
+   "playerName": "Shai Gilgeous-Alexander",
+   "teamAbbreviation": "OKC",
+   "propType": "points_rebounds_assists",
+   "label": "PRA",
+   "side": "over",
+   "line": 43.5,
+   "americanOdds": 100,
+   "vendor": "fanduel",
+   "modelProbability": 0.6210340217630923,
+   "evPercent": 24.206804352618462,
+   "foundAt": "2026-11-24T01:34:16.907Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -5,
+   "valueAtPick": 23,
+   "projection": 45.72831771075067,
+   "latestValue": 23,
+   "tags": [
+    "Best bet",
+    "Over",
+    "PRA",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718173-1028027372-points",
+   "gameDate": "2026-11-23",
+   "gameId": 21718173,
+   "matchup": "OKC @ IND",
+   "playerId": 1028027372,
+   "playerName": "Jared McCain",
+   "teamAbbreviation": "OKC",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 10.5,
+   "americanOdds": -120,
+   "vendor": "draftkings",
+   "modelProbability": 0.6773309273061454,
+   "evPercent": 24.177336672793338,
+   "foundAt": "2026-11-24T01:34:16.907Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -5,
+   "valueAtPick": 2,
+   "projection": 8.616876370979995,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718173-416-points_assists",
+   "gameDate": "2026-11-23",
+   "gameId": 21718173,
+   "matchup": "OKC @ IND",
+   "playerId": 416,
+   "playerName": "Pascal Siakam",
+   "teamAbbreviation": "IND",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 22.5,
+   "americanOdds": -118,
+   "vendor": "fanduel",
+   "modelProbability": 0.6672205598468157,
+   "evPercent": 23.26617122593715,
+   "foundAt": "2026-11-24T01:34:16.907Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 5,
+   "valueAtPick": 9,
+   "projection": 20.296689167154923,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718173-38017507-threes",
+   "gameDate": "2026-11-23",
+   "gameId": 21718173,
+   "matchup": "OKC @ IND",
+   "playerId": 38017507,
+   "playerName": "Andrew Nembhard",
+   "teamAbbreviation": "IND",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "under",
+   "line": 0.5,
+   "americanOdds": 160,
+   "vendor": "draftkings",
+   "modelProbability": 0.471965716044591,
+   "evPercent": 22.711086171593653,
+   "foundAt": "2026-11-24T01:34:16.907Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 5,
+   "valueAtPick": 0,
+   "projection": 0.5672078964698201,
+   "latestValue": 0,
+   "tags": [
+    "Under",
+    "3PM",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 285,
+ "calls": 297,
  "note": null,
  "checkpointsTaken": {
   "21718171": [
@@ -1246,7 +1410,8 @@
    "halftime"
   ],
   "21718173": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718174": [
    "end-q1"
