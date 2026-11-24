@@ -1,49 +1,49 @@
 {
  "date": "2026-11-23",
- "updatedAt": "2026-11-24T02:08:20.112Z",
+ "updatedAt": "2026-11-24T02:12:22.741Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718171,
    "matchup": "MEM @ CHA",
    "status": "4th Qtr",
-   "homeScore": 88,
-   "visitorScore": 100
+   "homeScore": 93,
+   "visitorScore": 102
   },
   {
    "gameId": 21718172,
    "matchup": "POR @ PHI",
    "status": "4th Qtr",
    "homeScore": 96,
-   "visitorScore": 114
+   "visitorScore": 118
   },
   {
    "gameId": 21718173,
    "matchup": "OKC @ IND",
    "status": "3rd Qtr",
-   "homeScore": 84,
-   "visitorScore": 76
+   "homeScore": 90,
+   "visitorScore": 84
   },
   {
    "gameId": 21718174,
    "matchup": "MIL @ TOR",
    "status": "3rd Qtr",
-   "homeScore": 68,
-   "visitorScore": 64
+   "homeScore": 72,
+   "visitorScore": 71
   },
   {
    "gameId": 21718175,
    "matchup": "BKN @ MIN",
    "status": "3rd Qtr",
-   "homeScore": 86,
-   "visitorScore": 75
+   "homeScore": 94,
+   "visitorScore": 79
   },
   {
    "gameId": 21718176,
    "matchup": "CLE @ CHI",
    "status": "2nd Qtr",
-   "homeScore": 67,
-   "visitorScore": 46
+   "homeScore": 72,
+   "visitorScore": 50
   },
   {
    "gameId": 21718177,
@@ -56,8 +56,8 @@
    "gameId": 21718178,
    "matchup": "LAC @ HOU",
    "status": "2nd Qtr",
-   "homeScore": 25,
-   "visitorScore": 15
+   "homeScore": 34,
+   "visitorScore": 23
   },
   {
    "gameId": 21718179,
@@ -129,7 +129,7 @@
    "scoreMargin": 4,
    "valueAtPick": 0,
    "projection": 14.47570538681448,
-   "latestValue": 13,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -195,7 +195,7 @@
    "scoreMargin": -4,
    "valueAtPick": 1,
    "projection": 6.867673688886107,
-   "latestValue": 5,
+   "latestValue": 6,
    "tags": [
     "Best bet",
     "Under",
@@ -228,7 +228,7 @@
    "scoreMargin": 4,
    "valueAtPick": 4,
    "projection": 12.416684658083174,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -658,7 +658,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 7.212343826854718,
-   "latestValue": 13,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Under",
@@ -889,7 +889,7 @@
    "scoreMargin": 0,
    "valueAtPick": 7,
    "projection": 26.14688402084825,
-   "latestValue": 22,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Over",
@@ -922,7 +922,7 @@
    "scoreMargin": 0,
    "valueAtPick": 4,
    "projection": 9.339798982004002,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -1056,7 +1056,7 @@
    "scoreMargin": 0,
    "valueAtPick": 3,
    "projection": 5.582632636962076,
-   "latestValue": 6,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -1222,7 +1222,7 @@
    "scoreMargin": 13,
    "valueAtPick": 10,
    "projection": 25.90652894514842,
-   "latestValue": 29,
+   "latestValue": 31,
    "tags": [
     "Best bet",
     "Over",
@@ -1288,7 +1288,7 @@
    "scoreMargin": -5,
    "valueAtPick": 23,
    "projection": 45.72831771075067,
-   "latestValue": 32,
+   "latestValue": 36,
    "tags": [
     "Best bet",
     "Over",
@@ -1419,7 +1419,7 @@
    "scoreMargin": -4,
    "valueAtPick": 7,
    "projection": 18.241394294747963,
-   "latestValue": 15,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Under",
@@ -1486,7 +1486,7 @@
    "scoreMargin": -4,
    "valueAtPick": 4,
    "projection": 6.642412581456368,
-   "latestValue": 4,
+   "latestValue": 6,
    "tags": [
     "Over",
     "Rebounds",
@@ -1717,7 +1717,7 @@
    "scoreMargin": 3,
    "valueAtPick": 4,
    "projection": 12.949719861150252,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -1981,7 +1981,7 @@
    "scoreMargin": 13,
    "valueAtPick": 12,
    "projection": 18.88521387658871,
-   "latestValue": 14,
+   "latestValue": 15,
    "tags": [
     "Best bet",
     "Over",
@@ -2048,7 +2048,7 @@
    "scoreMargin": 13,
    "valueAtPick": 7,
    "projection": 10.773679050127694,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -2082,7 +2082,7 @@
    "scoreMargin": 9,
    "valueAtPick": 1,
    "projection": 1.9965678537758995,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Under",
@@ -2312,7 +2312,7 @@
    "scoreMargin": 7,
    "valueAtPick": 21,
    "projection": 24.2191812489709,
-   "latestValue": 21,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Over",
@@ -2721,9 +2721,182 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718176-38017721-rebounds_assists",
+   "gameDate": "2026-11-23",
+   "gameId": 21718176,
+   "matchup": "CLE @ CHI",
+   "playerId": 38017721,
+   "playerName": "Peyton Watson",
+   "teamAbbreviation": "CLE",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": -166,
+   "vendor": "fanduel",
+   "modelProbability": 0.772351265352289,
+   "evPercent": 23.76231119500534,
+   "foundAt": "2026-11-24T02:11:18.541Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -22,
+   "valueAtPick": 8,
+   "projection": 11.192737950359078,
+   "latestValue": 8,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Reb+Ast",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718176-192-rebounds_assists",
+   "gameDate": "2026-11-23",
+   "gameId": 21718176,
+   "matchup": "CLE @ CHI",
+   "playerId": 192,
+   "playerName": "James Harden",
+   "teamAbbreviation": "CLE",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 6.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.6584427337570369,
+   "evPercent": 23.602407915794643,
+   "foundAt": "2026-11-24T02:11:18.541Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -22,
+   "valueAtPick": 1,
+   "projection": 5.412016110684381,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718176-3547299-points",
+   "gameDate": "2026-11-23",
+   "gameId": 21718176,
+   "matchup": "CLE @ CHI",
+   "playerId": 3547299,
+   "playerName": "Sam Merrill",
+   "teamAbbreviation": "CLE",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 13.5,
+   "americanOdds": -120,
+   "vendor": "betmgm",
+   "modelProbability": 0.6712167238682041,
+   "evPercent": 23.056399375837433,
+   "foundAt": "2026-11-24T02:11:18.541Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -22,
+   "valueAtPick": 10,
+   "projection": 15.090849480139223,
+   "latestValue": 10,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Blowout risk",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718176-17896065-threes",
+   "gameDate": "2026-11-23",
+   "gameId": 21718176,
+   "matchup": "CLE @ CHI",
+   "playerId": 17896065,
+   "playerName": "Josh Giddey",
+   "teamAbbreviation": "CHI",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": 100,
+   "vendor": "draftkings",
+   "modelProbability": 0.5992515002691516,
+   "evPercent": 19.850300053830328,
+   "foundAt": "2026-11-24T02:11:18.541Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 22,
+   "valueAtPick": 0,
+   "projection": 0.7821190986473374,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Over",
+    "3PM",
+    "Blowout risk",
+    "Cold shooter",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718176-210-rebounds",
+   "gameDate": "2026-11-23",
+   "gameId": 21718176,
+   "matchup": "CLE @ CHI",
+   "playerId": 210,
+   "playerName": "Buddy Hield",
+   "teamAbbreviation": "CHI",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": -155,
+   "vendor": "betmgm",
+   "modelProbability": 0.7235539775069005,
+   "evPercent": 19.036299525328793,
+   "foundAt": "2026-11-24T02:11:18.541Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 22,
+   "valueAtPick": 3,
+   "projection": 4.33990030131996,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Blowout risk",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 400,
+ "calls": 412,
  "note": null,
  "checkpointsTaken": {
   "21718171": [
@@ -2749,7 +2922,8 @@
    "halftime"
   ],
   "21718176": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ],
   "21718177": [
    "end-q1",
