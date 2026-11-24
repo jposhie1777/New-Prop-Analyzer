@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "updatedAt": "2026-11-24T03:26:22.205Z",
+ "updatedAt": "2026-11-24T03:30:22.490Z",
  "state": "running",
  "games": [
   {
@@ -49,22 +49,22 @@
    "gameId": 21718177,
    "matchup": "PHX @ NOP",
    "status": "4th Qtr",
-   "homeScore": 107,
+   "homeScore": 109,
    "visitorScore": 109
   },
   {
    "gameId": 21718178,
    "matchup": "LAC @ HOU",
    "status": "4th Qtr",
-   "homeScore": 91,
+   "homeScore": 93,
    "visitorScore": 84
   },
   {
    "gameId": 21718179,
    "matchup": "UTA @ LAL",
    "status": "1st Qtr",
-   "homeScore": 13,
-   "visitorScore": 9
+   "homeScore": 18,
+   "visitorScore": 13
   },
   {
    "gameId": 21718180,
@@ -2937,7 +2937,7 @@
    "scoreMargin": -2,
    "valueAtPick": 10,
    "projection": 22.563481310587765,
-   "latestValue": 20,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Under",
@@ -4148,7 +4148,7 @@
    "scoreMargin": 4,
    "valueAtPick": 15,
    "projection": 20.10550655034056,
-   "latestValue": 20,
+   "latestValue": 21,
    "tags": [
     "Best bet",
     "Under",
@@ -4424,7 +4424,7 @@
    "checkpoint": "end-q3"
   }
  ],
- "calls": 594,
+ "calls": 602,
  "note": null,
  "checkpointsTaken": {
   "21718171": [
