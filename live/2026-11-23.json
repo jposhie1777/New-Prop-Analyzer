@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "updatedAt": "2026-11-24T04:45:51.655Z",
+ "updatedAt": "2026-11-24T04:49:51.749Z",
  "state": "running",
  "games": [
   {
@@ -63,15 +63,15 @@
    "gameId": 21718179,
    "matchup": "UTA @ LAL",
    "status": "3rd Qtr",
-   "homeScore": 65,
-   "visitorScore": 65
+   "homeScore": 71,
+   "visitorScore": 70
   },
   {
    "gameId": 21718180,
    "matchup": "SAS @ SAC",
    "status": "3rd Qtr",
-   "homeScore": 69,
-   "visitorScore": 86
+   "homeScore": 74,
+   "visitorScore": 89
   }
  ],
  "picks": [
@@ -4797,7 +4797,7 @@
    "scoreMargin": 10,
    "valueAtPick": 2,
    "projection": 7.581153688492839,
-   "latestValue": 5,
+   "latestValue": 9,
    "tags": [
     "Best bet",
     "Under",
@@ -5127,7 +5127,7 @@
    "scoreMargin": -11,
    "valueAtPick": 8,
    "projection": 13.437043789964779,
-   "latestValue": 15,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Under",
@@ -5206,7 +5206,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 54,
+ "calls": 62,
  "note": null,
  "checkpointsTaken": {
   "21718171": [
