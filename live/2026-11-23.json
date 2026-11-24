@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "updatedAt": "2026-11-24T01:42:17.735Z",
+ "updatedAt": "2026-11-24T01:45:21.982Z",
  "state": "running",
  "games": [
   {
@@ -8,14 +8,14 @@
    "matchup": "MEM @ CHA",
    "status": "3rd Qtr",
    "homeScore": 72,
-   "visitorScore": 74
+   "visitorScore": 77
   },
   {
    "gameId": 21718172,
    "matchup": "POR @ PHI",
    "status": "3rd Qtr",
-   "homeScore": 82,
-   "visitorScore": 84
+   "homeScore": 84,
+   "visitorScore": 88
   },
   {
    "gameId": 21718173,
@@ -42,22 +42,22 @@
    "gameId": 21718176,
    "matchup": "CLE @ CHI",
    "status": "2nd Qtr",
-   "homeScore": 27,
-   "visitorScore": 30
+   "homeScore": 34,
+   "visitorScore": 32
   },
   {
    "gameId": 21718177,
    "matchup": "PHX @ NOP",
    "status": "2nd Qtr",
    "homeScore": 39,
-   "visitorScore": 36
+   "visitorScore": 38
   },
   {
    "gameId": 21718178,
    "matchup": "LAC @ HOU",
    "status": "1st Qtr",
-   "homeScore": 2,
-   "visitorScore": 2
+   "homeScore": 5,
+   "visitorScore": 4
   },
   {
    "gameId": 21718179,
@@ -1783,7 +1783,7 @@
    "scoreMargin": -4,
    "valueAtPick": 2,
    "projection": 12.68622957931414,
-   "latestValue": 4,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -2061,7 +2061,7 @@
    "checkpoint": "halftime"
   }
  ],
- "calls": 331,
+ "calls": 337,
  "note": null,
  "checkpointsTaken": {
   "21718171": [
