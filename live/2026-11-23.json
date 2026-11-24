@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "updatedAt": "2026-11-24T03:38:22.103Z",
+ "updatedAt": "2026-11-24T03:42:22.337Z",
  "state": "running",
  "games": [
   {
@@ -49,15 +49,15 @@
    "gameId": 21718177,
    "matchup": "PHX @ NOP",
    "status": "OT1",
-   "homeScore": 113,
+   "homeScore": 114,
    "visitorScore": 119
   },
   {
    "gameId": 21718178,
    "matchup": "LAC @ HOU",
    "status": "4th Qtr",
-   "homeScore": 98,
-   "visitorScore": 93
+   "homeScore": 103,
+   "visitorScore": 95
   },
   {
    "gameId": 21718179,
@@ -69,9 +69,9 @@
   {
    "gameId": 21718180,
    "matchup": "SAS @ SAC",
-   "status": "1st Qtr",
-   "homeScore": 28,
-   "visitorScore": 19
+   "status": "2nd Qtr",
+   "homeScore": 30,
+   "visitorScore": 25
   }
  ],
  "picks": [
@@ -2738,7 +2738,7 @@
    "scoreMargin": 10,
    "valueAtPick": 10,
    "projection": 31.865306138596782,
-   "latestValue": 34,
+   "latestValue": 35,
    "tags": [
     "Best bet",
     "Over",
@@ -2904,7 +2904,7 @@
    "scoreMargin": -2,
    "valueAtPick": 1,
    "projection": 4.012566806665431,
-   "latestValue": 6,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -2937,7 +2937,7 @@
    "scoreMargin": -2,
    "valueAtPick": 10,
    "projection": 22.563481310587765,
-   "latestValue": 23,
+   "latestValue": 25,
    "tags": [
     "Best bet",
     "Under",
@@ -3764,7 +3764,7 @@
    "scoreMargin": 4,
    "valueAtPick": 11,
    "projection": 22.011715170271266,
-   "latestValue": 26,
+   "latestValue": 27,
    "tags": [
     "Best bet",
     "Under",
@@ -4181,7 +4181,7 @@
    "scoreMargin": 4,
    "valueAtPick": 19,
    "projection": 24.548746521961373,
-   "latestValue": 29,
+   "latestValue": 28,
    "tags": [
     "Best bet",
     "Under",
@@ -4347,7 +4347,7 @@
    "scoreMargin": 10,
    "valueAtPick": 19,
    "projection": 24.76124022964402,
-   "latestValue": 21,
+   "latestValue": 22,
    "tags": [
     "Best bet",
     "Under",
@@ -4413,7 +4413,7 @@
    "scoreMargin": 10,
    "valueAtPick": 1,
    "projection": 1.5259937374098378,
-   "latestValue": 1,
+   "latestValue": 2,
    "tags": [
     "Over",
     "3PM",
@@ -4588,9 +4588,174 @@
    ],
    "result": null,
    "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718179-38017705-rebounds",
+   "gameDate": "2026-11-23",
+   "gameId": 21718179,
+   "matchup": "UTA @ LAL",
+   "playerId": 38017705,
+   "playerName": "Walker Kessler",
+   "teamAbbreviation": "LAL",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 9.5,
+   "americanOdds": -110,
+   "vendor": "fanduel",
+   "modelProbability": 0.638731230402728,
+   "evPercent": 21.939598531429883,
+   "foundAt": "2026-11-24T03:40:21.832Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 10,
+   "valueAtPick": 2,
+   "projection": 10.786922997091207,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718179-338-points",
+   "gameDate": "2026-11-23",
+   "gameId": 21718179,
+   "matchup": "UTA @ LAL",
+   "playerId": 338,
+   "playerName": "Svi Mykhailiuk",
+   "teamAbbreviation": "UTA",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": 102,
+   "vendor": "fanduel",
+   "modelProbability": 0.5936330892229076,
+   "evPercent": 19.91388402302734,
+   "foundAt": "2026-11-24T03:40:21.832Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -10,
+   "valueAtPick": 0,
+   "projection": 6.536607933677167,
+   "latestValue": 0,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718179-17896027-points",
+   "gameDate": "2026-11-23",
+   "gameId": 21718179,
+   "matchup": "UTA @ LAL",
+   "playerId": 17896027,
+   "playerName": "Ziaire Williams",
+   "teamAbbreviation": "LAL",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 8.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.5965872502165834,
+   "evPercent": 18.147671121323384,
+   "foundAt": "2026-11-24T03:40:21.832Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 10,
+   "valueAtPick": 2,
+   "projection": 7.581153688492839,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718179-1091342427-points",
+   "gameDate": "2026-11-23",
+   "gameId": 21718179,
+   "matchup": "UTA @ LAL",
+   "playerId": 1091342427,
+   "playerName": "Darryn Peterson",
+   "teamAbbreviation": "UTA",
+   "propType": "points",
+   "label": "Points",
+   "side": "over",
+   "line": 16.5,
+   "americanOdds": -114,
+   "vendor": "fanduel",
+   "modelProbability": 0.6214417119598701,
+   "evPercent": 16.65660206965982,
+   "foundAt": "2026-11-24T03:40:21.832Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": -10,
+   "valueAtPick": 5,
+   "projection": 18.293570018092616,
+   "latestValue": 5,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Points",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
+  },
+  {
+   "pickId": "21718179-38017728-points_assists",
+   "gameDate": "2026-11-23",
+   "gameId": 21718179,
+   "matchup": "UTA @ LAL",
+   "playerId": 38017728,
+   "playerName": "Jake LaRavia",
+   "teamAbbreviation": "LAL",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": 106,
+   "vendor": "fanduel",
+   "modelProbability": 0.5657701018816952,
+   "evPercent": 16.548640987629206,
+   "foundAt": "2026-11-24T03:40:21.832Z",
+   "clockLabel": "End of Q1",
+   "period": 1,
+   "scoreMargin": 10,
+   "valueAtPick": 2,
+   "projection": 6.9416578848861565,
+   "latestValue": 2,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Under 60% of line",
+    "End of Q1"
+   ],
+   "result": null,
+   "checkpoint": "end-q1"
   }
  ],
- "calls": 623,
+ "calls": 636,
  "note": null,
  "checkpointsTaken": {
   "21718171": [
@@ -4632,6 +4797,9 @@
    "end-q1",
    "halftime",
    "end-q3"
+  ],
+  "21718179": [
+   "end-q1"
   ],
   "21718180": [
    "end-q1"
