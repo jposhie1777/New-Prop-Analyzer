@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "updatedAt": "2026-11-24T02:35:20.412Z",
+ "updatedAt": "2026-11-24T02:39:20.294Z",
  "state": "running",
  "games": [
   {
@@ -21,36 +21,36 @@
    "gameId": 21718173,
    "matchup": "OKC @ IND",
    "status": "4th Qtr",
-   "homeScore": 106,
-   "visitorScore": 103
+   "homeScore": 109,
+   "visitorScore": 105
   },
   {
    "gameId": 21718174,
    "matchup": "MIL @ TOR",
    "status": "4th Qtr",
    "homeScore": 89,
-   "visitorScore": 89
+   "visitorScore": 92
   },
   {
    "gameId": 21718175,
    "matchup": "BKN @ MIN",
    "status": "4th Qtr",
-   "homeScore": 123,
+   "homeScore": 125,
    "visitorScore": 100
   },
   {
    "gameId": 21718176,
    "matchup": "CLE @ CHI",
    "status": "3rd Qtr",
-   "homeScore": 76,
-   "visitorScore": 66
+   "homeScore": 81,
+   "visitorScore": 68
   },
   {
    "gameId": 21718177,
    "matchup": "PHX @ NOP",
    "status": "3rd Qtr",
-   "homeScore": 60,
-   "visitorScore": 66
+   "homeScore": 64,
+   "visitorScore": 71
   },
   {
    "gameId": 21718178,
@@ -718,7 +718,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 7.212343826854718,
-   "latestValue": 15,
+   "latestValue": 18,
    "tags": [
     "Best bet",
     "Under",
@@ -1302,7 +1302,7 @@
    "scoreMargin": 13,
    "valueAtPick": 10,
    "projection": 25.90652894514842,
-   "latestValue": 33,
+   "latestValue": 35,
    "tags": [
     "Best bet",
     "Over",
@@ -1368,7 +1368,7 @@
    "scoreMargin": -5,
    "valueAtPick": 23,
    "projection": 45.72831771075067,
-   "latestValue": 39,
+   "latestValue": 40,
    "tags": [
     "Best bet",
     "Over",
@@ -1434,7 +1434,7 @@
    "scoreMargin": 5,
    "valueAtPick": 9,
    "projection": 20.296689167154923,
-   "latestValue": 19,
+   "latestValue": 20,
    "tags": [
     "Best bet",
     "Under",
@@ -1499,7 +1499,7 @@
    "scoreMargin": -4,
    "valueAtPick": 7,
    "projection": 18.241394294747963,
-   "latestValue": 24,
+   "latestValue": 27,
    "tags": [
     "Best bet",
     "Under",
@@ -1566,7 +1566,7 @@
    "scoreMargin": -4,
    "valueAtPick": 4,
    "projection": 6.642412581456368,
-   "latestValue": 8,
+   "latestValue": 9,
    "tags": [
     "Over",
     "Rebounds",
@@ -1698,7 +1698,7 @@
    "scoreMargin": -3,
    "valueAtPick": 0,
    "projection": 5.040660854266481,
-   "latestValue": 4,
+   "latestValue": 7,
    "tags": [
     "Best bet",
     "Under",
@@ -1764,7 +1764,7 @@
    "scoreMargin": 3,
    "valueAtPick": 6,
    "projection": 28.53802716432727,
-   "latestValue": 15,
+   "latestValue": 17,
    "tags": [
     "Best bet",
     "Under",
@@ -1830,7 +1830,7 @@
    "scoreMargin": -4,
    "valueAtPick": 5,
    "projection": 20.821477085619957,
-   "latestValue": 11,
+   "latestValue": 14,
    "tags": [
     "Best bet",
     "Under",
@@ -2565,7 +2565,7 @@
    "scoreMargin": -10,
    "valueAtPick": 2,
    "projection": 5.085975976107269,
-   "latestValue": 2,
+   "latestValue": 3,
    "tags": [
     "Best bet",
     "Over",
@@ -2697,7 +2697,7 @@
    "scoreMargin": 2,
    "valueAtPick": 12,
    "projection": 25.950916295361374,
-   "latestValue": 16,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -2864,7 +2864,7 @@
    "scoreMargin": -22,
    "valueAtPick": 8,
    "projection": 11.192737950359078,
-   "latestValue": 9,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Over",
@@ -3171,7 +3171,7 @@
    "scoreMargin": 5,
    "valueAtPick": 3,
    "projection": 3.2995465889139703,
-   "latestValue": 3,
+   "latestValue": 4,
    "tags": [
     "Over",
     "3PM",
@@ -3237,7 +3237,7 @@
    "scoreMargin": 5,
    "valueAtPick": 18,
    "projection": 21.976436615929444,
-   "latestValue": 18,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Under",
@@ -3521,9 +3521,172 @@
    ],
    "result": null,
    "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718178-140-points_assists",
+   "gameDate": "2026-11-23",
+   "gameId": 21718178,
+   "matchup": "LAC @ HOU",
+   "playerId": 140,
+   "playerName": "Kevin Durant",
+   "teamAbbreviation": "HOU",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "under",
+   "line": 23.5,
+   "americanOdds": -102,
+   "vendor": "fanduel",
+   "modelProbability": 0.6162815997510961,
+   "evPercent": 22.047924656589622,
+   "foundAt": "2026-11-24T02:37:19.478Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 4,
+   "valueAtPick": 11,
+   "projection": 22.011715170271266,
+   "latestValue": 11,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Pts+Ast",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718178-17896062-threes",
+   "gameDate": "2026-11-23",
+   "gameId": 21718178,
+   "matchup": "LAC @ HOU",
+   "playerId": 17896062,
+   "playerName": "Alperen Sengun",
+   "teamAbbreviation": "HOU",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 0.5,
+   "americanOdds": 240,
+   "vendor": "draftkings",
+   "modelProbability": 0.3567202517795901,
+   "evPercent": 21.284885605060634,
+   "foundAt": "2026-11-24T02:37:19.478Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 4,
+   "valueAtPick": 0,
+   "projection": 0.24477515628269508,
+   "latestValue": 0,
+   "tags": [
+    "Over",
+    "3PM",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718178-666609-points",
+   "gameDate": "2026-11-23",
+   "gameId": 21718178,
+   "matchup": "LAC @ HOU",
+   "playerId": 666609,
+   "playerName": "Rui Hachimura",
+   "teamAbbreviation": "LAC",
+   "propType": "points",
+   "label": "Points",
+   "side": "under",
+   "line": 14.5,
+   "americanOdds": -106,
+   "vendor": "fanduel",
+   "modelProbability": 0.6226372791982427,
+   "evPercent": 21.003093881922652,
+   "foundAt": "2026-11-24T02:37:19.478Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": -4,
+   "valueAtPick": 9,
+   "projection": 13.451550508499807,
+   "latestValue": 9,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Points",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718178-420-assists",
+   "gameDate": "2026-11-23",
+   "gameId": 21718178,
+   "matchup": "LAC @ HOU",
+   "playerId": 420,
+   "playerName": "Marcus Smart",
+   "teamAbbreviation": "HOU",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "under",
+   "line": 1.5,
+   "americanOdds": 158,
+   "vendor": "fanduel",
+   "modelProbability": 0.45099941436040525,
+   "evPercent": 16.35784890498455,
+   "foundAt": "2026-11-24T02:37:19.478Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 4,
+   "valueAtPick": 1,
+   "projection": 1.6183972506574005,
+   "latestValue": 1,
+   "tags": [
+    "Under",
+    "Assists",
+    "Already 60%+ of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718178-56677825-rebounds_assists",
+   "gameDate": "2026-11-23",
+   "gameId": 21718178,
+   "matchup": "LAC @ HOU",
+   "playerId": 56677825,
+   "playerName": "Amen Thompson",
+   "teamAbbreviation": "HOU",
+   "propType": "rebounds_assists",
+   "label": "Reb+Ast",
+   "side": "under",
+   "line": 7.5,
+   "americanOdds": -110,
+   "vendor": "fanduel",
+   "modelProbability": 0.595398600381214,
+   "evPercent": 13.667005527322672,
+   "foundAt": "2026-11-24T02:37:19.478Z",
+   "clockLabel": "Halftime",
+   "period": 2,
+   "scoreMargin": 4,
+   "valueAtPick": 3,
+   "projection": 6.895326944667589,
+   "latestValue": 3,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Reb+Ast",
+    "Under 60% of line",
+    "Halftime"
+   ],
+   "result": null,
+   "checkpoint": "halftime"
   }
  ],
- "calls": 472,
+ "calls": 484,
  "note": null,
  "checkpointsTaken": {
   "21718171": [
@@ -3560,7 +3723,8 @@
    "halftime"
   ],
   "21718178": [
-   "end-q1"
+   "end-q1",
+   "halftime"
   ]
  }
 }
