@@ -1,28 +1,28 @@
 {
  "date": "2026-11-23",
- "updatedAt": "2026-11-24T01:49:18.155Z",
+ "updatedAt": "2026-11-24T01:52:21.759Z",
  "state": "running",
  "games": [
   {
    "gameId": 21718171,
    "matchup": "MEM @ CHA",
    "status": "3rd Qtr",
-   "homeScore": 77,
-   "visitorScore": 84
+   "homeScore": 82,
+   "visitorScore": 89
   },
   {
    "gameId": 21718172,
    "matchup": "POR @ PHI",
    "status": "3rd Qtr",
-   "homeScore": 87,
-   "visitorScore": 96
+   "homeScore": 92,
+   "visitorScore": 101
   },
   {
    "gameId": 21718173,
    "matchup": "OKC @ IND",
    "status": "3rd Qtr",
-   "homeScore": 56,
-   "visitorScore": 51
+   "homeScore": 68,
+   "visitorScore": 56
   },
   {
    "gameId": 21718174,
@@ -42,22 +42,22 @@
    "gameId": 21718176,
    "matchup": "CLE @ CHI",
    "status": "2nd Qtr",
-   "homeScore": 41,
-   "visitorScore": 34
+   "homeScore": 47,
+   "visitorScore": 38
   },
   {
    "gameId": 21718177,
    "matchup": "PHX @ NOP",
    "status": "2nd Qtr",
    "homeScore": 47,
-   "visitorScore": 43
+   "visitorScore": 48
   },
   {
    "gameId": 21718178,
    "matchup": "LAC @ HOU",
    "status": "1st Qtr",
    "homeScore": 12,
-   "visitorScore": 8
+   "visitorScore": 11
   },
   {
    "gameId": 21718179,
@@ -129,7 +129,7 @@
    "scoreMargin": 4,
    "valueAtPick": 0,
    "projection": 14.47570538681448,
-   "latestValue": 8,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -195,7 +195,7 @@
    "scoreMargin": -4,
    "valueAtPick": 1,
    "projection": 6.867673688886107,
-   "latestValue": 4,
+   "latestValue": 5,
    "tags": [
     "Best bet",
     "Under",
@@ -658,7 +658,7 @@
    "scoreMargin": 0,
    "valueAtPick": 0,
    "projection": 7.212343826854718,
-   "latestValue": 5,
+   "latestValue": 10,
    "tags": [
     "Best bet",
     "Under",
@@ -956,7 +956,7 @@
    "scoreMargin": 0,
    "valueAtPick": 13,
    "projection": 20.27594822569819,
-   "latestValue": 18,
+   "latestValue": 19,
    "tags": [
     "Best bet",
     "Over",
@@ -1288,7 +1288,7 @@
    "scoreMargin": -5,
    "valueAtPick": 23,
    "projection": 45.72831771075067,
-   "latestValue": 23,
+   "latestValue": 26,
    "tags": [
     "Best bet",
     "Over",
@@ -1354,7 +1354,7 @@
    "scoreMargin": 5,
    "valueAtPick": 9,
    "projection": 20.296689167154923,
-   "latestValue": 9,
+   "latestValue": 11,
    "tags": [
     "Best bet",
     "Under",
@@ -1717,7 +1717,7 @@
    "scoreMargin": 3,
    "valueAtPick": 4,
    "projection": 12.949719861150252,
-   "latestValue": 6,
+   "latestValue": 8,
    "tags": [
     "Best bet",
     "Under",
@@ -2059,9 +2059,175 @@
    ],
    "result": null,
    "checkpoint": "halftime"
+  },
+  {
+   "pickId": "21718172-3547242-rebounds",
+   "gameDate": "2026-11-23",
+   "gameId": 21718172,
+   "matchup": "POR @ PHI",
+   "playerId": 3547242,
+   "playerName": "Deni Avdija",
+   "teamAbbreviation": "POR",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "under",
+   "line": 2.5,
+   "americanOdds": -112,
+   "vendor": "fanduel",
+   "modelProbability": 0.6599936150392341,
+   "evPercent": 24.927362846712175,
+   "foundAt": "2026-11-24T01:52:17.662Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 9,
+   "valueAtPick": 1,
+   "projection": 1.9965678537758995,
+   "latestValue": 1,
+   "tags": [
+    "Best bet",
+    "Under",
+    "Rebounds",
+    "Hot shooter",
+    "Under 60% of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718172-3547254-points_assists",
+   "gameDate": "2026-11-23",
+   "gameId": 21718172,
+   "matchup": "POR @ PHI",
+   "playerId": 3547254,
+   "playerName": "Tyrese Maxey",
+   "teamAbbreviation": "PHI",
+   "propType": "points_assists",
+   "label": "Pts+Ast",
+   "side": "over",
+   "line": 31.5,
+   "americanOdds": -108,
+   "vendor": "fanduel",
+   "modelProbability": 0.6414541393811458,
+   "evPercent": 23.539315732665123,
+   "foundAt": "2026-11-24T01:52:17.662Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -9,
+   "valueAtPick": 26,
+   "projection": 32.9485649873202,
+   "latestValue": 26,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Pts+Ast",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718172-56677817-rebounds",
+   "gameDate": "2026-11-23",
+   "gameId": 21718172,
+   "matchup": "POR @ PHI",
+   "playerId": 56677817,
+   "playerName": "Sidy Cissoko",
+   "teamAbbreviation": "POR",
+   "propType": "rebounds",
+   "label": "Rebounds",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": -110,
+   "vendor": "fanduel",
+   "modelProbability": 0.6422353948604145,
+   "evPercent": 22.608575382442766,
+   "foundAt": "2026-11-24T01:52:17.662Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 9,
+   "valueAtPick": 4,
+   "projection": 4.929639922298927,
+   "latestValue": 4,
+   "tags": [
+    "Best bet",
+    "Over",
+    "Rebounds",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718172-56677747-assists",
+   "gameDate": "2026-11-23",
+   "gameId": 21718172,
+   "matchup": "POR @ PHI",
+   "playerId": 56677747,
+   "playerName": "Scoot Henderson",
+   "teamAbbreviation": "POR",
+   "propType": "assists",
+   "label": "Assists",
+   "side": "over",
+   "line": 3.5,
+   "americanOdds": 130,
+   "vendor": "draftkings",
+   "modelProbability": 0.5311525920170451,
+   "evPercent": 22.165096163920374,
+   "foundAt": "2026-11-24T01:52:17.662Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": 9,
+   "valueAtPick": 3,
+   "projection": 3.5723034544966605,
+   "latestValue": 3,
+   "tags": [
+    "Over",
+    "Assists",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
+  },
+  {
+   "pickId": "21718172-237-threes",
+   "gameDate": "2026-11-23",
+   "gameId": 21718172,
+   "matchup": "POR @ PHI",
+   "playerId": 237,
+   "playerName": "LeBron James",
+   "teamAbbreviation": "PHI",
+   "propType": "threes",
+   "label": "3PM",
+   "side": "over",
+   "line": 4.5,
+   "americanOdds": 225,
+   "vendor": "fanduel",
+   "modelProbability": 0.37137488726229706,
+   "evPercent": 20.696838360246538,
+   "foundAt": "2026-11-24T01:52:17.662Z",
+   "clockLabel": "End of Q3",
+   "period": 3,
+   "scoreMargin": -9,
+   "valueAtPick": 4,
+   "projection": 4.2718969660474,
+   "latestValue": 4,
+   "tags": [
+    "Over",
+    "3PM",
+    "Foul trouble",
+    "Hot shooter",
+    "Already 60%+ of line",
+    "End of Q3"
+   ],
+   "result": null,
+   "checkpoint": "end-q3"
   }
  ],
- "calls": 345,
+ "calls": 355,
  "note": null,
  "checkpointsTaken": {
   "21718171": [
@@ -2070,7 +2236,8 @@
   ],
   "21718172": [
    "end-q1",
-   "halftime"
+   "halftime",
+   "end-q3"
   ],
   "21718173": [
    "end-q1",
